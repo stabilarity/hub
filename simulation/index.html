@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Open Humanoid Simulation</title>
+<style>
+  body { margin: 0; background: #0a0a0a; color: #fff; font-family: monospace; }
+  #info { position: absolute; top: 10px; left: 10px; font-size: 12px; opacity: 0.7; }
+  #status { position: absolute; bottom: 10px; left: 10px; font-size: 11px; }
+  canvas { display: block; }
+</style>
+</head>
+<body>
+<div id="info">OPEN HUMANOID v0.1 — Simulation Room<br>2 autonomous agents | balance + locomotion</div>
+<div id="status">Initializing...</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+// Scene setup
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x0a0a0a);
+scene.fog = new THREE.Fog(0x0a0a0a, 20, 60);
+
+const camera = new THREE.PerspectiveCamera(60, window.innerWidth/window.innerHeight, 0.1, 100);
+camera.position.set(0, 3, 8);
+camera.lookAt(0, 1, 0);
+
+const renderer = new THREE.WebGLRenderer({ antialias: true });
+renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.shadowMap.enabled = true;
+document.body.appendChild(renderer.domElement);
+
+// Lighting
+const ambient = new THREE.AmbientLight(0xffffff, 0.3);
+scene.add(ambient);
+const dirLight = new THREE.DirectionalLight(0xffffff, 0.8);
+dirLight.position.set(5, 10, 5);
+dirLight.castShadow = true;
+scene.add(dirLight);
+
+// Floor
+const floor = new THREE.Mesh(
+  new THREE.PlaneGeometry(20, 20),
+  new THREE.MeshLambertMaterial({ color: 0x111111 })
+);
+floor.rotation.x = -Math.PI/2;
+floor.receiveShadow = true;
+scene.add(floor);
+
+// Grid
+const grid = new THREE.GridHelper(20, 20, 0x222222, 0x222222);
+scene.add(grid);
+
+// Robot builder
+function buildRobot(color) {
+  const group = new THREE.Group();
+  const mat = new THREE.MeshLambertMaterial({ color });
+
+  // Torso
+  const torso = new THREE.Mesh(new THREE.BoxGeometry(0.4, 0.5, 0.25), mat);
+  torso.position.y = 1.2;
+  group.add(torso);
+
+  // Head
+  const head = new THREE.Mesh(new THREE.BoxGeometry(0.25, 0.25, 0.25), mat);
+  head.position.y = 1.6;
+  group.add(head);
+
+  // Eyes
+  const eyeMat = new THREE.MeshLambertMaterial({ color: 0x00ffff });
+  [-0.07, 0.07].forEach(x => {
+    const eye = new THREE.Mesh(new THREE.BoxGeometry(0.05, 0.04, 0.02), eyeMat);
+    eye.position.set(x, 1.62, 0.13);
+    group.add(eye);
+  });
+
+  // Arms
+  [-0.28, 0.28].forEach(x => {
+    const upper = new THREE.Mesh(new THREE.BoxGeometry(0.1, 0.3, 0.1), mat);
+    upper.position.set(x, 1.1, 0);
+    group.add(upper);
+    const lower = new THREE.Mesh(new THREE.BoxGeometry(0.08, 0.25, 0.08), mat);
+    lower.position.set(x, 0.82, 0);
+    group.add(lower);
+  });
+
+  // Legs (stored for animation)
+  const legs = [];
+  [-0.12, 0.12].forEach(x => {
+    const upper = new THREE.Mesh(new THREE.BoxGeometry(0.13, 0.35, 0.13), mat);
+    upper.position.set(x, 0.8, 0);
+    group.add(upper);
+    const lower = new THREE.Mesh(new THREE.BoxGeometry(0.11, 0.3, 0.11), mat);
+    lower.position.set(x, 0.47, 0);
+    group.add(lower);
+    const foot = new THREE.Mesh(new THREE.BoxGeometry(0.15, 0.06, 0.2), mat);
+    foot.position.set(x, 0.3, 0.02);
+    group.add(foot);
+    legs.push({ upper, lower, foot, side: x < 0 ? -1 : 1 });
+  });
+
+  group.castShadow = true;
+  return { group, legs };
+}
+
+const robot1 = buildRobot(0x4488ff);
+robot1.group.position.set(-1.5, 0, 0);
+scene.add(robot1.group);
+
+const robot2 = buildRobot(0xff6644);
+robot2.group.position.set(1.5, 0, 0);
+scene.add(robot2.group);
+
+// Robot AI state
+const bots = [
+  { robot: robot1, pos: new THREE.Vector3(-1.5, 0, 0), dir: 1, phase: 0, speed: 0.6, state: 'walk', comTimer: 2 },
+  { robot: robot2, pos: new THREE.Vector3(1.5, 0, 0), dir: -1, phase: Math.PI, speed: 0.5, state: 'walk', comTimer: 4 }
+];
+
+// Communication beam
+const beamMat = new THREE.LineBasicMaterial({ color: 0x00ff88, transparent: true, opacity: 0 });
+const beamGeo = new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(0,1.6,0), new THREE.Vector3(0,1.6,0)]);
+const beam = new THREE.Line(beamGeo, beamMat);
+scene.add(beam);
+
+let beamTimer = 0;
+const statusEl = document.getElementById('status');
+
+// Animation
+const clock = new THREE.Clock();
+function animate() {
+  requestAnimationFrame(animate);
+  const dt = clock.getDelta();
+  const t = clock.getElapsedTime();
+
+  bots.forEach((bot, i) => {
+    bot.phase += dt * 3;
+    const walk = Math.sin(bot.phase);
+
+    // Leg animation
+    bot.robot.legs.forEach(leg => {
+      leg.upper.rotation.x = walk * leg.side * 0.35;
+      leg.lower.rotation.x = Math.abs(walk) * 0.2;
+    });
+
+    // Walk forward
+    bot.pos.x += bot.dir * bot.speed * dt;
+    if (bot.pos.x > 4 || bot.pos.x < -4) bot.dir *= -1;
+
+    // Balance sway
+    bot.robot.group.rotation.z = Math.sin(bot.phase * 0.5) * 0.02;
+    bot.robot.group.position.set(bot.pos.x, Math.abs(Math.sin(bot.phase)) * 0.02, bot.pos.z);
+    bot.robot.group.rotation.y = bot.dir > 0 ? 0 : Math.PI;
+
+    // Communication timer
+    bot.comTimer -= dt;
+    if (bot.comTimer <= 0) {
+      bot.comTimer = 3 + Math.random() * 4;
+      beamTimer = 0.5;
+    }
+  });
+
+  // Beam animation
+  if (beamTimer > 0) {
+    beamTimer -= dt;
+    beamMat.opacity = beamTimer * 2;
+    const pts = [
+      new THREE.Vector3(bots[0].pos.x, 1.6, 0),
+      new THREE.Vector3(bots[1].pos.x, 1.6, 0)
+    ];
+    beamGeo.setFromPoints(pts);
+    beamGeo.computeBoundingSphere();
+  } else {
+    beamMat.opacity = 0;
+  }
+
+  // Status
+  const dist = Math.abs(bots[0].pos.x - bots[1].pos.x).toFixed(1);
+  statusEl.textContent = `Robot A: x=${bots[0].pos.x.toFixed(1)} | Robot B: x=${bots[1].pos.x.toFixed(1)} | Distance: ${dist}m | ${beamMat.opacity > 0.1 ? 'COMMUNICATING' : 'autonomous walk'}`;
+
+  // Orbit camera slowly
+  camera.position.x = Math.sin(t * 0.1) * 8;
+  camera.position.z = Math.cos(t * 0.1) * 8;
+  camera.lookAt(0, 1.2, 0);
+
+  renderer.render(scene, camera);
+}
+animate();
+
+window.addEventListener('resize', () => {
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(window.innerWidth, window.innerHeight);
+});
+</script>
+</body>
+</html>

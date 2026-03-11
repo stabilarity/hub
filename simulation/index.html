@@ -2,195 +2,199 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Open Humanoid Simulation</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Humanoid Robotics Simulation — Stabilarity</title>
 <style>
-  body { margin: 0; background: #0a0a0a; color: #fff; font-family: monospace; }
-  #info { position: absolute; top: 10px; left: 10px; font-size: 12px; opacity: 0.7; }
-  #status { position: absolute; bottom: 10px; left: 10px; font-size: 11px; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #0a0a0a; color: #fff; font-family: 'Courier New', monospace; overflow: hidden; }
+  #canvas-container { width: 100vw; height: 100vh; position: relative; }
   canvas { display: block; }
+  #status-panel {
+    position: absolute; top: 16px; right: 16px;
+    background: rgba(0,0,0,0.75); border: 1px solid #333;
+    padding: 12px 16px; font-size: 11px; line-height: 1.8; min-width: 200px; color: #ccc;
+  }
+  #status-panel h3 { font-size: 10px; text-transform: uppercase; letter-spacing: 2px; color: #888; margin-bottom: 8px; border-bottom: 1px solid #333; padding-bottom: 4px; }
+  .robot-status { margin-bottom: 8px; }
+  .robot-status h4 { color: #aaa; font-size: 10px; text-transform: uppercase; letter-spacing: 1px; }
+  .val { color: #7cf; }
+  .val.warn { color: #fc7; }
+  #label { position: absolute; bottom: 16px; left: 50%; transform: translateX(-50%); font-size: 10px; color: #444; letter-spacing: 2px; text-transform: uppercase; }
 </style>
 </head>
 <body>
-<div id="info">OPEN HUMANOID v0.1 — Simulation Room<br>2 autonomous agents | balance + locomotion</div>
-<div id="status">Initializing...</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<div id="canvas-container">
+  <div id="status-panel">
+    <h3>Balance Monitor</h3>
+    <div class="robot-status">
+      <h4>Robot Alpha</h4>
+      <div>Balance Error: <span class="val" id="r1-err">0.000</span> rad</div>
+      <div>CoM Offset: <span class="val" id="r1-com">0.000</span> m</div>
+      <div>Correction: <span class="val" id="r1-tor">0.000</span> Nm</div>
+    </div>
+    <div class="robot-status">
+      <h4>Robot Beta</h4>
+      <div>Balance Error: <span class="val" id="r2-err">0.000</span> rad</div>
+      <div>CoM Offset: <span class="val" id="r2-com">0.000</span> m</div>
+      <div>Correction: <span class="val" id="r2-tor">0.000</span> Nm</div>
+    </div>
+    <div style="margin-top:8px;border-top:1px solid #333;padding-top:6px;">
+      <div>Mode: <span class="val">STATIC BALANCE</span></div>
+      <div>Link: <span class="val" id="link-status">STANDBY</span></div>
+    </div>
+  </div>
+  <div id="label">stabilarity.com — open humanoid project</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
 <script>
-// Scene setup
-const scene = new THREE.Scene();
-scene.background = new THREE.Color(0x0a0a0a);
-scene.fog = new THREE.Fog(0x0a0a0a, 20, 60);
-
-const camera = new THREE.PerspectiveCamera(60, window.innerWidth/window.innerHeight, 0.1, 100);
-camera.position.set(0, 3, 8);
-camera.lookAt(0, 1, 0);
-
+const container = document.getElementById('canvas-container');
 const renderer = new THREE.WebGLRenderer({ antialias: true });
-renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.setPixelRatio(window.devicePixelRatio);
+renderer.setSize(container.clientWidth, container.clientHeight);
 renderer.shadowMap.enabled = true;
-document.body.appendChild(renderer.domElement);
+renderer.setClearColor(0x0a0a0a);
+container.appendChild(renderer.domElement);
 
-// Lighting
-const ambient = new THREE.AmbientLight(0xffffff, 0.3);
-scene.add(ambient);
-const dirLight = new THREE.DirectionalLight(0xffffff, 0.8);
-dirLight.position.set(5, 10, 5);
-dirLight.castShadow = true;
-scene.add(dirLight);
+const scene = new THREE.Scene();
+scene.fog = new THREE.FogExp2(0x0a0a0a, 0.045);
 
-// Floor
-const floor = new THREE.Mesh(
-  new THREE.PlaneGeometry(20, 20),
-  new THREE.MeshLambertMaterial({ color: 0x111111 })
-);
-floor.rotation.x = -Math.PI/2;
-floor.receiveShadow = true;
+const camera = new THREE.PerspectiveCamera(45, container.clientWidth / container.clientHeight, 0.1, 100);
+camera.position.set(0, 2.5, 7);
+camera.lookAt(0, 1.2, 0);
+
+scene.add(new THREE.AmbientLight(0x111111));
+const keyLight = new THREE.DirectionalLight(0xffffff, 0.8);
+keyLight.position.set(3, 6, 4); keyLight.castShadow = true;
+scene.add(keyLight);
+const fillLight = new THREE.DirectionalLight(0x334455, 0.4);
+fillLight.position.set(-3, 3, -2);
+scene.add(fillLight);
+const groundGlow = new THREE.PointLight(0x002244, 1.5, 6);
+groundGlow.position.set(0, 0.1, 0);
+scene.add(groundGlow);
+
+scene.add(new THREE.GridHelper(12, 24, 0x1a1a2e, 0x111122));
+const floor = new THREE.Mesh(new THREE.PlaneGeometry(12,12), new THREE.MeshLambertMaterial({color:0x080810}));
+floor.rotation.x = -Math.PI/2; floor.receiveShadow = true;
 scene.add(floor);
 
-// Grid
-const grid = new THREE.GridHelper(20, 20, 0x222222, 0x222222);
-scene.add(grid);
+const RC = 0x2255aa, JC = 0x334466, AC = 0x00aaff;
+function box(w,h,d,c){const m=new THREE.Mesh(new THREE.BoxGeometry(w,h,d),new THREE.MeshLambertMaterial({color:c}));m.castShadow=true;return m;}
+function sph(r,c){return new THREE.Mesh(new THREE.SphereGeometry(r,8,8),new THREE.MeshLambertMaterial({color:c}));}
 
-// Robot builder
-function buildRobot(color) {
-  const group = new THREE.Group();
-  const mat = new THREE.MeshLambertMaterial({ color });
+function buildRobot(ox){
+  const root=new THREE.Group(); root.position.set(ox,0,0);
+  const py=1.05;
+  const torso=box(0.30,0.40,0.16,RC); torso.position.set(0,py+0.38,0); root.add(torso);
+  const stripe=box(0.28,0.04,0.02,AC); stripe.position.set(0,0.08,0.09); torso.add(stripe);
+  const head=box(0.20,0.20,0.18,0x1a3060); head.position.set(0,0.32,0); torso.add(head);
+  const eGeo=new THREE.SphereGeometry(0.03,6,6); const eMat=new THREE.MeshBasicMaterial({color:AC});
+  const eL=new THREE.Mesh(eGeo,eMat); eL.position.set(-0.05,0.02,0.10); head.add(eL);
+  const eR=new THREE.Mesh(eGeo,eMat); eR.position.set(0.05,0.02,0.10); head.add(eR);
+  const pelvis=box(0.32,0.14,0.16,0x1a3a5c); pelvis.position.set(0,py,0); root.add(pelvis);
+  const shL=sph(0.07,JC); shL.position.set(-0.22,0.15,0); torso.add(shL);
+  const shR=sph(0.07,JC); shR.position.set(0.22,0.15,0); torso.add(shR);
+  const uAL=box(0.08,0.22,0.08,RC); uAL.position.set(-0.22,0.04,0); torso.add(uAL);
+  const uAR=box(0.08,0.22,0.08,RC); uAR.position.set(0.22,0.04,0); torso.add(uAR);
+  const elL=sph(0.055,JC); elL.position.set(0,-0.14,0); uAL.add(elL);
+  const elR=sph(0.055,JC); elR.position.set(0,-0.14,0); uAR.add(elR);
+  const fAL=box(0.07,0.20,0.07,0x1a3a5c); fAL.position.set(0,-0.12,0); elL.add(fAL);
+  const fAR=box(0.07,0.20,0.07,0x1a3a5c); fAR.position.set(0,-0.12,0); elR.add(fAR);
+  const hpL=sph(0.07,JC); hpL.position.set(-0.10,-0.07,0); pelvis.add(hpL);
+  const hpR=sph(0.07,JC); hpR.position.set(0.10,-0.07,0); pelvis.add(hpR);
+  const uLL=box(0.10,0.30,0.10,RC); uLL.position.set(0,-0.18,0); hpL.add(uLL);
+  const uLR=box(0.10,0.30,0.10,RC); uLR.position.set(0,-0.18,0); hpR.add(uLR);
+  const knL=sph(0.065,JC); knL.position.set(0,-0.18,0); uLL.add(knL);
+  const knR=sph(0.065,JC); knR.position.set(0,-0.18,0); uLR.add(knR);
+  const lLL=box(0.09,0.28,0.09,0x1a3a5c); lLL.position.set(0,-0.17,0); knL.add(lLL);
+  const lLR=box(0.09,0.28,0.09,0x1a3a5c); lLR.position.set(0,-0.17,0); knR.add(lLR);
+  const anL=sph(0.055,JC); anL.position.set(0,-0.15,0); lLL.add(anL);
+  const anR=sph(0.055,JC); anR.position.set(0,-0.15,0); lLR.add(anR);
+  const ftL=box(0.10,0.05,0.20,0x112244); ftL.position.set(0,-0.03,0.04); anL.add(ftL);
+  const ftR=box(0.10,0.05,0.20,0x112244); ftR.position.set(0,-0.03,0.04); anR.add(ftR);
+  scene.add(root);
 
-  // Torso
-  const torso = new THREE.Mesh(new THREE.BoxGeometry(0.4, 0.5, 0.25), mat);
-  torso.position.y = 1.2;
-  group.add(torso);
+  const comSphere=new THREE.Mesh(new THREE.SphereGeometry(0.04,8,8),new THREE.MeshBasicMaterial({color:0xff4444,transparent:true,opacity:0.85}));
+  scene.add(comSphere);
 
-  // Head
-  const head = new THREE.Mesh(new THREE.BoxGeometry(0.25, 0.25, 0.25), mat);
-  head.position.y = 1.6;
-  group.add(head);
+  function makeArrow(){const l=new THREE.Line(new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(0,0,0),new THREE.Vector3(0,0.35,0)]),new THREE.LineBasicMaterial({color:0x00ff88}));scene.add(l);return l;}
+  const arrowL=makeArrow(), arrowR=makeArrow();
 
-  // Eyes
-  const eyeMat = new THREE.MeshLambertMaterial({ color: 0x00ffff });
-  [-0.07, 0.07].forEach(x => {
-    const eye = new THREE.Mesh(new THREE.BoxGeometry(0.05, 0.04, 0.02), eyeMat);
-    eye.position.set(x, 1.62, 0.13);
-    group.add(eye);
-  });
-
-  // Arms
-  [-0.28, 0.28].forEach(x => {
-    const upper = new THREE.Mesh(new THREE.BoxGeometry(0.1, 0.3, 0.1), mat);
-    upper.position.set(x, 1.1, 0);
-    group.add(upper);
-    const lower = new THREE.Mesh(new THREE.BoxGeometry(0.08, 0.25, 0.08), mat);
-    lower.position.set(x, 0.82, 0);
-    group.add(lower);
-  });
-
-  // Legs (stored for animation)
-  const legs = [];
-  [-0.12, 0.12].forEach(x => {
-    const upper = new THREE.Mesh(new THREE.BoxGeometry(0.13, 0.35, 0.13), mat);
-    upper.position.set(x, 0.8, 0);
-    group.add(upper);
-    const lower = new THREE.Mesh(new THREE.BoxGeometry(0.11, 0.3, 0.11), mat);
-    lower.position.set(x, 0.47, 0);
-    group.add(lower);
-    const foot = new THREE.Mesh(new THREE.BoxGeometry(0.15, 0.06, 0.2), mat);
-    foot.position.set(x, 0.3, 0.02);
-    group.add(foot);
-    legs.push({ upper, lower, foot, side: x < 0 ? -1 : 1 });
-  });
-
-  group.castShadow = true;
-  return { group, legs };
+  return {root,torso,head,pelvis,hpL,hpR,knL,knR,anL,anR,uAL,uAR,elL,elR,comSphere,arrowL,arrowR,
+    tiltAngle:(Math.random()-0.5)*0.04, tiltVel:0, tiltAngleFB:(Math.random()-0.5)*0.03, tiltVelFB:0,
+    perturbTimer:0, perturbVal:0, armSwayPhase:Math.random()*Math.PI*2};
 }
 
-const robot1 = buildRobot(0x4488ff);
-robot1.group.position.set(-1.5, 0, 0);
-scene.add(robot1.group);
+const robots=[buildRobot(-1.4), buildRobot(1.4)];
 
-const robot2 = buildRobot(0xff6644);
-robot2.group.position.set(1.5, 0, 0);
-scene.add(robot2.group);
-
-// Robot AI state
-const bots = [
-  { robot: robot1, pos: new THREE.Vector3(-1.5, 0, 0), dir: 1, phase: 0, speed: 0.6, state: 'walk', comTimer: 2 },
-  { robot: robot2, pos: new THREE.Vector3(1.5, 0, 0), dir: -1, phase: Math.PI, speed: 0.5, state: 'walk', comTimer: 4 }
-];
-
-// Communication beam
-const beamMat = new THREE.LineBasicMaterial({ color: 0x00ff88, transparent: true, opacity: 0 });
-const beamGeo = new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(0,1.6,0), new THREE.Vector3(0,1.6,0)]);
-const beam = new THREE.Line(beamGeo, beamMat);
+const beamMat=new THREE.LineBasicMaterial({color:0x0044ff,transparent:true,opacity:0});
+const beam=new THREE.Line(new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(-1.4,2.2,0),new THREE.Vector3(1.4,2.2,0)]),beamMat);
 scene.add(beam);
+let beamTimer=0, beamPulse=0;
 
-let beamTimer = 0;
-const statusEl = document.getElementById('status');
+const Kp=18.0, Kd=4.5, DT=1/60;
+let cameraAngle=0, t=0;
 
-// Animation
-const clock = new THREE.Clock();
-function animate() {
+function animate(){
   requestAnimationFrame(animate);
-  const dt = clock.getDelta();
-  const t = clock.getElapsedTime();
+  t+=DT;
+  cameraAngle+=0.12*DT;
+  camera.position.x=Math.sin(cameraAngle)*7;
+  camera.position.z=Math.cos(cameraAngle)*7;
+  camera.position.y=2.5+Math.sin(cameraAngle*0.3)*0.3;
+  camera.lookAt(0,1.2,0);
 
-  bots.forEach((bot, i) => {
-    bot.phase += dt * 3;
-    const walk = Math.sin(bot.phase);
+  beamTimer-=DT;
+  if(beamTimer<=0){beamTimer=3+Math.random()*4;beamPulse=1.0;}
+  beamPulse=Math.max(0,beamPulse-DT*1.5);
+  beamMat.opacity=beamPulse*0.7;
 
-    // Leg animation
-    bot.robot.legs.forEach(leg => {
-      leg.upper.rotation.x = walk * leg.side * 0.35;
-      leg.lower.rotation.x = Math.abs(walk) * 0.2;
-    });
-
-    // Walk forward
-    bot.pos.x += bot.dir * bot.speed * dt;
-    if (bot.pos.x > 4 || bot.pos.x < -4) bot.dir *= -1;
-
-    // Balance sway
-    bot.robot.group.rotation.z = Math.sin(bot.phase * 0.5) * 0.02;
-    bot.robot.group.position.set(bot.pos.x, Math.abs(Math.sin(bot.phase)) * 0.02, bot.pos.z);
-    bot.robot.group.rotation.y = bot.dir > 0 ? 0 : Math.PI;
-
-    // Communication timer
-    bot.comTimer -= dt;
-    if (bot.comTimer <= 0) {
-      bot.comTimer = 3 + Math.random() * 4;
-      beamTimer = 0.5;
+  robots.forEach((rb,idx)=>{
+    rb.perturbTimer-=DT;
+    if(rb.perturbTimer<=0){rb.perturbTimer=2+Math.random()*3;rb.perturbVal=(Math.random()-0.5)*0.018;}
+    const pf=rb.perturbVal*Math.sin(t*3+idx);
+    const tor=-Kp*rb.tiltAngle-Kd*rb.tiltVel+pf;
+    rb.tiltVel+=tor*DT; rb.tiltAngle+=rb.tiltVel*DT;
+    rb.tiltAngle=Math.max(-0.12,Math.min(0.12,rb.tiltAngle));
+    const pfb=rb.perturbVal*0.6*Math.cos(t*2+idx*1.3);
+    const torFB=-Kp*rb.tiltAngleFB-Kd*rb.tiltVelFB+pfb;
+    rb.tiltVelFB+=torFB*DT; rb.tiltAngleFB+=rb.tiltVelFB*DT;
+    rb.tiltAngleFB=Math.max(-0.10,Math.min(0.10,rb.tiltAngleFB));
+    rb.root.rotation.x=rb.tiltAngleFB; rb.root.rotation.z=rb.tiltAngle;
+    rb.armSwayPhase+=DT*0.8;
+    rb.uAL.rotation.z=-rb.tiltAngle*0.5+Math.sin(rb.armSwayPhase)*0.02;
+    rb.uAR.rotation.z=rb.tiltAngle*0.5-Math.sin(rb.armSwayPhase)*0.02;
+    const flex=Math.abs(rb.tiltAngle)*0.3+0.02;
+    rb.hpL.rotation.x=-flex*0.5; rb.hpR.rotation.x=-flex*0.5;
+    rb.knL.rotation.x=flex; rb.knR.rotation.x=flex;
+    const wp=new THREE.Vector3(); rb.torso.getWorldPosition(wp);
+    rb.comSphere.position.set(wp.x+rb.tiltAngle*0.3,wp.y-0.08,wp.z+rb.tiltAngleFB*0.3);
+    const rx=rb.root.position.x;
+    rb.arrowL.position.set(rx-0.10,0.01,0.04);
+    rb.arrowR.position.set(rx+0.10,0.01,0.04);
+    rb.arrowL.geometry.setFromPoints([new THREE.Vector3(0,0,0),new THREE.Vector3(0,Math.max(0.05,0.3+rb.tiltAngle*1.2),0)]);
+    rb.arrowR.geometry.setFromPoints([new THREE.Vector3(0,0,0),new THREE.Vector3(0,Math.max(0.05,0.3-rb.tiltAngle*1.2),0)]);
+    const e=document.getElementById('r'+(idx+1)+'-err');
+    if(e){
+      const err=Math.sqrt(rb.tiltAngle**2+rb.tiltAngleFB**2);
+      e.textContent=err.toFixed(3); e.className='val'+(err>0.05?' warn':'');
+      document.getElementById('r'+(idx+1)+'-com').textContent=(rb.tiltAngle*0.3).toFixed(3);
+      const ct=Kp*rb.tiltAngle+Kd*rb.tiltVel;
+      const te=document.getElementById('r'+(idx+1)+'-tor');
+      te.textContent=ct.toFixed(3); te.className='val'+(Math.abs(ct)>0.5?' warn':'');
     }
   });
 
-  // Beam animation
-  if (beamTimer > 0) {
-    beamTimer -= dt;
-    beamMat.opacity = beamTimer * 2;
-    const pts = [
-      new THREE.Vector3(bots[0].pos.x, 1.6, 0),
-      new THREE.Vector3(bots[1].pos.x, 1.6, 0)
-    ];
-    beamGeo.setFromPoints(pts);
-    beamGeo.computeBoundingSphere();
-  } else {
-    beamMat.opacity = 0;
-  }
-
-  // Status
-  const dist = Math.abs(bots[0].pos.x - bots[1].pos.x).toFixed(1);
-  statusEl.textContent = `Robot A: x=${bots[0].pos.x.toFixed(1)} | Robot B: x=${bots[1].pos.x.toFixed(1)} | Distance: ${dist}m | ${beamMat.opacity > 0.1 ? 'COMMUNICATING' : 'autonomous walk'}`;
-
-  // Orbit camera slowly
-  camera.position.x = Math.sin(t * 0.1) * 8;
-  camera.position.z = Math.cos(t * 0.1) * 8;
-  camera.lookAt(0, 1.2, 0);
-
-  renderer.render(scene, camera);
+  const lk=document.getElementById('link-status');
+  if(lk){lk.textContent=beamPulse>0.1?'TRANSMITTING':'STANDBY';lk.style.color=beamPulse>0.1?'#7cf':'#555';}
+  renderer.render(scene,camera);
 }
-animate();
 
-window.addEventListener('resize', () => {
-  camera.aspect = window.innerWidth / window.innerHeight;
-  camera.updateProjectionMatrix();
-  renderer.setSize(window.innerWidth, window.innerHeight);
+window.addEventListener('resize',()=>{
+  const w=container.clientWidth,h=container.clientHeight;
+  camera.aspect=w/h; camera.updateProjectionMatrix(); renderer.setSize(w,h);
 });
+animate();
 </script>
 </body>
 </html>

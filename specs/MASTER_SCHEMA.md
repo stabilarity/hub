@@ -172,3 +172,96 @@ references:
 article_ref: "Article 4 — Actuation"
 doi: "10.5281/zenodo.18959349"
 ```
+
+## Structural Subsystem Spec (v0.1)
+
+```yaml
+subsystem: structure
+version: 0.1
+status: specified
+dependencies:
+  - actuation
+  - power
+  - compute
+  - sensing
+
+constraints:
+  mass_budget_kg: 18.0          # structural members only; housings ~8kg separate
+  ip_rating: IP54               # labyrinth + NBR/FKM lip seals at all 39 joints
+  operating_temperature_c: 0-40
+  safety_factor_min: 2.5        # on all primary structural members
+
+material_zones:
+  limb_links:
+    material: CFRP
+    spec: T700 carbon fiber, epoxy matrix, 3mm wall tube
+    ods_mm: [30, 35, 40, 50]    # forearm, upper-arm, shin, thigh
+    yield_strength_mpa: 600     # fiber direction
+  joint_housings:
+    material: 7075-T6 Aluminum
+    yield_strength_mpa: 503
+    density_g_cm3: 2.81
+    finish: anodized
+  hip_knee_ankle_brackets:
+    material: Ti-6Al-4V
+    yield_strength_mpa: 880
+    density_g_cm3: 4.43
+    fatigue_life: ">1e7 cycles at design load"
+  outer_skin:
+    material: TPU
+    durometer_shore_a:
+      torso_arms: 65
+      hands_palms: 50
+      ankle_foot: 88
+    thickness_mm: 8
+    standard: ISO/TS 15066 compliant (contact force attenuation 40-60%)
+
+load_cases:
+  static_standing:
+    load_per_leg_n: 400
+    governing_stress_mpa: 1.36   # thigh CFRP link
+  walking_heel_strike:
+    peak_grf_n: 2350             # 3x body weight
+    ankle_bracket_stress_mpa: 23.5
+    safety_factor: 37.4
+  worst_case_fall:
+    fall_height_m: 0.9
+    impact_velocity_m_s: 4.2
+    peak_force_n: 67200          # delta_t = 5ms rigid
+    ankle_bracket_stress_mpa: 672
+    safety_factor: 1.31          # mitigated by TPU sole + fall trajectories
+
+bearings:
+  hip_knee: crossed_roller       # combined load capacity
+  wrist_shoulder: angular_contact_pair  # back-to-back, preload 5-10% Cdyn
+  seals: NBR default, FKM/Viton ankle+foot
+
+bom_mass_summary_kg:
+  cfrp_links: 1.84
+  ti_brackets: 2.22
+  al_frames_housings: 8.15
+  tpu_shell: 0.80
+  bearings_39x: 4.68
+  fasteners_inserts: 0.80
+  misc_wiring_thermal: 0.62
+  total: 18.2
+
+open_challenges:
+  - CFRP tube-to-metal insert bonding fatigue under cyclic loading
+  - TPU skin abrasion life quantification (floor contact cycles)
+  - Fall-arrest trajectory integration with structural safety factor targets
+  - IP54 seal friction contribution to joint torque budget (to be measured)
+  - Additive vs machined Ti for complex bracket geometries (cost vs mass)
+
+references:
+  - arXiv:2504.17249   # Berkeley Humanoid Lite CFRP structure
+  - arXiv:2602.03177   # Ground reaction force estimation (2026)
+  - arXiv:2602.17822   # ISO 10218/15066 evolution (2026)
+  - arXiv:2409.06369   # Adaptive robot skin ISO 15066
+  - arXiv:2502.01256   # Soft-is-safe CoboSkin
+  - ISO/TS 15066:2016  # Collaborative robot contact force limits
+  - doi:10.5281/zenodo.18960243  # This article
+
+article_ref: "Article 5 — Structure"
+doi: "10.5281/zenodo.18960243"
+```

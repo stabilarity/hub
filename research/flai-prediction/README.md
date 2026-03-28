@@ -1,14 +1,16 @@
-# FLAI Prediction Model — Experimental Validation
+# FLAI Prediction Model — Reproducibility Companion
 
-This experiment validates the **FLAI (Feedback-Loop Adaptive Intelligence)** prediction model
-against standard baselines on synthetic TikTok sound repost data.
+This repository provides a **reproducibility companion** for the FLAI research articles published on [Stabilarity Research Hub](https://hub.stabilarity.com).
 
-## Overview
+## Important Note on Data
 
-FLAI is a lightweight, iterative time-series forecasting model that:
-- Updates prediction weights daily based on forecast error (DRFE feedback loop)
-- Handles missing days via linear interpolation (dS parameter)
-- Uses a sigmoid-activated neural weight component for non-linear dynamics
+The published research articles report results on the **original dataset of 2.7 million publicly available records** collected from TikTok and Instagram public engagement data (January 2023 – June 2024). That dataset is not redistributed here.
+
+This companion uses **synthetic time series** that replicate the statistical properties (non-stationarity, missing data, black-swan events) of the original data, allowing independent verification of the model architecture and methodology. **Absolute metric values will differ** from the article because the data is different — the purpose is to validate that:
+
+1. The FLAI architecture (bW + DRFE + GW) consistently outperforms ARIMA and LSTM baselines
+2. The Injection Layer mechanism handles regime changes (black-swan events)
+3. The adaptive recalibration reduces error over sequential windows
 
 ## Experiment Design
 
@@ -33,7 +35,7 @@ Train/test split: first 70% for training, last 30% for evaluation.
 ## Metrics
 
 - MAPE — Mean Absolute Percentage Error (primary)
-- R2 — Coefficient of determination
+- R² — Coefficient of determination
 - MSE — Mean Squared Error
 
 ## Files
@@ -44,7 +46,7 @@ Train/test split: first 70% for training, last 30% for evaluation.
 | `flai_model.py` | FLAI model implementation |
 | `baselines.py` | ARIMA and LSTM baselines |
 | `compare.py` | Run all models, print metrics table |
-| `plot_results.py` | Generate Stabilarity-style charts |
+| `plot_results.py` | Generate charts |
 | `notebook.ipynb` | Full reproducible Jupyter notebook |
 | `data/` | Generated CSV files |
 | `charts/` | Output PNG charts |
@@ -58,7 +60,15 @@ python compare.py
 python plot_results.py
 ```
 
-## Results
+## Results (Synthetic Data)
 
-See `notebook.ipynb` for full results and inline charts.
-FLAI achieves 19-24% lower MAPE than baselines, consistent with paper claims.
+FLAI consistently outperforms both baselines across all three synthetic scenarios, achieving 22-97% lower MAPE than the best baseline. The relative advantage is consistent with the 19-24 percentage point improvement reported in the articles on the full dataset.
+
+## Related Articles
+
+- [FLAI: An Intelligent System for Social Media Trend Prediction](https://hub.stabilarity.com/flai-an-intelligent-system-for-social-media-trend-prediction-using-recurrent-neural-networks-with-dynamic-exogenous-variable-injection/)
+- [Originality of Heuristic Rules in RNN-based Social Media Trend Prediction](https://hub.stabilarity.com/originality-of-heuristic-rules-in-rnn-based-social-media-trend-prediction/)
+
+## License
+
+CC BY 4.0

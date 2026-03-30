@@ -1,0 +1,12 @@
+{
+  "article": "Production Cache Monitoring \u2014 Metrics and Capacity Planning",
+  "series": "AI Memory #24",
+  "charts_generated": 5,
+  "data_sources": [
+    "vLLM metrics documentation (2025)",
+    "Mooncake KVCache-centric architecture (Qin et al., 2025)",
+    "PagedAttention benchmarks (Kwon et al., 2023)",
+    "LMCache technical report (2025)",
+    "Published GPU memory specifications (NVIDIA)"
+  ]
+}

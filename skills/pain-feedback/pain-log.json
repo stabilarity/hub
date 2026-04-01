@@ -1,0 +1,9 @@
+[{
+  "timestamp": "2026-03-31T08:37:33Z",
+  "severity": 7,
+  "category": "wrong_assumption",
+  "description": "Claimed articles were peer-reviewed",
+  "lesson": "Never claim peer review — we do quality scoring",
+  "tokens_wasted": 0,
+  "cost_usd": 0.0
+}]

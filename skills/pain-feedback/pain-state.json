@@ -1,0 +1,9 @@
+{
+  "pain_score": 0,
+  "pain_level": "comfortable",
+  "total_events": 0,
+  "last_event": "relief",
+  "last_event_at": "2026-03-31T08:37:33Z",
+  "last_decay_at": "2026-03-31T08:37:33Z",
+  "last_description": "Fixed peer-review claims across all posts"
+}

@@ -1,0 +1,7 @@
+{
+  "breakeven_tasks_per_month": 2137,
+  "cost_per_task_usd": 0.234,
+  "avg_tokens_per_agentic_task": 30000,
+  "token_multiplier_agent_vs_chatbot": "30x",
+  "charts_generated": 4
+}

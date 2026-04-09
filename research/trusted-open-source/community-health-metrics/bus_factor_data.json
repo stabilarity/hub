@@ -1,0 +1,130 @@
+{
+  "micro": [
+    {
+      "name": "Express.js",
+      "bus_factor": 3,
+      "total_contributors": 89,
+      "core_ratio": 0.034
+    },
+    {
+      "name": "Request",
+      "bus_factor": 2,
+      "total_contributors": 163,
+      "core_ratio": 0.012
+    },
+    {
+      "name": "Moment.js",
+      "bus_factor": 2,
+      "total_contributors": 94,
+      "core_ratio": 0.021
+    },
+    {
+      "name": "Left-pad",
+      "bus_factor": 1,
+      "total_contributors": 14,
+      "core_ratio": 0.071
+    },
+    {
+      "name": "colors.js",
+      "bus_factor": 1,
+      "total_contributors": 21,
+      "core_ratio": 0.048
+    }
+  ],
+  "small": [
+    {
+      "name": "Lodash",
+      "bus_factor": 4,
+      "total_contributors": 445,
+      "core_ratio": 0.009
+    },
+    {
+      "name": "Axios",
+      "bus_factor": 3,
+      "total_contributors": 312,
+      "core_ratio": 0.01
+    },
+    {
+      "name": "Webpack",
+      "bus_factor": 5,
+      "total_contributors": 786,
+      "core_ratio": 0.006
+    },
+    {
+      "name": "Babel",
+      "bus_factor": 6,
+      "total_contributors": 892,
+      "core_ratio": 0.007
+    },
+    {
+      "name": "Yarn",
+      "bus_factor": 5,
+      "total_contributors": 456,
+      "core_ratio": 0.011
+    }
+  ],
+  "medium": [
+    {
+      "name": "React",
+      "bus_factor": 12,
+      "total_contributors": 4500,
+      "core_ratio": 0.003
+    },
+    {
+      "name": "Vue.js",
+      "bus_factor": 8,
+      "total_contributors": 3890,
+      "core_ratio": 0.002
+    },
+    {
+      "name": "Angular",
+      "bus_factor": 15,
+      "total_contributors": 6200,
+      "core_ratio": 0.002
+    },
+    {
+      "name": "Django",
+      "bus_factor": 18,
+      "total_contributors": 2900,
+      "core_ratio": 0.006
+    },
+    {
+      "name": "Flask",
+      "bus_factor": 7,
+      "total_contributors": 780,
+      "core_ratio": 0.009
+    }
+  ],
+  "large": [
+    {
+      "name": "Linux Kernel",
+      "bus_factor": 45,
+      "total_contributors": 35000,
+      "core_ratio": 0.001
+    },
+    {
+      "name": "Go",
+      "bus_factor": 22,
+      "total_contributors": 2100,
+      "core_ratio": 0.01
+    },
+    {
+      "name": "VS Code",
+      "bus_factor": 28,
+      "total_contributors": 18500,
+      "core_ratio": 0.002
+    },
+    {
+      "name": "Kubernetes",
+      "bus_factor": 35,
+      "total_contributors": 15000,
+      "core_ratio": 0.002
+    },
+    {
+      "name": "TensorFlow",
+      "bus_factor": 25,
+      "total_contributors": 9800,
+      "core_ratio": 0.003
+    }
+  ]
+}

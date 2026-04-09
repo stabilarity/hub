@@ -1,0 +1,124 @@
+{
+  "projects": [
+    {
+      "name": "Kubernetes",
+      "release_freq": 12,
+      "contrib_velocity": 95,
+      "issue_response": 4,
+      "ci_score": 98,
+      "sustainability": 97
+    },
+    {
+      "name": "React",
+      "release_freq": 10,
+      "contrib_velocity": 92,
+      "issue_response": 6,
+      "ci_score": 95,
+      "sustainability": 95
+    },
+    {
+      "name": "Linux",
+      "release_freq": 52,
+      "contrib_velocity": 99,
+      "issue_response": 2,
+      "ci_score": 100,
+      "sustainability": 99
+    },
+    {
+      "name": "TensorFlow",
+      "release_freq": 6,
+      "contrib_velocity": 88,
+      "issue_response": 8,
+      "ci_score": 90,
+      "sustainability": 88
+    },
+    {
+      "name": "Vue.js",
+      "release_freq": 8,
+      "contrib_velocity": 85,
+      "issue_response": 5,
+      "ci_score": 88,
+      "sustainability": 90
+    },
+    {
+      "name": "Django",
+      "release_freq": 4,
+      "contrib_velocity": 78,
+      "issue_response": 12,
+      "ci_score": 82,
+      "sustainability": 85
+    },
+    {
+      "name": "PostgreSQL",
+      "release_freq": 3,
+      "contrib_velocity": 80,
+      "issue_response": 10,
+      "ci_score": 85,
+      "sustainability": 92
+    },
+    {
+      "name": "VS Code",
+      "release_freq": 11,
+      "contrib_velocity": 90,
+      "issue_response": 3,
+      "ci_score": 96,
+      "sustainability": 94
+    },
+    {
+      "name": "Go",
+      "release_freq": 6,
+      "contrib_velocity": 82,
+      "issue_response": 7,
+      "ci_score": 91,
+      "sustainability": 88
+    },
+    {
+      "name": "Ansible",
+      "release_freq": 7,
+      "contrib_velocity": 75,
+      "issue_response": 9,
+      "ci_score": 80,
+      "sustainability": 82
+    },
+    {
+      "name": "Flask",
+      "release_freq": 3,
+      "contrib_velocity": 60,
+      "issue_response": 18,
+      "ci_score": 65,
+      "sustainability": 72
+    },
+    {
+      "name": "Express",
+      "release_freq": 4,
+      "contrib_velocity": 55,
+      "issue_response": 15,
+      "ci_score": 60,
+      "sustainability": 68
+    },
+    {
+      "name": "Moment.js",
+      "release_freq": 1,
+      "contrib_velocity": 30,
+      "issue_response": 30,
+      "ci_score": 40,
+      "sustainability": 45
+    },
+    {
+      "name": "Request",
+      "release_freq": 0,
+      "contrib_velocity": 15,
+      "issue_response": 60,
+      "ci_score": 20,
+      "sustainability": 25
+    },
+    {
+      "name": "Left-pad",
+      "release_freq": 0,
+      "contrib_velocity": 10,
+      "issue_response": 90,
+      "ci_score": 0,
+      "sustainability": 10
+    }
+  ]
+}

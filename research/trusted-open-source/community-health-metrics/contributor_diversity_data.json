@@ -1,0 +1,434 @@
+[
+  {
+    "owner": "torvalds",
+    "repo": "linux",
+    "years_old": 15,
+    "stars": 227574,
+    "forks": 61463,
+    "contributors_proxy": 8141,
+    "diversity_score": 15.17
+  },
+  {
+    "owner": "golang",
+    "repo": "go",
+    "years_old": 12,
+    "stars": 133335,
+    "forks": 18904,
+    "contributors_proxy": 3328,
+    "diversity_score": 11.11
+  },
+  {
+    "owner": "microsoft",
+    "repo": "vscode",
+    "years_old": 11,
+    "stars": 183583,
+    "forks": 39049,
+    "contributors_proxy": 3422,
+    "diversity_score": 16.69
+  },
+  {
+    "owner": "facebook",
+    "repo": "react",
+    "years_old": 13,
+    "stars": 244499,
+    "forks": 50914,
+    "contributors_proxy": 6670,
+    "diversity_score": 18.81
+  },
+  {
+    "owner": "twbs",
+    "repo": "bootstrap",
+    "years_old": 15,
+    "stars": 174126,
+    "forks": 79007,
+    "contributors_proxy": 6646,
+    "diversity_score": 11.61
+  },
+  {
+    "owner": "tensorflow",
+    "repo": "tensorflow",
+    "years_old": 11,
+    "stars": 194583,
+    "forks": 75254,
+    "contributors_proxy": 7392,
+    "diversity_score": 17.69
+  },
+  {
+    "owner": "pytorch",
+    "repo": "pytorch",
+    "years_old": 10,
+    "stars": 98930,
+    "forks": 27437,
+    "contributors_proxy": 1778,
+    "diversity_score": 9.89
+  },
+  {
+    "owner": "ansible",
+    "repo": "ansible",
+    "years_old": 14,
+    "stars": 68434,
+    "forks": 24160,
+    "contributors_proxy": 1868,
+    "diversity_score": 4.89
+  },
+  {
+    "owner": "kubernetes",
+    "repo": "kubernetes",
+    "years_old": 12,
+    "stars": 121599,
+    "forks": 42820,
+    "contributors_proxy": 3186,
+    "diversity_score": 10.13
+  },
+  {
+    "owner": "helm",
+    "repo": "helm",
+    "years_old": 11,
+    "stars": 29657,
+    "forks": 7561,
+    "contributors_proxy": 492,
+    "diversity_score": 2.7
+  },
+  {
+    "owner": "istio",
+    "repo": "istio",
+    "years_old": 10,
+    "stars": 38089,
+    "forks": 8285,
+    "contributors_proxy": 954,
+    "diversity_score": 3.81
+  },
+  {
+    "owner": "argoproj",
+    "repo": "argo-cd",
+    "years_old": 8,
+    "stars": 22509,
+    "forks": 7030,
+    "contributors_proxy": 177,
+    "diversity_score": 2.81
+  },
+  {
+    "owner": "grafana",
+    "repo": "grafana",
+    "years_old": 13,
+    "stars": 73070,
+    "forks": 13691,
+    "contributors_proxy": 1244,
+    "diversity_score": 5.62
+  },
+  {
+    "owner": "prometheus",
+    "repo": "prometheus",
+    "years_old": 14,
+    "stars": 63466,
+    "forks": 10314,
+    "contributors_proxy": 1096,
+    "diversity_score": 4.53
+  },
+  {
+    "owner": "elastic",
+    "repo": "elasticsearch",
+    "years_old": 16,
+    "stars": 76480,
+    "forks": 25830,
+    "contributors_proxy": 2614,
+    "diversity_score": 4.78
+  },
+  {
+    "owner": "docker",
+    "repo": "compose",
+    "years_old": 13,
+    "stars": 37224,
+    "forks": 5767,
+    "contributors_proxy": 698,
+    "diversity_score": 2.86
+  },
+  {
+    "owner": "tailscale",
+    "repo": "tailscale",
+    "years_old": 6,
+    "stars": 30269,
+    "forks": 2435,
+    "contributors_proxy": 195,
+    "diversity_score": 5.04
+  },
+  {
+    "owner": "neovim",
+    "repo": "neovim",
+    "years_old": 12,
+    "stars": 98397,
+    "forks": 6773,
+    "contributors_proxy": 967,
+    "diversity_score": 8.2
+  },
+  {
+    "owner": "ziglang",
+    "repo": "zig",
+    "years_old": 11,
+    "stars": 42802,
+    "forks": 3068,
+    "contributors_proxy": 388,
+    "diversity_score": 3.89
+  },
+  {
+    "owner": "denoland",
+    "repo": "deno",
+    "years_old": 8,
+    "stars": 106492,
+    "forks": 5996,
+    "contributors_proxy": 1377,
+    "diversity_score": 13.31
+  },
+  {
+    "owner": "vitejs",
+    "repo": "vite",
+    "years_old": 6,
+    "stars": 79705,
+    "forks": 8030,
+    "contributors_proxy": 473,
+    "diversity_score": 13.28
+  },
+  {
+    "owner": "tailwindlabs",
+    "repo": "tailwindcss",
+    "years_old": 9,
+    "stars": 94416,
+    "forks": 5183,
+    "contributors_proxy": 637,
+    "diversity_score": 10.49
+  },
+  {
+    "owner": "vercel",
+    "repo": "next.js",
+    "years_old": 10,
+    "stars": 138751,
+    "forks": 30829,
+    "contributors_proxy": 1523,
+    "diversity_score": 13.88
+  },
+  {
+    "owner": "remix-run",
+    "repo": "remix",
+    "years_old": 6,
+    "stars": 32558,
+    "forks": 2752,
+    "contributors_proxy": 250,
+    "diversity_score": 5.43
+  },
+  {
+    "owner": "sveltejs",
+    "repo": "svelte",
+    "years_old": 10,
+    "stars": 86225,
+    "forks": 4876,
+    "contributors_proxy": 842,
+    "diversity_score": 8.62
+  },
+  {
+    "owner": "shadcn-ui",
+    "repo": "ui",
+    "years_old": 3,
+    "stars": 111799,
+    "forks": 8469,
+    "contributors_proxy": 325,
+    "diversity_score": 37.27
+  },
+  {
+    "owner": "anthropics",
+    "repo": "anthropic-cookbook",
+    "years_old": 3,
+    "stars": 37705,
+    "forks": 4183,
+    "contributors_proxy": 507,
+    "diversity_score": 12.57
+  },
+  {
+    "owner": "openai",
+    "repo": "whisper",
+    "years_old": 4,
+    "stars": 97363,
+    "forks": 11999,
+    "contributors_proxy": 721,
+    "diversity_score": 24.34
+  },
+  {
+    "owner": "mistralai",
+    "repo": "cookbook",
+    "years_old": 2,
+    "stars": 2216,
+    "forks": 494,
+    "contributors_proxy": 40,
+    "diversity_score": 1.11
+  },
+  {
+    "owner": "ollama",
+    "repo": "ollama",
+    "years_old": 3,
+    "stars": 168181,
+    "forks": 15457,
+    "contributors_proxy": 925,
+    "diversity_score": 56.06
+  },
+  {
+    "owner": "numpy",
+    "repo": "numpy",
+    "years_old": 16,
+    "stars": 31768,
+    "forks": 12274,
+    "contributors_proxy": 591,
+    "diversity_score": 1.99
+  },
+  {
+    "owner": "scipy",
+    "repo": "scipy",
+    "years_old": 15,
+    "stars": 14587,
+    "forks": 5686,
+    "contributors_proxy": 341,
+    "diversity_score": 0.97
+  },
+  {
+    "owner": "pandas-dev",
+    "repo": "pandas",
+    "years_old": 16,
+    "stars": 48411,
+    "forks": 19857,
+    "contributors_proxy": 1111,
+    "diversity_score": 3.03
+  },
+  {
+    "owner": "scikit-learn",
+    "repo": "scikit-learn",
+    "years_old": 16,
+    "stars": 65708,
+    "forks": 26904,
+    "contributors_proxy": 2114,
+    "diversity_score": 4.11
+  },
+  {
+    "owner": "matplotlib",
+    "repo": "matplotlib",
+    "years_old": 15,
+    "stars": 22694,
+    "forks": 8315,
+    "contributors_proxy": 579,
+    "diversity_score": 1.51
+  },
+  {
+    "owner": "jupyter",
+    "repo": "jupyterlab",
+    "years_old": 10,
+    "stars": 15063,
+    "forks": 3951,
+    "contributors_proxy": 299,
+    "diversity_score": 1.51
+  },
+  {
+    "owner": "jupyter",
+    "repo": "notebook",
+    "years_old": 11,
+    "stars": 13063,
+    "forks": 5637,
+    "contributors_proxy": 324,
+    "diversity_score": 1.19
+  },
+  {
+    "owner": "ipython",
+    "repo": "ipython",
+    "years_old": 16,
+    "stars": 16691,
+    "forks": 4468,
+    "contributors_proxy": 716,
+    "diversity_score": 1.04
+  },
+  {
+    "owner": "nltk",
+    "repo": "nltk",
+    "years_old": 17,
+    "stars": 14589,
+    "forks": 3005,
+    "contributors_proxy": 442,
+    "diversity_score": 0.86
+  },
+  {
+    "owner": "huggingface",
+    "repo": "transformers",
+    "years_old": 8,
+    "stars": 159044,
+    "forks": 32799,
+    "contributors_proxy": 1195,
+    "diversity_score": 19.88
+  },
+  {
+    "owner": "gradio-app",
+    "repo": "gradio",
+    "years_old": 8,
+    "stars": 42274,
+    "forks": 3378,
+    "contributors_proxy": 192,
+    "diversity_score": 5.28
+  },
+  {
+    "owner": "langchain-ai",
+    "repo": "langchain",
+    "years_old": 4,
+    "stars": 132808,
+    "forks": 21916,
+    "contributors_proxy": 831,
+    "diversity_score": 33.2
+  },
+  {
+    "owner": "crewAIInc",
+    "repo": "crewai",
+    "years_old": 3,
+    "stars": 48350,
+    "forks": 6595,
+    "contributors_proxy": 346,
+    "diversity_score": 16.12
+  },
+  {
+    "owner": "apache",
+    "repo": "superset",
+    "years_old": 11,
+    "stars": 72288,
+    "forks": 16992,
+    "contributors_proxy": 1532,
+    "diversity_score": 6.57
+  },
+  {
+    "owner": "apache",
+    "repo": "airflow",
+    "years_old": 11,
+    "stars": 44952,
+    "forks": 16840,
+    "contributors_proxy": 760,
+    "diversity_score": 4.09
+  },
+  {
+    "owner": "apache",
+    "repo": "kafka",
+    "years_old": 15,
+    "stars": 32321,
+    "forks": 15092,
+    "contributors_proxy": 1048,
+    "diversity_score": 2.15
+  },
+  {
+    "owner": "apache",
+    "repo": "spark",
+    "years_old": 12,
+    "stars": 43102,
+    "forks": 29148,
+    "contributors_proxy": 1999,
+    "diversity_score": 3.59
+  },
+  {
+    "owner": "jenkinsci",
+    "repo": "jenkins",
+    "years_old": 16,
+    "stars": 25180,
+    "forks": 9461,
+    "contributors_proxy": 843,
+    "diversity_score": 1.57
+  }
+]

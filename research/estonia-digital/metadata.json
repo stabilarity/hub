@@ -1,0 +1,19 @@
+{
+  "title": "Estonia Digital Transformation - Data Analysis",
+  "created": "2026-04-09",
+  "source": "Stabilarity Research Hub",
+  "charts": [
+    "estonia_digital_adoption.png - Digital government adoption trends",
+    "shadow_economy_comparison.png - Shadow economy Estonia vs Ukraine",
+    "digital_maturity_comparison.png - Digital maturity by component",
+    "tax_compliance_transformation.png - Tax compliance metrics transformation"
+  ],
+  "data_sources": [
+    "Estonian Digital Government Agency (eGA)",
+    "European Commission Digital Decade Report 2025",
+    "OECD Government at a Glance 2025",
+    "IMF Shadow Economy Estimates",
+    "World Bank Digital Governance in Action",
+    "Schneider Shadow Economy Database"
+  ]
+}

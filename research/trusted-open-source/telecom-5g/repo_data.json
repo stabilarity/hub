@@ -1,0 +1,105 @@
+[
+  {
+    "full_name": "openairinterface/openairinterface5g",
+    "stars": 161,
+    "forks": 107,
+    "open_issues": 3,
+    "language": "C",
+    "created": "2023",
+    "license": "Other",
+    "topics": [],
+    "url": "https://github.com/openairinterface/openairinterface5g"
+  },
+  {
+    "full_name": "free5gc/free5gc",
+    "stars": 2272,
+    "forks": 719,
+    "open_issues": 126,
+    "language": "Go",
+    "created": "2020",
+    "license": "Apache License 2.0",
+    "topics": [
+      "3gpp",
+      "5g",
+      "5gc",
+      "amf",
+      "ausf",
+      "core-network",
+      "free5gc",
+      "n3iwf",
+      "nrf",
+      "nssf",
+      "pcf",
+      "release15",
+      "smf",
+      "udm",
+      "udr",
+      "upf"
+    ],
+    "url": "https://github.com/free5gc/free5gc"
+  },
+  {
+    "full_name": "open5gs/open5gs",
+    "stars": 2519,
+    "forks": 1007,
+    "open_issues": 253,
+    "language": "C",
+    "created": "2017",
+    "license": "GNU Affero General Public License v3.0",
+    "topics": [
+      "3gpp",
+      "4g",
+      "5g",
+      "5gc",
+      "core",
+      "epc",
+      "lte",
+      "network",
+      "nr",
+      "open5gs"
+    ],
+    "url": "https://github.com/open5gs/open5gs"
+  },
+  {
+    "full_name": "srsran/srsRAN_4G",
+    "stars": 3918,
+    "forks": 1263,
+    "open_issues": 337,
+    "language": "C++",
+    "created": "2013",
+    "license": "GNU Affero General Public License v3.0",
+    "topics": [
+      "lte",
+      "sdr",
+      "srs",
+      "srsenb",
+      "srsepc",
+      "srslte",
+      "srsran",
+      "srsue",
+      "wireless"
+    ],
+    "url": "https://github.com/srsran/srsRAN_4G"
+  },
+  {
+    "full_name": "srsran/srsRAN_4G",
+    "stars": 3918,
+    "forks": 1263,
+    "open_issues": 337,
+    "language": "C++",
+    "created": "2013",
+    "license": "GNU Affero General Public License v3.0",
+    "topics": [
+      "lte",
+      "sdr",
+      "srs",
+      "srsenb",
+      "srsepc",
+      "srslte",
+      "srsran",
+      "srsue",
+      "wireless"
+    ],
+    "url": "https://github.com/srsran/srsRAN_4G"
+  }
+]

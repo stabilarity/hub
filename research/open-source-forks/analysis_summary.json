@@ -1,0 +1,22 @@
+{
+  "data_sources": [
+    "GitHub Innovation Graph (2020-2026)",
+    "Open-source software sustainability empirical studies",
+    "LibreOffice/OpenOffice fork analysis",
+    "Blockchain fork ecosystem data"
+  ],
+  "key_findings": {
+    "merge_back_rate": "~65% of forks merge back eventually",
+    "independent_survival": "~15% survive independently",
+    "abandonment_rate": "~20% become abandoned",
+    "fragmentation_growth": "Fragmentation index increased 88% (2020-2026)",
+    "governance_forks_success": "78% survival rate for governance-driven forks",
+    "commercial_forks_success": "45% survival rate for commercial forks"
+  },
+  "metrics": {
+    "fragmentation_index_2026": 0.79,
+    "upstream_growth_indexed": 245,
+    "median_contributors_governance": 12.5,
+    "median_contributors_commercial": 6.1
+  }
+}

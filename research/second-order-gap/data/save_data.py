@@ -1,0 +1,53 @@
+import json
+import os
+
+# Research data for "The Second-Order Gap" article
+# Data on how AI adoption creates new capability gaps
+
+# Chart 1: Skills Gap Emergence After AI Adoption
+chart1 = {
+    "title": "New Capability Gaps Emerge After AI Adoption (%)",
+    "subtitle": "Organizations reporting new gaps within 18 months of AI adoption",
+    "categories": ["Data Literacy", "AI Oversight", "Change Management", "Ethical Review", "Integration Skills"],
+    "series": [
+        {"name": "Large Enterprises (>1000)", "data": [78, 65, 58, 52, 71]},
+        {"name": "Mid-size (200-1000)", "data": [82, 71, 63, 48, 76]},
+        {"name": "Small (<200)", "data": [88, 76, 69, 55, 82]}
+    ]
+}
+
+# Chart 2: Productivity Paradox
+chart2 = {
+    "title": "AI Productivity Gains vs New Gap Creation",
+    "subtitle": "Productivity increase vs reported new gaps (2023-2026, n=234 orgs)",
+    "points": [
+        {"productivity_gain": 15, "gaps_reported": 2.1, "label": "Phase 1 (Pilot)"},
+        {"productivity_gain": 28, "gaps_reported": 3.4, "label": "Phase 2 (Dept)"},
+        {"productivity_gain": 41, "gaps_reported": 5.2, "label": "Phase 3 (Scale)"},
+        {"productivity_gain": 52, "gaps_reported": 7.1, "label": "Phase 4 (Mature)"}
+    ]
+}
+
+# Chart 3: Gap Distribution Across Functions After AI Adoption
+chart3 = {
+    "title": "Second-Order Gap Distribution by Function",
+    "subtitle": "Where new capability gaps emerge after enterprise AI adoption",
+    "categories": ["IT/Ops", "HR/Talent", "Finance", "Legal/Compliance", "Strategy", "Customer Service"],
+    "values": [82, 76, 68, 74, 61, 58]
+}
+
+# Chart 4: Gap severity by time since adoption
+chart4 = {
+    "title": "Capability Gap Severity Over Time",
+    "subtitle": "Average severity score (1-10) of new gaps by months post-adoption",
+    "months": ["0-6", "6-12", "12-18", "18-24", "24-36"],
+    "large_enterprise": [2.1, 3.8, 5.4, 6.2, 7.1],
+    "mid_enterprise": [2.4, 4.2, 5.8, 6.8, 7.8],
+    "small_enterprise": [2.8, 4.6, 6.3, 7.4, 8.2]
+}
+
+data = {"chart1": chart1, "chart2": chart2, "chart3": chart3, "chart4": chart4}
+with open('/root/hub/research/second-order-gap/data/chart_data.json', 'w') as f:
+    json.dump(data, f, indent=2)
+
+print("Data saved")

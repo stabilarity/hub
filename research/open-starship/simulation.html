@@ -102,32 +102,38 @@
 <div id="keys">Space: play/pause &nbsp;&nbsp;|&nbsp;&nbsp; R: reset</div>
 <div id="loaderr"></div>
 
-<script type="importmap">
-{
-  "imports": {
-    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
-    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
-  }
-}
-</script>
+<!-- Classic script tags (non-module) — reliable in iframes -->
+<script src="https://cdn.jsdelivr.net/npm/three@0.123.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.123.0/examples/js/controls/OrbitControls.js"></script>
 
-<script type="module">
-import * as THREE from 'three';
-import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+<script>
+// ─── Global Error Handler ────────────────────────────────────────────────────
+window.addEventListener('error', function(e) {
+  var err = document.getElementById('loaderr');
+  var msg = e.message || (e.error && e.error.message) || 'Unknown error';
+  var src = e.filename ? e.filename.split('/').pop() : '';
+  var ln  = e.lineno ? ' (line ' + e.lineno + ')' : '';
+  err.textContent = 'Error' + (src ? ' in ' + src : '') + ln + ': ' + msg;
+  err.style.display = 'block';
+  console.error('JS Error:', e);
+});
+window.addEventListener('unhandledrejection', function(e) {
+  var err = document.getElementById('loaderr');
+  err.textContent = 'Promise Error: ' + (e.reason && e.reason.message ? e.reason.message : String(e.reason));
+  err.style.display = 'block';
+});
 
-// ─── Constants ─────────────────────────────────────────────────────────────────
-const EARTH_R   = 60;
-const BOOSTER_H = 14;
-const BOOSTER_R = 1.35;
-const SHIP_H    = 10;
-const SHIP_R    = 1.1;
+// ─── Constants ───────────────────────────────────────────────────────────────
+var EARTH_R   = 60;
+var BOOSTER_H = 14;
+var BOOSTER_R = 1.35;
+var SHIP_H    = 10;
+var SHIP_R    = 1.1;
 
-// Rocket world Y (base of booster on pad surface)
-const ROCKET_Y  = EARTH_R + 0.5 + BOOSTER_H * 0.5; // ~67.5
+var ROCKET_Y  = EARTH_R + 0.5 + BOOSTER_H * 0.5;
 
-// Timeline
-const T0=2, T1=12, T2=16, T3=24, T4=30, T5=40, T6=58, T7=88, T8=98, T9=118, T10=162, T11=177;
-const PHS = [
+var T0=2, T1=12, T2=16, T3=24, T4=30, T5=40, T6=58, T7=88, T8=98, T9=118, T10=162, T11=177;
+var PHS = [
   'Pre-launch','Liftoff & Ascent','Stage Separation','Boostback Burn',
   'Re-entry Burn','Booster Landing','Orbit Circularization',
   'Trans-Lunar Injection','Lunar Orbit Insertion','Lunar Surface',
@@ -137,105 +143,105 @@ const PHS = [
 function el(t) { return t < 0.5 ? 2*t*t : -1+(4-2*t)*t; }
 function lp(a, b, t) { return a + (b-a)*t; }
 
-// ─── Renderer ─────────────────────────────────────────────────────────────────
-const renderer = new THREE.WebGLRenderer({ antialias: true });
-renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
-renderer.setSize(innerWidth, innerHeight);
+// ─── Renderer ────────────────────────────────────────────────────────────────
+var renderer = new THREE.WebGLRenderer({ antialias: true });
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.shadowMap.enabled = true;
 renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 renderer.toneMapping = THREE.ACESFilmicToneMapping;
 renderer.toneMappingExposure = 1.15;
 document.body.appendChild(renderer.domElement);
 
-// ─── Scene ────────────────────────────────────────────────────────────────────
-const scene = new THREE.Scene();
+// ─── Scene ───────────────────────────────────────────────────────────────────
+var scene = new THREE.Scene();
 scene.background = new THREE.Color(0x030308);
 scene.fog = new THREE.FogExp2(0x030308, 0.00028);
 
-// ─── Camera ───────────────────────────────────────────────────────────────────
-// Wide view — clearly shows earth + rocket on top
-const camera = new THREE.PerspectiveCamera(55, innerWidth / innerHeight, 0.1, 2000);
-// Position: far enough to see full earth, rocket clearly visible on top
+// ─── Camera — Wide preset (earth + rocket clearly visible) ───────────────────
+var camera = new THREE.PerspectiveCamera(55, window.innerWidth / window.innerHeight, 0.1, 2000);
 camera.position.set(80, 130, 80);
 camera.lookAt(0, ROCKET_Y, 0);
 
-// ─── Controls ─────────────────────────────────────────────────────────────────
-const controls = new OrbitControls(camera, renderer.domElement);
+// ─── Controls ────────────────────────────────────────────────────────────────
+var controls = new THREE.OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true;
 controls.dampingFactor = 0.05;
 controls.minDistance = 4;
 controls.maxDistance = 900;
 controls.enabled = false;
 
-// ─── Lights ───────────────────────────────────────────────────────────────────
-const sun = new THREE.DirectionalLight(0xfff8e0, 3.2);
+// ─── Lights ─────────────────────────────────────────────────────────────────
+var sun = new THREE.DirectionalLight(0xfff8e0, 3.2);
 sun.position.set(300, 220, 120);
 sun.castShadow = true;
 sun.shadow.mapSize.width = 2048;
 sun.shadow.mapSize.height = 2048;
-Object.assign(sun.shadow.camera, { near: 1, far: 600, left: -150, right: 150, top: 150, bottom: -150 });
+sun.shadow.camera.near = 1;
+sun.shadow.camera.far = 600;
+sun.shadow.camera.left = -150;
+sun.shadow.camera.right = 150;
+sun.shadow.camera.top = 150;
+sun.shadow.camera.bottom = -150;
 sun.shadow.bias = -0.0005;
 scene.add(sun);
 
-scene.add(new THREE.DirectionalLight(0x4a6fa8, 0.65).tap(l => l.position.set(-150, 90, -100)));
+var d2 = new THREE.DirectionalLight(0x4a6fa8, 0.65);
+d2.position.set(-150, 90, -100);
+scene.add(d2);
 scene.add(new THREE.AmbientLight(0x0d1a2a, 1.0));
 
-// Engine glow lights
-const glow1 = new THREE.PointLight(0xff8800, 0, 100);
-const glow2 = new THREE.PointLight(0xffdd00, 0, 50);
+var glow1 = new THREE.PointLight(0xff8800, 0, 100);
+var glow2 = new THREE.PointLight(0xffdd00, 0, 50);
 scene.add(glow1, glow2);
 
-// ─── Stars ────────────────────────────────────────────────────────────────────
+// ─── Stars ──────────────────────────────────────────────────────────────────
 (function() {
-  const n = 5000, pos = new Float32Array(n*3);
-  for (let i = 0; i < n; i++) {
-    const th = Math.random()*Math.PI*2;
-    const ph = Math.acos(2*Math.random()-1);
-    const r  = 900 + Math.random()*50;
+  var n = 5000, pos = new Float32Array(n*3);
+  for (var i = 0; i < n; i++) {
+    var th = Math.random()*Math.PI*2;
+    var ph = Math.acos(2*Math.random()-1);
+    var r  = 900 + Math.random()*50;
     pos[i*3]   = r*Math.sin(ph)*Math.cos(th);
     pos[i*3+1] = r*Math.sin(ph)*Math.sin(th);
     pos[i*3+2] = r*Math.cos(ph);
   }
-  const g = new THREE.BufferGeometry();
+  var g = new THREE.BufferGeometry();
   g.setAttribute('position', new THREE.BufferAttribute(pos, 3));
   scene.add(new THREE.Points(g, new THREE.PointsMaterial({ color:0xffffff, size:0.9, sizeAttenuation:true })));
 })();
 
-// ─── Earth ────────────────────────────────────────────────────────────────────
+// ─── Earth ──────────────────────────────────────────────────────────────────
 (function() {
-  // Land sphere (green)
-  const land = new THREE.Mesh(
+  var land = new THREE.Mesh(
     new THREE.SphereGeometry(EARTH_R, 72, 72),
     new THREE.MeshStandardMaterial({ color: 0x1e5028, roughness: 0.92 })
   );
   land.receiveShadow = true;
   scene.add(land);
 
-  // Darker patches
-  const patch = new THREE.Mesh(
+  var patch = new THREE.Mesh(
     new THREE.SphereGeometry(EARTH_R+0.08, 72, 72),
     new THREE.MeshStandardMaterial({ color:0x163820, transparent:true, opacity:0.65, roughness:1.0 })
   );
   scene.add(patch);
 
-  // Atmosphere
-  const atmo = new THREE.Mesh(
+  var atmo = new THREE.Mesh(
     new THREE.SphereGeometry(EARTH_R*1.025, 48, 48),
     new THREE.ShaderMaterial({
       vertexShader: 'varying vec3 n; void main(){ n=normalize(normalMatrix*normal); gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.); }',
       fragmentShader: 'varying vec3 n; void main(){ float d=max(dot(n,vec3(0,0,1)),0.0); gl_FragColor=vec4(0.18,0.48,1.0,pow(1.0-d,3.0)*0.68); }',
-      blending: THREE.AdditiveBlending, side: THREE.BackSphere, transparent:true, depthWrite:false
+      blending: THREE.AdditiveBlending, side: THREE.BackSide, transparent:true, depthWrite:false
     })
   );
   scene.add(atmo);
 })();
 
-// ─── Launch Complex ───────────────────────────────────────────────────────────
+// ─── Launch Complex ──────────────────────────────────────────────────────────
 (function() {
-  const mat = c => new THREE.MeshStandardMaterial({ color:c, roughness:0.85, metalness:0.1 });
+  var mat = function(c) { return new THREE.MeshStandardMaterial({ color:c, roughness:0.85, metalness:0.1 }); };
 
-  // Ground platform
-  const ground = new THREE.Mesh(
+  var ground = new THREE.Mesh(
     new THREE.CylinderGeometry(28, 28, 0.5, 32),
     new THREE.MeshStandardMaterial({ color:0x3a3a3a, roughness:0.95 })
   );
@@ -243,16 +249,14 @@ scene.add(glow1, glow2);
   ground.receiveShadow = true;
   scene.add(ground);
 
-  // Pad
-  const pad = new THREE.Mesh(new THREE.CylinderGeometry(4.5, 4.5, 0.5, 20), mat(0x5a5a5a));
+  var pad = new THREE.Mesh(new THREE.CylinderGeometry(4.5, 4.5, 0.5, 20), mat(0x5a5a5a));
   pad.position.y = EARTH_R + 0.5;
   pad.receiveShadow = true;
   scene.add(pad);
 
-  // Yellow pad markings
-  for (let i = 0; i < 12; i++) {
-    const a = (i/12)*Math.PI*2;
-    const m = new THREE.Mesh(
+  for (var i = 0; i < 12; i++) {
+    var a = (i/12)*Math.PI*2;
+    var m = new THREE.Mesh(
       new THREE.BoxGeometry(0.2, 0.04, 2.8),
       new THREE.MeshStandardMaterial({ color:0xffc107, roughness:0.7, emissive:0x332200 })
     );
@@ -261,42 +265,37 @@ scene.add(glow1, glow2);
     scene.add(m);
   }
 
-  // Tower
-  const tMat = mat(0x7c7c7c);
-  const tower = new THREE.Mesh(new THREE.BoxGeometry(0.75, 18, 0.75), tMat);
+  var tMat = mat(0x7c7c7c);
+  var tower = new THREE.Mesh(new THREE.BoxGeometry(0.75, 18, 0.75), tMat);
   tower.position.set(6.5, EARTH_R+9.5, 0);
   tower.castShadow = true;
   scene.add(tower);
 
-  // Boom arm
-  const boom = new THREE.Mesh(new THREE.BoxGeometry(4.2, 0.35, 0.35), tMat);
+  var boom = new THREE.Mesh(new THREE.BoxGeometry(4.2, 0.35, 0.35), tMat);
   boom.position.set(3.8, EARTH_R+16.2, 0);
   boom.rotation.z = -0.3;
   scene.add(boom);
 
-  // Cross braces
-  for (let i = 0; i < 3; i++) {
-    const brace = new THREE.Mesh(new THREE.BoxGeometry(0.15, 5.5, 0.15), mat(0x646464));
-    const a = i*Math.PI*0.5 + Math.PI*0.25;
-    brace.position.set(6.5+Math.cos(a)*2.1, EARTH_R+5+i*2.8, Math.sin(a)*2.1);
-    brace.rotation.z = (i%2===0?1:-1)*0.55;
+  for (var j = 0; j < 3; j++) {
+    var brace = new THREE.Mesh(new THREE.BoxGeometry(0.15, 5.5, 0.15), mat(0x646464));
+    var ba = j*Math.PI*0.5 + Math.PI*0.25;
+    brace.position.set(6.5+Math.cos(ba)*2.1, EARTH_R+5+j*2.8, Math.sin(ba)*2.1);
+    brace.rotation.z = (j%2===0?1:-1)*0.55;
     scene.add(brace);
   }
 
-  // Flame trench
-  scene.add(Object.assign(
-    new THREE.Mesh(new THREE.BoxGeometry(2.8, 0.4, 5.5), new THREE.MeshStandardMaterial({ color:0x1a1a1a, roughness:1.0 })),
-    { position: new THREE.Vector3(0, EARTH_R+0.2, 5.5) }
-  ));
+  var ft = new THREE.Mesh(new THREE.BoxGeometry(2.8, 0.4, 5.5), new THREE.MeshStandardMaterial({ color:0x1a1a1a, roughness:1.0 }));
+  ft.position.set(0, EARTH_R+0.2, 5.5);
+  scene.add(ft);
 })();
 
-// ─── Moon ─────────────────────────────────────────────────────────────────────
-const MOON_DIST = 480;
+// ─── Moon ───────────────────────────────────────────────────────────────────
+var MOON_DIST = 480;
 
 (function addMoonOrbit() {
-  const pts = [];
-  for (let i = 0; i <= 80; i++) {
-    const a = (i/80)*Math.PI*2;
+  var pts = [];
+  for (var i = 0; i <= 80; i++) {
+    var a = (i/80)*Math.PI*2;
     pts.push(new THREE.Vector3(Math.cos(a)*MOON_DIST, 0, Math.sin(a)*MOON_DIST));
   }
   scene.add(new THREE.Line(
@@ -306,9 +305,9 @@ const MOON_DIST = 480;
 })();
 
 (function addEarthOrbit() {
-  const pts = [];
-  for (let i = 0; i <= 80; i++) {
-    const a = (i/80)*Math.PI*2;
+  var pts = [];
+  for (var i = 0; i <= 80; i++) {
+    var a = (i/80)*Math.PI*2;
     pts.push(new THREE.Vector3(Math.cos(a)*(EARTH_R+3.5), 0, Math.sin(a)*(EARTH_R+3.5)));
   }
   scene.add(new THREE.Line(
@@ -317,113 +316,118 @@ const MOON_DIST = 480;
   ));
 })();
 
-const moon = new THREE.Mesh(
+var moon = new THREE.Mesh(
   new THREE.SphereGeometry(16, 40, 40),
   new THREE.MeshStandardMaterial({ color:0xcccccc, roughness:0.95, metalness:0.05 })
 );
 scene.add(moon);
 
-// ─── Rocket ──────────────────────────────────────────────────────────────────
-const mMat = (c, em, ei) => new THREE.MeshStandardMaterial({ color:c, roughness:0.35, metalness:0.85, emissive:em||0x000000, emissiveIntensity:ei||0.05 });
+// ─── Rocket ─────────────────────────────────────────────────────────────────
+var mMat = function(c, em, ei) { return new THREE.MeshStandardMaterial({ color:c, roughness:0.35, metalness:0.85, emissive:em||0x000000, emissiveIntensity:ei||0.05 }); };
 
-// Booster
-const booster = new THREE.Group();
+var booster = new THREE.Group();
 (function b() {
-  booster.add(Object.assign(
-    new THREE.Mesh(new THREE.CylinderGeometry(BOOSTER_R, BOOSTER_R, BOOSTER_H, 32), mMat(0xd0d0d0)),
-    { castShadow: true }
-  ));
-  const hdr = new THREE.Mesh(new THREE.CylinderGeometry(BOOSTER_R*.93,BOOSTER_R*.93,BOOSTER_H*.1,32), mMat(0x444444,0x110000,.2));
+  var bm = new THREE.Mesh(new THREE.CylinderGeometry(BOOSTER_R, BOOSTER_R, BOOSTER_H, 32), mMat(0xd0d0d0));
+  bm.castShadow = true;
+  booster.add(bm);
+
+  var hdr = new THREE.Mesh(new THREE.CylinderGeometry(BOOSTER_R*.93,BOOSTER_R*.93,BOOSTER_H*.1,32), mMat(0x444444,0x110000,.2));
   hdr.position.y = BOOSTER_H*.45; booster.add(hdr);
-  const its = new THREE.Mesh(new THREE.CylinderGeometry(BOOSTER_R*1.07,BOOSTER_R*1.05,.65,32), mMat(0xaaaaaa));
+
+  var its = new THREE.Mesh(new THREE.CylinderGeometry(BOOSTER_R*1.07,BOOSTER_R*1.05,.65,32), mMat(0xaaaaaa));
   its.position.y = BOOSTER_H*.42; booster.add(its);
-  for (let i = 0; i < 4; i++) {
-    const fin = new THREE.Mesh(new THREE.BoxGeometry(.13,1.7,1.0), mMat(0x606060));
-    const a = i*Math.PI/2;
+
+  for (var i = 0; i < 4; i++) {
+    var fin = new THREE.Mesh(new THREE.BoxGeometry(.13,1.7,1.0), mMat(0x606060));
+    var a = i*Math.PI/2;
     fin.position.set(Math.cos(a)*(BOOSTER_R+.45), BOOSTER_H*.38, Math.sin(a)*(BOOSTER_R+.45));
     fin.rotation.y = a; booster.add(fin);
   }
-  for (let i = 0; i < 13; i++) {
-    const out = i>=7, idx = out?i-7:i, a = idx*(Math.PI*2/6)+(out?Math.PI/6:0), ro = out?.62:0;
-    const bell = new THREE.Mesh(new THREE.CylinderGeometry(out?.24:.16, out?.36:.22, .5, 14), mMat(0x909090));
-    bell.position.set(Math.cos(a)*ro, -BOOSTER_H*.5+.25, Math.sin(a)*ro); booster.add(bell);
+
+  for (var i = 0; i < 13; i++) {
+    var out = i>=7, idx = out?i-7:i, ang = idx*(Math.PI*2/6)+(out?Math.PI/6:0), ro = out?.62:0;
+    var bell = new THREE.Mesh(new THREE.CylinderGeometry(out?.24:.16, out?.36:.22, .5, 14), mMat(0x909090));
+    bell.position.set(Math.cos(ang)*ro, -BOOSTER_H*.5+.25, Math.sin(ang)*ro); booster.add(bell);
   }
-  for (let i = 0; i < 4; i++) {
-    const leg = new THREE.Mesh(new THREE.BoxGeometry(.13,2.6,.45), mMat(0x686868));
-    const a = i*Math.PI/2+.4;
+
+  for (var i = 0; i < 4; i++) {
+    var leg = new THREE.Mesh(new THREE.BoxGeometry(.13,2.6,.45), mMat(0x686868));
+    var a = i*Math.PI/2+.4;
     leg.position.set(Math.cos(a)*(BOOSTER_R+.4), -BOOSTER_H*.26, Math.sin(a)*(BOOSTER_R+.4));
     leg.rotation.y = a; leg.rotation.z = .28; booster.add(leg);
   }
 })();
 
-// Ship
-const ship = new THREE.Group();
+var ship = new THREE.Group();
 (function s() {
-  ship.add(Object.assign(
-    new THREE.Mesh(new THREE.CylinderGeometry(SHIP_R,SHIP_R,SHIP_H,32), mMat(0xe2e2e2)),
-    { castShadow: true }
-  ));
-  const nose = new THREE.Mesh(new THREE.ConeGeometry(SHIP_R,2.5,32), mMat(0xcccccc));
+  var sm = new THREE.Mesh(new THREE.CylinderGeometry(SHIP_R,SHIP_R,SHIP_H,32), mMat(0xe2e2e2));
+  sm.castShadow = true;
+  ship.add(sm);
+
+  var nose = new THREE.Mesh(new THREE.ConeGeometry(SHIP_R,2.5,32), mMat(0xcccccc));
   nose.position.y = SHIP_H*.5+1.25; ship.add(nose);
-  const win = new THREE.Mesh(new THREE.CylinderGeometry(SHIP_R*1.002,SHIP_R*1.002,.75,32), mMat(0x1a237e,0x0d1b4a,.7));
+
+  var win = new THREE.Mesh(new THREE.CylinderGeometry(SHIP_R*1.002,SHIP_R*1.002,.75,32), mMat(0x1a237e,0x0d1b4a,.7));
   win.position.y = SHIP_H*.15; ship.add(win);
-  for (let i = 0; i < 3; i++) {
-    const a = i*2.094+Math.PI/2;
-    const bell = new THREE.Mesh(new THREE.CylinderGeometry(.2,.33,.6,14), mMat(0x808080));
+
+  for (var i = 0; i < 3; i++) {
+    var a = i*2.094+Math.PI/2;
+    var bell = new THREE.Mesh(new THREE.CylinderGeometry(.2,.33,.6,14), mMat(0x808080));
     bell.position.set(Math.cos(a)*.5, -SHIP_H*.5+.3, Math.sin(a)*.5); ship.add(bell);
   }
-  for (let i = 0; i < 2; i++) {
-    const fin = new THREE.Mesh(new THREE.BoxGeometry(.12,1.15,.78), mMat(0x555555));
+
+  for (var i = 0; i < 2; i++) {
+    var fin = new THREE.Mesh(new THREE.BoxGeometry(.12,1.15,.78), mMat(0x555555));
     fin.position.set((i===0?1:-1)*(SHIP_R+.28), SHIP_H*.28, 0); ship.add(fin);
   }
-  for (let i = 0; i < 2; i++) {
-    const flap = new THREE.Mesh(new THREE.BoxGeometry(.12,1.75,.88), mMat(0xb0b0b0));
+
+  for (var i = 0; i < 2; i++) {
+    var flap = new THREE.Mesh(new THREE.BoxGeometry(.12,1.75,.88), mMat(0xb0b0b0));
     flap.position.set((i===0?1:-1)*(SHIP_R+.2), -SHIP_H*.13, 0); ship.add(flap);
   }
 })();
 
-// Stack
 ship.position.y = BOOSTER_H*.5 + .65 + SHIP_H*.5;
-const rocket = new THREE.Group();
+var rocket = new THREE.Group();
 rocket.add(booster, ship);
 rocket.position.set(0, ROCKET_Y, 0);
 scene.add(rocket);
 
-// ─── Particles ────────────────────────────────────────────────────────────────
-const PC=600, PG=new THREE.BufferGeometry(), PP=new Float32Array(PC*3), PV=new Float32Array(PC*3), PL=new Float32Array(PC);
+// ─── Particles ───────────────────────────────────────────────────────────────
+var PC=600, PG=new THREE.BufferGeometry(), PP=new Float32Array(PC*3), PV=new Float32Array(PC*3), PL=new Float32Array(PC);
 PG.setAttribute('position', new THREE.BufferAttribute(PP,3));
 scene.add(new THREE.Points(PG, new THREE.PointsMaterial({ color:0xff9800, size:1.4, transparent:true, opacity:.9, blending:THREE.AdditiveBlending, depthWrite:false, sizeAttenuation:true })));
 
-const PC2=250, PG2=new THREE.BufferGeometry(), PP2=new Float32Array(PC2*3), PV2=new Float32Array(PC2*3), PL2=new Float32Array(PC2);
+var PC2=250, PG2=new THREE.BufferGeometry(), PP2=new Float32Array(PC2*3), PV2=new Float32Array(PC2*3), PL2=new Float32Array(PC2);
 PG2.setAttribute('position', new THREE.BufferAttribute(PP2,3));
 scene.add(new THREE.Points(PG2, new THREE.PointsMaterial({ color:0xfff0a0, size:.9, transparent:true, opacity:.95, blending:THREE.AdditiveBlending, depthWrite:false, sizeAttenuation:true })));
 
 function emit(wp, n, vy, sp, h) {
-  const Pp=h?PP2:PP, Pv=h?PV2:PV, Pl=h?PL2:PL, cnt=h?PC2:PC;
-  let j=0;
-  for (let i=0; i<cnt&&j<n; i++) {
+  var Pp = h?PP2:PP, Pv = h?PV2:PV, Pl = h?PL2:PL, cnt = h?PC2:PC;
+  var j = 0;
+  for (var i=0; i<cnt && j<n; i++) {
     if (Pl[i]<=0) {
-      Pl[i]=.35+Math.random()*.75;
-      Pp[i*3]  =wp.x+(Math.random()-.5)*sp;
-      Pp[i*3+1]=wp.y;
-      Pp[i*3+2]=wp.z+(Math.random()-.5)*sp;
-      Pv[i*3]  =(Math.random()-.5)*vy*.3;
-      Pv[i*3+1]=-(Math.random()*vy*(h?.6:1));
-      Pv[i*3+2]=(Math.random()-.5)*vy*.3;
+      Pl[i] = .35+Math.random()*.75;
+      Pp[i*3]   = wp.x+(Math.random()-.5)*sp;
+      Pp[i*3+1] = wp.y;
+      Pp[i*3+2] = wp.z+(Math.random()-.5)*sp;
+      Pv[i*3]   = (Math.random()-.5)*vy*.3;
+      Pv[i*3+1] = -(Math.random()*vy*(h?.6:1));
+      Pv[i*3+2] = (Math.random()-.5)*vy*.3;
       j++;
     }
   }
 }
 
 function updP(dt) {
-  let a1=false, a2=false;
-  for (let i=0;i<PC;i++) {
+  var a1=false, a2=false;
+  for (var i=0;i<PC;i++) {
     if (PL[i]>0) {
       PL[i]-=dt; PP[i*3]+=PV[i*3]*dt; PP[i*3+1]+=PV[i*3+1]*dt; PP[i*3+2]+=PV[i*3+2]*dt;
       if (PL[i]<=0) PP[i*3+1]=-1e5; else a1=true;
     }
   }
-  for (let i=0;i<PC2;i++) {
+  for (var i=0;i<PC2;i++) {
     if (PL2[i]>0) {
       PL2[i]-=dt; PP2[i*3]+=PV2[i*3]*dt; PP2[i*3+1]+=PV2[i*3+1]*dt; PP2[i*3+2]+=PV2[i*3+2]*dt;
       if (PL2[i]<=0) PP2[i*3+1]=-1e5; else a2=true;
@@ -434,10 +438,10 @@ function updP(dt) {
 }
 
 // ─── UI ──────────────────────────────────────────────────────────────────────
-let run=false, t=0, sep=false, pidx=0, earthRot=0;
-let cam='tower';
+var run=false, t=0, sep=false, pidx=0, earthRot=0;
+var cam='wide';
 
-const PRESETS = {
+var PRESETS = {
   tower:  { p: new THREE.Vector3(28,82,28),   t: new THREE.Vector3(0,ROCKET_Y+6,0) },
   pad:    { p: new THREE.Vector3(8,EARTH_R+4,14), t: new THREE.Vector3(0,EARTH_R+20,0) },
   wide:   { p: new THREE.Vector3(80,130,80),   t: new THREE.Vector3(0,ROCKET_Y,0) },
@@ -445,111 +449,110 @@ const PRESETS = {
   follow: null
 };
 
-document.getElementById('btn-start').addEventListener('click', () => {
+document.getElementById('btn-start').addEventListener('click', function() {
   document.getElementById('start').style.display = 'none';
-  ['hud','bar','legend','keys'].forEach(id => document.getElementById(id).style.display = id==='bar'?'flex':(id==='keys'?'':'block'));
+  document.getElementById('hud').style.display = 'block';
+  document.getElementById('bar').style.display = 'flex';
+  document.getElementById('legend').style.display = 'block';
   document.getElementById('keys').style.display = '';
   run = true;
-  const pb = document.getElementById('play');
+  var pb = document.getElementById('play');
   pb.textContent = '⏸ Pause'; pb.classList.add('on');
 });
 
-document.getElementById('play').addEventListener('click', () => {
+document.getElementById('play').addEventListener('click', function() {
   run = !run;
-  const pb = document.getElementById('play');
+  var pb = document.getElementById('play');
   pb.textContent = run ? '⏸ Pause' : '▶ Play';
   pb.classList.toggle('on', run);
 });
 
-document.getElementById('cam').addEventListener('change', e => {
+document.getElementById('cam').addEventListener('change', function(e) {
   cam = e.target.value;
   controls.enabled = cam === 'free';
-  const pr = PRESETS[cam];
+  var pr = PRESETS[cam];
   if (pr) { camera.position.copy(pr.p); controls.target.copy(pr.t); camera.lookAt(pr.t); }
   if (cam === 'follow') { camera.position.set(40,ROCKET_Y+30,80); controls.target.set(0,ROCKET_Y+15,0); }
 });
 
-window.addEventListener('keydown', e => {
+window.addEventListener('keydown', function(e) {
   if (document.getElementById('start').style.display !== 'none') return;
   if (e.code === 'Space') {
     run = !run;
-    const pb = document.getElementById('play');
+    var pb = document.getElementById('play');
     pb.textContent = run ? '⏸ Pause' : '▶ Play';
     pb.classList.toggle('on', run);
     e.preventDefault();
   }
   if (e.code === 'KeyR') {
     t=0; sep=false; run=true; pidx=0;
-    const pb = document.getElementById('play');
+    var pb = document.getElementById('play');
     pb.textContent = '⏸ Pause'; pb.classList.add('on');
     document.getElementById('tm').textContent = '0';
     document.getElementById('ph').textContent = 'Pre-launch';
   }
 });
 
-window.addEventListener('resize', () => {
-  camera.aspect = innerWidth / innerHeight;
+window.addEventListener('resize', function() {
+  camera.aspect = window.innerWidth / window.innerHeight;
   camera.updateProjectionMatrix();
-  renderer.setSize(innerWidth, innerHeight);
+  renderer.setSize(window.innerWidth, window.innerHeight);
 });
 
 // ─── Animation ───────────────────────────────────────────────────────────────
-let last = performance.now();
+var last = performance.now();
 
 function animate() {
   requestAnimationFrame(animate);
-  const now = performance.now();
-  const dt = Math.min((now - last) / 1000, 0.05);
+  var now = performance.now();
+  var dt = Math.min((now - last) / 1000, 0.05);
   last = now;
 
   if (run) t += dt;
 
-  // Earth rotation
   earthRot += dt * 0.01;
   scene.rotation.y = earthRot;
 
-  // Moon orbit
-  const ms = 0.055;
+  var ms = 0.055;
   moon.position.set(Math.cos(ms*t)*MOON_DIST, Math.sin(ms*t*0.2)*10, Math.sin(ms*t)*MOON_DIST);
   moon.rotation.y += dt * 0.07;
 
-  // Phase
-  const pts = [T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11];
-  pidx = Math.min(pts.filter(v=>t>=v).length, pts.length-1);
+  var pts = [T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11];
+  pidx = Math.min(pts.filter(function(v){return t>=v;}).length, pts.length-1);
 
   // ── Booster ──
-  let bp = new THREE.Vector3(), bq = new THREE.Quaternion();
+  var bp = new THREE.Vector3(), bq = new THREE.Quaternion();
 
   if (t < T0) {
     bp.set(0, ROCKET_Y, 0);
   } else if (t < T1) {
-    const p = (t-T0)/(T1-T0);
-    const alt = lp(ROCKET_Y, EARTH_R+14+SHIP_H, el(p));
-    const l  = p * Math.PI * 0.48;
+    var p = (t-T0)/(T1-T0);
+    var alt = lp(ROCKET_Y, EARTH_R+14+SHIP_H, el(p));
+    var l  = p * Math.PI * 0.48;
     bp.set(Math.sin(l)*alt, Math.cos(l)*alt, 0);
     bq.setFromEuler(new THREE.Euler(-l*.72,0,0));
-    const wpb = booster.localToWorld(new THREE.Vector3(0,-BOOSTER_H*.5,0));
+    var wpb = booster.localToWorld(new THREE.Vector3(0,-BOOSTER_H*.5,0));
     emit(wpb, 18, 5.2, 0.9, false);
     emit(wpb, 8, 3.4, 0.45, true);
     glow1.position.copy(wpb); glow2.position.copy(wpb);
   } else if (t < T2) {
-    const p = (t-T1)/(T2-T1);
-    const alt = EARTH_R+14+SHIP_H + p*5;
-    const l  = Math.PI*.48 + p*.28;
+    var p = (t-T1)/(T2-T1);
+    var alt = EARTH_R+14+SHIP_H + p*5;
+    var l  = Math.PI*.48 + p*.28;
     bp.set(Math.sin(l)*alt, Math.cos(l)*alt, 0);
     bq.setFromEuler(new THREE.Euler(-l*.72,0,0));
   } else if (t < T3) {
-    const p = (t-T2)/(T3-T2);
-    const alt = lp(EARTH_R+19, EARTH_R+14, p);
-    const l  = lp(Math.PI*.76, Math.PI*.12, el(p));
+    var p = (t-T2)/(T3-T2);
+    var alt = lp(EARTH_R+19, EARTH_R+14, p);
+    var l  = lp(Math.PI*.76, Math.PI*.12, el(p));
     bp.set(Math.sin(l)*alt, Math.cos(l)*alt, 0);
     bq.setFromEuler(new THREE.Euler(-l,0,0));
     emit(bp, 13, 3.6, 0.75, false);
     glow1.position.copy(bp);
   } else if (t < T4) {
-    const p = (t-T3)/(T4-T3);
-    const alt = lp(EARTH_R+14, ROCKET_Y, el(p));
-    const l  = lp(Math.PI*.12, Math.PI*2.0, el(p));
+    var p = (t-T3)/(T4-T3);
+    var alt = lp(EARTH_R+14, ROCKET_Y, el(p));
+    var l  = lp(Math.PI*.12, Math.PI*2.0, el(p));
     bp.set(Math.sin(l)*alt, Math.cos(l)*alt, 0);
     bq.setFromEuler(new THREE.Euler(-l*.22,0,0));
     if (p > 0.4) {
@@ -564,51 +567,51 @@ function animate() {
   booster.quaternion.copy(bq);
 
   // ── Ship ──
-  let sp = new THREE.Vector3(), sq = new THREE.Quaternion();
-  const SBY = EARTH_R + 0.5 + BOOSTER_H + 0.65 + SHIP_H*.5;
+  var sp = new THREE.Vector3(), sq = new THREE.Quaternion();
+  var SBY = EARTH_R + 0.5 + BOOSTER_H + 0.65 + SHIP_H*.5;
 
   if (t < T0) {
     sp.set(0, SBY, 0);
   } else if (t < T5) {
-    const p = (t-T0)/(T5-T0);
-    const alt = lp(SBY, EARTH_R+3.5, el(Math.min(p*1.05,1)));
-    const l  = p * Math.PI * 2.1;
+    var p = (t-T0)/(T5-T0);
+    var alt = lp(SBY, EARTH_R+3.5, el(Math.min(p*1.05,1)));
+    var l  = p * Math.PI * 2.1;
     sp.set(Math.sin(l)*alt, Math.cos(l)*alt, 0);
     sq.setFromEuler(new THREE.Euler(-l*.8,0,0));
     if (t > T1) { emit(sp, 11, 3.1, 0.6, false); emit(sp, 5, 2.1, 0.35, true); }
   } else if (t < T6) {
-    const p = (t-T5)/(T6-T5);
-    const l  = Math.PI*2.1 + p*Math.PI*.8;
-    const alt = EARTH_R+3.5 + p*2;
+    var p = (t-T5)/(T6-T5);
+    var l  = Math.PI*2.1 + p*Math.PI*.8;
+    var alt = EARTH_R+3.5 + p*2;
     sp.set(Math.sin(l)*alt, Math.cos(l)*alt, 0);
     sq.setFromEuler(new THREE.Euler(-l*.8,0,0));
   } else if (t < T7) {
-    const p = (t-T6)/(T7-T6);
-    const dist = lp(EARTH_R+5, MOON_DIST-16-10, el(p));
-    const l   = lp(Math.PI*2.9, Math.PI*2.2, p);
+    var p = (t-T6)/(T7-T6);
+    var dist = lp(EARTH_R+5, MOON_DIST-16-10, el(p));
+    var l   = lp(Math.PI*2.9, Math.PI*2.2, p);
     sp.set(Math.sin(l)*dist, Math.cos(l)*dist*.1, Math.sin(l*.3)*8);
     sq.setFromEuler(new THREE.Euler(-l*.42,0,l*.04));
     emit(sp, 8, 3.6, 0.7, false);
   } else if (t < T8) {
-    const p = (t-T7)/(T8-T7);
-    const ma = p*Math.PI*4, sr = 16+3;
+    var p = (t-T7)/(T8-T7);
+    var ma = p*Math.PI*4, sr = 16+3;
     sp.set(MOON_DIST+Math.cos(ma)*sr, Math.sin(ma)*sr*.2, Math.sin(ma)*sr);
     sq.setFromEuler(new THREE.Euler(0,ma,0));
   } else if (t < T9) {
-    const ma = Math.PI*4, sr = 16+3;
+    var ma = Math.PI*4, sr = 16+3;
     sp.set(MOON_DIST+Math.cos(ma)*sr, Math.sin(ma)*sr*.2, Math.sin(ma)*sr);
     sq.setFromEuler(new THREE.Euler(0,ma,0));
   } else if (t < T10) {
-    const p = (t-T9)/(T10-T9);
-    const dist = lp(MOON_DIST+16+3, EARTH_R+3.5, el(p));
-    const ph  = lp(Math.PI*5.0, Math.PI*3.5, p);
+    var p = (t-T9)/(T10-T9);
+    var dist = lp(MOON_DIST+16+3, EARTH_R+3.5, el(p));
+    var ph  = lp(Math.PI*5.0, Math.PI*3.5, p);
     sp.set(Math.cos(ph)*dist, Math.sin(ph)*dist*.07, Math.sin(ph*.7)*12);
     sq.setFromEuler(new THREE.Euler(0,ph,0));
     emit(sp, 9, 3.6, 0.7, false);
   } else if (t < T11) {
-    const p = (t-T10)/(T11-T10);
-    const alt = lp(EARTH_R+3.5, EARTH_R+.5+SHIP_H*.5, el(p));
-    const l  = lp(Math.PI*3.5, Math.PI*4.5, p);
+    var p = (t-T10)/(T11-T10);
+    var alt = lp(EARTH_R+3.5, EARTH_R+.5+SHIP_H*.5, el(p));
+    var l  = lp(Math.PI*3.5, Math.PI*4.5, p);
     sp.set(Math.cos(l)*alt, Math.sin(l)*alt, 0);
     sq.setFromEuler(new THREE.Euler(-l*.16,0,0));
     if (p > 0.4) { emit(sp, 15, 3.1, 0.85, false); emit(sp, 6, 2.1, 0.45, true); }
@@ -621,10 +624,9 @@ function animate() {
 
   if (t >= T1 && !sep) { sep = true; ship.position.y += 0.5; }
 
-  // Camera follow
   if (cam === 'follow') {
-    const tgt = (t < T1 || t > T4) ? ship : booster;
-    const tp = tgt.position;
+    var tgt = (t < T1 || t > T4) ? ship : booster;
+    var tp = tgt.position;
     camera.position.lerp(new THREE.Vector3(tp.x+16, tp.y+8, tp.z+16), 0.022);
     controls.target.lerp(tp, 0.04);
   }
@@ -633,7 +635,6 @@ function animate() {
   updP(dt);
   renderer.render(scene, camera);
 
-  // HUD
   document.getElementById('tm').textContent = Math.floor(t);
   document.getElementById('ph').textContent = PHS[pidx];
 }

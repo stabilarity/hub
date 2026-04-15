@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Open Starship — 3D Simulation</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #000; overflow: hidden; font-family: system-ui, sans-serif; }
+  #info {
+    position: absolute; top: 16px; left: 16px; color: #fff;
+    font-size: 13px; line-height: 1.7; z-index: 10;
+    background: rgba(0,0,0,0.7); padding: 12px 16px; border: 1px solid #333;
+  }
+  #info b { color: #f9a825; }
+  #legend {
+    position: absolute; bottom: 16px; left: 16px; color: #aaa;
+    font-size: 12px; z-index: 10; background: rgba(0,0,0,0.7);
+    padding: 10px 14px; border: 1px solid #333;
+  }
+  .dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; }
+  canvas { display: block; }
+  #reload {
+    position: absolute; top: 16px; right: 16px; color: #fff;
+    font-size: 12px; z-index: 10; background: rgba(0,0,0,0.7);
+    padding: 8px 12px; border: 1px solid #333; cursor: pointer;
+  }
+  #reload:hover { background: rgba(50,50,50,0.9); }
+</style>
+</head>
+<body>
+
+<div id="info">
+  <b>Open Starship</b> — Two-Stage Reusable Rocket<br>
+  <b>Stage 1:</b> Super Heavy (boosters return)<br>
+  <b>Stage 2:</b> Starship (Moon transit capable)<br>
+  <b>Controls:</b> Drag to orbit · Scroll to zoom<br>
+  <b>Space:</b> Play/Pause &nbsp; <b>R:</b> Reset &nbsp; <b>V:</b> Toggle view
+</div>
+<div id="legend">
+  <span class="dot" style="background:#f9a825"></span>Super Heavy (Stage 1)<br>
+  <span class="dot" style="background:#c62828"></span>Starship (Stage 2)<br>
+  <span class="dot" style="background:#2e7d32"></span>Lunar orbit path<br>
+  <span class="dot" style="background:#1565c0"></span>Earth parking orbit
+</div>
+<button id="reload" onclick="location.reload()">↺ Reload</button>
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+// ─── Scene ───────────────────────────────────────────────────────────────────
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x000008);
+
+const camera = new THREE.PerspectiveCamera(55, innerWidth / innerHeight, 0.1, 50000);
+camera.position.set(0, 60, 220);
+
+const renderer = new THREE.WebGLRenderer({ antialias: true });
+renderer.setSize(innerWidth, innerHeight);
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+renderer.shadowMap.enabled = true;
+document.body.appendChild(renderer.domElement);
+
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.enableDamping = true;
+controls.dampingFactor = 0.05;
+controls.minDistance = 20;
+controls.maxDistance = 800;
+
+// ─── Lighting ────────────────────────────────────────────────────────────────
+const sun = new THREE.DirectionalLight(0xfff8e1, 2.2);
+sun.position.set(400, 200, 300);
+sun.castShadow = true;
+scene.add(sun);
+scene.add(new THREE.AmbientLight(0x1a237e, 0.4));
+
+// ─── Stars ───────────────────────────────────────────────────────────────────
+function createStars(count = 9000) {
+  const geo = new THREE.BufferGeometry();
+  const pos = new Float32Array(count * 3);
+  for (let i = 0; i < count * 3; i++) pos[i] = (Math.random() - 0.5) * 40000;
+  geo.setAttribute('position', new THREE.BufferAttribute(pos, 3));
+  return new THREE.Points(geo, new THREE.PointsMaterial({ color: 0xffffff, size: 0.7, sizeAttenuation: true }));
+}
+scene.add(createStars());
+
+// ─── Earth ───────────────────────────────────────────────────────────────────
+const EARTH_R = 60;
+const ATMOS_R = EARTH_R * 1.045;
+
+function createEarth() {
+  const g = new THREE.Group();
+
+  // Atmosphere glow
+  const atmo = new THREE.Mesh(
+    new THREE.SphereGeometry(ATMOS_R, 64, 64),
+    new THREE.ShaderMaterial({
+      vertexShader: `varying vec3 vN; void main(){ vN=normalize(normalMatrix*normal); gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.); }`,
+      fragmentShader: `varying vec3 vN; void main(){ float a=pow(0.7-dot(vN,vec3(0,0,1)),2.5); gl_FragColor=vec4(0.3,0.6,1.,a*0.55); }`,
+      blending: THREE.AdditiveBlending, side: THREE.BackSphere, transparent: true, depthWrite: false
+    })
+  );
+  g.add(atmo);
+
+  // Surface
+  const mesh = new THREE.Mesh(
+    new THREE.SphereGeometry(EARTH_R, 72, 72),
+    new THREE.MeshStandardMaterial({ color: 0x1a6b3a, roughness: 0.9, metalness: 0.0 })
+  );
+  mesh.receiveShadow = true;
+  g.add(mesh);
+
+  // Continent patches (simplified)
+  const continents = new THREE.Mesh(
+    new THREE.SphereGeometry(EARTH_R + 0.05, 72, 72),
+    new THREE.MeshStandardMaterial({ color: 0x2e7d32, roughness: 1.0, transparent: true, opacity: 0.6 })
+  );
+  g.add(continents);
+
+  // Cloud layer
+  const clouds = new THREE.Mesh(
+    new THREE.SphereGeometry(EARTH_R + 0.3, 64, 64),
+    new THREE.MeshStandardMaterial({ color: 0xffffff, transparent: true, opacity: 0.25, depthWrite: false })
+  );
+  g.add(clouds);
+
+  return g;
+}
+const earth = createEarth();
+scene.add(earth);
+
+// ─── Moon ────────────────────────────────────────────────────────────────────
+const MOON_R = 16;
+const MOON_DIST = 560;
+const MOON_ORBIT_R = 50; // orbit radius of moon (visual only)
+
+function createMoon() {
+  const g = new THREE.Group();
+  const mesh = new THREE.Mesh(
+    new THREE.SphereGeometry(MOON_R, 48, 48),
+    new THREE.MeshStandardMaterial({ color: 0xbbbbbb, roughness: 0.95, metalness: 0.05 })
+  );
+  mesh.castShadow = true;
+  g.add(mesh);
+
+  // Moon orbit ring
+  const ring = new THREE.Mesh(
+    new THREE.TorusGeometry(MOON_DIST, 0.4, 8, 120),
+    new THREE.MeshBasicMaterial({ color: 0x2e7d32, transparent: true, opacity: 0.35 })
+  );
+  ring.rotation.x = Math.PI / 2;
+  scene.add(ring);
+
+  return g;
+}
+const moon = createMoon();
+moon.position.set(MOON_DIST, 0, 0);
+scene.add(moon);
+
+// ─── Orbit Paths ──────────────────────────────────────────────────────────────
+function addOrbitPath(radius, color, opacity = 0.3) {
+  const pts = [];
+  for (let i = 0; i <= 128; i++) {
+    const a = (i / 128) * Math.PI * 2;
+    pts.push(new THREE.Vector3(Math.cos(a) * radius, 0, Math.sin(a) * radius));
+  }
+  const geo = new THREE.BufferGeometry().setFromPoints(pts);
+  scene.add(new THREE.Line(geo, new THREE.LineBasicMaterial({ color, transparent: true, opacity })));
+}
+
+// Earth parking orbit (e.g. 200km = EARTH_R + 3 units visual)
+addOrbitPath(EARTH_R + 3, 0x1565c0, 0.5);
+// Transfer orbit to Moon
+addOrbitPath(MOON_DIST * 0.55, 0x2e7d32, 0.25);
+// Moon orbit
+addOrbitPath(MOON_DIST, 0x2e7d32, 0.4);
+
+// ─── Rocket Builder ───────────────────────────────────────────────────────────
+function makeMetal(color, emissive = 0x000000) {
+  return new THREE.MeshStandardMaterial({ color, roughness: 0.35, metalness: 0.85, emissive, emissiveIntensity: 0.08 });
+}
+function makeTile(color) {
+  return new THREE.MeshStandardMaterial({ color, roughness: 0.7, metalness: 0.1 });
+}
+
+// Super Heavy booster (Stage 1) — ~70m tall, ~9m diameter → scaled
+const BOOSTER_H = 14;   // visual height
+const BOOSTER_R = 1.35;  // visual radius
+
+function createBooster() {
+  const g = new THREE.Group();
+
+  // Body cylinder
+  const body = new THREE.Mesh(new THREE.CylinderGeometry(BOOSTER_R, BOOSTER_R, BOOSTER_H, 32), makeMetal(0xd0d0d0));
+  body.castShadow = true;
+  g.add(body);
+
+  // Header tank (top darker section)
+  const header = new THREE.Mesh(new THREE.CylinderGeometry(BOOSTER_R * 0.95, BOOSTER_R * 0.95, BOOSTER_H * 0.12, 32), makeMetal(0x555555, 0x220000));
+  header.position.y = BOOSTER_H * 0.44;
+  g.add(header);
+
+  // Interstage ring
+  const inter = new THREE.Mesh(new THREE.CylinderGeometry(BOOSTER_R * 1.08, BOOSTER_R * 1.08, 0.6, 32), makeMetal(0x888888));
+  inter.position.y = BOOSTER_H * 0.42;
+  g.add(inter);
+
+  // Grid fins (4x)
+  for (let i = 0; i < 4; i++) {
+    const fin = new THREE.Mesh(new THREE.BoxGeometry(0.15, 1.8, 1.0), makeMetal(0x666666));
+    fin.position.set(Math.cos(i * Math.PI / 2) * (BOOSTER_R + 0.5), BOOSTER_H * 0.38, Math.sin(i * Math.PI / 2) * (BOOSTER_R + 0.5));
+    fin.rotation.y = i * Math.PI / 2;
+    g.add(fin);
+  }
+
+  // Engine bell cluster (bottom)
+  for (let i = 0; i < 13; i++) {
+    const r = i < 7 ? 0.25 : 0.4;
+    const ang = i * (Math.PI * 2 / (i < 7 ? 6 : 6));
+    const offset = i < 7 ? 0 : 0.6;
+    const bell = new THREE.Mesh(new THREE.CylinderGeometry(r * 0.6, r, 0.5, 16), makeMetal(0x999999));
+    bell.position.set(Math.cos(ang) * offset, -BOOSTER_H * 0.5 + 0.25, Math.sin(ang) * offset);
+    g.add(bell);
+  }
+
+  // Landing legs (folded/retracted — shown folded)
+  for (let i = 0; i < 4; i++) {
+    const leg = new THREE.Mesh(new THREE.BoxGeometry(0.15, 2.5, 0.5), makeMetal(0x888888));
+    leg.position.set(Math.cos(i * Math.PI / 2 + 0.4) * (BOOSTER_R + 0.4), -BOOSTER_H * 0.3, Math.sin(i * Math.PI / 2 + 0.4) * (BOOSTER_R + 0.4));
+    leg.rotation.y = i * Math.PI / 2 + 0.4;
+    leg.rotation.z = 0.3;
+    g.add(leg);
+  }
+
+  return g;
+}
+
+// Starship upper stage — ~50m tall, ~9m wide → scaled
+const SHIP_H = 10;
+const SHIP_R = 1.1;
+
+function createShip() {
+  const g = new THREE.Group();
+
+  // Main fuselage
+  const body = new THREE.Mesh(new THREE.CylinderGeometry(SHIP_R, SHIP_R, SHIP_H, 32), makeMetal(0xe8e8e8));
+  body.castShadow = true;
+  g.add(body);
+
+  // Nose cone
+  const nose = new THREE.Mesh(new THREE.ConeGeometry(SHIP_R, 2.5, 32), makeMetal(0xcccccc));
+  nose.position.y = SHIP_H * 0.5 + 1.25;
+  g.add(nose);
+
+  // Window band
+  const win = new THREE.Mesh(new THREE.CylinderGeometry(SHIP_R * 1.005, SHIP_R * 1.005, 0.8, 32), makeMetal(0x1a237e, 0x0d1b4a));
+  win.position.y = SHIP_H * 0.15;
+  g.add(win);
+
+  // Raptor engines (3 visible)
+  for (let i = 0; i < 3; i++) {
+    const bell = new THREE.Mesh(new THREE.CylinderGeometry(0.22, 0.35, 0.6, 16), makeMetal(0x888888));
+    bell.position.set(Math.cos(i * 2.094 + Math.PI / 2) * 0.5, -SHIP_H * 0.5 + 0.3, Math.sin(i * 2.094 + Math.PI / 2) * 0.5);
+    g.add(bell);
+  }
+
+  // Grid fins (2 visible)
+  for (let i = 0; i < 2; i++) {
+    const fin = new THREE.Mesh(new THREE.BoxGeometry(0.15, 1.2, 0.8), makeMetal(0x555555));
+    fin.position.set((i === 0 ? 1 : -1) * (SHIP_R + 0.3), SHIP_H * 0.3, 0);
+    g.add(fin);
+  }
+
+  // Flaps (aero surfaces)
+  for (let i = 0; i < 2; i++) {
+    const flap = new THREE.Mesh(new THREE.BoxGeometry(0.15, 1.8, 0.9), makeMetal(0xaaaaaa));
+    flap.position.set((i === 0 ? 1 : -1) * (SHIP_R + 0.2), -SHIP_H * 0.15, 0);
+    g.add(flap);
+  }
+
+  return g;
+}
+
+const booster = createBooster();
+const ship = createShip();
+
+// ─── Combined rocket (pre-staging) ──────────────────────────────────────────
+// Stack: booster base at y=0, ship on top
+const totalH = BOOSTER_H * 0.5 + 0.6 + SHIP_H * 0.5; // interstage + ship
+ship.position.y = BOOSTER_H * 0.5 + 0.6 + SHIP_H * 0.5;
+
+// Both attached initially
+const rocket = new THREE.Group();
+rocket.add(booster);
+rocket.add(ship);
+// Lift off position: on Earth's surface
+rocket.position.set(0, EARTH_R + BOOSTER_H * 0.5 + 1, 0);
+scene.add(rocket);
+
+// ─── Exhaust particles ───────────────────────────────────────────────────────
+const PCOUNT = 600;
+const pGeo = new THREE.BufferGeometry();
+const pPos = new Float32Array(PCOUNT * 3);
+const pVel = new Float32Array(PCOUNT * 3);
+const pLife = new Float32Array(PCOUNT);
+pGeo.setAttribute('position', new THREE.BufferAttribute(pPos, 3));
+
+const pMat = new THREE.PointsMaterial({
+  color: 0xff9800, size: 0.9, transparent: true, opacity: 0.85,
+  blending: THREE.AdditiveBlending, depthWrite: false
+});
+const exhaust = new THREE.Points(pGeo, pMat);
+scene.add(exhaust);
+
+function emitExhaust(worldPos, count, velScale, spread) {
+  let j = 0;
+  for (let i = 0; i < PCOUNT && j < count; i++) {
+    if (pLife[i] <= 0) {
+      pLife[i] = 0.6 + Math.random() * 0.6;
+      pPos[i*3]   = worldPos.x + (Math.random()-0.5)*spread;
+      pPos[i*3+1] = worldPos.y + (Math.random()-0.5)*spread;
+      pPos[i*3+2] = worldPos.z + (Math.random()-0.5)*spread;
+      pVel[i*3]   = (Math.random()-0.5)*velScale;
+      pVel[i*3+1] = -(Math.random()*velScale*1.5);
+      pVel[i*3+2] = (Math.random()-0.5)*velScale;
+      j++;
+    }
+  }
+}
+
+function updateExhaust(dt) {
+  for (let i = 0; i < PCOUNT; i++) {
+    if (pLife[i] > 0) {
+      pLife[i] -= dt;
+      pPos[i*3]   += pVel[i*3]   * dt;
+      pPos[i*3+1] += pVel[i*3+1] * dt;
+      pPos[i*3+2] += pVel[i*3+2] * dt;
+      if (pLife[i] <= 0) pPos[i*3+1] = -1e6;
+    }
+  }
+  pGeo.attributes.position.needsUpdate = true;
+}
+
+// ─── State Machine ────────────────────────────────────────────────────────────
+// Phase timeline (seconds from t=0)
+const T_LIFTOFF     = 0;
+const T_MECO        = 10;   // Main Engine Cutoff (booster sep)
+const T_BOOSTBACK   = 14;   // Boostback burn starts
+const T_ENTRYBURN   = 22;  // Stage 1 re-entry burn
+const T_LANDING     = 28;  // Stage 1 lands
+const T_S2_CIRC     = 38;  // Ship circularizes / coast
+const T_TLI         = 55;  // Trans-Lunar Injection
+const T_MOON_ORBIT  = 85;  // Ship enters Moon orbit
+const T_LUNAR_SURFACE = 95; // Lands on Moon
+const T_RETURN      = 115; // Departure
+const T_HOME         = 160; // Earth re-entry
+const T_SPLASH       = 175; // Lands in ocean
+
+const PHASE_LABELS = [
+  'Pre-launch', 'Liftoff & Ascent', 'MECO — Stage Separation',
+  'Boostback Burn', 'Re-entry Burn', 'Landing — Stage 1',
+  'Orbit Circularization', 'Trans-Lunar Injection',
+  'Lunar Orbit Insertion', 'Lunar Surface',
+  'Trans-Earth Injection', 'Re-entry & Landing'
+];
+
+let phaseIdx = 0;
+let playing = true;
+let simTime = 0;
+let separated = false;
+
+// Animation helpers
+function easeInOut(t) { return t < 0.5 ? 2*t*t : -1+(4-2*t)*t; }
+function lerp(a, b, t) { return a + (b - a) * t; }
+
+// Earth rotation
+let earthRot = 0;
+
+// Main loop
+let last = performance.now();
+function animate() {
+  requestAnimationFrame(animate);
+  const now = performance.now();
+  const dt = Math.min((now - last) / 1000, 0.05);
+  last = now;
+
+  if (playing) simTime += dt;
+
+  const t = simTime;
+  const info = document.getElementById('info');
+
+  // Phase detection
+  const phases = [T_LIFTOFF, T_MECO, T_BOOSTBACK, T_ENTRYBURN, T_LANDING, T_S2_CIRC, T_TLI, T_MOON_ORBIT, T_LUNAR_SURFACE, T_RETURN, T_HOME, T_SPLASH];
+  phaseIdx = phases.filter(v => t >= v).length;
+  phaseIdx = Math.min(phaseIdx, phases.length - 1);
+
+  // Earth rotation
+  earthRot += dt * 0.02;
+  earth.rotation.y = earthRot;
+  moon.rotation.y = earthRot * 0.1; // moon orbits Earth
+
+  // ── Stage 1 (booster) path ──
+  let bPos = new THREE.Vector3();
+  let bQuat = new THREE.Quaternion();
+
+  if (t < T_LIFTOFF) {
+    // Pre-launch
+    bPos.set(0, EARTH_R + BOOSTER_H * 0.5, 0);
+    bQuat.setFromEuler(new THREE.Euler(0, 0, 0));
+  } else if (t < T_MECO) {
+    // Powered ascent
+    const pct = (t - T_LIFTOFF) / (T_MECO - T_LIFTOFF);
+    const alt = lerp(EARTH_R + BOOSTER_H * 0.5, EARTH_R + 15 + SHIP_H, easeInOut(pct));
+    const lon = pct * Math.PI * 0.5;
+    bPos.set(Math.sin(lon) * alt, Math.cos(lon) * alt, 0);
+    bQuat.setFromEuler(new THREE.Euler(-lon * 0.8, 0, 0));
+    // Exhaust
+    const wPos = rocket.localToWorld(new THREE.Vector3(0, -BOOSTER_H * 0.5, 0));
+    emitExhaust(wPos, 10, 3, 0.5);
+  } else if (t < T_BOOSTBACK) {
+    // Coast + separation
+    const pct = (t - T_MECO) / (T_BOOSTBACK - T_MECO);
+    const alt = EARTH_R + 15 + SHIP_H + pct * 8;
+    const lon = Math.PI * 0.5 + pct * 0.3;
+    bPos.set(Math.sin(lon) * alt, Math.cos(lon) * alt, 0);
+    bQuat.setFromEuler(new THREE.Euler(-lon * 0.8, 0, 0));
+  } else if (t < T_ENTRYBURN) {
+    // Boostback (fly back toward launch site)
+    const pct = (t - T_BOOSTBACK) / (T_ENTRYBURN - T_BOOSTBACK);
+    const alt = lerp(EARTH_R + 22, EARTH_R + 14, pct);
+    const lon = lerp(Math.PI * 0.8, Math.PI * 0.1, easeInOut(pct));
+    bPos.set(Math.sin(lon) * alt, Math.cos(lon) * alt, 0);
+    bQuat.setFromEuler(new THREE.Euler(-lon, 0, 0));
+    // Exhaust during boostback
+    const wP = new THREE.Vector3(Math.sin(lon) * alt, Math.cos(lon) * alt, 0);
+    emitExhaust(wP, 8, 2.5, 0.5);
+  } else if (t < T_LANDING) {
+    // Re-entry + landing burns
+    const pct = (t - T_ENTRYBURN) / (T_LANDING - T_ENTRYBURN);
+    const alt = lerp(EARTH_R + 14, EARTH_R + BOOSTER_H * 0.5, easeInOut(pct));
+    const lon = lerp(Math.PI * 0.1, Math.PI * 2.0, easeInOut(pct));
+    bPos.set(Math.sin(lon) * alt, Math.cos(lon) * alt, 0);
+    bQuat.setFromEuler(new THREE.Euler(-lon * 0.3, 0, 0));
+    if (pct > 0.5) emitExhaust(bPos, 12, 3, 0.8);
+  } else {
+    // Landed
+    bPos.set(Math.sin(Math.PI * 2) * (EARTH_R + BOOSTER_H * 0.5), Math.cos(Math.PI * 2) * (EARTH_R + BOOSTER_H * 0.5), 0);
+    bQuat.setFromEuler(new THREE.Euler(0, 0, 0));
+  }
+
+  booster.position.copy(bPos);
+  booster.quaternion.copy(bQuat);
+
+  // ── Stage 2 (ship) path ──
+  let sPos = new THREE.Vector3();
+  let sQuat = new THREE.Quaternion();
+
+  if (t < T_LIFTOFF) {
+    sPos.set(0, EARTH_R + BOOSTER_H + 0.6 + SHIP_H * 0.5, 0);
+    sQuat.setFromEuler(new THREE.Euler(0, 0, 0));
+  } else if (t < T_S2_CIRC) {
+    const pct = (t - T_LIFTOFF) / (T_S2_CIRC - T_LIFTOFF);
+    const alt = lerp(EARTH_R + BOOSTER_H + 0.6 + SHIP_H * 0.5, EARTH_R + 3, easeInOut(Math.min(pct * 1.1, 1)));
+    const lon = pct * Math.PI * 2.2;
+    sPos.set(Math.sin(lon) * alt, Math.cos(lon) * alt, 0);
+    sQuat.setFromEuler(new THREE.Euler(-lon * 0.85, 0, 0));
+    if (t > T_MECO) emitExhaust(sPos, 6, 2, 0.4);
+  } else if (t < T_TLI) {
+    // Circular orbit
+    const pct = (t - T_S2_CIRC) / (T_TLI - T_S2_CIRC);
+    const lon = Math.PI * 2.2 + pct * Math.PI * 0.8;
+    const alt = EARTH_R + 3 + pct * 2;
+    sPos.set(Math.sin(lon) * alt, Math.cos(lon) * alt, 0);
+    sQuat.setFromEuler(new THREE.Euler(-lon * 0.85, 0, 0));
+  } else if (t < T_MOON_ORBIT) {
+    // Trans-Lunar injection
+    const pct = (t - T_TLI) / (T_MOON_ORBIT - T_TLI);
+    const startAngle = Math.PI * 3.0;
+    const endAngle = Math.PI * 2.2;
+    const dist = lerp(EARTH_R + 5, MOON_DIST - MOON_R - 8, easeInOut(pct));
+    const lon = lerp(startAngle, endAngle, pct);
+    sPos.set(Math.sin(lon) * dist, Math.cos(lon) * dist * 0.15, Math.sin(lon * 0.3) * 10);
+    sQuat.setFromEuler(new THREE.Euler(-lon * 0.5, 0, lon * 0.05));
+    emitExhaust(sPos, 5, 2.5, 0.4);
+  } else if (t < T_LUNAR_SURFACE) {
+    // Lunar orbit
+    const pct = (t - T_MOON_ORBIT) / (T_LUNAR_SURFACE - T_MOON_ORBIT);
+    const moonAngle = pct * Math.PI * 4;
+    const shipOrbitR = MOON_R + 3;
+    sPos.set(
+      MOON_DIST + Math.cos(moonAngle) * shipOrbitR,
+      Math.sin(moonAngle) * shipOrbitR * 0.3,
+      Math.sin(moonAngle) * shipOrbitR
+    );
+    sQuat.setFromEuler(new THREE.Euler(0, moonAngle, 0));
+  } else if (t < T_RETURN) {
+    // On lunar surface (brief)
+    const pct = (t - T_LUNAR_SURFACE) / (T_RETURN - T_LUNAR_SURFACE);
+    const moonAngle = Math.PI * 4;
+    const shipOrbitR = MOON_R + 3 - pct * 3;
+    sPos.set(
+      MOON_DIST + Math.cos(moonAngle) * shipOrbitR,
+      Math.sin(moonAngle) * shipOrbitR * 0.3,
+      Math.sin(moonAngle) * shipOrbitR
+    );
+    sQuat.setFromEuler(new THREE.Euler(0, moonAngle, 0));
+  } else if (t < T_HOME) {
+    // Return to Earth
+    const pct = (t - T_RETURN) / (T_HOME - T_RETURN);
+    const startDist = MOON_DIST + MOON_R + 3;
+    const dist = lerp(startDist, EARTH_R + 2, easeInOut(pct));
+    const phase = lerp(Math.PI * 5, Math.PI * 3.5, pct);
+    sPos.set(Math.cos(phase) * dist, Math.sin(phase) * dist * 0.1, Math.sin(phase * 0.7) * 15);
+    sQuat.setFromEuler(new THREE.Euler(0, phase, 0));
+    emitExhaust(sPos, 6, 2.5, 0.4);
+  } else if (t < T_SPLASH) {
+    // Re-entry and landing
+    const pct = (t - T_HOME) / (T_SPLASH - T_HOME);
+    const alt = lerp(EARTH_R + 2, EARTH_R + SHIP_H * 0.5, easeInOut(pct));
+    const lon = lerp(Math.PI * 3.5, Math.PI * 4.5, pct);
+    sPos.set(Math.cos(lon) * alt, Math.sin(lon) * alt, 0);
+    sQuat.setFromEuler(new THREE.Euler(-lon * 0.2, 0, 0));
+    if (pct > 0.4) emitExhaust(sPos, 10, 2, 0.6);
+  } else {
+    // Splashdown / landed
+    sPos.set(Math.cos(Math.PI * 4.5) * (EARTH_R + SHIP_H * 0.5), Math.sin(Math.PI * 4.5) * (EARTH_R + SHIP_H * 0.5), 0);
+    sQuat.setFromEuler(new THREE.Euler(0, 0, 0));
+  }
+
+  ship.position.copy(sPos);
+  ship.quaternion.copy(sQuat);
+
+  // Stage separation visual
+  if (t >= T_MECO && !separated) {
+    separated = true;
+    ship.position.y += 0.5; // nudge apart
+  }
+
+  // Moon orbit animation
+  const moonOrbitSpeed = 0.08;
+  moon.position.x = Math.cos(moonOrbitSpeed * t) * MOON_DIST;
+  moon.position.z = Math.sin(moonOrbitSpeed * t) * MOON_DIST;
+  moon.position.y = Math.sin(moonOrbitSpeed * t * 0.3) * 15;
+  moon.rotation.y += dt * 0.1;
+
+  // Camera follow mode
+  if (cameraMode === 'follow' && t >= T_LIFTOFF) {
+    const target = (t < T_MECO || t > T_LANDING) ? ship : booster;
+    const tp = target.position;
+    const offset = new THREE.Vector3(8, 4, 8);
+    const ideal = tp.clone().add(offset);
+    camera.position.lerp(ideal, 0.03);
+    controls.target.lerp(tp, 0.06);
+  }
+
+  updateExhaust(dt);
+  controls.update();
+  renderer.render(scene, camera);
+
+  // Update info panel
+  info.innerHTML = `<b>Open Starship</b> — Two-Stage Reusable Rocket<br>
+  <b>Stage 1:</b> Super Heavy (returns to launch site)<br>
+  <b>Stage 2:</b> Starship (Moon transit &amp; return)<br>
+  <b>Controls:</b> Drag to orbit · Scroll to zoom<br>
+  <b>Time:</b> ${Math.floor(t)}s &nbsp; <b>Phase ${phaseIdx+1}:</b> ${PHASE_LABELS[phaseIdx]}`;
+}
+
+// Camera modes: 'free' | 'follow'
+let cameraMode = 'free';
+
+window.addEventListener('keydown', e => {
+  if (e.code === 'Space') { playing = !playing; e.preventDefault(); }
+  if (e.code === 'KeyR') { simTime = 0; separated = false; playing = true; }
+  if (e.code === 'KeyV') {
+    cameraMode = cameraMode === 'free' ? 'follow' : 'free';
+    if (cameraMode === 'free') {
+      camera.position.set(0, 60, 220);
+      controls.target.set(0, 0, 0);
+    }
+  }
+});
+
+window.addEventListener('resize', () => {
+  camera.aspect = innerWidth / innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(innerWidth, innerHeight);
+});
+
+animate();
+</script>
+</body>
+</html>

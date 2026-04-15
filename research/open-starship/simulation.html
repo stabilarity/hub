@@ -250,7 +250,7 @@ scene.add(glow1, glow2);
   scene.add(ground);
 
   var pad = new THREE.Mesh(new THREE.CylinderGeometry(4.5, 4.5, 0.5, 20), mat(0x5a5a5a));
-  pad.position.y = EARTH_R + 0.5;
+  pad.position.y = EARTH_R + 0.5 + BOOSTER_H * 0.5 - 0.5; // top surface at ROCKET_Y
   pad.receiveShadow = true;
   scene.add(pad);
 
@@ -387,12 +387,15 @@ var ship = new THREE.Group();
   }
 })();
 
-ship.position.y = BOOSTER_H*.5 + .65 + SHIP_H*.5;
-var rocket = new THREE.Group();
-rocket.add(booster, ship);
-rocket.position.set(0, ROCKET_Y, 0);
-scene.add(rocket);
-
+// Booster and ship are direct scene children — their position IS world position
+scene.add(booster);
+scene.add(ship);
+booster.position.set(0, ROCKET_Y, 0);
+ship.position.set(0, ROCKET_Y + BOOSTER_H*.5 + .65 + SHIP_H*.5, 0);
+// rocketVis: visual placeholder at launch pad
+var rocketVis = new THREE.Group();
+rocketVis.position.set(0, ROCKET_Y, 0);
+scene.add(rocketVis);
 // ─── Particles ───────────────────────────────────────────────────────────────
 var PC=600, PG=new THREE.BufferGeometry(), PP=new Float32Array(PC*3), PV=new Float32Array(PC*3), PL=new Float32Array(PC);
 PG.setAttribute('position', new THREE.BufferAttribute(PP,3));
@@ -511,7 +514,7 @@ function animate() {
   if (run) t += dt;
 
   earthRot += dt * 0.01;
-  scene.rotation.y = earthRot;
+  earth.rotation.y = earthRot;
 
   var ms = 0.055;
   moon.position.set(Math.cos(ms*t)*MOON_DIST, Math.sin(ms*t*0.2)*10, Math.sin(ms*t)*MOON_DIST);
@@ -524,7 +527,6 @@ function animate() {
   var bp = new THREE.Vector3(), bq = new THREE.Quaternion();
 
   if (t < T0) {
-    bp.set(0, ROCKET_Y, 0);
   } else if (t < T1) {
     var p = (t-T0)/(T1-T0);
     var alt = lp(ROCKET_Y, EARTH_R+14+SHIP_H, el(p));
@@ -569,21 +571,21 @@ function animate() {
   // ── Ship ──
   var sp = new THREE.Vector3(), sq = new THREE.Quaternion();
   var SBY = EARTH_R + 0.5 + BOOSTER_H + 0.65 + SHIP_H*.5;
+  var SHIP_LOCAL = BOOSTER_H*.5 + .65 + SHIP_H*.5; // 12.65
 
   if (t < T0) {
-    sp.set(0, SBY, 0);
   } else if (t < T5) {
     var p = (t-T0)/(T5-T0);
-    var alt = lp(SBY, EARTH_R+3.5, el(Math.min(p*1.05,1)));
+    var alt = lp(ROCKET_Y, EARTH_R + 14 + SHIP_H - SHIP_LOCAL, el(Math.min(p*1.05,1)));
     var l  = p * Math.PI * 2.1;
-    sp.set(Math.sin(l)*alt, Math.cos(l)*alt, 0);
+    sp.set(Math.sin(l)*alt, Math.cos(l)*alt + 12.65, 0);
     sq.setFromEuler(new THREE.Euler(-l*.8,0,0));
     if (t > T1) { emit(sp, 11, 3.1, 0.6, false); emit(sp, 5, 2.1, 0.35, true); }
   } else if (t < T6) {
     var p = (t-T5)/(T6-T5);
     var l  = Math.PI*2.1 + p*Math.PI*.8;
-    var alt = EARTH_R+3.5 + p*2;
-    sp.set(Math.sin(l)*alt, Math.cos(l)*alt, 0);
+    var alt = lp(ROCKET_Y, EARTH_R + 3.5 - SHIP_LOCAL, p);
+    sp.set(Math.sin(l)*alt, Math.cos(l)*alt + SHIP_LOCAL, 0);
     sq.setFromEuler(new THREE.Euler(-l*.8,0,0));
   } else if (t < T7) {
     var p = (t-T6)/(T7-T6);

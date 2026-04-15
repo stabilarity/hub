@@ -212,19 +212,20 @@ scene.add(glow1, glow2);
 })();
 
 // ─── Earth ──────────────────────────────────────────────────────────────────
+var earth = new THREE.Group();
 (function() {
   var land = new THREE.Mesh(
     new THREE.SphereGeometry(EARTH_R, 72, 72),
     new THREE.MeshStandardMaterial({ color: 0x1e5028, roughness: 0.92 })
   );
   land.receiveShadow = true;
-  scene.add(land);
+  earth.add(land);
 
   var patch = new THREE.Mesh(
     new THREE.SphereGeometry(EARTH_R+0.08, 72, 72),
     new THREE.MeshStandardMaterial({ color:0x163820, transparent:true, opacity:0.65, roughness:1.0 })
   );
-  scene.add(patch);
+  earth.add(patch);
 
   var atmo = new THREE.Mesh(
     new THREE.SphereGeometry(EARTH_R*1.025, 48, 48),
@@ -234,8 +235,9 @@ scene.add(glow1, glow2);
       blending: THREE.AdditiveBlending, side: THREE.BackSide, transparent:true, depthWrite:false
     })
   );
-  scene.add(atmo);
+  earth.add(atmo);
 })();
+  scene.add(earth);
 
 // ─── Launch Complex ──────────────────────────────────────────────────────────
 (function() {

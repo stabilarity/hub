@@ -7,7 +7,6 @@
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   body { background: #000; overflow: hidden; font-family: system-ui, sans-serif; }
-  canvas { display: block; }
 
   #start {
     position: fixed; inset: 0; z-index: 200;
@@ -643,6 +642,10 @@ function animate() {
   document.getElementById('ph').textContent = PHS[pidx];
 }
 
+animate();
+
+// ─── Start ───────────────────────────────────────────────────────────────
+init();
 animate();
 </script>
 </body>

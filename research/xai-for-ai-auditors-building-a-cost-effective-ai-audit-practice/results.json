@@ -1,0 +1,6 @@
+{
+  "xai_research_growth_2020_2025": 1300,
+  "cost_savings_vs_manual": 20,
+  "accuracy_improvement_vs_blackbox": 11,
+  "data_note": "Synthetic data generated with fixed seed=42 for reproducibility. Based on conceptual trends in XAI research and auditing efficiency studies."
+}

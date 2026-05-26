@@ -1,0 +1,9 @@
+{
+  "title": "Market Growth of Transparent AI Solutions",
+  "xlabel": "Year",
+  "ylabel": "Market Size ($B)",
+  "width": 1200,
+  "height": 800,
+  "format": "PPM (Portable Pixmap)",
+  "data_points": 6
+}

@@ -1,0 +1,29 @@
+{
+  "analysis_type": "AI Transparency Competitive Advantage",
+  "data_source": "Synthetic Enterprise AI Market Data",
+  "total_companies_analyzed": 4,
+  "years_analyzed": [
+    2023,
+    2024,
+    2025,
+    2026,
+    2027,
+    2028,
+    2029,
+    2030
+  ],
+  "key_findings": {
+    "transparency_premium": 1.65,
+    "trust_correlation": 0.82,
+    "compliance_savings": 28.5,
+    "innovation_advantage": 0.35,
+    "barrier_reduction": 0.45
+  },
+  "chart_files": [
+    "chart1.png",
+    "chart2.png",
+    "chart3.png",
+    "chart4.png",
+    "chart5.png"
+  ]
+}

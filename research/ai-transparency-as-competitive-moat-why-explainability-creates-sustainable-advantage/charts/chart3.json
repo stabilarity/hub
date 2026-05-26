@@ -1,0 +1,37 @@
+{
+  "title": "Customer Trust Evolution",
+  "xlabel": "Year",
+  "ylabel": "Trust Score",
+  "data": [
+    {
+      "year": 2020,
+      "Opaque AI": 45.0,
+      "Transparent AI": 55.0
+    },
+    {
+      "year": 2021,
+      "Opaque AI": 42.0,
+      "Transparent AI": 62.0
+    },
+    {
+      "year": 2022,
+      "Opaque AI": 38.0,
+      "Transparent AI": 70.0
+    },
+    {
+      "year": 2023,
+      "Opaque AI": 35.0,
+      "Transparent AI": 78.0
+    },
+    {
+      "year": 2024,
+      "Opaque AI": 33.0,
+      "Transparent AI": 85.0
+    },
+    {
+      "year": 2025,
+      "Opaque AI": 30.0,
+      "Transparent AI": 92.0
+    }
+  ]
+}

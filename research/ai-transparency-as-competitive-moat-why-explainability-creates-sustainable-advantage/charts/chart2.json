@@ -1,0 +1,37 @@
+{
+  "title": "Regulatory Compliance Costs Comparison",
+  "xlabel": "Year",
+  "ylabel": "Cost ($M)",
+  "data": [
+    {
+      "year": 2020,
+      "Opaque AI": 0.8,
+      "Transparent AI": 0.3
+    },
+    {
+      "year": 2021,
+      "Opaque AI": 1.2,
+      "Transparent AI": 0.5
+    },
+    {
+      "year": 2022,
+      "Opaque AI": 1.9,
+      "Transparent AI": 0.7
+    },
+    {
+      "year": 2023,
+      "Opaque AI": 3.1,
+      "Transparent AI": 1.0
+    },
+    {
+      "year": 2024,
+      "Opaque AI": 4.8,
+      "Transparent AI": 1.4
+    },
+    {
+      "year": 2025,
+      "Opaque AI": 7.2,
+      "Transparent AI": 1.9
+    }
+  ]
+}

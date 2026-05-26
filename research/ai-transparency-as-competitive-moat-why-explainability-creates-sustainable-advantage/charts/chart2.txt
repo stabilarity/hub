@@ -1,0 +1,11 @@
+
+Regulatory Compliance Costs Comparison
+Year vs Cost ($M)
+============================================================
+2020: Opaque AI ███ 0.8  Transparent AI █ 0.3
+2021: Opaque AI █████ 1.2  Transparent AI ██ 0.5
+2022: Opaque AI ███████ 1.9  Transparent AI ██ 0.7
+2023: Opaque AI ████████████ 3.1  Transparent AI ████ 1.0
+2024: Opaque AI ████████████████████ 4.8  Transparent AI █████ 1.4
+2025: Opaque AI ██████████████████████████████ 7.2  Transparent AI ███████ 1.9
+============================================================

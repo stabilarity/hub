@@ -1,0 +1,9 @@
+{
+  "title": "AI Transparency Market Potential Index",
+  "xlabel": "Year",
+  "ylabel": "Market Potential Index",
+  "width": 1200,
+  "height": 800,
+  "format": "PPM (Portable Pixmap)",
+  "data_points": 6
+}

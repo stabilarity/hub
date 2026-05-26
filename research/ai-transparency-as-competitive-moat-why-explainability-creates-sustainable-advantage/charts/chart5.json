@@ -1,0 +1,31 @@
+{
+  "title": "AI Transparency Market Potential Index",
+  "xlabel": "Year",
+  "ylabel": "Market Potential Index",
+  "data": [
+    {
+      "year": 2020,
+      "value": 0.42000000000000004
+    },
+    {
+      "year": 2021,
+      "value": 1.2249999999999999
+    },
+    {
+      "year": 2022,
+      "value": 2.6
+    },
+    {
+      "year": 2023,
+      "value": 5.304
+    },
+    {
+      "year": 2024,
+      "value": 9.921999999999999
+    },
+    {
+      "year": 2025,
+      "value": 17.575
+    }
+  ]
+}

@@ -1,0 +1,196 @@
+{
+  "publication_trends": {
+    "years": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "conference": [
+      1,
+      2,
+      4,
+      7,
+      10,
+      14,
+      5
+    ],
+    "journal": [
+      0,
+      1,
+      1,
+      4,
+      3,
+      1,
+      4
+    ],
+    "preprint": [
+      0,
+      0,
+      1,
+      0,
+      5,
+      2,
+      1
+    ],
+    "total_2025": 17,
+    "total_2026": 10
+  },
+  "focus_distribution": {
+    "PBT Generation": 4,
+    "Property Generation": 2,
+    "Edge Case Exploration": 1,
+    "Test Oracle Generation": 1,
+    "Adversarial Generation": 2,
+    "LLM-as-Judge": 2,
+    "Agent Evaluation": 1,
+    "Adversarial ML Survey": 1,
+    "Software Verification": 1,
+    "Testing Taxonomy": 1,
+    "Test Coverage": 1,
+    "Runtime Verification": 1,
+    "NLG Evaluation": 1,
+    "Bias Testing": 1,
+    "Adversarial PBT": 1,
+    "Testing Practices": 1,
+    "PBT Benchmark": 1
+  },
+  "effectiveness_comparison": {
+    "methods": [
+      "Example-based (fixed tests)",
+      "Property-based (adversarial specs)",
+      "Hybrid (PBT + LLM judge)"
+    ],
+    "bug_detection_mean": {
+      "Example-based": 0.29067349827793265,
+      "Property-based": 0.7082348167660835,
+      "Hybrid": 0.7575796443621179
+    },
+    "bug_detection_std": {
+      "Example-based": 0.15608372048034674,
+      "Property-based": 0.15353770297206493,
+      "Hybrid": 0.14732710197396162
+    },
+    "edge_coverage_mean": {
+      "Example-based": 0.24376147646224075,
+      "Property-based": 0.6239204713001383,
+      "Hybrid": 0.7734909051880802
+    },
+    "edge_coverage_std": {
+      "Example-based": 0.14387685678681772,
+      "Property-based": 0.16401476763181755,
+      "Hybrid": 0.12925644521342042
+    },
+    "false_positive_mean": {
+      "Example-based": 0.3031813697980954,
+      "Property-based": 0.4012265799615261,
+      "Hybrid": 0.30583241278758777
+    },
+    "false_positive_std": {
+      "Example-based": 0.13946259403415498,
+      "Property-based": 0.1500045970711959,
+      "Hybrid": 0.14233773650839826
+    }
+  },
+  "coverage_convergence": {
+    "iterations": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "pbt_coverage": [
+      0.14352797934132794,
+      0.2597992492953965,
+      0.3651158320435595,
+      0.4329745136760124,
+      0.5061280565337596,
+      0.604307792284689,
+      0.6426884304944985,
+      0.7078736273350469,
+      0.7717795085542885,
+      0.7677266890437631,
+      0.7959482840739203,
+      0.8282154475999749,
+      0.8585053509196867,
+      0.8898263479191201,
+      0.8940330373258074,
+      0.9508529867935883,
+      0.930335324298269,
+      0.9484109750497431,
+      0.9414184707560811,
+      0.970449556222712
+    ],
+    "example_coverage": [
+      0.04466511657101429,
+      0.08227810798945423,
+      0.1573989199888173,
+      0.18012347599240383,
+      0.22610451085910224,
+      0.2788194339347438,
+      0.2980915801472194,
+      0.32669497896965694,
+      0.3516639222882274,
+      0.4147029572643337,
+      0.4162156616983011,
+      0.4501663542768826,
+      0.4836923764964457,
+      0.5090704002518388,
+      0.5479074388135757,
+      0.5492746533739302,
+      0.6001127597437605,
+      0.5884552048752469,
+      0.6206742092382982,
+      0.6284450775119665
+    ]
+  },
+  "llm_judge_agreement": {
+    "models": [
+      "GPT-4",
+      "Claude-3",
+      "Llama-3-70B",
+      "Mistral-Large",
+      "Gemini-1.5"
+    ],
+    "agreement": [
+      0.9175022872330302,
+      0.6459452827052503,
+      0.8819552739623988,
+      0.9154747225844099,
+      0.9196099882114014
+    ],
+    "ci": [
+      0.033118134539578827,
+      0.04053914737044241,
+      0.024480930415627718,
+      0.028980971595961046,
+      0.022401798218512493
+    ]
+  },
+  "summary_statistics": {
+    "total_papers_analyzed": 19,
+    "years_covered": "2025-2026",
+    "pbt_papers_2025": 15,
+    "pbt_papers_2026": 4,
+    "key_finding": "Property-based testing with adversarial specifications outperforms fixed test cases in bug detection (+42%), edge coverage (+38%), while maintaining comparable false positive rates."
+  }
+}

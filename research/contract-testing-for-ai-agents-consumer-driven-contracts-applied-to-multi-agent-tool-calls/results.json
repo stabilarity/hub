@@ -1,0 +1,43 @@
+{
+  "total_publications": 18,
+  "year_range": [
+    2025,
+    2026
+  ],
+  "publications_by_year": {
+    "2025": 15,
+    "2026": 3
+  },
+  "publications_by_source_type": {
+    "journal": 15,
+    "conference-paper": 2,
+    "preprint": 1
+  },
+  "mean_authors": 2.6666666666666665,
+  "median_authors": 3.0,
+  "max_authors": 3,
+  "focus_areas": {
+    "Contract Testing": 5,
+    "AI Agents / Agentic AI": 5,
+    "API Compatibility": 4,
+    "LLM-based Tools": 3,
+    "Verification/Repair": 4,
+    "Security": 1
+  },
+  "theme_timeline": {
+    "2025": {
+      "Contract Testing": 4,
+      "AI Agents": 3,
+      "API Compatibility": 3,
+      "Verification": 2,
+      "Security": 1
+    },
+    "2026": {
+      "Contract Testing": 1,
+      "AI Agents": 2,
+      "API Compatibility": 1,
+      "Verification": 2,
+      "Security": 0
+    }
+  }
+}

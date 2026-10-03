@@ -1,0 +1,81 @@
+{
+  "total_references": 15,
+  "year_range": "2025-2026",
+  "year_distribution": {
+    "2026": 9,
+    "2025": 6
+  },
+  "source_type_distribution": {
+    "preprint": 6,
+    "conference-paper": 4,
+    "journal": 5
+  },
+  "venue_count": 10,
+  "top_venues": {
+    "arXiv (Cornell University)": 5,
+    "International Journal of Engineering and Computer Science": 2,
+    "IEEE International Conference on Artificial Intelligence and Big Data": 1,
+    "IEEE International Conference on eScience": 1,
+    "IEEE/RSJ International Conference on Intelligent Robots and Systems": 1
+  },
+  "keyword_frequency": {
+    "agentic": 8,
+    "workflow": 5,
+    "acceptance": 4,
+    "criteria": 3,
+    "testing": 4,
+    "automated": 3,
+    "ci/cd": 3,
+    "pipeline": 1,
+    "llm": 2,
+    "software": 5,
+    "development": 4,
+    "requirements": 2,
+    "spec": 2,
+    "nlp": 1,
+    "uml": 1,
+    "safety": 1,
+    "quality": 2,
+    "gate": 2,
+    "provenance": 1,
+    "coverage": 1
+  },
+  "synthetic_trends": {
+    "years": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "publication_count": [
+      2,
+      4,
+      8,
+      15,
+      28,
+      45,
+      62
+    ],
+    "adoption_index": [
+      10,
+      18,
+      30,
+      52,
+      78,
+      115,
+      160
+    ],
+    "maturity_score": [
+      25,
+      32,
+      41,
+      52,
+      65,
+      78,
+      88
+    ]
+  }
+}

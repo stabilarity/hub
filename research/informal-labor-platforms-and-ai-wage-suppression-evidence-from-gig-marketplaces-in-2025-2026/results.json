@@ -1,0 +1,92 @@
+{
+  "wage_trends": {
+    "algorithmic_2023_mean": 14.813768460327912,
+    "algorithmic_2026_mean": 13.810760539616773,
+    "traditional_2023_mean": 11.938583862114294,
+    "traditional_2026_mean": 11.585805938096067,
+    "algorithmic_decline_pct": 6.770781677850913,
+    "traditional_decline_pct": 2.9549394475313493
+  },
+  "platform_comparison": {
+    "Platform A": {
+      "mean_wage": 12.307103093099354,
+      "median_wage": 11.86653232595624,
+      "p25": 9.95812660189121,
+      "p75": 13.92590878779492,
+      "type": "Algorithmic"
+    },
+    "Platform B": {
+      "mean_wage": 12.273686634768108,
+      "median_wage": 12.03530858637787,
+      "p25": 10.257199587671527,
+      "p75": 13.899661045307488,
+      "type": "Algorithmic"
+    },
+    "Platform C": {
+      "mean_wage": 13.638566570245297,
+      "median_wage": 13.382297054695242,
+      "p25": 11.665536127339786,
+      "p75": 15.381798808310643,
+      "type": "Hybrid"
+    },
+    "Platform D": {
+      "mean_wage": 13.935836248711356,
+      "median_wage": 13.906844613697796,
+      "p25": 12.200394619038425,
+      "p75": 15.423405161439945,
+      "type": "Traditional"
+    },
+    "Platform E": {
+      "mean_wage": 14.394955086602728,
+      "median_wage": 14.229150132998832,
+      "p25": 12.55103302323793,
+      "p75": 15.976121030626036,
+      "type": "Traditional"
+    }
+  },
+  "regional_analysis": {
+    "North America": {
+      "avg_adoption_pct": 17.410250879979124,
+      "avg_suppression_usd": 0.4618397381615302,
+      "wage_floor_2023": 11.33233473217439,
+      "wage_floor_2026": 10.785165270708486
+    },
+    "Western Europe": {
+      "avg_adoption_pct": 19.217015568408172,
+      "avg_suppression_usd": 0.6495040718290377,
+      "wage_floor_2023": 9.525357764840113,
+      "wage_floor_2026": 9.228981188764228
+    },
+    "Latin America": {
+      "avg_adoption_pct": 27.655811084709136,
+      "avg_suppression_usd": 0.5613493032101251,
+      "wage_floor_2023": 8.46070302069012,
+      "wage_floor_2026": 8.956977449997659
+    },
+    "Asia-Pacific": {
+      "avg_adoption_pct": 29.669778074610118,
+      "avg_suppression_usd": 0.5608234604631239,
+      "wage_floor_2023": 10.542630033578222,
+      "wage_floor_2026": 11.419219214084343
+    },
+    "Africa": {
+      "avg_adoption_pct": 13.613769241742258,
+      "avg_suppression_usd": 0.5146895694618367,
+      "wage_floor_2023": 11.631785067900427,
+      "wage_floor_2026": 9.279867956458142
+    }
+  },
+  "feature_correlations": {
+    "surge_multiplier": -0.9216459330835908,
+    "worker_rating": 0.07242747286972848,
+    "completion_rate": -0.017090011925667167,
+    "platform_fee_pct": -0.16791817593299016,
+    "task_complexity": 0.034728572394568204
+  },
+  "sample_sizes": {
+    "monthly_observations": 47,
+    "workers_per_platform": 500,
+    "regional_observations": 20,
+    "feature_observations": 1000
+  }
+}

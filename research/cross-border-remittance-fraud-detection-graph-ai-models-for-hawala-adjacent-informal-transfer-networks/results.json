@@ -1,0 +1,134 @@
+{
+  "model_accuracy": {
+    "GCN": 0.928,
+    "GAT": 0.8945,
+    "GraphSAGE": 0.9348,
+    "GuardNet": 0.926,
+    "GE-GNN": 0.8942,
+    "FraudGNN-RL": 0.9056
+  },
+  "imbalance_performance": {
+    "fraud_rates_pct": [
+      0.001,
+      0.005,
+      0.01,
+      0.02,
+      0.05,
+      0.1,
+      0.2
+    ],
+    "guardnet_precision": [
+      0.86,
+      0.8809691001300806,
+      0.8899999999999999,
+      0.8990308998699194,
+      0.9109691001300805,
+      0.9199999999999999,
+      0.9290308998699194
+    ],
+    "guardnet_recall": [
+      0.845,
+      0.8624742501084005,
+      0.87,
+      0.8775257498915996,
+      0.8874742501084005,
+      0.895,
+      0.9025257498915996
+    ],
+    "standard_precision": [
+      0.75,
+      0.784948500216801,
+      0.8,
+      0.815051499783199,
+      0.834948500216801,
+      0.85,
+      0.8650514997831991
+    ],
+    "standard_recall": [
+      0.715,
+      0.7464536501951208,
+      0.76,
+      0.7735463498048791,
+      0.7914536501951208,
+      0.8049999999999999,
+      0.8185463498048792
+    ]
+  },
+  "corridor_risk": {
+    "Nigeria-UK": {
+      "risk_score": 0.7185,
+      "informal_volume": 0.7824
+    },
+    "India-UAE": {
+      "risk_score": 0.8348,
+      "informal_volume": 0.7359
+    },
+    "Mexico-US": {
+      "risk_score": 0.5882,
+      "informal_volume": 0.667
+    },
+    "Philippines-KSA": {
+      "risk_score": 0.4477,
+      "informal_volume": 0.3168
+    },
+    "Pakistan-UK": {
+      "risk_score": 0.6605,
+      "informal_volume": 0.48
+    },
+    "Bangladesh-UAE": {
+      "risk_score": 0.3415,
+      "informal_volume": 0.2263
+    },
+    "Egypt-KSA": {
+      "risk_score": 0.838,
+      "informal_volume": 0.2926
+    },
+    "Morocco-France": {
+      "risk_score": 0.7106,
+      "informal_volume": 0.6098
+    },
+    "Vietnam-US": {
+      "risk_score": 0.7928,
+      "informal_volume": 0.6469
+    },
+    "Sri Lanka-UAE": {
+      "risk_score": 0.5304,
+      "informal_volume": 0.7805
+    }
+  },
+  "metapath_importance": {
+    "User-Merchant-User": 27.25,
+    "User-Device-User": 25.06,
+    "User-IP-User": 14.72,
+    "User-Account-User": 10.52,
+    "Merchant-Device-Merchant": 9.14,
+    "User-Transaction-User": 7.85,
+    "User-Location-User": 5.46
+  },
+  "detection_latency_seconds": {
+    "time_windows": [
+      "Real-time\n(<1s)",
+      "Near-real-time\n(1-60s)",
+      "Batch\n(1-60min)",
+      "Daily\n(>1hr)"
+    ],
+    "gnn_only": [
+      0.15,
+      0.45,
+      2.5,
+      15.0
+    ],
+    "hybrid": [
+      0.1,
+      0.2,
+      1.0,
+      8.0
+    ],
+    "rule_based": [
+      0.05,
+      0.1,
+      0.5,
+      5.0
+    ]
+  }
+}

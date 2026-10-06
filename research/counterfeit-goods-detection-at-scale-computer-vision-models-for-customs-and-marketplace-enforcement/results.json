@@ -1,0 +1,142 @@
+{
+  "model_performance": {
+    "MobileNetV3": {
+      "avg_map": 0.7125896688088219,
+      "best_task": "Currency",
+      "worst_task": "Textile",
+      "avg_evasion_drop": 0.16035885745232856,
+      "latency_ms": 19.19932268017031,
+      "model_size_mb": 5.4
+    },
+    "ResNet50": {
+      "avg_map": 0.7798306899234274,
+      "best_task": "Currency",
+      "worst_task": "Pharma",
+      "avg_evasion_drop": 0.12813532286446783,
+      "latency_ms": 42.28356283391982,
+      "model_size_mb": 98.0
+    },
+    "EfficientNet-B0": {
+      "avg_map": 0.7988617257512122,
+      "best_task": "Currency",
+      "worst_task": "Pharma",
+      "avg_evasion_drop": 0.1178456041218843,
+      "latency_ms": 30.86551233788183,
+      "model_size_mb": 21.0
+    },
+    "YOLOv8n": {
+      "avg_map": 0.8309101941807758,
+      "best_task": "Currency",
+      "worst_task": "Pharma",
+      "avg_evasion_drop": 0.13556082403043324,
+      "latency_ms": 25.897684893358196,
+      "model_size_mb": 6.2
+    },
+    "YOLOv8s": {
+      "avg_map": 0.8607354470630083,
+      "best_task": "Currency",
+      "worst_task": "Pharma",
+      "avg_evasion_drop": 0.11218822821404092,
+      "latency_ms": 36.93120808681572,
+      "model_size_mb": 22.0
+    },
+    "ViT-Base": {
+      "avg_map": 0.8137187554394903,
+      "best_task": "Logo Detection",
+      "worst_task": "Pharma",
+      "avg_evasion_drop": 0.1210417767702349,
+      "latency_ms": 67.21254670540127,
+      "model_size_mb": 86.0
+    },
+    "Swin-Tiny": {
+      "avg_map": 0.838729373525895,
+      "best_task": "Currency",
+      "worst_task": "Pharma",
+      "avg_evasion_drop": 0.10092372438793953,
+      "latency_ms": 49.19914695997037,
+      "model_size_mb": 28.0
+    }
+  },
+  "task_difficulty": {
+    "Logo Detection": 0.8620923088632343,
+    "Package Auth": 0.7716908219004907,
+    "Currency": 0.8861683191238561,
+    "Pharma": 0.7230347776545816,
+    "Textile": 0.7606249023878723,
+    "Electronics": 0.8267110312350775
+  },
+  "evasion_impact": {
+    "Background Clutter": 0.11466803000553681,
+    "Adversarial Noise": 0.25022753738969195,
+    "Occlusion": 0.16488070141416195,
+    "Resolution Drop": 0.14725320567560063,
+    "Color Shift": 0.07221993281494019,
+    "Perspective Warp": 0.09055339406991857,
+    "Watermark Overlay": 0.06825819397070107,
+    "Compression Artifacts": 0.09314396219239654
+  },
+  "pareto_optimal_models": [
+    "MobileNetV3",
+    "YOLOv8n",
+    "YOLOv8s"
+  ],
+  "scaling_law": {
+    "data_points": [
+      1000,
+      5000,
+      10000,
+      50000,
+      100000,
+      500000,
+      1000000
+    ],
+    "performance": [
+      0.5829456244213237,
+      0.6069534296460151,
+      0.6266096692409944,
+      0.6698567315696947,
+      0.6577267957680766,
+      0.7107978866305794,
+      0.7223773560233228
+    ],
+    "fit_params": {
+      "a": 0.045,
+      "b": 0.45
+    }
+  },
+  "customs_trends": {
+    "years": [
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "seizure_value_billion_usd": [
+      1.2,
+      1.4,
+      1.7,
+      2.1,
+      2.8,
+      3.4,
+      4.1
+    ],
+    "detection_rate": [
+      0.35,
+      0.38,
+      0.42,
+      0.48,
+      0.54,
+      0.61,
+      0.67
+    ]
+  },
+  "summary": {
+    "best_overall_model": "YOLOv8s",
+    "fastest_model": "MobileNetV3",
+    "smallest_model": "MobileNetV3",
+    "most_robust_model": "Swin-Tiny"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "n_neighborhoods": 100,
+  "mean_undeclared_pct": 20.31675699457813,
+  "median_undeclared_pct": 21.788011709917342,
+  "total_declared_value_usd": 20151556.479487337,
+  "total_true_value_usd": 25834437.068324152,
+  "total_undeclared_value_usd": 5682880.588836806,
+  "undeclared_share_of_true_pct": 21.997307600732046,
+  "model_mape_pct": 99.99922297545739,
+  "model_rmse_usd": 315910.4432455852,
+  "model_r2_overall": -2.0189012925151326,
+  "feature_importance": {
+    "Nighttime Lights": 31.818181818181813,
+    "Building Density": 18.181818181818183,
+    "Roof Area": 13.636363636363635,
+    "Electricity": 22.727272727272727,
+    "Water": 13.636363636363635
+  },
+  "region_summary": {
+    "North": {
+      "mean_undeclared_pct": 20.11710073482818,
+      "total_undeclared_usd": 1686056.8681607735,
+      "n_neighborhoods": 27
+    },
+    "South": {
+      "mean_undeclared_pct": 18.638464610381536,
+      "total_undeclared_usd": 1300666.8584497697,
+      "n_neighborhoods": 22
+    },
+    "East": {
+      "mean_undeclared_pct": 22.077547401337174,
+      "total_undeclared_usd": 1180756.4728811092,
+      "n_neighborhoods": 22
+    },
+    "West": {
+      "mean_undeclared_pct": 22.092471712467376,
+      "total_undeclared_usd": 853828.7442606192,
+      "n_neighborhoods": 12
+    },
+    "Central": {
+      "mean_undeclared_pct": 19.273650282943063,
+      "total_undeclared_usd": 661571.645084535,
+      "n_neighborhoods": 17
+    }
+  }
+}

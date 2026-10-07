@@ -1,0 +1,88 @@
+{
+  "approval_rate_no_formal_history": 0.20122699386503068,
+  "approval_rate_with_formal_history": 0.39195402298850573,
+  "approval_gap": 0.19072702912347506,
+  "default_rate_no_formal_history": 0.024390243902439025,
+  "default_rate_with_formal_history": 0.017595307917888565,
+  "regional_approval_rates": {
+    "Bangladesh": 0.28053691275167786,
+    "Cambodia": 0.25153374233128833,
+    "India": 0.2785571142284569,
+    "Kenya": 0.27121951219512197,
+    "Nigeria": 0.2736625514403292,
+    "Pakistan": 0.23865110246433205
+  },
+  "gender_approval_no_history": {
+    "F": 0.2051792828685259,
+    "M": 0.19783352337514254
+  },
+  "ai_score_stats": {
+    "mean": 55.19240282746293,
+    "std": 9.486247233333525,
+    "median": 54.48152631673893,
+    "p25": 49.059962084090294,
+    "p75": 60.48294986224391
+  },
+  "calibration": [
+    {
+      "score_decile": 0,
+      "mean_score": 40.191575570023865,
+      "default_rate": 0.014,
+      "count": 500
+    },
+    {
+      "score_decile": 1,
+      "mean_score": 46.19190509319176,
+      "default_rate": 0.03,
+      "count": 500
+    },
+    {
+      "score_decile": 2,
+      "mean_score": 49.04915725836712,
+      "default_rate": 0.026,
+      "count": 500
+    },
+    {
+      "score_decile": 3,
+      "mean_score": 51.32497116712172,
+      "default_rate": 0.02,
+      "count": 500
+    },
+    {
+      "score_decile": 4,
+      "mean_score": 53.4096494301104,
+      "default_rate": 0.012,
+      "count": 500
+    },
+    {
+      "score_decile": 5,
+      "mean_score": 55.52417901254304,
+      "default_rate": 0.022,
+      "count": 500
+    },
+    {
+      "score_decile": 6,
+      "mean_score": 57.74334190666603,
+      "default_rate": 0.022,
+      "count": 500
+    },
+    {
+      "score_decile": 7,
+      "mean_score": 60.46468593949548,
+      "default_rate": 0.022,
+      "count": 500
+    },
+    {
+      "score_decile": 8,
+      "mean_score": 64.09134856251333,
+      "default_rate": 0.02,
+      "count": 500
+    },
+    {
+      "score_decile": 9,
+      "mean_score": 73.93321433459654,
+      "default_rate": 0.016,
+      "count": 500
+    }
+  ]
+}

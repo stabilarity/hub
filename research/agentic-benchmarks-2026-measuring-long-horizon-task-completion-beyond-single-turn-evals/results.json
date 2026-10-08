@@ -1,0 +1,64 @@
+{
+  "total_benchmarks": 20,
+  "by_year": {
+    "2026": 15,
+    "2025": 5
+  },
+  "by_type": {
+    "conference": 11,
+    "preprint": 8,
+    "journal": 1
+  },
+  "by_venue": {
+    "arXiv": 8,
+    "ACL": 6,
+    "LNCS": 2,
+    "WWW": 1,
+    "IEEE TSMC": 1,
+    "AAAI": 1,
+    "KDD": 1
+  },
+  "by_domain": {
+    "RAG/Retrieval": 2,
+    "Research Workflows": 1,
+    "Multi-Agent": 1,
+    "Cognitive Architecture": 1,
+    "Mobile Agents": 1,
+    "Robotics": 1,
+    "Code Generation": 1,
+    "Shopping": 1,
+    "Code Reasoning": 1,
+    "General Agents": 1,
+    "Reward Modeling": 1,
+    "Survey": 1,
+    "Data Agents": 1,
+    "Scientific Reasoning": 1,
+    "Scientific Tool-use": 1,
+    "Product Scenarios": 1,
+    "Safety": 1,
+    "Coordination": 1,
+    "Adversarial": 1
+  },
+  "by_steps": {
+    "multi-step": 5,
+    "multi-hop": 2,
+    "multi-agent": 2,
+    "multi-turn": 1,
+    "long-horizon": 1,
+    "graph-structured": 1,
+    "skill-learning": 1,
+    "repository-level": 1,
+    "intent-grounded": 1,
+    "repository": 1,
+    "de-idealized": 1,
+    "multimodal": 1,
+    "overview": 1,
+    "open-ended": 1
+  },
+  "conference_count": 11,
+  "journal_count": 1,
+  "preprint_count": 8,
+  "acl_count": 6,
+  "arxiv_count": 8,
+  "unique_domains": 19
+}

@@ -1,0 +1,170 @@
+{
+  "benchmark_summary": {
+    "methods_evaluated": 6,
+    "scenarios_tested": 4,
+    "year_range": [
+      2020,
+      2026
+    ]
+  },
+  "forgetting_rates_by_method": {
+    "Regularization": {
+      "mean": 0.15299423634557013,
+      "std": 0.010045433662326539,
+      "by_scenario": {
+        "Class-Incremental": 0.15609434159508861,
+        "Task-Incremental": 0.16756900602614544,
+        "Domain-Incremental": 0.14772105084690249,
+        "Continual Fine-Tuning": 0.14059254691414408
+      }
+    },
+    "Replay": {
+      "mean": 0.09202584635523184,
+      "std": 0.01600074287078742,
+      "by_scenario": {
+        "Class-Incremental": 0.09881129432782428,
+        "Task-Incremental": 0.06638140911192117,
+        "Domain-Incremental": 0.09301185575649402,
+        "Continual Fine-Tuning": 0.10989882622468791
+      }
+    },
+    "Architectural": {
+      "mean": 0.03675566551049839,
+      "std": 0.013117308298338733,
+      "by_scenario": {
+        "Class-Incremental": 0.05255680806334571,
+        "Task-Incremental": 0.04143344355673786,
+        "Domain-Incremental": 0.03668980585422611,
+        "Continual Fine-Tuning": 0.016342604567683904
+      }
+    },
+    "Prompt-Based": {
+      "mean": 0.06158655532439394,
+      "std": 0.011079454195487613,
+      "by_scenario": {
+        "Class-Incremental": 0.04293912144852839,
+        "Task-Incremental": 0.06730888128728156,
+        "Domain-Incremental": 0.06437377193458026,
+        "Continual Fine-Tuning": 0.07172444662718556
+      }
+    },
+    "Parameter-Isolation": {
+      "mean": 0.08268933394627567,
+      "std": 0.01887685180709759,
+      "by_scenario": {
+        "Class-Incremental": 0.07132061395122433,
+        "Task-Incremental": 0.11283295201740923,
+        "Domain-Incremental": 0.08357827126143791,
+        "Continual Fine-Tuning": 0.06302549855503126
+      }
+    },
+    "Hybrid": {
+      "mean": 0.03383459354912905,
+      "std": 0.01206486382751296,
+      "by_scenario": {
+        "Class-Incremental": 0.022814150742335237,
+        "Task-Incremental": 0.023724545435042446,
+        "Domain-Incremental": 0.05262576451677081,
+        "Continual Fine-Tuning": 0.036173913502367705
+      }
+    }
+  },
+  "plasticity_by_method": {
+    "Regularization": {
+      "mean": 0.6371552782878369,
+      "std": 0.0074041784821115494
+    },
+    "Replay": {
+      "mean": 0.775744646027652,
+      "std": 0.025341972184000514
+    },
+    "Architectural": {
+      "mean": 0.7161445007512457,
+      "std": 0.00491330370786142
+    },
+    "Prompt-Based": {
+      "mean": 0.8143739297209993,
+      "std": 0.0037791773372724074
+    },
+    "Parameter-Isolation": {
+      "mean": 0.7516302673370387,
+      "std": 0.012757759596185468
+    },
+    "Hybrid": {
+      "mean": 0.811259440317322,
+      "std": 0.018713932331351442
+    }
+  },
+  "deployment_metrics": {
+    "Regularization (EWC)": {
+      "latency_ms": 12,
+      "memory_mb": 180,
+      "retention": 0.82
+    },
+    "Replay (Experience)": {
+      "latency_ms": 45,
+      "memory_mb": 850,
+      "retention": 0.89
+    },
+    "Architectural (PackNet)": {
+      "latency_ms": 8,
+      "memory_mb": 420,
+      "retention": 0.92
+    },
+    "Prompt-Based (L2P)": {
+      "latency_ms": 18,
+      "memory_mb": 220,
+      "retention": 0.9
+    },
+    "Parameter-Isolation (LoRA)": {
+      "latency_ms": 22,
+      "memory_mb": 310,
+      "retention": 0.88
+    },
+    "Hybrid (COPE)": {
+      "latency_ms": 30,
+      "memory_mb": 380,
+      "retention": 0.93
+    }
+  },
+  "yearly_trend_forgetting": {
+    "Regularization": {
+      "2020": 0.363287685329713,
+      "2021": 0.31796666020996506,
+      "2022": 0.28618755447992306,
+      "2023": 0.22942148447385854,
+      "2024": 0.19820836953505727,
+      "2025": 0.1652141300784166,
+      "2026": 0.111190076073103
+    },
+    "Replay": {
+      "2020": 0.32147314935060367,
+      "2021": 0.2959562307681273,
+      "2022": 0.2656759700566285,
+      "2023": 0.22346444378276784,
+      "2024": 0.21870662567838717,
+      "2025": 0.17436100336356258,
+      "2026": 0.15158945024751874
+    },
+    "Architectural": {
+      "2020": 0.22192917791176603,
+      "2021": 0.20021198690590866,
+      "2022": 0.16375392800367553,
+      "2023": 0.13388173559065455,
+      "2024": 0.11403543710772088,
+      "2025": 0.06492119376194641,
+      "2026": 0.043524523184970534
+    },
+    "Prompt-Based": {
+      "2020": 0.1468418877980293,
+      "2021": 0.1327972036129031,
+      "2022": 0.07821840438165062,
+      "2023": 0.05112815190146068,
+      "2024": 0.04128901467884251,
+      "2025": 0.02,
+      "2026": 0.02
+    }
+  },
+  "best_overall_method": "Hybrid",
+  "best_production_method": "Hybrid (COPE)"
+}

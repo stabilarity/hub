@@ -1,0 +1,33 @@
+{
+  "total_papers": 20,
+  "year_distribution": {
+    "2025": 8,
+    "2026": 12
+  },
+  "source_type_distribution": {
+    "journal": 11,
+    "conference-paper": 7,
+    "book": 1,
+    "book-chapter": 1
+  },
+  "top_venues": {
+    "Computer Fraud & Security": 1,
+    "Proceedings of the Design Society": 1,
+    "Proceedings of IEEE Southeastcon": 1,
+    "International Journal of Computational and Experimental Science and Engineering": 1,
+    "Electronics": 1,
+    "Apress eBooks": 1,
+    "ACM Transactions on Software Engineering and Methodology": 1,
+    "Intelligent Systems with Applications": 1,
+    "International Journal of Artificial Intelligence Data Science and Machine Learning": 1,
+    "Springer eBooks": 1
+  },
+  "mcp_papers": 7,
+  "cross_vendor_papers": 4,
+  "avg_authors": 2.45,
+  "author_distribution": {
+    "1": 4,
+    "3": 13,
+    "2": 3
+  }
+}

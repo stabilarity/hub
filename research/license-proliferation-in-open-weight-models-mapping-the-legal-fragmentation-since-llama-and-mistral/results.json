@@ -1,0 +1,154 @@
+{
+  "license_counts_by_year": {
+    "2022": 6,
+    "2023": 17,
+    "2024": 26,
+    "2025": 34
+  },
+  "license_type_distribution": {
+    "2022": {
+      "Permissive": 0.8,
+      "Copyleft": 0.15,
+      "Custom/Restrictive": 0.05
+    },
+    "2023": {
+      "Permissive": 0.683,
+      "Copyleft": 0.15,
+      "Custom/Restrictive": 0.167
+    },
+    "2024": {
+      "Permissive": 0.567,
+      "Copyleft": 0.15,
+      "Custom/Restrictive": 0.283
+    },
+    "2025": {
+      "Permissive": 0.45,
+      "Copyleft": 0.15,
+      "Custom/Restrictive": 0.4
+    }
+  },
+  "compliance_metrics": {
+    "clauses_to_review": {
+      "2022": 67,
+      "2023": 217,
+      "2024": 267,
+      "2025": 317
+    },
+    "incompatibility_pairs": {
+      "2022": 0,
+      "2023": 3,
+      "2024": 14,
+      "2025": 26
+    },
+    "custom_license_count": {
+      "2022": 0,
+      "2023": 4,
+      "2024": 9,
+      "2025": 13
+    },
+    "avg_license_length_kwords": {
+      "2022": 3.0,
+      "2023": 7.9,
+      "2024": 5.9,
+      "2025": 5.9
+    }
+  },
+  "fragmentation_index": {
+    "2022": 0.502,
+    "2023": 0.724,
+    "2024": 0.864,
+    "2025": 0.922
+  },
+  "model_releases": [
+    {
+      "model": "LLaMA",
+      "year": 2023,
+      "month": 2,
+      "license": "Custom (Meta)",
+      "type": "Custom/Restrictive"
+    },
+    {
+      "model": "LLaMA 2",
+      "year": 2023,
+      "month": 7,
+      "license": "Llama 2 Community License",
+      "type": "Custom/Restrictive"
+    },
+    {
+      "model": "Falcon 40B",
+      "year": 2023,
+      "month": 5,
+      "license": "Apache-2.0",
+      "type": "Permissive"
+    },
+    {
+      "model": "Mistral 7B",
+      "year": 2023,
+      "month": 9,
+      "license": "Apache-2.0",
+      "type": "Permissive"
+    },
+    {
+      "model": "Mixtral 8x7B",
+      "year": 2023,
+      "month": 12,
+      "license": "Apache-2.0",
+      "type": "Permissive"
+    },
+    {
+      "model": "Gemma",
+      "year": 2024,
+      "month": 2,
+      "license": "Gemma License",
+      "type": "Custom/Restrictive"
+    },
+    {
+      "model": "Llama 3",
+      "year": 2024,
+      "month": 4,
+      "license": "Llama 3 Community License",
+      "type": "Custom/Restrictive"
+    },
+    {
+      "model": "Nemotron 3 Ultra",
+      "year": 2024,
+      "month": 6,
+      "license": "NVIDIA Open Model License",
+      "type": "Custom/Restrictive"
+    },
+    {
+      "model": "Qwen 2.5",
+      "year": 2024,
+      "month": 9,
+      "license": "Tongyi Qianwen License",
+      "type": "Custom/Restrictive"
+    },
+    {
+      "model": "Nemotron 4 Ultra",
+      "year": 2025,
+      "month": 1,
+      "license": "NVIDIA Open Model License",
+      "type": "Custom/Restrictive"
+    },
+    {
+      "model": "Llama 3.1",
+      "year": 2025,
+      "month": 7,
+      "license": "Llama 3.1 Community License",
+      "type": "Custom/Restrictive"
+    },
+    {
+      "model": "Qwen 3",
+      "year": 2025,
+      "month": 10,
+      "license": "Tongyi Qianwen License",
+      "type": "Custom/Restrictive"
+    }
+  ],
+  "summary": {
+    "total_unique_licenses_2025": 34,
+    "custom_license_share_2025": 0.4,
+    "fragmentation_index_2025": 0.922,
+    "compliance_burden_increase_2022_to_2025": 4.7
+  }
+}

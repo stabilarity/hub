@@ -1,0 +1,112 @@
+{
+  "n_base_models": 10,
+  "n_finetunes": 42,
+  "avg_base_benchmark": 57.535058611025796,
+  "avg_finetune_benchmark": 65.92569730353507,
+  "avg_base_downloads": 344161.5,
+  "avg_finetune_downloads": 140301.02380952382,
+  "benchmark_improvement": 8.390638692509278,
+  "downloads_ratio_finetune_to_base": 0.40766042631010097,
+  "per_base_model": [
+    {
+      "base_model": "Llama-2-7B",
+      "base_benchmark": 53.77756879504105,
+      "avg_finetune_benchmark": 65.50589066664698,
+      "benchmark_gain": 11.728321871605928,
+      "base_downloads": 90162,
+      "avg_finetune_downloads": 38079,
+      "downloads_ratio": 0.42234256116767593,
+      "n_finetunes": 4
+    },
+    {
+      "base_model": "Llama-2-13B",
+      "base_benchmark": 63.53529977697204,
+      "avg_finetune_benchmark": 71.77174574781758,
+      "benchmark_gain": 8.236445970845537,
+      "base_downloads": 216859,
+      "avg_finetune_downloads": 84723,
+      "downloads_ratio": 0.390685883454226,
+      "n_finetunes": 4
+    },
+    {
+      "base_model": "Llama-2-70B",
+      "base_benchmark": 64.41396048789807,
+      "avg_finetune_benchmark": 73.84642893422655,
+      "benchmark_gain": 9.432468446328485,
+      "base_downloads": 365235,
+      "avg_finetune_downloads": 152505,
+      "downloads_ratio": 0.41755513573452707,
+      "n_finetunes": 4
+    },
+    {
+      "base_model": "Mistral-7B",
+      "base_benchmark": 51.51650716276304,
+      "avg_finetune_benchmark": 58.307122916366524,
+      "benchmark_gain": 6.790615753603483,
+      "base_downloads": 485379,
+      "avg_finetune_downloads": 236031,
+      "downloads_ratio": 0.4862833991581836,
+      "n_finetunes": 4
+    },
+    {
+      "base_model": "Mixtral-8x7B",
+      "base_benchmark": 51.24733282764082,
+      "avg_finetune_benchmark": 58.81947219895136,
+      "benchmark_gain": 7.572139371310541,
+      "base_downloads": 333393,
+      "avg_finetune_downloads": 168185,
+      "downloads_ratio": 0.5044665004964112,
+      "n_finetunes": 5
+    },
+    {
+      "base_model": "Gemma-7B",
+      "base_benchmark": 60.614580620439355,
+      "avg_finetune_benchmark": 69.37267961958344,
+      "benchmark_gain": 8.758098999144082,
+      "base_downloads": 367324,
+      "avg_finetune_downloads": 159288,
+      "downloads_ratio": 0.43364577321383846,
+      "n_finetunes": 4
+    },
+    {
+      "base_model": "Gemma-2B",
+      "base_benchmark": 56.184143214908275,
+      "avg_finetune_benchmark": 62.66582820717561,
+      "benchmark_gain": 6.481684992267333,
+      "base_downloads": 304417,
+      "avg_finetune_downloads": 101379,
+      "downloads_ratio": 0.33302870733237633,
+      "n_finetunes": 5
+    },
+    {
+      "base_model": "Qwen-1.5-7B",
+      "base_benchmark": 56.140643046825566,
+      "avg_finetune_benchmark": 64.86386815344318,
+      "benchmark_gain": 8.723225106617612,
+      "base_downloads": 347862,
+      "avg_finetune_downloads": 153319,
+      "downloads_ratio": 0.4407489176742501,
+      "n_finetunes": 5
+    },
+    {
+      "base_model": "Qwen-1.5-14B",
+      "base_benchmark": 58.92640750155472,
+      "avg_finetune_benchmark": 68.10896171079767,
+      "benchmark_gain": 9.182554209242952,
+      "base_downloads": 472123,
+      "avg_finetune_downloads": 148628,
+      "downloads_ratio": 0.3148088527777719,
+      "n_finetunes": 4
+    },
+    {
+      "base_model": "Phi-3-mini",
+      "base_benchmark": 58.99414267621499,
+      "avg_finetune_benchmark": 69.8273751896225,
+      "benchmark_gain": 10.83323251340751,
+      "base_downloads": 458861,
+      "avg_finetune_downloads": 167062,
+      "downloads_ratio": 0.3640812068723789,
+      "n_finetunes": 3
+    }
+  ]
+}

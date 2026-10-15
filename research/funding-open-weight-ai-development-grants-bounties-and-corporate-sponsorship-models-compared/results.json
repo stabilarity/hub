@@ -1,0 +1,38 @@
+{
+  "funding_by_mechanism": {
+    "Grants": 98.79999999999998,
+    "Bounties": 132.1,
+    "Corporate Sponsorship": 119.19999999999999
+  },
+  "avg_funding_per_project": {
+    "Grants": 12.349999999999998,
+    "Bounties": 16.5125,
+    "Corporate Sponsorship": 14.899999999999999
+  },
+  "avg_release_cadence_months": {
+    "Grants": 18.675,
+    "Bounties": 7.8375,
+    "Corporate Sponsorship": 6.5625
+  },
+  "avg_contributors": {
+    "Grants": 13.875,
+    "Bounties": 44.75,
+    "Corporate Sponsorship": 76.375
+  },
+  "total_projects": 8,
+  "projects": [
+    "Llama",
+    "Mistral",
+    "Falcon",
+    "MPT",
+    "BLOOM",
+    "StableLM",
+    "Pythia",
+    "RedPajama"
+  ],
+  "mechanisms": [
+    "Grants",
+    "Bounties",
+    "Corporate Sponsorship"
+  ]
+}

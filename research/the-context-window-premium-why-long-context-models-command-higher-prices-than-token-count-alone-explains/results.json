@@ -1,0 +1,1785 @@
+{
+ "meta": {
+  "accessed": "2026-10-20",
+  "output_tokens_per_request": 2000,
+  "prompt_points": [
+   32000,
+   128000,
+   200000,
+   500000,
+   990000
+  ],
+  "cache_share": 0.9,
+  "n_rows_pricing_csv": 83,
+  "n_rows_priced": 81,
+  "n_providers_pricing_csv": 14,
+  "n_rows_missing_price": 2,
+  "n_rows_missing_cached_price": 15,
+  "n_rows_missing_batch_discount": 17
+ },
+ "rq1_direct": {
+  "n_priced": 81,
+  "n_tiered": 19,
+  "share_tiered_pct": 23.5,
+  "n_ge_1m": 49,
+  "n_tiered_ge_1m": 16,
+  "share_tiered_ge_1m_pct": 32.7,
+  "tier_input_multiplier_median": 2.0,
+  "tier_input_multiplier_min": 2.0,
+  "tier_input_multiplier_max": 5.0,
+  "tier_output_multiplier_median": 1.5,
+  "thresholds": [
+   32000,
+   100000,
+   200000,
+   256000,
+   272000
+  ],
+  "tiered_by_provider": {
+   "Anthropic": [
+    "Claude Haiku 5.5"
+   ],
+   "OpenAI": [
+    "gpt-6-astra",
+    "gpt-6.1-sol",
+    "gpt-6-sol",
+    "gpt-6-luna",
+    "gpt-5.6-sol",
+    "gpt-5.6-terra",
+    "gpt-5.6-luna",
+    "gpt-5.5",
+    "gpt-5.5-pro",
+    "gpt-5.4"
+   ],
+   "Google": [
+    "gemini-3.1-pro-preview",
+    "gemini-2.5-pro"
+   ],
+   "xAI": [
+    "grok-4.7",
+    "grok-4.5",
+    "grok-4.3",
+    "grok-build-0.1"
+   ],
+   "Alibaba": [
+    "qwen3.7-plus",
+    "qwen3.7-flash"
+   ]
+  },
+  "ols_log_price_on_log_context": {
+   "n": 67,
+   "r2": 0.028,
+   "const": {
+    "coef": -2.068,
+    "se": 1.518,
+    "ci95": [
+     -5.044,
+     0.907
+    ]
+   },
+   "log10_context": {
+    "coef": 0.343,
+    "se": 0.262,
+    "ci95": [
+     -0.17,
+     0.856
+    ]
+   }
+  },
+  "ols_with_provider_fe": {
+   "n": 67,
+   "r2": 0.229,
+   "log10_context": {
+    "coef": 0.585,
+    "se": 0.285,
+    "ci95": [
+     0.027,
+     1.143
+    ]
+   }
+  },
+  "ols_with_provider_fe_and_capability": {
+   "n": 49,
+   "r2": 0.382,
+   "log10_context": {
+    "coef": -0.244,
+    "se": 0.334,
+    "ci95": [
+     -0.898,
+     0.409
+    ]
+   },
+   "aa_index": {
+    "coef": 0.024,
+    "se": 0.006,
+    "ci95": [
+     0.012,
+     0.035
+    ]
+   },
+   "providers": [
+    "Alibaba",
+    "Anthropic",
+    "DeepSeek",
+    "Google",
+    "Mistral",
+    "Moonshot",
+    "OpenAI",
+    "xAI"
+   ],
+   "models": [
+    "Claude Fable 5.1",
+    "Claude Opus 5.5",
+    "Claude Opus 5",
+    "Claude Sonnet 5.5",
+    "Claude Sonnet 5",
+    "Claude Sonnet 4.6",
+    "Claude Sonnet 4.5",
+    "Claude Haiku 5.5",
+    "Claude Haiku 4.5",
+    "gpt-6-astra",
+    "gpt-6.1-sol",
+    "gpt-6-sol",
+    "gpt-6-luna",
+    "gpt-5.6-sol",
+    "gpt-5.6-terra",
+    "gpt-5.6-luna",
+    "gpt-5.5",
+    "gpt-5.4",
+    "gpt-5.4-mini",
+    "gpt-5.4-nano",
+    "gpt-5.2",
+    "gpt-5",
+    "gpt-5-mini",
+    "gpt-5-nano",
+    "gpt-4.1",
+    "gpt-4.1-mini",
+    "gpt-4.1-nano",
+    "gpt-4o-mini",
+    "o3",
+    "o4-mini",
+    "gemini-4-argon",
+    "gemini-3.8-flash",
+    "gemini-3.6-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-pro-preview",
+    "gemini-3-flash-preview",
+    "gemini-2.5-pro",
+    "gemini-2.5-flash",
+    "gemini-2.5-flash-lite",
+    "grok-4.7",
+    "grok-4.5",
+    "grok-4.3",
+    "grok-build-0.1",
+    "qwen3.7-max",
+    "qwen3.7-plus",
+    "deepseek-v4-pro",
+    "Mistral Medium 3.5",
+    "kimi-k3",
+    "kimi-k2.6"
+   ]
+  },
+  "price_multiple_per_10x_context_fe_capability": 0.57
+ },
+ "rq1_market": {
+  "n_models": 365,
+  "n_with_aa_index": 213,
+  "ols_all_no_control": {
+   "n": 365,
+   "r2": 0.031,
+   "const": {
+    "coef": -1.568,
+    "se": 0.381,
+    "ci95": [
+     -2.315,
+     -0.821
+    ]
+   },
+   "log10_context": {
+    "coef": 0.226,
+    "se": 0.07,
+    "ci95": [
+     0.09,
+     0.362
+    ]
+   }
+  },
+  "ols_aa_subset_no_control": {
+   "n": 213,
+   "r2": 0.035,
+   "const": {
+    "coef": -1.919,
+    "se": 0.725,
+    "ci95": [
+     -3.339,
+     -0.499
+    ]
+   },
+   "log10_context": {
+    "coef": 0.286,
+    "se": 0.129,
+    "ci95": [
+     0.032,
+     0.539
+    ]
+   }
+  },
+  "ols_aa_subset_with_capability": {
+   "n": 213,
+   "r2": 0.158,
+   "const": {
+    "coef": 0.425,
+    "se": 0.834,
+    "ci95": [
+     -1.209,
+     2.059
+    ]
+   },
+   "log10_context": {
+    "coef": -0.231,
+    "se": 0.161,
+    "ci95": [
+     -0.546,
+     0.083
+    ]
+   },
+   "aa_index": {
+    "coef": 0.024,
+    "se": 0.004,
+    "ci95": [
+     0.016,
+     0.033
+    ]
+   }
+  },
+  "ols_output_price_with_capability": {
+   "n": 213,
+   "r2": 0.182,
+   "const": {
+    "coef": 0.397,
+    "se": 0.881,
+    "ci95": [
+     -1.33,
+     2.125
+    ]
+   },
+   "log10_context": {
+    "coef": -0.125,
+    "se": 0.171,
+    "ci95": [
+     -0.46,
+     0.21
+    ]
+   },
+   "aa_index": {
+    "coef": 0.026,
+    "se": 0.005,
+    "ci95": [
+     0.017,
+     0.035
+    ]
+   }
+  },
+  "price_multiple_per_10x_context_no_control": 1.93,
+  "price_multiple_per_10x_context_with_capability": 0.59,
+  "price_multiple_per_aa_point": 1.057,
+  "n_tiered": 52,
+  "share_tiered_pct": 14.2,
+  "n_ge_1m": 132,
+  "share_tiered_ge_1m_pct": 31.8,
+  "tier_input_multiplier_median": 2.0
+ },
+ "rq2_request_cost_usd": {
+  "Claude Fable 5.1 | Anthropic": {
+   "32000": 0.42,
+   "128000": 1.38,
+   "200000": 2.1,
+   "500000": 5.1,
+   "990000": 10.0
+  },
+  "Claude Opus 5.5 | Anthropic": {
+   "32000": 0.168,
+   "128000": 0.552,
+   "200000": 0.84,
+   "500000": 2.04,
+   "990000": 4.0
+  },
+  "Claude Opus 5 | Anthropic": {
+   "32000": 0.21,
+   "128000": 0.69,
+   "200000": 1.05,
+   "500000": 2.55,
+   "990000": 5.0
+  },
+  "Claude Sonnet 5.5 | Anthropic": {
+   "32000": 0.084,
+   "128000": 0.276,
+   "200000": 0.42,
+   "500000": 1.02,
+   "990000": 2.0
+  },
+  "Claude Sonnet 5 | Anthropic": {
+   "32000": 0.084,
+   "128000": 0.276,
+   "200000": 0.42,
+   "500000": 1.02,
+   "990000": 2.0
+  },
+  "Claude Sonnet 4.6 | Anthropic": {
+   "32000": 0.126,
+   "128000": 0.414,
+   "200000": 0.63,
+   "500000": 1.53,
+   "990000": 3.0
+  },
+  "Claude Sonnet 4.5 | Anthropic": {
+   "32000": 0.126,
+   "128000": 0.414,
+   "200000": null,
+   "500000": null,
+   "990000": null
+  },
+  "Claude Haiku 5.5 | Anthropic": {
+   "32000": 0.0042,
+   "128000": 0.069,
+   "200000": 0.105,
+   "500000": 0.255,
+   "990000": 0.5
+  },
+  "Claude Haiku 4.5 | Anthropic": {
+   "32000": 0.042,
+   "128000": 0.138,
+   "200000": null,
+   "500000": null,
+   "990000": null
+  },
+  "gpt-6-astra | OpenAI": {
+   "32000": 0.42,
+   "128000": 1.38,
+   "200000": 2.1,
+   "500000": 10.15,
+   "990000": 19.95
+  },
+  "gpt-6.1-sol | OpenAI": {
+   "32000": 0.084,
+   "128000": 0.276,
+   "200000": 0.42,
+   "500000": 2.03,
+   "990000": 3.99
+  },
+  "gpt-6-sol | OpenAI": {
+   "32000": 0.084,
+   "128000": 0.276,
+   "200000": 0.42,
+   "500000": 2.03,
+   "990000": 3.99
+  },
+  "gpt-6-luna | OpenAI": {
+   "32000": 0.0042,
+   "128000": 0.0138,
+   "200000": 0.021,
+   "500000": 0.1015,
+   "990000": 0.1995
+  },
+  "gpt-5.6-sol | OpenAI": {
+   "32000": 0.168,
+   "128000": 0.552,
+   "200000": 0.84,
+   "500000": 4.06,
+   "990000": 7.98
+  },
+  "gpt-5.6-terra | OpenAI": {
+   "32000": 0.088,
+   "128000": 0.28,
+   "200000": 0.424,
+   "500000": 2.036,
+   "990000": 3.996
+  },
+  "gpt-5.6-luna | OpenAI": {
+   "32000": 0.0088,
+   "128000": 0.028,
+   "200000": 0.0424,
+   "500000": 0.2036,
+   "990000": 0.3996
+  },
+  "gpt-5.5 | OpenAI": {
+   "32000": 0.22,
+   "128000": 0.7,
+   "200000": 1.06,
+   "500000": 5.09,
+   "990000": 9.99
+  },
+  "gpt-5.5-pro | OpenAI": {
+   "32000": 1.32,
+   "128000": 4.2,
+   "200000": 6.36,
+   "500000": 30.54,
+   "990000": 59.94
+  },
+  "gpt-5.4 | OpenAI": {
+   "32000": 0.11,
+   "128000": 0.35,
+   "200000": 0.53,
+   "500000": 2.545,
+   "990000": 4.995
+  },
+  "gpt-5.4-mini | OpenAI": {
+   "32000": 0.033,
+   "128000": 0.105,
+   "200000": 0.159,
+   "500000": null,
+   "990000": null
+  },
+  "gpt-5.4-nano | OpenAI": {
+   "32000": 0.0089,
+   "128000": 0.0281,
+   "200000": 0.0425,
+   "500000": null,
+   "990000": null
+  },
+  "gpt-5.2 | OpenAI": {
+   "32000": 0.084,
+   "128000": 0.252,
+   "200000": 0.378,
+   "500000": null,
+   "990000": null
+  },
+  "gpt-5 | OpenAI": {
+   "32000": 0.06,
+   "128000": 0.18,
+   "200000": 0.27,
+   "500000": null,
+   "990000": null
+  },
+  "gpt-5-mini | OpenAI": {
+   "32000": 0.012,
+   "128000": 0.036,
+   "200000": 0.054,
+   "500000": null,
+   "990000": null
+  },
+  "gpt-5-nano | OpenAI": {
+   "32000": 0.0024,
+   "128000": 0.0072,
+   "200000": 0.0108,
+   "500000": null,
+   "990000": null
+  },
+  "gpt-4.1 | OpenAI": {
+   "32000": 0.08,
+   "128000": 0.272,
+   "200000": 0.416,
+   "500000": 1.016,
+   "990000": 1.996
+  },
+  "gpt-4.1-mini | OpenAI": {
+   "32000": 0.016,
+   "128000": 0.0544,
+   "200000": 0.0832,
+   "500000": 0.2032,
+   "990000": 0.3992
+  },
+  "gpt-4.1-nano | OpenAI": {
+   "32000": 0.004,
+   "128000": 0.0136,
+   "200000": 0.0208,
+   "500000": 0.0508,
+   "990000": 0.0998
+  },
+  "gpt-4o | OpenAI": {
+   "32000": 0.1,
+   "128000": null,
+   "200000": null,
+   "500000": null,
+   "990000": null
+  },
+  "gpt-4o-mini | OpenAI": {
+   "32000": 0.006,
+   "128000": null,
+   "200000": null,
+   "500000": null,
+   "990000": null
+  },
+  "o3 | OpenAI": {
+   "32000": 0.08,
+   "128000": 0.272,
+   "200000": null,
+   "500000": null,
+   "990000": null
+  },
+  "o4-mini | OpenAI": {
+   "32000": 0.044,
+   "128000": 0.1496,
+   "200000": null,
+   "500000": null,
+   "990000": null
+  },
+  "gemini-4-argon | Google": {
+   "32000": 0.084,
+   "128000": 0.276,
+   "200000": 0.42,
+   "500000": 1.02,
+   "990000": 2.0
+  },
+  "gemini-3.8-flash | Google": {
+   "32000": 0.0315,
+   "128000": 0.1035,
+   "200000": 0.1575,
+   "500000": 0.3825,
+   "990000": 0.75
+  },
+  "gemini-3.6-flash | Google": {
+   "32000": 0.0315,
+   "128000": 0.1035,
+   "200000": 0.1575,
+   "500000": 0.3825,
+   "990000": 0.75
+  },
+  "gemini-3.5-flash-lite | Google": {
+   "32000": 0.0146,
+   "128000": 0.0434,
+   "200000": 0.065,
+   "500000": 0.155,
+   "990000": 0.302
+  },
+  "gemini-3.1-pro-preview | Google": {
+   "32000": 0.088,
+   "128000": 0.28,
+   "200000": 0.424,
+   "500000": 2.036,
+   "990000": 3.996
+  },
+  "gemini-3.1-flash-lite | Google": {
+   "32000": 0.011,
+   "128000": 0.035,
+   "200000": 0.053,
+   "500000": 0.128,
+   "990000": 0.2505
+  },
+  "gemini-3-flash-preview | Google": {
+   "32000": 0.022,
+   "128000": 0.07,
+   "200000": 0.106,
+   "500000": 0.256,
+   "990000": 0.501
+  },
+  "gemini-2.5-pro | Google": {
+   "32000": 0.06,
+   "128000": 0.18,
+   "200000": 0.27,
+   "500000": 1.28,
+   "990000": 2.505
+  },
+  "gemini-2.5-flash | Google": {
+   "32000": 0.0146,
+   "128000": 0.0434,
+   "200000": 0.065,
+   "500000": 0.155,
+   "990000": 0.302
+  },
+  "gemini-2.5-flash-lite | Google": {
+   "32000": 0.004,
+   "128000": 0.0136,
+   "200000": 0.0208,
+   "500000": 0.0508,
+   "990000": 0.0998
+  },
+  "grok-4.7 | xAI": {
+   "32000": 0.076,
+   "128000": 0.268,
+   "200000": 0.824,
+   "500000": null,
+   "990000": null
+  },
+  "grok-4.5 | xAI": {
+   "32000": 0.076,
+   "128000": 0.268,
+   "200000": 0.824,
+   "500000": null,
+   "990000": null
+  },
+  "grok-4.3 | xAI": {
+   "32000": 0.045,
+   "128000": 0.165,
+   "200000": 0.51,
+   "500000": 1.26,
+   "990000": 2.485
+  },
+  "grok-build-0.1 | xAI": {
+   "32000": 0.036,
+   "128000": 0.132,
+   "200000": 0.408,
+   "500000": null,
+   "990000": null
+  },
+  "qwen3.8-max | Alibaba": {
+   "32000": 0.076,
+   "128000": 0.268,
+   "200000": 0.412,
+   "500000": 1.012,
+   "990000": 1.992
+  },
+  "qwen3.7-max | Alibaba": {
+   "32000": 0.095,
+   "128000": 0.335,
+   "200000": 0.515,
+   "500000": 1.265,
+   "990000": 2.49
+  },
+  "qwen3.7-plus | Alibaba": {
+   "32000": 0.016,
+   "128000": 0.0544,
+   "200000": 0.0832,
+   "500000": 0.6096,
+   "990000": 1.1976
+  },
+  "qwen3.8-flash | Alibaba": {
+   "32000": 0.0057,
+   "128000": 0.0201,
+   "200000": 0.0309,
+   "500000": 0.0759,
+   "990000": 0.1494
+  },
+  "qwen3.7-flash | Alibaba": {
+   "32000": 0.0012,
+   "128000": 0.0136,
+   "200000": 0.0208,
+   "500000": 0.1016,
+   "990000": 0.1996
+  },
+  "deepseek-flash (V4.1-Flash-1017) | DeepSeek": {
+   "32000": 0.012,
+   "128000": 0.0408,
+   "200000": 0.0624,
+   "500000": 0.1524,
+   "990000": 0.2994
+  },
+  "deepseek-v4-pro | DeepSeek": {
+   "32000": 0.0502,
+   "128000": 0.1769,
+   "200000": 0.2719,
+   "500000": 0.6679,
+   "990000": 1.3147
+  },
+  "Mistral Large 4 | Mistral": {
+   "32000": 0.0259,
+   "128000": 0.0912,
+   "200000": 0.1402,
+   "500000": 0.3442,
+   "990000": 0.6774
+  },
+  "Mistral Large 3 | Mistral": {
+   "32000": 0.019,
+   "128000": 0.067,
+   "200000": 0.103,
+   "500000": null,
+   "990000": null
+  },
+  "Mistral Medium 3.5 | Mistral": {
+   "32000": 0.063,
+   "128000": 0.207,
+   "200000": 0.315,
+   "500000": null,
+   "990000": null
+  },
+  "Mistral Small 4 | Mistral": {
+   "32000": 0.006,
+   "128000": 0.0204,
+   "200000": 0.0312,
+   "500000": null,
+   "990000": null
+  },
+  "Ministral 3 14B | Mistral": {
+   "32000": 0.0068,
+   "128000": 0.026,
+   "200000": 0.0404,
+   "500000": null,
+   "990000": null
+  },
+  "kimi-k3 | Moonshot": {
+   "32000": 0.126,
+   "128000": 0.414,
+   "200000": 0.63,
+   "500000": 1.53,
+   "990000": 3.0
+  },
+  "kimi-k2.6 | Moonshot": {
+   "32000": 0.0384,
+   "128000": 0.1296,
+   "200000": 0.198,
+   "500000": null,
+   "990000": null
+  },
+  "Muse Spark Open 816B A42B | Meta (via Together)": {
+   "32000": 0.0485,
+   "128000": 0.1685,
+   "200000": 0.2585,
+   "500000": 0.6335,
+   "990000": 1.246
+  },
+  "Muse Glimmer 30B | Meta (via Together)": {
+   "32000": 0.0142,
+   "128000": 0.0478,
+   "200000": null,
+   "500000": null,
+   "990000": null
+  },
+  "Qwen3.7 Plus | Alibaba (via Together)": {
+   "32000": 0.0128,
+   "128000": 0.0435,
+   "200000": 0.0666,
+   "500000": 0.1626,
+   "990000": 0.3194
+  },
+  "DeepSeek V4 Pro 0813 | DeepSeek (via Together)": {
+   "32000": 0.0502,
+   "128000": 0.1769,
+   "200000": 0.2719,
+   "500000": 0.6679,
+   "990000": 1.3147
+  },
+  "GLM-5.3 | Z.ai (via Together)": {
+   "32000": 0.0536,
+   "128000": 0.188,
+   "200000": 0.2888,
+   "500000": 0.7088,
+   "990000": 1.3948
+  },
+  "MiniMax M3 | MiniMax (via Together)": {
+   "32000": 0.012,
+   "128000": 0.0408,
+   "200000": 0.0624,
+   "500000": 0.1524,
+   "990000": null
+  },
+  "Nemotron 3.5 Super VL | NVIDIA (via Together)": {
+   "32000": 0.0058,
+   "128000": 0.0202,
+   "200000": 0.031,
+   "500000": null,
+   "990000": null
+  },
+  "gpt-oss-120b | OpenAI (via Together)": {
+   "32000": 0.006,
+   "128000": 0.0204,
+   "200000": null,
+   "500000": null,
+   "990000": null
+  },
+  "gpt-oss-120b | OpenAI (via Groq)": {
+   "32000": 0.006,
+   "128000": 0.0204,
+   "200000": null,
+   "500000": null,
+   "990000": null
+  },
+  "gpt-oss-20b | OpenAI (via Groq)": {
+   "32000": 0.003,
+   "128000": 0.0102,
+   "200000": null,
+   "500000": null,
+   "990000": null
+  },
+  "Nova 2 Lite | Amazon": {
+   "32000": 0.0146,
+   "128000": 0.0434,
+   "200000": 0.065,
+   "500000": 0.155,
+   "990000": 0.302
+  },
+  "Nova 2 Pro (Preview) | Amazon": {
+   "32000": 0.06,
+   "128000": 0.18,
+   "200000": 0.27,
+   "500000": 0.645,
+   "990000": 1.2575
+  },
+  "Nova Premier | Amazon": {
+   "32000": 0.105,
+   "128000": 0.345,
+   "200000": 0.525,
+   "500000": 1.275,
+   "990000": 2.5
+  },
+  "Nova Pro | Amazon": {
+   "32000": 0.032,
+   "128000": 0.1088,
+   "200000": 0.1664,
+   "500000": null,
+   "990000": null
+  },
+  "Nova Lite | Amazon": {
+   "32000": 0.0024,
+   "128000": 0.0082,
+   "200000": 0.0125,
+   "500000": null,
+   "990000": null
+  },
+  "Nova Micro | Amazon": {
+   "32000": 0.0014,
+   "128000": null,
+   "200000": null,
+   "500000": null,
+   "990000": null
+  },
+  "Llama 4 Maverick 17B | Meta (via Bedrock)": {
+   "32000": 0.0096,
+   "128000": 0.0327,
+   "200000": 0.0499,
+   "500000": 0.1219,
+   "990000": 0.2395
+  },
+  "Llama 4 Scout 17B | Meta (via Bedrock)": {
+   "32000": 0.0068,
+   "128000": 0.0231,
+   "200000": 0.0353,
+   "500000": 0.0863,
+   "990000": 0.1696
+  },
+  "Llama 3.3 70B Instruct | Meta (via Bedrock)": {
+   "32000": 0.0245,
+   "128000": null,
+   "200000": null,
+   "500000": null,
+   "990000": null
+  },
+  "Llama 3.1 70B Instruct | Meta (via Bedrock)": {
+   "32000": 0.0245,
+   "128000": null,
+   "200000": null,
+   "500000": null,
+   "990000": null
+  },
+  "Command R+ 08-2024 | Cohere": {
+   "32000": 0.1,
+   "128000": null,
+   "200000": null,
+   "500000": null,
+   "990000": null
+  }
+ },
+ "rq2_cliffs": [
+  {
+   "provider": "Anthropic",
+   "model": "Claude Haiku 5.5",
+   "threshold_tokens": 100000,
+   "cost_just_below_usd": 0.011,
+   "cost_just_above_usd": 0.055,
+   "jump_pct": 400.0,
+   "flat_rate_equivalent_prompt_tokens": 540005,
+   "one_request_at_2x_threshold_usd": 0.105,
+   "two_requests_below_threshold_usd": 0.022,
+   "split_saving_pct": 79.0
+  },
+  {
+   "provider": "OpenAI",
+   "model": "gpt-6-astra",
+   "threshold_tokens": 272000,
+   "cost_just_below_usd": 2.82,
+   "cost_just_above_usd": 5.59,
+   "jump_pct": 98.2,
+   "flat_rate_equivalent_prompt_tokens": 549002,
+   "one_request_at_2x_threshold_usd": 11.03,
+   "two_requests_below_threshold_usd": 5.64,
+   "split_saving_pct": 48.9
+  },
+  {
+   "provider": "OpenAI",
+   "model": "gpt-6.1-sol",
+   "threshold_tokens": 272000,
+   "cost_just_below_usd": 0.564,
+   "cost_just_above_usd": 1.118,
+   "jump_pct": 98.2,
+   "flat_rate_equivalent_prompt_tokens": 549002,
+   "one_request_at_2x_threshold_usd": 2.206,
+   "two_requests_below_threshold_usd": 1.128,
+   "split_saving_pct": 48.9
+  },
+  {
+   "provider": "OpenAI",
+   "model": "gpt-6-sol",
+   "threshold_tokens": 272000,
+   "cost_just_below_usd": 0.564,
+   "cost_just_above_usd": 1.118,
+   "jump_pct": 98.2,
+   "flat_rate_equivalent_prompt_tokens": 549002,
+   "one_request_at_2x_threshold_usd": 2.206,
+   "two_requests_below_threshold_usd": 1.128,
+   "split_saving_pct": 48.9
+  },
+  {
+   "provider": "OpenAI",
+   "model": "gpt-6-luna",
+   "threshold_tokens": 272000,
+   "cost_just_below_usd": 0.0282,
+   "cost_just_above_usd": 0.0559,
+   "jump_pct": 98.2,
+   "flat_rate_equivalent_prompt_tokens": 549002,
+   "one_request_at_2x_threshold_usd": 0.1103,
+   "two_requests_below_threshold_usd": 0.0564,
+   "split_saving_pct": 48.9
+  },
+  {
+   "provider": "OpenAI",
+   "model": "gpt-5.6-sol",
+   "threshold_tokens": 272000,
+   "cost_just_below_usd": 1.128,
+   "cost_just_above_usd": 2.236,
+   "jump_pct": 98.2,
+   "flat_rate_equivalent_prompt_tokens": 549002,
+   "one_request_at_2x_threshold_usd": 4.412,
+   "two_requests_below_threshold_usd": 2.256,
+   "split_saving_pct": 48.9
+  },
+  {
+   "provider": "OpenAI",
+   "model": "gpt-5.6-terra",
+   "threshold_tokens": 272000,
+   "cost_just_below_usd": 0.568,
+   "cost_just_above_usd": 1.124,
+   "jump_pct": 97.9,
+   "flat_rate_equivalent_prompt_tokens": 550002,
+   "one_request_at_2x_threshold_usd": 2.212,
+   "two_requests_below_threshold_usd": 1.136,
+   "split_saving_pct": 48.6
+  },
+  {
+   "provider": "OpenAI",
+   "model": "gpt-5.6-luna",
+   "threshold_tokens": 272000,
+   "cost_just_below_usd": 0.0568,
+   "cost_just_above_usd": 0.1124,
+   "jump_pct": 97.9,
+   "flat_rate_equivalent_prompt_tokens": 550002,
+   "one_request_at_2x_threshold_usd": 0.2212,
+   "two_requests_below_threshold_usd": 0.1136,
+   "split_saving_pct": 48.6
+  },
+  {
+   "provider": "OpenAI",
+   "model": "gpt-5.5",
+   "threshold_tokens": 272000,
+   "cost_just_below_usd": 1.42,
+   "cost_just_above_usd": 2.81,
+   "jump_pct": 97.9,
+   "flat_rate_equivalent_prompt_tokens": 550002,
+   "one_request_at_2x_threshold_usd": 5.53,
+   "two_requests_below_threshold_usd": 2.84,
+   "split_saving_pct": 48.6
+  },
+  {
+   "provider": "OpenAI",
+   "model": "gpt-5.5-pro",
+   "threshold_tokens": 272000,
+   "cost_just_below_usd": 8.52,
+   "cost_just_above_usd": 16.8601,
+   "jump_pct": 97.9,
+   "flat_rate_equivalent_prompt_tokens": 550002,
+   "one_request_at_2x_threshold_usd": 33.18,
+   "two_requests_below_threshold_usd": 17.04,
+   "split_saving_pct": 48.6
+  },
+  {
+   "provider": "OpenAI",
+   "model": "gpt-5.4",
+   "threshold_tokens": 272000,
+   "cost_just_below_usd": 0.71,
+   "cost_just_above_usd": 1.405,
+   "jump_pct": 97.9,
+   "flat_rate_equivalent_prompt_tokens": 550002,
+   "one_request_at_2x_threshold_usd": 2.765,
+   "two_requests_below_threshold_usd": 1.42,
+   "split_saving_pct": 48.6
+  },
+  {
+   "provider": "Google",
+   "model": "gemini-3.1-pro-preview",
+   "threshold_tokens": 200000,
+   "cost_just_below_usd": 0.424,
+   "cost_just_above_usd": 0.836,
+   "jump_pct": 97.2,
+   "flat_rate_equivalent_prompt_tokens": 406002,
+   "one_request_at_2x_threshold_usd": 1.636,
+   "two_requests_below_threshold_usd": 0.848,
+   "split_saving_pct": 48.2
+  },
+  {
+   "provider": "Google",
+   "model": "gemini-2.5-pro",
+   "threshold_tokens": 200000,
+   "cost_just_below_usd": 0.27,
+   "cost_just_above_usd": 0.53,
+   "jump_pct": 96.3,
+   "flat_rate_equivalent_prompt_tokens": 408002,
+   "one_request_at_2x_threshold_usd": 1.03,
+   "two_requests_below_threshold_usd": 0.54,
+   "split_saving_pct": 47.6
+  },
+  {
+   "provider": "xAI",
+   "model": "grok-4.7",
+   "threshold_tokens": 200000,
+   "cost_just_below_usd": 0.412,
+   "cost_just_above_usd": 0.824,
+   "jump_pct": 100.0,
+   "flat_rate_equivalent_prompt_tokens": 406000,
+   "one_request_at_2x_threshold_usd": 1.624,
+   "two_requests_below_threshold_usd": 0.824,
+   "split_saving_pct": 49.3
+  },
+  {
+   "provider": "xAI",
+   "model": "grok-4.5",
+   "threshold_tokens": 200000,
+   "cost_just_below_usd": 0.412,
+   "cost_just_above_usd": 0.824,
+   "jump_pct": 100.0,
+   "flat_rate_equivalent_prompt_tokens": 406000,
+   "one_request_at_2x_threshold_usd": 1.624,
+   "two_requests_below_threshold_usd": 0.824,
+   "split_saving_pct": 49.3
+  },
+  {
+   "provider": "xAI",
+   "model": "grok-4.3",
+   "threshold_tokens": 200000,
+   "cost_just_below_usd": 0.255,
+   "cost_just_above_usd": 0.51,
+   "jump_pct": 100.0,
+   "flat_rate_equivalent_prompt_tokens": 404000,
+   "one_request_at_2x_threshold_usd": 1.01,
+   "two_requests_below_threshold_usd": 0.51,
+   "split_saving_pct": 49.5
+  },
+  {
+   "provider": "xAI",
+   "model": "grok-build-0.1",
+   "threshold_tokens": 200000,
+   "cost_just_below_usd": 0.204,
+   "cost_just_above_usd": 0.408,
+   "jump_pct": 100.0,
+   "flat_rate_equivalent_prompt_tokens": 404000,
+   "one_request_at_2x_threshold_usd": null,
+   "two_requests_below_threshold_usd": 0.408,
+   "split_saving_pct": null
+  },
+  {
+   "provider": "Alibaba",
+   "model": "qwen3.7-plus",
+   "threshold_tokens": 256000,
+   "cost_just_below_usd": 0.1056,
+   "cost_just_above_usd": 0.3168,
+   "jump_pct": 200.0,
+   "flat_rate_equivalent_prompt_tokens": 784003,
+   "one_request_at_2x_threshold_usd": 0.624,
+   "two_requests_below_threshold_usd": 0.2112,
+   "split_saving_pct": 66.2
+  },
+  {
+   "provider": "Alibaba",
+   "model": "qwen3.7-flash",
+   "threshold_tokens": 32000,
+   "cost_just_below_usd": 0.0012,
+   "cost_just_above_usd": 0.004,
+   "jump_pct": 227.9,
+   "flat_rate_equivalent_prompt_tokens": 124670,
+   "one_request_at_2x_threshold_usd": 0.0072,
+   "two_requests_below_threshold_usd": 0.0024,
+   "split_saving_pct": 66.1
+  }
+ ],
+ "rq2_summary": {
+  "median_jump_pct": 98.2,
+  "max_jump_pct": 400.0,
+  "min_jump_pct": 96.3,
+  "median_split_saving_pct": 48.9,
+  "median_premium_990k_pct": 99.5
+ },
+ "rq2_premium_990k": [
+  {
+   "provider": "Anthropic",
+   "model": "Claude Haiku 5.5",
+   "tiered_usd": 0.5,
+   "short_rate_usd": 0.1,
+   "premium_pct": 400.0
+  },
+  {
+   "provider": "OpenAI",
+   "model": "gpt-6-astra",
+   "tiered_usd": 19.95,
+   "short_rate_usd": 10.0,
+   "premium_pct": 99.5
+  },
+  {
+   "provider": "OpenAI",
+   "model": "gpt-6.1-sol",
+   "tiered_usd": 3.99,
+   "short_rate_usd": 2.0,
+   "premium_pct": 99.5
+  },
+  {
+   "provider": "OpenAI",
+   "model": "gpt-6-sol",
+   "tiered_usd": 3.99,
+   "short_rate_usd": 2.0,
+   "premium_pct": 99.5
+  },
+  {
+   "provider": "OpenAI",
+   "model": "gpt-6-luna",
+   "tiered_usd": 0.1995,
+   "short_rate_usd": 0.1,
+   "premium_pct": 99.5
+  },
+  {
+   "provider": "OpenAI",
+   "model": "gpt-5.6-sol",
+   "tiered_usd": 7.98,
+   "short_rate_usd": 4.0,
+   "premium_pct": 99.5
+  },
+  {
+   "provider": "OpenAI",
+   "model": "gpt-5.6-terra",
+   "tiered_usd": 3.996,
+   "short_rate_usd": 2.004,
+   "premium_pct": 99.4
+  },
+  {
+   "provider": "OpenAI",
+   "model": "gpt-5.6-luna",
+   "tiered_usd": 0.3996,
+   "short_rate_usd": 0.2004,
+   "premium_pct": 99.4
+  },
+  {
+   "provider": "OpenAI",
+   "model": "gpt-5.5",
+   "tiered_usd": 9.99,
+   "short_rate_usd": 5.01,
+   "premium_pct": 99.4
+  },
+  {
+   "provider": "OpenAI",
+   "model": "gpt-5.5-pro",
+   "tiered_usd": 59.94,
+   "short_rate_usd": 30.06,
+   "premium_pct": 99.4
+  },
+  {
+   "provider": "OpenAI",
+   "model": "gpt-5.4",
+   "tiered_usd": 4.995,
+   "short_rate_usd": 2.505,
+   "premium_pct": 99.4
+  },
+  {
+   "provider": "Google",
+   "model": "gemini-3.1-pro-preview",
+   "tiered_usd": 3.996,
+   "short_rate_usd": 2.004,
+   "premium_pct": 99.4
+  },
+  {
+   "provider": "Google",
+   "model": "gemini-2.5-pro",
+   "tiered_usd": 2.505,
+   "short_rate_usd": 1.2575,
+   "premium_pct": 99.2
+  },
+  {
+   "provider": "xAI",
+   "model": "grok-4.3",
+   "tiered_usd": 2.485,
+   "short_rate_usd": 1.2425,
+   "premium_pct": 100.0
+  },
+  {
+   "provider": "Alibaba",
+   "model": "qwen3.7-plus",
+   "tiered_usd": 1.1976,
+   "short_rate_usd": 0.3992,
+   "premium_pct": 200.0
+  },
+  {
+   "provider": "Alibaba",
+   "model": "qwen3.7-flash",
+   "tiered_usd": 0.1996,
+   "short_rate_usd": 0.03,
+   "premium_pct": 566.2
+  }
+ ],
+ "rq2_same_price_different_window": [
+  {
+   "pair": "Claude Sonnet 4.5 (200K) vs Claude Sonnet 4.6 (1M)",
+   "input_usd": [
+    3,
+    3
+   ],
+   "output_usd": [
+    15,
+    15
+   ]
+  },
+  {
+   "pair": "Qwen3.7 Plus first-party tiered vs Together flat",
+   "first_party_990k_usd": 1.1976,
+   "together_990k_usd": 0.3194
+  }
+ ],
+ "rq3_cache_batch_990k": [
+  {
+   "provider": "Anthropic",
+   "model": "Claude Haiku 5.5",
+   "standard": {
+    "tiered_usd": 0.5,
+    "short_rate_usd": 0.1,
+    "premium_usd": 0.4,
+    "premium_pct": 400.0
+   },
+   "cached": {
+    "tiered_usd": 0.099,
+    "short_rate_usd": 0.0198,
+    "premium_usd": 0.0792,
+    "premium_pct": 400.0
+   },
+   "batch": {
+    "tiered_usd": 0.25,
+    "short_rate_usd": 0.05,
+    "premium_usd": 0.2,
+    "premium_pct": 400.0
+   },
+   "cached_batch": {
+    "tiered_usd": 0.0495,
+    "short_rate_usd": 0.0099,
+    "premium_usd": 0.0396,
+    "premium_pct": 400.0
+   }
+  },
+  {
+   "provider": "OpenAI",
+   "model": "gpt-6-astra",
+   "standard": {
+    "tiered_usd": 19.95,
+    "short_rate_usd": 10.0,
+    "premium_usd": 9.95,
+    "premium_pct": 99.5
+   },
+   "cached": {
+    "tiered_usd": 3.912,
+    "short_rate_usd": 1.981,
+    "premium_usd": 1.931,
+    "premium_pct": 97.5
+   },
+   "batch": {
+    "tiered_usd": 9.975,
+    "short_rate_usd": 5.0,
+    "premium_usd": 4.975,
+    "premium_pct": 99.5
+   },
+   "cached_batch": {
+    "tiered_usd": 1.956,
+    "short_rate_usd": 0.9905,
+    "premium_usd": 0.9655,
+    "premium_pct": 97.5
+   }
+  },
+  {
+   "provider": "OpenAI",
+   "model": "gpt-6.1-sol",
+   "standard": {
+    "tiered_usd": 3.99,
+    "short_rate_usd": 2.0,
+    "premium_usd": 1.99,
+    "premium_pct": 99.5
+   },
+   "cached": {
+    "tiered_usd": 0.6042,
+    "short_rate_usd": 0.3071,
+    "premium_usd": 0.2971,
+    "premium_pct": 96.7
+   },
+   "batch": {
+    "tiered_usd": 1.995,
+    "short_rate_usd": 1.0,
+    "premium_usd": 0.995,
+    "premium_pct": 99.5
+   },
+   "cached_batch": {
+    "tiered_usd": 0.3021,
+    "short_rate_usd": 0.1536,
+    "premium_usd": 0.1486,
+    "premium_pct": 96.7
+   }
+  },
+  {
+   "provider": "OpenAI",
+   "model": "gpt-6-sol",
+   "standard": {
+    "tiered_usd": 3.99,
+    "short_rate_usd": 2.0,
+    "premium_usd": 1.99,
+    "premium_pct": 99.5
+   },
+   "cached": {
+    "tiered_usd": 0.7824,
+    "short_rate_usd": 0.3962,
+    "premium_usd": 0.3862,
+    "premium_pct": 97.5
+   },
+   "batch": {
+    "tiered_usd": 1.995,
+    "short_rate_usd": 1.0,
+    "premium_usd": 0.995,
+    "premium_pct": 99.5
+   },
+   "cached_batch": {
+    "tiered_usd": 0.3912,
+    "short_rate_usd": 0.1981,
+    "premium_usd": 0.1931,
+    "premium_pct": 97.5
+   }
+  },
+  {
+   "provider": "OpenAI",
+   "model": "gpt-6-luna",
+   "standard": {
+    "tiered_usd": 0.1995,
+    "short_rate_usd": 0.1,
+    "premium_usd": 0.0995,
+    "premium_pct": 99.5
+   },
+   "cached": {
+    "tiered_usd": 0.0391,
+    "short_rate_usd": 0.0198,
+    "premium_usd": 0.0193,
+    "premium_pct": 97.5
+   },
+   "batch": {
+    "tiered_usd": 0.0998,
+    "short_rate_usd": 0.05,
+    "premium_usd": 0.0498,
+    "premium_pct": 99.5
+   },
+   "cached_batch": {
+    "tiered_usd": 0.0196,
+    "short_rate_usd": 0.0099,
+    "premium_usd": 0.0097,
+    "premium_pct": 97.5
+   }
+  },
+  {
+   "provider": "OpenAI",
+   "model": "gpt-5.6-sol",
+   "standard": {
+    "tiered_usd": 7.98,
+    "short_rate_usd": 4.0,
+    "premium_usd": 3.98,
+    "premium_pct": 99.5
+   },
+   "cached": {
+    "tiered_usd": 1.5648,
+    "short_rate_usd": 0.7924,
+    "premium_usd": 0.7724,
+    "premium_pct": 97.5
+   },
+   "batch": {
+    "tiered_usd": 3.99,
+    "short_rate_usd": 2.0,
+    "premium_usd": 1.99,
+    "premium_pct": 99.5
+   },
+   "cached_batch": {
+    "tiered_usd": 0.7824,
+    "short_rate_usd": 0.3962,
+    "premium_usd": 0.3862,
+    "premium_pct": 97.5
+   }
+  },
+  {
+   "provider": "OpenAI",
+   "model": "gpt-5.6-terra",
+   "standard": {
+    "tiered_usd": 3.996,
+    "short_rate_usd": 2.004,
+    "premium_usd": 1.992,
+    "premium_pct": 99.4
+   },
+   "cached": {
+    "tiered_usd": 0.7884,
+    "short_rate_usd": 0.4002,
+    "premium_usd": 0.3882,
+    "premium_pct": 97.0
+   },
+   "batch": {
+    "tiered_usd": 1.998,
+    "short_rate_usd": 1.002,
+    "premium_usd": 0.996,
+    "premium_pct": 99.4
+   },
+   "cached_batch": {
+    "tiered_usd": 0.3942,
+    "short_rate_usd": 0.2001,
+    "premium_usd": 0.1941,
+    "premium_pct": 97.0
+   }
+  },
+  {
+   "provider": "OpenAI",
+   "model": "gpt-5.6-luna",
+   "standard": {
+    "tiered_usd": 0.3996,
+    "short_rate_usd": 0.2004,
+    "premium_usd": 0.1992,
+    "premium_pct": 99.4
+   },
+   "cached": {
+    "tiered_usd": 0.0788,
+    "short_rate_usd": 0.04,
+    "premium_usd": 0.0388,
+    "premium_pct": 97.0
+   },
+   "batch": {
+    "tiered_usd": 0.1998,
+    "short_rate_usd": 0.1002,
+    "premium_usd": 0.0996,
+    "premium_pct": 99.4
+   },
+   "cached_batch": {
+    "tiered_usd": 0.0394,
+    "short_rate_usd": 0.02,
+    "premium_usd": 0.0194,
+    "premium_pct": 97.0
+   }
+  },
+  {
+   "provider": "OpenAI",
+   "model": "gpt-5.5",
+   "standard": {
+    "tiered_usd": 9.99,
+    "short_rate_usd": 5.01,
+    "premium_usd": 4.98,
+    "premium_pct": 99.4
+   },
+   "cached": {
+    "tiered_usd": 1.971,
+    "short_rate_usd": 1.0005,
+    "premium_usd": 0.9705,
+    "premium_pct": 97.0
+   },
+   "batch": {
+    "tiered_usd": 4.995,
+    "short_rate_usd": 2.505,
+    "premium_usd": 2.49,
+    "premium_pct": 99.4
+   },
+   "cached_batch": {
+    "tiered_usd": 0.9855,
+    "short_rate_usd": 0.5002,
+    "premium_usd": 0.4853,
+    "premium_pct": 97.0
+   }
+  },
+  {
+   "provider": "OpenAI",
+   "model": "gpt-5.5-pro",
+   "standard": {
+    "tiered_usd": 59.94,
+    "short_rate_usd": 30.06,
+    "premium_usd": 29.88,
+    "premium_pct": 99.4
+   },
+   "cached": null,
+   "batch": null,
+   "cached_batch": null
+  },
+  {
+   "provider": "OpenAI",
+   "model": "gpt-5.4",
+   "standard": {
+    "tiered_usd": 4.995,
+    "short_rate_usd": 2.505,
+    "premium_usd": 2.49,
+    "premium_pct": 99.4
+   },
+   "cached": {
+    "tiered_usd": 0.9855,
+    "short_rate_usd": 0.5002,
+    "premium_usd": 0.4853,
+    "premium_pct": 97.0
+   },
+   "batch": {
+    "tiered_usd": 2.4975,
+    "short_rate_usd": 1.2525,
+    "premium_usd": 1.245,
+    "premium_pct": 99.4
+   },
+   "cached_batch": {
+    "tiered_usd": 0.4928,
+    "short_rate_usd": 0.2501,
+    "premium_usd": 0.2426,
+    "premium_pct": 97.0
+   }
+  },
+  {
+   "provider": "Google",
+   "model": "gemini-3.1-pro-preview",
+   "standard": {
+    "tiered_usd": 3.996,
+    "short_rate_usd": 2.004,
+    "premium_usd": 1.992,
+    "premium_pct": 99.4
+   },
+   "cached": {
+    "tiered_usd": 0.7884,
+    "short_rate_usd": 0.4002,
+    "premium_usd": 0.3882,
+    "premium_pct": 97.0
+   },
+   "batch": {
+    "tiered_usd": 1.998,
+    "short_rate_usd": 1.002,
+    "premium_usd": 0.996,
+    "premium_pct": 99.4
+   },
+   "cached_batch": null
+  },
+  {
+   "provider": "Google",
+   "model": "gemini-2.5-pro",
+   "standard": {
+    "tiered_usd": 2.505,
+    "short_rate_usd": 1.2575,
+    "premium_usd": 1.2475,
+    "premium_pct": 99.2
+   },
+   "cached": {
+    "tiered_usd": 0.5002,
+    "short_rate_usd": 0.2551,
+    "premium_usd": 0.2451,
+    "premium_pct": 96.1
+   },
+   "batch": {
+    "tiered_usd": 1.2525,
+    "short_rate_usd": 0.6288,
+    "premium_usd": 0.6237,
+    "premium_pct": 99.2
+   },
+   "cached_batch": null
+  },
+  {
+   "provider": "xAI",
+   "model": "grok-4.3",
+   "standard": {
+    "tiered_usd": 2.485,
+    "short_rate_usd": 1.2425,
+    "premium_usd": 1.2425,
+    "premium_pct": 100.0
+   },
+   "cached": {
+    "tiered_usd": 0.6139,
+    "short_rate_usd": 0.307,
+    "premium_usd": 0.307,
+    "premium_pct": 100.0
+   },
+   "batch": {
+    "tiered_usd": 1.988,
+    "short_rate_usd": 0.994,
+    "premium_usd": 0.994,
+    "premium_pct": 100.0
+   },
+   "cached_batch": null
+  },
+  {
+   "provider": "Alibaba",
+   "model": "qwen3.7-plus",
+   "standard": {
+    "tiered_usd": 1.1976,
+    "short_rate_usd": 0.3992,
+    "premium_usd": 0.7984,
+    "premium_pct": 200.0
+   },
+   "cached": {
+    "tiered_usd": 0.2353,
+    "short_rate_usd": 0.0784,
+    "premium_usd": 0.1569,
+    "premium_pct": 200.0
+   },
+   "batch": null,
+   "cached_batch": null
+  },
+  {
+   "provider": "Alibaba",
+   "model": "qwen3.7-flash",
+   "standard": {
+    "tiered_usd": 0.1996,
+    "short_rate_usd": 0.03,
+    "premium_usd": 0.1696,
+    "premium_pct": 566.2
+   },
+   "cached": {
+    "tiered_usd": 0.0392,
+    "short_rate_usd": 0.0059,
+    "premium_usd": 0.0333,
+    "premium_pct": 564.4
+   },
+   "batch": {
+    "tiered_usd": 0.0998,
+    "short_rate_usd": 0.015,
+    "premium_usd": 0.0848,
+    "premium_pct": 566.2
+   },
+   "cached_batch": null
+  }
+ ],
+ "rq3_summary": {
+  "median_premium_pct_standard": 99.5,
+  "median_premium_pct_cached": 97.5,
+  "median_premium_pct_batch": 99.5,
+  "median_premium_usd_standard": 1.99,
+  "median_premium_usd_cached": 0.307,
+  "n_models_cached": 15,
+  "n_models_batch": 14,
+  "median_premium_usd_reduction_by_cache_pct": 80.5
+ },
+ "rq3_usable_tokens": [
+  {
+   "benchmark": "NoLiMa",
+   "model": "Llama 4 Scout",
+   "priced_as": "Llama 4 Scout 17B",
+   "provider": "Meta (via Bedrock)",
+   "claimed_tokens": 10000000,
+   "effective_tokens": 1000,
+   "effective_upper_bound": false,
+   "claimed_to_effective_ratio": 10000.0,
+   "list_input_usd_per_mtok": 0.17,
+   "usd_per_mtok_reliably_used_at_full_window": 1700.0
+  },
+  {
+   "benchmark": "NoLiMa",
+   "model": "GPT-4.1 Mini",
+   "priced_as": "gpt-4.1-mini",
+   "provider": "OpenAI",
+   "claimed_tokens": 1000000,
+   "effective_tokens": 1000,
+   "effective_upper_bound": true,
+   "claimed_to_effective_ratio": 1000.0,
+   "list_input_usd_per_mtok": 0.4,
+   "usd_per_mtok_reliably_used_at_full_window": 400.0
+  },
+  {
+   "benchmark": "NoLiMa",
+   "model": "GPT-4.1 Nano",
+   "priced_as": "gpt-4.1-nano",
+   "provider": "OpenAI",
+   "claimed_tokens": 1000000,
+   "effective_tokens": 1000,
+   "effective_upper_bound": true,
+   "claimed_to_effective_ratio": 1000.0,
+   "list_input_usd_per_mtok": 0.1,
+   "usd_per_mtok_reliably_used_at_full_window": 100.0
+  },
+  {
+   "benchmark": "NoLiMa",
+   "model": "Gemini 2.5 Flash (w/o thinking)",
+   "priced_as": "gemini-2.5-flash",
+   "provider": "Google",
+   "claimed_tokens": 1000000,
+   "effective_tokens": 2000,
+   "effective_upper_bound": false,
+   "claimed_to_effective_ratio": 500.0,
+   "list_input_usd_per_mtok": 0.3,
+   "usd_per_mtok_reliably_used_at_full_window": 150.0
+  },
+  {
+   "benchmark": "NoLiMa",
+   "model": "Llama 4 Maverick",
+   "priced_as": "Llama 4 Maverick 17B",
+   "provider": "Meta (via Bedrock)",
+   "claimed_tokens": 1000000,
+   "effective_tokens": 2000,
+   "effective_upper_bound": false,
+   "claimed_to_effective_ratio": 500.0,
+   "list_input_usd_per_mtok": 0.24,
+   "usd_per_mtok_reliably_used_at_full_window": 120.0
+  },
+  {
+   "benchmark": "NoLiMa",
+   "model": "GPT-4o mini",
+   "priced_as": "gpt-4o-mini",
+   "provider": "OpenAI",
+   "claimed_tokens": 128000,
+   "effective_tokens": 1000,
+   "effective_upper_bound": true,
+   "claimed_to_effective_ratio": 128.0,
+   "list_input_usd_per_mtok": 0.15,
+   "usd_per_mtok_reliably_used_at_full_window": 19.2
+  },
+  {
+   "benchmark": "NoLiMa",
+   "model": "Llama 3.3 70B",
+   "priced_as": "Llama 3.3 70B Instruct",
+   "provider": "Meta (via Bedrock)",
+   "claimed_tokens": 128000,
+   "effective_tokens": 2000,
+   "effective_upper_bound": false,
+   "claimed_to_effective_ratio": 64.0,
+   "list_input_usd_per_mtok": 0.72,
+   "usd_per_mtok_reliably_used_at_full_window": 46.08
+  },
+  {
+   "benchmark": "NoLiMa",
+   "model": "Llama 3.1 70B",
+   "priced_as": "Llama 3.1 70B Instruct",
+   "provider": "Meta (via Bedrock)",
+   "claimed_tokens": 128000,
+   "effective_tokens": 2000,
+   "effective_upper_bound": false,
+   "claimed_to_effective_ratio": 64.0,
+   "list_input_usd_per_mtok": 0.72,
+   "usd_per_mtok_reliably_used_at_full_window": 46.08
+  },
+  {
+   "benchmark": "NoLiMa",
+   "model": "GPT-4.1",
+   "priced_as": "gpt-4.1",
+   "provider": "OpenAI",
+   "claimed_tokens": 1000000,
+   "effective_tokens": 16000,
+   "effective_upper_bound": false,
+   "claimed_to_effective_ratio": 62.5,
+   "list_input_usd_per_mtok": 2.0,
+   "usd_per_mtok_reliably_used_at_full_window": 125.0
+  },
+  {
+   "benchmark": "NoLiMa",
+   "model": "GPT-4o",
+   "priced_as": "gpt-4o",
+   "provider": "OpenAI",
+   "claimed_tokens": 128000,
+   "effective_tokens": 8000,
+   "effective_upper_bound": false,
+   "claimed_to_effective_ratio": 16.0,
+   "list_input_usd_per_mtok": 2.5,
+   "usd_per_mtok_reliably_used_at_full_window": 40.0
+  },
+  {
+   "benchmark": "RULER",
+   "model": "Llama3.1 (70B)",
+   "priced_as": "Llama 3.1 70B Instruct",
+   "provider": "Meta (via Bedrock)",
+   "claimed_tokens": 128000,
+   "effective_tokens": 64000,
+   "effective_upper_bound": false,
+   "claimed_to_effective_ratio": 2.0,
+   "list_input_usd_per_mtok": 0.72,
+   "usd_per_mtok_reliably_used_at_full_window": 1.44
+  }
+ ],
+ "rq3_usable_summary": {
+  "n_models": 10,
+  "median_claimed_to_effective_ratio": 314.0,
+  "min_claimed_to_effective_ratio": 16.0,
+  "max_claimed_to_effective_ratio": 10000.0
+ }
+}

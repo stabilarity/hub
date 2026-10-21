@@ -1,0 +1,13 @@
+model,dataset,category,All-KV,KIVI-2,KIVI-4,TurboQuant-3,TurboQuant-4,SnapKV-0.75,CaM
+Llama-3.1-8B-Instruct,HotpotQA,Multi-Doc QA,55.72,54.42,55.99,53.19,56.10,59.2,59.8
+Llama-3.1-8B-Instruct,2WikiMQA,Multi-Doc QA,44.27,42.94,46.63,41.57,45.07,49.41,51.33
+Llama-3.1-8B-Instruct,Qasper,Single-Doc QA,45.76,44.07,45.42,46.60,46.03,46.37,47.32
+Llama-3.1-8B-Instruct,MultiFieldQA-en,Single-Doc QA,53.92,54.98,54.74,51.46,53.31,56.06,56.42
+Llama-3.1-8B-Instruct,TriviaQA,Few-Shot,91.65,92.56,91.66,84.84,90.13,92.04,91.71
+Llama-3.1-8B-Instruct,MultiNews,Summarization,27.15,26.99,26.95,16.39,16.16,23.04,17.56
+Mistral-7B-Instruct-v0.3,HotpotQA,Multi-Doc QA,51.54,48.46,48.98,49.45,49.43,48.43,48.57
+Mistral-7B-Instruct-v0.3,2WikiMQA,Multi-Doc QA,36.16,38.34,39.11,34.31,33.94,38.46,37.59
+Mistral-7B-Instruct-v0.3,Qasper,Single-Doc QA,38.27,39.89,41.10,37.16,40.39,36.44,40.55
+Mistral-7B-Instruct-v0.3,MultiFieldQA-en,Single-Doc QA,50.10,54.12,53.56,50.21,50.65,51.23,52.4
+Mistral-7B-Instruct-v0.3,TriviaQA,Few-Shot,88.59,87.82,88.54,88.05,88.09,86.31,85.37
+Mistral-7B-Instruct-v0.3,MultiNews,Summarization,26.42,27.04,27.68,15.86,16.01,24.25,16.74

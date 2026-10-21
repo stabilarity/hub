@@ -1,0 +1,3 @@
+gpu,hbm_gb,bandwidth_tb_s,usd_per_gpu_hour,spec_source,price_source,accessed
+H100 SXM,80,3.35,3.99,https://www.nvidia.com/en-us/data-center/h100/,"https://www.runpod.io/pricing (Secure Cloud, on-demand)",2026-10-21
+H200 SXM,141,4.8,5.29,https://www.nvidia.com/en-us/data-center/h200/,"https://www.runpod.io/pricing (Secure Cloud, on-demand)",2026-10-21

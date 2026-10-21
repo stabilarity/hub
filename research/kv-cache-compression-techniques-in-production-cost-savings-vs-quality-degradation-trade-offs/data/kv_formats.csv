@@ -1,0 +1,9 @@
+format,family,compression_vs_bf16,basis,source
+BF16,baseline,1.0,"2 bytes per element",-
+FP8,quantization,2.0,"1 byte per element; per-tensor scales (negligible)",https://docs.vllm.ai/en/latest/features/quantization/quantized_kvcache.html
+NVFP4,quantization,4.0,"about 50% of FP8 footprint (nominal)",https://developer.nvidia.com/blog/optimizing-inference-for-long-context-and-large-batch-sizes-with-nvfp4-kv-cache/
+KIVI-4,quantization,3.17,"realised, mean of Llama-3.1-8B buckets, Table 4",arXiv:2607.05399
+TurboQuant-4,quantization,3.76,"realised, Table 4",arXiv:2607.05399
+SnapKV-0.75,eviction,4.0,"realised, Table 4",arXiv:2607.05399
+TurboQuant-3,quantization,4.27,"realised, Table 4",arXiv:2607.05399
+KIVI-2,quantization,5.24,"realised, mean of Llama-3.1-8B buckets, Table 4",arXiv:2607.05399

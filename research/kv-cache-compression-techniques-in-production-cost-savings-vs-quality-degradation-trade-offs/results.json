@@ -1,0 +1,1195 @@
+{
+ "meta": {
+  "gpu_mem_util": 0.92,
+  "batch_cap": 256,
+  "contexts": [
+   8192,
+   32768,
+   131072
+  ],
+  "prices_accessed": "2026-10-21",
+  "note": "idealised bandwidth-bound decode model; upper bound on savings"
+ },
+ "rq1_kv_per_token": [
+  {
+   "model": "Llama-3.1-8B-Instruct",
+   "attention": "GQA",
+   "kv_kib_per_token_bf16": 128.0,
+   "kv_gb_per_128k_seq_bf16": 17.18,
+   "kv_kib_per_token_BF16": 128.0,
+   "kv_kib_per_token_FP8": 64.0,
+   "kv_kib_per_token_NVFP4": 32.0,
+   "kv_kib_per_token_KIVI-4": 40.38,
+   "kv_kib_per_token_TurboQuant-4": 34.04,
+   "kv_kib_per_token_SnapKV-0.75": 32.0,
+   "kv_kib_per_token_TurboQuant-3": 29.98,
+   "kv_kib_per_token_KIVI-2": 24.43
+  },
+  {
+   "model": "Mistral-7B-Instruct-v0.3",
+   "attention": "GQA",
+   "kv_kib_per_token_bf16": 128.0,
+   "kv_gb_per_128k_seq_bf16": 17.18,
+   "kv_kib_per_token_BF16": 128.0,
+   "kv_kib_per_token_FP8": 64.0,
+   "kv_kib_per_token_NVFP4": 32.0,
+   "kv_kib_per_token_KIVI-4": 40.38,
+   "kv_kib_per_token_TurboQuant-4": 34.04,
+   "kv_kib_per_token_SnapKV-0.75": 32.0,
+   "kv_kib_per_token_TurboQuant-3": 29.98,
+   "kv_kib_per_token_KIVI-2": 24.43
+  },
+  {
+   "model": "Qwen3-32B",
+   "attention": "GQA",
+   "kv_kib_per_token_bf16": 256.0,
+   "kv_gb_per_128k_seq_bf16": 34.36,
+   "kv_kib_per_token_BF16": 256.0,
+   "kv_kib_per_token_FP8": 128.0,
+   "kv_kib_per_token_NVFP4": 64.0,
+   "kv_kib_per_token_KIVI-4": 80.76,
+   "kv_kib_per_token_TurboQuant-4": 68.09,
+   "kv_kib_per_token_SnapKV-0.75": 64.0,
+   "kv_kib_per_token_TurboQuant-3": 59.95,
+   "kv_kib_per_token_KIVI-2": 48.85
+  },
+  {
+   "model": "Llama-3.3-70B-Instruct",
+   "attention": "GQA",
+   "kv_kib_per_token_bf16": 320.0,
+   "kv_gb_per_128k_seq_bf16": 42.95,
+   "kv_kib_per_token_BF16": 320.0,
+   "kv_kib_per_token_FP8": 160.0,
+   "kv_kib_per_token_NVFP4": 80.0,
+   "kv_kib_per_token_KIVI-4": 100.95,
+   "kv_kib_per_token_TurboQuant-4": 85.11,
+   "kv_kib_per_token_SnapKV-0.75": 80.0,
+   "kv_kib_per_token_TurboQuant-3": 74.94,
+   "kv_kib_per_token_KIVI-2": 61.07
+  },
+  {
+   "model": "DeepSeek-V3",
+   "attention": "MLA",
+   "kv_kib_per_token_bf16": 68.62,
+   "kv_gb_per_128k_seq_bf16": 9.21,
+   "kv_kib_per_token_BF16": 68.62,
+   "kv_kib_per_token_FP8": 34.31,
+   "kv_kib_per_token_NVFP4": 17.16,
+   "kv_kib_per_token_KIVI-4": 21.65,
+   "kv_kib_per_token_TurboQuant-4": 18.25,
+   "kv_kib_per_token_SnapKV-0.75": 17.16,
+   "kv_kib_per_token_TurboQuant-3": 16.07,
+   "kv_kib_per_token_KIVI-2": 13.1
+  }
+ ],
+ "rq1_mla_vs_gqa70b_ratio": 4.66,
+ "rq1_concurrency": [
+  {
+   "unit": "Llama-3.1-8B on 1x H100",
+   "context": 8192,
+   "batch_BF16": 53,
+   "batch_FP8": 107,
+   "batch_KIVI-4": 169,
+   "batch_SnapKV-0.75": 214,
+   "batch_NVFP4": 214,
+   "batch_KIVI-2": 256
+  },
+  {
+   "unit": "Llama-3.1-8B on 1x H100",
+   "context": 32768,
+   "batch_BF16": 13,
+   "batch_FP8": 26,
+   "batch_KIVI-4": 42,
+   "batch_SnapKV-0.75": 53,
+   "batch_NVFP4": 53,
+   "batch_KIVI-2": 70
+  },
+  {
+   "unit": "Llama-3.1-8B on 1x H100",
+   "context": 131072,
+   "batch_BF16": 3,
+   "batch_FP8": 6,
+   "batch_KIVI-4": 10,
+   "batch_SnapKV-0.75": 13,
+   "batch_NVFP4": 13,
+   "batch_KIVI-2": 17
+  },
+  {
+   "unit": "Qwen3-32B on 1x H200",
+   "context": 8192,
+   "batch_BF16": 29,
+   "batch_FP8": 59,
+   "batch_KIVI-4": 94,
+   "batch_SnapKV-0.75": 119,
+   "batch_NVFP4": 119,
+   "batch_KIVI-2": 156
+  },
+  {
+   "unit": "Qwen3-32B on 1x H200",
+   "context": 32768,
+   "batch_BF16": 7,
+   "batch_FP8": 14,
+   "batch_KIVI-4": 23,
+   "batch_SnapKV-0.75": 29,
+   "batch_NVFP4": 29,
+   "batch_KIVI-2": 39
+  },
+  {
+   "unit": "Qwen3-32B on 1x H200",
+   "context": 131072,
+   "batch_BF16": 1,
+   "batch_FP8": 3,
+   "batch_KIVI-4": 5,
+   "batch_SnapKV-0.75": 7,
+   "batch_NVFP4": 7,
+   "batch_KIVI-2": 9
+  },
+  {
+   "unit": "Llama-3.3-70B on 2x H200",
+   "context": 8192,
+   "batch_BF16": 44,
+   "batch_FP8": 88,
+   "batch_KIVI-4": 139,
+   "batch_SnapKV-0.75": 176,
+   "batch_NVFP4": 176,
+   "batch_KIVI-2": 230
+  },
+  {
+   "unit": "Llama-3.3-70B on 2x H200",
+   "context": 32768,
+   "batch_BF16": 11,
+   "batch_FP8": 22,
+   "batch_KIVI-4": 34,
+   "batch_SnapKV-0.75": 44,
+   "batch_NVFP4": 44,
+   "batch_KIVI-2": 57
+  },
+  {
+   "unit": "Llama-3.3-70B on 2x H200",
+   "context": 131072,
+   "batch_BF16": 2,
+   "batch_FP8": 5,
+   "batch_KIVI-4": 8,
+   "batch_SnapKV-0.75": 11,
+   "batch_NVFP4": 11,
+   "batch_KIVI-2": 14
+  }
+ ],
+ "rq2_cost": [
+  {
+   "unit": "Llama-3.1-8B on 1x H100",
+   "context": 8192,
+   "format": "BF16",
+   "compression": 1.0,
+   "batch": 53,
+   "memory_bound": true,
+   "usd_per_mtok_output": 0.4555,
+   "tok_s": 2433.2,
+   "kv_share_of_bytes": 0.78,
+   "saving_vs_bf16": 0.0,
+   "ideal_saving_1_minus_1_over_c": 0.0
+  },
+  {
+   "unit": "Llama-3.1-8B on 1x H100",
+   "context": 8192,
+   "format": "FP8",
+   "compression": 2.0,
+   "batch": 107,
+   "memory_bound": true,
+   "usd_per_mtok_output": 0.2273,
+   "tok_s": 4876.5,
+   "kv_share_of_bytes": 0.782,
+   "saving_vs_bf16": 0.501,
+   "ideal_saving_1_minus_1_over_c": 0.5
+  },
+  {
+   "unit": "Llama-3.1-8B on 1x H100",
+   "context": 8192,
+   "format": "KIVI-4",
+   "compression": 3.17,
+   "batch": 169,
+   "memory_bound": true,
+   "usd_per_mtok_output": 0.1435,
+   "tok_s": 7723.3,
+   "kv_share_of_bytes": 0.781,
+   "saving_vs_bf16": 0.6849,
+   "ideal_saving_1_minus_1_over_c": 0.6845
+  },
+  {
+   "unit": "Llama-3.1-8B on 1x H100",
+   "context": 8192,
+   "format": "SnapKV-0.75",
+   "compression": 4.0,
+   "batch": 214,
+   "memory_bound": true,
+   "usd_per_mtok_output": 0.1136,
+   "tok_s": 9753.0,
+   "kv_share_of_bytes": 0.782,
+   "saving_vs_bf16": 0.7505,
+   "ideal_saving_1_minus_1_over_c": 0.75
+  },
+  {
+   "unit": "Llama-3.1-8B on 1x H100",
+   "context": 8192,
+   "format": "NVFP4",
+   "compression": 4.0,
+   "batch": 214,
+   "memory_bound": true,
+   "usd_per_mtok_output": 0.1136,
+   "tok_s": 9753.0,
+   "kv_share_of_bytes": 0.782,
+   "saving_vs_bf16": 0.7505,
+   "ideal_saving_1_minus_1_over_c": 0.75
+  },
+  {
+   "unit": "Llama-3.1-8B on 1x H100",
+   "context": 8192,
+   "format": "KIVI-2",
+   "compression": 5.24,
+   "batch": 256,
+   "memory_bound": false,
+   "usd_per_mtok_output": 0.0886,
+   "tok_s": 12516.4,
+   "kv_share_of_bytes": 0.766,
+   "saving_vs_bf16": 0.8056,
+   "ideal_saving_1_minus_1_over_c": 0.8092
+  },
+  {
+   "unit": "Llama-3.1-8B on 1x H100",
+   "context": 32768,
+   "format": "BF16",
+   "compression": 1.0,
+   "batch": 13,
+   "memory_bound": true,
+   "usd_per_mtok_output": 1.8297,
+   "tok_s": 605.7,
+   "kv_share_of_bytes": 0.777,
+   "saving_vs_bf16": 0.0,
+   "ideal_saving_1_minus_1_over_c": 0.0
+  },
+  {
+   "unit": "Llama-3.1-8B on 1x H100",
+   "context": 32768,
+   "format": "FP8",
+   "compression": 2.0,
+   "batch": 26,
+   "memory_bound": true,
+   "usd_per_mtok_output": 0.9149,
+   "tok_s": 1211.5,
+   "kv_share_of_bytes": 0.777,
+   "saving_vs_bf16": 0.5,
+   "ideal_saving_1_minus_1_over_c": 0.5
+  },
+  {
+   "unit": "Llama-3.1-8B on 1x H100",
+   "context": 32768,
+   "format": "KIVI-4",
+   "compression": 3.17,
+   "batch": 42,
+   "memory_bound": true,
+   "usd_per_mtok_output": 0.5748,
+   "tok_s": 1928.3,
+   "kv_share_of_bytes": 0.78,
+   "saving_vs_bf16": 0.6859,
+   "ideal_saving_1_minus_1_over_c": 0.6845
+  },
+  {
+   "unit": "Llama-3.1-8B on 1x H100",
+   "context": 32768,
+   "format": "SnapKV-0.75",
+   "compression": 4.0,
+   "batch": 53,
+   "memory_bound": true,
+   "usd_per_mtok_output": 0.4555,
+   "tok_s": 2433.2,
+   "kv_share_of_bytes": 0.78,
+   "saving_vs_bf16": 0.7511,
+   "ideal_saving_1_minus_1_over_c": 0.75
+  },
+  {
+   "unit": "Llama-3.1-8B on 1x H100",
+   "context": 32768,
+   "format": "NVFP4",
+   "compression": 4.0,
+   "batch": 53,
+   "memory_bound": true,
+   "usd_per_mtok_output": 0.4555,
+   "tok_s": 2433.2,
+   "kv_share_of_bytes": 0.78,
+   "saving_vs_bf16": 0.7511,
+   "ideal_saving_1_minus_1_over_c": 0.75
+  },
+  {
+   "unit": "Llama-3.1-8B on 1x H100",
+   "context": 32768,
+   "format": "KIVI-2",
+   "compression": 5.24,
+   "batch": 70,
+   "memory_bound": true,
+   "usd_per_mtok_output": 0.3471,
+   "tok_s": 3193.3,
+   "kv_share_of_bytes": 0.781,
+   "saving_vs_bf16": 0.8103,
+   "ideal_saving_1_minus_1_over_c": 0.8092
+  },
+  {
+   "unit": "Llama-3.1-8B on 1x H100",
+   "context": 131072,
+   "format": "BF16",
+   "compression": 1.0,
+   "batch": 3,
+   "memory_bound": true,
+   "usd_per_mtok_output": 7.4551,
+   "tok_s": 148.7,
+   "kv_share_of_bytes": 0.762,
+   "saving_vs_bf16": 0.0,
+   "ideal_saving_1_minus_1_over_c": 0.0
+  },
+  {
+   "unit": "Llama-3.1-8B on 1x H100",
+   "context": 131072,
+   "format": "FP8",
+   "compression": 2.0,
+   "batch": 6,
+   "memory_bound": true,
+   "usd_per_mtok_output": 3.7275,
+   "tok_s": 297.3,
+   "kv_share_of_bytes": 0.762,
+   "saving_vs_bf16": 0.5,
+   "ideal_saving_1_minus_1_over_c": 0.5
+  },
+  {
+   "unit": "Llama-3.1-8B on 1x H100",
+   "context": 131072,
+   "format": "KIVI-4",
+   "compression": 3.17,
+   "batch": 10,
+   "memory_bound": true,
+   "usd_per_mtok_output": 2.3244,
+   "tok_s": 476.8,
+   "kv_share_of_bytes": 0.771,
+   "saving_vs_bf16": 0.6882,
+   "ideal_saving_1_minus_1_over_c": 0.6845
+  },
+  {
+   "unit": "Llama-3.1-8B on 1x H100",
+   "context": 131072,
+   "format": "SnapKV-0.75",
+   "compression": 4.0,
+   "batch": 13,
+   "memory_bound": true,
+   "usd_per_mtok_output": 1.8297,
+   "tok_s": 605.7,
+   "kv_share_of_bytes": 0.777,
+   "saving_vs_bf16": 0.7546,
+   "ideal_saving_1_minus_1_over_c": 0.75
+  },
+  {
+   "unit": "Llama-3.1-8B on 1x H100",
+   "context": 131072,
+   "format": "NVFP4",
+   "compression": 4.0,
+   "batch": 13,
+   "memory_bound": true,
+   "usd_per_mtok_output": 1.8297,
+   "tok_s": 605.7,
+   "kv_share_of_bytes": 0.777,
+   "saving_vs_bf16": 0.7546,
+   "ideal_saving_1_minus_1_over_c": 0.75
+  },
+  {
+   "unit": "Llama-3.1-8B on 1x H100",
+   "context": 131072,
+   "format": "KIVI-2",
+   "compression": 5.24,
+   "batch": 17,
+   "memory_bound": true,
+   "usd_per_mtok_output": 1.3973,
+   "tok_s": 793.2,
+   "kv_share_of_bytes": 0.776,
+   "saving_vs_bf16": 0.8126,
+   "ideal_saving_1_minus_1_over_c": 0.8092
+  },
+  {
+   "unit": "Qwen3-32B on 1x H200",
+   "context": 8192,
+   "format": "BF16",
+   "compression": 1.0,
+   "batch": 29,
+   "memory_bound": true,
+   "usd_per_mtok_output": 1.3491,
+   "tok_s": 1089.2,
+   "kv_share_of_bytes": 0.487,
+   "saving_vs_bf16": 0.0,
+   "ideal_saving_1_minus_1_over_c": 0.0
+  },
+  {
+   "unit": "Qwen3-32B on 1x H200",
+   "context": 8192,
+   "format": "FP8",
+   "compression": 2.0,
+   "batch": 59,
+   "memory_bound": true,
+   "usd_per_mtok_output": 0.6687,
+   "tok_s": 2197.5,
+   "kv_share_of_bytes": 0.492,
+   "saving_vs_bf16": 0.5043,
+   "ideal_saving_1_minus_1_over_c": 0.5
+  },
+  {
+   "unit": "Qwen3-32B on 1x H200",
+   "context": 8192,
+   "format": "KIVI-4",
+   "compression": 3.17,
+   "batch": 94,
+   "memory_bound": true,
+   "usd_per_mtok_output": 0.4208,
+   "tok_s": 3492.2,
+   "kv_share_of_bytes": 0.493,
+   "saving_vs_bf16": 0.6881,
+   "ideal_saving_1_minus_1_over_c": 0.6845
+  },
+  {
+   "unit": "Qwen3-32B on 1x H200",
+   "context": 8192,
+   "format": "SnapKV-0.75",
+   "compression": 4.0,
+   "batch": 119,
+   "memory_bound": true,
+   "usd_per_mtok_output": 0.3329,
+   "tok_s": 4413.8,
+   "kv_share_of_bytes": 0.494,
+   "saving_vs_bf16": 0.7532,
+   "ideal_saving_1_minus_1_over_c": 0.75
+  },
+  {
+   "unit": "Qwen3-32B on 1x H200",
+   "context": 8192,
+   "format": "NVFP4",
+   "compression": 4.0,
+   "batch": 119,
+   "memory_bound": true,
+   "usd_per_mtok_output": 0.3329,
+   "tok_s": 4413.8,
+   "kv_share_of_bytes": 0.494,
+   "saving_vs_bf16": 0.7532,
+   "ideal_saving_1_minus_1_over_c": 0.75
+  },
+  {
+   "unit": "Qwen3-32B on 1x H200",
+   "context": 8192,
+   "format": "KIVI-2",
+   "compression": 5.24,
+   "batch": 156,
+   "memory_bound": true,
+   "usd_per_mtok_output": 0.254,
+   "tok_s": 5784.2,
+   "kv_share_of_bytes": 0.494,
+   "saving_vs_bf16": 0.8117,
+   "ideal_saving_1_minus_1_over_c": 0.8092
+  },
+  {
+   "unit": "Qwen3-32B on 1x H200",
+   "context": 32768,
+   "format": "BF16",
+   "compression": 1.0,
+   "batch": 7,
+   "memory_bound": true,
+   "usd_per_mtok_output": 5.4953,
+   "tok_s": 267.4,
+   "kv_share_of_bytes": 0.479,
+   "saving_vs_bf16": 0.0,
+   "ideal_saving_1_minus_1_over_c": 0.0
+  },
+  {
+   "unit": "Qwen3-32B on 1x H200",
+   "context": 32768,
+   "format": "FP8",
+   "compression": 2.0,
+   "batch": 14,
+   "memory_bound": true,
+   "usd_per_mtok_output": 2.7476,
+   "tok_s": 534.8,
+   "kv_share_of_bytes": 0.479,
+   "saving_vs_bf16": 0.5,
+   "ideal_saving_1_minus_1_over_c": 0.5
+  },
+  {
+   "unit": "Qwen3-32B on 1x H200",
+   "context": 32768,
+   "format": "KIVI-4",
+   "compression": 3.17,
+   "batch": 23,
+   "memory_bound": true,
+   "usd_per_mtok_output": 1.7017,
+   "tok_s": 863.5,
+   "kv_share_of_bytes": 0.487,
+   "saving_vs_bf16": 0.6903,
+   "ideal_saving_1_minus_1_over_c": 0.6845
+  },
+  {
+   "unit": "Qwen3-32B on 1x H200",
+   "context": 32768,
+   "format": "SnapKV-0.75",
+   "compression": 4.0,
+   "batch": 29,
+   "memory_bound": true,
+   "usd_per_mtok_output": 1.3491,
+   "tok_s": 1089.2,
+   "kv_share_of_bytes": 0.487,
+   "saving_vs_bf16": 0.7545,
+   "ideal_saving_1_minus_1_over_c": 0.75
+  },
+  {
+   "unit": "Qwen3-32B on 1x H200",
+   "context": 32768,
+   "format": "NVFP4",
+   "compression": 4.0,
+   "batch": 29,
+   "memory_bound": true,
+   "usd_per_mtok_output": 1.3491,
+   "tok_s": 1089.2,
+   "kv_share_of_bytes": 0.487,
+   "saving_vs_bf16": 0.7545,
+   "ideal_saving_1_minus_1_over_c": 0.75
+  },
+  {
+   "unit": "Qwen3-32B on 1x H200",
+   "context": 32768,
+   "format": "KIVI-2",
+   "compression": 5.24,
+   "batch": 39,
+   "memory_bound": true,
+   "usd_per_mtok_output": 1.0162,
+   "tok_s": 1446.0,
+   "kv_share_of_bytes": 0.494,
+   "saving_vs_bf16": 0.8151,
+   "ideal_saving_1_minus_1_over_c": 0.8092
+  },
+  {
+   "unit": "Qwen3-32B on 1x H200",
+   "context": 131072,
+   "format": "BF16",
+   "compression": 1.0,
+   "batch": 1,
+   "memory_bound": true,
+   "usd_per_mtok_output": 30.5779,
+   "tok_s": 48.1,
+   "kv_share_of_bytes": 0.344,
+   "saving_vs_bf16": 0.0,
+   "ideal_saving_1_minus_1_over_c": 0.0
+  },
+  {
+   "unit": "Qwen3-32B on 1x H200",
+   "context": 131072,
+   "format": "FP8",
+   "compression": 2.0,
+   "batch": 3,
+   "memory_bound": true,
+   "usd_per_mtok_output": 11.9458,
+   "tok_s": 123.0,
+   "kv_share_of_bytes": 0.44,
+   "saving_vs_bf16": 0.6093,
+   "ideal_saving_1_minus_1_over_c": 0.5
+  },
+  {
+   "unit": "Qwen3-32B on 1x H200",
+   "context": 131072,
+   "format": "KIVI-4",
+   "compression": 3.17,
+   "batch": 5,
+   "memory_bound": true,
+   "usd_per_mtok_output": 7.33,
+   "tok_s": 200.5,
+   "kv_share_of_bytes": 0.453,
+   "saving_vs_bf16": 0.7603,
+   "ideal_saving_1_minus_1_over_c": 0.6845
+  },
+  {
+   "unit": "Qwen3-32B on 1x H200",
+   "context": 131072,
+   "format": "SnapKV-0.75",
+   "compression": 4.0,
+   "batch": 7,
+   "memory_bound": true,
+   "usd_per_mtok_output": 5.4953,
+   "tok_s": 267.4,
+   "kv_share_of_bytes": 0.479,
+   "saving_vs_bf16": 0.8203,
+   "ideal_saving_1_minus_1_over_c": 0.75
+  },
+  {
+   "unit": "Qwen3-32B on 1x H200",
+   "context": 131072,
+   "format": "NVFP4",
+   "compression": 4.0,
+   "batch": 7,
+   "memory_bound": true,
+   "usd_per_mtok_output": 5.4953,
+   "tok_s": 267.4,
+   "kv_share_of_bytes": 0.479,
+   "saving_vs_bf16": 0.8203,
+   "ideal_saving_1_minus_1_over_c": 0.75
+  },
+  {
+   "unit": "Qwen3-32B on 1x H200",
+   "context": 131072,
+   "format": "KIVI-2",
+   "compression": 5.24,
+   "batch": 9,
+   "memory_bound": true,
+   "usd_per_mtok_output": 4.2362,
+   "tok_s": 346.9,
+   "kv_share_of_bytes": 0.474,
+   "saving_vs_bf16": 0.8615,
+   "ideal_saving_1_minus_1_over_c": 0.8092
+  },
+  {
+   "unit": "Llama-3.3-70B on 2x H200",
+   "context": 8192,
+   "format": "BF16",
+   "compression": 1.0,
+   "batch": 44,
+   "memory_bound": true,
+   "usd_per_mtok_output": 1.8035,
+   "tok_s": 1629.5,
+   "kv_share_of_bytes": 0.456,
+   "saving_vs_bf16": 0.0,
+   "ideal_saving_1_minus_1_over_c": 0.0
+  },
+  {
+   "unit": "Llama-3.3-70B on 2x H200",
+   "context": 8192,
+   "format": "FP8",
+   "compression": 2.0,
+   "batch": 88,
+   "memory_bound": true,
+   "usd_per_mtok_output": 0.9018,
+   "tok_s": 3259.0,
+   "kv_share_of_bytes": 0.456,
+   "saving_vs_bf16": 0.5,
+   "ideal_saving_1_minus_1_over_c": 0.5
+  },
+  {
+   "unit": "Llama-3.3-70B on 2x H200",
+   "context": 8192,
+   "format": "KIVI-4",
+   "compression": 3.17,
+   "batch": 139,
+   "memory_bound": true,
+   "usd_per_mtok_output": 0.57,
+   "tok_s": 5155.9,
+   "kv_share_of_bytes": 0.455,
+   "saving_vs_bf16": 0.6839,
+   "ideal_saving_1_minus_1_over_c": 0.6845
+  },
+  {
+   "unit": "Llama-3.3-70B on 2x H200",
+   "context": 8192,
+   "format": "SnapKV-0.75",
+   "compression": 4.0,
+   "batch": 176,
+   "memory_bound": true,
+   "usd_per_mtok_output": 0.4509,
+   "tok_s": 6518.0,
+   "kv_share_of_bytes": 0.456,
+   "saving_vs_bf16": 0.75,
+   "ideal_saving_1_minus_1_over_c": 0.75
+  },
+  {
+   "unit": "Llama-3.3-70B on 2x H200",
+   "context": 8192,
+   "format": "NVFP4",
+   "compression": 4.0,
+   "batch": 176,
+   "memory_bound": true,
+   "usd_per_mtok_output": 0.4509,
+   "tok_s": 6518.0,
+   "kv_share_of_bytes": 0.456,
+   "saving_vs_bf16": 0.75,
+   "ideal_saving_1_minus_1_over_c": 0.75
+  },
+  {
+   "unit": "Llama-3.3-70B on 2x H200",
+   "context": 8192,
+   "format": "KIVI-2",
+   "compression": 5.24,
+   "batch": 230,
+   "memory_bound": true,
+   "usd_per_mtok_output": 0.3446,
+   "tok_s": 8527.3,
+   "kv_share_of_bytes": 0.455,
+   "saving_vs_bf16": 0.8089,
+   "ideal_saving_1_minus_1_over_c": 0.8092
+  },
+  {
+   "unit": "Llama-3.3-70B on 2x H200",
+   "context": 32768,
+   "format": "BF16",
+   "compression": 1.0,
+   "batch": 11,
+   "memory_bound": true,
+   "usd_per_mtok_output": 7.2142,
+   "tok_s": 407.4,
+   "kv_share_of_bytes": 0.456,
+   "saving_vs_bf16": 0.0,
+   "ideal_saving_1_minus_1_over_c": 0.0
+  },
+  {
+   "unit": "Llama-3.3-70B on 2x H200",
+   "context": 32768,
+   "format": "FP8",
+   "compression": 2.0,
+   "batch": 22,
+   "memory_bound": true,
+   "usd_per_mtok_output": 3.6071,
+   "tok_s": 814.8,
+   "kv_share_of_bytes": 0.456,
+   "saving_vs_bf16": 0.5,
+   "ideal_saving_1_minus_1_over_c": 0.5
+  },
+  {
+   "unit": "Llama-3.3-70B on 2x H200",
+   "context": 32768,
+   "format": "KIVI-4",
+   "compression": 3.17,
+   "batch": 34,
+   "memory_bound": true,
+   "usd_per_mtok_output": 2.3075,
+   "tok_s": 1273.6,
+   "kv_share_of_bytes": 0.449,
+   "saving_vs_bf16": 0.6801,
+   "ideal_saving_1_minus_1_over_c": 0.6845
+  },
+  {
+   "unit": "Llama-3.3-70B on 2x H200",
+   "context": 32768,
+   "format": "SnapKV-0.75",
+   "compression": 4.0,
+   "batch": 44,
+   "memory_bound": true,
+   "usd_per_mtok_output": 1.8035,
+   "tok_s": 1629.5,
+   "kv_share_of_bytes": 0.456,
+   "saving_vs_bf16": 0.75,
+   "ideal_saving_1_minus_1_over_c": 0.75
+  },
+  {
+   "unit": "Llama-3.3-70B on 2x H200",
+   "context": 32768,
+   "format": "NVFP4",
+   "compression": 4.0,
+   "batch": 44,
+   "memory_bound": true,
+   "usd_per_mtok_output": 1.8035,
+   "tok_s": 1629.5,
+   "kv_share_of_bytes": 0.456,
+   "saving_vs_bf16": 0.75,
+   "ideal_saving_1_minus_1_over_c": 0.75
+  },
+  {
+   "unit": "Llama-3.3-70B on 2x H200",
+   "context": 32768,
+   "format": "KIVI-2",
+   "compression": 5.24,
+   "batch": 57,
+   "memory_bound": true,
+   "usd_per_mtok_output": 1.3852,
+   "tok_s": 2121.7,
+   "kv_share_of_bytes": 0.453,
+   "saving_vs_bf16": 0.808,
+   "ideal_saving_1_minus_1_over_c": 0.8092
+  },
+  {
+   "unit": "Llama-3.3-70B on 2x H200",
+   "context": 131072,
+   "format": "BF16",
+   "compression": 1.0,
+   "batch": 2,
+   "memory_bound": true,
+   "usd_per_mtok_output": 34.7473,
+   "tok_s": 84.6,
+   "kv_share_of_bytes": 0.378,
+   "saving_vs_bf16": 0.0,
+   "ideal_saving_1_minus_1_over_c": 0.0
+  },
+  {
+   "unit": "Llama-3.3-70B on 2x H200",
+   "context": 131072,
+   "format": "FP8",
+   "compression": 2.0,
+   "batch": 5,
+   "memory_bound": true,
+   "usd_per_mtok_output": 15.2137,
+   "tok_s": 193.2,
+   "kv_share_of_bytes": 0.432,
+   "saving_vs_bf16": 0.5622,
+   "ideal_saving_1_minus_1_over_c": 0.5
+  },
+  {
+   "unit": "Llama-3.3-70B on 2x H200",
+   "context": 131072,
+   "format": "KIVI-4",
+   "compression": 3.17,
+   "batch": 8,
+   "memory_bound": true,
+   "usd_per_mtok_output": 9.5475,
+   "tok_s": 307.8,
+   "kv_share_of_bytes": 0.434,
+   "saving_vs_bf16": 0.7252,
+   "ideal_saving_1_minus_1_over_c": 0.6845
+  },
+  {
+   "unit": "Llama-3.3-70B on 2x H200",
+   "context": 131072,
+   "format": "SnapKV-0.75",
+   "compression": 4.0,
+   "batch": 11,
+   "memory_bound": true,
+   "usd_per_mtok_output": 7.2142,
+   "tok_s": 407.4,
+   "kv_share_of_bytes": 0.456,
+   "saving_vs_bf16": 0.7924,
+   "ideal_saving_1_minus_1_over_c": 0.75
+  },
+  {
+   "unit": "Llama-3.3-70B on 2x H200",
+   "context": 131072,
+   "format": "NVFP4",
+   "compression": 4.0,
+   "batch": 11,
+   "memory_bound": true,
+   "usd_per_mtok_output": 7.2142,
+   "tok_s": 407.4,
+   "kv_share_of_bytes": 0.456,
+   "saving_vs_bf16": 0.7924,
+   "ideal_saving_1_minus_1_over_c": 0.75
+  },
+  {
+   "unit": "Llama-3.3-70B on 2x H200",
+   "context": 131072,
+   "format": "KIVI-2",
+   "compression": 5.24,
+   "batch": 14,
+   "memory_bound": true,
+   "usd_per_mtok_output": 5.5948,
+   "tok_s": 525.3,
+   "kv_share_of_bytes": 0.448,
+   "saving_vs_bf16": 0.839,
+   "ideal_saving_1_minus_1_over_c": 0.8092
+  }
+ ],
+ "rq2_crossover_context_tokens": [
+  {
+   "unit": "Llama-3.1-8B on 1x H100",
+   "BF16": 1715,
+   "FP8": 3430,
+   "KIVI-4": 5436,
+   "SnapKV-0.75": 6860,
+   "NVFP4": 6860,
+   "KIVI-2": 8986
+  },
+  {
+   "unit": "Qwen3-32B on 1x H200",
+   "BF16": 957,
+   "FP8": 1914,
+   "KIVI-4": 3033,
+   "SnapKV-0.75": 3827,
+   "NVFP4": 3827,
+   "KIVI-2": 5013
+  },
+  {
+   "unit": "Llama-3.3-70B on 2x H200",
+   "BF16": 1411,
+   "FP8": 2822,
+   "KIVI-4": 4472,
+   "SnapKV-0.75": 5643,
+   "NVFP4": 5643,
+   "KIVI-2": 7392
+  }
+ ],
+ "rq3_quality": [
+  {
+   "method": "KIVI-2",
+   "realised_compression_mean": 5.24,
+   "realised_compression_range": [
+    5.16,
+    5.32
+   ],
+   "usd_per_mtok_llama8b_h100_32k": 0.3471,
+   "saving_vs_bf16_32k": 0.8103,
+   "mean_retention_pooled": 1.0059,
+   "min_retention_pooled": 0.9402,
+   "cost_saved_pct_per_worst_case_point_lost": 13.55,
+   "per_model": {
+    "Llama-3.1-8B-Instruct": {
+     "mean_retention": 0.9889,
+     "min_retention": 0.9631,
+     "worst_dataset": "Qasper",
+     "per_dataset": {
+      "HotpotQA": 0.9767,
+      "2WikiMQA": 0.97,
+      "Qasper": 0.9631,
+      "MultiFieldQA-en": 1.0197,
+      "TriviaQA": 1.0099,
+      "MultiNews": 0.9941
+     }
+    },
+    "Mistral-7B-Instruct-v0.3": {
+     "mean_retention": 1.023,
+     "min_retention": 0.9402,
+     "worst_dataset": "HotpotQA",
+     "per_dataset": {
+      "HotpotQA": 0.9402,
+      "2WikiMQA": 1.0603,
+      "Qasper": 1.0423,
+      "MultiFieldQA-en": 1.0802,
+      "TriviaQA": 0.9913,
+      "MultiNews": 1.0235
+     }
+    }
+   }
+  },
+  {
+   "method": "KIVI-4",
+   "realised_compression_mean": 3.17,
+   "realised_compression_range": [
+    3.15,
+    3.19
+   ],
+   "usd_per_mtok_llama8b_h100_32k": 0.5748,
+   "saving_vs_bf16_32k": 0.6859,
+   "mean_retention_pooled": 1.0234,
+   "min_retention_pooled": 0.9503,
+   "cost_saved_pct_per_worst_case_point_lost": 13.8,
+   "per_model": {
+    "Llama-3.1-8B-Instruct": {
+     "mean_retention": 1.0098,
+     "min_retention": 0.9926,
+     "worst_dataset": "Qasper",
+     "per_dataset": {
+      "HotpotQA": 1.0048,
+      "2WikiMQA": 1.0533,
+      "Qasper": 0.9926,
+      "MultiFieldQA-en": 1.0152,
+      "TriviaQA": 1.0001,
+      "MultiNews": 0.9926
+     }
+    },
+    "Mistral-7B-Instruct-v0.3": {
+     "mean_retention": 1.037,
+     "min_retention": 0.9503,
+     "worst_dataset": "HotpotQA",
+     "per_dataset": {
+      "HotpotQA": 0.9503,
+      "2WikiMQA": 1.0816,
+      "Qasper": 1.0739,
+      "MultiFieldQA-en": 1.0691,
+      "TriviaQA": 0.9994,
+      "MultiNews": 1.0477
+     }
+    }
+   }
+  },
+  {
+   "method": "TurboQuant-3",
+   "realised_compression_mean": 4.27,
+   "realised_compression_range": [
+    4.27,
+    4.27
+   ],
+   "usd_per_mtok_llama8b_h100_32k": 0.426,
+   "saving_vs_bf16_32k": 0.7672,
+   "mean_retention_pooled": 0.906,
+   "min_retention_pooled": 0.6003,
+   "cost_saved_pct_per_worst_case_point_lost": 1.92,
+   "per_model": {
+    "Llama-3.1-8B-Instruct": {
+     "mean_retention": 0.8993,
+     "min_retention": 0.6037,
+     "worst_dataset": "MultiNews",
+     "per_dataset": {
+      "HotpotQA": 0.9546,
+      "2WikiMQA": 0.939,
+      "Qasper": 1.0184,
+      "MultiFieldQA-en": 0.9544,
+      "TriviaQA": 0.9257,
+      "MultiNews": 0.6037
+     }
+    },
+    "Mistral-7B-Instruct-v0.3": {
+     "mean_retention": 0.9126,
+     "min_retention": 0.6003,
+     "worst_dataset": "MultiNews",
+     "per_dataset": {
+      "HotpotQA": 0.9594,
+      "2WikiMQA": 0.9488,
+      "Qasper": 0.971,
+      "MultiFieldQA-en": 1.0022,
+      "TriviaQA": 0.9939,
+      "MultiNews": 0.6003
+     }
+    }
+   }
+  },
+  {
+   "method": "TurboQuant-4",
+   "realised_compression_mean": 3.76,
+   "realised_compression_range": [
+    3.76,
+    3.76
+   ],
+   "usd_per_mtok_llama8b_h100_32k": 0.4842,
+   "saving_vs_bf16_32k": 0.7354,
+   "mean_retention_pooled": 0.9302,
+   "min_retention_pooled": 0.5952,
+   "cost_saved_pct_per_worst_case_point_lost": 1.82,
+   "per_model": {
+    "Llama-3.1-8B-Instruct": {
+     "mean_retention": 0.933,
+     "min_retention": 0.5952,
+     "worst_dataset": "MultiNews",
+     "per_dataset": {
+      "HotpotQA": 1.0068,
+      "2WikiMQA": 1.0181,
+      "Qasper": 1.0059,
+      "MultiFieldQA-en": 0.9887,
+      "TriviaQA": 0.9834,
+      "MultiNews": 0.5952
+     }
+    },
+    "Mistral-7B-Instruct-v0.3": {
+     "mean_retention": 0.9274,
+     "min_retention": 0.606,
+     "worst_dataset": "MultiNews",
+     "per_dataset": {
+      "HotpotQA": 0.9591,
+      "2WikiMQA": 0.9386,
+      "Qasper": 1.0554,
+      "MultiFieldQA-en": 1.011,
+      "TriviaQA": 0.9944,
+      "MultiNews": 0.606
+     }
+    }
+   }
+  },
+  {
+   "method": "SnapKV-0.75",
+   "realised_compression_mean": 4.0,
+   "realised_compression_range": [
+    4.0,
+    4.0
+   ],
+   "usd_per_mtok_llama8b_h100_32k": 0.4555,
+   "saving_vs_bf16_32k": 0.7511,
+   "mean_retention_pooled": 0.9963,
+   "min_retention_pooled": 0.8486,
+   "cost_saved_pct_per_worst_case_point_lost": 4.96,
+   "per_model": {
+    "Llama-3.1-8B-Instruct": {
+     "mean_retention": 1.0141,
+     "min_retention": 0.8486,
+     "worst_dataset": "MultiNews",
+     "per_dataset": {
+      "HotpotQA": 1.0625,
+      "2WikiMQA": 1.1161,
+      "Qasper": 1.0133,
+      "MultiFieldQA-en": 1.0397,
+      "TriviaQA": 1.0043,
+      "MultiNews": 0.8486
+     }
+    },
+    "Mistral-7B-Instruct-v0.3": {
+     "mean_retention": 0.9784,
+     "min_retention": 0.9179,
+     "worst_dataset": "MultiNews",
+     "per_dataset": {
+      "HotpotQA": 0.9397,
+      "2WikiMQA": 1.0636,
+      "Qasper": 0.9522,
+      "MultiFieldQA-en": 1.0226,
+      "TriviaQA": 0.9743,
+      "MultiNews": 0.9179
+     }
+    }
+   }
+  },
+  {
+   "method": "CaM",
+   "realised_compression_mean": 3.57,
+   "realised_compression_range": [
+    1.0,
+    13.82
+   ],
+   "usd_per_mtok_llama8b_h100_32k": 0.5111,
+   "saving_vs_bf16_32k": 0.7207,
+   "mean_retention_pooled": 0.9704,
+   "min_retention_pooled": 0.6336,
+   "cost_saved_pct_per_worst_case_point_lost": 1.97,
+   "per_model": {
+    "Llama-3.1-8B-Instruct": {
+     "mean_retention": 0.9934,
+     "min_retention": 0.6468,
+     "worst_dataset": "MultiNews",
+     "per_dataset": {
+      "HotpotQA": 1.0732,
+      "2WikiMQA": 1.1595,
+      "Qasper": 1.0341,
+      "MultiFieldQA-en": 1.0464,
+      "TriviaQA": 1.0007,
+      "MultiNews": 0.6468
+     }
+    },
+    "Mistral-7B-Instruct-v0.3": {
+     "mean_retention": 0.9474,
+     "min_retention": 0.6336,
+     "worst_dataset": "MultiNews",
+     "per_dataset": {
+      "HotpotQA": 0.9424,
+      "2WikiMQA": 1.0395,
+      "Qasper": 1.0596,
+      "MultiFieldQA-en": 1.0459,
+      "TriviaQA": 0.9637,
+      "MultiNews": 0.6336
+     }
+    }
+   }
+  }
+ ],
+ "rq3_baseline_usd_per_mtok_llama8b_h100_32k": 1.8297,
+ "rq3_pareto_worst_case": [
+  "BF16 (All-KV)",
+  "KIVI-2",
+  "KIVI-4"
+ ],
+ "rq3_pareto_mean": [
+  "KIVI-2",
+  "KIVI-4"
+ ],
+ "rq3_summarisation_retention": {
+  "KIVI-2": {
+   "Llama-3.1-8B-Instruct": 0.9941,
+   "Mistral-7B-Instruct-v0.3": 1.0235
+  },
+  "KIVI-4": {
+   "Llama-3.1-8B-Instruct": 0.9926,
+   "Mistral-7B-Instruct-v0.3": 1.0477
+  },
+  "TurboQuant-3": {
+   "Llama-3.1-8B-Instruct": 0.6037,
+   "Mistral-7B-Instruct-v0.3": 0.6003
+  },
+  "TurboQuant-4": {
+   "Llama-3.1-8B-Instruct": 0.5952,
+   "Mistral-7B-Instruct-v0.3": 0.606
+  },
+  "SnapKV-0.75": {
+   "Llama-3.1-8B-Instruct": 0.8486,
+   "Mistral-7B-Instruct-v0.3": 0.9179
+  },
+  "CaM": {
+   "Llama-3.1-8B-Instruct": 0.6468,
+   "Mistral-7B-Instruct-v0.3": 0.6336
+  }
+ }
+}

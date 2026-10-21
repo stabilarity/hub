@@ -1,0 +1,687 @@
+{
+ "meta": {
+  "prices_accessed": "2026-10-21",
+  "currency": "USD",
+  "notes": "Multipliers are relative to each model's base input price. TTL refreshed by every request. -1 in poisson_breakeven_mean_interarrival_min means no threshold (no write premium)."
+ },
+ "rq1_breakeven": [
+  {
+   "provider": "Anthropic",
+   "model": "Claude Opus 5.5",
+   "mode": "explicit-5m",
+   "write_multiplier": 1.25,
+   "read_multiplier": 0.05,
+   "ttl_min": 5.0,
+   "min_tokens": 512,
+   "breakeven_reads": 1,
+   "max_prefix_saving_pct": 95.0,
+   "saving_at_10_reuses_pct": 84.0909,
+   "poisson_breakeven_mean_interarrival_min": 21.4027
+  },
+  {
+   "provider": "Anthropic",
+   "model": "Claude Opus 5.5",
+   "mode": "explicit-1h",
+   "write_multiplier": 2.0,
+   "read_multiplier": 0.05,
+   "ttl_min": 60.0,
+   "min_tokens": 512,
+   "breakeven_reads": 2,
+   "max_prefix_saving_pct": 95.0,
+   "saving_at_10_reuses_pct": 77.2727,
+   "poisson_breakeven_mean_interarrival_min": 83.435
+  },
+  {
+   "provider": "Anthropic",
+   "model": "Claude Sonnet 5.5",
+   "mode": "explicit-5m",
+   "write_multiplier": 1.25,
+   "read_multiplier": 0.05,
+   "ttl_min": 5.0,
+   "min_tokens": 512,
+   "breakeven_reads": 1,
+   "max_prefix_saving_pct": 95.0,
+   "saving_at_10_reuses_pct": 84.0909,
+   "poisson_breakeven_mean_interarrival_min": 21.4027
+  },
+  {
+   "provider": "Anthropic",
+   "model": "Claude Sonnet 5.5",
+   "mode": "explicit-1h",
+   "write_multiplier": 2.0,
+   "read_multiplier": 0.05,
+   "ttl_min": 60.0,
+   "min_tokens": 512,
+   "breakeven_reads": 2,
+   "max_prefix_saving_pct": 95.0,
+   "saving_at_10_reuses_pct": 77.2727,
+   "poisson_breakeven_mean_interarrival_min": 83.435
+  },
+  {
+   "provider": "Anthropic",
+   "model": "Claude Sonnet 4.6",
+   "mode": "explicit-5m",
+   "write_multiplier": 1.25,
+   "read_multiplier": 0.1,
+   "ttl_min": 5.0,
+   "min_tokens": 1024,
+   "breakeven_reads": 1,
+   "max_prefix_saving_pct": 90.0,
+   "saving_at_10_reuses_pct": 79.5455,
+   "poisson_breakeven_mean_interarrival_min": 20.398
+  },
+  {
+   "provider": "Anthropic",
+   "model": "Claude Haiku 5.5",
+   "mode": "explicit-5m",
+   "write_multiplier": 1.25,
+   "read_multiplier": 0.1,
+   "ttl_min": 5.0,
+   "min_tokens": 512,
+   "breakeven_reads": 1,
+   "max_prefix_saving_pct": 90.0,
+   "saving_at_10_reuses_pct": 79.5455,
+   "poisson_breakeven_mean_interarrival_min": 20.398
+  },
+  {
+   "provider": "OpenAI",
+   "model": "gpt-6.1-sol",
+   "mode": "explicit-30m",
+   "write_multiplier": 1.25,
+   "read_multiplier": 0.05,
+   "ttl_min": 30.0,
+   "min_tokens": 1024,
+   "breakeven_reads": 1,
+   "max_prefix_saving_pct": 95.0,
+   "saving_at_10_reuses_pct": 84.0909,
+   "poisson_breakeven_mean_interarrival_min": 128.4165
+  },
+  {
+   "provider": "OpenAI",
+   "model": "gpt-6.1-sol",
+   "mode": "explicit-12h",
+   "write_multiplier": 2.5,
+   "read_multiplier": 0.05,
+   "ttl_min": 720.0,
+   "min_tokens": 1024,
+   "breakeven_reads": 2,
+   "max_prefix_saving_pct": 95.0,
+   "saving_at_10_reuses_pct": 72.7273,
+   "poisson_breakeven_mean_interarrival_min": 759.9897
+  },
+  {
+   "provider": "OpenAI",
+   "model": "gpt-6-astra",
+   "mode": "explicit-30m",
+   "write_multiplier": 1.25,
+   "read_multiplier": 0.1,
+   "ttl_min": 30.0,
+   "min_tokens": 1024,
+   "breakeven_reads": 1,
+   "max_prefix_saving_pct": 90.0,
+   "saving_at_10_reuses_pct": 79.5455,
+   "poisson_breakeven_mean_interarrival_min": 122.3878
+  },
+  {
+   "provider": "OpenAI",
+   "model": "gpt-5.6-terra",
+   "mode": "explicit-30m",
+   "write_multiplier": 1.25,
+   "read_multiplier": 0.1,
+   "ttl_min": 30.0,
+   "min_tokens": 1024,
+   "breakeven_reads": 1,
+   "max_prefix_saving_pct": 90.0,
+   "saving_at_10_reuses_pct": 79.5455,
+   "poisson_breakeven_mean_interarrival_min": 122.3878
+  },
+  {
+   "provider": "OpenAI",
+   "model": "gpt-5.6-luna",
+   "mode": "explicit-30m",
+   "write_multiplier": 1.25,
+   "read_multiplier": 0.1,
+   "ttl_min": 30.0,
+   "min_tokens": 1024,
+   "breakeven_reads": 1,
+   "max_prefix_saving_pct": 90.0,
+   "saving_at_10_reuses_pct": 79.5455,
+   "poisson_breakeven_mean_interarrival_min": 122.3878
+  },
+  {
+   "provider": "OpenAI",
+   "model": "gpt-5.5",
+   "mode": "implicit",
+   "write_multiplier": 1.0,
+   "read_multiplier": 0.1,
+   "ttl_min": 5.0,
+   "min_tokens": 1024,
+   "breakeven_reads": 0,
+   "max_prefix_saving_pct": 90.0,
+   "saving_at_10_reuses_pct": 81.8182,
+   "poisson_breakeven_mean_interarrival_min": -1.0
+  },
+  {
+   "provider": "OpenAI",
+   "model": "gpt-4o",
+   "mode": "implicit",
+   "write_multiplier": 1.0,
+   "read_multiplier": 0.5,
+   "ttl_min": 5.0,
+   "min_tokens": 1024,
+   "breakeven_reads": 0,
+   "max_prefix_saving_pct": 50.0,
+   "saving_at_10_reuses_pct": 45.4545,
+   "poisson_breakeven_mean_interarrival_min": -1.0
+  },
+  {
+   "provider": "Google",
+   "model": "Gemini 3.1 Pro Preview",
+   "mode": "implicit",
+   "write_multiplier": 1.0,
+   "read_multiplier": 0.1,
+   "ttl_min": 5.0,
+   "min_tokens": 4096,
+   "breakeven_reads": 0,
+   "max_prefix_saving_pct": 90.0,
+   "saving_at_10_reuses_pct": 81.8182,
+   "poisson_breakeven_mean_interarrival_min": -1.0,
+   "storage_breakeven_hits_per_hour": 2.5
+  },
+  {
+   "provider": "Google",
+   "model": "Gemini 3.8 Flash",
+   "mode": "implicit",
+   "write_multiplier": 1.0,
+   "read_multiplier": 0.1,
+   "ttl_min": 5.0,
+   "min_tokens": 4096,
+   "breakeven_reads": 0,
+   "max_prefix_saving_pct": 90.0,
+   "saving_at_10_reuses_pct": 81.8182,
+   "poisson_breakeven_mean_interarrival_min": -1.0,
+   "storage_breakeven_hits_per_hour": 0.7407
+  },
+  {
+   "provider": "Google",
+   "model": "Gemini 2.5 Flash",
+   "mode": "implicit",
+   "write_multiplier": 1.0,
+   "read_multiplier": 0.1,
+   "ttl_min": 5.0,
+   "min_tokens": 2048,
+   "breakeven_reads": 0,
+   "max_prefix_saving_pct": 90.0,
+   "saving_at_10_reuses_pct": 81.8182,
+   "poisson_breakeven_mean_interarrival_min": -1.0,
+   "storage_breakeven_hits_per_hour": 3.7037
+  },
+  {
+   "provider": "DeepSeek",
+   "model": "deepseek-flash",
+   "mode": "implicit-disk",
+   "write_multiplier": 1.0,
+   "read_multiplier": 0.02,
+   "ttl_min": 180.0,
+   "min_tokens": 0,
+   "breakeven_reads": 0,
+   "max_prefix_saving_pct": 98.0,
+   "saving_at_10_reuses_pct": 89.0909,
+   "poisson_breakeven_mean_interarrival_min": -1.0
+  },
+  {
+   "provider": "DeepSeek",
+   "model": "deepseek-v4-pro",
+   "mode": "implicit-disk",
+   "write_multiplier": 1.0,
+   "read_multiplier": 0.0333,
+   "ttl_min": 180.0,
+   "min_tokens": 0,
+   "breakeven_reads": 0,
+   "max_prefix_saving_pct": 96.6667,
+   "saving_at_10_reuses_pct": 87.8788,
+   "poisson_breakeven_mean_interarrival_min": -1.0
+  }
+ ],
+ "rq2_poisson": {
+  "sonnet55_5m_vs_1h_crossover_interarrival_min": 113.2834,
+  "gpt61sol_30m_vs_12h_crossover_interarrival_min": 966.7027,
+  "sonnet55_5m_saving_at_1min_pct": 94.1914,
+  "sonnet55_5m_saving_at_5min_pct": 50.8545,
+  "sonnet55_5m_saving_at_15min_pct": 9.0162,
+  "sonnet55_1h_saving_at_15min_pct": 91.4285,
+  "sonnet55_1h_saving_at_60min_pct": 23.2635,
+  "sonnet55_5m_saving_at_60min_pct": -15.4053,
+  "sonnet55_5m_worst_case_loss_pct": 25.0,
+  "gpt61sol_12h_worst_case_loss_pct": 150.0
+ },
+ "rq2_tracelab_gaps": {
+  "claude": {
+   "rounds": 140338,
+   "sessions": 2676,
+   "mean_input_tokens": 202840.2976,
+   "median_input_tokens": 133063.0,
+   "gap_p50_min": 0.1375,
+   "gap_p90_min": 2.1531,
+   "gap_p95_min": 4.7648,
+   "gap_p99_min": 51.1666,
+   "share_gaps_over_5min_pct": 4.5939,
+   "share_gaps_over_30min_pct": 1.3235,
+   "share_gaps_over_60min_pct": 0.6414,
+   "token_weighted_share_over_5min_pct": 6.1067,
+   "token_weighted_share_over_60min_pct": 0.7566,
+   "share_gaps_over_5min_after_user_message_pct": 70.8729,
+   "share_rounds_below_1024_tokens_pct": 0.0143,
+   "share_rounds_below_4096_tokens_pct": 0.0164,
+   "reusable_prefix_share_of_input_pct": 98.715,
+   "observed_provider_cached_share_pct": 95.8196
+  },
+  "codex": {
+   "rounds": 216823,
+   "sessions": 1589,
+   "mean_input_tokens": 121906.6194,
+   "median_input_tokens": 120480.0,
+   "gap_p50_min": 0.1499,
+   "gap_p90_min": 0.9518,
+   "gap_p95_min": 2.5311,
+   "gap_p99_min": 21.5734,
+   "share_gaps_over_5min_pct": 3.2518,
+   "share_gaps_over_30min_pct": 0.775,
+   "share_gaps_over_60min_pct": 0.4679,
+   "token_weighted_share_over_5min_pct": 3.5029,
+   "token_weighted_share_over_60min_pct": 0.4849,
+   "share_gaps_over_5min_after_user_message_pct": 78.3683,
+   "share_rounds_below_1024_tokens_pct": 0.0065,
+   "share_rounds_below_4096_tokens_pct": 0.1337,
+   "reusable_prefix_share_of_input_pct": 95.4607,
+   "observed_provider_cached_share_pct": 95.6662
+  }
+ },
+ "rq2_tracelab_replay": {
+  "tracelab_claude": {
+   "A5": {
+    "label": "Sonnet 5.5 5-min",
+    "input_saving_pct": 86.3067,
+    "hit_token_share_pct": 92.7556,
+    "total_bill_saving_pct": 84.8624,
+    "list_price_ceiling_pct": 95.0
+   },
+   "A60": {
+    "label": "Sonnet 5.5 1-hour",
+    "input_saving_pct": 91.1405,
+    "hit_token_share_pct": 98.0208,
+    "total_bill_saving_pct": 89.6154,
+    "list_price_ceiling_pct": 95.0
+   },
+   "A5std": {
+    "label": "Sonnet 4.6 5-min (0.1x read)",
+    "input_saving_pct": 81.6689,
+    "hit_token_share_pct": 92.7556,
+    "total_bill_saving_pct": 80.3023,
+    "list_price_ceiling_pct": 90.0
+   },
+   "O30": {
+    "label": "gpt-6.1-sol 30-min",
+    "input_saving_pct": 91.4135,
+    "hit_token_share_pct": 97.0113,
+    "total_bill_saving_pct": 89.8838,
+    "list_price_ceiling_pct": 95.0
+   },
+   "O720": {
+    "label": "gpt-6.1-sol 12-hour",
+    "input_saving_pct": 91.4547,
+    "hit_token_share_pct": 98.5529,
+    "total_bill_saving_pct": 89.9243,
+    "list_price_ceiling_pct": 95.0
+   },
+   "I5": {
+    "label": "gpt-5.5 implicit",
+    "input_saving_pct": 83.48,
+    "hit_token_share_pct": 92.7556,
+    "total_bill_saving_pct": 81.8093,
+    "list_price_ceiling_pct": 90.0
+   },
+   "I4o": {
+    "label": "gpt-4o implicit (0.5x read)",
+    "input_saving_pct": 46.3778,
+    "hit_token_share_pct": 92.7556,
+    "total_bill_saving_pct": 45.7548,
+    "list_price_ceiling_pct": 50.0
+   },
+   "G": {
+    "label": "Gemini 3.1 Pro implicit",
+    "input_saving_pct": 83.48,
+    "hit_token_share_pct": 92.7556,
+    "total_bill_saving_pct": 81.8093,
+    "list_price_ceiling_pct": 90.0
+   },
+   "D": {
+    "label": "DeepSeek flash disk cache",
+    "input_saving_pct": 96.3476,
+    "hit_token_share_pct": 98.3139,
+    "total_bill_saving_pct": 95.0535,
+    "list_price_ceiling_pct": 98.0
+   },
+   "A_oracle": {
+    "label": "Sonnet 5.5 hindsight 5-min/1-hour",
+    "input_saving_pct": 92.535
+   }
+  },
+  "tracelab_codex": {
+   "A5": {
+    "label": "Sonnet 5.5 5-min",
+    "input_saving_pct": 86.4809,
+    "hit_token_share_pct": 92.9007,
+    "total_bill_saving_pct": 85.0324,
+    "list_price_ceiling_pct": 95.0
+   },
+   "A60": {
+    "label": "Sonnet 5.5 1-hour",
+    "input_saving_pct": 85.6481,
+    "hit_token_share_pct": 95.2041,
+    "total_bill_saving_pct": 84.2135,
+    "list_price_ceiling_pct": 95.0
+   },
+   "A5std": {
+    "label": "Sonnet 4.6 5-min (0.1x read)",
+    "input_saving_pct": 81.8359,
+    "hit_token_share_pct": 92.9007,
+    "total_bill_saving_pct": 80.4652,
+    "list_price_ceiling_pct": 90.0
+   },
+   "O30": {
+    "label": "gpt-6.1-sol 30-min",
+    "input_saving_pct": 89.0128,
+    "hit_token_share_pct": 95.0106,
+    "total_bill_saving_pct": 87.5219,
+    "list_price_ceiling_pct": 95.0
+   },
+   "O720": {
+    "label": "gpt-6.1-sol 12-hour",
+    "input_saving_pct": 83.7034,
+    "hit_token_share_pct": 95.3891,
+    "total_bill_saving_pct": 82.3014,
+    "list_price_ceiling_pct": 95.0
+   },
+   "I5": {
+    "label": "gpt-5.5 implicit",
+    "input_saving_pct": 83.6107,
+    "hit_token_share_pct": 92.9007,
+    "total_bill_saving_pct": 81.9358,
+    "list_price_ceiling_pct": 90.0
+   },
+   "I4o": {
+    "label": "gpt-4o implicit (0.5x read)",
+    "input_saving_pct": 46.4504,
+    "hit_token_share_pct": 92.9007,
+    "total_bill_saving_pct": 45.8259,
+    "list_price_ceiling_pct": 50.0
+   },
+   "G": {
+    "label": "Gemini 3.1 Pro implicit",
+    "input_saving_pct": 83.609,
+    "hit_token_share_pct": 92.8989,
+    "total_bill_saving_pct": 81.9341,
+    "list_price_ceiling_pct": 90.0
+   },
+   "D": {
+    "label": "DeepSeek flash disk cache",
+    "input_saving_pct": 93.4181,
+    "hit_token_share_pct": 95.3246,
+    "total_bill_saving_pct": 92.1622,
+    "list_price_ceiling_pct": 98.0
+   },
+   "A_oracle": {
+    "label": "Sonnet 5.5 hindsight 5-min/1-hour",
+    "input_saving_pct": 89.0691
+   }
+  }
+ },
+ "rq2_mooncake_replay": {
+  "conversation_trace": {
+   "requests": 12031,
+   "mean_input_tokens": 12035.0613,
+   "hit_share_by_ttl_pct": {
+    "1": 10.5371,
+    "5": 29.3387,
+    "10": 35.0122,
+    "30": 37.0646,
+    "60": 37.3624,
+    "180": 37.3624,
+    "720": 37.3624
+   },
+   "A5": {
+    "label": "Sonnet 5.5 5-min",
+    "input_saving_pct": 10.2065,
+    "list_price_ceiling_pct": 95.0
+   },
+   "A60": {
+    "label": "Sonnet 5.5 1-hour",
+    "input_saving_pct": -27.1434,
+    "list_price_ceiling_pct": 95.0
+   },
+   "A5std": {
+    "label": "Sonnet 4.6 5-min (0.1x read)",
+    "input_saving_pct": 8.3958,
+    "list_price_ceiling_pct": 90.0
+   },
+   "O30": {
+    "label": "gpt-6.1-sol 30-min",
+    "input_saving_pct": 19.108,
+    "list_price_ceiling_pct": 95.0
+   },
+   "O720": {
+    "label": "gpt-6.1-sol 12-hour",
+    "input_saving_pct": -58.3679,
+    "list_price_ceiling_pct": 95.0
+   },
+   "I5": {
+    "label": "gpt-5.5 implicit",
+    "input_saving_pct": 25.968,
+    "list_price_ceiling_pct": 90.0
+   },
+   "I4o": {
+    "label": "gpt-4o implicit (0.5x read)",
+    "input_saving_pct": 14.4267,
+    "list_price_ceiling_pct": 50.0
+   },
+   "G": {
+    "label": "Gemini 3.1 Pro implicit",
+    "input_saving_pct": 24.4391,
+    "list_price_ceiling_pct": 90.0
+   },
+   "D": {
+    "label": "DeepSeek flash disk cache",
+    "input_saving_pct": 36.6151,
+    "list_price_ceiling_pct": 98.0
+   }
+  },
+  "toolagent_trace": {
+   "requests": 23608,
+   "mean_input_tokens": 8596.2421,
+   "hit_share_by_ttl_pct": {
+    "1": 39.4987,
+    "5": 52.8641,
+    "10": 56.4736,
+    "30": 57.0271,
+    "60": 57.0606,
+    "180": 57.0606,
+    "720": 57.0606
+   },
+   "A5": {
+    "label": "Sonnet 5.5 5-min",
+    "input_saving_pct": 38.437,
+    "list_price_ceiling_pct": 95.0
+   },
+   "A60": {
+    "label": "Sonnet 5.5 1-hour",
+    "input_saving_pct": 11.2681,
+    "list_price_ceiling_pct": 95.0
+   },
+   "A5std": {
+    "label": "Sonnet 4.6 5-min (0.1x read)",
+    "input_saving_pct": 35.5693,
+    "list_price_ceiling_pct": 90.0
+   },
+   "O30": {
+    "label": "gpt-6.1-sol 30-min",
+    "input_saving_pct": 43.1911,
+    "list_price_ceiling_pct": 95.0
+   },
+   "O720": {
+    "label": "gpt-6.1-sol 12-hour",
+    "input_saving_pct": -10.1404,
+    "list_price_ceiling_pct": 95.0
+   },
+   "I5": {
+    "label": "gpt-5.5 implicit",
+    "input_saving_pct": 47.2925,
+    "list_price_ceiling_pct": 90.0
+   },
+   "I4o": {
+    "label": "gpt-4o implicit (0.5x read)",
+    "input_saving_pct": 26.2736,
+    "list_price_ceiling_pct": 50.0
+   },
+   "G": {
+    "label": "Gemini 3.1 Pro implicit",
+    "input_saving_pct": 42.6458,
+    "list_price_ceiling_pct": 90.0
+   },
+   "D": {
+    "label": "DeepSeek flash disk cache",
+    "input_saving_pct": 55.9194,
+    "list_price_ceiling_pct": 98.0
+   }
+  }
+ },
+ "rq3_payback": {
+  "day_rate_usd": 827.7043,
+  "horizon_months": 3.0,
+  "tiers": {
+   "switch-on": {
+    "one_off_days": 0.5,
+    "monthly_days": 0.0,
+    "required_monthly_saving_usd": 137.9507
+   },
+   "prefix-stable": {
+    "one_off_days": 5.0,
+    "monthly_days": 1.0,
+    "required_monthly_saving_usd": 2207.2116
+   },
+   "full-programme": {
+    "one_off_days": 20.0,
+    "monthly_days": 2.0,
+    "required_monthly_saving_usd": 7173.4377
+   }
+  },
+  "models": [
+   {
+    "model": "Claude Opus 5.5",
+    "mode": "explicit-5m",
+    "input_usd_mtok": 4.0,
+    "replay_input_saving_pct": 86.3067,
+    "required_input_btok_month_switch-on": 0.04,
+    "required_input_btok_month_prefix-stable": 0.6394,
+    "required_input_btok_month_full-programme": 2.0779,
+    "requests_per_day_prefix_2000": 10655.856,
+    "requests_per_day_prefix_10000": 2131.1712,
+    "requests_per_day_prefix_50000": 426.2342
+   },
+   {
+    "model": "Claude Sonnet 5.5",
+    "mode": "explicit-5m",
+    "input_usd_mtok": 2.0,
+    "replay_input_saving_pct": 86.3067,
+    "required_input_btok_month_switch-on": 0.0799,
+    "required_input_btok_month_prefix-stable": 1.2787,
+    "required_input_btok_month_full-programme": 4.1558,
+    "requests_per_day_prefix_2000": 21311.712,
+    "requests_per_day_prefix_10000": 4262.3424,
+    "requests_per_day_prefix_50000": 852.4685
+   },
+   {
+    "model": "Claude Haiku 5.5",
+    "mode": "explicit-5m",
+    "input_usd_mtok": 0.1,
+    "replay_input_saving_pct": 81.6689,
+    "required_input_btok_month_switch-on": 1.6891,
+    "required_input_btok_month_prefix-stable": 27.0263,
+    "required_input_btok_month_full-programme": 87.8356,
+    "requests_per_day_prefix_2000": 450439.0462,
+    "requests_per_day_prefix_10000": 90087.8092,
+    "requests_per_day_prefix_50000": 18017.5618
+   },
+   {
+    "model": "gpt-6-astra",
+    "mode": "explicit-30m",
+    "input_usd_mtok": 10.0,
+    "replay_input_saving_pct": 86.563,
+    "required_input_btok_month_switch-on": 0.0159,
+    "required_input_btok_month_prefix-stable": 0.255,
+    "required_input_btok_month_full-programme": 0.8287,
+    "requests_per_day_prefix_2000": 4249.7224,
+    "requests_per_day_prefix_10000": 849.9445,
+    "requests_per_day_prefix_50000": 169.9889
+   },
+   {
+    "model": "gpt-6.1-sol",
+    "mode": "explicit-30m",
+    "input_usd_mtok": 2.0,
+    "replay_input_saving_pct": 91.4135,
+    "required_input_btok_month_switch-on": 0.0755,
+    "required_input_btok_month_prefix-stable": 1.2073,
+    "required_input_btok_month_full-programme": 3.9236,
+    "requests_per_day_prefix_2000": 20121.123,
+    "requests_per_day_prefix_10000": 4024.2246,
+    "requests_per_day_prefix_50000": 804.8449
+   },
+   {
+    "model": "gpt-5.6-luna",
+    "mode": "explicit-30m",
+    "input_usd_mtok": 0.2,
+    "replay_input_saving_pct": 86.563,
+    "required_input_btok_month_switch-on": 0.7968,
+    "required_input_btok_month_prefix-stable": 12.7492,
+    "required_input_btok_month_full-programme": 41.4348,
+    "requests_per_day_prefix_2000": 212486.1189,
+    "requests_per_day_prefix_10000": 42497.2238,
+    "requests_per_day_prefix_50000": 8499.4448
+   },
+   {
+    "model": "Gemini 3.1 Pro Preview",
+    "mode": "implicit",
+    "input_usd_mtok": 2.0,
+    "replay_input_saving_pct": 83.48,
+    "required_input_btok_month_switch-on": 0.0826,
+    "required_input_btok_month_prefix-stable": 1.322,
+    "required_input_btok_month_full-programme": 4.2965,
+    "requests_per_day_prefix_2000": 22033.3359,
+    "requests_per_day_prefix_10000": 4406.6672,
+    "requests_per_day_prefix_50000": 881.3334
+   },
+   {
+    "model": "deepseek-flash",
+    "mode": "implicit-disk",
+    "input_usd_mtok": 0.3,
+    "replay_input_saving_pct": 96.3476,
+    "required_input_btok_month_switch-on": 0.4773,
+    "required_input_btok_month_prefix-stable": 7.6363,
+    "required_input_btok_month_full-programme": 24.8179,
+    "requests_per_day_prefix_2000": 127271.2708,
+    "requests_per_day_prefix_10000": 25454.2542,
+    "requests_per_day_prefix_50000": 5090.8508
+   }
+  ],
+  "sonnet55_prefix_stable_sensitivity_btok_month": {
+   "base": 1.2787,
+   "day_rate_x0.5": 0.6394,
+   "day_rate_x1.5": 1.9181,
+   "horizon_1m": 2.8771,
+   "horizon_12m": 0.6793,
+   "one_off_20d_monthly_2d": 4.1558,
+   "hit_rate_halved_saving_pct": 43.1534,
+   "hit_rate_halved_btok": 2.5574
+  }
+ }
+}

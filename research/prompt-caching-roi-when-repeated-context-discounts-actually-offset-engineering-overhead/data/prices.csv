@@ -1,0 +1,19 @@
+provider,model,mode,input_usd_mtok,write_usd_mtok,read_usd_mtok,output_usd_mtok,ttl_min,min_tokens,storage_usd_mtok_hour,source,note
+Anthropic,Claude Opus 5.5,explicit-5m,4.00,5.00,0.20,20.00,5,512,,https://platform.claude.com/docs/en/about-claude/pricing,TTL refreshed at no cost on each hit
+Anthropic,Claude Opus 5.5,explicit-1h,4.00,8.00,0.20,20.00,60,512,,https://platform.claude.com/docs/en/about-claude/pricing,
+Anthropic,Claude Sonnet 5.5,explicit-5m,2.00,2.50,0.10,10.00,5,512,,https://platform.claude.com/docs/en/about-claude/pricing,TTL refreshed at no cost on each hit
+Anthropic,Claude Sonnet 5.5,explicit-1h,2.00,4.00,0.10,10.00,60,512,,https://platform.claude.com/docs/en/about-claude/pricing,
+Anthropic,Claude Sonnet 4.6,explicit-5m,3.00,3.75,0.30,15.00,5,1024,,https://platform.claude.com/docs/en/about-claude/pricing,standard 0.1x read multiplier
+Anthropic,Claude Haiku 5.5,explicit-5m,0.10,0.125,0.01,0.50,5,512,,https://platform.claude.com/docs/en/about-claude/pricing,prompts up to 100k tokens
+OpenAI,gpt-6.1-sol,explicit-30m,2.00,2.50,0.10,10.00,30,1024,,https://developers.openai.com/api/docs/pricing,30m default TTL
+OpenAI,gpt-6.1-sol,explicit-12h,2.00,5.00,0.10,10.00,720,1024,,https://developers.openai.com/api/docs/pricing,
+OpenAI,gpt-6-astra,explicit-30m,10.00,12.50,1.00,50.00,30,1024,,https://developers.openai.com/api/docs/pricing,
+OpenAI,gpt-5.6-terra,explicit-30m,2.00,2.50,0.20,12.00,30,1024,,https://developers.openai.com/api/docs/pricing,
+OpenAI,gpt-5.6-luna,explicit-30m,0.20,0.25,0.02,1.20,30,1024,,https://developers.openai.com/api/docs/pricing,
+OpenAI,gpt-5.5,implicit,5.00,5.00,0.50,30.00,5,1024,,https://developers.openai.com/api/docs/pricing,no write premium; in-memory retention 5-10 min of inactivity (lower bound used)
+OpenAI,gpt-4o,implicit,2.50,2.50,1.25,10.00,5,1024,,https://developers.openai.com/api/docs/pricing,no write premium; 50% read discount
+Google,Gemini 3.1 Pro Preview,implicit,2.00,2.00,0.20,12.00,5,4096,4.50,https://ai.google.dev/gemini-api/docs/pricing,prompts up to 200k; implicit TTL undocumented (5 min assumed); storage applies to explicit caches
+Google,Gemini 3.8 Flash,implicit,0.75,0.75,0.075,3.75,5,4096,0.50,https://ai.google.dev/gemini-api/docs/pricing,price through 2026-12-31; implicit TTL undocumented (5 min assumed)
+Google,Gemini 2.5 Flash,implicit,0.30,0.30,0.03,2.50,5,2048,1.00,https://ai.google.dev/gemini-api/docs/pricing,text/image/video; implicit TTL undocumented (5 min assumed)
+DeepSeek,deepseek-flash,implicit-disk,0.30,0.30,0.006,1.20,180,0,,https://api-docs.deepseek.com/quick_start/pricing,peak rates; cache cleared within a few hours to a few days (3 h assumed)
+DeepSeek,deepseek-v4-pro,implicit-disk,1.32,1.32,0.044,3.96,180,0,,https://api-docs.deepseek.com/quick_start/pricing,peak rates; 3 h retention assumed

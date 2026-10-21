@@ -123,6 +123,9 @@ for u in UNITS:
             row[f"batch_{f}"] = s["batch"]
         rq1_conc.append(row)
 results["rq1_concurrency"] = rq1_conc
+results["rq1_units"] = [{"unit": u["unit"], "weights_gb": round(int(models[u["model"]]["params"]) * BF16_BYTES / GB, 2),
+                         "kv_budget_gb": round(serve(u, 8192, 1.0)["budget_gb"], 2),
+                         "usd_per_hour": float(gpus[u["gpu"]]["usd_per_gpu_hour"]) * u["n"]} for u in UNITS]
 
 # ------------------------------------------------------------------------------------------------
 # RQ2: cost per 1M output tokens and savings vs BF16

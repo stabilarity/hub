@@ -175,6 +175,26 @@
    "batch_KIVI-2": 14
   }
  ],
+ "rq1_units": [
+  {
+   "unit": "Llama-3.1-8B on 1x H100",
+   "weights_gb": 16.06,
+   "kv_budget_gb": 57.54,
+   "usd_per_hour": 3.99
+  },
+  {
+   "unit": "Qwen3-32B on 1x H200",
+   "weights_gb": 65.52,
+   "kv_budget_gb": 64.2,
+   "usd_per_hour": 5.29
+  },
+  {
+   "unit": "Llama-3.3-70B on 2x H200",
+   "weights_gb": 141.11,
+   "kv_budget_gb": 118.33,
+   "usd_per_hour": 10.58
+  }
+ ],
  "rq2_cost": [
   {
    "unit": "Llama-3.1-8B on 1x H100",

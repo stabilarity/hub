@@ -1,0 +1,976 @@
+{
+  "environment": {
+    "python": "3.12.3",
+    "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+    "cpu": "AMD EPYC (virtual, 2.0 GHz), 6 vCPU",
+    "opentelemetry_sdk": "1.45.1",
+    "opentelemetry_api": "1.45.1",
+    "numpy": "2.3.5",
+    "matplotlib": "3.11.2",
+    "seed": 20261021
+  },
+  "A_continuity": {
+    "configs": {
+      "all hops propagate": {
+        "spans_per_request": 48,
+        "share_in_root_trace_by_parent_pct": 100.0,
+        "share_reachable_parent_or_link_pct": 100.0,
+        "fragments_per_request": 1,
+        "fully_connected_requests_pct": 100.0
+      },
+      "in-process: thread pool without context copy": {
+        "spans_per_request": 48,
+        "share_in_root_trace_by_parent_pct": 2.08,
+        "share_reachable_parent_or_link_pct": 2.08,
+        "fragments_per_request": 2,
+        "fully_connected_requests_pct": 0.0
+      },
+      "A2A HTTP headers missing": {
+        "spans_per_request": 48,
+        "share_in_root_trace_by_parent_pct": 8.33,
+        "share_reachable_parent_or_link_pct": 8.33,
+        "fragments_per_request": 3,
+        "fully_connected_requests_pct": 0.0
+      },
+      "MCP params._meta missing": {
+        "spans_per_request": 48,
+        "share_in_root_trace_by_parent_pct": 25.0,
+        "share_reachable_parent_or_link_pct": 25.0,
+        "fragments_per_request": 7,
+        "fully_connected_requests_pct": 0.0
+      },
+      "queue message headers missing": {
+        "spans_per_request": 48,
+        "share_in_root_trace_by_parent_pct": 50.0,
+        "share_reachable_parent_or_link_pct": 50.0,
+        "fragments_per_request": 7,
+        "fully_connected_requests_pct": 0.0
+      },
+      "webhook headers missing": {
+        "spans_per_request": 48,
+        "share_in_root_trace_by_parent_pct": 87.5,
+        "share_reachable_parent_or_link_pct": 87.5,
+        "fragments_per_request": 7,
+        "fully_connected_requests_pct": 0.0
+      },
+      "queue consumer uses link, not parent": {
+        "spans_per_request": 48,
+        "share_in_root_trace_by_parent_pct": 50.0,
+        "share_reachable_parent_or_link_pct": 100.0,
+        "fragments_per_request": 7,
+        "fully_connected_requests_pct": 0.0
+      },
+      "no hop propagates": {
+        "spans_per_request": 48,
+        "share_in_root_trace_by_parent_pct": 2.08,
+        "share_reachable_parent_or_link_pct": 2.08,
+        "fragments_per_request": 22,
+        "fully_connected_requests_pct": 0.0
+      }
+    },
+    "random_edge_coverage": {
+      "0.80": {
+        "spans_per_request": 48,
+        "share_in_root_trace_by_parent_pct": 50.78,
+        "share_reachable_parent_or_link_pct": 50.78,
+        "fragments_per_request": 5.09,
+        "fully_connected_requests_pct": 1.0,
+        "analytic_fully_connected_pct": 0.92
+      },
+      "0.90": {
+        "spans_per_request": 48,
+        "share_in_root_trace_by_parent_pct": 73.8,
+        "share_reachable_parent_or_link_pct": 73.8,
+        "fragments_per_request": 3.1,
+        "fully_connected_requests_pct": 11.0,
+        "analytic_fully_connected_pct": 10.94
+      },
+      "0.95": {
+        "spans_per_request": 48,
+        "share_in_root_trace_by_parent_pct": 85.66,
+        "share_reachable_parent_or_link_pct": 85.66,
+        "fragments_per_request": 2.04,
+        "fully_connected_requests_pct": 39.0,
+        "analytic_fully_connected_pct": 34.06
+      },
+      "0.98": {
+        "spans_per_request": 48,
+        "share_in_root_trace_by_parent_pct": 94.65,
+        "share_reachable_parent_or_link_pct": 94.65,
+        "fragments_per_request": 1.4,
+        "fully_connected_requests_pct": 65.5,
+        "analytic_fully_connected_pct": 65.43
+      },
+      "0.99": {
+        "spans_per_request": 48,
+        "share_in_root_trace_by_parent_pct": 97.11,
+        "share_reachable_parent_or_link_pct": 97.11,
+        "fragments_per_request": 1.18,
+        "fully_connected_requests_pct": 83.5,
+        "analytic_fully_connected_pct": 80.97
+      },
+      "1.00": {
+        "spans_per_request": 48,
+        "share_in_root_trace_by_parent_pct": 100.0,
+        "share_reachable_parent_or_link_pct": 100.0,
+        "fragments_per_request": 1,
+        "fully_connected_requests_pct": 100.0,
+        "analytic_fully_connected_pct": 100.0
+      }
+    },
+    "context_edges_per_request": 21,
+    "requests_per_config": 20,
+    "requests_per_coverage_level": 200
+  },
+  "B_overhead": {
+    "bytes": {
+      "mcp_tools_call_baseline_bytes": 114,
+      "a2a_http_request_baseline_bytes": 316,
+      "queue_message_baseline_bytes": 66,
+      "carriers": {
+        "traceparent": {
+          "http_header_bytes": 70,
+          "mcp_meta_added_bytes": 82,
+          "queue_header_added_bytes": 71,
+          "mcp_added_pct_of_tools_call": 71.9,
+          "http_added_pct_of_a2a_request": 22.2
+        },
+        "traceparent+tracestate": {
+          "http_header_bytes": 123,
+          "mcp_meta_added_bytes": 137,
+          "queue_header_added_bytes": 126,
+          "mcp_added_pct_of_tools_call": 120.2,
+          "http_added_pct_of_a2a_request": 38.9
+        },
+        "traceparent+tracestate+baggage": {
+          "http_header_bytes": 232,
+          "mcp_meta_added_bytes": 248,
+          "queue_header_added_bytes": 237,
+          "mcp_added_pct_of_tools_call": 217.5,
+          "http_added_pct_of_a2a_request": 73.4
+        }
+      }
+    },
+    "propagator_cost": {
+      "traceparent_inject_extract_us": 6.06,
+      "tracecontext_plus_baggage_inject_extract_us": 20.72,
+      "create_and_end_child_span_us": 21.15
+    },
+    "round_trip": {
+      "http_without_median_us": 470.5,
+      "http_with_median_us": 540.0,
+      "jsonrpc_without_median_us": 171.7,
+      "jsonrpc_with_median_us": 226.5,
+      "http_delta_median_us": 69.5,
+      "jsonrpc_delta_median_us": 54.8,
+      "samples_per_arm": 2800
+    },
+    "values": {
+      "traceparent": "00-4bf92f3577b34da6a3ce929d0e0e4736-00f067aa0ba902b7-01",
+      "tracestate": "rojo=00f067aa0ba902b7,congo=t61rcWkgMzE",
+      "baggage": "gen_ai.agent.id=research-agent-1,gen_ai.conversation.id=conv_5j66UpCpwteGg4YSxUnt7lPY,tenant=t-042"
+    }
+  },
+  "C_sampling": {
+    "requests": 20000,
+    "failing_share_pct": 3.0,
+    "scenarios": {
+      "queue median 1 s": {
+        "trace_span_arrival_window_p50_s": 16.1,
+        "trace_span_arrival_window_p95_s": 28.7,
+        "by_rate": {
+          "0.01": {
+            "head_parent_based": [
+              1.03,
+              1.03,
+              1.03
+            ],
+            "head_independent_per_async_hop": [
+              0.0,
+              0.51,
+              0.94
+            ],
+            "tail_wait_5s_no_cache": [
+              0.34,
+              100.0,
+              2.4
+            ],
+            "tail_wait_5s_cache": [
+              16.78,
+              16.78,
+              1.45
+            ],
+            "tail_wait_10s_no_cache": [
+              1.71,
+              100.0,
+              2.8
+            ],
+            "tail_wait_10s_cache": [
+              65.41,
+              65.41,
+              2.83
+            ],
+            "tail_wait_30s_no_cache": [
+              96.4,
+              100.0,
+              3.85
+            ],
+            "tail_wait_30s_cache": [
+              99.49,
+              99.49,
+              3.83
+            ],
+            "tail_wait_60s_no_cache": [
+              99.83,
+              100.0,
+              3.86
+            ],
+            "tail_wait_60s_cache": [
+              100.0,
+              100.0,
+              3.96
+            ],
+            "tail_wait_120s_no_cache": [
+              100.0,
+              100.0,
+              3.9
+            ],
+            "tail_wait_120s_cache": [
+              100.0,
+              100.0,
+              3.91
+            ],
+            "tail_wait_300s_no_cache": [
+              100.0,
+              100.0,
+              3.78
+            ],
+            "tail_wait_300s_cache": [
+              100.0,
+              100.0,
+              3.89
+            ]
+          },
+          "0.05": {
+            "head_parent_based": [
+              6.34,
+              6.34,
+              5.21
+            ],
+            "head_independent_per_async_hop": [
+              0.0,
+              5.48,
+              5.02
+            ],
+            "tail_wait_5s_no_cache": [
+              4.11,
+              100.0,
+              6.36
+            ],
+            "tail_wait_5s_cache": [
+              20.21,
+              20.21,
+              5.5
+            ],
+            "tail_wait_10s_no_cache": [
+              5.31,
+              100.0,
+              6.58
+            ],
+            "tail_wait_10s_cache": [
+              66.27,
+              66.27,
+              6.71
+            ],
+            "tail_wait_30s_no_cache": [
+              96.75,
+              100.0,
+              7.78
+            ],
+            "tail_wait_30s_cache": [
+              99.66,
+              99.66,
+              7.83
+            ],
+            "tail_wait_60s_no_cache": [
+              99.83,
+              100.0,
+              7.89
+            ],
+            "tail_wait_60s_cache": [
+              100.0,
+              100.0,
+              7.54
+            ],
+            "tail_wait_120s_no_cache": [
+              100.0,
+              100.0,
+              7.68
+            ],
+            "tail_wait_120s_cache": [
+              100.0,
+              100.0,
+              7.66
+            ],
+            "tail_wait_300s_no_cache": [
+              100.0,
+              100.0,
+              7.67
+            ],
+            "tail_wait_300s_cache": [
+              100.0,
+              100.0,
+              7.88
+            ]
+          },
+          "0.10": {
+            "head_parent_based": [
+              9.76,
+              9.76,
+              9.57
+            ],
+            "head_independent_per_async_hop": [
+              0.0,
+              8.9,
+              9.94
+            ],
+            "tail_wait_5s_no_cache": [
+              11.3,
+              100.0,
+              11.14
+            ],
+            "tail_wait_5s_cache": [
+              24.14,
+              24.14,
+              10.68
+            ],
+            "tail_wait_10s_no_cache": [
+              11.82,
+              100.0,
+              11.6
+            ],
+            "tail_wait_10s_cache": [
+              67.47,
+              67.47,
+              11.61
+            ],
+            "tail_wait_30s_no_cache": [
+              97.09,
+              100.0,
+              12.5
+            ],
+            "tail_wait_30s_cache": [
+              99.49,
+              99.49,
+              12.49
+            ],
+            "tail_wait_60s_no_cache": [
+              99.83,
+              100.0,
+              12.45
+            ],
+            "tail_wait_60s_cache": [
+              100.0,
+              100.0,
+              13.01
+            ],
+            "tail_wait_120s_no_cache": [
+              100.0,
+              100.0,
+              12.6
+            ],
+            "tail_wait_120s_cache": [
+              100.0,
+              100.0,
+              12.79
+            ],
+            "tail_wait_300s_no_cache": [
+              100.0,
+              100.0,
+              12.66
+            ],
+            "tail_wait_300s_cache": [
+              100.0,
+              100.0,
+              12.51
+            ]
+          }
+        }
+      },
+      "queue median 10 s": {
+        "trace_span_arrival_window_p50_s": 44.2,
+        "trace_span_arrival_window_p95_s": 117.3,
+        "by_rate": {
+          "0.01": {
+            "head_parent_based": [
+              0.34,
+              0.34,
+              0.94
+            ],
+            "head_independent_per_async_hop": [
+              0.0,
+              1.37,
+              1.01
+            ],
+            "tail_wait_5s_no_cache": [
+              0.51,
+              100.0,
+              2.56
+            ],
+            "tail_wait_5s_cache": [
+              1.37,
+              1.37,
+              1.09
+            ],
+            "tail_wait_10s_no_cache": [
+              1.54,
+              100.0,
+              2.38
+            ],
+            "tail_wait_10s_cache": [
+              13.38,
+              13.38,
+              1.42
+            ],
+            "tail_wait_30s_no_cache": [
+              18.01,
+              100.0,
+              3.15
+            ],
+            "tail_wait_30s_cache": [
+              79.42,
+              79.42,
+              3.3
+            ],
+            "tail_wait_60s_no_cache": [
+              72.04,
+              100.0,
+              3.68
+            ],
+            "tail_wait_60s_cache": [
+              95.88,
+              95.88,
+              3.83
+            ],
+            "tail_wait_120s_no_cache": [
+              96.4,
+              100.0,
+              3.88
+            ],
+            "tail_wait_120s_cache": [
+              99.83,
+              99.83,
+              3.94
+            ],
+            "tail_wait_300s_no_cache": [
+              100.0,
+              100.0,
+              3.75
+            ],
+            "tail_wait_300s_cache": [
+              100.0,
+              100.0,
+              3.89
+            ]
+          },
+          "0.05": {
+            "head_parent_based": [
+              4.12,
+              4.12,
+              5.14
+            ],
+            "head_independent_per_async_hop": [
+              0.0,
+              3.6,
+              4.89
+            ],
+            "tail_wait_5s_no_cache": [
+              4.46,
+              100.0,
+              6.53
+            ],
+            "tail_wait_5s_cache": [
+              6.0,
+              6.0,
+              5.01
+            ],
+            "tail_wait_10s_no_cache": [
+              6.69,
+              100.0,
+              6.28
+            ],
+            "tail_wait_10s_cache": [
+              15.78,
+              15.78,
+              5.54
+            ],
+            "tail_wait_30s_no_cache": [
+              22.3,
+              100.0,
+              7.21
+            ],
+            "tail_wait_30s_cache": [
+              80.45,
+              80.45,
+              7.28
+            ],
+            "tail_wait_60s_no_cache": [
+              72.9,
+              100.0,
+              7.48
+            ],
+            "tail_wait_60s_cache": [
+              95.88,
+              95.88,
+              7.42
+            ],
+            "tail_wait_120s_no_cache": [
+              96.4,
+              100.0,
+              7.73
+            ],
+            "tail_wait_120s_cache": [
+              99.83,
+              99.83,
+              7.85
+            ],
+            "tail_wait_300s_no_cache": [
+              100.0,
+              100.0,
+              7.83
+            ],
+            "tail_wait_300s_cache": [
+              100.0,
+              100.0,
+              7.88
+            ]
+          },
+          "0.10": {
+            "head_parent_based": [
+              10.63,
+              10.63,
+              9.99
+            ],
+            "head_independent_per_async_hop": [
+              0.0,
+              10.46,
+              10.06
+            ],
+            "tail_wait_5s_no_cache": [
+              9.43,
+              100.0,
+              11.58
+            ],
+            "tail_wait_5s_cache": [
+              12.69,
+              12.69,
+              10.08
+            ],
+            "tail_wait_10s_no_cache": [
+              12.69,
+              100.0,
+              11.27
+            ],
+            "tail_wait_10s_cache": [
+              22.13,
+              22.13,
+              10.36
+            ],
+            "tail_wait_30s_no_cache": [
+              26.59,
+              100.0,
+              11.88
+            ],
+            "tail_wait_30s_cache": [
+              81.65,
+              81.65,
+              12.06
+            ],
+            "tail_wait_60s_no_cache": [
+              74.44,
+              100.0,
+              12.82
+            ],
+            "tail_wait_60s_cache": [
+              96.4,
+              96.4,
+              12.4
+            ],
+            "tail_wait_120s_no_cache": [
+              96.91,
+              100.0,
+              12.24
+            ],
+            "tail_wait_120s_cache": [
+              99.83,
+              99.83,
+              12.45
+            ],
+            "tail_wait_300s_no_cache": [
+              100.0,
+              100.0,
+              12.64
+            ],
+            "tail_wait_300s_cache": [
+              100.0,
+              100.0,
+              12.78
+            ]
+          }
+        }
+      },
+      "queue median 10 s + 5% human approval": {
+        "trace_span_arrival_window_p50_s": 56.2,
+        "trace_span_arrival_window_p95_s": 3059.2,
+        "by_rate": {
+          "0.01": {
+            "head_parent_based": [
+              0.99,
+              0.99,
+              1.12
+            ],
+            "head_independent_per_async_hop": [
+              0.0,
+              0.99,
+              1.0
+            ],
+            "tail_wait_5s_no_cache": [
+              0.99,
+              100.0,
+              2.61
+            ],
+            "tail_wait_5s_cache": [
+              1.81,
+              1.81,
+              1.07
+            ],
+            "tail_wait_10s_no_cache": [
+              1.32,
+              100.0,
+              2.33
+            ],
+            "tail_wait_10s_cache": [
+              14.5,
+              14.5,
+              1.3
+            ],
+            "tail_wait_30s_no_cache": [
+              13.34,
+              100.0,
+              3.15
+            ],
+            "tail_wait_30s_cache": [
+              74.63,
+              74.63,
+              3.26
+            ],
+            "tail_wait_60s_no_cache": [
+              51.73,
+              100.0,
+              3.58
+            ],
+            "tail_wait_60s_cache": [
+              89.95,
+              89.95,
+              3.77
+            ],
+            "tail_wait_120s_no_cache": [
+              71.0,
+              100.0,
+              3.71
+            ],
+            "tail_wait_120s_cache": [
+              93.25,
+              93.25,
+              3.78
+            ],
+            "tail_wait_300s_no_cache": [
+              73.97,
+              100.0,
+              3.81
+            ],
+            "tail_wait_300s_cache": [
+              94.23,
+              94.23,
+              3.81
+            ]
+          },
+          "0.05": {
+            "head_parent_based": [
+              6.43,
+              6.43,
+              4.91
+            ],
+            "head_independent_per_async_hop": [
+              0.0,
+              6.59,
+              5.11
+            ],
+            "tail_wait_5s_no_cache": [
+              6.26,
+              100.0,
+              6.61
+            ],
+            "tail_wait_5s_cache": [
+              7.08,
+              7.08,
+              5.15
+            ],
+            "tail_wait_10s_no_cache": [
+              6.1,
+              100.0,
+              6.48
+            ],
+            "tail_wait_10s_cache": [
+              18.62,
+              18.62,
+              5.51
+            ],
+            "tail_wait_30s_no_cache": [
+              15.65,
+              100.0,
+              6.98
+            ],
+            "tail_wait_30s_cache": [
+              75.62,
+              75.62,
+              7.06
+            ],
+            "tail_wait_60s_no_cache": [
+              53.71,
+              100.0,
+              7.55
+            ],
+            "tail_wait_60s_cache": [
+              90.94,
+              90.94,
+              7.5
+            ],
+            "tail_wait_120s_no_cache": [
+              72.32,
+              100.0,
+              7.88
+            ],
+            "tail_wait_120s_cache": [
+              93.41,
+              93.41,
+              7.68
+            ],
+            "tail_wait_300s_no_cache": [
+              76.28,
+              100.0,
+              7.66
+            ],
+            "tail_wait_300s_cache": [
+              94.4,
+              94.4,
+              7.74
+            ]
+          },
+          "0.10": {
+            "head_parent_based": [
+              8.73,
+              8.73,
+              9.62
+            ],
+            "head_independent_per_async_hop": [
+              0.0,
+              9.88,
+              10.19
+            ],
+            "tail_wait_5s_no_cache": [
+              10.54,
+              100.0,
+              11.55
+            ],
+            "tail_wait_5s_cache": [
+              12.69,
+              12.69,
+              10.23
+            ],
+            "tail_wait_10s_no_cache": [
+              9.39,
+              100.0,
+              11.22
+            ],
+            "tail_wait_10s_cache": [
+              20.59,
+              20.59,
+              10.41
+            ],
+            "tail_wait_30s_no_cache": [
+              23.06,
+              100.0,
+              12.19
+            ],
+            "tail_wait_30s_cache": [
+              77.43,
+              77.43,
+              12.3
+            ],
+            "tail_wait_60s_no_cache": [
+              57.5,
+              100.0,
+              12.54
+            ],
+            "tail_wait_60s_cache": [
+              90.61,
+              90.61,
+              12.43
+            ],
+            "tail_wait_120s_no_cache": [
+              73.48,
+              100.0,
+              12.5
+            ],
+            "tail_wait_120s_cache": [
+              93.9,
+              93.9,
+              12.66
+            ],
+            "tail_wait_300s_no_cache": [
+              75.12,
+              100.0,
+              12.25
+            ],
+            "tail_wait_300s_cache": [
+              94.56,
+              94.56,
+              12.45
+            ]
+          }
+        }
+      }
+    },
+    "metric_order": [
+      "complete_failing_traces_pct",
+      "error_span_stored_pct",
+      "all_spans_stored_pct"
+    ],
+    "tail_defaults": {
+      "num_traces": 50000,
+      "decision_wait_s": 30,
+      "max_new_traces_per_s_before_eviction": 1666.7
+    }
+  },
+  "D_coverage": [
+    {
+      "item": "W3C Trace Context Level 2",
+      "kind": "specification",
+      "carrier": 2,
+      "agent_tool_spans": 0,
+      "async_hops": 0,
+      "total": 2,
+      "url": "https://www.w3.org/TR/trace-context-2/"
+    },
+    {
+      "item": "MCP spec 2025-11-25 (_meta)",
+      "kind": "protocol",
+      "carrier": 1,
+      "agent_tool_spans": 0,
+      "async_hops": 0,
+      "total": 1,
+      "url": "https://modelcontextprotocol.io/specification/2025-11-25/basic"
+    },
+    {
+      "item": "MCP SEP-414 (Final)",
+      "kind": "protocol",
+      "carrier": 2,
+      "agent_tool_spans": 0,
+      "async_hops": 0,
+      "total": 2,
+      "url": "https://modelcontextprotocol.io/community/seps/414-request-meta"
+    },
+    {
+      "item": "A2A specification v1.0",
+      "kind": "protocol",
+      "carrier": 0,
+      "agent_tool_spans": 0,
+      "async_hops": 0,
+      "total": 0,
+      "url": "https://a2a-protocol.org/latest/specification/"
+    },
+    {
+      "item": "A2A enterprise guide",
+      "kind": "protocol guidance",
+      "carrier": 2,
+      "agent_tool_spans": 0,
+      "async_hops": 0,
+      "total": 2,
+      "url": "https://a2a-protocol.org/latest/topics/enterprise-ready/"
+    },
+    {
+      "item": "OTel semconv: MCP",
+      "kind": "convention",
+      "carrier": 2,
+      "agent_tool_spans": 2,
+      "async_hops": 1,
+      "total": 5,
+      "url": "https://github.com/open-telemetry/semantic-conventions-genai/blob/main/docs/gen-ai/mcp.md"
+    },
+    {
+      "item": "OTel semconv: messaging spans",
+      "kind": "convention",
+      "carrier": 1,
+      "agent_tool_spans": 0,
+      "async_hops": 2,
+      "total": 3,
+      "url": "https://opentelemetry.io/docs/specs/semconv/messaging/messaging-spans/"
+    },
+    {
+      "item": "Microsoft Agent Framework",
+      "kind": "framework",
+      "carrier": 2,
+      "agent_tool_spans": 2,
+      "async_hops": 1,
+      "total": 5,
+      "url": "https://learn.microsoft.com/en-us/agent-framework/agents/observability"
+    },
+    {
+      "item": "OpenAI Agents SDK",
+      "kind": "framework",
+      "carrier": 0,
+      "agent_tool_spans": 2,
+      "async_hops": 1,
+      "total": 3,
+      "url": "https://openai.github.io/openai-agents-python/tracing/"
+    },
+    {
+      "item": "LangSmith",
+      "kind": "framework",
+      "carrier": 1,
+      "agent_tool_spans": 0,
+      "async_hops": 0,
+      "total": 1,
+      "url": "https://docs.langchain.com/langsmith/distributed-tracing"
+    },
+    {
+      "item": "AutoGen (core)",
+      "kind": "framework",
+      "carrier": 0,
+      "agent_tool_spans": 2,
+      "async_hops": 0,
+      "total": 2,
+      "url": "https://microsoft.github.io/autogen/stable/user-guide/core-user-guide/framework/telemetry.html"
+    },
+    {
+      "item": "Google ADK",
+      "kind": "framework",
+      "carrier": 0,
+      "agent_tool_spans": 1,
+      "async_hops": 0,
+      "total": 1,
+      "url": "https://adk.dev/observability/"
+    },
+    {
+      "item": "CrewAI",
+      "kind": "framework",
+      "carrier": 0,
+      "agent_tool_spans": 1,
+      "async_hops": 1,
+      "total": 2,
+      "url": "https://docs.crewai.com/en/observability/tracing"
+    }
+  ],
+  "runtime_s": 65.3
+}

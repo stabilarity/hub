@@ -16,6 +16,21 @@
     }
   },
   "prices_accessed": "2026-10-21",
+  "all_13_models_test_mean_score": {
+    "aws-claude-3-5-sonnet-v1": 0.8338,
+    "openai-gpt-4o": 0.8482,
+    "openai-gpt-4o-mini": 0.8072,
+    "aws-titan-text-premier-v1": 0.5827,
+    "wxai-llama-3-405b-instruct": 0.7762,
+    "wxai-llama-3-3-70b-instruct": 0.8066,
+    "wxai-llama-3-1-70b-instruct": 0.8105,
+    "wxai-mixtral-8x7b-instruct-v01": 0.6235,
+    "wxai-llama-3-1-8b-instruct": 0.6867,
+    "wxai-granite-3-8b-instruct-8k-max-tokens": 0.6688,
+    "wxai-llama-3-2-3b-instruct": 0.6358,
+    "wxai-granite-3-2b-instruct-8k-max-tokens": 0.5639,
+    "wxai-llama-3-2-1b-instruct": 0.4635
+  },
   "pool": [
     "GPT-4o",
     "GPT-4o-mini",
@@ -35,32 +50,41 @@
         "mean_score": 0.8482,
         "usd_per_1k_queries": 4.9957,
         "mean_input_tokens": 190.1101,
-        "mean_output_tokens": 452.0426
+        "mean_output_tokens": 452.0426,
+        "retention_vs_gpt4o": 1.0,
+        "saving_vs_gpt4o": 0.0
       },
       "openai-gpt-4o-mini": {
         "label": "GPT-4o-mini",
         "mean_score": 0.8072,
         "usd_per_1k_queries": 0.3416,
         "mean_input_tokens": 190.1101,
-        "mean_output_tokens": 521.7651
+        "mean_output_tokens": 521.7651,
+        "retention_vs_gpt4o": 0.9517,
+        "saving_vs_gpt4o": 0.9316
       },
       "wxai-llama-3-3-70b-instruct": {
         "label": "Llama-3.3-70B",
         "mean_score": 0.8066,
         "usd_per_1k_queries": 0.638,
         "mean_input_tokens": 281.0687,
-        "mean_output_tokens": 332.3809
+        "mean_output_tokens": 332.3809,
+        "retention_vs_gpt4o": 0.9509,
+        "saving_vs_gpt4o": 0.8723
       },
       "wxai-llama-3-1-8b-instruct": {
         "label": "Llama-3.1-8B",
         "mean_score": 0.6867,
         "usd_per_1k_queries": 0.1705,
         "mean_input_tokens": 224.0687,
-        "mean_output_tokens": 994.1208
+        "mean_output_tokens": 994.1208,
+        "retention_vs_gpt4o": 0.8096,
+        "saving_vs_gpt4o": 0.9659
       }
     },
     "frontier_usd_per_1k": 4.9957,
     "frontier_score": 0.8482,
+    "frontier_score_validation": 0.838,
     "headroom_vs_gpt4o": {
       "wxai-llama-3-3-70b-instruct": {
         "label": "Llama-3.3-70B",
@@ -84,6 +108,18 @@
     "oracle_best_per_query_score": 0.9397,
     "oracle_best_retention": 1.1078,
     "oracle_cost_at_100pct_usd_per_1k": 0.1704,
+    "oracle_min_cost_point": {
+      "usd_per_1k": 0.1704,
+      "score": 0.8877,
+      "retention": 1.0466,
+      "saving": 0.9659
+    },
+    "oracle_max_score_point": {
+      "usd_per_1k": 0.5439,
+      "score": 0.9397,
+      "retention": 1.1078,
+      "saving": 0.8911
+    },
     "price_ratio_gpt4o_to_llama70b_blended": 7.8304,
     "price_ratio_gpt4o_to_llama8b_blended": 29.2923
   },

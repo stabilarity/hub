@@ -103,6 +103,9 @@ for j, m in enumerate(POOL):
                  "mean_input_tokens": r4(TE["tok_in"][:, j].mean()), "mean_output_tokens": r4(TE["tok_out"][:, j].mean())}
 qF, cF = TE["S"][:, iF].mean(), TE["C"][:, iF].mean()
 qF_val = VA["S"][:, iF].mean()
+for j, m in enumerate(POOL):
+    single[m]["retention_vs_gpt4o"] = r4(TE["S"][:, j].mean() / qF)
+    single[m]["saving_vs_gpt4o"] = r4(1 - TE["C"][:, j].mean() / cF)
 
 
 def random_mix_cost(target_q):
@@ -149,8 +152,9 @@ for m in CHEAP:
     headroom[m] = {"label": LABEL[m], "share_cheap_at_least_frontier": r4((TE["S"][:, j] >= TE["S"][:, iF]).mean()),
                    "share_cheap_strictly_better": r4((TE["S"][:, j] > TE["S"][:, iF]).mean()),
                    "share_frontier_strictly_better": r4((TE["S"][:, j] < TE["S"][:, iF]).mean())}
-oracle_best = oracle_cost(-1)  # lambda sweep min-cost point
-oracle_max_q = max(TE["S"].max(axis=1).mean(), 0)
+oracle_min = oracle_cost(-1)  # cheapest point of the oracle's lambda sweep: (cost, quality)
+oracle_max_q = TE["S"].max(axis=1).mean()  # per-query best score of the pool
+oracle_at_max = oracle_cost(oracle_max_q)  # cheapest oracle point that reaches the per-query best score
 
 # ---------------------------------------------------------------- RQ2: trained routers, thresholds set on validation
 def pool_router(variant, target_ratio):
@@ -481,12 +485,18 @@ results = {
                 "paper": "arXiv:2502.03261", "n_train": TR["n"], "n_validation": VA["n"], "n_test": TE["n"],
                 "test_family_counts": {f: int((TE["fam"] == f).sum()) for f in sorted(set(TE["fam"]))}},
     "prices_accessed": "2026-10-21",
+    "all_13_models_test_mean_score": {k.split("|")[0]: r4(np.mean([float(r[k]) for r in rows if r["split"] == "test"]))
+                                      for k in rows[0] if k.endswith("|score")},
     "pool": [LABEL[m] for m in POOL],
     "router_expected_cost_usd_per_1k": {LABEL[m]: r4(EXP_COST[j] * 1000) for j, m in enumerate(POOL)},
-    "rq1": {"single_models": single, "frontier_usd_per_1k": r4(cF * 1000), "frontier_score": r4(qF),
+    "rq1": {"single_models": single, "frontier_usd_per_1k": r4(cF * 1000), "frontier_score": r4(qF), "frontier_score_validation": r4(qF_val),
             "headroom_vs_gpt4o": headroom, "oracle_best_per_query_score": r4(oracle_max_q),
             "oracle_best_retention": r4(oracle_max_q / qF),
             "oracle_cost_at_100pct_usd_per_1k": rq2_pool["100pct"]["oracle_usd_per_1k"],
+            "oracle_min_cost_point": {"usd_per_1k": r4(oracle_min[0] * 1000), "score": r4(oracle_min[1]),
+                                      "retention": r4(oracle_min[1] / qF), "saving": r4(1 - oracle_min[0] / cF)},
+            "oracle_max_score_point": {"usd_per_1k": r4(oracle_at_max[0] * 1000), "score": r4(oracle_at_max[1]),
+                                       "retention": r4(oracle_at_max[1] / qF), "saving": r4(1 - oracle_at_max[0] / cF)},
             "price_ratio_gpt4o_to_llama70b_blended": r4(cF / TE["C"][:, jL].mean()),
             "price_ratio_gpt4o_to_llama8b_blended": r4(cF / TE["C"][:, POOL.index("wxai-llama-3-1-8b-instruct")].mean())},
     "rq2_pool_router": rq2_pool,

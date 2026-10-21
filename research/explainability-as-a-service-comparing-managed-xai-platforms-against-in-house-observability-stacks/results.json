@@ -25,10 +25,10 @@
           "nmae": 0.0238,
           "spearman": 0.9953,
           "top3_overlap": 0.9917,
-          "median_ms": 2.5872,
-          "p95_ms": 3.5268,
-          "x_predict": 10.5,
-          "usd_per_million_on_one_vcpu": 0.0362
+          "median_ms": 2.6083,
+          "p95_ms": 3.6424,
+          "x_predict": 14.2,
+          "usd_per_million_on_one_vcpu": 0.0365
         },
         "Kernel SHAP, 256 samples": {
           "family": "kernel",
@@ -36,10 +36,10 @@
           "nmae": 0.0026,
           "spearman": 0.9992,
           "top3_overlap": 1.0,
-          "median_ms": 3.0683,
-          "p95_ms": 5.6399,
-          "x_predict": 12.5,
-          "usd_per_million_on_one_vcpu": 0.043
+          "median_ms": 3.1566,
+          "p95_ms": 6.589,
+          "x_predict": 17.1,
+          "usd_per_million_on_one_vcpu": 0.0442
         },
         "Kernel SHAP, 1024 samples": {
           "family": "kernel",
@@ -47,10 +47,10 @@
           "nmae": 0.0002,
           "spearman": 0.9998,
           "top3_overlap": 1.0,
-          "median_ms": 3.3536,
-          "p95_ms": 12.8765,
-          "x_predict": 13.7,
-          "usd_per_million_on_one_vcpu": 0.047
+          "median_ms": 2.6984,
+          "p95_ms": 9.0635,
+          "x_predict": 14.7,
+          "usd_per_million_on_one_vcpu": 0.0378
         },
         "Kernel SHAP, 4096 samples": {
           "family": "kernel",
@@ -58,10 +58,10 @@
           "nmae": 0.0,
           "spearman": 1.0,
           "top3_overlap": 1.0,
-          "median_ms": 3.0538,
-          "p95_ms": 10.8962,
-          "x_predict": 12.4,
-          "usd_per_million_on_one_vcpu": 0.0428
+          "median_ms": 3.0306,
+          "p95_ms": 13.5492,
+          "x_predict": 16.5,
+          "usd_per_million_on_one_vcpu": 0.0424
         },
         "Kernel SHAP, 1024 samples, default l1_reg": {
           "family": "kernel_default",
@@ -69,10 +69,10 @@
           "nmae": 0.0002,
           "spearman": 1.0,
           "top3_overlap": 1.0,
-          "median_ms": 4.57,
-          "p95_ms": 15.3678,
-          "x_predict": 18.6,
-          "usd_per_million_on_one_vcpu": 0.064
+          "median_ms": 4.4827,
+          "p95_ms": 12.579,
+          "x_predict": 24.4,
+          "usd_per_million_on_one_vcpu": 0.0628
         },
         "Sampled Shapley, path count 1": {
           "family": "sampled",
@@ -80,10 +80,10 @@
           "nmae": 0.2753,
           "spearman": 0.972,
           "top3_overlap": 0.8333,
-          "median_ms": 0.3327,
-          "p95_ms": 0.4255,
-          "x_predict": 1.4,
-          "usd_per_million_on_one_vcpu": 0.0047
+          "median_ms": 0.3025,
+          "p95_ms": 0.3891,
+          "x_predict": 1.6,
+          "usd_per_million_on_one_vcpu": 0.0042
         },
         "Sampled Shapley, path count 5": {
           "family": "sampled",
@@ -91,10 +91,10 @@
           "nmae": 0.1102,
           "spearman": 0.9916,
           "top3_overlap": 0.9583,
-          "median_ms": 0.5029,
-          "p95_ms": 0.6169,
-          "x_predict": 2.0,
-          "usd_per_million_on_one_vcpu": 0.007
+          "median_ms": 0.4864,
+          "p95_ms": 0.6139,
+          "x_predict": 2.6,
+          "usd_per_million_on_one_vcpu": 0.0068
         },
         "Sampled Shapley, path count 10": {
           "family": "sampled",
@@ -102,10 +102,10 @@
           "nmae": 0.0831,
           "spearman": 0.9943,
           "top3_overlap": 0.925,
-          "median_ms": 0.8023,
-          "p95_ms": 0.8633,
-          "x_predict": 3.3,
-          "usd_per_million_on_one_vcpu": 0.0112
+          "median_ms": 0.8572,
+          "p95_ms": 0.9464,
+          "x_predict": 4.7,
+          "usd_per_million_on_one_vcpu": 0.012
         },
         "Sampled Shapley, path count 25": {
           "family": "sampled",
@@ -113,10 +113,10 @@
           "nmae": 0.0506,
           "spearman": 0.9976,
           "top3_overlap": 0.9833,
-          "median_ms": 1.3359,
-          "p95_ms": 1.811,
-          "x_predict": 5.4,
-          "usd_per_million_on_one_vcpu": 0.0187
+          "median_ms": 1.4968,
+          "p95_ms": 1.7804,
+          "x_predict": 8.1,
+          "usd_per_million_on_one_vcpu": 0.021
         },
         "Sampled Shapley, path count 50": {
           "family": "sampled",
@@ -124,31 +124,31 @@
           "nmae": 0.0344,
           "spearman": 0.9972,
           "top3_overlap": 0.9833,
-          "median_ms": 2.6735,
-          "p95_ms": 3.4937,
-          "x_predict": 10.9,
-          "usd_per_million_on_one_vcpu": 0.0374
+          "median_ms": 2.6866,
+          "p95_ms": 3.5625,
+          "x_predict": 14.6,
+          "usd_per_million_on_one_vcpu": 0.0376
         },
         "predict": {
           "family": "other",
-          "median_ms": 0.2457,
-          "p95_ms": 0.2924,
+          "median_ms": 0.1841,
+          "p95_ms": 0.2864,
           "x_predict": 1.0,
-          "usd_per_million_on_one_vcpu": 0.0034
+          "usd_per_million_on_one_vcpu": 0.0026
         },
         "TreeSHAP path-dependent (xgboost native)": {
           "family": "other",
-          "median_ms": 1.3631,
-          "p95_ms": 1.5183,
-          "x_predict": 5.5,
-          "usd_per_million_on_one_vcpu": 0.0191
+          "median_ms": 1.2581,
+          "p95_ms": 1.5573,
+          "x_predict": 6.8,
+          "usd_per_million_on_one_vcpu": 0.0176
         },
         "TreeSHAP exact, 1 baseline (reference)": {
           "family": "other",
-          "median_ms": 0.0996,
-          "p95_ms": 0.1252,
-          "x_predict": 0.4,
-          "usd_per_million_on_one_vcpu": 0.0014
+          "median_ms": 0.1083,
+          "p95_ms": 0.1422,
+          "x_predict": 0.6,
+          "usd_per_million_on_one_vcpu": 0.0015
         }
       },
       "reference_check_max_abs_diff": 6.399605245732687e-07
@@ -165,10 +165,10 @@
           "nmae": 0.4316,
           "spearman": 0.7382,
           "top3_overlap": 0.9083,
-          "median_ms": 4.5038,
-          "p95_ms": 5.5383,
-          "x_predict": 22.7,
-          "usd_per_million_on_one_vcpu": 0.0631
+          "median_ms": 4.1341,
+          "p95_ms": 6.5573,
+          "x_predict": 19.5,
+          "usd_per_million_on_one_vcpu": 0.0579
         },
         "Kernel SHAP, 256 samples": {
           "family": "kernel",
@@ -176,10 +176,10 @@
           "nmae": 0.0728,
           "spearman": 0.9105,
           "top3_overlap": 0.975,
-          "median_ms": 7.0628,
-          "p95_ms": 8.1471,
-          "x_predict": 35.6,
-          "usd_per_million_on_one_vcpu": 0.0989
+          "median_ms": 7.8238,
+          "p95_ms": 8.9332,
+          "x_predict": 36.9,
+          "usd_per_million_on_one_vcpu": 0.1095
         },
         "Kernel SHAP, 1024 samples": {
           "family": "kernel",
@@ -187,10 +187,10 @@
           "nmae": 0.0216,
           "spearman": 0.9427,
           "top3_overlap": 0.9917,
-          "median_ms": 17.9176,
-          "p95_ms": 19.8021,
-          "x_predict": 90.2,
-          "usd_per_million_on_one_vcpu": 0.2508
+          "median_ms": 18.2766,
+          "p95_ms": 24.3235,
+          "x_predict": 86.2,
+          "usd_per_million_on_one_vcpu": 0.2559
         },
         "Kernel SHAP, 4096 samples": {
           "family": "kernel",
@@ -198,10 +198,10 @@
           "nmae": 0.0101,
           "spearman": 0.9484,
           "top3_overlap": 1.0,
-          "median_ms": 55.973,
-          "p95_ms": 67.0489,
-          "x_predict": 281.9,
-          "usd_per_million_on_one_vcpu": 0.7836
+          "median_ms": 55.5702,
+          "p95_ms": 62.3581,
+          "x_predict": 262.1,
+          "usd_per_million_on_one_vcpu": 0.778
         },
         "Kernel SHAP, 1024 samples, default l1_reg": {
           "family": "kernel_default",
@@ -209,10 +209,10 @@
           "nmae": 0.1181,
           "spearman": 0.8764,
           "top3_overlap": 0.9667,
-          "median_ms": 18.9779,
-          "p95_ms": 20.9843,
-          "x_predict": 95.6,
-          "usd_per_million_on_one_vcpu": 0.2657
+          "median_ms": 17.9379,
+          "p95_ms": 20.9652,
+          "x_predict": 84.6,
+          "usd_per_million_on_one_vcpu": 0.2511
         },
         "Sampled Shapley, path count 1": {
           "family": "sampled",
@@ -220,10 +220,10 @@
           "nmae": 0.2314,
           "spearman": 0.9597,
           "top3_overlap": 0.85,
-          "median_ms": 0.317,
-          "p95_ms": 0.3918,
-          "x_predict": 1.6,
-          "usd_per_million_on_one_vcpu": 0.0044
+          "median_ms": 0.2576,
+          "p95_ms": 0.3384,
+          "x_predict": 1.2,
+          "usd_per_million_on_one_vcpu": 0.0036
         },
         "Sampled Shapley, path count 5": {
           "family": "sampled",
@@ -231,10 +231,10 @@
           "nmae": 0.093,
           "spearman": 0.9903,
           "top3_overlap": 0.875,
-          "median_ms": 0.5322,
-          "p95_ms": 0.6313,
-          "x_predict": 2.7,
-          "usd_per_million_on_one_vcpu": 0.0075
+          "median_ms": 0.4534,
+          "p95_ms": 0.6194,
+          "x_predict": 2.1,
+          "usd_per_million_on_one_vcpu": 0.0063
         },
         "Sampled Shapley, path count 10": {
           "family": "sampled",
@@ -242,10 +242,10 @@
           "nmae": 0.0652,
           "spearman": 0.9953,
           "top3_overlap": 0.95,
-          "median_ms": 0.8264,
-          "p95_ms": 0.9853,
-          "x_predict": 4.2,
-          "usd_per_million_on_one_vcpu": 0.0116
+          "median_ms": 0.7322,
+          "p95_ms": 0.9307,
+          "x_predict": 3.5,
+          "usd_per_million_on_one_vcpu": 0.0103
         },
         "Sampled Shapley, path count 25": {
           "family": "sampled",
@@ -253,10 +253,10 @@
           "nmae": 0.0467,
           "spearman": 0.9979,
           "top3_overlap": 0.9667,
-          "median_ms": 1.5509,
-          "p95_ms": 2.0018,
-          "x_predict": 7.8,
-          "usd_per_million_on_one_vcpu": 0.0217
+          "median_ms": 1.5876,
+          "p95_ms": 1.9113,
+          "x_predict": 7.5,
+          "usd_per_million_on_one_vcpu": 0.0222
         },
         "Sampled Shapley, path count 50": {
           "family": "sampled",
@@ -264,31 +264,31 @@
           "nmae": 0.0305,
           "spearman": 0.9987,
           "top3_overlap": 0.9583,
-          "median_ms": 2.6183,
-          "p95_ms": 3.678,
-          "x_predict": 13.2,
-          "usd_per_million_on_one_vcpu": 0.0367
+          "median_ms": 2.8926,
+          "p95_ms": 3.2812,
+          "x_predict": 13.6,
+          "usd_per_million_on_one_vcpu": 0.0405
         },
         "predict": {
           "family": "other",
-          "median_ms": 0.1986,
-          "p95_ms": 0.291,
+          "median_ms": 0.212,
+          "p95_ms": 0.2827,
           "x_predict": 1.0,
-          "usd_per_million_on_one_vcpu": 0.0028
+          "usd_per_million_on_one_vcpu": 0.003
         },
         "TreeSHAP path-dependent (xgboost native)": {
           "family": "other",
-          "median_ms": 0.3062,
-          "p95_ms": 0.4438,
+          "median_ms": 0.3248,
+          "p95_ms": 0.4327,
           "x_predict": 1.5,
-          "usd_per_million_on_one_vcpu": 0.0043
+          "usd_per_million_on_one_vcpu": 0.0045
         },
         "TreeSHAP exact, 1 baseline (reference)": {
           "family": "other",
-          "median_ms": 0.0173,
-          "p95_ms": 0.0346,
-          "x_predict": 0.1,
-          "usd_per_million_on_one_vcpu": 0.0002
+          "median_ms": 0.0351,
+          "p95_ms": 0.0492,
+          "x_predict": 0.2,
+          "usd_per_million_on_one_vcpu": 0.0005
         }
       }
     },
@@ -298,72 +298,72 @@
       "test_auc": 0.9021,
       "methods": {
         "predict": {
-          "median_ms": 0.0225,
-          "p95_ms": 0.1122,
+          "median_ms": 0.0337,
+          "p95_ms": 0.1012,
           "x_predict": 1.0,
-          "usd_per_million_on_one_vcpu": 0.0003
+          "usd_per_million_on_one_vcpu": 0.0005
         },
         "Saliency (gradient)": {
-          "median_ms": 0.2451,
-          "p95_ms": 0.3491,
+          "median_ms": 0.2643,
+          "p95_ms": 0.3834,
           "nmae": 2.885,
           "spearman": 0.3099,
           "top3_overlap": 0.5417,
-          "x_predict": 10.9,
-          "usd_per_million_on_one_vcpu": 0.0034
+          "x_predict": 7.8,
+          "usd_per_million_on_one_vcpu": 0.0037
         },
         "Input x Gradient (vs baseline)": {
-          "median_ms": 0.3328,
-          "p95_ms": 0.4344,
+          "median_ms": 0.2469,
+          "p95_ms": 0.3312,
           "nmae": 0.3926,
           "spearman": 0.9614,
           "top3_overlap": 0.8083,
-          "x_predict": 14.8,
-          "usd_per_million_on_one_vcpu": 0.0047
+          "x_predict": 7.3,
+          "usd_per_million_on_one_vcpu": 0.0035
         },
         "Integrated Gradients, 32 steps": {
-          "median_ms": 2.2565,
-          "p95_ms": 2.756,
+          "median_ms": 2.01,
+          "p95_ms": 2.4387,
           "nmae": 0.1437,
           "spearman": 0.9808,
           "top3_overlap": 0.9417,
-          "x_predict": 100.2,
-          "usd_per_million_on_one_vcpu": 0.0316
+          "x_predict": 59.6,
+          "usd_per_million_on_one_vcpu": 0.0281
         },
         "GradientSHAP, 16 samples": {
-          "median_ms": 0.827,
-          "p95_ms": 1.0441,
+          "median_ms": 0.8197,
+          "p95_ms": 0.9525,
           "nmae": 0.1574,
           "spearman": 0.9826,
           "top3_overlap": 0.9417,
-          "x_predict": 36.7,
-          "usd_per_million_on_one_vcpu": 0.0116
+          "x_predict": 24.3,
+          "usd_per_million_on_one_vcpu": 0.0115
         },
         "Exact Shapley, 2^14 coalitions": {
-          "median_ms": 27.7646,
-          "p95_ms": 30.0316,
+          "median_ms": 28.2566,
+          "p95_ms": 31.4337,
           "nmae": 0.0,
           "spearman": 1.0,
           "top3_overlap": 1.0,
-          "x_predict": 1233.2,
-          "usd_per_million_on_one_vcpu": 0.3887
+          "x_predict": 837.5,
+          "usd_per_million_on_one_vcpu": 0.3956
         },
         "Kernel SHAP, 1024 samples": {
-          "median_ms": 2.5521,
-          "p95_ms": 8.3079,
+          "median_ms": 2.3417,
+          "p95_ms": 9.1209,
           "nmae": 0.0002,
           "spearman": 0.9999,
           "top3_overlap": 1.0,
-          "x_predict": 113.4,
-          "usd_per_million_on_one_vcpu": 0.0357
+          "x_predict": 69.4,
+          "usd_per_million_on_one_vcpu": 0.0328
         },
         "Sampled Shapley, path count 25": {
-          "median_ms": 0.4788,
-          "p95_ms": 0.6373,
+          "median_ms": 0.4802,
+          "p95_ms": 0.649,
           "nmae": 0.0406,
           "spearman": 0.9716,
           "top3_overlap": 0.9833,
-          "x_predict": 21.3,
+          "x_predict": 14.2,
           "usd_per_million_on_one_vcpu": 0.0067
         }
       }
@@ -395,19 +395,19 @@
       "100000": {
         "Datadog Agent Observability Pro annual": 265.0,
         "Datadog Agent Observability Pro on-demand": 390.0,
-        "Langfuse Cloud Core": 117.0,
+        "Langfuse Cloud Core": 115.0,
         "self_hosted_fte_0.25": 4602.59
       },
       "1000000": {
         "Datadog Agent Observability Pro annual": 1525.0,
         "Datadog Agent Observability Pro on-demand": 2190.0,
-        "Langfuse Cloud Core": 981.0,
+        "Langfuse Cloud Core": 861.0,
         "self_hosted_fte_0.25": 4602.59
       },
       "10000000": {
         "Datadog Agent Observability Pro annual": 14125.0,
         "Datadog Agent Observability Pro on-demand": 20190.0,
-        "Langfuse Cloud Core": 9621.0,
+        "Langfuse Cloud Core": 7531.0,
         "self_hosted_fte_0.25": 4970.51
       }
     },
@@ -427,11 +427,11 @@
         "llm_spans_8_fte_0.25": 1.103
       },
       "Langfuse Cloud Core": {
-        "fte_0.25": 4.767,
-        "fte_0.10": 2.467,
-        "fte_0.50": 8.992,
-        "llm_spans_2_fte_0.25": 5.72,
-        "llm_spans_8_fte_0.25": 3.575
+        "fte_0.25": 5.933,
+        "fte_0.10": 2.964,
+        "fte_0.50": 11.559,
+        "llm_spans_2_fte_0.25": 7.119,
+        "llm_spans_8_fte_0.25": 4.45
       }
     }
   },

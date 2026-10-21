@@ -355,9 +355,18 @@ def tco(results):
             u = R * a["llm_spans_per_request"]
         else:
             u = units(R, a)
-        over = max(0.0, u - float(plan["included_units"]))
-        return float(plan["base_usd_month"]) + math.ceil(over / float(plan["overage_per_units"])) * float(
-            plan["overage_usd"])
+        inc, per = float(plan["included_units"]), float(plan["overage_per_units"])
+        if plan.get("graduated_tiers"):  # Langfuse calculator: graduated $/100k above the included units
+            cost, lo = 0.0, inc
+            for tier in plan["graduated_tiers"].split(";"):
+                cap, rate = tier.split(":")
+                hi = float(cap)
+                if u > lo:
+                    cost += (min(u, hi) - lo) / per * float(rate)
+                lo = hi
+            return float(plan["base_usd_month"]) + cost
+        over = max(0.0, u - inc)
+        return float(plan["base_usd_month"]) + math.ceil(over / per) * float(plan["overage_usd"])
 
     def self_cost(R, a, fte):
         u = units(R, a)
@@ -477,7 +486,7 @@ def chart3(grid, curves, sh):
               "Langfuse Cloud Core": ("--", MID)}
     for k, v in curves.items():
         ls, c = styles[k]
-        ax.plot(grid, v, ls=ls, color=c, lw=2, label=k + " (list price)")
+        ax.plot(grid, v, ls=ls, color=c, lw=2, label=k + (" (graduated list price)" if "Langfuse" in k else " (list price)"))
     ax.fill_between(grid, sh["self_low"], sh["self_high"], color=GRID, label="Self-hosted, 0.10-0.50 FTE")
     ax.plot(grid, sh["self_base"], color=LIGHT, lw=2.5, label="Self-hosted, 0.25 FTE (base case)")
     ax.set_xscale("log"); ax.set_yscale("log")

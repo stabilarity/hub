@@ -586,7 +586,8 @@
     "required_input_btok_month_full-programme": 2.0779,
     "requests_per_day_prefix_2000": 10655.856,
     "requests_per_day_prefix_10000": 2131.1712,
-    "requests_per_day_prefix_50000": 426.2342
+    "requests_per_day_prefix_50000": 426.2342,
+    "requests_per_month_at_tracelab_claude_mean_prompt": 3151.9938
    },
    {
     "model": "Claude Sonnet 5.5",
@@ -598,7 +599,8 @@
     "required_input_btok_month_full-programme": 4.1558,
     "requests_per_day_prefix_2000": 21311.712,
     "requests_per_day_prefix_10000": 4262.3424,
-    "requests_per_day_prefix_50000": 852.4685
+    "requests_per_day_prefix_50000": 852.4685,
+    "requests_per_month_at_tracelab_claude_mean_prompt": 6303.9876
    },
    {
     "model": "Claude Haiku 5.5",
@@ -610,7 +612,8 @@
     "required_input_btok_month_full-programme": 87.8356,
     "requests_per_day_prefix_2000": 450439.0462,
     "requests_per_day_prefix_10000": 90087.8092,
-    "requests_per_day_prefix_50000": 18017.5618
+    "requests_per_day_prefix_50000": 18017.5618,
+    "requests_per_month_at_tracelab_claude_mean_prompt": 133239.5145
    },
    {
     "model": "gpt-6-astra",
@@ -622,7 +625,8 @@
     "required_input_btok_month_full-programme": 0.8287,
     "requests_per_day_prefix_2000": 4249.7224,
     "requests_per_day_prefix_10000": 849.9445,
-    "requests_per_day_prefix_50000": 169.9889
+    "requests_per_day_prefix_50000": 169.9889,
+    "requests_per_month_at_tracelab_claude_mean_prompt": 1257.0645
    },
    {
     "model": "gpt-6.1-sol",
@@ -634,7 +638,8 @@
     "required_input_btok_month_full-programme": 3.9236,
     "requests_per_day_prefix_2000": 20121.123,
     "requests_per_day_prefix_10000": 4024.2246,
-    "requests_per_day_prefix_50000": 804.8449
+    "requests_per_day_prefix_50000": 804.8449,
+    "requests_per_month_at_tracelab_claude_mean_prompt": 5951.8123
    },
    {
     "model": "gpt-5.6-luna",
@@ -646,7 +651,8 @@
     "required_input_btok_month_full-programme": 41.4348,
     "requests_per_day_prefix_2000": 212486.1189,
     "requests_per_day_prefix_10000": 42497.2238,
-    "requests_per_day_prefix_50000": 8499.4448
+    "requests_per_day_prefix_50000": 8499.4448,
+    "requests_per_month_at_tracelab_claude_mean_prompt": 62853.2263
    },
    {
     "model": "Gemini 3.1 Pro Preview",
@@ -658,7 +664,8 @@
     "required_input_btok_month_full-programme": 4.2965,
     "requests_per_day_prefix_2000": 22033.3359,
     "requests_per_day_prefix_10000": 4406.6672,
-    "requests_per_day_prefix_50000": 881.3334
+    "requests_per_day_prefix_50000": 881.3334,
+    "requests_per_month_at_tracelab_claude_mean_prompt": 6517.4434
    },
    {
     "model": "deepseek-flash",
@@ -670,7 +677,8 @@
     "required_input_btok_month_full-programme": 24.8179,
     "requests_per_day_prefix_2000": 127271.2708,
     "requests_per_day_prefix_10000": 25454.2542,
-    "requests_per_day_prefix_50000": 5090.8508
+    "requests_per_day_prefix_50000": 5090.8508,
+    "requests_per_month_at_tracelab_claude_mean_prompt": 37646.7415
    }
   ],
   "sonnet55_prefix_stable_sensitivity_btok_month": {

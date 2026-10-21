@@ -393,6 +393,8 @@ for m, mode, s in payback_models:
     for P in (2000, 10000, 50000):
         need_tok = required_input_tokens_bn("prefix-stable", p["input_usd_mtok"], s / 100) * 1e9
         entry["requests_per_day_prefix_%d" % P] = r4(need_tok / P / 30.0)
+    entry["requests_per_month_at_tracelab_claude_mean_prompt"] = r4(
+        required_input_tokens_bn("prefix-stable", p["input_usd_mtok"], s / 100) * 1e9 / gap_stats["claude"]["mean_input_tokens"])
     payback["models"].append(entry)
 
 # sensitivity of the Sonnet 5.5 'prefix-stable' threshold

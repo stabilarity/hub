@@ -1,0 +1,5 @@
+platform,plan,billing_unit,base_usd_month,included_units,overage_usd,overage_per_units,default_retention_days,max_listed_retention_days,source_url,accessed
+Datadog Agent Observability,Pro annual,LLM span,160,100000,3.50,10000,15,90,https://www.datadoghq.com/pricing/?product=llm-observability,2026-10-21
+Datadog Agent Observability,Pro on-demand,LLM span,240,100000,5.00,10000,15,90,https://www.datadoghq.com/pricing/?product=llm-observability,2026-10-21
+Langfuse Cloud,Core,unit (trace+observation+score),29,100000,8.00,100000,90,90,https://langfuse.com/pricing,2026-10-21
+Langfuse Cloud,Pro,unit (trace+observation+score),199,100000,8.00,100000,1095,1095,https://langfuse.com/pricing,2026-10-21

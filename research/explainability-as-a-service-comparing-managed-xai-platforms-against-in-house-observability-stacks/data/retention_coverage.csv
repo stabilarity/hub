@@ -1,0 +1,5 @@
+platform,plan,billing_unit,list_price_usd_month,included_volume,overage_listed_on_page,default_retention_days,longest_listed_retention_days,self_host_option,source_url,accessed
+Datadog Agent Observability,Pro,LLM span,160,100000,yes,15,90,no,https://www.datadoghq.com/pricing/?product=llm-observability,2026-10-21
+LangSmith,Plus,trace + seat,39 per seat,10000,no,14,180,enterprise only,https://www.langchain.com/pricing,2026-10-21
+Langfuse Cloud,Core,unit,29,100000,yes,90,90,yes (open source),https://langfuse.com/pricing,2026-10-21
+Langfuse Cloud,Pro,unit,199,100000,yes,1095,1095,yes (open source),https://langfuse.com/pricing,2026-10-21

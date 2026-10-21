@@ -1,0 +1,713 @@
+{
+  "dataset": {
+    "name": "SPROUT",
+    "source": "https://huggingface.co/datasets/CARROT-LLM-Routing/SPROUT",
+    "paper": "arXiv:2502.03261",
+    "n_train": 30968,
+    "n_validation": 6636,
+    "n_test": 6637,
+    "test_family_counts": {
+      "chat_instructions": 2912,
+      "gpqa": 94,
+      "math": 1462,
+      "mmlu_pro": 1772,
+      "musr": 123,
+      "ragbench": 274
+    }
+  },
+  "prices_accessed": "2026-10-21",
+  "pool": [
+    "GPT-4o",
+    "GPT-4o-mini",
+    "Llama-3.3-70B",
+    "Llama-3.1-8B"
+  ],
+  "router_expected_cost_usd_per_1k": {
+    "GPT-4o": 4.9179,
+    "GPT-4o-mini": 0.3391,
+    "Llama-3.3-70B": 0.6372,
+    "Llama-3.1-8B": 0.1698
+  },
+  "rq1": {
+    "single_models": {
+      "openai-gpt-4o": {
+        "label": "GPT-4o",
+        "mean_score": 0.8482,
+        "usd_per_1k_queries": 4.9957,
+        "mean_input_tokens": 190.1101,
+        "mean_output_tokens": 452.0426
+      },
+      "openai-gpt-4o-mini": {
+        "label": "GPT-4o-mini",
+        "mean_score": 0.8072,
+        "usd_per_1k_queries": 0.3416,
+        "mean_input_tokens": 190.1101,
+        "mean_output_tokens": 521.7651
+      },
+      "wxai-llama-3-3-70b-instruct": {
+        "label": "Llama-3.3-70B",
+        "mean_score": 0.8066,
+        "usd_per_1k_queries": 0.638,
+        "mean_input_tokens": 281.0687,
+        "mean_output_tokens": 332.3809
+      },
+      "wxai-llama-3-1-8b-instruct": {
+        "label": "Llama-3.1-8B",
+        "mean_score": 0.6867,
+        "usd_per_1k_queries": 0.1705,
+        "mean_input_tokens": 224.0687,
+        "mean_output_tokens": 994.1208
+      }
+    },
+    "frontier_usd_per_1k": 4.9957,
+    "frontier_score": 0.8482,
+    "headroom_vs_gpt4o": {
+      "wxai-llama-3-3-70b-instruct": {
+        "label": "Llama-3.3-70B",
+        "share_cheap_at_least_frontier": 0.6938,
+        "share_cheap_strictly_better": 0.0845,
+        "share_frontier_strictly_better": 0.3062
+      },
+      "wxai-llama-3-1-8b-instruct": {
+        "label": "Llama-3.1-8B",
+        "share_cheap_at_least_frontier": 0.6423,
+        "share_cheap_strictly_better": 0.0579,
+        "share_frontier_strictly_better": 0.3577
+      },
+      "openai-gpt-4o-mini": {
+        "label": "GPT-4o-mini",
+        "share_cheap_at_least_frontier": 0.8673,
+        "share_cheap_strictly_better": 0.0909,
+        "share_frontier_strictly_better": 0.1327
+      }
+    },
+    "oracle_best_per_query_score": 0.9397,
+    "oracle_best_retention": 1.1078,
+    "oracle_cost_at_100pct_usd_per_1k": 0.1704,
+    "price_ratio_gpt4o_to_llama70b_blended": 7.8304,
+    "price_ratio_gpt4o_to_llama8b_blended": 29.2923
+  },
+  "rq2_pool_router": {
+    "95pct": {
+      "oracle_usd_per_1k": 0.1704,
+      "oracle_saving": 0.9659,
+      "random_mix_usd_per_1k": 0.3396,
+      "random_mix_saving": 0.932,
+      "router_in_dist": {
+        "lambda": 435.6099,
+        "test_score": 0.7877,
+        "test_retention": 0.9286,
+        "usd_per_1k": 0.307,
+        "saving_vs_frontier": 0.9385,
+        "traffic_share": {
+          "GPT-4o": 0.0,
+          "GPT-4o-mini": 0.4841,
+          "Llama-3.3-70B": 0.1144,
+          "Llama-3.1-8B": 0.4015
+        },
+        "matched_quality_saving": 0.9269,
+        "target_reachable_on_test": true,
+        "max_test_retention": 0.9992,
+        "share_of_oracle_saving": 0.9716
+      },
+      "router_lofo": {
+        "lambda": 49.1733,
+        "test_score": 0.7917,
+        "test_retention": 0.9333,
+        "usd_per_1k": 0.4864,
+        "saving_vs_frontier": 0.9026,
+        "traffic_share": {
+          "GPT-4o": 0.003,
+          "GPT-4o-mini": 0.3807,
+          "Llama-3.3-70B": 0.4832,
+          "Llama-3.1-8B": 0.133
+        },
+        "matched_quality_saving": 0.6694,
+        "target_reachable_on_test": true,
+        "max_test_retention": 0.9576,
+        "share_of_oracle_saving": 0.9345
+      }
+    },
+    "98pct": {
+      "oracle_usd_per_1k": 0.1704,
+      "oracle_saving": 0.9659,
+      "random_mix_usd_per_1k": 3.0699,
+      "random_mix_saving": 0.3855,
+      "router_in_dist": {
+        "lambda": 105.331,
+        "test_score": 0.8142,
+        "test_retention": 0.9599,
+        "usd_per_1k": 0.4078,
+        "saving_vs_frontier": 0.9184,
+        "traffic_share": {
+          "GPT-4o": 0.0,
+          "GPT-4o-mini": 0.4898,
+          "Llama-3.3-70B": 0.3048,
+          "Llama-3.1-8B": 0.2054
+        },
+        "matched_quality_saving": 0.8518,
+        "target_reachable_on_test": true,
+        "max_test_retention": 0.9992,
+        "share_of_oracle_saving": 0.9508
+      },
+      "router_lofo": {
+        "lambda": 0.0,
+        "test_score": 0.8123,
+        "test_retention": 0.9576,
+        "usd_per_1k": 2.1075,
+        "saving_vs_frontier": 0.5781,
+        "traffic_share": {
+          "GPT-4o": 0.3753,
+          "GPT-4o-mini": 0.1975,
+          "Llama-3.3-70B": 0.3732,
+          "Llama-3.1-8B": 0.0539
+        },
+        "matched_quality_saving": -1.0,
+        "target_reachable_on_test": false,
+        "max_test_retention": 0.9576,
+        "share_of_oracle_saving": 0.5985
+      }
+    },
+    "100pct": {
+      "oracle_usd_per_1k": 0.1704,
+      "oracle_saving": 0.9659,
+      "random_mix_usd_per_1k": 4.9957,
+      "random_mix_saving": 0.0,
+      "router_in_dist": {
+        "lambda": 14.1376,
+        "test_score": 0.838,
+        "test_retention": 0.988,
+        "usd_per_1k": 1.108,
+        "saving_vs_frontier": 0.7782,
+        "traffic_share": {
+          "GPT-4o": 0.1724,
+          "GPT-4o-mini": 0.389,
+          "Llama-3.3-70B": 0.3065,
+          "Llama-3.1-8B": 0.1321
+        },
+        "matched_quality_saving": -1.0,
+        "target_reachable_on_test": false,
+        "max_test_retention": 0.9992,
+        "share_of_oracle_saving": 0.8057
+      },
+      "router_lofo": {
+        "lambda": 0.0,
+        "test_score": 0.8123,
+        "test_retention": 0.9576,
+        "usd_per_1k": 2.1075,
+        "saving_vs_frontier": 0.5781,
+        "traffic_share": {
+          "GPT-4o": 0.3753,
+          "GPT-4o-mini": 0.1975,
+          "Llama-3.3-70B": 0.3732,
+          "Llama-3.1-8B": 0.0539
+        },
+        "matched_quality_saving": -1.0,
+        "target_reachable_on_test": false,
+        "max_test_retention": 0.9576,
+        "share_of_oracle_saving": 0.5985
+      }
+    }
+  },
+  "rq2_two_tier": {
+    "Llama-3.3-70B": {
+      "95pct": {
+        "oracle": {
+          "test_retention": 0.9509,
+          "usd_per_1k": 0.638,
+          "saving_vs_frontier": 0.8723,
+          "escalation_rate": 0.0
+        },
+        "router_in_dist": {
+          "test_score": 0.8066,
+          "test_retention": 0.9509,
+          "usd_per_1k": 0.638,
+          "saving_vs_frontier": 0.8723,
+          "escalation_rate": 0.0,
+          "matched_quality_saving": 0.8723,
+          "matched_quality_escalation": 0.0
+        },
+        "router_lofo": {
+          "test_score": 0.8066,
+          "test_retention": 0.9509,
+          "usd_per_1k": 0.638,
+          "saving_vs_frontier": 0.8723,
+          "escalation_rate": 0.0,
+          "matched_quality_saving": 0.8723,
+          "matched_quality_escalation": 0.0
+        }
+      },
+      "98pct": {
+        "oracle": {
+          "test_retention": 0.98,
+          "usd_per_1k": 0.7327,
+          "saving_vs_frontier": 0.8533,
+          "escalation_rate": 0.0247
+        },
+        "router_in_dist": {
+          "test_score": 0.8179,
+          "test_retention": 0.9642,
+          "usd_per_1k": 1.0659,
+          "saving_vs_frontier": 0.7866,
+          "escalation_rate": 0.1104,
+          "matched_quality_saving": 0.669,
+          "matched_quality_escalation": 0.2549
+        },
+        "router_lofo": {
+          "test_score": 0.825,
+          "test_retention": 0.9726,
+          "usd_per_1k": 2.6592,
+          "saving_vs_frontier": 0.4677,
+          "escalation_rate": 0.4827,
+          "matched_quality_saving": 0.3579,
+          "matched_quality_escalation": 0.5959
+        }
+      },
+      "100pct": {
+        "oracle": {
+          "test_retention": 1.0001,
+          "usd_per_1k": 0.7887,
+          "saving_vs_frontier": 0.8421,
+          "escalation_rate": 0.0417
+        },
+        "router_in_dist": {
+          "test_score": 0.8364,
+          "test_retention": 0.9861,
+          "usd_per_1k": 1.8759,
+          "saving_vs_frontier": 0.6245,
+          "escalation_rate": 0.3093,
+          "matched_quality_saving": 0.4727,
+          "matched_quality_escalation": 0.4871
+        },
+        "router_lofo": {
+          "test_score": 0.8473,
+          "test_retention": 0.9989,
+          "usd_per_1k": 4.8334,
+          "saving_vs_frontier": 0.0325,
+          "escalation_rate": 0.9666,
+          "matched_quality_saving": 0.0029,
+          "matched_quality_escalation": 0.9967
+        }
+      }
+    },
+    "Llama-3.1-8B": {
+      "95pct": {
+        "oracle": {
+          "test_retention": 0.9501,
+          "usd_per_1k": 0.6557,
+          "saving_vs_frontier": 0.8687,
+          "escalation_rate": 0.1192
+        },
+        "router_in_dist": {
+          "test_score": 0.7957,
+          "test_retention": 0.9381,
+          "usd_per_1k": 2.5689,
+          "saving_vs_frontier": 0.4858,
+          "escalation_rate": 0.5079,
+          "matched_quality_saving": 0.4128,
+          "matched_quality_escalation": 0.5826
+        },
+        "router_lofo": {
+          "test_score": 0.7991,
+          "test_retention": 0.9421,
+          "usd_per_1k": 3.5445,
+          "saving_vs_frontier": 0.2905,
+          "escalation_rate": 0.6934,
+          "matched_quality_saving": 0.2564,
+          "matched_quality_escalation": 0.7288
+        }
+      },
+      "98pct": {
+        "oracle": {
+          "test_retention": 0.9801,
+          "usd_per_1k": 0.7487,
+          "saving_vs_frontier": 0.8501,
+          "escalation_rate": 0.1446
+        },
+        "router_in_dist": {
+          "test_score": 0.8228,
+          "test_retention": 0.97,
+          "usd_per_1k": 3.7343,
+          "saving_vs_frontier": 0.2525,
+          "escalation_rate": 0.741,
+          "matched_quality_saving": 0.188,
+          "matched_quality_escalation": 0.8068
+        },
+        "router_lofo": {
+          "test_score": 0.8271,
+          "test_retention": 0.9751,
+          "usd_per_1k": 4.3251,
+          "saving_vs_frontier": 0.1342,
+          "escalation_rate": 0.8597,
+          "matched_quality_saving": 0.1156,
+          "matched_quality_escalation": 0.8811
+        }
+      },
+      "100pct": {
+        "oracle": {
+          "test_retention": 1.0001,
+          "usd_per_1k": 0.8255,
+          "saving_vs_frontier": 0.8348,
+          "escalation_rate": 0.162
+        },
+        "router_in_dist": {
+          "test_score": 0.8481,
+          "test_retention": 0.9999,
+          "usd_per_1k": 4.9699,
+          "saving_vs_frontier": 0.0052,
+          "escalation_rate": 0.994,
+          "matched_quality_saving": 0.0059,
+          "matched_quality_escalation": 0.9932
+        },
+        "router_lofo": {
+          "test_score": 0.8482,
+          "test_retention": 1.0,
+          "usd_per_1k": 4.9943,
+          "saving_vs_frontier": 0.0003,
+          "escalation_rate": 0.9998,
+          "matched_quality_saving": 0.0003,
+          "matched_quality_escalation": 0.9998
+        }
+      }
+    },
+    "GPT-4o-mini": {
+      "95pct": {
+        "oracle": {
+          "test_retention": 0.9517,
+          "usd_per_1k": 0.3416,
+          "saving_vs_frontier": 0.9316,
+          "escalation_rate": 0.0
+        },
+        "router_in_dist": {
+          "test_score": 0.8072,
+          "test_retention": 0.9517,
+          "usd_per_1k": 0.3416,
+          "saving_vs_frontier": 0.9316,
+          "escalation_rate": 0.0,
+          "matched_quality_saving": 0.9316,
+          "matched_quality_escalation": 0.0
+        },
+        "router_lofo": {
+          "test_score": 0.8072,
+          "test_retention": 0.9517,
+          "usd_per_1k": 0.3416,
+          "saving_vs_frontier": 0.9316,
+          "escalation_rate": 0.0,
+          "matched_quality_saving": 0.9316,
+          "matched_quality_escalation": 0.0
+        }
+      },
+      "98pct": {
+        "oracle": {
+          "test_retention": 0.9801,
+          "usd_per_1k": 0.4332,
+          "saving_vs_frontier": 0.9133,
+          "escalation_rate": 0.0241
+        },
+        "router_in_dist": {
+          "test_score": 0.8254,
+          "test_retention": 0.9731,
+          "usd_per_1k": 0.9333,
+          "saving_vs_frontier": 0.8132,
+          "escalation_rate": 0.1448,
+          "matched_quality_saving": 0.7393,
+          "matched_quality_escalation": 0.2292
+        },
+        "router_lofo": {
+          "test_score": 0.8251,
+          "test_retention": 0.9728,
+          "usd_per_1k": 2.0767,
+          "saving_vs_frontier": 0.5843,
+          "escalation_rate": 0.3675,
+          "matched_quality_saving": 0.4216,
+          "matched_quality_escalation": 0.5469
+        }
+      },
+      "100pct": {
+        "oracle": {
+          "test_retention": 1.0002,
+          "usd_per_1k": 0.5121,
+          "saving_vs_frontier": 0.8975,
+          "escalation_rate": 0.0411
+        },
+        "router_in_dist": {
+          "test_score": 0.8476,
+          "test_retention": 0.9993,
+          "usd_per_1k": 4.9225,
+          "saving_vs_frontier": 0.0146,
+          "escalation_rate": 0.9849,
+          "matched_quality_saving": 0.0017,
+          "matched_quality_escalation": 0.9988
+        },
+        "router_lofo": {
+          "test_score": 0.8466,
+          "test_retention": 0.9981,
+          "usd_per_1k": 4.6368,
+          "saving_vs_frontier": 0.0718,
+          "escalation_rate": 0.9274,
+          "matched_quality_saving": 0.045,
+          "matched_quality_escalation": 0.9596
+        }
+      }
+    }
+  },
+  "rq2_family_at_98pct": {
+    "chat_instructions": {
+      "n": 2912,
+      "gpt4o_score": 0.9054,
+      "in_dist": {
+        "retention": 0.9676,
+        "saving": 0.9365
+      },
+      "lofo": {
+        "retention": 0.9526,
+        "saving": 0.621
+      },
+      "best_single_model": "GPT-4o",
+      "best_single_score": 0.9054
+    },
+    "gpqa": {
+      "n": 94,
+      "gpt4o_score": 0.5138,
+      "in_dist": {
+        "retention": 1.0497,
+        "saving": 0.9073
+      },
+      "lofo": {
+        "retention": 1.0248,
+        "saving": 0.5883
+      },
+      "best_single_model": "Llama-3.3-70B",
+      "best_single_score": 0.5777
+    },
+    "math": {
+      "n": 1462,
+      "gpt4o_score": 0.8269,
+      "in_dist": {
+        "retention": 1.0469,
+        "saving": 0.9171
+      },
+      "lofo": {
+        "retention": 1.0152,
+        "saving": 0.5245
+      },
+      "best_single_model": "Llama-3.3-70B",
+      "best_single_score": 0.894
+    },
+    "mmlu_pro": {
+      "n": 1772,
+      "gpt4o_score": 0.7963,
+      "in_dist": {
+        "retention": 0.8555,
+        "saving": 0.9005
+      },
+      "lofo": {
+        "retention": 0.9089,
+        "saving": 0.6133
+      },
+      "best_single_model": "GPT-4o",
+      "best_single_score": 0.7963
+    },
+    "musr": {
+      "n": 123,
+      "gpt4o_score": 0.5748,
+      "in_dist": {
+        "retention": 1.133,
+        "saving": 0.8185
+      },
+      "lofo": {
+        "retention": 0.9646,
+        "saving": 0.3655
+      },
+      "best_single_model": "Llama-3.3-70B",
+      "best_single_score": 0.622
+    },
+    "ragbench": {
+      "n": 274,
+      "gpt4o_score": 0.927,
+      "in_dist": {
+        "retention": 0.9807,
+        "saving": 0.8733
+      },
+      "lofo": {
+        "retention": 0.9909,
+        "saving": 0.398
+      },
+      "best_single_model": "GPT-4o-mini",
+      "best_single_score": 0.9274
+    }
+  },
+  "rq3_router_quality": {
+    "setting": "two-tier GPT-4o / Llama-3.3-70B, 98% target, thresholds on test",
+    "noise_curve": [
+      {
+        "sigma": 0.0,
+        "auc": 1.0,
+        "saving_98": 0.8533,
+        "escalation_98": 0.0247
+      },
+      {
+        "sigma": 0.05,
+        "auc": 0.9601,
+        "saving_98": 0.8553,
+        "escalation_98": 0.0247
+      },
+      {
+        "sigma": 0.1,
+        "auc": 0.8676,
+        "saving_98": 0.8551,
+        "escalation_98": 0.0249
+      },
+      {
+        "sigma": 0.15,
+        "auc": 0.8119,
+        "saving_98": 0.8557,
+        "escalation_98": 0.0249
+      },
+      {
+        "sigma": 0.2,
+        "auc": 0.7777,
+        "saving_98": 0.8558,
+        "escalation_98": 0.025
+      },
+      {
+        "sigma": 0.3,
+        "auc": 0.736,
+        "saving_98": 0.8555,
+        "escalation_98": 0.0253
+      },
+      {
+        "sigma": 0.4,
+        "auc": 0.7059,
+        "saving_98": 0.8538,
+        "escalation_98": 0.0282
+      },
+      {
+        "sigma": 0.5,
+        "auc": 0.6807,
+        "saving_98": 0.8466,
+        "escalation_98": 0.0372
+      },
+      {
+        "sigma": 0.7,
+        "auc": 0.6418,
+        "saving_98": 0.8254,
+        "escalation_98": 0.0607
+      },
+      {
+        "sigma": 1.0,
+        "auc": 0.6038,
+        "saving_98": 0.7947,
+        "escalation_98": 0.0946
+      },
+      {
+        "sigma": 1.5,
+        "auc": 0.5688,
+        "saving_98": 0.7526,
+        "escalation_98": 0.1443
+      },
+      {
+        "sigma": 2.0,
+        "auc": 0.5497,
+        "saving_98": 0.7043,
+        "escalation_98": 0.1993
+      },
+      {
+        "sigma": 3.0,
+        "auc": 0.5297,
+        "saving_98": 0.6349,
+        "escalation_98": 0.2742
+      },
+      {
+        "sigma": 5.0,
+        "auc": 0.5132,
+        "saving_98": 0.5609,
+        "escalation_98": 0.3616
+      },
+      {
+        "sigma": 10.0,
+        "auc": 0.5007,
+        "saving_98": 0.4245,
+        "escalation_98": 0.5038
+      }
+    ],
+    "points": {
+      "in_dist": {
+        "auc": 0.6324,
+        "saving_98": 0.669,
+        "escalation_98": 0.2549
+      },
+      "lofo": {
+        "auc": 0.4487,
+        "saving_98": 0.3579,
+        "escalation_98": 0.5959
+      },
+      "random": {
+        "auc": 0.4881,
+        "saving_98": 0.3561,
+        "escalation_98": 0.5825
+      }
+    }
+  },
+  "rq3_price_gap": {
+    "token_mix_input": 221.3394,
+    "token_mix_output": 575.0774,
+    "escalation_rates_98pct": {
+      "oracle": 0.0247,
+      "router_in_dist": 0.2549,
+      "router_lofo": 0.5959
+    },
+    "saving_ceiling": {
+      "oracle": 0.9753,
+      "router_in_dist": 0.7451,
+      "router_lofo": 0.4041
+    },
+    "pairs": [
+      {
+        "pair": "GPT-4o / Llama-3.3-70B (measured pair)",
+        "blended_price_ratio": 7.6112,
+        "saving_at_escalation": {
+          "oracle": 0.8472,
+          "router_in_dist": 0.6472,
+          "router_lofo": 0.351
+        }
+      },
+      {
+        "pair": "Gemini 3.1 Pro / Gemini 3.5 Flash-Lite",
+        "blended_price_ratio": 4.8824,
+        "saving_at_escalation": {
+          "oracle": 0.7755,
+          "router_in_dist": 0.5925,
+          "router_lofo": 0.3213
+        }
+      },
+      {
+        "pair": "GPT-6.1-sol / gpt-oss-120B",
+        "blended_price_ratio": 16.3741,
+        "saving_at_escalation": {
+          "oracle": 0.9157,
+          "router_in_dist": 0.6996,
+          "router_lofo": 0.3794
+        }
+      },
+      {
+        "pair": "Claude Opus 5.5 / Claude Haiku 5.5",
+        "blended_price_ratio": 40.0,
+        "saving_at_escalation": {
+          "oracle": 0.9509,
+          "router_in_dist": 0.7265,
+          "router_lofo": 0.394
+        }
+      },
+      {
+        "pair": "GPT-6-astra / DeepSeek V4 Flash",
+        "blended_price_ratio": 161.2801,
+        "saving_at_escalation": {
+          "oracle": 0.9693,
+          "router_in_dist": 0.7405,
+          "router_lofo": 0.4016
+        }
+      }
+    ]
+  }
+}

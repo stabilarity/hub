@@ -1,0 +1,6 @@
+pair,frontier_model,frontier_in,frontier_out,cheap_model,cheap_in,cheap_out,frontier_source,cheap_source,accessed
+GPT-4o / Llama-3.3-70B (measured pair),GPT-4o,2.50,10.00,Llama-3.3-70B (Together),1.04,1.04,https://developers.openai.com/api/docs/pricing,https://www.together.ai/pricing,2026-10-21
+Gemini 3.1 Pro / Gemini 3.5 Flash-Lite,Gemini 3.1 Pro Preview (prompts up to 200k),2.00,12.00,Gemini 3.5 Flash-Lite,0.30,2.50,https://ai.google.dev/gemini-api/docs/pricing,https://ai.google.dev/gemini-api/docs/pricing,2026-10-21
+GPT-6.1-sol / gpt-oss-120B,gpt-6.1-sol,2.00,10.00,gpt-oss-120B (Together),0.15,0.60,https://developers.openai.com/api/docs/pricing,https://www.together.ai/pricing,2026-10-21
+Claude Opus 5.5 / Claude Haiku 5.5,Claude Opus 5.5,4.00,20.00,Claude Haiku 5.5 (prompts up to 100k),0.10,0.50,https://platform.claude.com/docs/en/about-claude/pricing,https://platform.claude.com/docs/en/about-claude/pricing,2026-10-21
+GPT-6-astra / DeepSeek V4 Flash,gpt-6-astra,10.00,50.00,DeepSeek V4 Flash 0731 (Together),0.14,0.28,https://developers.openai.com/api/docs/pricing,https://www.together.ai/pricing,2026-10-21

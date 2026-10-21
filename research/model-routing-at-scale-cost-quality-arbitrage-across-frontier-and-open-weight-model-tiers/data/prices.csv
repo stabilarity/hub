@@ -1,0 +1,5 @@
+model,label,tier,usd_per_1m_input,usd_per_1m_output,price_source,price_basis,accessed
+openai-gpt-4o,GPT-4o,frontier closed,2.50,10.00,https://developers.openai.com/api/docs/pricing,list price of the same model (Standard tier),2026-10-21
+openai-gpt-4o-mini,GPT-4o-mini,small closed,0.15,0.60,https://developers.openai.com/api/docs/pricing,list price of the same model (Standard tier),2026-10-21
+wxai-llama-3-3-70b-instruct,Llama-3.3-70B,large open-weight,1.04,1.04,https://www.together.ai/pricing,list price of the same model (serverless),2026-10-21
+wxai-llama-3-1-8b-instruct,Llama-3.1-8B,small open-weight,0.14,0.14,https://www.together.ai/pricing,proxy: Llama 3 8B Instruct Lite serverless price (Llama 3.1 8B not listed for serverless),2026-10-21

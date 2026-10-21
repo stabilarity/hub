@@ -41,7 +41,7 @@ shap 0.54.1, xgboost 3.2.0, torch 2.10, captum 0.9.0. Attribution values and fid
   brute-force enumeration of all 2^14 coalitions (max abs difference 6.4e-7). For the MLP the reference is the
   brute-force exact Shapley value.
 - **Estimators.** Kernel SHAP (`shap.KernelExplainer`, `l1_reg=False`) at 64, 256, 1,024 and 4,096 samples, plus
-  the library default `l1_reg` at 1,024; permutation-sampling Shapley with path counts 1, 5, 10, 25 and 50 (the
+  the library default `l1_reg` (`num_features(10)` since shap 0.47) at 1,024; permutation-sampling Shapley with path counts 1, 5, 10, 25 and 50 (the
   range Vertex accepts; 25 is its suggested value); path-dependent TreeSHAP as built into XGBoost; Captum
   Saliency, Integrated Gradients (32 steps), GradientSHAP (16 samples); input times gradient relative to the baseline.
 - **Metrics.** Median and p95 latency per single-row explanation over 40 test rows (median of 3 repeats per row);
@@ -50,8 +50,8 @@ shap 0.54.1, xgboost 3.2.0, torch 2.10, captum 0.9.0. Attribution values and fid
   per-vCPU share of an m7i.xlarge on-demand price (our estimate).
 - **TCO model.** Each traced request = 1 trace, 4 LLM spans, 6 other spans, 1 score. Datadog bills LLM spans only;
   Langfuse bills every trace, observation and score as a unit, at the graduated rates of its pricing calculator
-  ($8, $7, $6.50 and $6 per 100k units above 100k, 1M, 10M and 50M units). Self-hosted: 3 m7i.xlarge nodes plus 1 m7i.2xlarge per 100M
-  units per month, +25% for storage and backups, and 0.25 FTE of a software developer at the BLS May 2025 median wage
+  ($8, $7, $6.50 and $6 per 100k units above 100k, 1M, 10M and 50M units). Self-hosted: 3 m7i.xlarge nodes plus 1 m7i.2xlarge for each started
+  block of 100M units per month, +25% for storage and backups, and 0.25 FTE of a software developer at the BLS May 2025 median wage
   ($135,980) times a 1.3 loading factor. Sensitivity: 0.10 and 0.50 FTE; 2 and 8 LLM spans per request.
   All self-hosted figures are our estimates.
 

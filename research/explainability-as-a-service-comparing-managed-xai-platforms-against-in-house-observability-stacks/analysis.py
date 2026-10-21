@@ -214,7 +214,7 @@ def bench_tree(name, X, y, feat):
         res["methods"][key] = {"family": "kernel", "budget": ns, "nmae": round(nmae, 4), "spearman": round(rho, 4),
                                "top3_overlap": round(top3, 4)}
 
-    # the library's default l1_reg="auto" adds AIC feature selection when samples < 20% of all coalitions
+    # the library's default l1_reg (since shap 0.47: "num_features(10)") keeps only the top 10 features
     est, t = [], []
     for r in rows:
         np.random.seed(SEED)

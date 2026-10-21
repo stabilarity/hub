@@ -508,6 +508,33 @@ results = {
                       "escalation_rates_98pct": esc_levels, "saving_ceiling": ceiling, "pairs": pair_res},
 }
 
+# differences and ratios quoted in the article text, in percentage points or percent
+_p, _t, _pg = results["rq2_pool_router"], results["rq2_two_tier"], results["rq3_price_gap"]
+_pairs = {x["pair"]: x["saving_at_escalation"] for x in _pg["pairs"]}
+_measured = _pairs["GPT-4o / Llama-3.3-70B (measured pair)"]
+_widest = _pairs["GPT-6-astra / DeepSeek V4 Flash"]
+_gem = _pairs["Gemini 3.1 Pro / Gemini 3.5 Flash-Lite"]
+_real = [(tr, _p[k]["router_" + v]["test_retention"]) for tr, k in ((0.95, "95pct"), (0.98, "98pct"), (1.0, "100pct"))
+         for v in ("in_dist", "lofo")]
+results["derived_pp"] = {
+    "n_total_prompts": TR["n"] + VA["n"] + TE["n"],
+    "router_98_gap_to_oracle": r4((_p["98pct"]["oracle_saving"] - _p["98pct"]["router_in_dist"]["matched_quality_saving"]) * 100),
+    "router_98_gain_over_random": r4((_p["98pct"]["router_in_dist"]["matched_quality_saving"] - _p["98pct"]["random_mix_saving"]) * 100),
+    "lofo_95_shortfall_vs_random": r4((_p["95pct"]["random_mix_saving"] - _p["95pct"]["router_lofo"]["matched_quality_saving"]) * 100),
+    "validation_calibration_undershoot_min": r4(min(tr - q for tr, q in _real) * 100),
+    "validation_calibration_undershoot_max": r4(max(tr - q for tr, q in _real) * 100),
+    "price_gap_gain_in_dist_7.6x_to_161x": r4((_widest["router_in_dist"] - _measured["router_in_dist"]) * 100),
+    "price_gap_gain_lofo_7.6x_to_161x": r4((_widest["router_lofo"] - _measured["router_lofo"]) * 100),
+    "router_quality_gain_at_measured_ratio": r4((_measured["router_in_dist"] - _measured["router_lofo"]) * 100),
+    "gemini_pair_gap_to_in_dist_ceiling": r4((_pg["saving_ceiling"]["router_in_dist"] - _gem["router_in_dist"]) * 100),
+    "cost_share_of_gpt4o_pct": {LABEL[m]: r4(TE["C"][:, j].mean() / cF * 100) for j, m in enumerate(POOL)},
+    "oracle_cost_share_of_gpt4o_pct": {"min_cost_point": r4(oracle_min[0] / cF * 100),
+                                       "max_score_point": r4(oracle_at_max[0] / cF * 100)},
+    "output_tokens_ratio_llama8b_to_gpt4o": r4(TE["tok_out"][:, POOL.index("wxai-llama-3-1-8b-instruct")].mean()
+                                               / TE["tok_out"][:, iF].mean()),
+    "gap_to_ceiling_at_20x_pp": {k: r4((1 - e) / 20 * 100) for k, e in esc_levels.items()},
+}
+
 
 def no_nulls(o, path="results"):
     if o is None or (isinstance(o, float) and (np.isnan(o) or np.isinf(o))):

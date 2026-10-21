@@ -745,5 +745,33 @@
         }
       }
     ]
+  },
+  "derived_pp": {
+    "n_total_prompts": 44241,
+    "router_98_gap_to_oracle": 11.41,
+    "router_98_gain_over_random": 46.63,
+    "lofo_95_shortfall_vs_random": 26.26,
+    "validation_calibration_undershoot_min": 1.2,
+    "validation_calibration_undershoot_max": 4.24,
+    "price_gap_gain_in_dist_7.6x_to_161x": 9.33,
+    "price_gap_gain_lofo_7.6x_to_161x": 5.06,
+    "router_quality_gain_at_measured_ratio": 29.62,
+    "gemini_pair_gap_to_in_dist_ceiling": 15.26,
+    "cost_share_of_gpt4o_pct": {
+      "GPT-4o": 100.0,
+      "GPT-4o-mini": 6.8374,
+      "Llama-3.3-70B": 12.7707,
+      "Llama-3.1-8B": 3.4139
+    },
+    "oracle_cost_share_of_gpt4o_pct": {
+      "min_cost_point": 3.4114,
+      "max_score_point": 10.8865
+    },
+    "output_tokens_ratio_llama8b_to_gpt4o": 2.1992,
+    "gap_to_ceiling_at_20x_pp": {
+      "oracle": 4.8765,
+      "router_in_dist": 3.7255,
+      "router_lofo": 2.0205
+    }
   }
 }

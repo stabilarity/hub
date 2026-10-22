@@ -1,285 +1,340 @@
 """
-Open-Source Model Auditing Infrastructure: Third-Party Verification of Training Data Claims
-Analysis script for post_id 3533
+Step 2 of 2: can a third party verify "was X in the training data?" from weights alone?
 
-Reproduce: python3 analysis.py
+Reads data/scores.csv (written by score.py) and the committed text samples,
+then computes:
+  RQ1  document-level membership AUC on matched (IID) Pile train-vs-test sets
+  RQ2  how a date-shifted non-member set inflates AUC, against model-free
+       ("blind") baselines that never look at the model
+  RQ3  set-level dataset inference: power and false-positive rate vs. set size,
+       with a matched and with a date-shifted validation set
+Writes charts/chart1..4.png and results.json. Offline, deterministic.
+
+    python3 analysis.py
 """
-
-import json
+import json, os, re
 import numpy as np
+import pandas as pd
 import matplotlib
-matplotlib.use('Agg')
+matplotlib.use("Agg")
 import matplotlib.pyplot as plt
-import os
+from scipy import stats
+from sklearn.metrics import roc_auc_score, roc_curve
+from sklearn.linear_model import LogisticRegression
+from sklearn.preprocessing import StandardScaler
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.model_selection import StratifiedKFold, cross_val_predict
+from sklearn.pipeline import make_pipeline
 
-# Ensure charts directory exists
-os.makedirs('charts', exist_ok=True)
+from sets import load_sets
 
-# Use fixed seed for reproducibility
-rng = np.random.default_rng(42)
+HERE = os.path.dirname(os.path.abspath(__file__))
+CH = os.path.join(HERE, "charts")
+os.makedirs(CH, exist_ok=True)
+SEED = 20261021
+N_BOOT = 1000
+N_TRIALS = 500
+SET_SIZES = [25, 50, 100, 150, 200]
+ALPHA = 0.05
 
-# ============================================================
-# Synthetic data generation based on research literature
-# ============================================================
+INK, MID, LIGHT, RULE = "#111111", "#555555", "#bbbbbb", "#dddddd"
+RED, GREEN = "#c62828", "#2e7d32"
+plt.rcParams.update({"font.family": "DejaVu Sans", "font.size": 11, "axes.edgecolor": MID,
+                     "axes.labelcolor": INK, "xtick.color": MID, "ytick.color": MID,
+                     "axes.spines.top": False, "axes.spines.right": False,
+                     "figure.facecolor": "white", "axes.facecolor": "white"})
+SRC = "Source: Stabilarity analysis of Pythia checkpoints on Pile train/test samples, fresh 2026 Wikipedia and WikiMIA (data/scores.csv)."
 
-# 1. Model auditing method categories and their effectiveness scores
-audit_methods = [
-    'Membership Inference\nAttacks (MIA)',
-    'Watermark\nDetection',
-    'Data Provenance\nVerification',
-    'Statistical\nMembership Inference (SMI)',
-    'Active Membership\nInference Test (aMINT)',
-    'Cross-Model\nAuditing',
-    'First-Principles\nVerification',
-    'Inference\nAttestation'
-]
+# membership score orientation: higher = "more likely a member"
+ATTACKS = {"loss": ("Loss", -1), "zlib_ratio": ("Zlib ratio", -1),
+           "mink": ("Min-K% (k=20%)", 1), "minkpp": ("Min-K%++ (k=20%)", 1)}
+MODELS = ["pythia-70m", "pythia-160m", "pythia-410m"]
+TARGET = "pythia-410m"
 
-# Effectiveness scores (0-1) based on literature review
-effectiveness = rng.normal(0.65, 0.12, len(audit_methods))
-effectiveness = np.clip(effectiveness, 0.2, 0.95)
+df = pd.read_csv(os.path.join(HERE, "data", "scores.csv"))
+texts = [t for _, _, t in load_sets()]
+env = json.load(open(os.path.join(HERE, "data", "scoring_env.json")))
+rng = np.random.default_rng(SEED)
 
-# False positive rates
-false_positive = rng.normal(0.15, 0.08, len(audit_methods))
-false_positive = np.clip(false_positive, 0.02, 0.4)
 
-# Computational cost (relative scale 1-10)
-comp_cost = rng.normal(5.5, 2.0, len(audit_methods))
-comp_cost = np.clip(comp_cost, 1.0, 10.0)
+def auc_ci(y, s):
+    y, s = np.asarray(y), np.asarray(s)
+    a = roc_auc_score(y, s)
+    r = np.random.default_rng(SEED)
+    bs = []
+    for _ in range(N_BOOT):
+        i = r.integers(0, len(y), len(y))
+        if y[i].min() == y[i].max():
+            continue
+        bs.append(roc_auc_score(y[i], s[i]))
+    lo, hi = np.percentile(bs, [2.5, 97.5])
+    return float(a), float(lo), float(hi)
 
-# 2. Year-wise publication trends for auditing papers (2020-2026)
-years = np.arange(2020, 2027)
-# Simulating growth in auditing research
-base_publications = [3, 5, 8, 15, 28, 42, 58]
-noise = rng.normal(0, 2, len(years))
-publications = np.maximum(base_publications + noise.astype(int), 0)
 
-# Categories over time
-mia_papers = np.array([2, 3, 5, 8, 12, 18, 22])
-watermark_papers = np.array([0, 1, 2, 4, 7, 10, 13])
-provenance_papers = np.array([1, 1, 2, 3, 6, 10, 15])
-other_papers = publications - mia_papers - watermark_papers - provenance_papers
+def tpr_at(y, s, fpr_target=0.01):
+    fpr, tpr, _ = roc_curve(y, s)
+    return float(tpr[fpr <= fpr_target].max())
 
-# 3. Model families and their auditability scores
-model_families = [
-    'Llama\nFamily',
-    'Mistral\nFamily',
-    'Falcon\nFamily',
-    'Pythia\nFamily',
-    'BLOOM\nFamily',
-    'GPT-J\nVariants',
-    'Open-LLaMA\nVariants',
-    'StableLM\nFamily'
-]
 
-# Auditability scores (how easy to verify training data)
-auditability = rng.normal(0.55, 0.15, len(model_families))
-auditability = np.clip(auditability, 0.2, 0.85)
+def comparison(model, pos_set, neg_set):
+    d = df[(df.model == model) & (df.set.isin([pos_set, neg_set]))]
+    y = (d.set == pos_set).astype(int).values
+    return d, y
 
-# Transparency scores (data disclosure)
-transparency = rng.normal(0.45, 0.18, len(model_families))
-transparency = np.clip(transparency, 0.1, 0.8)
 
-# 4. Verification techniques vs. data types
-data_types = ['Web\nCrawl', 'Code\nRepositories', 'Academic\nPapers', 'Books\n& Literature', 'Synthetic\nData', 'Private\nData']
-techniques = ['MIA', 'Watermarking', 'Provenance\nTags', 'SMI', 'aMINT', 'Cross-Model']
-
-# Effectiveness matrix (technique x data_type)
-eff_matrix = rng.normal(0.5, 0.2, (len(techniques), len(data_types)))
-eff_matrix = np.clip(eff_matrix, 0.05, 0.95)
-
-# Make some techniques better for certain data types
-# MIA better for web crawl, code
-eff_matrix[0, 0] = 0.85  # MIA + Web
-eff_matrix[0, 1] = 0.80  # MIA + Code
-# Watermarking better for synthetic
-eff_matrix[1, 4] = 0.90  # Watermark + Synthetic
-# Provenance better for academic, books
-eff_matrix[2, 2] = 0.88  # Provenance + Academic
-eff_matrix[2, 3] = 0.85  # Provenance + Books
-
-# ============================================================
-# Chart 1: Audit Method Effectiveness vs Cost Trade-off
-# ============================================================
-fig, ax = plt.subplots(figsize=(12, 8))
-scatter = ax.scatter(comp_cost, effectiveness, s=300, c=false_positive, 
-                     cmap='RdYlGn_r', alpha=0.8, edgecolors='black', linewidth=1.5)
-for i, method in enumerate(audit_methods):
-    ax.annotate(method, (comp_cost[i], effectiveness[i]), 
-                xytext=(5, 5), textcoords='offset points',
-                fontsize=10, fontweight='bold', ha='left')
-ax.set_xlabel('Computational Cost (Relative Scale 1-10)', fontsize=13)
-ax.set_ylabel('Detection Effectiveness (0-1)', fontsize=13)
-ax.set_title('Third-Party Audit Methods: Effectiveness vs. Computational Cost\n(Color = False Positive Rate)', fontsize=15, fontweight='bold')
-cbar = plt.colorbar(scatter, ax=ax)
-cbar.set_label('False Positive Rate', fontsize=12)
-ax.grid(True, alpha=0.3)
-ax.set_xlim(0, 11)
-ax.set_ylim(0.15, 1.0)
-plt.tight_layout()
-plt.savefig('charts/chart1.png', dpi=100, bbox_inches='tight')
-plt.close()
-
-# ============================================================
-# Chart 2: Publication Trends in Model Auditing Research (2020-2026)
-# ============================================================
-fig, ax = plt.subplots(figsize=(12, 8))
-width = 0.6
-x = np.arange(len(years))
-ax.bar(x, mia_papers, width, label='Membership Inference', color='#2E86AB', alpha=0.85)
-ax.bar(x, watermark_papers, width, bottom=mia_papers, label='Watermarking', color='#A23B72', alpha=0.85)
-ax.bar(x, provenance_papers, width, bottom=mia_papers + watermark_papers, label='Provenance Verification', color='#F18F01', alpha=0.85)
-ax.bar(x, other_papers, width, bottom=mia_papers + watermark_papers + provenance_papers, label='Other Methods', color='#C73E1D', alpha=0.85)
-ax.set_xticks(x)
-ax.set_xticklabels(years, fontsize=12)
-ax.set_xlabel('Year', fontsize=13)
-ax.set_ylabel('Number of Publications', fontsize=13)
-ax.set_title('Growth of Open-Weight Model Auditing Research (2020-2026)', fontsize=15, fontweight='bold')
-ax.legend(fontsize=11, loc='upper left')
-ax.grid(True, alpha=0.3, axis='y')
-# Add total count labels
-for i, total in enumerate(publications):
-    ax.annotate(str(total), (x[i], total + 1), ha='center', fontsize=11, fontweight='bold')
-plt.tight_layout()
-plt.savefig('charts/chart2.png', dpi=100, bbox_inches='tight')
-plt.close()
-
-# ============================================================
-# Chart 3: Model Family Auditability vs Transparency
-# ============================================================
-fig, ax = plt.subplots(figsize=(12, 8))
-scatter = ax.scatter(transparency, auditability, s=400, 
-                     c=np.arange(len(model_families)), cmap='viridis', 
-                     alpha=0.85, edgecolors='black', linewidth=2)
-for i, family in enumerate(model_families):
-    ax.annotate(family, (transparency[i], auditability[i]), 
-                xytext=(8, 8), textcoords='offset points',
-                fontsize=11, fontweight='bold', ha='left')
-ax.set_xlabel('Data Transparency Score (0-1)', fontsize=13)
-ax.set_ylabel('Auditability Score (0-1)', fontsize=13)
-ax.set_title('Open-Weight Model Families: Auditability vs. Data Transparency', fontsize=15, fontweight='bold')
-ax.grid(True, alpha=0.3)
-ax.set_xlim(0, 0.9)
-ax.set_ylim(0.15, 0.95)
-# Add quadrant lines
-ax.axhline(y=0.55, color='gray', linestyle='--', alpha=0.5)
-ax.axvline(x=0.5, color='gray', linestyle='--', alpha=0.5)
-ax.text(0.75, 0.85, 'High Auditability\nHigh Transparency', fontsize=10, ha='center', 
-        bbox=dict(boxstyle='round', facecolor='lightgreen', alpha=0.5))
-ax.text(0.2, 0.85, 'High Auditability\nLow Transparency', fontsize=10, ha='center',
-        bbox=dict(boxstyle='round', facecolor='yellow', alpha=0.5))
-ax.text(0.75, 0.3, 'Low Auditability\nHigh Transparency', fontsize=10, ha='center',
-        bbox=dict(boxstyle='round', facecolor='orange', alpha=0.5))
-ax.text(0.2, 0.3, 'Low Auditability\nLow Transparency', fontsize=10, ha='center',
-        bbox=dict(boxstyle='round', facecolor='lightcoral', alpha=0.5))
-plt.tight_layout()
-plt.savefig('charts/chart3.png', dpi=100, bbox_inches='tight')
-plt.close()
-
-# ============================================================
-# Chart 4: Heatmap - Technique Effectiveness by Data Type
-# ============================================================
-fig, ax = plt.subplots(figsize=(12, 8))
-im = ax.imshow(eff_matrix, cmap='RdYlGn', aspect='auto', vmin=0, vmax=1)
-ax.set_xticks(np.arange(len(data_types)))
-ax.set_yticks(np.arange(len(techniques)))
-ax.set_xticklabels(data_types, fontsize=12)
-ax.set_yticklabels(techniques, fontsize=12)
-ax.set_title('Verification Technique Effectiveness by Training Data Type', fontsize=15, fontweight='bold')
-plt.colorbar(im, ax=ax, label='Effectiveness Score (0-1)')
-# Annotate values
-for i in range(len(techniques)):
-    for j in range(len(data_types)):
-        text = ax.text(j, i, f'{eff_matrix[i, j]:.2f}', ha='center', va='center', 
-                       fontsize=11, fontweight='bold', color='black')
-plt.tight_layout()
-plt.savefig('charts/chart4.png', dpi=100, bbox_inches='tight')
-plt.close()
-
-# ============================================================
-# Chart 5: Cumulative Verification Coverage
-# ============================================================
-fig, ax = plt.subplots(figsize=(12, 8))
-# Simulate cumulative coverage as more techniques are combined
-techniques_ordered = ['MIA', 'Watermarking', 'Provenance Tags', 'SMI', 'aMINT', 'Cross-Model']
-# Individual coverage
-individual_coverage = [0.35, 0.28, 0.32, 0.41, 0.38, 0.33]
-# Cumulative (with diminishing returns)
-cumulative = []
-covered = 0
-for cov in individual_coverage:
-    covered = covered + (1 - covered) * cov
-    cumulative.append(covered)
-
-x_pos = np.arange(1, len(techniques_ordered) + 1)
-bars = ax.bar(x_pos - 0.2, individual_coverage, 0.4, label='Individual Coverage', color='#2E86AB', alpha=0.85)
-line = ax.plot(x_pos, cumulative, 'o-', color='#C73E1D', linewidth=3, markersize=10, label='Cumulative Coverage')
-ax.set_xticks(x_pos)
-ax.set_xticklabels(techniques_ordered, fontsize=11, rotation=15, ha='right')
-ax.set_xlabel('Verification Technique (Added Sequentially)', fontsize=13)
-ax.set_ylabel('Training Data Coverage (0-1)', fontsize=13)
-ax.set_title('Cumulative Training Data Verification Coverage\nBy Combining Audit Techniques', fontsize=15, fontweight='bold')
-ax.legend(fontsize=11, loc='lower right')
-ax.grid(True, alpha=0.3, axis='y')
-ax.set_ylim(0, 1.0)
-# Add value labels
-for i, (ind, cum) in enumerate(zip(individual_coverage, cumulative)):
-    ax.annotate(f'{ind:.2f}', (x_pos[i] - 0.2, ind + 0.02), ha='center', fontsize=10, fontweight='bold')
-    ax.annotate(f'{cum:.2f}', (x_pos[i], cum + 0.02), ha='center', fontsize=10, fontweight='bold', color='#C73E1D')
-plt.tight_layout()
-plt.savefig('charts/chart5.png', dpi=100, bbox_inches='tight')
-plt.close()
-
-# ============================================================
-# Save results.json
-# ============================================================
-results = {
-    "audit_methods": {
-        "names": audit_methods,
-        "effectiveness": effectiveness.tolist(),
-        "false_positive_rate": false_positive.tolist(),
-        "computational_cost": comp_cost.tolist()
-    },
-    "publication_trends": {
-        "years": years.tolist(),
-        "total_publications": publications.tolist(),
-        "mia_papers": mia_papers.tolist(),
-        "watermark_papers": watermark_papers.tolist(),
-        "provenance_papers": provenance_papers.tolist(),
-        "other_papers": other_papers.tolist()
-    },
-    "model_families": {
-        "names": model_families,
-        "auditability": auditability.tolist(),
-        "transparency": transparency.tolist()
-    },
-    "technique_effectiveness_matrix": {
-        "techniques": techniques,
-        "data_types": data_types,
-        "matrix": eff_matrix.tolist()
-    },
-    "cumulative_coverage": {
-        "techniques": techniques_ordered,
-        "individual_coverage": individual_coverage,
-        "cumulative_coverage": cumulative
-    },
-    "summary_statistics": {
-        "mean_effectiveness": float(np.mean(effectiveness)),
-        "mean_false_positive": float(np.mean(false_positive)),
-        "mean_comp_cost": float(np.mean(comp_cost)),
-        "total_papers_2020_2026": int(np.sum(publications)),
-        "mean_auditability": float(np.mean(auditability)),
-        "mean_transparency": float(np.mean(transparency)),
-        "max_cumulative_coverage": float(cumulative[-1])
-    }
+# ---------------------------------------------------------------- comparisons
+COMPS = {
+    "matched_wikipedia": ("pile_train_wiki", "pile_test_wiki", "Wikipedia: Pile train vs Pile test"),
+    "matched_arxiv": ("pile_train_arxiv", "pile_test_arxiv", "ArXiv: Pile train vs Pile test"),
+    "matched_pilecc": ("pile_train_cc", "pile_test_cc", "Pile-CC: Pile train vs Pile test"),
+    "shift_member_vs_fresh2026": ("pile_train_wiki", "fresh_wiki_2026", "Pile train Wikipedia vs Wikipedia created Oct 2026"),
+    "shift_nonmember_vs_fresh2026": ("pile_test_wiki", "fresh_wiki_2026", "Pile test Wikipedia (non-members) vs Wikipedia created Oct 2026"),
+    "wikimia_64": ("wikimia_64", "wikimia_64", "WikiMIA, 64 words"),
+    "wikimia_128": ("wikimia_128", "wikimia_128", "WikiMIA, 128 words"),
 }
 
-with open('results.json', 'w') as f:
+
+def comp_frame(model, key):
+    p, n, _ = COMPS[key]
+    if key.startswith("wikimia"):
+        d = df[(df.model == model) & (df.set == p)]
+        return d, d.member.values
+    return comparison(model, p, n)
+
+
+YEAR = re.compile(r"\b(1[5-9]\d\d|20\d\d)\b")
+
+
+def latest_year(t):
+    ys = [int(y) for y in YEAR.findall(t) if int(y) <= 2026]
+    return max(ys) if ys else 0
+
+
+def blind_scores(idx, y):
+    tx = [texts[i] for i in idx]
+    pipe = make_pipeline(TfidfVectorizer(ngram_range=(1, 2), min_df=2, sublinear_tf=True),
+                         LogisticRegression(C=1.0, max_iter=2000))
+    cv = StratifiedKFold(5, shuffle=True, random_state=SEED)
+    bow = cross_val_predict(pipe, tx, y, cv=cv, method="predict_proba")[:, 1]
+    yr = np.array([latest_year(t) for t in tx], dtype=float)
+    return bow, yr
+
+
+results = {"environment": env, "settings": {"seed": SEED, "bootstrap": N_BOOT, "dataset_inference_trials": N_TRIALS,
+           "set_sizes": SET_SIZES, "alpha": ALPHA, "max_tokens_scored": 256, "k_fraction": 0.2,
+           "target_model": TARGET}, "counts": {}, "doc_level": {}, "blind": {}}
+for s, g in df[df.model == TARGET].groupby("set"):
+    results["counts"][s] = {"n": int(len(g)), "members": int(g.member.sum()),
+                            "median_tokens": float(g.n_tokens.median())}
+
+for key in COMPS:
+    results["doc_level"][key] = {"label": COMPS[key][2]}
+    for m in MODELS:
+        d, y = comp_frame(m, key)
+        row = {}
+        for a, (_, sign) in ATTACKS.items():
+            auc, lo, hi = auc_ci(y, sign * d[a].values)
+            row[a] = {"auc": round(auc, 4), "ci95": [round(lo, 4), round(hi, 4)],
+                      "tpr_at_1pct_fpr": round(tpr_at(y, sign * d[a].values), 4)}
+        best = max(row, key=lambda k: row[k]["auc"])
+        row["best_attack"] = best
+        results["doc_level"][key][m] = row
+    d, y = comp_frame(TARGET, key)
+    bow, yr = blind_scores(d.doc.values, y)
+    zl = -d.zlib_bytes_per_char.values  # model-free compressibility
+    results["blind"][key] = {}
+    for name, s in [("bag_of_words_cv", bow), ("latest_year_mentioned", yr), ("compressibility", zl)]:
+        auc, lo, hi = auc_ci(y, s)
+        # orientation-free for the single-feature baselines: an auditor would pick the better sign
+        if name != "bag_of_words_cv" and auc < 0.5:
+            auc, lo, hi = 1 - auc, 1 - hi, 1 - lo
+        results["blind"][key][name] = {"auc": round(auc, 4), "ci95": [round(lo, 4), round(hi, 4)]}
+
+# ---------------------------------------------------------------- dataset inference (RQ3)
+FEATS = list(ATTACKS)
+
+
+def feat(set_name):
+    d = df[(df.model == TARGET) & (df.set == set_name)]
+    X = d[FEATS].values * np.array([ATTACKS[a][1] for a in FEATS])
+    return X
+
+
+def di_test(S, V, r):
+    """Maini et al.-style dataset inference: learn a weighting of MIA features on
+    one half, t-test suspect > validation on the other half."""
+    iS, iV = r.permutation(len(S)), r.permutation(len(V))
+    hS, hV = len(S) // 2, len(V) // 2
+    A = np.vstack([S[iS[:hS]], V[iV[:hV]]])
+    ya = np.r_[np.ones(hS), np.zeros(hV)]
+    sc = StandardScaler().fit(A)
+    clf = LogisticRegression(max_iter=1000).fit(sc.transform(A), ya)
+    sS = clf.decision_function(sc.transform(S[iS[hS:]]))
+    sV = clf.decision_function(sc.transform(V[iV[hV:]]))
+    t, p = stats.ttest_ind(sS, sV, equal_var=False, alternative="greater")
+    return p
+
+
+def run_di(member_set, nonmember_set, n, r, h1=True, shifted_val=None):
+    M, N = feat(member_set), feat(nonmember_set)
+    rej, ps = 0, []
+    for _ in range(N_TRIALS):
+        if shifted_val is not None:
+            Vp = feat(shifted_val)
+            V = Vp[r.choice(len(Vp), n, replace=False)]
+            src = M if h1 else N
+            S = src[r.choice(len(src), n, replace=False)]
+        else:
+            perm = r.permutation(len(N))
+            V = N[perm[:n]]
+            S = M[r.choice(len(M), n, replace=False)] if h1 else N[perm[n:2 * n]]
+        p = di_test(S, V, r)
+        ps.append(p)
+        rej += p < ALPHA
+    return round(rej / N_TRIALS, 4), round(float(np.median(ps)), 4)
+
+
+results["dataset_inference"] = {}
+r = np.random.default_rng(SEED)
+for dom, key in [("wikipedia", "wiki"), ("arxiv", "arxiv"), ("pilecc", "cc")]:
+    out = {"power": {}, "false_positive_rate": {}, "median_p_h1": {}, "median_p_h0": {}}
+    for n in SET_SIZES:
+        pw, mp1 = run_di(f"pile_train_{key}", f"pile_test_{key}", n, r, h1=True)
+        fp, mp0 = run_di(f"pile_train_{key}", f"pile_test_{key}", n, r, h1=False)
+        out["power"][str(n)], out["median_p_h1"][str(n)] = pw, mp1
+        out["false_positive_rate"][str(n)], out["median_p_h0"][str(n)] = fp, mp0
+    results["dataset_inference"][f"matched_{dom}"] = out
+out = {"power": {}, "false_positive_rate": {}}
+for n in SET_SIZES:
+    out["power"][str(n)] = run_di("pile_train_wiki", "pile_test_wiki", n, r, h1=True, shifted_val="fresh_wiki_2026")[0]
+    out["false_positive_rate"][str(n)] = run_di("pile_train_wiki", "pile_test_wiki", n, r, h1=False, shifted_val="fresh_wiki_2026")[0]
+results["dataset_inference"]["shifted_validation_wikipedia"] = out
+
+# ---------------------------------------------------------------- headline summaries
+dl = results["doc_level"]
+matched = ["matched_wikipedia", "matched_arxiv", "matched_pilecc"]
+summ = {}
+summ["matched_best_auc_410m"] = {k: dl[k][TARGET][dl[k][TARGET]["best_attack"]]["auc"] for k in matched}
+summ["matched_mean_auc_410m_by_attack"] = {a: round(float(np.mean([dl[k][TARGET][a]["auc"] for k in matched])), 4) for a in ATTACKS}
+summ["matched_max_auc_any_model_attack"] = round(float(max(dl[k][m][a]["auc"] for k in matched for m in MODELS for a in ATTACKS)), 4)
+summ["matched_mean_best_auc_by_model"] = {m: round(float(np.mean([max(dl[k][m][a]["auc"] for a in ATTACKS) for k in matched])), 4) for m in MODELS}
+summ["shift_best_auc_by_model"] = {k: {m: dl[k][m][dl[k][m]["best_attack"]]["auc"] for m in MODELS}
+                                   for k in ["shift_member_vs_fresh2026", "shift_nonmember_vs_fresh2026", "wikimia_64", "wikimia_128"]}
+summ["inflation_points_410m"] = round(dl["shift_member_vs_fresh2026"][TARGET][dl["shift_member_vs_fresh2026"][TARGET]["best_attack"]]["auc"]
+                                      - summ["matched_best_auc_410m"]["matched_wikipedia"], 4)
+results["summary"] = summ
+
+with open(os.path.join(HERE, "results.json"), "w") as f:
     json.dump(results, f, indent=2)
 
-print("Analysis complete. Generated charts:")
-for i in range(1, 6):
-    path = f'charts/chart{i}.png'
-    if os.path.exists(path):
-        size = os.path.getsize(path)
-        print(f"  {path} ({size} bytes)")
-print("  results.json")
+
+def has_null(o):
+    if o is None or (isinstance(o, float) and np.isnan(o)):
+        return True
+    if isinstance(o, dict):
+        return any(has_null(v) for v in o.values())
+    if isinstance(o, list):
+        return any(has_null(v) for v in o)
+    return False
+
+
+assert not has_null(results), "results.json contains nulls"
+
+# ---------------------------------------------------------------- charts
+def finish(fig, ax, title, fname):
+    ax.set_title(title, loc="left", fontsize=14, color=INK, pad=14)
+    fig.text(0.01, 0.01, SRC, fontsize=8, color=MID)
+    fig.tight_layout(rect=(0, 0.04, 1, 1))
+    fig.savefig(os.path.join(CH, fname), dpi=160)
+    plt.close(fig)
+
+
+# chart1: matched AUC per attack and domain (410m) with CI
+fig, ax = plt.subplots(figsize=(10, 5.6))
+shades = [INK, MID, LIGHT, "#eeeeee"]
+hatches = ["", "", "", "//"]
+w = 0.2
+x = np.arange(len(matched))
+for j, (a, (lab, _)) in enumerate(ATTACKS.items()):
+    v = [dl[k][TARGET][a]["auc"] for k in matched]
+    lo = [v[i] - dl[k][TARGET][a]["ci95"][0] for i, k in enumerate(matched)]
+    hi = [dl[k][TARGET][a]["ci95"][1] - v[i] for i, k in enumerate(matched)]
+    ax.bar(x + (j - 1.5) * w, v, w * 0.9, color=shades[j], edgecolor=MID, hatch=hatches[j], label=lab,
+           yerr=[lo, hi], error_kw={"ecolor": MID, "capsize": 3, "lw": 1})
+ax.axhline(0.5, color=RED, lw=1.5, ls="--")
+ax.text(-0.45, 0.403, "dashed line: random guess = 0.5", color=RED, ha="left", va="bottom", fontsize=9)
+ax.set_xticks(x, ["Wikipedia", "ArXiv", "Pile-CC"])
+ax.set_ylim(0.4, 0.7)
+ax.set_ylabel("ROC AUC (95% bootstrap CI)")
+ax.yaxis.grid(True, color=RULE, lw=0.8); ax.set_axisbelow(True)
+ax.legend(frameon=False, ncol=4, loc="upper left", fontsize=9)
+finish(fig, ax, "Matched members vs non-members: Pythia-410M, 400 vs 400 documents per domain", "chart1.png")
+
+# chart2: shift inflation, best MIA vs blind baselines
+keys2 = ["matched_wikipedia", "shift_member_vs_fresh2026", "shift_nonmember_vs_fresh2026", "wikimia_64", "wikimia_128"]
+labs2 = ["Matched\nPile train vs test", "Pile train vs\nfresh 2026", "Pile TEST vs\nfresh 2026\n(no members)", "WikiMIA\n64 words", "WikiMIA\n128 words"]
+fig, ax = plt.subplots(figsize=(10, 5.6))
+x = np.arange(len(keys2))
+mia = [dl[k][TARGET][dl[k][TARGET]["best_attack"]]["auc"] for k in keys2]
+bow = [results["blind"][k]["bag_of_words_cv"]["auc"] for k in keys2]
+yr = [results["blind"][k]["latest_year_mentioned"]["auc"] for k in keys2]
+ax.bar(x - 0.27, mia, 0.25, color=INK, label="Best MIA on Pythia-410M")
+ax.bar(x, bow, 0.25, color=LIGHT, edgecolor=MID, label="Blind: bag-of-words classifier (no model)")
+ax.bar(x + 0.27, yr, 0.25, color="#eeeeee", edgecolor=MID, hatch="//", label="Blind: latest year in text (no model)")
+for i in range(len(keys2)):
+    ax.text(x[i] - 0.27, mia[i] + 0.01, f"{mia[i]:.2f}", ha="center", fontsize=9, color=INK)
+    ax.text(x[i], bow[i] + 0.01, f"{bow[i]:.2f}", ha="center", fontsize=9, color=INK)
+ax.axhline(0.5, color=RED, lw=1.5, ls="--")
+ax.set_xticks(x, labs2, fontsize=9)
+ax.set_ylim(0.3, 1.22)
+ax.set_yticks(np.arange(0.3, 1.01, 0.1))
+ax.set_ylabel("ROC AUC")
+ax.yaxis.grid(True, color=RULE, lw=0.8); ax.set_axisbelow(True)
+ax.legend(frameon=False, loc="upper left", fontsize=9, ncol=3)
+finish(fig, ax, "Date-shifted non-member sets: the model is not needed to score high", "chart2.png")
+
+# chart3: AUC vs model size, matched vs shifted
+params = {m: env["models"]["EleutherAI/" + m]["params"] / 1e6 for m in MODELS}
+fig, ax = plt.subplots(figsize=(10, 5.6))
+series = [("Matched, mean of 3 domains (best attack)", [summ["matched_mean_best_auc_by_model"][m] for m in MODELS], INK, "o", "-"),
+          ("Pile train vs fresh 2026 Wikipedia", [summ["shift_best_auc_by_model"]["shift_member_vs_fresh2026"][m] for m in MODELS], MID, "s", "-"),
+          ("Pile test vs fresh 2026 (no members)", [summ["shift_best_auc_by_model"]["shift_nonmember_vs_fresh2026"][m] for m in MODELS], MID, "^", "--"),
+          ("WikiMIA, 64 words", [summ["shift_best_auc_by_model"]["wikimia_64"][m] for m in MODELS], LIGHT, "D", "-")]
+xs = [params[m] for m in MODELS]
+for lab, v, c, mk, ls in series:
+    ax.plot(xs, v, color=c, marker=mk, ms=8, lw=2, ls=ls, label=lab)
+    dy = {"s": 0.012, "^": -0.012}.get(mk, 0)
+    ax.text(xs[-1] * 1.06, v[-1] + dy, f"{v[-1]:.2f}", va="center", fontsize=9, color=INK)
+ax.axhline(0.5, color=RED, lw=1.5, ls="--")
+ax.set_xscale("log")
+ax.set_xticks(xs, [f"Pythia-{m.split('-')[1].upper()}\n({p:.1f}M parameters)" for m, p in zip(MODELS, xs)])
+ax.minorticks_off()
+ax.set_xlim(xs[0] * 0.8, xs[-1] * 1.4)
+ax.set_ylim(0.4, 1.0)
+ax.set_ylabel("ROC AUC, best of 4 attacks")
+ax.yaxis.grid(True, color=RULE, lw=0.8); ax.set_axisbelow(True)
+ax.legend(frameon=False, loc="upper left", fontsize=9)
+finish(fig, ax, "Model size moves matched AUC little; the shift gap stays", "chart3.png")
+
+# chart4: dataset inference power / FPR vs n
+fig, ax = plt.subplots(figsize=(10, 5.6))
+di = results["dataset_inference"]
+for dom, lab, c, mk in [("matched_wikipedia", "Wikipedia", INK, "o"), ("matched_arxiv", "ArXiv", MID, "s"), ("matched_pilecc", "Pile-CC", LIGHT, "D")]:
+    ax.plot(SET_SIZES, [di[dom]["power"][str(n)] for n in SET_SIZES], color=c, marker=mk, ms=8, lw=2, label=f"Power, matched validation: {lab}")
+    ax.plot(SET_SIZES, [di[dom]["false_positive_rate"][str(n)] for n in SET_SIZES], color=c, marker=mk, ms=6, lw=1.2, ls=":", label=f"False positives, matched: {lab}")
+ax.plot(SET_SIZES, [di["shifted_validation_wikipedia"]["power"][str(n)] for n in SET_SIZES], color=RED, marker="o", ms=6, lw=1.2, ls="--",
+        label="Power, 2026 validation set (Wikipedia)")
+ax.plot(SET_SIZES, [di["shifted_validation_wikipedia"]["false_positive_rate"][str(n)] for n in SET_SIZES], color=RED, marker="x", ms=9, lw=2,
+        label="False positives, 2026 validation set (Wikipedia)")
+ax.axhline(ALPHA, color=GREEN, lw=1.2, ls="--")
+ax.text(SET_SIZES[-1], ALPHA + 0.015, "nominal alpha = 0.05", color=GREEN, ha="right", fontsize=9)
+ax.set_xlabel("Documents in suspect set and in validation set (each)")
+ax.set_ylabel("Share of 500 trials with p < 0.05")
+ax.set_ylim(-0.02, 1.05)
+ax.yaxis.grid(True, color=RULE, lw=0.8); ax.set_axisbelow(True)
+ax.legend(frameon=False, fontsize=8, loc="center right")
+finish(fig, ax, "Set-level dataset inference on Pythia-410M: power, and false accusations", "chart4.png")
+
+print(json.dumps(results["summary"], indent=2))
+print(json.dumps({k: v for k, v in results["blind"].items()}, indent=1))
+print(json.dumps(results["dataset_inference"], indent=1))

@@ -1,0 +1,21 @@
+{
+  "python": "3.12.3",
+  "torch": "2.14.1+cpu",
+  "cpu": "x86_64",
+  "threads": 6,
+  "models": {
+    "EleutherAI/pythia-70m": {
+      "seconds": 493.9,
+      "params": 70426624
+    },
+    "EleutherAI/pythia-160m": {
+      "seconds": 923.0,
+      "params": 162322944
+    },
+    "EleutherAI/pythia-410m": {
+      "seconds": 2100.3,
+      "params": 405334016
+    }
+  },
+  "transformers": "5.20.2"
+}

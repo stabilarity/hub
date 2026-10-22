@@ -1,235 +1,1157 @@
 {
-  "audit_methods": {
-    "names": [
-      "Membership Inference\nAttacks (MIA)",
-      "Watermark\nDetection",
-      "Data Provenance\nVerification",
-      "Statistical\nMembership Inference (SMI)",
-      "Active Membership\nInference Test (aMINT)",
-      "Cross-Model\nAuditing",
-      "First-Principles\nVerification",
-      "Inference\nAttestation"
-    ],
-    "effectiveness": [
-      0.6865660495705318,
-      0.5252019072511406,
-      0.7400541434967749,
-      0.7628677659669457,
-      0.4158757773615397,
-      0.4937384591765218,
-      0.6653408483800742,
-      0.6120508889187701
-    ],
-    "false_positive_rate": [
-      0.1486559073996569,
-      0.08175648579411358,
-      0.2203518379890263,
-      0.21222335483431587,
-      0.15528245580489727,
-      0.24017929655744263,
-      0.18740074738016366,
-      0.08125660296934094
-    ],
-    "computational_cost": [
-      6.237501568164998,
-      3.582234798342002,
-      7.256900602614545,
-      5.400148178027494,
-      5.130275272909479,
-      4.138140911192117,
-      7.9450826773480605,
-      5.190941035862395
-    ]
+  "environment": {
+    "python": "3.12.3",
+    "torch": "2.14.1+cpu",
+    "cpu": "x86_64",
+    "threads": 6,
+    "models": {
+      "EleutherAI/pythia-70m": {
+        "seconds": 493.9,
+        "params": 70426624
+      },
+      "EleutherAI/pythia-160m": {
+        "seconds": 923.0,
+        "params": 162322944
+      },
+      "EleutherAI/pythia-410m": {
+        "seconds": 2100.3,
+        "params": 405334016
+      }
+    },
+    "transformers": "5.20.2"
   },
-  "publication_trends": {
-    "years": [
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
+  "settings": {
+    "seed": 20261021,
+    "bootstrap": 1000,
+    "dataset_inference_trials": 500,
+    "set_sizes": [
+      25,
+      50,
+      100,
+      150,
+      200
     ],
-    "total_publications": [
-      3,
-      5,
-      9,
-      15,
-      28,
-      42,
-      62
-    ],
-    "mia_papers": [
-      2,
-      3,
-      5,
-      8,
-      12,
-      18,
-      22
-    ],
-    "watermark_papers": [
-      0,
-      1,
-      2,
-      4,
-      7,
-      10,
-      13
-    ],
-    "provenance_papers": [
-      1,
-      1,
-      2,
-      3,
-      6,
-      10,
-      15
-    ],
-    "other_papers": [
-      0,
-      0,
-      0,
-      0,
-      3,
-      4,
-      12
-    ]
+    "alpha": 0.05,
+    "max_tokens_scored": 256,
+    "k_fraction": 0.2,
+    "target_model": "pythia-410m"
   },
-  "model_families": {
-    "names": [
-      "Llama\nFamily",
-      "Mistral\nFamily",
-      "Falcon\nFamily",
-      "Pythia\nFamily",
-      "BLOOM\nFamily",
-      "GPT-J\nVariants",
-      "Open-LLaMA\nVariants",
-      "StableLM\nFamily"
-    ],
-    "auditability": [
-      0.4890377475423077,
-      0.47316359063926944,
-      0.4279340907628184,
-      0.6423969133863244,
-      0.7193458439081337,
-      0.5329078813517688,
-      0.42397652845562084,
-      0.4263278176463141
-    ],
-    "transparency": [
-      0.5671067018084462,
-      0.5837857508166197,
-      0.5477677682949351,
-      0.33020825268803505,
-      0.4917890381520096,
-      0.4710034456453311,
-      0.48936394741122236,
-      0.6068571800306741
-    ]
+  "counts": {
+    "fresh_wiki_2026": {
+      "n": 400,
+      "members": 0,
+      "median_tokens": 256.0
+    },
+    "pile_test_arxiv": {
+      "n": 400,
+      "members": 0,
+      "median_tokens": 256.0
+    },
+    "pile_test_cc": {
+      "n": 400,
+      "members": 0,
+      "median_tokens": 256.0
+    },
+    "pile_test_wiki": {
+      "n": 400,
+      "members": 0,
+      "median_tokens": 256.0
+    },
+    "pile_train_arxiv": {
+      "n": 400,
+      "members": 400,
+      "median_tokens": 256.0
+    },
+    "pile_train_cc": {
+      "n": 400,
+      "members": 400,
+      "median_tokens": 256.0
+    },
+    "pile_train_wiki": {
+      "n": 400,
+      "members": 400,
+      "median_tokens": 256.0
+    },
+    "wikimia_128": {
+      "n": 250,
+      "members": 139,
+      "median_tokens": 169.0
+    },
+    "wikimia_64": {
+      "n": 542,
+      "members": 284,
+      "median_tokens": 85.0
+    }
   },
-  "technique_effectiveness_matrix": {
-    "techniques": [
-      "MIA",
-      "Watermarking",
-      "Provenance\nTags",
-      "SMI",
-      "aMINT",
-      "Cross-Model"
-    ],
-    "data_types": [
-      "Web\nCrawl",
-      "Code\nRepositories",
-      "Academic\nPapers",
-      "Books\n& Literature",
-      "Synthetic\nData",
-      "Private\nData"
-    ],
-    "matrix": [
-      [
-        0.85,
-        0.8,
-        0.5135158138977783,
-        0.5578238797379969,
-        0.6262576451677081,
-        0.20856883602886672
-      ],
-      [
-        0.43606575672853976,
-        0.4059254691414409,
-        0.37222443035133157,
-        0.44497154975466324,
-        0.9,
-        0.32683377686135134
-      ],
-      [
-        0.6936556709182962,
-        0.16342604567683905,
-        0.88,
-        0.85,
-        0.6172444662718557,
-        0.642245315958571
-      ],
-      [
-        0.6586694470399851,
-        0.4302549855503125,
-        0.4075296414670866,
-        0.6715951762514307,
-        0.461739135023677,
-        0.2448627353324156
-      ],
-      [
-        0.2733425571993039,
-        0.31610954279967773,
-        0.5994321488107528,
-        0.528485147214113,
-        0.6380970708135536,
-        0.41454947073269316
-      ],
-      [
-        0.5317079382153429,
-        0.6251180787934674,
-        0.43813069205595234,
-        0.5913550475114823,
-        0.36761481178666977,
-        0.42738923068698564
-      ]
-    ]
+  "doc_level": {
+    "matched_wikipedia": {
+      "label": "Wikipedia: Pile train vs Pile test",
+      "pythia-70m": {
+        "loss": {
+          "auc": 0.5221,
+          "ci95": [
+            0.479,
+            0.5626
+          ],
+          "tpr_at_1pct_fpr": 0.0075
+        },
+        "zlib_ratio": {
+          "auc": 0.5247,
+          "ci95": [
+            0.4821,
+            0.5633
+          ],
+          "tpr_at_1pct_fpr": 0.005
+        },
+        "mink": {
+          "auc": 0.519,
+          "ci95": [
+            0.4766,
+            0.5598
+          ],
+          "tpr_at_1pct_fpr": 0.0025
+        },
+        "minkpp": {
+          "auc": 0.4855,
+          "ci95": [
+            0.4442,
+            0.5246
+          ],
+          "tpr_at_1pct_fpr": 0.015
+        },
+        "best_attack": "zlib_ratio"
+      },
+      "pythia-160m": {
+        "loss": {
+          "auc": 0.5223,
+          "ci95": [
+            0.4811,
+            0.5627
+          ],
+          "tpr_at_1pct_fpr": 0.0
+        },
+        "zlib_ratio": {
+          "auc": 0.5206,
+          "ci95": [
+            0.4773,
+            0.5599
+          ],
+          "tpr_at_1pct_fpr": 0.005
+        },
+        "mink": {
+          "auc": 0.53,
+          "ci95": [
+            0.4888,
+            0.5686
+          ],
+          "tpr_at_1pct_fpr": 0.0025
+        },
+        "minkpp": {
+          "auc": 0.507,
+          "ci95": [
+            0.4681,
+            0.5463
+          ],
+          "tpr_at_1pct_fpr": 0.0075
+        },
+        "best_attack": "mink"
+      },
+      "pythia-410m": {
+        "loss": {
+          "auc": 0.5118,
+          "ci95": [
+            0.4735,
+            0.5526
+          ],
+          "tpr_at_1pct_fpr": 0.0025
+        },
+        "zlib_ratio": {
+          "auc": 0.5099,
+          "ci95": [
+            0.4695,
+            0.549
+          ],
+          "tpr_at_1pct_fpr": 0.0025
+        },
+        "mink": {
+          "auc": 0.5153,
+          "ci95": [
+            0.4764,
+            0.5569
+          ],
+          "tpr_at_1pct_fpr": 0.005
+        },
+        "minkpp": {
+          "auc": 0.4945,
+          "ci95": [
+            0.4565,
+            0.5366
+          ],
+          "tpr_at_1pct_fpr": 0.0125
+        },
+        "best_attack": "mink"
+      }
+    },
+    "matched_arxiv": {
+      "label": "ArXiv: Pile train vs Pile test",
+      "pythia-70m": {
+        "loss": {
+          "auc": 0.4736,
+          "ci95": [
+            0.4357,
+            0.5122
+          ],
+          "tpr_at_1pct_fpr": 0.0075
+        },
+        "zlib_ratio": {
+          "auc": 0.4859,
+          "ci95": [
+            0.444,
+            0.529
+          ],
+          "tpr_at_1pct_fpr": 0.01
+        },
+        "mink": {
+          "auc": 0.4726,
+          "ci95": [
+            0.4322,
+            0.513
+          ],
+          "tpr_at_1pct_fpr": 0.005
+        },
+        "minkpp": {
+          "auc": 0.49,
+          "ci95": [
+            0.4506,
+            0.5311
+          ],
+          "tpr_at_1pct_fpr": 0.005
+        },
+        "best_attack": "minkpp"
+      },
+      "pythia-160m": {
+        "loss": {
+          "auc": 0.4838,
+          "ci95": [
+            0.4442,
+            0.5213
+          ],
+          "tpr_at_1pct_fpr": 0.0025
+        },
+        "zlib_ratio": {
+          "auc": 0.4936,
+          "ci95": [
+            0.4514,
+            0.5352
+          ],
+          "tpr_at_1pct_fpr": 0.0075
+        },
+        "mink": {
+          "auc": 0.4916,
+          "ci95": [
+            0.4503,
+            0.5304
+          ],
+          "tpr_at_1pct_fpr": 0.005
+        },
+        "minkpp": {
+          "auc": 0.504,
+          "ci95": [
+            0.4642,
+            0.544
+          ],
+          "tpr_at_1pct_fpr": 0.0075
+        },
+        "best_attack": "minkpp"
+      },
+      "pythia-410m": {
+        "loss": {
+          "auc": 0.4872,
+          "ci95": [
+            0.4472,
+            0.5238
+          ],
+          "tpr_at_1pct_fpr": 0.0025
+        },
+        "zlib_ratio": {
+          "auc": 0.503,
+          "ci95": [
+            0.4627,
+            0.5439
+          ],
+          "tpr_at_1pct_fpr": 0.0075
+        },
+        "mink": {
+          "auc": 0.4973,
+          "ci95": [
+            0.4551,
+            0.5372
+          ],
+          "tpr_at_1pct_fpr": 0.0025
+        },
+        "minkpp": {
+          "auc": 0.4972,
+          "ci95": [
+            0.4571,
+            0.536
+          ],
+          "tpr_at_1pct_fpr": 0.01
+        },
+        "best_attack": "zlib_ratio"
+      }
+    },
+    "matched_pilecc": {
+      "label": "Pile-CC: Pile train vs Pile test",
+      "pythia-70m": {
+        "loss": {
+          "auc": 0.4794,
+          "ci95": [
+            0.4376,
+            0.5193
+          ],
+          "tpr_at_1pct_fpr": 0.0025
+        },
+        "zlib_ratio": {
+          "auc": 0.5021,
+          "ci95": [
+            0.4614,
+            0.5385
+          ],
+          "tpr_at_1pct_fpr": 0.02
+        },
+        "mink": {
+          "auc": 0.4725,
+          "ci95": [
+            0.4289,
+            0.5124
+          ],
+          "tpr_at_1pct_fpr": 0.0025
+        },
+        "minkpp": {
+          "auc": 0.4516,
+          "ci95": [
+            0.4103,
+            0.4895
+          ],
+          "tpr_at_1pct_fpr": 0.0
+        },
+        "best_attack": "zlib_ratio"
+      },
+      "pythia-160m": {
+        "loss": {
+          "auc": 0.4835,
+          "ci95": [
+            0.4426,
+            0.5252
+          ],
+          "tpr_at_1pct_fpr": 0.005
+        },
+        "zlib_ratio": {
+          "auc": 0.502,
+          "ci95": [
+            0.461,
+            0.5375
+          ],
+          "tpr_at_1pct_fpr": 0.01
+        },
+        "mink": {
+          "auc": 0.4666,
+          "ci95": [
+            0.4257,
+            0.5058
+          ],
+          "tpr_at_1pct_fpr": 0.005
+        },
+        "minkpp": {
+          "auc": 0.4608,
+          "ci95": [
+            0.42,
+            0.4976
+          ],
+          "tpr_at_1pct_fpr": 0.0025
+        },
+        "best_attack": "zlib_ratio"
+      },
+      "pythia-410m": {
+        "loss": {
+          "auc": 0.4904,
+          "ci95": [
+            0.4513,
+            0.531
+          ],
+          "tpr_at_1pct_fpr": 0.005
+        },
+        "zlib_ratio": {
+          "auc": 0.5059,
+          "ci95": [
+            0.4643,
+            0.5419
+          ],
+          "tpr_at_1pct_fpr": 0.0
+        },
+        "mink": {
+          "auc": 0.4736,
+          "ci95": [
+            0.4339,
+            0.5138
+          ],
+          "tpr_at_1pct_fpr": 0.0
+        },
+        "minkpp": {
+          "auc": 0.4607,
+          "ci95": [
+            0.4207,
+            0.5017
+          ],
+          "tpr_at_1pct_fpr": 0.005
+        },
+        "best_attack": "zlib_ratio"
+      }
+    },
+    "shift_member_vs_fresh2026": {
+      "label": "Pile train Wikipedia vs Wikipedia created Oct 2026",
+      "pythia-70m": {
+        "loss": {
+          "auc": 0.5191,
+          "ci95": [
+            0.4783,
+            0.5604
+          ],
+          "tpr_at_1pct_fpr": 0.015
+        },
+        "zlib_ratio": {
+          "auc": 0.5433,
+          "ci95": [
+            0.5027,
+            0.5833
+          ],
+          "tpr_at_1pct_fpr": 0.0225
+        },
+        "mink": {
+          "auc": 0.5255,
+          "ci95": [
+            0.4853,
+            0.5672
+          ],
+          "tpr_at_1pct_fpr": 0.0125
+        },
+        "minkpp": {
+          "auc": 0.6235,
+          "ci95": [
+            0.5816,
+            0.6626
+          ],
+          "tpr_at_1pct_fpr": 0.015
+        },
+        "best_attack": "minkpp"
+      },
+      "pythia-160m": {
+        "loss": {
+          "auc": 0.5215,
+          "ci95": [
+            0.4821,
+            0.5622
+          ],
+          "tpr_at_1pct_fpr": 0.02
+        },
+        "zlib_ratio": {
+          "auc": 0.5438,
+          "ci95": [
+            0.504,
+            0.5833
+          ],
+          "tpr_at_1pct_fpr": 0.03
+        },
+        "mink": {
+          "auc": 0.5343,
+          "ci95": [
+            0.4936,
+            0.5754
+          ],
+          "tpr_at_1pct_fpr": 0.0075
+        },
+        "minkpp": {
+          "auc": 0.6161,
+          "ci95": [
+            0.5764,
+            0.6574
+          ],
+          "tpr_at_1pct_fpr": 0.02
+        },
+        "best_attack": "minkpp"
+      },
+      "pythia-410m": {
+        "loss": {
+          "auc": 0.5267,
+          "ci95": [
+            0.4859,
+            0.5659
+          ],
+          "tpr_at_1pct_fpr": 0.0375
+        },
+        "zlib_ratio": {
+          "auc": 0.5478,
+          "ci95": [
+            0.5069,
+            0.5874
+          ],
+          "tpr_at_1pct_fpr": 0.05
+        },
+        "mink": {
+          "auc": 0.545,
+          "ci95": [
+            0.5047,
+            0.5837
+          ],
+          "tpr_at_1pct_fpr": 0.03
+        },
+        "minkpp": {
+          "auc": 0.6675,
+          "ci95": [
+            0.6293,
+            0.7038
+          ],
+          "tpr_at_1pct_fpr": 0.0425
+        },
+        "best_attack": "minkpp"
+      }
+    },
+    "shift_nonmember_vs_fresh2026": {
+      "label": "Pile test Wikipedia (non-members) vs Wikipedia created Oct 2026",
+      "pythia-70m": {
+        "loss": {
+          "auc": 0.497,
+          "ci95": [
+            0.457,
+            0.5394
+          ],
+          "tpr_at_1pct_fpr": 0.03
+        },
+        "zlib_ratio": {
+          "auc": 0.5177,
+          "ci95": [
+            0.4764,
+            0.5592
+          ],
+          "tpr_at_1pct_fpr": 0.0325
+        },
+        "mink": {
+          "auc": 0.5063,
+          "ci95": [
+            0.4652,
+            0.5495
+          ],
+          "tpr_at_1pct_fpr": 0.0225
+        },
+        "minkpp": {
+          "auc": 0.6304,
+          "ci95": [
+            0.5906,
+            0.6697
+          ],
+          "tpr_at_1pct_fpr": 0.0175
+        },
+        "best_attack": "minkpp"
+      },
+      "pythia-160m": {
+        "loss": {
+          "auc": 0.4996,
+          "ci95": [
+            0.4588,
+            0.5412
+          ],
+          "tpr_at_1pct_fpr": 0.035
+        },
+        "zlib_ratio": {
+          "auc": 0.5238,
+          "ci95": [
+            0.4834,
+            0.5652
+          ],
+          "tpr_at_1pct_fpr": 0.03
+        },
+        "mink": {
+          "auc": 0.5045,
+          "ci95": [
+            0.4642,
+            0.5469
+          ],
+          "tpr_at_1pct_fpr": 0.0275
+        },
+        "minkpp": {
+          "auc": 0.6046,
+          "ci95": [
+            0.5654,
+            0.6459
+          ],
+          "tpr_at_1pct_fpr": 0.03
+        },
+        "best_attack": "minkpp"
+      },
+      "pythia-410m": {
+        "loss": {
+          "auc": 0.5151,
+          "ci95": [
+            0.4763,
+            0.5549
+          ],
+          "tpr_at_1pct_fpr": 0.0425
+        },
+        "zlib_ratio": {
+          "auc": 0.5368,
+          "ci95": [
+            0.4953,
+            0.5762
+          ],
+          "tpr_at_1pct_fpr": 0.05
+        },
+        "mink": {
+          "auc": 0.5302,
+          "ci95": [
+            0.4895,
+            0.5702
+          ],
+          "tpr_at_1pct_fpr": 0.0425
+        },
+        "minkpp": {
+          "auc": 0.6669,
+          "ci95": [
+            0.6294,
+            0.7066
+          ],
+          "tpr_at_1pct_fpr": 0.0375
+        },
+        "best_attack": "minkpp"
+      }
+    },
+    "wikimia_64": {
+      "label": "WikiMIA, 64 words",
+      "pythia-70m": {
+        "loss": {
+          "auc": 0.5067,
+          "ci95": [
+            0.4568,
+            0.5542
+          ],
+          "tpr_at_1pct_fpr": 0.007
+        },
+        "zlib_ratio": {
+          "auc": 0.551,
+          "ci95": [
+            0.501,
+            0.5986
+          ],
+          "tpr_at_1pct_fpr": 0.0423
+        },
+        "mink": {
+          "auc": 0.5219,
+          "ci95": [
+            0.4734,
+            0.5735
+          ],
+          "tpr_at_1pct_fpr": 0.0035
+        },
+        "minkpp": {
+          "auc": 0.5511,
+          "ci95": [
+            0.4992,
+            0.5979
+          ],
+          "tpr_at_1pct_fpr": 0.0211
+        },
+        "best_attack": "minkpp"
+      },
+      "pythia-160m": {
+        "loss": {
+          "auc": 0.5232,
+          "ci95": [
+            0.4739,
+            0.5687
+          ],
+          "tpr_at_1pct_fpr": 0.0035
+        },
+        "zlib_ratio": {
+          "auc": 0.5638,
+          "ci95": [
+            0.5147,
+            0.6095
+          ],
+          "tpr_at_1pct_fpr": 0.0211
+        },
+        "mink": {
+          "auc": 0.5403,
+          "ci95": [
+            0.4925,
+            0.5884
+          ],
+          "tpr_at_1pct_fpr": 0.0035
+        },
+        "minkpp": {
+          "auc": 0.5708,
+          "ci95": [
+            0.5226,
+            0.6157
+          ],
+          "tpr_at_1pct_fpr": 0.0106
+        },
+        "best_attack": "minkpp"
+      },
+      "pythia-410m": {
+        "loss": {
+          "auc": 0.5499,
+          "ci95": [
+            0.5008,
+            0.5955
+          ],
+          "tpr_at_1pct_fpr": 0.0211
+        },
+        "zlib_ratio": {
+          "auc": 0.593,
+          "ci95": [
+            0.5431,
+            0.6402
+          ],
+          "tpr_at_1pct_fpr": 0.0563
+        },
+        "mink": {
+          "auc": 0.5611,
+          "ci95": [
+            0.5128,
+            0.6107
+          ],
+          "tpr_at_1pct_fpr": 0.0246
+        },
+        "minkpp": {
+          "auc": 0.6119,
+          "ci95": [
+            0.56,
+            0.6599
+          ],
+          "tpr_at_1pct_fpr": 0.0387
+        },
+        "best_attack": "minkpp"
+      }
+    },
+    "wikimia_128": {
+      "label": "WikiMIA, 128 words",
+      "pythia-70m": {
+        "loss": {
+          "auc": 0.5584,
+          "ci95": [
+            0.4835,
+            0.6319
+          ],
+          "tpr_at_1pct_fpr": 0.0072
+        },
+        "zlib_ratio": {
+          "auc": 0.5818,
+          "ci95": [
+            0.5096,
+            0.6481
+          ],
+          "tpr_at_1pct_fpr": 0.036
+        },
+        "mink": {
+          "auc": 0.5689,
+          "ci95": [
+            0.5005,
+            0.6401
+          ],
+          "tpr_at_1pct_fpr": 0.0072
+        },
+        "minkpp": {
+          "auc": 0.5696,
+          "ci95": [
+            0.4984,
+            0.6421
+          ],
+          "tpr_at_1pct_fpr": 0.0072
+        },
+        "best_attack": "zlib_ratio"
+      },
+      "pythia-160m": {
+        "loss": {
+          "auc": 0.5764,
+          "ci95": [
+            0.5044,
+            0.6474
+          ],
+          "tpr_at_1pct_fpr": 0.0216
+        },
+        "zlib_ratio": {
+          "auc": 0.5952,
+          "ci95": [
+            0.5216,
+            0.6601
+          ],
+          "tpr_at_1pct_fpr": 0.0647
+        },
+        "mink": {
+          "auc": 0.5733,
+          "ci95": [
+            0.5048,
+            0.6398
+          ],
+          "tpr_at_1pct_fpr": 0.0144
+        },
+        "minkpp": {
+          "auc": 0.5469,
+          "ci95": [
+            0.4753,
+            0.6227
+          ],
+          "tpr_at_1pct_fpr": 0.0072
+        },
+        "best_attack": "zlib_ratio"
+      },
+      "pythia-410m": {
+        "loss": {
+          "auc": 0.5963,
+          "ci95": [
+            0.5281,
+            0.6659
+          ],
+          "tpr_at_1pct_fpr": 0.0
+        },
+        "zlib_ratio": {
+          "auc": 0.6258,
+          "ci95": [
+            0.5595,
+            0.6889
+          ],
+          "tpr_at_1pct_fpr": 0.0935
+        },
+        "mink": {
+          "auc": 0.6112,
+          "ci95": [
+            0.5465,
+            0.6764
+          ],
+          "tpr_at_1pct_fpr": 0.0216
+        },
+        "minkpp": {
+          "auc": 0.5931,
+          "ci95": [
+            0.524,
+            0.6666
+          ],
+          "tpr_at_1pct_fpr": 0.0
+        },
+        "best_attack": "zlib_ratio"
+      }
+    }
   },
-  "cumulative_coverage": {
-    "techniques": [
-      "MIA",
-      "Watermarking",
-      "Provenance Tags",
-      "SMI",
-      "aMINT",
-      "Cross-Model"
-    ],
-    "individual_coverage": [
-      0.35,
-      0.28,
-      0.32,
-      0.41,
-      0.38,
-      0.33
-    ],
-    "cumulative_coverage": [
-      0.35,
-      0.532,
-      0.68176,
-      0.8122384,
-      0.883587808,
-      0.92200383136
-    ]
+  "blind": {
+    "matched_wikipedia": {
+      "bag_of_words_cv": {
+        "auc": 0.5338,
+        "ci95": [
+          0.4924,
+          0.5734
+        ]
+      },
+      "latest_year_mentioned": {
+        "auc": 0.5044,
+        "ci95": [
+          0.4637,
+          0.5435
+        ]
+      },
+      "compressibility": {
+        "auc": 0.5527,
+        "ci95": [
+          0.5088,
+          0.5926
+        ]
+      }
+    },
+    "matched_arxiv": {
+      "bag_of_words_cv": {
+        "auc": 0.5379,
+        "ci95": [
+          0.4996,
+          0.5783
+        ]
+      },
+      "latest_year_mentioned": {
+        "auc": 0.5046,
+        "ci95": [
+          0.471,
+          0.5376
+        ]
+      },
+      "compressibility": {
+        "auc": 0.507,
+        "ci95": [
+          0.466,
+          0.5466
+        ]
+      }
+    },
+    "matched_pilecc": {
+      "bag_of_words_cv": {
+        "auc": 0.5511,
+        "ci95": [
+          0.5135,
+          0.591
+        ]
+      },
+      "latest_year_mentioned": {
+        "auc": 0.5285,
+        "ci95": [
+          0.4896,
+          0.5697
+        ]
+      },
+      "compressibility": {
+        "auc": 0.511,
+        "ci95": [
+          0.4712,
+          0.5511
+        ]
+      }
+    },
+    "shift_member_vs_fresh2026": {
+      "bag_of_words_cv": {
+        "auc": 0.9224,
+        "ci95": [
+          0.9031,
+          0.9398
+        ]
+      },
+      "latest_year_mentioned": {
+        "auc": 0.6943,
+        "ci95": [
+          0.6548,
+          0.7293
+        ]
+      },
+      "compressibility": {
+        "auc": 0.5576,
+        "ci95": [
+          0.5178,
+          0.5967
+        ]
+      }
+    },
+    "shift_nonmember_vs_fresh2026": {
+      "bag_of_words_cv": {
+        "auc": 0.8971,
+        "ci95": [
+          0.8763,
+          0.9166
+        ]
+      },
+      "latest_year_mentioned": {
+        "auc": 0.6987,
+        "ci95": [
+          0.6594,
+          0.7333
+        ]
+      },
+      "compressibility": {
+        "auc": 0.6133,
+        "ci95": [
+          0.5745,
+          0.6492
+        ]
+      }
+    },
+    "wikimia_64": {
+      "bag_of_words_cv": {
+        "auc": 0.9832,
+        "ci95": [
+          0.9732,
+          0.9914
+        ]
+      },
+      "latest_year_mentioned": {
+        "auc": 0.9105,
+        "ci95": [
+          0.8788,
+          0.9452
+        ]
+      },
+      "compressibility": {
+        "auc": 0.5638,
+        "ci95": [
+          0.5149,
+          0.6162
+        ]
+      }
+    },
+    "wikimia_128": {
+      "bag_of_words_cv": {
+        "auc": 0.9559,
+        "ci95": [
+          0.9253,
+          0.9763
+        ]
+      },
+      "latest_year_mentioned": {
+        "auc": 0.899,
+        "ci95": [
+          0.8467,
+          0.9499
+        ]
+      },
+      "compressibility": {
+        "auc": 0.5997,
+        "ci95": [
+          0.5273,
+          0.6664
+        ]
+      }
+    }
   },
-  "summary_statistics": {
-    "mean_effectiveness": 0.6127119800152874,
-    "mean_false_positive": 0.16588833609111964,
-    "mean_comp_cost": 5.610153130557636,
-    "total_papers_2020_2026": 164,
-    "mean_auditability": 0.5168863017115697,
-    "mean_transparency": 0.5109852606059091,
-    "max_cumulative_coverage": 0.92200383136
+  "dataset_inference": {
+    "matched_wikipedia": {
+      "power": {
+        "25": 0.052,
+        "50": 0.04,
+        "100": 0.032,
+        "150": 0.012,
+        "200": 0.02
+      },
+      "false_positive_rate": {
+        "25": 0.04,
+        "50": 0.026,
+        "100": 0.058,
+        "150": 0.034,
+        "200": 0.048
+      },
+      "median_p_h1": {
+        "25": 0.5195,
+        "50": 0.5221,
+        "100": 0.5638,
+        "150": 0.6443,
+        "200": 0.6583
+      },
+      "median_p_h0": {
+        "25": 0.5201,
+        "50": 0.4937,
+        "100": 0.5502,
+        "150": 0.5103,
+        "200": 0.4788
+      }
+    },
+    "matched_arxiv": {
+      "power": {
+        "25": 0.06,
+        "50": 0.032,
+        "100": 0.026,
+        "150": 0.036,
+        "200": 0.018
+      },
+      "false_positive_rate": {
+        "25": 0.054,
+        "50": 0.038,
+        "100": 0.042,
+        "150": 0.056,
+        "200": 0.056
+      },
+      "median_p_h1": {
+        "25": 0.4934,
+        "50": 0.5061,
+        "100": 0.5255,
+        "150": 0.5635,
+        "200": 0.5797
+      },
+      "median_p_h0": {
+        "25": 0.5062,
+        "50": 0.4771,
+        "100": 0.4773,
+        "150": 0.5039,
+        "200": 0.5045
+      }
+    },
+    "matched_pilecc": {
+      "power": {
+        "25": 0.062,
+        "50": 0.058,
+        "100": 0.08,
+        "150": 0.114,
+        "200": 0.118
+      },
+      "false_positive_rate": {
+        "25": 0.062,
+        "50": 0.044,
+        "100": 0.042,
+        "150": 0.038,
+        "200": 0.066
+      },
+      "median_p_h1": {
+        "25": 0.4486,
+        "50": 0.4808,
+        "100": 0.3926,
+        "150": 0.3361,
+        "200": 0.2861
+      },
+      "median_p_h0": {
+        "25": 0.5049,
+        "50": 0.4797,
+        "100": 0.5491,
+        "150": 0.4931,
+        "200": 0.5265
+      }
+    },
+    "shifted_validation_wikipedia": {
+      "power": {
+        "25": 0.312,
+        "50": 0.568,
+        "100": 0.884,
+        "150": 0.992,
+        "200": 1.0
+      },
+      "false_positive_rate": {
+        "25": 0.276,
+        "50": 0.472,
+        "100": 0.808,
+        "150": 0.948,
+        "200": 0.996
+      }
+    }
+  },
+  "summary": {
+    "matched_best_auc_410m": {
+      "matched_wikipedia": 0.5153,
+      "matched_arxiv": 0.503,
+      "matched_pilecc": 0.5059
+    },
+    "matched_mean_auc_410m_by_attack": {
+      "loss": 0.4965,
+      "zlib_ratio": 0.5063,
+      "mink": 0.4954,
+      "minkpp": 0.4841
+    },
+    "matched_max_auc_any_model_attack": 0.53,
+    "matched_mean_best_auc_by_model": {
+      "pythia-70m": 0.5056,
+      "pythia-160m": 0.512,
+      "pythia-410m": 0.5081
+    },
+    "shift_best_auc_by_model": {
+      "shift_member_vs_fresh2026": {
+        "pythia-70m": 0.6235,
+        "pythia-160m": 0.6161,
+        "pythia-410m": 0.6675
+      },
+      "shift_nonmember_vs_fresh2026": {
+        "pythia-70m": 0.6304,
+        "pythia-160m": 0.6046,
+        "pythia-410m": 0.6669
+      },
+      "wikimia_64": {
+        "pythia-70m": 0.5511,
+        "pythia-160m": 0.5708,
+        "pythia-410m": 0.6119
+      },
+      "wikimia_128": {
+        "pythia-70m": 0.5818,
+        "pythia-160m": 0.5952,
+        "pythia-410m": 0.6258
+      }
+    },
+    "inflation_points_410m": 0.1522
   }
 }

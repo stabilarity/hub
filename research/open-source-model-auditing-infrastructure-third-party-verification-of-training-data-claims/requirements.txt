@@ -1,4 +1,8 @@
-numpy
-matplotlib
-pandas
-requests
+matplotlib==3.11.2
+numpy==2.5.4
+pandas==3.0.6
+scikit-learn==1.9.1
+scipy==1.18.1
+torch==2.14.1  # CPU build: --index-url https://download.pytorch.org/whl/cpu
+transformers==5.20.2
+huggingface_hub==2.2.0

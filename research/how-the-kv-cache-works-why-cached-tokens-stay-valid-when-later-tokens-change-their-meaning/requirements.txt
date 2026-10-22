@@ -1,0 +1,4 @@
+torch==2.14.1  # CPU build: --index-url https://download.pytorch.org/whl/cpu
+transformers==5.20.2
+numpy==2.5.4
+matplotlib==3.11.2

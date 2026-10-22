@@ -1,0 +1,473 @@
+{
+ "meta": {
+  "seed": 20261022,
+  "threads": 6,
+  "torch": "2.14.1+cpu",
+  "transformers": "5.20.2",
+  "dtype": "float32 unless stated"
+ },
+ "E1_exactness": {
+  "n_prompts": 24,
+  "prompt_tokens": 32,
+  "new_tokens": 64,
+  "models": {
+   "pythia-70m": {
+    "identical_sequences": 24,
+    "max_abs_logit_diff": 0.0470581,
+    "median_logit_std": 64.3335,
+    "argmax_agreement": 1.0
+   },
+   "pythia-160m": {
+    "identical_sequences": 23,
+    "max_abs_logit_diff": 0.0119629,
+    "median_logit_std": 80.5287,
+    "argmax_agreement": 1.0
+   },
+   "pythia-410m": {
+    "identical_sequences": 24,
+    "max_abs_logit_diff": 0.00633657,
+    "median_logit_std": 3.25238,
+    "argmax_agreement": 1.0
+   },
+   "pythia-160m-fp64": {
+    "identical_sequences": 24,
+    "max_abs_logit_diff": 2.54659e-11,
+    "median_logit_std": 80.5287,
+    "argmax_agreement": 1.0
+   }
+  }
+ },
+ "E2_immutability": {
+  "n_items": 18,
+  "pythia": {
+   "pythia-160m": {
+    "max_abs_KV_value_prefix": 63.3572,
+    "items_with_bit_identical_KV_cont_a_vs_cont_b": 18,
+    "max_abs_diff_K_prefix_alone_vs_extended": 0.000640869,
+    "max_abs_diff_V_prefix_alone_vs_extended": 0.000142217,
+    "max_abs_diff_hidden_prefix_alone_vs_extended": 0.000462532,
+    "max_abs_diff_KV_cont_a_vs_cont_b": 0.0,
+    "items_with_bit_identical_KV": 0
+   },
+   "pythia-410m": {
+    "max_abs_KV_value_prefix": 28.3945,
+    "items_with_bit_identical_KV_cont_a_vs_cont_b": 18,
+    "max_abs_diff_K_prefix_alone_vs_extended": 0.000200272,
+    "max_abs_diff_V_prefix_alone_vs_extended": 0.000101209,
+    "max_abs_diff_hidden_prefix_alone_vs_extended": 0.000434875,
+    "max_abs_diff_KV_cont_a_vs_cont_b": 0.0,
+    "items_with_bit_identical_KV": 0
+   },
+   "pythia-160m-fp64": {
+    "max_abs_KV_value_prefix": 63.3571,
+    "items_with_bit_identical_KV_cont_a_vs_cont_b": 17,
+    "max_abs_diff_K_prefix_alone_vs_extended": 1.6982e-12,
+    "max_abs_diff_V_prefix_alone_vs_extended": 3.56937e-13,
+    "max_abs_diff_hidden_prefix_alone_vs_extended": 2.58105e-12,
+    "max_abs_diff_KV_cont_a_vs_cont_b": 3.51719e-13,
+    "items_with_bit_identical_KV": 0
+   }
+  },
+  "bert": {
+   "cosine_distance_word_a_vs_b_by_layer": [
+    3.72529e-09,
+    0.14955,
+    0.246827,
+    0.308393,
+    0.343728,
+    0.378268,
+    0.390281,
+    0.411327,
+    0.446736,
+    0.486104,
+    0.507898,
+    0.470162,
+    0.529898
+   ],
+   "cosine_distance_word_extended_vs_alone_by_layer": [
+    3.72529e-09,
+    0.100777,
+    0.159211,
+    0.254177,
+    0.286504,
+    0.305343,
+    0.32791,
+    0.361355,
+    0.414889,
+    0.4926,
+    0.471113,
+    0.439186,
+    0.553896
+   ],
+   "relative_key_change_a_vs_b_by_layer": [
+    0.0,
+    0.58184,
+    0.659418,
+    0.720047,
+    0.742629,
+    0.734784,
+    0.769278,
+    0.734244,
+    0.842865,
+    0.901267,
+    1.02744,
+    0.998699
+   ],
+   "n_words": 16
+  },
+  "pythia_cosine_distance_word_a_vs_b_by_layer": [
+   2.08167e-17,
+   -7.07767e-16,
+   -3.40006e-16,
+   -5.41234e-16,
+   -6.38378e-16,
+   -7.21645e-16,
+   -5.27356e-16,
+   -2.56739e-16,
+   -2.08167e-16,
+   -1.04083e-16,
+   -2.22045e-16,
+   -4.30211e-16,
+   -1.98452e-15
+  ]
+ },
+ "E3_agility": {
+  "n_cases": 32,
+  "layers_including_embedding": 13,
+  "pythia_sense_accuracy_old_position": [
+   0.5,
+   0.5,
+   0.5,
+   0.5,
+   0.5,
+   0.5,
+   0.5,
+   0.5,
+   0.5,
+   0.5,
+   0.5,
+   0.5,
+   0.5
+  ],
+  "pythia_sense_accuracy_new_position": [
+   0.5,
+   0.71875,
+   0.875,
+   0.875,
+   0.8125,
+   0.90625,
+   0.90625,
+   0.875,
+   0.875,
+   0.875,
+   0.875,
+   0.84375,
+   0.90625
+  ],
+  "pythia_margin_new_position": [
+   0.0,
+   0.0266214,
+   0.0566754,
+   0.0709531,
+   0.0742616,
+   0.0709626,
+   0.0670127,
+   0.0554507,
+   0.0426793,
+   0.0544413,
+   0.0822987,
+   0.0884892,
+   0.0029826
+  ],
+  "bert_sense_accuracy_original_position": [
+   0.5,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "bert_margin_original_position": [
+   0.0,
+   0.0936296,
+   0.171727,
+   0.206786,
+   0.239169,
+   0.268129,
+   0.277585,
+   0.289585,
+   0.315313,
+   0.332439,
+   0.350557,
+   0.319991,
+   0.349378
+  ],
+  "attention_new_to_old_word_by_layer": [
+   0.0802948,
+   0.117683,
+   0.0292593,
+   0.0502332,
+   0.00720317,
+   0.0121943,
+   0.0129768,
+   0.0134433,
+   0.00335142,
+   0.00238492,
+   6.09625e-06,
+   2.17353e-08
+  ],
+  "attention_new_to_disambiguating_span_by_layer": [
+   0.633892,
+   0.579437,
+   0.677254,
+   0.506078,
+   0.610562,
+   0.657847,
+   0.584014,
+   0.526468,
+   0.618944,
+   0.581696,
+   0.599234,
+   0.508898
+  ],
+  "attention_new_to_first_token_by_layer": [
+   0.0207292,
+   0.0816749,
+   0.0661045,
+   0.0948608,
+   0.205915,
+   0.225746,
+   0.237115,
+   0.225556,
+   0.180745,
+   0.247605,
+   0.227074,
+   0.159522
+  ]
+ },
+ "E4_cost_analytical": {
+  "context_tokens": [
+   128,
+   256,
+   512,
+   1024,
+   2000
+  ],
+  "nonembedding_params": 123689472,
+  "gflops_with_cache": [
+   0.252098,
+   0.256816,
+   0.266253,
+   0.285128,
+   0.321107
+  ],
+  "gflops_without_cache": [
+   32.221,
+   64.7985,
+   131.766,
+   272.947,
+   568.844
+  ],
+  "ratio": [
+   127.811,
+   252.315,
+   494.89,
+   957.279,
+   1771.51
+  ],
+  "kv_bytes_per_token_fp16": 36864
+ },
+ "E4_kv_memory": [
+  {
+   "name": "Pythia-160M",
+   "attention": "MHA",
+   "kv_bytes_per_token_bf16": 36864,
+   "kib_per_token": 36.0,
+   "gib_per_32k_sequence": 1.125,
+   "gib_per_128k_sequence": 4.5
+  },
+  {
+   "name": "Falcon-7B",
+   "attention": "MQA",
+   "kv_bytes_per_token_bf16": 8192,
+   "kib_per_token": 8.0,
+   "gib_per_32k_sequence": 0.25,
+   "gib_per_128k_sequence": 1.0
+  },
+  {
+   "name": "Llama-3.1-8B (MHA counterfactual)",
+   "attention": "MHA",
+   "kv_bytes_per_token_bf16": 524288,
+   "kib_per_token": 512.0,
+   "gib_per_32k_sequence": 16.0,
+   "gib_per_128k_sequence": 64.0
+  },
+  {
+   "name": "Llama-3.1-8B",
+   "attention": "GQA",
+   "kv_bytes_per_token_bf16": 131072,
+   "kib_per_token": 128.0,
+   "gib_per_32k_sequence": 4.0,
+   "gib_per_128k_sequence": 16.0
+  },
+  {
+   "name": "Mistral-7B-v0.1",
+   "attention": "GQA",
+   "kv_bytes_per_token_bf16": 131072,
+   "kib_per_token": 128.0,
+   "gib_per_32k_sequence": 4.0,
+   "gib_per_128k_sequence": 16.0
+  },
+  {
+   "name": "Qwen3-8B",
+   "attention": "GQA",
+   "kv_bytes_per_token_bf16": 147456,
+   "kib_per_token": 144.0,
+   "gib_per_32k_sequence": 4.5,
+   "gib_per_128k_sequence": 18.0
+  },
+  {
+   "name": "Qwen3-32B",
+   "attention": "GQA",
+   "kv_bytes_per_token_bf16": 262144,
+   "kib_per_token": 256.0,
+   "gib_per_32k_sequence": 8.0,
+   "gib_per_128k_sequence": 32.0
+  },
+  {
+   "name": "Llama-3.1-70B",
+   "attention": "GQA",
+   "kv_bytes_per_token_bf16": 327680,
+   "kib_per_token": 320.0,
+   "gib_per_32k_sequence": 10.0,
+   "gib_per_128k_sequence": 40.0
+  },
+  {
+   "name": "DeepSeek-V3 (671B)",
+   "attention": "MLA",
+   "kv_bytes_per_token_bf16": 70272,
+   "kib_per_token": 68.625,
+   "gib_per_32k_sequence": 2.14453,
+   "gib_per_128k_sequence": 8.57812
+  }
+ ],
+ "E5_approximation": {
+  "n_passages": 16,
+  "prefill_tokens": 256,
+  "decoded_tokens": 256,
+  "exact_cache_vs_full_forward_max_abs_logprob_diff": 0.0203857,
+  "variants": {
+   "exact": {
+    "mean_kl_vs_exact": 0.0,
+    "top1_agreement_vs_exact": 1.0,
+    "perplexity": 16.9647
+   },
+   "fp16": {
+    "mean_kl_vs_exact": 0.00224419,
+    "top1_agreement_vs_exact": 0.973633,
+    "perplexity": 16.9871
+   },
+   "bf16": {
+    "mean_kl_vs_exact": 0.064307,
+    "top1_agreement_vs_exact": 0.863037,
+    "perplexity": 17.8661
+   },
+   "int8": {
+    "mean_kl_vs_exact": 0.144177,
+    "top1_agreement_vs_exact": 0.811768,
+    "perplexity": 20.007
+   },
+   "int4": {
+    "mean_kl_vs_exact": 2.29758,
+    "top1_agreement_vs_exact": 0.307617,
+    "perplexity": 185.136
+   },
+   "int2": {
+    "mean_kl_vs_exact": 4.8392,
+    "top1_agreement_vs_exact": 0.100586,
+    "perplexity": 2516.06
+   },
+   "window_128_4": {
+    "mean_kl_vs_exact": 0.233131,
+    "top1_agreement_vs_exact": 0.815186,
+    "perplexity": 21.3771
+   },
+   "window_128_0": {
+    "mean_kl_vs_exact": 0.701864,
+    "top1_agreement_vs_exact": 0.605713,
+    "perplexity": 35.0835
+   },
+   "window_64_4": {
+    "mean_kl_vs_exact": 0.403609,
+    "top1_agreement_vs_exact": 0.746582,
+    "perplexity": 25.2434
+   },
+   "window_64_0": {
+    "mean_kl_vs_exact": 0.991164,
+    "top1_agreement_vs_exact": 0.55542,
+    "perplexity": 47.7408
+   }
+  },
+  "chunk_reuse": {
+   "exact": {
+    "mean_kl_vs_exact": 0.0,
+    "top1_agreement_vs_exact": 1.0
+   },
+   "chunk_cache_wrong_positions": {
+    "mean_kl_vs_exact": 0.204141,
+    "top1_agreement_vs_exact": 0.821289
+   },
+   "chunk_cache_reindexed": {
+    "mean_kl_vs_exact": 0.0423106,
+    "top1_agreement_vs_exact": 0.911133
+   }
+  },
+  "chunk_reuse_setup": "128-token context S, 128-token chunk C, then 64 teacher-forced tokens; C's cache computed alone (positions 0..127, or re-indexed to 128..255) and appended to S's cache"
+ },
+ "timing": {
+  "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+  "processor": "x86_64",
+  "cpu_count": 6,
+  "E4_decode_ms_per_token": {
+   "model": "EleutherAI/pythia-160m",
+   "repeats": 9,
+   "statistic": "median",
+   "context_tokens": [
+    128,
+    256,
+    512,
+    1024,
+    2000
+   ],
+   "with_cache_ms": [
+    39.741,
+    39.673,
+    39.575,
+    42.584,
+    48.505
+   ],
+   "without_cache_ms": [
+    110.86,
+    170.361,
+    303.373,
+    851.372,
+    1430.219
+   ],
+   "speedup": [
+    2.79,
+    4.29,
+    7.67,
+    19.99,
+    29.49
+   ]
+  },
+  "total_seconds": 2965.6
+ }
+}

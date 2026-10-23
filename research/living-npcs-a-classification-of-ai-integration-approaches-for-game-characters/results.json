@@ -91,8 +91,8 @@
     "total_p90_s": 2.288,
     "total_max_s": 2.611,
     "json_strict_rate": 0.917,
-    "json_lenient_rate": 0.917,
-    "schema_valid_rate": 0.917,
+    "json_lenient_rate": 1.0,
+    "schema_valid_rate": 1.0,
     "prompt_tokens_mean": 337.2,
     "completion_tokens_mean": 61.0,
     "cost_per_decision_usd": 6.422e-05,
@@ -125,8 +125,8 @@
     "total_p90_s": 2.07,
     "total_max_s": 2.225,
     "json_strict_rate": 0.833,
-    "json_lenient_rate": 0.833,
-    "schema_valid_rate": 0.833,
+    "json_lenient_rate": 1.0,
+    "schema_valid_rate": 1.0,
     "prompt_tokens_mean": 3283.2,
     "completion_tokens_mean": 66.3,
     "cost_per_decision_usd": 0.00044349,
@@ -149,7 +149,7 @@
     "opinion_delta_mean_friendly": 1.0,
     "opinion_separation": 6.0,
     "cached_prompt_token_share": 0.0,
-    "share_attack_or_flee": 0.2
+    "share_attack_or_flee": 0.167
    }
   },
   "Gemini 3.1 Flash-Lite": {
@@ -503,7 +503,7 @@
     1.25,
     4.13
    ],
-   "schema_valid_rate_pooled": 0.986,
+   "schema_valid_rate_pooled": 1.0,
    "strict_json_rate_pooled": 0.972,
    "cost_per_1000_range_usd": [
     0.0108,
@@ -525,12 +525,18 @@
     1.164,
     2.13
    ],
-   "schema_valid_rate_pooled": 0.958,
+   "schema_valid_rate_pooled": 0.986,
    "strict_json_rate_pooled": 0.972,
    "cost_per_1000_range_usd": [
     0.0482,
     1.0886
    ]
+  },
+  "parse_counts": {
+   "calls": 144,
+   "strict_fail": 4,
+   "lenient_fail": 0,
+   "schema_fail": 1
   },
   "memory_latency_ratio_median": 1.017,
   "memory_cost_ratio_median": 6.162,

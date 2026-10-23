@@ -43,7 +43,7 @@ def r(x, n=3):
 
 
 def parse(text):
-    """strict: whole reply is JSON; lenient: first {...} block after removing code fences."""
+    """strict: whole reply is JSON; lenient: first complete JSON object in the reply (ignores code fences and trailing text)."""
     t = text.strip()
     strict = lenient = None
     try:
@@ -51,10 +51,10 @@ def parse(text):
     except Exception:
         pass
     if strict is None:
-        m = re.search(r"\{.*\}", t, re.S)
-        if m:
+        k = t.find("{")
+        if k >= 0:
             try:
-                lenient = json.loads(m.group(0))
+                lenient = json.JSONDecoder().raw_decode(t[k:])[0]
             except Exception:
                 pass
     obj = strict if strict is not None else lenient
@@ -139,6 +139,10 @@ for cond in ["compact", "memory"]:
         "cost_per_1000_range_usd": [min(e1[m][cond]["cost_per_1000_decisions_usd"] for m in valid),
                                     max(e1[m][cond]["cost_per_1000_decisions_usd"] for m in valid)],
     }
+okc = [c for c in calls if not c["error"] and c["model"] in valid]
+pp = [parse(c["text"]) for c in okc]
+summary["parse_counts"] = {"calls": len(okc), "strict_fail": sum(not p[0] for p in pp),
+                           "lenient_fail": sum(not p[1] for p in pp), "schema_fail": sum(not p[2] for p in pp)}
 summary["memory_latency_ratio_median"] = r(st.median(
     e1[m]["memory"]["total_p50_s"] / e1[m]["compact"]["total_p50_s"] for m in valid))
 summary["memory_cost_ratio_median"] = r(st.median(
@@ -208,28 +212,29 @@ fig.tight_layout(rect=(0, 0.03, 1, 1)); fig.savefig(D("charts", "chart2.png")); 
 
 # chart 3: cost per 1,000 decisions vs schema-valid rate
 fig, ax = plt.subplots(figsize=(11, 6.2), dpi=150)
-for m in order:
+for j, m in enumerate(order):
     for cond, mk, fc in [("compact", "o", INK), ("memory", "s", "white")]:
         c = e1[m][cond]
-        ax.scatter(c["cost_per_1000_decisions_usd"], 100 * c["schema_valid_rate"], marker=mk, s=70,
+        ax.scatter(c["cost_per_1000_decisions_usd"], 100 * c["json_strict_rate"], marker=mk, s=70,
                    color=fc, edgecolor=INK, zorder=3)
     a, b = e1[m]["compact"], e1[m]["memory"]
-    ax.annotate(SHORT[m], (a["cost_per_1000_decisions_usd"], 100 * a["schema_valid_rate"]),
+    ax.annotate(SHORT[m], (a["cost_per_1000_decisions_usd"], 100 * a["json_strict_rate"]),
                 xytext=(6, -12), textcoords="offset points", fontsize=9)
-    ax.annotate(SHORT[m] + " +mem", (b["cost_per_1000_decisions_usd"], 100 * b["schema_valid_rate"]),
-                xytext=(6, 6), textcoords="offset points", fontsize=8, color=MID)
+    ax.annotate(SHORT[m] + " +mem", (b["cost_per_1000_decisions_usd"], 100 * b["json_strict_rate"]),
+                xytext=(-4, 8 + 13 * (j % 3)), textcoords="offset points", fontsize=8, color=MID,
+                ha="left", arrowprops=dict(arrowstyle="-", color=LIGHT, lw=0.6))
 ax.scatter([], [], marker="o", color=INK, label="Perception only")
 ax.scatter([], [], marker="s", color="white", edgecolor=INK, label="Perception + ~3k-token memory log")
 ax.set_xscale("log")
 ax.set_xlabel("Cost per 1,000 NPC decisions (USD, log scale, billed)")
-ax.set_ylabel("Replies that are valid, schema-conforming JSON (%)")
-ax.set_ylim(78, 102.5)
+ax.set_ylabel("Replies parseable as-is by a strict JSON parser (%)")
+ax.set_ylim(78, 104.5)
 ax.set_xlim(0.007, 3)
 ax.set_title("E1: Price and reliability of one NPC decision", loc="left")
 ax.legend(frameon=False, fontsize=9, loc="lower left")
 ax.grid(color=PALE, which="both")
-fig.text(0.01, 0.01, "Source: our measurement via OpenRouter; billed cost per call; schema = action in allowed set, "
-         "integer opinion_delta in [-10, 10], say, target.", fontsize=8, color=MID)
+fig.text(0.01, 0.01, "Source: our measurement via OpenRouter; billed cost per call. Extracting the first JSON object recovers "
+         "every reply; 1 of 144 then fails the action schema.", fontsize=8, color=MID)
 fig.tight_layout(rect=(0, 0.03, 1, 1)); fig.savefig(D("charts", "chart3.png")); plt.close(fig)
 
 # ---------------- E2 ----------------

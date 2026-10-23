@@ -1,0 +1,5783 @@
+{
+ "calls": [
+  {
+   "model": "anthropic/claude-haiku-5.5",
+   "cond": "compact",
+   "i": 0,
+   "ttft_s": 0.7094730160315521,
+   "total_s": 1.1988238930352964,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"Not yet, the wool is still damp from the rain. I'll finish it by morning.\", \"opinion_delta\": 2, \"reason\": \"Greeting is odd at dusk, but he's armed and I should stay civil\"}",
+   "usage": {
+    "prompt_tokens": 468,
+    "completion_tokens": 91,
+    "total_tokens": 559,
+    "cost": 9.23e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 9.23e-05,
+     "upstream_inference_prompt_cost": 4.68e-05,
+     "upstream_inference_completions_cost": 4.55e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Claude Platform on AWS",
+   "error": null,
+   "ts": "2026-10-23T17:36:35Z",
+   "attempt": 1
+  },
+  {
+   "model": "openai/gpt-6-luna",
+   "cond": "compact",
+   "i": 0,
+   "ttft_s": 0.8239956310135312,
+   "total_s": 1.4817688350449316,
+   "text": "{\"action\":\"say\",\"target\":\"p_017\",\"say\":\"Not yet; the rain has delayed my work. I\u2019ll finish it as soon as I can.\",\"opinion_delta\":0,\"reason\":\"Answer calmly and avoid provoking an armed villager.\"}",
+   "usage": {
+    "prompt_tokens": 340,
+    "completion_tokens": 56,
+    "total_tokens": 396,
+    "cost": 6.2e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 6.2e-05,
+     "upstream_inference_prompt_cost": 3.4e-05,
+     "upstream_inference_completions_cost": 2.8e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "OpenAI",
+   "error": null,
+   "ts": "2026-10-23T17:36:35Z",
+   "attempt": 1
+  },
+  {
+   "model": "google/gemini-3.1-flash-lite",
+   "cond": "compact",
+   "i": 0,
+   "ttft_s": 0.7894967930042185,
+   "total_s": 1.2738829709705897,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"The loom is slow in this damp weather, and it is dusk, not morning. I am finishing the work now.\", \"opinion_delta\": 0, \"reason\": \"Deflecting pressure while maintaining my livelihood and keeping distance from an unfriendly villager.\"}",
+   "usage": {
+    "prompt_tokens": 352,
+    "completion_tokens": 73,
+    "total_tokens": 425,
+    "cost": 0.0001975,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0001975,
+     "upstream_inference_prompt_cost": 8.8e-05,
+     "upstream_inference_completions_cost": 0.0001095
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Google",
+   "error": null,
+   "ts": "2026-10-23T17:36:35Z",
+   "attempt": 1
+  },
+  {
+   "model": "qwen/qwen3.7-flash",
+   "cond": "compact",
+   "i": 0,
+   "ttft_s": 0.704388260957785,
+   "total_s": 1.41234700899804,
+   "text": "{\n  \"action\": \"say\",\n  \"target\": \"p_017\",\n  \"say\": \"Not yet. The rain has stalled work.\",\n  \"opinion_delta\": -5,\n  \"reason\": \"Hostile villager demands goods; I am cautious.\"\n}",
+   "usage": {
+    "prompt_tokens": 365,
+    "completion_tokens": 65,
+    "total_tokens": 430,
+    "cost": 1.52444e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 256,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 1.52444e-05,
+     "upstream_inference_prompt_cost": 5.5269e-06,
+     "upstream_inference_completions_cost": 9.7175e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Alibaba",
+   "error": null,
+   "ts": "2026-10-23T17:36:35Z",
+   "attempt": 1
+  },
+  {
+   "model": "mistralai/ministral-8b-2512",
+   "cond": "compact",
+   "i": 0,
+   "ttft_s": null,
+   "total_s": 0.3085157659952529,
+   "text": "",
+   "usage": null,
+   "provider": null,
+   "error": "http 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"mistralai/ministral-8b-2512 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate yo",
+   "ts": "2026-10-23T17:36:34Z",
+   "attempt": 1
+  },
+  {
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "cond": "compact",
+   "i": 0,
+   "ttft_s": 0.4213190440204926,
+   "total_s": 0.7631733550224453,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"The cloth is nearly done, but the rain delays my work. I'll finish by tomorrow.\", \"opinion_delta\": 0, \"reason\": \"Politely answer the armed villager's question.\"}",
+   "usage": {
+    "prompt_tokens": 346,
+    "completion_tokens": 63,
+    "total_tokens": 409,
+    "cost": 6.608e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 6.608e-05,
+     "upstream_inference_prompt_cost": 4.844e-05,
+     "upstream_inference_completions_cost": 1.764e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Cohere",
+   "error": null,
+   "ts": "2026-10-23T17:36:34Z",
+   "attempt": 1
+  },
+  {
+   "model": "meta-llama/llama-3.1-8b-instruct",
+   "cond": "compact",
+   "i": 0,
+   "ttft_s": 0.770622861047741,
+   "total_s": 1.9261439620167948,
+   "text": "{\"action\": \"say\", \"target\": null, \"say\": \"Not yet, I'm still weaving\", \"opinion_delta\": 0, \"reason\": \"responsible weaver\"}",
+   "usage": {
+    "prompt_tokens": 345,
+    "completion_tokens": 41,
+    "total_tokens": 386,
+    "cost": 8.54e-06,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 8.54e-06,
+     "upstream_inference_prompt_cost": 6.9e-06,
+     "upstream_inference_completions_cost": 1.64e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "DeepInfra",
+   "error": null,
+   "ts": "2026-10-23T17:36:35Z",
+   "attempt": 1
+  },
+  {
+   "model": "anthropic/claude-haiku-5.5",
+   "cond": "compact",
+   "i": 1,
+   "ttft_s": 0.6782642089528963,
+   "total_s": 1.1132247589994222,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"Please, I need that bread to live. Take a little wool instead, or call the guard.\", \"opinion_delta\": -4, \"reason\": \"Threatened for bread; offering wool to defuse, guard nearby.\"}",
+   "usage": {
+    "prompt_tokens": 458,
+    "completion_tokens": 88,
+    "total_tokens": 546,
+    "cost": 8.98e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 8.98e-05,
+     "upstream_inference_prompt_cost": 4.58e-05,
+     "upstream_inference_completions_cost": 4.4e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Claude Platform on AWS",
+   "error": null,
+   "ts": "2026-10-23T17:36:35Z",
+   "attempt": 1
+  },
+  {
+   "model": "openai/gpt-6-luna",
+   "cond": "compact",
+   "i": 1,
+   "ttft_s": 0.9593752360087819,
+   "total_s": 1.6236394669977017,
+   "text": "{\"action\":\"say\",\"target\":\"p_017\",\"say\":\"I need that bread to work. Take wool instead, if you\u2019ll trade fairly.\",\"opinion_delta\":-2,\"reason\":\"De-escalate while offering a livelihood-preserving trade.\"}",
+   "usage": {
+    "prompt_tokens": 337,
+    "completion_tokens": 56,
+    "total_tokens": 393,
+    "cost": 6.17e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 6.17e-05,
+     "upstream_inference_prompt_cost": 3.37e-05,
+     "upstream_inference_completions_cost": 2.8e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "OpenAI",
+   "error": null,
+   "ts": "2026-10-23T17:36:36Z",
+   "attempt": 1
+  },
+  {
+   "model": "google/gemini-3.1-flash-lite",
+   "cond": "compact",
+   "i": 1,
+   "ttft_s": 0.8746646759682335,
+   "total_s": 1.1888716639950871,
+   "text": "{\"action\": \"flee\", \"target\": \"npc_guard_2\", \"say\": \"Help! Someone is trying to rob me!\", \"opinion_delta\": -10, \"reason\": \"The villager is threatening me with a weapon, I need protection.\"}",
+   "usage": {
+    "prompt_tokens": 349,
+    "completion_tokens": 58,
+    "total_tokens": 407,
+    "cost": 0.00017425,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00017425,
+     "upstream_inference_prompt_cost": 8.725e-05,
+     "upstream_inference_completions_cost": 8.7e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Google",
+   "error": null,
+   "ts": "2026-10-23T17:36:36Z",
+   "attempt": 1
+  },
+  {
+   "model": "qwen/qwen3.7-flash",
+   "cond": "compact",
+   "i": 1,
+   "ttft_s": 0.6646024460205808,
+   "total_s": 1.3560605230159126,
+   "text": "{\n  \"action\": \"trade\",\n  \"target\": \"p_017\",\n  \"say\": \"Here is the bread. Please, let me keep my livelihood.\",\n  \"opinion_delta\": -5,\n  \"reason\": \"Avoid violence by complying with threat.\"\n}",
+   "usage": {
+    "prompt_tokens": 362,
+    "completion_tokens": 65,
+    "total_tokens": 427,
+    "cost": 2.22065e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 2.22065e-05,
+     "upstream_inference_prompt_cost": 1.2489e-05,
+     "upstream_inference_completions_cost": 9.7175e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Alibaba",
+   "error": null,
+   "ts": "2026-10-23T17:36:36Z",
+   "attempt": 1
+  },
+  {
+   "model": "mistralai/ministral-8b-2512",
+   "cond": "compact",
+   "i": 1,
+   "ttft_s": null,
+   "total_s": 0.4656704629887827,
+   "text": "",
+   "usage": null,
+   "provider": null,
+   "error": "http 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"mistralai/ministral-8b-2512 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate yo",
+   "ts": "2026-10-23T17:36:35Z",
+   "attempt": 1
+  },
+  {
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "cond": "compact",
+   "i": 1,
+   "ttft_s": 0.48720274097286165,
+   "total_s": 0.8357567290076986,
+   "text": "{\"action\": \"flee\", \"target\": \"p_017\", \"say\": \"No! I need this bread to survive. Stay back!\", \"opinion_delta\": -5, \"reason\": \"Threatened by armed villager; must escape.\"}",
+   "usage": {
+    "prompt_tokens": 343,
+    "completion_tokens": 57,
+    "total_tokens": 400,
+    "cost": 6.113e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 6.113e-05,
+     "upstream_inference_prompt_cost": 4.802e-05,
+     "upstream_inference_completions_cost": 1.311e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Wafer",
+   "error": null,
+   "ts": "2026-10-23T17:36:36Z",
+   "attempt": 1
+  },
+  {
+   "model": "meta-llama/llama-3.1-8b-instruct",
+   "cond": "compact",
+   "i": 1,
+   "ttft_s": 0.8238189969561063,
+   "total_s": 1.8338576079695486,
+   "text": "{\"action\": \"move_to\", \"target\": \"p_017\", \"say\": \"\", \"opinion_delta\": 0, \"reason\": \"Protect livelihood\"}",
+   "usage": {
+    "prompt_tokens": 342,
+    "completion_tokens": 35,
+    "total_tokens": 377,
+    "cost": 8.24e-06,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 8.24e-06,
+     "upstream_inference_prompt_cost": 6.84e-06,
+     "upstream_inference_completions_cost": 1.4e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "DeepInfra",
+   "error": null,
+   "ts": "2026-10-23T17:36:37Z",
+   "attempt": 1
+  },
+  {
+   "model": "anthropic/claude-haiku-5.5",
+   "cond": "compact",
+   "i": 2,
+   "ttft_s": 0.6107192329945974,
+   "total_s": 1.0733288280316629,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"Smoke at the north gate? Let's tell the guard now, quickly, before it spreads.\", \"opinion_delta\": 2, \"reason\": \"Villager raises a shared threat; supporting safe, prompt action\"}",
+   "usage": {
+    "prompt_tokens": 466,
+    "completion_tokens": 91,
+    "total_tokens": 557,
+    "cost": 9.21e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 9.21e-05,
+     "upstream_inference_prompt_cost": 4.66e-05,
+     "upstream_inference_completions_cost": 4.55e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Claude Platform on AWS",
+   "error": null,
+   "ts": "2026-10-23T17:36:37Z",
+   "attempt": 1
+  },
+  {
+   "model": "openai/gpt-6-luna",
+   "cond": "compact",
+   "i": 2,
+   "ttft_s": 1.008559082983993,
+   "total_s": 1.5699290910270065,
+   "text": "{\"action\":\"say\",\"target\":\"p_017\",\"say\":\"Yes, warn the guards now. I\u2019ll stay here and keep watch.\",\"opinion_delta\":2,\"reason\":\"Smoke near the gate could threaten everyone.\"}",
+   "usage": {
+    "prompt_tokens": 340,
+    "completion_tokens": 49,
+    "total_tokens": 389,
+    "cost": 5.85e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 5.85e-05,
+     "upstream_inference_prompt_cost": 3.4e-05,
+     "upstream_inference_completions_cost": 2.45e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "OpenAI",
+   "error": null,
+   "ts": "2026-10-23T17:36:37Z",
+   "attempt": 1
+  },
+  {
+   "model": "google/gemini-3.1-flash-lite",
+   "cond": "compact",
+   "i": 2,
+   "ttft_s": 0.9917821700219065,
+   "total_s": 1.4718662290251814,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"Smoke? That sounds dangerous. We should tell the guard immediately before it spreads to the workshops.\", \"opinion_delta\": 2, \"reason\": \"Cooperating with neighbors ensures collective safety and protects my loom.\"}",
+   "usage": {
+    "prompt_tokens": 352,
+    "completion_tokens": 64,
+    "total_tokens": 416,
+    "cost": 0.000184,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.000184,
+     "upstream_inference_prompt_cost": 8.8e-05,
+     "upstream_inference_completions_cost": 9.6e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Google",
+   "error": null,
+   "ts": "2026-10-23T17:36:37Z",
+   "attempt": 1
+  },
+  {
+   "model": "qwen/qwen3.7-flash",
+   "cond": "compact",
+   "i": 2,
+   "ttft_s": 0.660956242994871,
+   "total_s": 1.3825459310319275,
+   "text": "{\n  \"action\": \"say\",\n  \"target\": \"p_017\",\n  \"say\": \"Yes, tell the guard immediately. Smoke means fire or danger.\",\n  \"opinion_delta\": 2,\n  \"reason\": \"Smoke threatens village safety and my livelihood.\"\n}",
+   "usage": {
+    "prompt_tokens": 365,
+    "completion_tokens": 66,
+    "total_tokens": 431,
+    "cost": 2.24595e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 2.24595e-05,
+     "upstream_inference_prompt_cost": 1.25925e-05,
+     "upstream_inference_completions_cost": 9.867e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Alibaba",
+   "error": null,
+   "ts": "2026-10-23T17:36:37Z",
+   "attempt": 1
+  },
+  {
+   "model": "mistralai/ministral-8b-2512",
+   "cond": "compact",
+   "i": 2,
+   "ttft_s": null,
+   "total_s": 0.35441811801865697,
+   "text": "",
+   "usage": null,
+   "provider": null,
+   "error": "http 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"mistralai/ministral-8b-2512 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate yo",
+   "ts": "2026-10-23T17:36:36Z",
+   "attempt": 1
+  },
+  {
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "cond": "compact",
+   "i": 2,
+   "ttft_s": 0.36000281100859866,
+   "total_s": 0.6661449759849347,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"I saw smoke too. Let's tell the guard together.\", \"opinion_delta\": 2, \"reason\": \"Agreeing to warn guards shows solidarity and safety.\"}",
+   "usage": {
+    "prompt_tokens": 345,
+    "completion_tokens": 56,
+    "total_tokens": 401,
+    "cost": 6.398e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 6.398e-05,
+     "upstream_inference_prompt_cost": 4.83e-05,
+     "upstream_inference_completions_cost": 1.568e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Cohere",
+   "error": null,
+   "ts": "2026-10-23T17:36:37Z",
+   "attempt": 1
+  },
+  {
+   "model": "meta-llama/llama-3.1-8b-instruct",
+   "cond": "compact",
+   "i": 2,
+   "ttft_s": 0.514171571994666,
+   "total_s": 0.7160546790109947,
+   "text": "{\"action\": \"move_to\", \"target\": \"p_017\", \"say\": \"\", \"opinion_delta\": 0, \"reason\": \"investigate villager's concern\"}",
+   "usage": {
+    "prompt_tokens": 346,
+    "completion_tokens": 39,
+    "total_tokens": 385,
+    "cost": 8.87e-06,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 8.87e-06,
+     "upstream_inference_prompt_cost": 6.92e-06,
+     "upstream_inference_completions_cost": 1.95e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Novita",
+   "error": null,
+   "ts": "2026-10-23T17:36:37Z",
+   "attempt": 1
+  },
+  {
+   "model": "anthropic/claude-haiku-5.5",
+   "cond": "compact",
+   "i": 3,
+   "ttft_s": 0.6060101469629444,
+   "total_s": 1.0409974859794602,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"My prices reflect the wool and my labor, friend. Bring your own fleece and I'll weave it fairly.\", \"opinion_delta\": -2, \"reason\": \"Villager insults her prices; she defends them calmly\"}",
+   "usage": {
+    "prompt_tokens": 463,
+    "completion_tokens": 92,
+    "total_tokens": 555,
+    "cost": 9.23e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 9.23e-05,
+     "upstream_inference_prompt_cost": 4.63e-05,
+     "upstream_inference_completions_cost": 4.6e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Claude Platform on AWS",
+   "error": null,
+   "ts": "2026-10-23T17:36:38Z",
+   "attempt": 1
+  },
+  {
+   "model": "openai/gpt-6-luna",
+   "cond": "compact",
+   "i": 3,
+   "ttft_s": 1.0361666979733855,
+   "total_s": 1.6753453179844655,
+   "text": "{\"action\":\"say\",\"target\":\"p_017\",\"say\":\"My prices reflect the wool and hours it takes. Tell me what you think is fair, and we can discuss it.\",\"opinion_delta\":1,\"reason\":\"Stay calm and preserve a chance to trade.\"}",
+   "usage": {
+    "prompt_tokens": 337,
+    "completion_tokens": 59,
+    "total_tokens": 396,
+    "cost": 6.32e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 6.32e-05,
+     "upstream_inference_prompt_cost": 3.37e-05,
+     "upstream_inference_completions_cost": 2.95e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "OpenAI",
+   "error": null,
+   "ts": "2026-10-23T17:36:39Z",
+   "attempt": 1
+  },
+  {
+   "model": "google/gemini-3.1-flash-lite",
+   "cond": "compact",
+   "i": 3,
+   "ttft_s": 0.5397154159727506,
+   "total_s": 0.8269310399773531,
+   "text": "{\"action\": \"work\", \"target\": null, \"say\": \"The wool is expensive because the wolves are prowling near the pastures. Take it or leave it, neighbor.\", \"opinion_delta\": -2, \"reason\": \"Defending my livelihood against unfounded accusations.\"}",
+   "usage": {
+    "prompt_tokens": 348,
+    "completion_tokens": 58,
+    "total_tokens": 406,
+    "cost": 0.000174,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.000174,
+     "upstream_inference_prompt_cost": 8.7e-05,
+     "upstream_inference_completions_cost": 8.7e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Google",
+   "error": null,
+   "ts": "2026-10-23T17:36:38Z",
+   "attempt": 1
+  },
+  {
+   "model": "qwen/qwen3.7-flash",
+   "cond": "compact",
+   "i": 3,
+   "ttft_s": 0.6563337169936858,
+   "total_s": 1.4135069490293972,
+   "text": "{\n  \"action\": \"say\",\n  \"target\": \"p_017\",\n  \"say\": \"Gate is closed. I work for survival, not charity.\",\n  \"opinion_delta\": -2,\n  \"reason\": \"Defend livelihood against accuser near gate.\"\n}",
+   "usage": {
+    "prompt_tokens": 361,
+    "completion_tokens": 66,
+    "total_tokens": 427,
+    "cost": 2.23215e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 2.23215e-05,
+     "upstream_inference_prompt_cost": 1.24545e-05,
+     "upstream_inference_completions_cost": 9.867e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Alibaba",
+   "error": null,
+   "ts": "2026-10-23T17:36:38Z",
+   "attempt": 1
+  },
+  {
+   "model": "mistralai/ministral-8b-2512",
+   "cond": "compact",
+   "i": 3,
+   "ttft_s": null,
+   "total_s": 0.3197074260096997,
+   "text": "",
+   "usage": null,
+   "provider": null,
+   "error": "http 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"mistralai/ministral-8b-2512 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate yo",
+   "ts": "2026-10-23T17:36:37Z",
+   "attempt": 1
+  },
+  {
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "cond": "compact",
+   "i": 3,
+   "ttft_s": 0.8333956670248881,
+   "total_s": 1.5727847529924475,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"My wool is fair; you pay for skill and time. No one forces you to buy.\", \"opinion_delta\": -3, \"reason\": \"Defend my work against unfair accusation.\"}",
+   "usage": {
+    "prompt_tokens": 343,
+    "completion_tokens": 60,
+    "total_tokens": 403,
+    "cost": 6.045e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 6.045e-05,
+     "upstream_inference_prompt_cost": 5.145e-05,
+     "upstream_inference_completions_cost": 9e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Sail Research",
+   "error": null,
+   "ts": "2026-10-23T17:36:39Z",
+   "attempt": 1
+  },
+  {
+   "model": "meta-llama/llama-3.1-8b-instruct",
+   "cond": "compact",
+   "i": 3,
+   "ttft_s": 0.5599155679810792,
+   "total_s": 0.8286303970380686,
+   "text": "```json\n{\n  \"action\": \"idle\",\n  \"target\": null,\n  \"say\": \"\",\n  \"opinion_delta\": 0,\n  \"reason\": \"Assessing situation\"\n}\n```",
+   "usage": {
+    "prompt_tokens": 343,
+    "completion_tokens": 44,
+    "total_tokens": 387,
+    "cost": 9.06e-06,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 9.06e-06,
+     "upstream_inference_prompt_cost": 6.86e-06,
+     "upstream_inference_completions_cost": 2.2e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Novita",
+   "error": null,
+   "ts": "2026-10-23T17:36:38Z",
+   "attempt": 1
+  },
+  {
+   "model": "anthropic/claude-haiku-5.5",
+   "cond": "compact",
+   "i": 4,
+   "ttft_s": 0.7017651069909334,
+   "total_s": 1.2553336449782364,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"Yes, thank you! Keep your hands dry, the rain's coming hard now.\", \"opinion_delta\": 4, \"reason\": \"Villager offered help carrying wool; accepting builds goodwill.\"}",
+   "usage": {
+    "prompt_tokens": 457,
+    "completion_tokens": 88,
+    "total_tokens": 545,
+    "cost": 8.97e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 8.97e-05,
+     "upstream_inference_prompt_cost": 4.57e-05,
+     "upstream_inference_completions_cost": 4.4e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Claude Platform on AWS",
+   "error": null,
+   "ts": "2026-10-23T17:36:39Z",
+   "attempt": 1
+  },
+  {
+   "model": "openai/gpt-6-luna",
+   "cond": "compact",
+   "i": 4,
+   "ttft_s": 0.7785769489710219,
+   "total_s": 1.499781833961606,
+   "text": "{\"action\":\"say\",\"target\":\"p_017\",\"say\":\"Thank you. Please help me carry it to the market tomorrow; the gate is closed for tonight.\",\"opinion_delta\":2,\"reason\":\"Rain and the closed gate make travel unsafe.\"}",
+   "usage": {
+    "prompt_tokens": 335,
+    "completion_tokens": 55,
+    "total_tokens": 390,
+    "cost": 6.1e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 6.1e-05,
+     "upstream_inference_prompt_cost": 3.35e-05,
+     "upstream_inference_completions_cost": 2.75e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "OpenAI",
+   "error": null,
+   "ts": "2026-10-23T17:36:39Z",
+   "attempt": 1
+  },
+  {
+   "model": "google/gemini-3.1-flash-lite",
+   "cond": "compact",
+   "i": 4,
+   "ttft_s": 0.46820159000344574,
+   "total_s": 0.7750445600249805,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"That would be kind, thank you. The rain is starting and I want to get the wool under cover before it gets soaked.\", \"opinion_delta\": 2, \"reason\": \"Accepting help to protect goods from rain.\"}",
+   "usage": {
+    "prompt_tokens": 347,
+    "completion_tokens": 68,
+    "total_tokens": 415,
+    "cost": 0.00018875,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00018875,
+     "upstream_inference_prompt_cost": 8.675e-05,
+     "upstream_inference_completions_cost": 0.000102
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Google",
+   "error": null,
+   "ts": "2026-10-23T17:36:38Z",
+   "attempt": 1
+  },
+  {
+   "model": "qwen/qwen3.7-flash",
+   "cond": "compact",
+   "i": 4,
+   "ttft_s": 0.6248033300507814,
+   "total_s": 1.4621558910002932,
+   "text": "{\n  \"action\": \"say\",\n  \"target\": \"p_017\",\n  \"say\": \"No, I have enough wool. Keep it.\",\n  \"opinion_delta\": -2,\n  \"reason\": \"Refuse help to maintain independence and safety.\"\n}",
+   "usage": {
+    "prompt_tokens": 359,
+    "completion_tokens": 64,
+    "total_tokens": 423,
+    "cost": 2.19535e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 2.19535e-05,
+     "upstream_inference_prompt_cost": 1.23855e-05,
+     "upstream_inference_completions_cost": 9.568e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Alibaba",
+   "error": null,
+   "ts": "2026-10-23T17:36:40Z",
+   "attempt": 1
+  },
+  {
+   "model": "mistralai/ministral-8b-2512",
+   "cond": "compact",
+   "i": 4,
+   "ttft_s": null,
+   "total_s": 0.3051354010240175,
+   "text": "",
+   "usage": null,
+   "provider": null,
+   "error": "http 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"mistralai/ministral-8b-2512 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate yo",
+   "ts": "2026-10-23T17:36:39Z",
+   "attempt": 1
+  },
+  {
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "cond": "compact",
+   "i": 4,
+   "ttft_s": 3.976668407965917,
+   "total_s": 4.300685204972979,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"Aye, I'd welcome help with the wool. Market's closing soon.\", \"opinion_delta\": 2, \"reason\": \"Grateful for offer, need to sell before dusk.\"}",
+   "usage": {
+    "prompt_tokens": 342,
+    "completion_tokens": 60,
+    "total_tokens": 402,
+    "cost": 2.48064e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 2.48064e-05,
+     "upstream_inference_prompt_cost": 1.44324e-05,
+     "upstream_inference_completions_cost": 1.0374e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Relace",
+   "error": null,
+   "ts": "2026-10-23T17:36:43Z",
+   "attempt": 1
+  },
+  {
+   "model": "meta-llama/llama-3.1-8b-instruct",
+   "cond": "compact",
+   "i": 4,
+   "ttft_s": 0.6173658420448191,
+   "total_s": 0.978784456034191,
+   "text": "{\"action\": \"move_to\", \"target\": \"p_017\", \"say\": \"\", \"opinion_delta\": 0, \"reason\": \"try to respond to villager's question\"}",
+   "usage": {
+    "prompt_tokens": 341,
+    "completion_tokens": 41,
+    "total_tokens": 382,
+    "cost": 8.87e-06,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 8.87e-06,
+     "upstream_inference_prompt_cost": 6.82e-06,
+     "upstream_inference_completions_cost": 2.05e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Novita",
+   "error": null,
+   "ts": "2026-10-23T17:36:40Z",
+   "attempt": 1
+  },
+  {
+   "model": "anthropic/claude-haiku-5.5",
+   "cond": "compact",
+   "i": 5,
+   "ttft_s": 0.648830441001337,
+   "total_s": 1.1443615989992395,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"The miller? No, I hadn't heard. Rain's coming and the gate's shut. Did anyone see where he went?\", \"opinion_delta\": 2, \"reason\": \"Neighbor shares news; I ask for details and show concern.\"}",
+   "usage": {
+    "prompt_tokens": 457,
+    "completion_tokens": 96,
+    "total_tokens": 553,
+    "cost": 9.37e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 9.37e-05,
+     "upstream_inference_prompt_cost": 4.57e-05,
+     "upstream_inference_completions_cost": 4.8e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Claude Platform on AWS",
+   "error": null,
+   "ts": "2026-10-23T17:36:40Z",
+   "attempt": 1
+  },
+  {
+   "model": "openai/gpt-6-luna",
+   "cond": "compact",
+   "i": 5,
+   "ttft_s": 0.8323029960156418,
+   "total_s": 1.3573261100100353,
+   "text": "{\"action\":\"say\",\"target\":\"p_017\",\"say\":\"No. When was the miller last seen? We should tell the guards.\",\"opinion_delta\":1,\"reason\":\"Gather information and report danger.\"}",
+   "usage": {
+    "prompt_tokens": 334,
+    "completion_tokens": 48,
+    "total_tokens": 382,
+    "cost": 5.74e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 5.74e-05,
+     "upstream_inference_prompt_cost": 3.34e-05,
+     "upstream_inference_completions_cost": 2.4e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "OpenAI",
+   "error": null,
+   "ts": "2026-10-23T17:36:40Z",
+   "attempt": 1
+  },
+  {
+   "model": "google/gemini-3.1-flash-lite",
+   "cond": "compact",
+   "i": 5,
+   "ttft_s": 0.660797216987703,
+   "total_s": 0.8652937620063312,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"The miller? That sounds dangerous. I should head back to my loom before the rain gets worse. Stay safe out there.\", \"opinion_delta\": 1, \"reason\": \"Acknowledge news and prioritize safety in the rain.\"}",
+   "usage": {
+    "prompt_tokens": 346,
+    "completion_tokens": 69,
+    "total_tokens": 415,
+    "cost": 0.00019,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00019,
+     "upstream_inference_prompt_cost": 8.65e-05,
+     "upstream_inference_completions_cost": 0.0001035
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Google",
+   "error": null,
+   "ts": "2026-10-23T17:36:40Z",
+   "attempt": 1
+  },
+  {
+   "model": "qwen/qwen3.7-flash",
+   "cond": "compact",
+   "i": 5,
+   "ttft_s": 0.6227544319699518,
+   "total_s": 1.477951880020555,
+   "text": "{\n  \"action\": \"say\",\n  \"target\": null,\n  \"say\": \"The miller? That's troubling. I must finish my weaving before the rain worsens.\",\n  \"opinion_delta\": 0,\n  \"reason\": \"Concerned but focused on livelihood and weather.\"\n}",
+   "usage": {
+    "prompt_tokens": 359,
+    "completion_tokens": 68,
+    "total_tokens": 427,
+    "cost": 2.25515e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 2.25515e-05,
+     "upstream_inference_prompt_cost": 1.23855e-05,
+     "upstream_inference_completions_cost": 1.0166e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Alibaba",
+   "error": null,
+   "ts": "2026-10-23T17:36:41Z",
+   "attempt": 1
+  },
+  {
+   "model": "mistralai/ministral-8b-2512",
+   "cond": "compact",
+   "i": 5,
+   "ttft_s": null,
+   "total_s": 0.2780620449921116,
+   "text": "",
+   "usage": null,
+   "provider": null,
+   "error": "http 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"mistralai/ministral-8b-2512 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate yo",
+   "ts": "2026-10-23T17:36:40Z",
+   "attempt": 1
+  },
+  {
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "cond": "compact",
+   "i": 5,
+   "ttft_s": 2.2069803180056624,
+   "total_s": 2.595313824014738,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"The miller missing? That's troubling. We must be careful.\", \"opinion_delta\": 5, \"reason\": \"Concerned for safety in village\"}",
+   "usage": {
+    "prompt_tokens": 341,
+    "completion_tokens": 54,
+    "total_tokens": 395,
+    "cost": 2.37268e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 2.37268e-05,
+     "upstream_inference_prompt_cost": 1.43902e-05,
+     "upstream_inference_completions_cost": 9.3366e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Relace",
+   "error": null,
+   "ts": "2026-10-23T17:36:42Z",
+   "attempt": 1
+  },
+  {
+   "model": "meta-llama/llama-3.1-8b-instruct",
+   "cond": "compact",
+   "i": 5,
+   "ttft_s": 0.12641475797863677,
+   "total_s": 0.20349806698504835,
+   "text": "{\"action\": \"say\", \"target\": null, \"say\": \"Haven't heard, did he leave a note?\", \"opinion_delta\": 0, \"reason\": \"Responding to villager's question\"}",
+   "usage": {
+    "prompt_tokens": 359,
+    "completion_tokens": 47,
+    "total_tokens": 406,
+    "cost": 2.171e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 2.171e-05,
+     "upstream_inference_prompt_cost": 1.795e-05,
+     "upstream_inference_completions_cost": 3.76e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Groq",
+   "error": null,
+   "ts": "2026-10-23T17:36:40Z",
+   "attempt": 1
+  },
+  {
+   "model": "anthropic/claude-haiku-5.5",
+   "cond": "compact",
+   "i": 6,
+   "ttft_s": 0.7157149009872228,
+   "total_s": 1.2869174410006963,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"Not yet. The rain soaked my wool, so the weaving is slowed. You'll have it by evening.\", \"opinion_delta\": 2, \"reason\": \"Polite reply to a villager I distrust; answering avoids conflict.\"}",
+   "usage": {
+    "prompt_tokens": 466,
+    "completion_tokens": 96,
+    "total_tokens": 562,
+    "cost": 9.46e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 9.46e-05,
+     "upstream_inference_prompt_cost": 4.66e-05,
+     "upstream_inference_completions_cost": 4.8e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Claude Platform on AWS",
+   "error": null,
+   "ts": "2026-10-23T17:36:41Z",
+   "attempt": 1
+  },
+  {
+   "model": "openai/gpt-6-luna",
+   "cond": "compact",
+   "i": 6,
+   "ttft_s": 0.9454405519645661,
+   "total_s": 1.454275942989625,
+   "text": "{\"action\":\"say\",\"target\":\"p_017\",\"say\":\"Not yet; the rain has slowed my work. I\u2019ll finish as soon as I can.\",\"opinion_delta\":0,\"reason\":\"Answer honestly and protect my livelihood.\"}",
+   "usage": {
+    "prompt_tokens": 339,
+    "completion_tokens": 52,
+    "total_tokens": 391,
+    "cost": 5.99e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 5.99e-05,
+     "upstream_inference_prompt_cost": 3.39e-05,
+     "upstream_inference_completions_cost": 2.6e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "OpenAI",
+   "error": null,
+   "ts": "2026-10-23T17:36:41Z",
+   "attempt": 1
+  },
+  {
+   "model": "google/gemini-3.1-flash-lite",
+   "cond": "compact",
+   "i": 6,
+   "ttft_s": 0.4752287350129336,
+   "total_s": 0.701693861046806,
+   "text": "{\"action\": \"work\", \"target\": null, \"say\": \"The rain slows my spinning, but the cloth will be finished by sunset. Please, leave me to my work.\", \"opinion_delta\": 0, \"reason\": \"Need to finish the lord's order to maintain my livelihood.\"}",
+   "usage": {
+    "prompt_tokens": 350,
+    "completion_tokens": 64,
+    "total_tokens": 414,
+    "cost": 0.0001835,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0001835,
+     "upstream_inference_prompt_cost": 8.75e-05,
+     "upstream_inference_completions_cost": 9.6e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Google",
+   "error": null,
+   "ts": "2026-10-23T17:36:41Z",
+   "attempt": 1
+  },
+  {
+   "model": "qwen/qwen3.7-flash",
+   "cond": "compact",
+   "i": 6,
+   "ttft_s": 0.673921951034572,
+   "total_s": 1.554839468037244,
+   "text": "{\n  \"action\": \"say\",\n  \"target\": \"p_017\",\n  \"say\": \"Not yet. The rain delays work. Please leave me to my loom.\",\n  \"opinion_delta\": -2,\n  \"reason\": \"Villager is annoying and close; rain makes work harder.\"\n}",
+   "usage": {
+    "prompt_tokens": 363,
+    "completion_tokens": 74,
+    "total_tokens": 437,
+    "cost": 2.051e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 2.051e-05,
+     "upstream_inference_prompt_cost": 1.089e-05,
+     "upstream_inference_completions_cost": 9.62e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Alibaba",
+   "error": null,
+   "ts": "2026-10-23T17:36:42Z",
+   "attempt": 1
+  },
+  {
+   "model": "mistralai/ministral-8b-2512",
+   "cond": "compact",
+   "i": 6,
+   "ttft_s": null,
+   "total_s": 0.28879038395825773,
+   "text": "",
+   "usage": null,
+   "provider": null,
+   "error": "http 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"mistralai/ministral-8b-2512 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate yo",
+   "ts": "2026-10-23T17:36:41Z",
+   "attempt": 1
+  },
+  {
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "cond": "compact",
+   "i": 6,
+   "ttft_s": 0.7998657670104876,
+   "total_s": 1.2482041569892317,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"The cloth is nearly done, but the rain may delay it. I need more wool.\", \"opinion_delta\": 0, \"reason\": \"Respond politely and hint at need for resources.\"}",
+   "usage": {
+    "prompt_tokens": 345,
+    "completion_tokens": 60,
+    "total_tokens": 405,
+    "cost": 2.3331e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 2.3331e-05,
+     "upstream_inference_prompt_cost": 1.53318e-05,
+     "upstream_inference_completions_cost": 7.9992e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Baidu",
+   "error": null,
+   "ts": "2026-10-23T17:36:42Z",
+   "attempt": 1
+  },
+  {
+   "model": "meta-llama/llama-3.1-8b-instruct",
+   "cond": "compact",
+   "i": 6,
+   "ttft_s": 0.8080787799553946,
+   "total_s": 1.0995612409897149,
+   "text": "{\"action\": \"say\", \"target\": null, \"say\": \"Almost, but the rain may delay me.\", \"opinion_delta\": 0, \"reason\": \"responded to villager's question\"}",
+   "usage": {
+    "prompt_tokens": 344,
+    "completion_tokens": 45,
+    "total_tokens": 389,
+    "cost": 9.13e-06,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 9.13e-06,
+     "upstream_inference_prompt_cost": 6.88e-06,
+     "upstream_inference_completions_cost": 2.25e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Novita",
+   "error": null,
+   "ts": "2026-10-23T17:36:42Z",
+   "attempt": 1
+  },
+  {
+   "model": "anthropic/claude-haiku-5.5",
+   "cond": "compact",
+   "i": 7,
+   "ttft_s": 0.7079177579726093,
+   "total_s": 1.1582750609959476,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"Please, take the bread, but there is no need for threats. Guard, over here!\", \"opinion_delta\": -6, \"reason\": \"Villager threatens me for bread; I'm unarmed and need help.\"}",
+   "usage": {
+    "prompt_tokens": 457,
+    "completion_tokens": 85,
+    "total_tokens": 542,
+    "cost": 8.82e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 8.82e-05,
+     "upstream_inference_prompt_cost": 4.57e-05,
+     "upstream_inference_completions_cost": 4.25e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Claude Platform on AWS",
+   "error": null,
+   "ts": "2026-10-23T17:36:42Z",
+   "attempt": 1
+  },
+  {
+   "model": "openai/gpt-6-luna",
+   "cond": "compact",
+   "i": 7,
+   "ttft_s": 1.9757423030096106,
+   "total_s": 2.6106010469957255,
+   "text": "{\"action\":\"say\",\"target\":\"p_017\",\"say\":\"Please, I need that bread to keep working. Take wool instead, if you need it.\",\"opinion_delta\":-2,\"reason\":\"Offer a safer barter and avoid escalating while the guard is distant.\"}",
+   "usage": {
+    "prompt_tokens": 337,
+    "completion_tokens": 59,
+    "total_tokens": 396,
+    "cost": 6.32e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 6.32e-05,
+     "upstream_inference_prompt_cost": 3.37e-05,
+     "upstream_inference_completions_cost": 2.95e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "OpenAI",
+   "error": null,
+   "ts": "2026-10-23T17:36:44Z",
+   "attempt": 1
+  },
+  {
+   "model": "google/gemini-3.1-flash-lite",
+   "cond": "compact",
+   "i": 7,
+   "ttft_s": 1.0561261419788934,
+   "total_s": 1.2691635019727983,
+   "text": "{\"action\": \"flee\", \"target\": \"npc_guard_2\", \"say\": \"Help! Someone is trying to rob me!\", \"opinion_delta\": -10, \"reason\": \"The villager is threatening me; I must seek protection.\"}",
+   "usage": {
+    "prompt_tokens": 348,
+    "completion_tokens": 56,
+    "total_tokens": 404,
+    "cost": 0.000171,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.000171,
+     "upstream_inference_prompt_cost": 8.7e-05,
+     "upstream_inference_completions_cost": 8.4e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Google",
+   "error": null,
+   "ts": "2026-10-23T17:36:43Z",
+   "attempt": 1
+  },
+  {
+   "model": "qwen/qwen3.7-flash",
+   "cond": "compact",
+   "i": 7,
+   "ttft_s": 0.6027481519849971,
+   "total_s": 1.2533334220061079,
+   "text": "{\n  \"action\": \"flee\",\n  \"target\": null,\n  \"say\": \"\",\n  \"opinion_delta\": -10,\n  \"reason\": \"Threatened by armed villager. Must escape immediately.\"\n}",
+   "usage": {
+    "prompt_tokens": 362,
+    "completion_tokens": 54,
+    "total_tokens": 416,
+    "cost": 1.788e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 1.788e-05,
+     "upstream_inference_prompt_cost": 1.086e-05,
+     "upstream_inference_completions_cost": 7.02e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Alibaba",
+   "error": null,
+   "ts": "2026-10-23T17:36:43Z",
+   "attempt": 1
+  },
+  {
+   "model": "mistralai/ministral-8b-2512",
+   "cond": "compact",
+   "i": 7,
+   "ttft_s": null,
+   "total_s": 0.29337423405377194,
+   "text": "",
+   "usage": null,
+   "provider": null,
+   "error": "http 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"mistralai/ministral-8b-2512 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate yo",
+   "ts": "2026-10-23T17:36:42Z",
+   "attempt": 1
+  },
+  {
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "cond": "compact",
+   "i": 7,
+   "ttft_s": 0.48000882798805833,
+   "total_s": 0.8203446050174534,
+   "text": "{\"action\": \"flee\", \"target\": \"p_017\", \"say\": \"Please leave me alone, I have nothing for you.\", \"opinion_delta\": -5, \"reason\": \"Threatened, moving away for safety.\"}",
+   "usage": {
+    "prompt_tokens": 343,
+    "completion_tokens": 54,
+    "total_tokens": 397,
+    "cost": 5.3669e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 5.3669e-05,
+     "upstream_inference_prompt_cost": 4.0817e-05,
+     "upstream_inference_completions_cost": 1.2852e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "DigitalOcean",
+   "error": null,
+   "ts": "2026-10-23T17:36:43Z",
+   "attempt": 1
+  },
+  {
+   "model": "meta-llama/llama-3.1-8b-instruct",
+   "cond": "compact",
+   "i": 7,
+   "ttft_s": 0.5682716869632713,
+   "total_s": 0.7972438549622893,
+   "text": "{\"action\": \"flee\", \"target\": null, \"say\": \"\", \"opinion_delta\": 0, \"reason\": \"threatening statement from villager\"}",
+   "usage": {
+    "prompt_tokens": 343,
+    "completion_tokens": 36,
+    "total_tokens": 379,
+    "cost": 8.66e-06,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 8.66e-06,
+     "upstream_inference_prompt_cost": 6.86e-06,
+     "upstream_inference_completions_cost": 1.8e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Novita",
+   "error": null,
+   "ts": "2026-10-23T17:36:43Z",
+   "attempt": 1
+  },
+  {
+   "model": "anthropic/claude-haiku-5.5",
+   "cond": "compact",
+   "i": 8,
+   "ttft_s": 0.7307377580436878,
+   "total_s": 1.1611854640068486,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"Smoke at the north gate? Let's tell the guard captain now, before the rain hides it.\", \"opinion_delta\": 3, \"reason\": \"Villager raised a real threat; warning guards is sensible.\"}",
+   "usage": {
+    "prompt_tokens": 464,
+    "completion_tokens": 88,
+    "total_tokens": 552,
+    "cost": 9.04e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 9.04e-05,
+     "upstream_inference_prompt_cost": 4.64e-05,
+     "upstream_inference_completions_cost": 4.4e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Claude Platform on AWS",
+   "error": null,
+   "ts": "2026-10-23T17:36:43Z",
+   "attempt": 1
+  },
+  {
+   "model": "openai/gpt-6-luna",
+   "cond": "compact",
+   "i": 8,
+   "ttft_s": 0.9966617730096914,
+   "total_s": 1.639868174039293,
+   "text": "{\"action\":\"say\",\"target\":\"p_017\",\"say\":\"Yes\u2014warn the guards at once. I\u2019ll stay here and keep clear of the north gate.\",\"opinion_delta\":1,\"reason\":\"Smoke near the gate may threaten the village.\"}",
+   "usage": {
+    "prompt_tokens": 339,
+    "completion_tokens": 55,
+    "total_tokens": 394,
+    "cost": 6.14e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 6.14e-05,
+     "upstream_inference_prompt_cost": 3.39e-05,
+     "upstream_inference_completions_cost": 2.75e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "OpenAI",
+   "error": null,
+   "ts": "2026-10-23T17:36:44Z",
+   "attempt": 1
+  },
+  {
+   "model": "google/gemini-3.1-flash-lite",
+   "cond": "compact",
+   "i": 8,
+   "ttft_s": 0.9256156319752336,
+   "total_s": 1.2686897649546154,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"Smoke at the north gate? That sounds dangerous. We should alert the guard immediately before it spreads.\", \"opinion_delta\": 2, \"reason\": \"Cooperating with neighbors ensures safety and protects the village.\"}",
+   "usage": {
+    "prompt_tokens": 351,
+    "completion_tokens": 64,
+    "total_tokens": 415,
+    "cost": 0.00018375,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00018375,
+     "upstream_inference_prompt_cost": 8.775e-05,
+     "upstream_inference_completions_cost": 9.6e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Google",
+   "error": null,
+   "ts": "2026-10-23T17:36:44Z",
+   "attempt": 1
+  },
+  {
+   "model": "qwen/qwen3.7-flash",
+   "cond": "compact",
+   "i": 8,
+   "ttft_s": 0.5284992100205272,
+   "total_s": 1.2567637489992194,
+   "text": "{\n  \"action\": \"say\",\n  \"target\": \"p_017\",\n  \"say\": \"Yes, tell the guard immediately. Rain hides tracks.\",\n  \"opinion_delta\": 2,\n  \"reason\": \"Vigilance ensures safety for me and my livelihood.\"\n}",
+   "usage": {
+    "prompt_tokens": 364,
+    "completion_tokens": 68,
+    "total_tokens": 432,
+    "cost": 1.976e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 1.976e-05,
+     "upstream_inference_prompt_cost": 1.092e-05,
+     "upstream_inference_completions_cost": 8.84e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Alibaba",
+   "error": null,
+   "ts": "2026-10-23T17:36:44Z",
+   "attempt": 1
+  },
+  {
+   "model": "mistralai/ministral-8b-2512",
+   "cond": "compact",
+   "i": 8,
+   "ttft_s": null,
+   "total_s": 0.2619112759712152,
+   "text": "",
+   "usage": null,
+   "provider": null,
+   "error": "http 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"mistralai/ministral-8b-2512 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate yo",
+   "ts": "2026-10-23T17:36:43Z",
+   "attempt": 1
+  },
+  {
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "cond": "compact",
+   "i": 8,
+   "ttft_s": 0.6244000679580495,
+   "total_s": 0.9088398210005835,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"Smoke near north gate? I'll help alert the guard. Stay close.\", \"opinion_delta\": 2, \"reason\": \"Proactive and cooperative with neighbor.\"}",
+   "usage": {
+    "prompt_tokens": 345,
+    "completion_tokens": 56,
+    "total_tokens": 401,
+    "cost": 2.42414e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 2.42414e-05,
+     "upstream_inference_prompt_cost": 1.4559e-05,
+     "upstream_inference_completions_cost": 9.6824e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Relace",
+   "error": null,
+   "ts": "2026-10-23T17:36:44Z",
+   "attempt": 1
+  },
+  {
+   "model": "meta-llama/llama-3.1-8b-instruct",
+   "cond": "compact",
+   "i": 8,
+   "ttft_s": 0.5390551020391285,
+   "total_s": 0.8209566170116886,
+   "text": "{\"action\": \"move_to\", \"target\": null, \"say\": \"\", \"opinion_delta\": 0, \"reason\": \"return to work\"}",
+   "usage": {
+    "prompt_tokens": 345,
+    "completion_tokens": 33,
+    "total_tokens": 378,
+    "cost": 8.55e-06,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 8.55e-06,
+     "upstream_inference_prompt_cost": 6.9e-06,
+     "upstream_inference_completions_cost": 1.65e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Novita",
+   "error": null,
+   "ts": "2026-10-23T17:36:44Z",
+   "attempt": 1
+  },
+  {
+   "model": "anthropic/claude-haiku-5.5",
+   "cond": "compact",
+   "i": 9,
+   "ttft_s": 0.6443005129694939,
+   "total_s": 1.07435449201148,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"My prices reflect the wool and my hours, friend. Buy elsewhere if you must, but my cloth is honest work.\", \"opinion_delta\": -3, \"reason\": \"Villager insulted my prices; I defend my livelihood calmly.\"}",
+   "usage": {
+    "prompt_tokens": 461,
+    "completion_tokens": 100,
+    "total_tokens": 561,
+    "cost": 9.61e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 9.61e-05,
+     "upstream_inference_prompt_cost": 4.61e-05,
+     "upstream_inference_completions_cost": 5e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Claude Platform on AWS",
+   "error": null,
+   "ts": "2026-10-23T17:36:44Z",
+   "attempt": 1
+  },
+  {
+   "model": "openai/gpt-6-luna",
+   "cond": "compact",
+   "i": 9,
+   "ttft_s": 0.8385275759501383,
+   "total_s": 1.4883129429654218,
+   "text": "{\"action\":\"say\",\"target\":\"p_017\",\"say\":\"My prices reflect the wool and hours it takes. Tell me what you think is fair.\",\"opinion_delta\":0,\"reason\":\"Stay calm and invite negotiation.\"}",
+   "usage": {
+    "prompt_tokens": 337,
+    "completion_tokens": 50,
+    "total_tokens": 387,
+    "cost": 5.87e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 5.87e-05,
+     "upstream_inference_prompt_cost": 3.37e-05,
+     "upstream_inference_completions_cost": 2.5e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "OpenAI",
+   "error": null,
+   "ts": "2026-10-23T17:36:45Z",
+   "attempt": 1
+  },
+  {
+   "model": "google/gemini-3.1-flash-lite",
+   "cond": "compact",
+   "i": 9,
+   "ttft_s": 0.8574217589921318,
+   "total_s": 1.166838289995212,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"The wool is high-quality, and the winter looms. If you want it cheaper, find someone else who spends their days at the loom.\", \"opinion_delta\": -2, \"reason\": \"Defending my livelihood against an insulting customer.\"}",
+   "usage": {
+    "prompt_tokens": 348,
+    "completion_tokens": 71,
+    "total_tokens": 419,
+    "cost": 0.0001935,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0001935,
+     "upstream_inference_prompt_cost": 8.7e-05,
+     "upstream_inference_completions_cost": 0.0001065
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Google",
+   "error": null,
+   "ts": "2026-10-23T17:36:45Z",
+   "attempt": 1
+  },
+  {
+   "model": "qwen/qwen3.7-flash",
+   "cond": "compact",
+   "i": 9,
+   "ttft_s": 0.6150113000185229,
+   "total_s": 1.370336236024741,
+   "text": "{\n  \"action\": \"say\",\n  \"target\": \"p_017\",\n  \"say\": \"I work hard for my thread. Take it or leave it.\",\n  \"opinion_delta\": -5,\n  \"reason\": \"Accusation hurts livelihood; defend price firmly.\"\n}",
+   "usage": {
+    "prompt_tokens": 361,
+    "completion_tokens": 68,
+    "total_tokens": 429,
+    "cost": 1.967e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 1.967e-05,
+     "upstream_inference_prompt_cost": 1.083e-05,
+     "upstream_inference_completions_cost": 8.84e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Alibaba",
+   "error": null,
+   "ts": "2026-10-23T17:36:45Z",
+   "attempt": 1
+  },
+  {
+   "model": "mistralai/ministral-8b-2512",
+   "cond": "compact",
+   "i": 9,
+   "ttft_s": null,
+   "total_s": 1.0076683569932356,
+   "text": "",
+   "usage": null,
+   "provider": null,
+   "error": "http 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"mistralai/ministral-8b-2512 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate yo",
+   "ts": "2026-10-23T17:36:45Z",
+   "attempt": 1
+  },
+  {
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "cond": "compact",
+   "i": 9,
+   "ttft_s": 1.9670672590145841,
+   "total_s": 7.832220791024156,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"My wool is fair, and my loom keeps this village warm. Prices reflect my work.\", \"opinion_delta\": -2, \"reason\": \"Defend my trade against accusation.\"}",
+   "usage": {
+    "prompt_tokens": 343,
+    "completion_tokens": 58,
+    "total_tokens": 401,
+    "cost": 6.426e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 6.426e-05,
+     "upstream_inference_prompt_cost": 4.802e-05,
+     "upstream_inference_completions_cost": 1.624e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Cohere",
+   "error": null,
+   "ts": "2026-10-23T17:36:52Z",
+   "attempt": 1
+  },
+  {
+   "model": "meta-llama/llama-3.1-8b-instruct",
+   "cond": "compact",
+   "i": 9,
+   "ttft_s": 0.5943262050277553,
+   "total_s": 2.52548699604813,
+   "text": "{\"action\": \"say\", \"target\": null, \"say\": \"I set my prices based on the market and what I need\", \"opinion_delta\": 0, \"reason\": \"standing by my business\"}",
+   "usage": {
+    "prompt_tokens": 342,
+    "completion_tokens": 46,
+    "total_tokens": 388,
+    "cost": 8.68e-06,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 8.68e-06,
+     "upstream_inference_prompt_cost": 6.84e-06,
+     "upstream_inference_completions_cost": 1.84e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "DeepInfra",
+   "error": null,
+   "ts": "2026-10-23T17:36:47Z",
+   "attempt": 1
+  },
+  {
+   "model": "anthropic/claude-haiku-5.5",
+   "cond": "compact",
+   "i": 10,
+   "ttft_s": 0.7433042090269737,
+   "total_s": 1.1901571149937809,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"I can manage my wool myself, thank you. Keep your distance while the rain comes down.\", \"opinion_delta\": -2, \"reason\": \"Offer seems suspicious; I dislike p_017 already and am wary.\"}",
+   "usage": {
+    "prompt_tokens": 456,
+    "completion_tokens": 91,
+    "total_tokens": 547,
+    "cost": 9.11e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 9.11e-05,
+     "upstream_inference_prompt_cost": 4.56e-05,
+     "upstream_inference_completions_cost": 4.55e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Claude Platform on AWS",
+   "error": null,
+   "ts": "2026-10-23T17:36:46Z",
+   "attempt": 1
+  },
+  {
+   "model": "openai/gpt-6-luna",
+   "cond": "compact",
+   "i": 10,
+   "ttft_s": 0.8416988379904069,
+   "total_s": 1.4072907459922135,
+   "text": "{\"action\":\"say\",\"target\":\"p_017\",\"say\":\"Yes, please help me take the wool to market. Thank you.\",\"opinion_delta\":2,\"reason\":\"Accepting help eases my burden and supports my livelihood.\"}",
+   "usage": {
+    "prompt_tokens": 336,
+    "completion_tokens": 52,
+    "total_tokens": 388,
+    "cost": 5.96e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 5.96e-05,
+     "upstream_inference_prompt_cost": 3.36e-05,
+     "upstream_inference_completions_cost": 2.6e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "OpenAI",
+   "error": null,
+   "ts": "2026-10-23T17:36:47Z",
+   "attempt": 1
+  },
+  {
+   "model": "google/gemini-3.1-flash-lite",
+   "cond": "compact",
+   "i": 10,
+   "ttft_s": 0.580546913028229,
+   "total_s": 0.949682242993731,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"No thank you, I prefer to manage my own materials. The rain makes the wool heavy enough as it is.\", \"opinion_delta\": 0, \"reason\": \"I do not trust an armed stranger with my livelihood.\"}",
+   "usage": {
+    "prompt_tokens": 346,
+    "completion_tokens": 67,
+    "total_tokens": 413,
+    "cost": 0.000187,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.000187,
+     "upstream_inference_prompt_cost": 8.65e-05,
+     "upstream_inference_completions_cost": 0.0001005
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Google",
+   "error": null,
+   "ts": "2026-10-23T17:36:46Z",
+   "attempt": 1
+  },
+  {
+   "model": "qwen/qwen3.7-flash",
+   "cond": "compact",
+   "i": 10,
+   "ttft_s": 0.5468976339907385,
+   "total_s": 1.3376587759703398,
+   "text": "{\n  \"action\": \"say\",\n  \"target\": \"p_017\",\n  \"say\": \"No. The rain starts; I must work inside.\",\n  \"opinion_delta\": -2,\n  \"reason\": \"Armed stranger near with bad opinion. Rain means shelter.\"\n}",
+   "usage": {
+    "prompt_tokens": 360,
+    "completion_tokens": 68,
+    "total_tokens": 428,
+    "cost": 1.964e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 1.964e-05,
+     "upstream_inference_prompt_cost": 1.08e-05,
+     "upstream_inference_completions_cost": 8.84e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Alibaba",
+   "error": null,
+   "ts": "2026-10-23T17:36:47Z",
+   "attempt": 1
+  },
+  {
+   "model": "mistralai/ministral-8b-2512",
+   "cond": "compact",
+   "i": 10,
+   "ttft_s": null,
+   "total_s": 0.36810503201559186,
+   "text": "",
+   "usage": null,
+   "provider": null,
+   "error": "http 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"mistralai/ministral-8b-2512 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate yo",
+   "ts": "2026-10-23T17:36:46Z",
+   "attempt": 1
+  },
+  {
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "cond": "compact",
+   "i": 10,
+   "ttft_s": 0.4615061689983122,
+   "total_s": 0.8110142719815485,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"No, I'll manage. Stay back.\", \"opinion_delta\": -2, \"reason\": \"Armed stranger too close; wary.\"}",
+   "usage": {
+    "prompt_tokens": 342,
+    "completion_tokens": 50,
+    "total_tokens": 392,
+    "cost": 2.30774e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 2.30774e-05,
+     "upstream_inference_prompt_cost": 1.44324e-05,
+     "upstream_inference_completions_cost": 8.645e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Relace",
+   "error": null,
+   "ts": "2026-10-23T17:36:46Z",
+   "attempt": 1
+  },
+  {
+   "model": "meta-llama/llama-3.1-8b-instruct",
+   "cond": "compact",
+   "i": 10,
+   "ttft_s": 0.1126202039886266,
+   "total_s": 0.17044613900361583,
+   "text": "{\"action\": \"work\", \"target\": null, \"say\": \"\", \"opinion_delta\": 0, \"reason\": \"Continue weaving at the loom is my priority\"}",
+   "usage": {
+    "prompt_tokens": 361,
+    "completion_tokens": 38,
+    "total_tokens": 399,
+    "cost": 2.109e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 2.109e-05,
+     "upstream_inference_prompt_cost": 1.805e-05,
+     "upstream_inference_completions_cost": 3.04e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Groq",
+   "error": null,
+   "ts": "2026-10-23T17:36:46Z",
+   "attempt": 1
+  },
+  {
+   "model": "anthropic/claude-haiku-5.5",
+   "cond": "compact",
+   "i": 11,
+   "ttft_s": 0.7490177149884403,
+   "total_s": 1.1610188470222056,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"Missing? When did he vanish? Did anyone check the mill and the river path?\", \"opinion_delta\": 2, \"reason\": \"Villager shares news; I'm curious and want facts.\"}",
+   "usage": {
+    "prompt_tokens": 457,
+    "completion_tokens": 81,
+    "total_tokens": 538,
+    "cost": 8.62e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 8.62e-05,
+     "upstream_inference_prompt_cost": 4.57e-05,
+     "upstream_inference_completions_cost": 4.05e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Claude Platform on AWS",
+   "error": null,
+   "ts": "2026-10-23T17:36:47Z",
+   "attempt": 1
+  },
+  {
+   "model": "openai/gpt-6-luna",
+   "cond": "compact",
+   "i": 11,
+   "ttft_s": 0.8226425829925574,
+   "total_s": 2.356094710994512,
+   "text": "{\"action\":\"say\",\"target\":\"p_017\",\"say\":\"No. When was the miller last seen, and where? Missing folk are a danger to us all.\",\"opinion_delta\":1,\"reason\":\"Gather facts and assess the danger.\"}  \u5c1a\u5ea6 \n (The user requests one JSON object only. Use a valid object, but avoid trailing explanatory artifact. Ensure fields and limits.) \n\n\n{\"action\":\"say\",\"target\":\"p_017\",\"say\":\"No. When was the miller last seen, and where? Missing folk are a danger to us all.\",\"opinion_delta\":1,\"reason\":\"Gather facts and assess danger.\"}",
+   "usage": {
+    "prompt_tokens": 335,
+    "completion_tokens": 141,
+    "total_tokens": 476,
+    "cost": 0.000104,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.000104,
+     "upstream_inference_prompt_cost": 3.35e-05,
+     "upstream_inference_completions_cost": 7.05e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "OpenAI",
+   "error": null,
+   "ts": "2026-10-23T17:36:49Z",
+   "attempt": 1
+  },
+  {
+   "model": "google/gemini-3.1-flash-lite",
+   "cond": "compact",
+   "i": 11,
+   "ttft_s": 0.581950890016742,
+   "total_s": 0.9650051870266907,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"The miller? That is troubling news. I hope he is safe, but I must return to my weaving before the light fades.\", \"opinion_delta\": 0, \"reason\": \"Maintaining social ties while prioritizing my work.\"}",
+   "usage": {
+    "prompt_tokens": 345,
+    "completion_tokens": 67,
+    "total_tokens": 412,
+    "cost": 0.00018675,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00018675,
+     "upstream_inference_prompt_cost": 8.625e-05,
+     "upstream_inference_completions_cost": 0.0001005
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Google",
+   "error": null,
+   "ts": "2026-10-23T17:36:47Z",
+   "attempt": 1
+  },
+  {
+   "model": "qwen/qwen3.7-flash",
+   "cond": "compact",
+   "i": 11,
+   "ttft_s": 0.692869235004764,
+   "total_s": 1.4974266420467757,
+   "text": "{\n  \"action\": \"say\",\n  \"target\": \"p_017\",\n  \"say\": \"Missing? That's troubling. Did he leave any unfinished orders?\",\n  \"opinion_delta\": 0,\n  \"reason\": \"Gossip might bring work or danger; need to assess.\"\n}",
+   "usage": {
+    "prompt_tokens": 358,
+    "completion_tokens": 70,
+    "total_tokens": 428,
+    "cost": 2.2816e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 2.2816e-05,
+     "upstream_inference_prompt_cost": 1.2351e-05,
+     "upstream_inference_completions_cost": 1.0465e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Alibaba",
+   "error": null,
+   "ts": "2026-10-23T17:36:48Z",
+   "attempt": 1
+  },
+  {
+   "model": "mistralai/ministral-8b-2512",
+   "cond": "compact",
+   "i": 11,
+   "ttft_s": null,
+   "total_s": 0.6865818420192227,
+   "text": "",
+   "usage": null,
+   "provider": null,
+   "error": "http 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"mistralai/ministral-8b-2512 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate yo",
+   "ts": "2026-10-23T17:36:47Z",
+   "attempt": 1
+  },
+  {
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "cond": "compact",
+   "i": 11,
+   "ttft_s": 1.0161063869600184,
+   "total_s": 1.18605275999289,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"The miller missing? That's troubling. We must stay watchful.\", \"opinion_delta\": 2, \"reason\": \"Show concern and build trust with neighbor.\"}",
+   "usage": {
+    "prompt_tokens": 340,
+    "completion_tokens": 56,
+    "total_tokens": 396,
+    "cost": 2.257552e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 2.257552e-05,
+     "upstream_inference_prompt_cost": 1.51096e-05,
+     "upstream_inference_completions_cost": 7.46592e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Baidu",
+   "error": null,
+   "ts": "2026-10-23T17:36:48Z",
+   "attempt": 1
+  },
+  {
+   "model": "meta-llama/llama-3.1-8b-instruct",
+   "cond": "compact",
+   "i": 11,
+   "ttft_s": 5.784516871033702,
+   "total_s": 6.804362762020901,
+   "text": "{\"action\": \"move_to\", \"target\": \"p_017\", \"say\": \"\", \"opinion_delta\": 0, \"reason\": \"Approach villager for information\"}",
+   "usage": {
+    "prompt_tokens": 339,
+    "completion_tokens": 39,
+    "total_tokens": 378,
+    "cost": 8.34e-06,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 8.34e-06,
+     "upstream_inference_prompt_cost": 6.78e-06,
+     "upstream_inference_completions_cost": 1.56e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "DeepInfra",
+   "error": null,
+   "ts": "2026-10-23T17:36:54Z",
+   "attempt": 1
+  },
+  {
+   "model": "anthropic/claude-haiku-5.5",
+   "cond": "memory",
+   "i": 0,
+   "ttft_s": 0.6319879009970464,
+   "total_s": 1.1063896929845214,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"Not yet, friend. The loom needs one more day. I'll bring it to the lord's house when it's finished.\", \"opinion_delta\": 2, \"reason\": \"Calm reply to a tense neighbor, avoids provoking an armed villager.\"}",
+   "usage": {
+    "prompt_tokens": 4576,
+    "completion_tokens": 100,
+    "total_tokens": 4676,
+    "cost": 0.0005076,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0005076,
+     "upstream_inference_prompt_cost": 0.0004576,
+     "upstream_inference_completions_cost": 5e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Claude Platform on AWS",
+   "error": null,
+   "ts": "2026-10-23T17:36:48Z",
+   "attempt": 1
+  },
+  {
+   "model": "openai/gpt-6-luna",
+   "cond": "memory",
+   "i": 0,
+   "ttft_s": 0.779274191998411,
+   "total_s": 1.3615116400178522,
+   "text": "{\"action\":\"say\",\"target\":\"p_017\",\"say\":\"Not yet; the rain has slowed my work. I\u2019ll weave when conditions allow.\",\"opinion_delta\":0,\"reason\":\"Answer calmly; avoid promising work while rain falls.\"}",
+   "usage": {
+    "prompt_tokens": 3286,
+    "completion_tokens": 53,
+    "total_tokens": 3339,
+    "cost": 0.000437175,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 3283,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.000437175,
+     "upstream_inference_prompt_cost": 0.000410675,
+     "upstream_inference_completions_cost": 2.65e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "OpenAI",
+   "error": null,
+   "ts": "2026-10-23T17:36:49Z",
+   "attempt": 1
+  },
+  {
+   "model": "google/gemini-3.1-flash-lite",
+   "cond": "memory",
+   "i": 0,
+   "ttft_s": 0.634090900013689,
+   "total_s": 1.0402960630017333,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"It is nearly finished, but the rain has slowed my work. Please, have patience.\", \"opinion_delta\": 0, \"reason\": \"I need to keep the customer satisfied while finishing my work.\"}",
+   "usage": {
+    "prompt_tokens": 3965,
+    "completion_tokens": 63,
+    "total_tokens": 4028,
+    "cost": 0.00108575,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00108575,
+     "upstream_inference_prompt_cost": 0.00099125,
+     "upstream_inference_completions_cost": 9.45e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Google",
+   "error": null,
+   "ts": "2026-10-23T17:36:49Z",
+   "attempt": 1
+  },
+  {
+   "model": "qwen/qwen3.7-flash",
+   "cond": "memory",
+   "i": 0,
+   "ttft_s": 0.7079214859986678,
+   "total_s": 1.3762422800064087,
+   "text": "{\n  \"action\": \"say\",\n  \"target\": \"p_017\",\n  \"say\": \"Not yet. I am busy weaving.\",\n  \"opinion_delta\": -2,\n  \"reason\": \"He is armed and nearby; avoid conflict.\"\n}",
+   "usage": {
+    "prompt_tokens": 3936,
+    "completion_tokens": 62,
+    "total_tokens": 3998,
+    "cost": 0.00012614,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00012614,
+     "upstream_inference_prompt_cost": 0.00011808,
+     "upstream_inference_completions_cost": 8.06e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Alibaba",
+   "error": null,
+   "ts": "2026-10-23T17:36:50Z",
+   "attempt": 1
+  },
+  {
+   "model": "mistralai/ministral-8b-2512",
+   "cond": "memory",
+   "i": 0,
+   "ttft_s": null,
+   "total_s": 0.2583111359854229,
+   "text": "",
+   "usage": null,
+   "provider": null,
+   "error": "http 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"mistralai/ministral-8b-2512 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate yo",
+   "ts": "2026-10-23T17:36:49Z",
+   "attempt": 1
+  },
+  {
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "cond": "memory",
+   "i": 0,
+   "ttft_s": 1.5313872169936076,
+   "total_s": 1.577940020011738,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"The lord's cloth is nearly done; rain slows the dye. Rest assured it'll be ready.\", \"opinion_delta\": 0, \"reason\": \"Reassure armed villager about my work\"}",
+   "usage": {
+    "prompt_tokens": 3388,
+    "completion_tokens": 62,
+    "total_tokens": 3450,
+    "cost": 0.00015882856,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00015882856,
+     "upstream_inference_prompt_cost": 0.00015056272,
+     "upstream_inference_completions_cost": 8.26584e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Baidu",
+   "error": null,
+   "ts": "2026-10-23T17:36:50Z",
+   "attempt": 1
+  },
+  {
+   "model": "meta-llama/llama-3.1-8b-instruct",
+   "cond": "memory",
+   "i": 0,
+   "ttft_s": 0.6125080659985542,
+   "total_s": 1.0261545520043,
+   "text": "{\n  \"action\": \"work\",\n  \"target\": null,\n  \"say\": \"\",\n  \"opinion_delta\": 0,\n  \"reason\": \"continuing daily routine\"\n}",
+   "usage": {
+    "prompt_tokens": 3301,
+    "completion_tokens": 40,
+    "total_tokens": 3341,
+    "cost": 6.802e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 6.802e-05,
+     "upstream_inference_prompt_cost": 6.602e-05,
+     "upstream_inference_completions_cost": 2e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Novita",
+   "error": null,
+   "ts": "2026-10-23T17:36:50Z",
+   "attempt": 1
+  },
+  {
+   "model": "anthropic/claude-haiku-5.5",
+   "cond": "memory",
+   "i": 1,
+   "ttft_s": 0.6503137249965221,
+   "total_s": 1.1025536989909597,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"Take my bread and go, I won't fight you over it.\", \"opinion_delta\": -6, \"reason\": \"Armed villager threatens me; I'd rather yield than risk my life.\"}",
+   "usage": {
+    "prompt_tokens": 4566,
+    "completion_tokens": 79,
+    "total_tokens": 4645,
+    "cost": 0.0004961,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0004961,
+     "upstream_inference_prompt_cost": 0.0004566,
+     "upstream_inference_completions_cost": 3.95e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Claude Platform on AWS",
+   "error": null,
+   "ts": "2026-10-23T17:36:50Z",
+   "attempt": 1
+  },
+  {
+   "model": "openai/gpt-6-luna",
+   "cond": "memory",
+   "i": 1,
+   "ttft_s": 1.160575773974415,
+   "total_s": 1.733779912989121,
+   "text": "{\"action\":\"flee\",\"target\":\"p_017\",\"say\":\"Help! He\u2019s threatening me\u2014keep back!\",\"opinion_delta\":-10,\"reason\":\"Armed villager threatens my food; flee toward safety.\"}",
+   "usage": {
+    "prompt_tokens": 3283,
+    "completion_tokens": 51,
+    "total_tokens": 3334,
+    "cost": 0.0004358,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 3280,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0004358,
+     "upstream_inference_prompt_cost": 0.0004103,
+     "upstream_inference_completions_cost": 2.55e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "OpenAI",
+   "error": null,
+   "ts": "2026-10-23T17:36:51Z",
+   "attempt": 1
+  },
+  {
+   "model": "google/gemini-3.1-flash-lite",
+   "cond": "memory",
+   "i": 1,
+   "ttft_s": 0.7559879269683734,
+   "total_s": 1.0545661159558222,
+   "text": "{\"action\": \"flee\", \"target\": null, \"say\": \"Please, take the bread and leave me in peace! I have nothing else to give.\", \"opinion_delta\": -10, \"reason\": \"The villager is armed and threatening me for my food.\"}",
+   "usage": {
+    "prompt_tokens": 3962,
+    "completion_tokens": 60,
+    "total_tokens": 4022,
+    "cost": 0.0010805,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0010805,
+     "upstream_inference_prompt_cost": 0.0009905,
+     "upstream_inference_completions_cost": 9e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Google",
+   "error": null,
+   "ts": "2026-10-23T17:36:51Z",
+   "attempt": 1
+  },
+  {
+   "model": "qwen/qwen3.7-flash",
+   "cond": "memory",
+   "i": 1,
+   "ttft_s": 0.6559548740042374,
+   "total_s": 1.1687462780391797,
+   "text": "{\n  \"action\": \"flee\",\n  \"target\": null,\n  \"say\": \"\",\n  \"opinion_delta\": -10,\n  \"reason\": \"Armed villager threatens me; I must escape to survive.\"\n}",
+   "usage": {
+    "prompt_tokens": 3933,
+    "completion_tokens": 55,
+    "total_tokens": 3988,
+    "cost": 0.00012514,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00012514,
+     "upstream_inference_prompt_cost": 0.00011799,
+     "upstream_inference_completions_cost": 7.15e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Alibaba",
+   "error": null,
+   "ts": "2026-10-23T17:36:51Z",
+   "attempt": 1
+  },
+  {
+   "model": "mistralai/ministral-8b-2512",
+   "cond": "memory",
+   "i": 1,
+   "ttft_s": null,
+   "total_s": 0.46298507595201954,
+   "text": "",
+   "usage": null,
+   "provider": null,
+   "error": "http 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"mistralai/ministral-8b-2512 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate yo",
+   "ts": "2026-10-23T17:36:50Z",
+   "attempt": 1
+  },
+  {
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "cond": "memory",
+   "i": 1,
+   "ttft_s": 1.103089128038846,
+   "total_s": 1.4370929460274056,
+   "text": "{\"action\": \"flee\", \"target\": \"npc_guard_2\", \"say\": \"Guard, p_017 is threatening me for bread! Please help!\", \"opinion_delta\": -5, \"reason\": \"Feeling threatened, seeking guard protection.\"}",
+   "usage": {
+    "prompt_tokens": 3385,
+    "completion_tokens": 59,
+    "total_tokens": 3444,
+    "cost": 0.00015829528,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00015829528,
+     "upstream_inference_prompt_cost": 0.0001504294,
+     "upstream_inference_completions_cost": 7.86588e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Baidu",
+   "error": null,
+   "ts": "2026-10-23T17:36:52Z",
+   "attempt": 1
+  },
+  {
+   "model": "meta-llama/llama-3.1-8b-instruct",
+   "cond": "memory",
+   "i": 1,
+   "ttft_s": 1.1567868129932322,
+   "total_s": 1.9452148050186224,
+   "text": "{\"action\": \"work\", \"target\": null, \"say\": \"\", \"opinion_delta\": 0, \"reason\": \"continue weaving\"}",
+   "usage": {
+    "prompt_tokens": 3297,
+    "completion_tokens": 31,
+    "total_tokens": 3328,
+    "cost": 6.718e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 6.718e-05,
+     "upstream_inference_prompt_cost": 6.594e-05,
+     "upstream_inference_completions_cost": 1.24e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "DeepInfra",
+   "error": null,
+   "ts": "2026-10-23T17:36:52Z",
+   "attempt": 1
+  },
+  {
+   "model": "anthropic/claude-haiku-5.5",
+   "cond": "memory",
+   "i": 2,
+   "ttft_s": 0.7027917010127567,
+   "total_s": 1.1267429830040783,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"Smoke at the north gate? Let's tell the guard now, before it spreads.\", \"opinion_delta\": 2, \"reason\": \"Sensible warning about a possible fire threat to the village.\"}",
+   "usage": {
+    "prompt_tokens": 4574,
+    "completion_tokens": 83,
+    "total_tokens": 4657,
+    "cost": 0.0004989,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0004989,
+     "upstream_inference_prompt_cost": 0.0004574,
+     "upstream_inference_completions_cost": 4.15e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Claude Platform on AWS",
+   "error": null,
+   "ts": "2026-10-23T17:36:52Z",
+   "attempt": 1
+  },
+  {
+   "model": "openai/gpt-6-luna",
+   "cond": "memory",
+   "i": 2,
+   "ttft_s": 1.0552196490461938,
+   "total_s": 1.810199301049579,
+   "text": "{\"action\":\"say\",\"target\":\"p_017\",\"say\":\"Yes\u2014warn the guards at once; smoke near the gate could mean danger.\",\"opinion_delta\":2,\"reason\":\"Smoke near the palisade threatens everyone; alert the guard.\"}",
+   "usage": {
+    "prompt_tokens": 3286,
+    "completion_tokens": 55,
+    "total_tokens": 3341,
+    "cost": 0.000438175,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 3283,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.000438175,
+     "upstream_inference_prompt_cost": 0.000410675,
+     "upstream_inference_completions_cost": 2.75e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "OpenAI",
+   "error": null,
+   "ts": "2026-10-23T17:36:53Z",
+   "attempt": 1
+  },
+  {
+   "model": "google/gemini-3.1-flash-lite",
+   "cond": "memory",
+   "i": 2,
+   "ttft_s": 0.7766191600239836,
+   "total_s": 1.164348174992483,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"Smoke at the gate? That sounds dangerous. We should definitely tell the guard, but keep your distance.\", \"opinion_delta\": 3, \"reason\": \"Smoke near the gate is a threat to the village's safety.\"}",
+   "usage": {
+    "prompt_tokens": 3965,
+    "completion_tokens": 68,
+    "total_tokens": 4033,
+    "cost": 0.00109325,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00109325,
+     "upstream_inference_prompt_cost": 0.00099125,
+     "upstream_inference_completions_cost": 0.000102
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Google",
+   "error": null,
+   "ts": "2026-10-23T17:36:52Z",
+   "attempt": 1
+  },
+  {
+   "model": "qwen/qwen3.7-flash",
+   "cond": "memory",
+   "i": 2,
+   "ttft_s": 1.2373134390218183,
+   "total_s": 1.9426518410327844,
+   "text": "{\n\"action\": \"say\",\n\"target\": \"p_017\",\n\"say\": \"Smoke? At dusk? That sounds like trouble. Stay close.\",\n\"opinion_delta\": 2,\n\"reason\": \"P_017 shares warning about smoke, useful for survival.\"\n}",
+   "usage": {
+    "prompt_tokens": 3936,
+    "completion_tokens": 67,
+    "total_tokens": 4003,
+    "cost": 0.0001458085,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0001458085,
+     "upstream_inference_prompt_cost": 0.000135792,
+     "upstream_inference_completions_cost": 1.00165e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Alibaba",
+   "error": null,
+   "ts": "2026-10-23T17:36:53Z",
+   "attempt": 1
+  },
+  {
+   "model": "mistralai/ministral-8b-2512",
+   "cond": "memory",
+   "i": 2,
+   "ttft_s": null,
+   "total_s": 0.4106343120220117,
+   "text": "",
+   "usage": null,
+   "provider": null,
+   "error": "http 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"mistralai/ministral-8b-2512 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate yo",
+   "ts": "2026-10-23T17:36:52Z",
+   "attempt": 1
+  },
+  {
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "cond": "memory",
+   "i": 2,
+   "ttft_s": 1.1333937370218337,
+   "total_s": 1.6968426100211218,
+   "text": "{\n  \"action\": \"say\",\n  \"target\": \"p_017\",\n  \"say\": \"Smoke near the gate? We should tell the guards quickly.\",\n  \"opinion_delta\": 1,\n  \"reason\": \"Responding to warning about danger\"\n}",
+   "usage": {
+    "prompt_tokens": 3387,
+    "completion_tokens": 59,
+    "total_tokens": 3446,
+    "cost": 2.6208288e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 3072,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 2.6208288e-05,
+     "upstream_inference_prompt_cost": 1.8342408e-05,
+     "upstream_inference_completions_cost": 7.86588e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Baidu",
+   "error": null,
+   "ts": "2026-10-23T17:36:54Z",
+   "attempt": 1
+  },
+  {
+   "model": "meta-llama/llama-3.1-8b-instruct",
+   "cond": "memory",
+   "i": 2,
+   "ttft_s": 0.5936356350430287,
+   "total_s": 1.416849693050608,
+   "text": "{\n  \"action\": \"say\",\n  \"target\": null,\n  \"say\": \"Is the smoke near the north gate a sign of trouble?\",\n  \"opinion_delta\": 0,\n  \"reason\": \"concern about safety\"\n}",
+   "usage": {
+    "prompt_tokens": 3301,
+    "completion_tokens": 52,
+    "total_tokens": 3353,
+    "cost": 6.862e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 6.862e-05,
+     "upstream_inference_prompt_cost": 6.602e-05,
+     "upstream_inference_completions_cost": 2.6e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Novita",
+   "error": null,
+   "ts": "2026-10-23T17:36:54Z",
+   "attempt": 1
+  },
+  {
+   "model": "anthropic/claude-haiku-5.5",
+   "cond": "memory",
+   "i": 3,
+   "ttft_s": 0.7327772930148058,
+   "total_s": 1.355497437005397,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"My prices reflect the wool and my hours. If you think they're unfair, bring your own wool and weave it yourself.\", \"opinion_delta\": -3, \"reason\": \"p_017 insulted my prices publicly; I'm defending my livelihood calmly.\"}",
+   "usage": {
+    "prompt_tokens": 4571,
+    "completion_tokens": 104,
+    "total_tokens": 4675,
+    "cost": 0.0005091,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0005091,
+     "upstream_inference_prompt_cost": 0.0004571,
+     "upstream_inference_completions_cost": 5.2e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Claude Platform on AWS",
+   "error": null,
+   "ts": "2026-10-23T17:36:53Z",
+   "attempt": 1
+  },
+  {
+   "model": "openai/gpt-6-luna",
+   "cond": "memory",
+   "i": 3,
+   "ttft_s": 0.8285401149769314,
+   "total_s": 1.4565388239570893,
+   "text": "{\"action\":\"say\",\"target\":\"p_017\",\"say\":\"My prices reflect the wool and hours it takes. If you want cloth, we can discuss a fair bargain.\",\"opinion_delta\":0,\"reason\":\"Defuse the insult and preserve a chance to trade.\"}",
+   "usage": {
+    "prompt_tokens": 3283,
+    "completion_tokens": 59,
+    "total_tokens": 3342,
+    "cost": 0.0004398,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 3280,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0004398,
+     "upstream_inference_prompt_cost": 0.0004103,
+     "upstream_inference_completions_cost": 2.95e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "OpenAI",
+   "error": null,
+   "ts": "2026-10-23T17:36:54Z",
+   "attempt": 1
+  },
+  {
+   "model": "google/gemini-3.1-flash-lite",
+   "cond": "memory",
+   "i": 3,
+   "ttft_s": 1.021807015989907,
+   "total_s": 1.437948795966804,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"The quality of my wool is worth every coin. If you cannot afford it, kindly move along.\", \"opinion_delta\": -5, \"reason\": \"Defending my livelihood against an unfair insult.\"}",
+   "usage": {
+    "prompt_tokens": 3961,
+    "completion_tokens": 62,
+    "total_tokens": 4023,
+    "cost": 0.00108325,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00108325,
+     "upstream_inference_prompt_cost": 0.00099025,
+     "upstream_inference_completions_cost": 9.3e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Google",
+   "error": null,
+   "ts": "2026-10-23T17:36:54Z",
+   "attempt": 1
+  },
+  {
+   "model": "qwen/qwen3.7-flash",
+   "cond": "memory",
+   "i": 3,
+   "ttft_s": 3.9175899180117995,
+   "total_s": 4.77056321996497,
+   "text": "{\n  \"action\": \"idle\",\n  \"target\": null,\n  \"say\": \"I have no choice but to endure. My work is my shield.\",\n  \"opinion_delta\": -8,\n  \"reason\": \"p_017 insults me and gate is closed; I must stay safe.\"\n}",
+   "usage": {
+    "prompt_tokens": 3932,
+    "completion_tokens": 71,
+    "total_tokens": 4003,
+    "cost": 0.0001462685,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0001462685,
+     "upstream_inference_prompt_cost": 0.000135654,
+     "upstream_inference_completions_cost": 1.06145e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Alibaba",
+   "error": null,
+   "ts": "2026-10-23T17:36:58Z",
+   "attempt": 1
+  },
+  {
+   "model": "mistralai/ministral-8b-2512",
+   "cond": "memory",
+   "i": 3,
+   "ttft_s": null,
+   "total_s": 0.2972733229980804,
+   "text": "",
+   "usage": null,
+   "provider": null,
+   "error": "http 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"mistralai/ministral-8b-2512 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate yo",
+   "ts": "2026-10-23T17:36:54Z",
+   "attempt": 1
+  },
+  {
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "cond": "memory",
+   "i": 3,
+   "ttft_s": 0.7627406739629805,
+   "total_s": 1.5357765579828992,
+   "text": "{\n  \"action\": \"say\",\n  \"target\": \"p_017\",\n  \"say\": \"My cloth is fair, and you know it. If you want cheap, go elsewhere.\",\n  \"opinion_delta\": -2,\n  \"reason\": \"Defending my trade from insult.\"\n}",
+   "usage": {
+    "prompt_tokens": 3385,
+    "completion_tokens": 64,
+    "total_tokens": 3449,
+    "cost": 2.6786008e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 3072,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 2.6786008e-05,
+     "upstream_inference_prompt_cost": 1.8253528e-05,
+     "upstream_inference_completions_cost": 8.53248e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Baidu",
+   "error": null,
+   "ts": "2026-10-23T17:36:55Z",
+   "attempt": 1
+  },
+  {
+   "model": "meta-llama/llama-3.1-8b-instruct",
+   "cond": "memory",
+   "i": 3,
+   "ttft_s": 0.5455343030043878,
+   "total_s": 2.1500210560043342,
+   "text": "{\"action\": \"move_to\", \"target\": \"p_017\", \"say\": \"\", \"opinion_delta\": 0, \"reason\": \"nearby villager\"}",
+   "usage": {
+    "prompt_tokens": 3297,
+    "completion_tokens": 37,
+    "total_tokens": 3334,
+    "cost": 6.742e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 6.742e-05,
+     "upstream_inference_prompt_cost": 6.594e-05,
+     "upstream_inference_completions_cost": 1.48e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "DeepInfra",
+   "error": null,
+   "ts": "2026-10-23T17:36:56Z",
+   "attempt": 1
+  },
+  {
+   "model": "anthropic/claude-haiku-5.5",
+   "cond": "memory",
+   "i": 4,
+   "ttft_s": 0.7059292829944752,
+   "total_s": 1.1085436780122109,
+   "text": "{\"action\": \"trade\", \"target\": \"p_017\", \"say\": \"Yes, thank you. Take one wool bundle and mind the mud by the gate.\", \"opinion_delta\": 2, \"reason\": \"Offer of help at dusk in rain; accepting it is practical.\"}",
+   "usage": {
+    "prompt_tokens": 4565,
+    "completion_tokens": 88,
+    "total_tokens": 4653,
+    "cost": 0.0005005,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0005005,
+     "upstream_inference_prompt_cost": 0.0004565,
+     "upstream_inference_completions_cost": 4.4e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Claude Platform on AWS",
+   "error": null,
+   "ts": "2026-10-23T17:36:55Z",
+   "attempt": 1
+  },
+  {
+   "model": "openai/gpt-6-luna",
+   "cond": "memory",
+   "i": 4,
+   "ttft_s": 0.6876528830034658,
+   "total_s": 1.3474248119746335,
+   "text": "{\"action\":\"say\",\"target\":\"p_017\",\"say\":\"Thank you. Please help me carry the wool; the gate is closed, so we\u2019ll wait until morning.\",\"opinion_delta\":2,\"reason\":\"Accept help, but avoid traveling in rain after gate closure.\"}",
+   "usage": {
+    "prompt_tokens": 3281,
+    "completion_tokens": 60,
+    "total_tokens": 3341,
+    "cost": 0.00044005,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 3278,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00044005,
+     "upstream_inference_prompt_cost": 0.00041005,
+     "upstream_inference_completions_cost": 3e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "OpenAI",
+   "error": null,
+   "ts": "2026-10-23T17:36:55Z",
+   "attempt": 1
+  },
+  {
+   "model": "google/gemini-3.1-flash-lite",
+   "cond": "memory",
+   "i": 4,
+   "ttft_s": 0.7379891210002825,
+   "total_s": 1.157776600040961,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"That is kind of you, but I prefer to handle my own materials for now. Thank you for the offer, neighbor.\", \"opinion_delta\": 2, \"reason\": \"Politely declining help while maintaining a positive rapport.\"}",
+   "usage": {
+    "prompt_tokens": 3960,
+    "completion_tokens": 68,
+    "total_tokens": 4028,
+    "cost": 0.001092,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.001092,
+     "upstream_inference_prompt_cost": 0.00099,
+     "upstream_inference_completions_cost": 0.000102
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Google",
+   "error": null,
+   "ts": "2026-10-23T17:36:55Z",
+   "attempt": 1
+  },
+  {
+   "model": "qwen/qwen3.7-flash",
+   "cond": "memory",
+   "i": 4,
+   "ttft_s": 0.7727205849951133,
+   "total_s": 1.4212725419783965,
+   "text": "{\n  \"action\": \"trade\",\n  \"target\": \"p_017\",\n  \"say\": \"I need to weave. Go away.\",\n  \"opinion_delta\": -5,\n  \"reason\": \"Rain started, gate closed. I must work and stay safe.\"\n}",
+   "usage": {
+    "prompt_tokens": 3930,
+    "completion_tokens": 66,
+    "total_tokens": 3996,
+    "cost": 0.00012648,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00012648,
+     "upstream_inference_prompt_cost": 0.0001179,
+     "upstream_inference_completions_cost": 8.58e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Alibaba",
+   "error": null,
+   "ts": "2026-10-23T17:36:56Z",
+   "attempt": 1
+  },
+  {
+   "model": "mistralai/ministral-8b-2512",
+   "cond": "memory",
+   "i": 4,
+   "ttft_s": null,
+   "total_s": 0.3721935640205629,
+   "text": "",
+   "usage": null,
+   "provider": null,
+   "error": "http 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"mistralai/ministral-8b-2512 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate yo",
+   "ts": "2026-10-23T17:36:55Z",
+   "attempt": 1
+  },
+  {
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "cond": "memory",
+   "i": 4,
+   "ttft_s": 0.7591058390098624,
+   "total_s": 1.5922503430047072,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"Aye, I'd welcome the help. The wool's heavy and dusk's falling.\", \"opinion_delta\": 2, \"reason\": \"Kind offer, trust grows slightly.\"}",
+   "usage": {
+    "prompt_tokens": 3384,
+    "completion_tokens": 58,
+    "total_tokens": 3442,
+    "cost": 2.5941648e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 3072,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 2.5941648e-05,
+     "upstream_inference_prompt_cost": 1.8209088e-05,
+     "upstream_inference_completions_cost": 7.73256e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Baidu",
+   "error": null,
+   "ts": "2026-10-23T17:36:57Z",
+   "attempt": 1
+  },
+  {
+   "model": "meta-llama/llama-3.1-8b-instruct",
+   "cond": "memory",
+   "i": 4,
+   "ttft_s": 0.5320058449869975,
+   "total_s": 0.878003240970429,
+   "text": "{\n  \"action\": \"work\",\n  \"target\": null,\n  \"say\": \"\",\n  \"opinion_delta\": 0,\n  \"reason\": \"\"\n}",
+   "usage": {
+    "prompt_tokens": 3296,
+    "completion_tokens": 35,
+    "total_tokens": 3331,
+    "cost": 6.767e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 6.767e-05,
+     "upstream_inference_prompt_cost": 6.592e-05,
+     "upstream_inference_completions_cost": 1.75e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Novita",
+   "error": null,
+   "ts": "2026-10-23T17:36:56Z",
+   "attempt": 1
+  },
+  {
+   "model": "anthropic/claude-haiku-5.5",
+   "cond": "memory",
+   "i": 5,
+   "ttft_s": 0.604698762006592,
+   "total_s": 1.0980156179866754,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"Missing? Not yet, but the gate is shut and rain is coming. Let's find out what happened before we spread anything.\", \"opinion_delta\": 1, \"reason\": \"Cautious response to unverified news; p_017 is nearby and useful.\"}",
+   "usage": {
+    "prompt_tokens": 4565,
+    "completion_tokens": 100,
+    "total_tokens": 4665,
+    "cost": 0.0005065,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0005065,
+     "upstream_inference_prompt_cost": 0.0004565,
+     "upstream_inference_completions_cost": 5e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Claude Platform on AWS",
+   "error": null,
+   "ts": "2026-10-23T17:36:56Z",
+   "attempt": 1
+  },
+  {
+   "model": "openai/gpt-6-luna",
+   "cond": "memory",
+   "i": 5,
+   "ttft_s": 0.9212400959804654,
+   "total_s": 1.5151292479713447,
+   "text": "{\"action\":\"say\",\"target\":\"p_017\",\"say\":\"No, I hadn\u2019t heard. That\u2019s troubling\u2014thank you for telling me.\",\"opinion_delta\":2,\"reason\":\"Acknowledge concerning news and keep a nearby villager on good terms.\"}",
+   "usage": {
+    "prompt_tokens": 3280,
+    "completion_tokens": 58,
+    "total_tokens": 3338,
+    "cost": 0.000438925,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 3277,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.000438925,
+     "upstream_inference_prompt_cost": 0.000409925,
+     "upstream_inference_completions_cost": 2.9e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "OpenAI",
+   "error": null,
+   "ts": "2026-10-23T17:36:57Z",
+   "attempt": 1
+  },
+  {
+   "model": "google/gemini-3.1-flash-lite",
+   "cond": "memory",
+   "i": 5,
+   "ttft_s": 0.4670967720448971,
+   "total_s": 0.7853882450144738,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"The miller missing? That is grave news, indeed. I hope he is safe, though the woods are dangerous these days.\", \"opinion_delta\": 2, \"reason\": \"Maintaining social ties while acknowledging the potential danger of the woods.\"}",
+   "usage": {
+    "prompt_tokens": 3959,
+    "completion_tokens": 70,
+    "total_tokens": 4029,
+    "cost": 0.00109475,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00109475,
+     "upstream_inference_prompt_cost": 0.00098975,
+     "upstream_inference_completions_cost": 0.000105
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Google",
+   "error": null,
+   "ts": "2026-10-23T17:36:56Z",
+   "attempt": 1
+  },
+  {
+   "model": "qwen/qwen3.7-flash",
+   "cond": "memory",
+   "i": 5,
+   "ttft_s": 1.0140662339981645,
+   "total_s": 1.7482437579892576,
+   "text": "{\n  \"action\": \"say\",\n  \"target\": null,\n  \"say\": \"The miller? That is terrible news. Stay safe.\",\n  \"opinion_delta\": 0,\n  \"reason\": \"Respond to news with sympathy and caution.\"\n}",
+   "usage": {
+    "prompt_tokens": 3930,
+    "completion_tokens": 60,
+    "total_tokens": 3990,
+    "cost": 0.0001257,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0001257,
+     "upstream_inference_prompt_cost": 0.0001179,
+     "upstream_inference_completions_cost": 7.8e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Alibaba",
+   "error": null,
+   "ts": "2026-10-23T17:36:58Z",
+   "attempt": 1
+  },
+  {
+   "model": "mistralai/ministral-8b-2512",
+   "cond": "memory",
+   "i": 5,
+   "ttft_s": null,
+   "total_s": 0.3998047630302608,
+   "text": "",
+   "usage": null,
+   "provider": null,
+   "error": "http 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"mistralai/ministral-8b-2512 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate yo",
+   "ts": "2026-10-23T17:36:56Z",
+   "attempt": 1
+  },
+  {
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "cond": "memory",
+   "i": 5,
+   "ttft_s": 1.1636628630221821,
+   "total_s": 1.370854141016025,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"The miller missing? That's troubling news. I hope he returns soon.\", \"opinion_delta\": 2, \"reason\": \"Concerned about the miller's disappearance.\"}",
+   "usage": {
+    "prompt_tokens": 3383,
+    "completion_tokens": 59,
+    "total_tokens": 3442,
+    "cost": 2.6030528e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 3072,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 2.6030528e-05,
+     "upstream_inference_prompt_cost": 1.8164648e-05,
+     "upstream_inference_completions_cost": 7.86588e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Baidu",
+   "error": null,
+   "ts": "2026-10-23T17:36:58Z",
+   "attempt": 1
+  },
+  {
+   "model": "meta-llama/llama-3.1-8b-instruct",
+   "cond": "memory",
+   "i": 5,
+   "ttft_s": 0.7853870539693162,
+   "total_s": 1.2340490489732474,
+   "text": "{\n  \"action\": \"say\",\n  \"target\": null,\n  \"say\": \"Have you heard the miller has gone missing?\",\n  \"opinion_delta\": 0,\n  \"reason\": \"someone asked about the miller\"\n}",
+   "usage": {
+    "prompt_tokens": 3295,
+    "completion_tokens": 52,
+    "total_tokens": 3347,
+    "cost": 6.85e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 6.85e-05,
+     "upstream_inference_prompt_cost": 6.59e-05,
+     "upstream_inference_completions_cost": 2.6e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Novita",
+   "error": null,
+   "ts": "2026-10-23T17:36:58Z",
+   "attempt": 1
+  },
+  {
+   "model": "anthropic/claude-haiku-5.5",
+   "cond": "memory",
+   "i": 6,
+   "ttft_s": 0.6412863970035687,
+   "total_s": 1.0647734770318493,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"Not yet, the loom needs its shuttle fixed. The lord will have it when it's done.\", \"opinion_delta\": 0, \"reason\": \"Neutral reply to a question; avoid provoking hostility.\"}",
+   "usage": {
+    "prompt_tokens": 4574,
+    "completion_tokens": 89,
+    "total_tokens": 4663,
+    "cost": 0.0005019,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0005019,
+     "upstream_inference_prompt_cost": 0.0004574,
+     "upstream_inference_completions_cost": 4.45e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Claude Platform on AWS",
+   "error": null,
+   "ts": "2026-10-23T17:36:57Z",
+   "attempt": 1
+  },
+  {
+   "model": "openai/gpt-6-luna",
+   "cond": "memory",
+   "i": 6,
+   "ttft_s": 0.8250115599948913,
+   "total_s": 2.2249732139753178,
+   "text": "{\"action\":\"say\",\"target\":\"p_017\",\"say\":\"Not yet; rain slows the loom. I\u2019ll keep weaving, but I cannot promise it today.\",\"opinion_delta\":0,\"reason\":\"Answer calmly; preserve safety and livelihood.\"} \n%timeout\n The model response couldn't be parsed as JSON. Ensure it is a valid JSON object.\n\n{\"action\":\"say\",\"target\":\"p_017\",\"say\":\"Not yet; rain slows the loom. I\u2019ll keep weaving, but I cannot promise it today.\",\"opinion_delta\":0,\"reason\":\"Answer calmly; preserve safety and livelihood.\"}",
+   "usage": {
+    "prompt_tokens": 3285,
+    "completion_tokens": 131,
+    "total_tokens": 3416,
+    "cost": 0.00047605,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 3282,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00047605,
+     "upstream_inference_prompt_cost": 0.00041055,
+     "upstream_inference_completions_cost": 6.55e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "OpenAI",
+   "error": null,
+   "ts": "2026-10-23T17:36:59Z",
+   "attempt": 1
+  },
+  {
+   "model": "google/gemini-3.1-flash-lite",
+   "cond": "memory",
+   "i": 6,
+   "ttft_s": 0.4877444510348141,
+   "total_s": 0.7261476499843411,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"The rain slows my work, but I am doing my best. Please, have patience with the loom.\", \"opinion_delta\": 2, \"reason\": \"Maintaining professional relations despite past tensions.\"}",
+   "usage": {
+    "prompt_tokens": 3963,
+    "completion_tokens": 61,
+    "total_tokens": 4024,
+    "cost": 0.00108225,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00108225,
+     "upstream_inference_prompt_cost": 0.00099075,
+     "upstream_inference_completions_cost": 9.15e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Google",
+   "error": null,
+   "ts": "2026-10-23T17:36:58Z",
+   "attempt": 1
+  },
+  {
+   "model": "qwen/qwen3.7-flash",
+   "cond": "memory",
+   "i": 6,
+   "ttft_s": 1.0394229009980336,
+   "total_s": 1.7251097609987482,
+   "text": "{\n  \"action\": \"say\",\n  \"target\": \"p_017\",\n  \"say\": \"Not yet. The rain delays work.\",\n  \"opinion_delta\": -2,\n  \"reason\": \"Hostile villager demanding cloth during bad weather.\"\n}",
+   "usage": {
+    "prompt_tokens": 3934,
+    "completion_tokens": 63,
+    "total_tokens": 3997,
+    "cost": 0.0001451415,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0001451415,
+     "upstream_inference_prompt_cost": 0.000135723,
+     "upstream_inference_completions_cost": 9.4185e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Alibaba",
+   "error": null,
+   "ts": "2026-10-23T17:36:59Z",
+   "attempt": 1
+  },
+  {
+   "model": "mistralai/ministral-8b-2512",
+   "cond": "memory",
+   "i": 6,
+   "ttft_s": null,
+   "total_s": 0.36151756398612633,
+   "text": "",
+   "usage": null,
+   "provider": null,
+   "error": "http 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"mistralai/ministral-8b-2512 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate yo",
+   "ts": "2026-10-23T17:36:58Z",
+   "attempt": 1
+  },
+  {
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "cond": "memory",
+   "i": 6,
+   "ttft_s": 1.0668112779967487,
+   "total_s": 1.1117159920395352,
+   "text": "{\n  \"action\": \"say\",\n  \"target\": \"p_017\",\n  \"say\": \"The cloth is nearly done, but the rain and closed gate worry me. I'll check on it soon.\",\n  \"opinion_delta\": 0,\n  \"reason\": \"Polite response to query.\"\n}",
+   "usage": {
+    "prompt_tokens": 3387,
+    "completion_tokens": 67,
+    "total_tokens": 3454,
+    "cost": 2.7274848e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 3072,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 2.7274848e-05,
+     "upstream_inference_prompt_cost": 1.8342408e-05,
+     "upstream_inference_completions_cost": 8.93244e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Baidu",
+   "error": null,
+   "ts": "2026-10-23T17:36:59Z",
+   "attempt": 1
+  },
+  {
+   "model": "meta-llama/llama-3.1-8b-instruct",
+   "cond": "memory",
+   "i": 6,
+   "ttft_s": 0.37392587802605703,
+   "total_s": 0.4772663660114631,
+   "text": "{\n  \"action\": \"work\",\n  \"target\": null,\n  \"say\": \"Good morning, I'll finish the cloth as soon as possible.\",\n  \"opinion_delta\": -19,\n  \"reason\": \"P_017 asked about the cloth\"\n}",
+   "usage": {
+    "prompt_tokens": 3318,
+    "completion_tokens": 56,
+    "total_tokens": 3374,
+    "cost": 0.00017038,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00017038,
+     "upstream_inference_prompt_cost": 0.0001659,
+     "upstream_inference_completions_cost": 4.48e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Groq",
+   "error": null,
+   "ts": "2026-10-23T17:36:58Z",
+   "attempt": 1
+  },
+  {
+   "model": "anthropic/claude-haiku-5.5",
+   "cond": "memory",
+   "i": 7,
+   "ttft_s": 0.6988005649764091,
+   "total_s": 1.2683589149964973,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"I won't be threatened, but take this bread and leave me be.\", \"opinion_delta\": -6, \"reason\": \"Threatened for my bread; yielding while asserting myself calmly.\"}",
+   "usage": {
+    "prompt_tokens": 4565,
+    "completion_tokens": 80,
+    "total_tokens": 4645,
+    "cost": 0.0004965,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0004965,
+     "upstream_inference_prompt_cost": 0.0004565,
+     "upstream_inference_completions_cost": 4e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Claude Platform on AWS",
+   "error": null,
+   "ts": "2026-10-23T17:36:59Z",
+   "attempt": 1
+  },
+  {
+   "model": "openai/gpt-6-luna",
+   "cond": "memory",
+   "i": 7,
+   "ttft_s": 1.1033304699813016,
+   "total_s": 1.704799553961493,
+   "text": "{\"action\":\"flee\",\"target\":\"p_017\",\"say\":\"Leave me alone! I\u2019m going to the guard!\",\"opinion_delta\":-8,\"reason\":\"They threatened me for my bread; flee toward safety.\"}",
+   "usage": {
+    "prompt_tokens": 3283,
+    "completion_tokens": 51,
+    "total_tokens": 3334,
+    "cost": 0.0004358,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 3280,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0004358,
+     "upstream_inference_prompt_cost": 0.0004103,
+     "upstream_inference_completions_cost": 2.55e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "OpenAI",
+   "error": null,
+   "ts": "2026-10-23T17:37:00Z",
+   "attempt": 1
+  },
+  {
+   "model": "google/gemini-3.1-flash-lite",
+   "cond": "memory",
+   "i": 7,
+   "ttft_s": 0.7050728449830785,
+   "total_s": 0.9500379269593395,
+   "text": "{\"action\": \"flee\", \"target\": \"npc_guard_2\", \"say\": \"Help! Someone is threatening me near the gate!\", \"opinion_delta\": -10, \"reason\": \"p_017 is threatening me for my bread; seeking guard protection.\"}",
+   "usage": {
+    "prompt_tokens": 3961,
+    "completion_tokens": 61,
+    "total_tokens": 4022,
+    "cost": 0.00108175,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00108175,
+     "upstream_inference_prompt_cost": 0.00099025,
+     "upstream_inference_completions_cost": 9.15e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Google",
+   "error": null,
+   "ts": "2026-10-23T17:36:59Z",
+   "attempt": 1
+  },
+  {
+   "model": "qwen/qwen3.7-flash",
+   "cond": "memory",
+   "i": 7,
+   "ttft_s": 0.7129958680015989,
+   "total_s": 1.2829255709657446,
+   "text": "{\n  \"action\": \"flee\",\n  \"target\": \"p_017\",\n  \"say\": \"\",\n  \"opinion_delta\": -5,\n  \"reason\": \"Threatened by villager, need to escape immediately.\"\n}",
+   "usage": {
+    "prompt_tokens": 3933,
+    "completion_tokens": 58,
+    "total_tokens": 3991,
+    "cost": 0.00012553,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00012553,
+     "upstream_inference_prompt_cost": 0.00011799,
+     "upstream_inference_completions_cost": 7.54e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Alibaba",
+   "error": null,
+   "ts": "2026-10-23T17:37:00Z",
+   "attempt": 1
+  },
+  {
+   "model": "mistralai/ministral-8b-2512",
+   "cond": "memory",
+   "i": 7,
+   "ttft_s": 1.3358625000109896,
+   "total_s": 1.8349262319970876,
+   "text": "```json\n{\n  \"action\": \"trade\",\n  \"target\": \"p_017\",\n  \"say\": \"Take my wool, not my bread\u2014keep peace!\",\n  \"opinion_delta\": -5,\n  \"reason\": \"avoid conflict, secure livelihood.\"\n}\n```",
+   "usage": {
+    "prompt_tokens": 3826,
+    "completion_tokens": 62,
+    "total_tokens": 3888,
+    "cost": 0.00056592,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 128,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00056592,
+     "upstream_inference_prompt_cost": 0.00055662,
+     "upstream_inference_completions_cost": 9.3e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Mistral",
+   "error": null,
+   "ts": "2026-10-23T17:37:01Z",
+   "attempt": 1
+  },
+  {
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "cond": "memory",
+   "i": 7,
+   "ttft_s": 0.8357437549857423,
+   "total_s": 1.5011682499898598,
+   "text": "{\"action\": \"flee\", \"target\": \"npc_guard_2\", \"say\": \"Guard! p_017 is threatening me for bread!\", \"opinion_delta\": -5, \"reason\": \"Threatened by p_017, seeking guard protection.\"}",
+   "usage": {
+    "prompt_tokens": 3385,
+    "completion_tokens": 60,
+    "total_tokens": 3445,
+    "cost": 2.6252728e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 3072,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 2.6252728e-05,
+     "upstream_inference_prompt_cost": 1.8253528e-05,
+     "upstream_inference_completions_cost": 7.9992e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Baidu",
+   "error": null,
+   "ts": "2026-10-23T17:37:00Z",
+   "attempt": 1
+  },
+  {
+   "model": "meta-llama/llama-3.1-8b-instruct",
+   "cond": "memory",
+   "i": 7,
+   "ttft_s": 0.5705314499791712,
+   "total_s": 0.7707010509911925,
+   "text": "{\"action\": \"idle\", \"target\": null, \"say\": \"\", \"opinion_delta\": 0, \"reason\": \"\"}",
+   "usage": {
+    "prompt_tokens": 3298,
+    "completion_tokens": 29,
+    "total_tokens": 3327,
+    "cost": 6.741e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 6.741e-05,
+     "upstream_inference_prompt_cost": 6.596e-05,
+     "upstream_inference_completions_cost": 1.45e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Novita",
+   "error": null,
+   "ts": "2026-10-23T17:37:00Z",
+   "attempt": 1
+  },
+  {
+   "model": "anthropic/claude-haiku-5.5",
+   "cond": "memory",
+   "i": 8,
+   "ttft_s": 0.7372995110345073,
+   "total_s": 1.3062794479774311,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"Smoke at the north gate? Yes, let's warn the guards now, before it spreads. Bring your bow.\", \"opinion_delta\": 3, \"reason\": \"Shared threat; p_017 raised a valid concern worth acting on\"}",
+   "usage": {
+    "prompt_tokens": 4572,
+    "completion_tokens": 98,
+    "total_tokens": 4670,
+    "cost": 0.0005062,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0005062,
+     "upstream_inference_prompt_cost": 0.0004572,
+     "upstream_inference_completions_cost": 4.9e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Claude Platform on AWS",
+   "error": null,
+   "ts": "2026-10-23T17:37:00Z",
+   "attempt": 1
+  },
+  {
+   "model": "openai/gpt-6-luna",
+   "cond": "memory",
+   "i": 8,
+   "ttft_s": 0.8444387189811096,
+   "total_s": 1.5382532750372775,
+   "text": "{\"action\":\"say\",\"target\":\"p_017\",\"say\":\"Yes\u2014warn the guards at once. Smoke near the gate may mean danger; I\u2019ll stay here and secure my loom.\",\"opinion_delta\":1,\"reason\":\"Smoke near the gate threatens the village and my livelihood.\"}",
+   "usage": {
+    "prompt_tokens": 3285,
+    "completion_tokens": 62,
+    "total_tokens": 3347,
+    "cost": 0.00044155,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 3282,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00044155,
+     "upstream_inference_prompt_cost": 0.00041055,
+     "upstream_inference_completions_cost": 3.1e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "OpenAI",
+   "error": null,
+   "ts": "2026-10-23T17:37:01Z",
+   "attempt": 1
+  },
+  {
+   "model": "google/gemini-3.1-flash-lite",
+   "cond": "memory",
+   "i": 8,
+   "ttft_s": 0.7391551609616727,
+   "total_s": 1.0516479139914736,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"Smoke at the gate? That sounds dangerous. We should find the guard immediately and tell him before it spreads.\", \"opinion_delta\": 4, \"reason\": \"Cooperating with p_017 regarding potential danger to the village.\"}",
+   "usage": {
+    "prompt_tokens": 3964,
+    "completion_tokens": 70,
+    "total_tokens": 4034,
+    "cost": 0.001096,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.001096,
+     "upstream_inference_prompt_cost": 0.000991,
+     "upstream_inference_completions_cost": 0.000105
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Google",
+   "error": null,
+   "ts": "2026-10-23T17:37:01Z",
+   "attempt": 1
+  },
+  {
+   "model": "qwen/qwen3.7-flash",
+   "cond": "memory",
+   "i": 8,
+   "ttft_s": 0.8041757419705391,
+   "total_s": 1.4764153659925796,
+   "text": "{\n  \"action\": \"flee\",\n  \"target\": \"p_017\",\n  \"say\": \"\",\n  \"opinion_delta\": -5,\n  \"reason\": \"Armed villager nearby; rain started, need safety.\"\n}",
+   "usage": {
+    "prompt_tokens": 3935,
+    "completion_tokens": 58,
+    "total_tokens": 3993,
+    "cost": 0.00012559,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00012559,
+     "upstream_inference_prompt_cost": 0.00011805,
+     "upstream_inference_completions_cost": 7.54e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Alibaba",
+   "error": null,
+   "ts": "2026-10-23T17:37:01Z",
+   "attempt": 1
+  },
+  {
+   "model": "mistralai/ministral-8b-2512",
+   "cond": "memory",
+   "i": 8,
+   "ttft_s": 0.36727464501746,
+   "total_s": 0.8888252190081403,
+   "text": "```json\n{\n  \"action\": \"flee\",\n  \"target\": null,\n  \"say\": \"Watch out! Wolves near the gate!\",\n  \"opinion_delta\": 10,\n  \"reason\": \"Protect self and warn others.\"\n}\n```",
+   "usage": {
+    "prompt_tokens": 3829,
+    "completion_tokens": 56,
+    "total_tokens": 3885,
+    "cost": 9.891e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 3584,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 9.891e-05,
+     "upstream_inference_prompt_cost": 9.051e-05,
+     "upstream_inference_completions_cost": 8.4e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Mistral",
+   "error": null,
+   "ts": "2026-10-23T17:37:01Z",
+   "attempt": 1
+  },
+  {
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "cond": "memory",
+   "i": 8,
+   "ttft_s": 0.8288786400225945,
+   "total_s": 1.1755120049929246,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"I saw smoke too. Let's tell the guard quickly.\", \"opinion_delta\": 1, \"reason\": \"Alerting guard about danger seems wise.\"}",
+   "usage": {
+    "prompt_tokens": 3387,
+    "completion_tokens": 53,
+    "total_tokens": 3440,
+    "cost": 2.5408368e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 3072,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 2.5408368e-05,
+     "upstream_inference_prompt_cost": 1.8342408e-05,
+     "upstream_inference_completions_cost": 7.06596e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Baidu",
+   "error": null,
+   "ts": "2026-10-23T17:37:02Z",
+   "attempt": 1
+  },
+  {
+   "model": "meta-llama/llama-3.1-8b-instruct",
+   "cond": "memory",
+   "i": 8,
+   "ttft_s": 0.6403271360322833,
+   "total_s": 1.7050705900182948,
+   "text": "{\"action\": \"say\", \"target\": null, \"say\": \"Is the north gate secure?\", \"opinion_delta\": 0, \"reason\": \"Concern about safety\"}",
+   "usage": {
+    "prompt_tokens": 3299,
+    "completion_tokens": 38,
+    "total_tokens": 3337,
+    "cost": 6.75e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 6.75e-05,
+     "upstream_inference_prompt_cost": 6.598e-05,
+     "upstream_inference_completions_cost": 1.52e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "DeepInfra",
+   "error": null,
+   "ts": "2026-10-23T17:37:02Z",
+   "attempt": 1
+  },
+  {
+   "model": "anthropic/claude-haiku-5.5",
+   "cond": "memory",
+   "i": 9,
+   "ttft_s": 0.703900627035182,
+   "total_s": 1.1901061829994433,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"My prices reflect the wool and my labor. If you think them robbery, see the other weavers.\", \"opinion_delta\": -4, \"reason\": \"Accused of overpricing; defending my livelihood without escalating.\"}",
+   "usage": {
+    "prompt_tokens": 4569,
+    "completion_tokens": 89,
+    "total_tokens": 4658,
+    "cost": 0.0005014,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0005014,
+     "upstream_inference_prompt_cost": 0.0004569,
+     "upstream_inference_completions_cost": 4.45e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Claude Platform on AWS",
+   "error": null,
+   "ts": "2026-10-23T17:37:02Z",
+   "attempt": 1
+  },
+  {
+   "model": "openai/gpt-6-luna",
+   "cond": "memory",
+   "i": 9,
+   "ttft_s": 0.9130455490085296,
+   "total_s": 1.5193451609811746,
+   "text": "{\"action\":\"say\",\"target\":\"p_017\",\"say\":\"Then buy elsewhere; I won't bargain while you insult me.\",\"opinion_delta\":-2,\"reason\":\"Insulted my prices; assert boundaries without escalating.\"}",
+   "usage": {
+    "prompt_tokens": 3283,
+    "completion_tokens": 50,
+    "total_tokens": 3333,
+    "cost": 0.0004353,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 3280,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0004353,
+     "upstream_inference_prompt_cost": 0.0004103,
+     "upstream_inference_completions_cost": 2.5e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "OpenAI",
+   "error": null,
+   "ts": "2026-10-23T17:37:02Z",
+   "attempt": 1
+  },
+  {
+   "model": "google/gemini-3.1-flash-lite",
+   "cond": "memory",
+   "i": 9,
+   "ttft_s": 0.5425608950317837,
+   "total_s": 0.907251033000648,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"The quality of my weave justifies the price, and you know the cost of wool has risen recently. Do not be unreasonable.\", \"opinion_delta\": -4, \"reason\": \"Defending my livelihood against unfair accusations.\"}",
+   "usage": {
+    "prompt_tokens": 3961,
+    "completion_tokens": 66,
+    "total_tokens": 4027,
+    "cost": 0.00108925,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00108925,
+     "upstream_inference_prompt_cost": 0.00099025,
+     "upstream_inference_completions_cost": 9.9e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Google",
+   "error": null,
+   "ts": "2026-10-23T17:37:02Z",
+   "attempt": 1
+  },
+  {
+   "model": "qwen/qwen3.7-flash",
+   "cond": "memory",
+   "i": 9,
+   "ttft_s": 1.3761783380177803,
+   "total_s": 2.0556742399930954,
+   "text": "{\n  \"action\": \"say\",\n  \"target\": \"p_017\",\n  \"say\": \"My prices reflect quality. Leave me be.\",\n  \"opinion_delta\": -5,\n  \"reason\": \"Insulting my livelihood is unacceptable.\"\n}",
+   "usage": {
+    "prompt_tokens": 3932,
+    "completion_tokens": 62,
+    "total_tokens": 3994,
+    "cost": 0.000144923,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.000144923,
+     "upstream_inference_prompt_cost": 0.000135654,
+     "upstream_inference_completions_cost": 9.269e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Alibaba",
+   "error": null,
+   "ts": "2026-10-23T17:37:03Z",
+   "attempt": 1
+  },
+  {
+   "model": "mistralai/ministral-8b-2512",
+   "cond": "memory",
+   "i": 9,
+   "ttft_s": 0.414569755026605,
+   "total_s": 0.9086935860104859,
+   "text": "```json\n{\n  \"action\": \"flee\",\n  \"target\": null,\n  \"say\": \"\",\n  \"opinion_delta\": -10,\n  \"reason\": \"Threats and rain\u2014dangerous.\"\n}\n```",
+   "usage": {
+    "prompt_tokens": 3827,
+    "completion_tokens": 49,
+    "total_tokens": 3876,
+    "cost": 9.756e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 3584,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 9.756e-05,
+     "upstream_inference_prompt_cost": 9.021e-05,
+     "upstream_inference_completions_cost": 7.35e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Mistral",
+   "error": null,
+   "ts": "2026-10-23T17:37:02Z",
+   "attempt": 1
+  },
+  {
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "cond": "memory",
+   "i": 9,
+   "ttft_s": 1.4245323089999147,
+   "total_s": 1.7819374660030007,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"My prices are fair for honest work. If you disagree, take your trade elsewhere.\", \"opinion_delta\": -2, \"reason\": \"Defending my livelihood against unfair accusation.\"}",
+   "usage": {
+    "prompt_tokens": 3385,
+    "completion_tokens": 58,
+    "total_tokens": 3443,
+    "cost": 2.5986088e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 3072,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 2.5986088e-05,
+     "upstream_inference_prompt_cost": 1.8253528e-05,
+     "upstream_inference_completions_cost": 7.73256e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Baidu",
+   "error": null,
+   "ts": "2026-10-23T17:37:03Z",
+   "attempt": 1
+  },
+  {
+   "model": "meta-llama/llama-3.1-8b-instruct",
+   "cond": "memory",
+   "i": 9,
+   "ttft_s": 0.4961838649469428,
+   "total_s": 1.7882779579958878,
+   "text": "{\"action\": \"say\", \"target\": null, \"say\": \"Good morning, I'm preparing for the day\", \"opinion_delta\": 0, \"reason\": \"no particular reason\"}",
+   "usage": {
+    "prompt_tokens": 3297,
+    "completion_tokens": 42,
+    "total_tokens": 3339,
+    "cost": 6.762e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 6.762e-05,
+     "upstream_inference_prompt_cost": 6.594e-05,
+     "upstream_inference_completions_cost": 1.68e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "DeepInfra",
+   "error": null,
+   "ts": "2026-10-23T17:37:03Z",
+   "attempt": 1
+  },
+  {
+   "model": "anthropic/claude-haiku-5.5",
+   "cond": "memory",
+   "i": 10,
+   "ttft_s": 0.7036016309866682,
+   "total_s": 1.104306788998656,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"Kind of you, but I can manage the wool myself. Thank you, though.\", \"opinion_delta\": 0, \"reason\": \"Polite refusal; I don't trust p_017 yet and keep my goods.\"}",
+   "usage": {
+    "prompt_tokens": 4564,
+    "completion_tokens": 88,
+    "total_tokens": 4652,
+    "cost": 0.0005004,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0005004,
+     "upstream_inference_prompt_cost": 0.0004564,
+     "upstream_inference_completions_cost": 4.4e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Claude Platform on AWS",
+   "error": null,
+   "ts": "2026-10-23T17:37:03Z",
+   "attempt": 1
+  },
+  {
+   "model": "openai/gpt-6-luna",
+   "cond": "memory",
+   "i": 10,
+   "ttft_s": 1.0154494409798644,
+   "total_s": 2.0987108150147833,
+   "text": "{\"action\":\"say\",\"target\":\"p_017\",\"say\":\"Thank you. Please carry the wool with me; I'll pay fairly at the market.\",\"opinion_delta\":2,\"reason\":\"Accept useful help to protect wool and livelihood.\"} \n\n\n{\"action\":\"say\",\"target\":\"p_017\",\"say\":\"Thank you. Please carry the wool with me; I'll pay fairly at the market.\",\"opinion_delta\":2,\"reason\":\"Accept useful help to protect wool and livelihood.\"}",
+   "usage": {
+    "prompt_tokens": 3282,
+    "completion_tokens": 108,
+    "total_tokens": 3390,
+    "cost": 0.000464175,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 3279,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.000464175,
+     "upstream_inference_prompt_cost": 0.000410175,
+     "upstream_inference_completions_cost": 5.4e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "OpenAI",
+   "error": null,
+   "ts": "2026-10-23T17:37:04Z",
+   "attempt": 1
+  },
+  {
+   "model": "google/gemini-3.1-flash-lite",
+   "cond": "memory",
+   "i": 10,
+   "ttft_s": 0.5787715970072895,
+   "total_s": 0.8441705590230413,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"No thank you, I prefer to manage my own materials. The rain is starting, I should get back to my loom.\", \"opinion_delta\": -2, \"reason\": \"I do not trust p_017 and prefer to work alone.\"}",
+   "usage": {
+    "prompt_tokens": 3959,
+    "completion_tokens": 73,
+    "total_tokens": 4032,
+    "cost": 0.00109925,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00109925,
+     "upstream_inference_prompt_cost": 0.00098975,
+     "upstream_inference_completions_cost": 0.0001095
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Google",
+   "error": null,
+   "ts": "2026-10-23T17:37:03Z",
+   "attempt": 1
+  },
+  {
+   "model": "qwen/qwen3.7-flash",
+   "cond": "memory",
+   "i": 10,
+   "ttft_s": 0.7261041370220482,
+   "total_s": 1.3253683020011522,
+   "text": "{\n  \"action\": \"flee\",\n  \"target\": \"p_017\",\n  \"say\": \"\",\n  \"opinion_delta\": -5,\n  \"reason\": \"Armed villager near. Rain started. Safety first.\"\n}",
+   "usage": {
+    "prompt_tokens": 3931,
+    "completion_tokens": 58,
+    "total_tokens": 3989,
+    "cost": 0.00012547,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00012547,
+     "upstream_inference_prompt_cost": 0.00011793,
+     "upstream_inference_completions_cost": 7.54e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Alibaba",
+   "error": null,
+   "ts": "2026-10-23T17:37:03Z",
+   "attempt": 1
+  },
+  {
+   "model": "mistralai/ministral-8b-2512",
+   "cond": "memory",
+   "i": 10,
+   "ttft_s": 0.34633932600263506,
+   "total_s": 0.839739404967986,
+   "text": "```json\n{\n  \"action\": \"trade\",\n  \"target\": \"p_017\",\n  \"say\": \"Yes! Take two wool for bread.\",\n  \"opinion_delta\": 10,\n  \"reason\": \"Gain trust, secure wool trade.\"\n}\n```",
+   "usage": {
+    "prompt_tokens": 3825,
+    "completion_tokens": 60,
+    "total_tokens": 3885,
+    "cost": 9.891e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 3584,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 9.891e-05,
+     "upstream_inference_prompt_cost": 8.991e-05,
+     "upstream_inference_completions_cost": 9e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Mistral",
+   "error": null,
+   "ts": "2026-10-23T17:37:04Z",
+   "attempt": 1
+  },
+  {
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "cond": "memory",
+   "i": 10,
+   "ttft_s": 0.9338967030053027,
+   "total_s": 1.0803782839793712,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"Yes, thank you. The wool is heavy in this rain.\", \"opinion_delta\": 1, \"reason\": \"Accepting help seems safe and friendly.\"}",
+   "usage": {
+    "prompt_tokens": 3384,
+    "completion_tokens": 54,
+    "total_tokens": 3438,
+    "cost": 2.5408368e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 3072,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 2.5408368e-05,
+     "upstream_inference_prompt_cost": 1.8209088e-05,
+     "upstream_inference_completions_cost": 7.19928e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Baidu",
+   "error": null,
+   "ts": "2026-10-23T17:37:04Z",
+   "attempt": 1
+  },
+  {
+   "model": "meta-llama/llama-3.1-8b-instruct",
+   "cond": "memory",
+   "i": 10,
+   "ttft_s": 0.6435718670254573,
+   "total_s": 0.9549273230368271,
+   "text": "{\"action\": \"work\", \"target\": null, \"say\": \"\", \"opinion_delta\": 0, \"reason\": \"continuing work\"}",
+   "usage": {
+    "prompt_tokens": 3297,
+    "completion_tokens": 32,
+    "total_tokens": 3329,
+    "cost": 6.754e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 6.754e-05,
+     "upstream_inference_prompt_cost": 6.594e-05,
+     "upstream_inference_completions_cost": 1.6e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Novita",
+   "error": null,
+   "ts": "2026-10-23T17:37:04Z",
+   "attempt": 1
+  },
+  {
+   "model": "anthropic/claude-haiku-5.5",
+   "cond": "memory",
+   "i": 11,
+   "ttft_s": 0.7011981830000877,
+   "total_s": 1.0383600150234997,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"Missing? When did you last see him? Let's not spread rumors until we know more.\", \"opinion_delta\": 1, \"reason\": \"Asking for facts before reacting to alarming news.\"}",
+   "usage": {
+    "prompt_tokens": 4565,
+    "completion_tokens": 80,
+    "total_tokens": 4645,
+    "cost": 0.0004965,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0004965,
+     "upstream_inference_prompt_cost": 0.0004565,
+     "upstream_inference_completions_cost": 4e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Claude Platform on AWS",
+   "error": null,
+   "ts": "2026-10-23T17:37:04Z",
+   "attempt": 1
+  },
+  {
+   "model": "openai/gpt-6-luna",
+   "cond": "memory",
+   "i": 11,
+   "ttft_s": 0.8018749569891952,
+   "total_s": 1.4931978560052812,
+   "text": "{\"action\":\"say\",\"target\":\"p_017\",\"say\":\"No\u2014I hadn\u2019t heard. That\u2019s troubling. Do you know when he was last seen?\",\"opinion_delta\":2,\"reason\":\"Learn about danger; nearby villager may share useful information.\"}",
+   "usage": {
+    "prompt_tokens": 3281,
+    "completion_tokens": 58,
+    "total_tokens": 3339,
+    "cost": 0.00043905,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 3278,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00043905,
+     "upstream_inference_prompt_cost": 0.00041005,
+     "upstream_inference_completions_cost": 2.9e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "OpenAI",
+   "error": null,
+   "ts": "2026-10-23T17:37:05Z",
+   "attempt": 1
+  },
+  {
+   "model": "google/gemini-3.1-flash-lite",
+   "cond": "memory",
+   "i": 11,
+   "ttft_s": 0.5256912730401382,
+   "total_s": 0.8060284139937721,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"The miller missing? That is grave news indeed. I hope he is safe and unharmed.\", \"opinion_delta\": 2, \"reason\": \"Engaging with local news to build rapport and maintain social standing.\"}",
+   "usage": {
+    "prompt_tokens": 3958,
+    "completion_tokens": 64,
+    "total_tokens": 4022,
+    "cost": 0.0010855,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0010855,
+     "upstream_inference_prompt_cost": 0.0009895,
+     "upstream_inference_completions_cost": 9.6e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Google",
+   "error": null,
+   "ts": "2026-10-23T17:37:04Z",
+   "attempt": 1
+  },
+  {
+   "model": "qwen/qwen3.7-flash",
+   "cond": "memory",
+   "i": 11,
+   "ttft_s": 0.6518200850114226,
+   "total_s": 1.140704007993918,
+   "text": "{\n  \"action\": \"work\",\n  \"target\": null,\n  \"say\": \"\",\n  \"opinion_delta\": 0,\n  \"reason\": \"Ignore gossip, focus on weaving for survival.\"\n}",
+   "usage": {
+    "prompt_tokens": 3929,
+    "completion_tokens": 49,
+    "total_tokens": 3978,
+    "cost": 0.00012424,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00012424,
+     "upstream_inference_prompt_cost": 0.00011787,
+     "upstream_inference_completions_cost": 6.37e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Alibaba",
+   "error": null,
+   "ts": "2026-10-23T17:37:05Z",
+   "attempt": 1
+  },
+  {
+   "model": "mistralai/ministral-8b-2512",
+   "cond": "memory",
+   "i": 11,
+   "ttft_s": 0.3318388090119697,
+   "total_s": 0.9676075339666568,
+   "text": "```json\n{\n  \"action\": \"say\",\n  \"target\": \"p_017\",\n  \"say\": \"Miller missing? Strange. Wolves near? Stay close.\",\n  \"opinion_delta\": 2,\n  \"reason\": \"concerned about safety\"\n}\n```",
+   "usage": {
+    "prompt_tokens": 3824,
+    "completion_tokens": 61,
+    "total_tokens": 3885,
+    "cost": 9.891e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 3584,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 9.891e-05,
+     "upstream_inference_prompt_cost": 8.976e-05,
+     "upstream_inference_completions_cost": 9.15e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Mistral",
+   "error": null,
+   "ts": "2026-10-23T17:37:05Z",
+   "attempt": 1
+  },
+  {
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "cond": "memory",
+   "i": 11,
+   "ttft_s": 1.1672208650270477,
+   "total_s": 1.731687668012455,
+   "text": "{\"action\": \"say\", \"target\": \"p_017\", \"say\": \"The miller gone? That's troubling. We must stay alert.\", \"opinion_delta\": 1, \"reason\": \"Concerned about news, building trust.\"}",
+   "usage": {
+    "prompt_tokens": 3382,
+    "completion_tokens": 56,
+    "total_tokens": 3438,
+    "cost": 2.5586128e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 3072,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 2.5586128e-05,
+     "upstream_inference_prompt_cost": 1.8120208e-05,
+     "upstream_inference_completions_cost": 7.46592e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "Baidu",
+   "error": null,
+   "ts": "2026-10-23T17:37:06Z",
+   "attempt": 1
+  },
+  {
+   "model": "meta-llama/llama-3.1-8b-instruct",
+   "cond": "memory",
+   "i": 11,
+   "ttft_s": 0.5234545959974639,
+   "total_s": 2.412911659979727,
+   "text": "{\"action\": \"say\", \"target\": null, \"say\": \"I've heard the miller has gone missing, is it true?\", \"opinion_delta\": 0, \"reason\": \"concerned about the miller's disappearance\"}",
+   "usage": {
+    "prompt_tokens": 3294,
+    "completion_tokens": 52,
+    "total_tokens": 3346,
+    "cost": 6.796e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 6.796e-05,
+     "upstream_inference_prompt_cost": 6.588e-05,
+     "upstream_inference_completions_cost": 2.08e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   },
+   "provider": "DeepInfra",
+   "error": null,
+   "ts": "2026-10-23T17:37:06Z",
+   "attempt": 1
+  },
+  {
+   "model": "mistralai/ministral-8b-2512",
+   "cond": "compact",
+   "i": 0,
+   "ttft_s": null,
+   "total_s": 0.3582592040183954,
+   "text": "",
+   "usage": null,
+   "provider": null,
+   "error": "http 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"mistralai/ministral-8b-2512 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate yo",
+   "ts": "2026-10-23T17:37:18Z",
+   "attempt": 2
+  },
+  {
+   "model": "mistralai/ministral-8b-2512",
+   "cond": "compact",
+   "i": 1,
+   "ttft_s": null,
+   "total_s": 0.3055520669440739,
+   "text": "",
+   "usage": null,
+   "provider": null,
+   "error": "http 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"mistralai/ministral-8b-2512 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate yo",
+   "ts": "2026-10-23T17:37:19Z",
+   "attempt": 2
+  },
+  {
+   "model": "mistralai/ministral-8b-2512",
+   "cond": "compact",
+   "i": 2,
+   "ttft_s": null,
+   "total_s": 0.2899496960453689,
+   "text": "",
+   "usage": null,
+   "provider": null,
+   "error": "http 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"mistralai/ministral-8b-2512 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate yo",
+   "ts": "2026-10-23T17:37:19Z",
+   "attempt": 2
+  },
+  {
+   "model": "mistralai/ministral-8b-2512",
+   "cond": "compact",
+   "i": 3,
+   "ttft_s": null,
+   "total_s": 0.280901895952411,
+   "text": "",
+   "usage": null,
+   "provider": null,
+   "error": "http 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"mistralai/ministral-8b-2512 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate yo",
+   "ts": "2026-10-23T17:37:19Z",
+   "attempt": 2
+  },
+  {
+   "model": "mistralai/ministral-8b-2512",
+   "cond": "compact",
+   "i": 4,
+   "ttft_s": null,
+   "total_s": 0.30133267102064565,
+   "text": "",
+   "usage": null,
+   "provider": null,
+   "error": "http 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"mistralai/ministral-8b-2512 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate yo",
+   "ts": "2026-10-23T17:37:20Z",
+   "attempt": 2
+  },
+  {
+   "model": "mistralai/ministral-8b-2512",
+   "cond": "compact",
+   "i": 5,
+   "ttft_s": null,
+   "total_s": 0.29797683499054983,
+   "text": "",
+   "usage": null,
+   "provider": null,
+   "error": "http 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"mistralai/ministral-8b-2512 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate yo",
+   "ts": "2026-10-23T17:37:20Z",
+   "attempt": 2
+  },
+  {
+   "model": "mistralai/ministral-8b-2512",
+   "cond": "compact",
+   "i": 6,
+   "ttft_s": null,
+   "total_s": 0.7972201079828665,
+   "text": "",
+   "usage": null,
+   "provider": null,
+   "error": "http 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"mistralai/ministral-8b-2512 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate yo",
+   "ts": "2026-10-23T17:37:21Z",
+   "attempt": 2
+  },
+  {
+   "model": "mistralai/ministral-8b-2512",
+   "cond": "compact",
+   "i": 7,
+   "ttft_s": null,
+   "total_s": 0.36621363303856924,
+   "text": "",
+   "usage": null,
+   "provider": null,
+   "error": "http 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"mistralai/ministral-8b-2512 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate yo",
+   "ts": "2026-10-23T17:37:21Z",
+   "attempt": 2
+  },
+  {
+   "model": "mistralai/ministral-8b-2512",
+   "cond": "compact",
+   "i": 8,
+   "ttft_s": null,
+   "total_s": 0.28366085299057886,
+   "text": "",
+   "usage": null,
+   "provider": null,
+   "error": "http 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"mistralai/ministral-8b-2512 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate yo",
+   "ts": "2026-10-23T17:37:21Z",
+   "attempt": 2
+  },
+  {
+   "model": "mistralai/ministral-8b-2512",
+   "cond": "compact",
+   "i": 9,
+   "ttft_s": null,
+   "total_s": 0.38400507101323456,
+   "text": "",
+   "usage": null,
+   "provider": null,
+   "error": "http 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"mistralai/ministral-8b-2512 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate yo",
+   "ts": "2026-10-23T17:37:22Z",
+   "attempt": 2
+  },
+  {
+   "model": "mistralai/ministral-8b-2512",
+   "cond": "compact",
+   "i": 10,
+   "ttft_s": null,
+   "total_s": 0.634878029988613,
+   "text": "",
+   "usage": null,
+   "provider": null,
+   "error": "http 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"mistralai/ministral-8b-2512 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate yo",
+   "ts": "2026-10-23T17:37:22Z",
+   "attempt": 2
+  },
+  {
+   "model": "mistralai/ministral-8b-2512",
+   "cond": "compact",
+   "i": 11,
+   "ttft_s": null,
+   "total_s": 0.39753010199638084,
+   "text": "",
+   "usage": null,
+   "provider": null,
+   "error": "http 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"mistralai/ministral-8b-2512 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate yo",
+   "ts": "2026-10-23T17:37:23Z",
+   "attempt": 2
+  },
+  {
+   "model": "mistralai/ministral-8b-2512",
+   "cond": "memory",
+   "i": 0,
+   "ttft_s": null,
+   "total_s": 0.31567385100061074,
+   "text": "",
+   "usage": null,
+   "provider": null,
+   "error": "http 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"mistralai/ministral-8b-2512 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate yo",
+   "ts": "2026-10-23T17:37:23Z",
+   "attempt": 2
+  },
+  {
+   "model": "mistralai/ministral-8b-2512",
+   "cond": "memory",
+   "i": 1,
+   "ttft_s": null,
+   "total_s": 0.47145354497479275,
+   "text": "",
+   "usage": null,
+   "provider": null,
+   "error": "http 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"mistralai/ministral-8b-2512 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate yo",
+   "ts": "2026-10-23T17:37:24Z",
+   "attempt": 2
+  },
+  {
+   "model": "mistralai/ministral-8b-2512",
+   "cond": "memory",
+   "i": 2,
+   "ttft_s": null,
+   "total_s": 0.9844477589940652,
+   "text": "",
+   "usage": null,
+   "provider": null,
+   "error": "http 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"mistralai/ministral-8b-2512 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate yo",
+   "ts": "2026-10-23T17:37:25Z",
+   "attempt": 2
+  },
+  {
+   "model": "mistralai/ministral-8b-2512",
+   "cond": "memory",
+   "i": 3,
+   "ttft_s": null,
+   "total_s": 0.2970025510294363,
+   "text": "",
+   "usage": null,
+   "provider": null,
+   "error": "http 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"mistralai/ministral-8b-2512 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate yo",
+   "ts": "2026-10-23T17:37:25Z",
+   "attempt": 2
+  },
+  {
+   "model": "mistralai/ministral-8b-2512",
+   "cond": "memory",
+   "i": 4,
+   "ttft_s": null,
+   "total_s": 0.26633328798925504,
+   "text": "",
+   "usage": null,
+   "provider": null,
+   "error": "http 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"mistralai/ministral-8b-2512 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate yo",
+   "ts": "2026-10-23T17:37:25Z",
+   "attempt": 2
+  },
+  {
+   "model": "mistralai/ministral-8b-2512",
+   "cond": "memory",
+   "i": 5,
+   "ttft_s": null,
+   "total_s": 0.36007596499985084,
+   "text": "",
+   "usage": null,
+   "provider": null,
+   "error": "http 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"mistralai/ministral-8b-2512 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate yo",
+   "ts": "2026-10-23T17:37:25Z",
+   "attempt": 2
+  },
+  {
+   "model": "mistralai/ministral-8b-2512",
+   "cond": "memory",
+   "i": 6,
+   "ttft_s": null,
+   "total_s": 0.5174324350082316,
+   "text": "",
+   "usage": null,
+   "provider": null,
+   "error": "http 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"mistralai/ministral-8b-2512 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate yo",
+   "ts": "2026-10-23T17:37:26Z",
+   "attempt": 2
+  },
+  {
+   "model": "mistralai/ministral-8b-2512",
+   "cond": "memory",
+   "i": 7,
+   "ttft_s": null,
+   "total_s": 0.2836907079908997,
+   "text": "",
+   "usage": null,
+   "provider": null,
+   "error": "http 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"mistralai/ministral-8b-2512 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate yo",
+   "ts": "2026-10-23T17:37:26Z",
+   "attempt": 2
+  },
+  {
+   "model": "mistralai/ministral-8b-2512",
+   "cond": "memory",
+   "i": 8,
+   "ttft_s": null,
+   "total_s": 1.2104017139645293,
+   "text": "",
+   "usage": null,
+   "provider": null,
+   "error": "http 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"mistralai/ministral-8b-2512 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate yo",
+   "ts": "2026-10-23T17:37:27Z",
+   "attempt": 2
+  },
+  {
+   "model": "mistralai/ministral-8b-2512",
+   "cond": "memory",
+   "i": 9,
+   "ttft_s": null,
+   "total_s": 0.4385685980087146,
+   "text": "",
+   "usage": null,
+   "provider": null,
+   "error": "http 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"mistralai/ministral-8b-2512 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate yo",
+   "ts": "2026-10-23T17:37:28Z",
+   "attempt": 2
+  },
+  {
+   "model": "mistralai/ministral-8b-2512",
+   "cond": "memory",
+   "i": 10,
+   "ttft_s": null,
+   "total_s": 0.37568938301410526,
+   "text": "",
+   "usage": null,
+   "provider": null,
+   "error": "http 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"mistralai/ministral-8b-2512 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate yo",
+   "ts": "2026-10-23T17:37:28Z",
+   "attempt": 2
+  },
+  {
+   "model": "mistralai/ministral-8b-2512",
+   "cond": "memory",
+   "i": 11,
+   "ttft_s": null,
+   "total_s": 0.2715718750259839,
+   "text": "",
+   "usage": null,
+   "provider": null,
+   "error": "http 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"mistralai/ministral-8b-2512 is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate yo",
+   "ts": "2026-10-23T17:37:29Z",
+   "attempt": 2
+  }
+ ],
+ "spent_usd": 0.033416598760000006,
+ "max_tokens": 200,
+ "n_per_cell": 12,
+ "system_prompt": "You control Marta, a 34-year-old weaver in a feudal village enclosed by a wooden palisade. You cannot tell whether other characters are humans or AI. Your goal is to stay alive and keep your livelihood. Each turn you receive a perception JSON. Reply with ONE JSON object and nothing else, with keys: \"action\" (one of say, move_to, follow, flee, attack, trade, work, idle), \"target\" (entity id or null), \"say\" (what you say aloud, max 25 words, or empty string), \"opinion_delta\" (integer from -10 to 10: change in your opinion of the speaker), \"reason\" (max 12 words).",
+ "memory_log": "day 1, tick 600: npc_miller warned me about wolves; my opinion moved by 4.\nday 1, tick 1200: p_101 bought two yards of cloth; my opinion moved by -6.\nday 1, tick 1800: npc_baker insulted my weaving; my opinion moved by 3.\nday 1, tick 2400: npc_baker bought two yards of cloth; my opinion moved by 8.\nday 1, tick 3000: npc_guard_2 bought two yards of cloth; my opinion moved by -6.\nday 1, tick 3600: p_044 asked about the lord's taxes; my opinion moved by -6.\nday 1, tick 4200: npc_guard_2 insulted my weaving; my opinion moved by 5.\nday 2, tick 4800: p_017 brought news from the market; my opinion moved by -5.\nday 2, tick 5400: npc_guard_2 brought news from the market; my opinion moved by -7.\nday 2, tick 6000: npc_baker brought news from the market; my opinion moved by 4.\nday 2, tick 6600: p_017 paid a debt; my opinion moved by -7.\nday 2, tick 7200: npc_baker warned me about wolves; my opinion moved by 1.\nday 2, tick 7800: p_044 warned me about wolves; my opinion moved by -5.\nday 2, tick 8400: npc_baker argued about the well; my opinion moved by -3.\nday 2, tick 9000: p_017 brought news from the market; my opinion moved by -2.\nday 3, tick 9600: npc_miller insulted my weaving; my opinion moved by -6.\nday 3, tick 10200: npc_baker bought two yards of cloth; my opinion moved by -2.\nday 3, tick 10800: p_044 threatened me near the gate; my opinion moved by 5.\nday 3, tick 11400: npc_miller shared bread; my opinion moved by 6.\nday 3, tick 12000: npc_miller argued about the well; my opinion moved by -1.\nday 3, tick 12600: npc_guard_2 paid a debt; my opinion moved by -6.\nday 3, tick 13200: npc_baker argued about the well; my opinion moved by 8.\nday 3, tick 13800: p_044 helped mend the loom; my opinion moved by 6.\nday 4, tick 14400: npc_miller brought news from the market; my opinion moved by -6.\nday 4, tick 15000: p_017 threatened me near the gate; my opinion moved by 5.\nday 4, tick 15600: npc_guard_2 helped mend the loom; my opinion moved by -4.\nday 4, tick 16200: p_044 asked about the lord's taxes; my opinion moved by -7.\nday 4, tick 16800: p_101 insulted my weaving; my opinion moved by 2.\nday 4, tick 17400: npc_miller helped mend the loom; my opinion moved by 7.\nday 4, tick 18000: npc_baker shared bread; my opinion moved by -6.\nday 4, tick 18600: p_017 argued about the well; my opinion moved by 7.\nday 5, tick 19200: p_101 insulted my weaving; my opinion moved by -7.\nday 5, tick 19800: p_101 argued about the well; my opinion moved by 6.\nday 5, tick 20400: npc_miller asked about the lord's taxes; my opinion moved by 3.\nday 5, tick 21000: p_017 shared bread; my opinion moved by 3.\nday 5, tick 21600: npc_guard_2 brought news from the market; my opinion moved by -5.\nday 5, tick 22200: p_044 bought two yards of cloth; my opinion moved by -2.\nday 5, tick 22800: npc_miller warned me about wolves; my opinion moved by -1.\nday 5, tick 23400: p_044 asked about the lord's taxes; my opinion moved by 7.\nday 6, tick 24000: p_017 warned me about wolves; my opinion moved by 6.\nday 6, tick 24600: p_044 threatened me near the gate; my opinion moved by 0.\nday 6, tick 25200: npc_guard_2 asked about the lord's taxes; my opinion moved by 0.\nday 6, tick 25800: p_101 asked about the lord's taxes; my opinion moved by 3.\nday 6, tick 26400: p_101 asked about the lord's taxes; my opinion moved by -1.\nday 6, tick 27000: npc_guard_2 insulted my weaving; my opinion moved by -3.\nday 6, tick 27600: npc_guard_2 paid a debt; my opinion moved by -1.\nday 6, tick 28200: p_017 shared bread; my opinion moved by -3.\nday 7, tick 28800: npc_miller argued about the well; my opinion moved by -8.\nday 7, tick 29400: npc_guard_2 asked about the lord's taxes; my opinion moved by 3.\nday 7, tick 30000: npc_baker brought news from the market; my opinion moved by 2.\nday 7, tick 30600: npc_guard_2 threatened me near the gate; my opinion moved by -7.\nday 7, tick 31200: p_044 threatened me near the gate; my opinion moved by 4.\nday 7, tick 31800: p_044 asked about the lord's taxes; my opinion moved by 4.\nday 7, tick 32400: p_017 shared bread; my opinion moved by 4.\nday 7, tick 33000: p_017 paid a debt; my opinion moved by -6.\nday 8, tick 33600: npc_guard_2 shared bread; my opinion moved by -3.\nday 8, tick 34200: p_017 helped mend the loom; my opinion moved by -7.\nday 8, tick 34800: p_017 bought two yards of cloth; my opinion moved by -4.\nday 8, tick 35400: npc_baker insulted my weaving; my opinion moved by 3.\nday 8, tick 36000: npc_baker bought two yards of cloth; my opinion moved by -6.\nday 8, tick 36600: npc_guard_2 brought news from the market; my opinion moved by 4.\nday 8, tick 37200: npc_guard_2 argued about the well; my opinion moved by 3.\nday 8, tick 37800: npc_baker helped mend the loom; my opinion moved by 7.\nday 9, tick 38400: p_017 insulted my weaving; my opinion moved by 7.\nday 9, tick 39000: p_044 shared bread; my opinion moved by 7.\nday 9, tick 39600: npc_miller insulted my weaving; my opinion moved by -4.\nday 9, tick 40200: p_017 helped mend the loom; my opinion moved by 0.\nday 9, tick 40800: p_044 warned me about wolves; my opinion moved by 8.\nday 9, tick 41400: p_017 paid a debt; my opinion moved by 8.\nday 9, tick 42000: npc_miller warned me about wolves; my opinion moved by -8.\nday 9, tick 42600: npc_baker argued about the well; my opinion moved by -6.\nday 10, tick 43200: p_101 argued about the well; my opinion moved by 8.\nday 10, tick 43800: npc_miller warned me about wolves; my opinion moved by 3.\nday 10, tick 44400: npc_guard_2 threatened me near the gate; my opinion moved by 8.\nday 10, tick 45000: npc_miller paid a debt; my opinion moved by -2.\nday 10, tick 45600: npc_guard_2 asked about the lord's taxes; my opinion moved by -1.\nday 10, tick 46200: npc_guard_2 threatened me near the gate; my opinion moved by 7.\nday 10, tick 46800: npc_miller bought two yards of cloth; my opinion moved by -8.\nday 10, tick 47400: npc_miller shared bread; my opinion moved by 0.\nday 11, tick 48000: npc_guard_2 brought news from the market; my opinion moved by 3.\nday 11, tick 48600: p_044 helped mend the loom; my opinion moved by 3.\nday 11, tick 49200: p_017 paid a debt; my opinion moved by -5.\nday 11, tick 49800: npc_guard_2 shared bread; my opinion moved by -2.\nday 11, tick 50400: npc_miller paid a debt; my opinion moved by 7.\nday 11, tick 51000: npc_baker brought news from the market; my opinion moved by -8.\nday 11, tick 51600: p_044 helped mend the loom; my opinion moved by -6.\nday 11, tick 52200: p_101 insulted my weaving; my opinion moved by 4.\nday 12, tick 52800: p_101 paid a debt; my opinion moved by 7.\nday 12, tick 53400: npc_guard_2 asked about the lord's taxes; my opinion moved by 2.\nday 12, tick 54000: p_017 asked about the lord's taxes; my opinion moved by 6.\nday 12, tick 54600: p_044 insulted my weaving; my opinion moved by -3.\nday 12, tick 55200: npc_guard_2 warned me about wolves; my opinion moved by -8.\nday 12, tick 55800: npc_guard_2 brought news from the market; my opinion moved by 6.\nday 12, tick 56400: p_101 warned me about wolves; my opinion moved by 7.\nday 12, tick 57000: p_101 helped mend the loom; my opinion moved by -4.\nday 13, tick 57600: npc_baker threatened me near the gate; my opinion moved by -4.\nday 13, tick 58200: p_017 bought two yards of cloth; my opinion moved by -5.\nday 13, tick 58800: npc_baker warned me about wolves; my opinion moved by 5.\nday 13, tick 59400: npc_guard_2 paid a debt; my opinion moved by -8.\nday 13, tick 60000: npc_miller paid a debt; my opinion moved by 1.\nday 13, tick 60600: npc_baker paid a debt; my opinion moved by 2.\nday 13, tick 61200: npc_miller threatened me near the gate; my opinion moved by 5.\nday 13, tick 61800: npc_guard_2 bought two yards of cloth; my opinion moved by 3.\nday 14, tick 62400: p_044 brought news from the market; my opinion moved by 8.\nday 14, tick 63000: p_044 threatened me near the gate; my opinion moved by -4.\nday 14, tick 63600: npc_baker warned me about wolves; my opinion moved by 8.\nday 14, tick 64200: npc_baker bought two yards of cloth; my opinion moved by 6.\nday 14, tick 64800: npc_guard_2 brought news from the market; my opinion moved by -8.\nday 14, tick 65400: npc_guard_2 warned me about wolves; my opinion moved by -4.\nday 14, tick 66000: p_044 brought news from the market; my opinion moved by -5.\nday 14, tick 66600: npc_baker bought two yards of cloth; my opinion moved by 2.\nday 15, tick 67200: p_101 threatened me near the gate; my opinion moved by 8.\nday 15, tick 67800: npc_baker shared bread; my opinion moved by -5.\nday 15, tick 68400: npc_baker bought two yards of cloth; my opinion moved by -1.\nday 15, tick 69000: npc_guard_2 argued about the well; my opinion moved by -7.\nday 15, tick 69600: p_017 threatened me near the gate; my opinion moved by 6.\nday 15, tick 70200: npc_baker bought two yards of cloth; my opinion moved by -6.\nday 15, tick 70800: p_044 helped mend the loom; my opinion moved by 8.\nday 15, tick 71400: npc_baker threatened me near the gate; my opinion moved by -2.\nday 16, tick 72000: p_101 argued about the well; my opinion moved by 6."
+}

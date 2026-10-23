@@ -1,0 +1,31 @@
+{
+ "anthropic/claude-haiku-5.5": {
+  "prompt_usd_per_mtok": 0.09999999999999999,
+  "completion_usd_per_mtok": 0.5
+ },
+ "openai/gpt-6-luna": {
+  "prompt_usd_per_mtok": 0.09999999999999999,
+  "completion_usd_per_mtok": 0.5
+ },
+ "google/gemini-3.1-flash-lite": {
+  "prompt_usd_per_mtok": 0.25,
+  "completion_usd_per_mtok": 1.5
+ },
+ "qwen/qwen3.7-flash": {
+  "prompt_usd_per_mtok": 0.03,
+  "completion_usd_per_mtok": 0.13
+ },
+ "mistralai/ministral-8b-2512": {
+  "prompt_usd_per_mtok": 0.15,
+  "completion_usd_per_mtok": 0.15
+ },
+ "deepseek/deepseek-v4-flash-0731": {
+  "prompt_usd_per_mtok": 0.04444,
+  "completion_usd_per_mtok": 0.13332
+ },
+ "meta-llama/llama-3.1-8b-instruct": {
+  "prompt_usd_per_mtok": 0.049999999999999996,
+  "completion_usd_per_mtok": 0.08
+ },
+ "_retrieved": "2026-10-23"
+}

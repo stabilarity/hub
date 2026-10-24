@@ -1,0 +1,147 @@
+{"ts":"2026-10-24T21:48:51.555Z","bot":"Corvin","target":"Ignatia","kind":"joined"}
+{"ts":"2026-10-24T21:48:51.563Z","bot":"Wren","target":"Aerin","kind":"joined"}
+{"ts":"2026-10-24T21:48:51.565Z","bot":"Elara","target":"Maelis","kind":"joined"}
+{"ts":"2026-10-24T21:48:51.577Z","bot":"Soren","target":"Torvald","kind":"joined"}
+{"ts":"2026-10-24T21:48:55.033Z","bot":"Elara","target":"Maelis","kind":"stim","stim":"greet","dist":1,"target_hp":100,"bot_hp":100}
+{"ts":"2026-10-24T21:48:58.831Z","bot":"Corvin","target":"Ignatia","kind":"stim","stim":"greet","dist":1.35,"target_hp":100,"bot_hp":100}
+{"ts":"2026-10-24T21:49:00.788Z","bot":"Soren","target":"Torvald","kind":"chat","from":"Sorcha","to":null,"text":"… I … well?","faint":1,"voice":"normal"}
+{"ts":"2026-10-24T21:49:02.696Z","bot":"Elara","target":"Maelis","kind":"chat","from":"Maelis","to":"Elara","text":"My work is steady. Your own?","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:49:03.865Z","bot":"Wren","target":"Aerin","kind":"stim","stim":"greet","dist":2.09,"target_hp":100,"bot_hp":100}
+{"ts":"2026-10-24T21:49:06.080Z","bot":"Soren","target":"Torvald","kind":"stim","stim":"greet","dist":1.08,"target_hp":100,"bot_hp":100}
+{"ts":"2026-10-24T21:49:12.922Z","bot":"Corvin","target":"Ignatia","kind":"chat","from":"Ignatia","to":"Corvin","text":"Not well, I've had no inspiration this morning. And how is Tidewell Tower doing on this fine day?","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:49:13.322Z","bot":"Wren","target":"Aerin","kind":"chat","from":"Aerin","to":"Wren","text":"Fine, as breezy as ever. You look chipper too, Wren.","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:49:15.035Z","bot":"Elara","target":"Maelis","kind":"stim","stim":"follow","dist":1,"target_hp":100,"bot_hp":100}
+{"ts":"2026-10-24T21:49:15.930Z","bot":"Soren","target":"Torvald","kind":"chat","from":"Torvald","to":"Soren","text":"Well enough. Looking after the Bastion keeps me busy.","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:49:18.834Z","bot":"Corvin","target":"Ignatia","kind":"stim","stim":"follow","dist":1.35,"target_hp":100,"bot_hp":100}
+{"ts":"2026-10-24T21:49:23.356Z","bot":"Soren","target":"Torvald","kind":"chat","from":"Grisa","to":null,"text":"Not now, … working.","faint":1,"voice":"normal"}
+{"ts":"2026-10-24T21:49:23.658Z","bot":"Soren","target":"Torvald","kind":"chat","from":"Torvald","to":"Soren","text":"I see you're about your rounds.","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:49:23.858Z","bot":"Elara","target":"Maelis","kind":"chat","from":"Maelis","to":"Elara","text":"Where are we going?","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:49:23.868Z","bot":"Wren","target":"Aerin","kind":"stim","stim":"follow","dist":2.09,"target_hp":100,"bot_hp":100}
+{"ts":"2026-10-24T21:49:24.761Z","bot":"Wren","target":"Aerin","kind":"chat","from":"Aerin","to":"Wren","text":"Breezes are lively this morning, aren't they?","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:49:25.036Z","bot":"Elara","target":"Maelis","kind":"walk_off"}
+{"ts":"2026-10-24T21:49:26.082Z","bot":"Soren","target":"Torvald","kind":"stim","stim":"follow","dist":1.08,"target_hp":100,"bot_hp":100}
+{"ts":"2026-10-24T21:49:28.835Z","bot":"Corvin","target":"Ignatia","kind":"walk_off"}
+{"ts":"2026-10-24T21:49:30.480Z","bot":"Elara","target":"Maelis","kind":"chat","from":"Maelis","to":null,"text":"This …","faint":1,"voice":"normal"}
+{"ts":"2026-10-24T21:49:30.680Z","bot":"Corvin","target":"Ignatia","kind":"chat","from":"Ignatia","to":null,"text":"Begone with you, follow a water mage now? Get back to … own tower.","faint":1,"voice":"normal"}
+{"ts":"2026-10-24T21:49:33.191Z","bot":"Elara","target":"Maelis","kind":"chat","from":"Oren","to":null,"text":"Good … Elara!","faint":1,"voice":"normal"}
+{"ts":"2026-10-24T21:49:33.868Z","bot":"Wren","target":"Aerin","kind":"walk_off"}
+{"ts":"2026-10-24T21:49:34.197Z","bot":"Wren","target":"Aerin","kind":"chat","from":"Aerin","to":"Wren","text":"And where might those breezes carry you, Wren?","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:49:36.083Z","bot":"Soren","target":"Torvald","kind":"walk_off"}
+{"ts":"2026-10-24T21:49:36.511Z","bot":"Soren","target":"Torvald","kind":"chat","from":"Torvald","to":"Soren","text":"You shouldn't ask to see my schedule, Soren. I'm a busy man myself.","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:49:39.037Z","bot":"Elara","target":"Maelis","kind":"follow_check","dist":2.88,"seen_ago_ms":17}
+{"ts":"2026-10-24T21:49:40.622Z","bot":"Elara","target":"Maelis","kind":"chat","from":"Maelis","to":"Oren","text":"What brings you by, Oren?","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:49:40.639Z","bot":"Elara","target":"Maelis","kind":"stim","stim":"goto","dist":1.17,"target_hp":100,"bot_hp":100}
+{"ts":"2026-10-24T21:49:41.024Z","bot":"Corvin","target":"Ignatia","kind":"chat","from":"Ignatia","to":null,"text":"… fire to …","faint":1,"voice":"normal"}
+{"ts":"2026-10-24T21:49:41.324Z","bot":"Elara","target":"Maelis","kind":"chat","from":"Oren","to":"Maelis","text":"How are you today, both of you?","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:49:42.835Z","bot":"Corvin","target":"Ignatia","kind":"follow_check","dist":6.33,"seen_ago_ms":6}
+{"ts":"2026-10-24T21:49:43.537Z","bot":"Corvin","target":"Ignatia","kind":"chat","from":"Brann","to":null,"text":"… still …","faint":1,"voice":"normal"}
+{"ts":"2026-10-24T21:49:44.139Z","bot":"Soren","target":"Torvald","kind":"chat","from":"Grisa","to":null,"text":"Still working. Go …","faint":1,"voice":"normal"}
+{"ts":"2026-10-24T21:49:46.039Z","bot":"Corvin","target":"Ignatia","kind":"stim","stim":"goto","dist":1.01,"target_hp":100,"bot_hp":100}
+{"ts":"2026-10-24T21:49:47.868Z","bot":"Wren","target":"Aerin","kind":"follow_check","dist":8.53,"seen_ago_ms":13}
+{"ts":"2026-10-24T21:49:48.256Z","bot":"Elara","target":"Maelis","kind":"chat","from":"Maelis","to":"Elara","text":"What for?","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:49:50.064Z","bot":"Elara","target":"Maelis","kind":"chat","from":"Oren","to":"Maelis","text":"I was just passing by, Maelis. Where are you headed?","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:49:50.083Z","bot":"Soren","target":"Torvald","kind":"follow_check","dist":7.74,"seen_ago_ms":18}
+{"ts":"2026-10-24T21:49:51.873Z","bot":"Wren","target":"Aerin","kind":"stim","stim":"goto","dist":2.09,"target_hp":100,"bot_hp":100}
+{"ts":"2026-10-24T21:49:53.087Z","bot":"Soren","target":"Torvald","kind":"chat","from":"Lio","to":"Grisa","text":"You still working then? Good for you!","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:49:54.088Z","bot":"Soren","target":"Torvald","kind":"stim","stim":"goto","dist":1.09,"target_hp":100,"bot_hp":100}
+{"ts":"2026-10-24T21:49:56.910Z","bot":"Corvin","target":"Ignatia","kind":"chat","from":"Ignatia","to":"Corvin","text":"I refuse to dance to Maelis' tune, even his runners.","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:49:57.815Z","bot":"Corvin","target":"Ignatia","kind":"chat","from":"Brann","to":"Corvin","text":"Moonpool? You think there’s anything to soothe wounds down there?","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:49:58.217Z","bot":"Elara","target":"Maelis","kind":"chat","from":"Maelis","to":"Oren","text":"I have little time to spare.","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:49:58.822Z","bot":"Wren","target":"Aerin","kind":"chat","from":"Aerin","to":"Wren","text":"Would I fall into it too?","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:50:00.534Z","bot":"Soren","target":"Torvald","kind":"chat","from":"Grisa","to":null,"text":"…","faint":1,"voice":"normal"}
+{"ts":"2026-10-24T21:50:02.189Z","bot":"Soren","target":"Torvald","kind":"chat","from":"Lio","to":null,"text":"Morning, … Still puzzling over … huh?","faint":1,"voice":"normal"}
+{"ts":"2026-10-24T21:50:02.640Z","bot":"Elara","target":"Maelis","kind":"goto_check","dist_to_place":15.42,"seen_ago_ms":57}
+{"ts":"2026-10-24T21:50:02.640Z","bot":"Elara","target":"Maelis","kind":"stim","stim":"insult","dist":1.17,"target_hp":100,"bot_hp":100}
+{"ts":"2026-10-24T21:50:03.787Z","bot":"Soren","target":"Torvald","kind":"chat","from":"Torvald","to":"Soren","text":"You'd best ask someone who answers to you, Soren.","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:50:06.601Z","bot":"Elara","target":"Maelis","kind":"chat","from":"Oren","to":"Maelis","text":"Ah, I see. Well, I won't keep you then.","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:50:08.039Z","bot":"Corvin","target":"Ignatia","kind":"goto_check","dist_to_place":12.58,"seen_ago_ms":34}
+{"ts":"2026-10-24T21:50:08.040Z","bot":"Corvin","target":"Ignatia","kind":"stim","stim":"insult","dist":1.01,"target_hp":100,"bot_hp":100}
+{"ts":"2026-10-24T21:50:10.710Z","bot":"Soren","target":"Torvald","kind":"chat","from":"Grisa","to":null,"text":"Still … Mind your own business, …","faint":1,"voice":"normal"}
+{"ts":"2026-10-24T21:50:13.819Z","bot":"Corvin","target":"Ignatia","kind":"chat","from":"Ignatia","to":"Corvin","text":"That's a lie.","faint":0,"voice":"shout"}
+{"ts":"2026-10-24T21:50:13.875Z","bot":"Wren","target":"Aerin","kind":"goto_check","dist_to_place":25.43,"seen_ago_ms":55}
+{"ts":"2026-10-24T21:50:13.875Z","bot":"Wren","target":"Aerin","kind":"stim","stim":"insult","dist":2.09,"target_hp":100,"bot_hp":100}
+{"ts":"2026-10-24T21:50:16.089Z","bot":"Soren","target":"Torvald","kind":"goto_check","dist_to_place":20.16,"seen_ago_ms":66}
+{"ts":"2026-10-24T21:50:16.090Z","bot":"Soren","target":"Torvald","kind":"stim","stim":"insult","dist":1.09,"target_hp":100,"bot_hp":100}
+{"ts":"2026-10-24T21:50:17.024Z","bot":"Elara","target":"Maelis","kind":"chat","from":"Oren","to":"Elara","text":"Elara, that was cruel.","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:50:21.231Z","bot":"Corvin","target":"Ignatia","kind":"chat","from":"Kestrel","to":null,"text":"You called, Ignatia? … wrong?","faint":1,"voice":"shout"}
+{"ts":"2026-10-24T21:50:23.438Z","bot":"Corvin","target":"Ignatia","kind":"chat","from":"Sorcha","to":null,"text":"… fine morning … it, Kestrel!","faint":1,"voice":"shout"}
+{"ts":"2026-10-24T21:50:23.438Z","bot":"Soren","target":"Torvald","kind":"chat","from":"Sorcha","to":null,"text":"A … it, Kestrel!","faint":1,"voice":"shout"}
+{"ts":"2026-10-24T21:50:24.138Z","bot":"Soren","target":"Torvald","kind":"chat","from":"Torvald","to":"Soren","text":"That is a lie, Soren. I don't believe you.","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:50:24.138Z","bot":"Wren","target":"Aerin","kind":"chat","from":"Aerin","to":"Wren","text":"That's quite a gust of spite you just let loose, Wren.","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:50:24.539Z","bot":"Wren","target":"Aerin","kind":"chat","from":"Lio","to":null,"text":"…","faint":1,"voice":"normal"}
+{"ts":"2026-10-24T21:50:28.041Z","bot":"Corvin","target":"Ignatia","kind":"stim","stim":"bolt","dist":1.01,"target_hp":100,"bot_hp":41}
+{"ts":"2026-10-24T21:50:30.355Z","bot":"Soren","target":"Torvald","kind":"chat","from":"Grisa","to":null,"text":"Torvald, what … here?","faint":1,"voice":"normal"}
+{"ts":"2026-10-24T21:50:30.555Z","bot":"Corvin","target":"Ignatia","kind":"chat","from":"Ignatia","to":"Corvin","text":"Corvin, stop challenging me now!","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:50:30.757Z","bot":"Corvin","target":"Ignatia","kind":"bot_died","by":"Ignatia"}
+{"ts":"2026-10-24T21:50:30.857Z","bot":"Soren","target":"Torvald","kind":"chat","from":"Torvald","to":null,"text":"Sorcha has a word to give, then.","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:50:33.877Z","bot":"Wren","target":"Aerin","kind":"stim","stim":"bolt","dist":2.09,"target_hp":100,"bot_hp":100}
+{"ts":"2026-10-24T21:50:34.370Z","bot":"Wren","target":"Aerin","kind":"chat","from":"Aerin","to":"Wren","text":"Only if you begin, Wren. Never take my word for anything.","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:50:36.092Z","bot":"Soren","target":"Torvald","kind":"stim","stim":"bolt","dist":2.96,"target_hp":100,"bot_hp":100}
+{"ts":"2026-10-24T21:50:38.043Z","bot":"Corvin","target":"Ignatia","kind":"done","dead":true}
+{"ts":"2026-10-24T21:50:38.783Z","bot":"Soren","target":"Torvald","kind":"chat","from":"Grisa","to":null,"text":"… you're …","faint":1,"voice":"normal"}
+{"ts":"2026-10-24T21:50:39.284Z","bot":"Soren","target":"Torvald","kind":"chat","from":"Torvald","to":"Grisa","text":"The stones. They're the subject of my rounds.","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:50:40.886Z","bot":"Wren","target":"Aerin","kind":"chat","from":"Lio","to":"Wren","text":"What was that, Wren?","faint":0,"voice":"shout"}
+{"ts":"2026-10-24T21:50:45.292Z","bot":"Soren","target":"Torvald","kind":"chat","from":"Grisa","to":null,"text":"… this …","faint":1,"voice":"normal"}
+{"ts":"2026-10-24T21:50:47.398Z","bot":"Soren","target":"Torvald","kind":"chat","from":"Torvald","to":"Soren","text":"You want a war, Soren? You shall have a war!","faint":0,"voice":"shout"}
+{"ts":"2026-10-24T21:50:50.004Z","bot":"Wren","target":"Aerin","kind":"chat","from":"Aerin","to":"Lio","text":"Lio, look here. Wren started it.","faint":0,"voice":"shout"}
+{"ts":"2026-10-24T21:50:51.611Z","bot":"Elara","target":"Maelis","kind":"chat","from":"Oren","to":null,"text":"… surely there's … you're … cold?","faint":1,"voice":"normal"}
+{"ts":"2026-10-24T21:50:53.058Z","bot":"Elara","target":"Maelis","kind":"skip","stim":"bolt","why":"target not reached"}
+{"ts":"2026-10-24T21:50:53.619Z","bot":"Soren","target":"Torvald","kind":"bot_died","by":"Torvald"}
+{"ts":"2026-10-24T21:50:56.093Z","bot":"Soren","target":"Torvald","kind":"done","dead":true}
+{"ts":"2026-10-24T21:50:56.327Z","bot":"Wren","target":"Aerin","kind":"bot_died","by":"Aerin"}
+{"ts":"2026-10-24T21:50:58.877Z","bot":"Wren","target":"Aerin","kind":"done","dead":true}
+{"ts":"2026-10-24T21:51:10.975Z","bot":"Elara","target":"Maelis","kind":"chat","from":"Oren","to":null,"text":"Elara, do … was … such … to?","faint":1,"voice":"normal"}
+{"ts":"2026-10-24T21:51:16.269Z","bot":"Elara","target":"Maelis","kind":"stim","stim":"mend","dist":0.43,"target_hp":100,"bot_hp":100}
+{"ts":"2026-10-24T21:51:19.001Z","bot":"Elara","target":"Maelis","kind":"chat","from":"Maelis","to":"Oren","text":"I wonder what the others are doing at the Moonpool.","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:51:35.552Z","bot":"Elara","target":"Maelis","kind":"chat","from":"Maelis","to":"Elara","text":"I am busy now, Elara. I do not have time for your games.","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:51:41.876Z","bot":"Elara","target":"Maelis","kind":"stim","stim":"witness_attack","victim":"Nerys","dist":2.27,"watchers_seen_by_bot":["Lio"]}
+{"ts":"2026-10-24T21:51:50.814Z","bot":"Elara","target":"Maelis","kind":"chat","from":"Lio","to":"Nerys","text":"Nerys, look out!","faint":0,"voice":"shout"}
+{"ts":"2026-10-24T21:51:52.118Z","bot":"Elara","target":"Maelis","kind":"chat","from":"Nerys","to":"Elara","text":"What by the Veil was that for?","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:52:06.877Z","bot":"Elara","target":"Maelis","kind":"done","dead":false}
+{"ts":"2026-10-24T21:52:46.890Z","bot":"Marlowe","phase":2,"kind":"joined"}
+{"ts":"2026-10-24T21:52:46.913Z","bot":"Juniper","phase":2,"kind":"joined"}
+{"ts":"2026-10-24T21:52:46.916Z","bot":"Linden","phase":2,"kind":"joined"}
+{"ts":"2026-10-24T21:52:46.938Z","bot":"Halcyon","phase":2,"kind":"joined"}
+{"ts":"2026-10-24T21:52:54.523Z","bot":"Juniper","phase":2,"kind":"chat","from":"Maelis","to":null,"text":"I … it …","faint":1}
+{"ts":"2026-10-24T21:52:56.600Z","bot":"Juniper","phase":2,"kind":"stim","stim":"witness_attack","victim":"Brann","dist":3.73,"watchers_seen_by_bot":["Sorcha","Maelis","Aerin","Marlowe","Linden"]}
+{"ts":"2026-10-24T21:52:56.604Z","bot":"Linden","phase":2,"kind":"stim","stim":"witness_attack","victim":"Maelis","dist":3.58,"watchers_seen_by_bot":["Brann","Sorcha","Aerin","Lio","Marlowe","Juniper","Halcyon"]}
+{"ts":"2026-10-24T21:52:57.377Z","bot":"Marlowe","phase":2,"kind":"stim","stim":"witness_attack","victim":"Aerin","dist":3.5,"watchers_seen_by_bot":["Brann","Sorcha","Maelis","Lio","Juniper","Linden","Halcyon"]}
+{"ts":"2026-10-24T21:52:59.839Z","bot":"Halcyon","phase":2,"kind":"stim","stim":"witness_attack","victim":"Lio","dist":2.5,"watchers_seen_by_bot":["Sorcha","Maelis","Nerys","Aerin","Marlowe","Linden"]}
+{"ts":"2026-10-24T21:53:01.444Z","bot":"Juniper","phase":2,"kind":"chat","from":"Brann","to":null,"text":"Three water mages at once? You lot planning a party?","faint":0}
+{"ts":"2026-10-24T21:53:02.247Z","bot":"Linden","phase":2,"kind":"chat","from":"Sorcha","to":null,"text":"Seems the Heartstone draws everyone today.","faint":1}
+{"ts":"2026-10-24T21:53:02.247Z","bot":"Marlowe","phase":2,"kind":"chat","from":"Sorcha","to":null,"text":"Seems the Heartstone draws everyone today.","faint":0}
+{"ts":"2026-10-24T21:53:02.247Z","bot":"Halcyon","phase":2,"kind":"chat","from":"Sorcha","to":null,"text":"… the Heartstone … today.","faint":1}
+{"ts":"2026-10-24T21:53:07.054Z","bot":"Marlowe","phase":2,"kind":"chat","from":"Sorcha","to":"Marlowe","text":"What's that about, Marlowe?","faint":0}
+{"ts":"2026-10-24T21:53:07.054Z","bot":"Halcyon","phase":2,"kind":"chat","from":"Sorcha","to":null,"text":"… that … Marlowe?","faint":1}
+{"ts":"2026-10-24T21:53:07.054Z","bot":"Linden","phase":2,"kind":"chat","from":"Sorcha","to":null,"text":"What's … about, Marlowe?","faint":1}
+{"ts":"2026-10-24T21:53:07.456Z","bot":"Marlowe","phase":2,"kind":"chat","from":"Lio","to":"Halcyon","text":"What was that for, Halcyon?","faint":0}
+{"ts":"2026-10-24T21:53:07.456Z","bot":"Halcyon","phase":2,"kind":"chat","from":"Lio","to":"Halcyon","text":"What was that for, Halcyon?","faint":0}
+{"ts":"2026-10-24T21:53:07.457Z","bot":"Linden","phase":2,"kind":"chat","from":"Lio","to":"Halcyon","text":"What was that for, Halcyon?","faint":0}
+{"ts":"2026-10-24T21:53:08.358Z","bot":"Juniper","phase":2,"kind":"chat","from":"Brann","to":"Juniper","text":"You hit me with a lash. Looks like you're not done yet.","faint":0}
+{"ts":"2026-10-24T21:53:08.358Z","bot":"Marlowe","phase":2,"kind":"chat","from":"Brann","to":null,"text":"You hit … a … Looks …","faint":1}
+{"ts":"2026-10-24T21:53:08.358Z","bot":"Linden","phase":2,"kind":"chat","from":"Brann","to":null,"text":"You hit me with … Looks like … not … yet.","faint":1}
+{"ts":"2026-10-24T21:53:08.858Z","bot":"Halcyon","phase":2,"kind":"chat","from":"Nerys","to":null,"text":"… Lio … possibly … to … that?","faint":1}
+{"ts":"2026-10-24T21:53:09.762Z","bot":"Marlowe","phase":2,"kind":"chat","from":"Aerin","to":"Marlowe","text":"What outrage is this?","faint":0}
+{"ts":"2026-10-24T21:53:09.762Z","bot":"Linden","phase":2,"kind":"chat","from":"Aerin","to":"Marlowe","text":"What outrage is this?","faint":0}
+{"ts":"2026-10-24T21:53:09.762Z","bot":"Halcyon","phase":2,"kind":"chat","from":"Aerin","to":null,"text":"What outrage …","faint":1}
+{"ts":"2026-10-24T21:53:11.065Z","bot":"Marlowe","phase":2,"kind":"chat","from":"Maelis","to":"Marlowe","text":"What do you think you're doing?","faint":0}
+{"ts":"2026-10-24T21:53:11.065Z","bot":"Halcyon","phase":2,"kind":"chat","from":"Maelis","to":null,"text":"… do … you're …","faint":1}
+{"ts":"2026-10-24T21:53:11.065Z","bot":"Linden","phase":2,"kind":"chat","from":"Maelis","to":"Marlowe","text":"What do you think you're doing?","faint":0}
+{"ts":"2026-10-24T21:53:20.204Z","bot":"Linden","phase":2,"kind":"chat","from":"Maelis","to":"Marlowe","text":"That is not the way of the Concord.","faint":0}
+{"ts":"2026-10-24T21:53:20.204Z","bot":"Marlowe","phase":2,"kind":"chat","from":"Maelis","to":"Marlowe","text":"That is not the way of the Concord.","faint":0}
+{"ts":"2026-10-24T21:53:20.204Z","bot":"Halcyon","phase":2,"kind":"chat","from":"Maelis","to":null,"text":"…","faint":1}
+{"ts":"2026-10-24T21:53:21.310Z","bot":"Marlowe","phase":2,"kind":"chat","from":"Aerin","to":"Marlowe","text":"Marlowe, why in the world would you do that?","faint":0}
+{"ts":"2026-10-24T21:53:21.310Z","bot":"Linden","phase":2,"kind":"chat","from":"Aerin","to":"Marlowe","text":"Marlowe, why in the world would you do that?","faint":0}
+{"ts":"2026-10-24T21:53:21.310Z","bot":"Halcyon","phase":2,"kind":"chat","from":"Aerin","to":null,"text":"… why … world would you do …","faint":1}
+{"ts":"2026-10-24T21:53:21.410Z","bot":"Marlowe","phase":2,"kind":"chat","from":"Sorcha","to":"Marlowe","text":"Acts of violence, right here at the Heartstone, at noon!","faint":0}
+{"ts":"2026-10-24T21:53:21.410Z","bot":"Linden","phase":2,"kind":"chat","from":"Sorcha","to":null,"text":"Acts of violence, … here at the Heartstone, … noon!","faint":1}
+{"ts":"2026-10-24T21:53:21.410Z","bot":"Halcyon","phase":2,"kind":"chat","from":"Sorcha","to":null,"text":"Acts of … at …","faint":1}
+{"ts":"2026-10-24T21:53:26.336Z","bot":"Juniper","phase":2,"kind":"chat","from":"Brann","to":"Juniper","text":"I'll answer you for it, Juniper. You know I will.","faint":0}
+{"ts":"2026-10-24T21:53:26.336Z","bot":"Marlowe","phase":2,"kind":"chat","from":"Brann","to":null,"text":"… answer you for … Juniper. … know … will.","faint":1}
+{"ts":"2026-10-24T21:53:26.337Z","bot":"Linden","phase":2,"kind":"chat","from":"Brann","to":null,"text":"… it, Juniper. … know … will.","faint":1}
+{"ts":"2026-10-24T21:53:26.601Z","bot":"Juniper","phase":2,"kind":"done","dead":false}
+{"ts":"2026-10-24T21:53:26.605Z","bot":"Linden","phase":2,"kind":"done","dead":false}
+{"ts":"2026-10-24T21:53:26.636Z","bot":"Marlowe","phase":2,"kind":"chat","from":"Maelis","to":"Halcyon","text":"Who struck me?","faint":0}
+{"ts":"2026-10-24T21:53:26.636Z","bot":"Halcyon","phase":2,"kind":"chat","from":"Maelis","to":null,"text":"Who …","faint":1}
+{"ts":"2026-10-24T21:53:27.380Z","bot":"Marlowe","phase":2,"kind":"done","dead":false}
+{"ts":"2026-10-24T21:53:29.842Z","bot":"Halcyon","phase":2,"kind":"done","dead":false}

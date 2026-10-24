@@ -1,0 +1,10 @@
+{
+ "key_usage_before_usd": 0.139842916,
+ "key_usage_after_usd": 0.234144085,
+ "key_usage_delta_usd": 0.094301,
+ "probe_window_utc": [
+  "2026-10-24T21:48:41Z",
+  "2026-10-24T21:54:55Z"
+ ],
+ "note": "OpenRouter key usage counter read before and after; may include other use of the same key in that window"
+}

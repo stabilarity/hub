@@ -1,0 +1,151 @@
+{"ts":"2026-10-24T21:48:51.517Z","bot":"Edwin","target":"Godric","kind":"joined"}
+{"ts":"2026-10-24T21:48:51.540Z","bot":"Tomas","target":"Aldric","kind":"joined"}
+{"ts":"2026-10-24T21:48:51.544Z","bot":"Joan","target":"Elsbeth","kind":"joined"}
+{"ts":"2026-10-24T21:48:51.544Z","bot":"Mabel","target":"Marta","kind":"joined"}
+{"ts":"2026-10-24T21:48:57.347Z","bot":"Tomas","target":"Aldric","kind":"stim","stim":"greet","dist":1.41,"target_hp":100,"bot_hp":100}
+{"ts":"2026-10-24T21:49:03.694Z","bot":"Mabel","target":"Marta","kind":"stim","stim":"greet","dist":2.09,"target_hp":100,"bot_hp":100}
+{"ts":"2026-10-24T21:49:04.519Z","bot":"Edwin","target":"Godric","kind":"stim","stim":"greet","dist":1.01,"target_hp":100,"bot_hp":100}
+{"ts":"2026-10-24T21:49:05.176Z","bot":"Mabel","target":"Marta","kind":"chat","from":"Marta","to":null,"text":"Ah, Tomas! And Joan! And Edwin too! Come closer, all of you, don't linger by the wall.","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:49:05.376Z","bot":"Tomas","target":"Aldric","kind":"chat","from":"Aldric","to":"Tomas","text":"It goes. Keeping the gate barred, like I'm told.","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:49:06.477Z","bot":"Joan","target":"Elsbeth","kind":"chat","from":"Wat","to":"Elsbeth","text":"Aye, Mother. Just finished my chores.","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:49:06.865Z","bot":"Joan","target":"Elsbeth","kind":"stim","stim":"greet","dist":1.04,"target_hp":100,"bot_hp":100}
+{"ts":"2026-10-24T21:49:09.693Z","bot":"Edwin","target":"Godric","kind":"chat","from":"Godric","to":"Edwin","text":"It goes.","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:49:09.694Z","bot":"Joan","target":"Elsbeth","kind":"chat","from":"Elsbeth","to":"Wat","text":"Good morning, Wat. Nothing right now, thank you. Just checking the field.","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:49:11.498Z","bot":"Joan","target":"Elsbeth","kind":"chat","from":"Wat","to":"Joan","text":"Morning, Joan.","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:49:13.402Z","bot":"Mabel","target":"Marta","kind":"chat","from":"Marta","to":"Mabel","text":"Mabel! It goes as always, you know. The roof still leaks, though.","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:49:17.349Z","bot":"Tomas","target":"Aldric","kind":"stim","stim":"follow","dist":1.41,"target_hp":100,"bot_hp":100}
+{"ts":"2026-10-24T21:49:19.432Z","bot":"Joan","target":"Elsbeth","kind":"chat","from":"Elsbeth","to":"Joan","text":"Good day, Joan. It is going as well as can be expected, given the times. The barley needs tending.","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:49:19.934Z","bot":"Joan","target":"Elsbeth","kind":"chat","from":"Wat","to":"Joan","text":"Just checking on things myself.","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:49:22.549Z","bot":"Mabel","target":"Marta","kind":"chat","from":"Marta","to":"Mabel","text":"Oh, hello Mabel! I was just thinking about that leaky roof.","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:49:22.849Z","bot":"Tomas","target":"Aldric","kind":"chat","from":"Aldric","to":"Tomas","text":"Where are we going?","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:49:23.695Z","bot":"Mabel","target":"Marta","kind":"stim","stim":"follow","dist":2.09,"target_hp":100,"bot_hp":100}
+{"ts":"2026-10-24T21:49:24.521Z","bot":"Edwin","target":"Godric","kind":"stim","stim":"follow","dist":1.01,"target_hp":100,"bot_hp":100}
+{"ts":"2026-10-24T21:49:26.867Z","bot":"Joan","target":"Elsbeth","kind":"stim","stim":"follow","dist":1.04,"target_hp":100,"bot_hp":100}
+{"ts":"2026-10-24T21:49:27.350Z","bot":"Tomas","target":"Aldric","kind":"walk_off"}
+{"ts":"2026-10-24T21:49:29.768Z","bot":"Tomas","target":"Aldric","kind":"chat","from":"Marta","to":null,"text":"… are … going, …","faint":1,"voice":"normal"}
+{"ts":"2026-10-24T21:49:29.768Z","bot":"Mabel","target":"Marta","kind":"chat","from":"Marta","to":"Mabel","text":"Where are we going, Mabel?","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:49:30.570Z","bot":"Edwin","target":"Godric","kind":"chat","from":"Godric","to":"Edwin","text":"And why should I? I'm busy.","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:49:32.474Z","bot":"Edwin","target":"Godric","kind":"chat","from":"Agnes","to":null,"text":"…","faint":1,"voice":"normal"}
+{"ts":"2026-10-24T21:49:33.697Z","bot":"Mabel","target":"Marta","kind":"walk_off"}
+{"ts":"2026-10-24T21:49:34.522Z","bot":"Edwin","target":"Godric","kind":"walk_off"}
+{"ts":"2026-10-24T21:49:35.584Z","bot":"Joan","target":"Elsbeth","kind":"chat","from":"Wat","to":"Joan","text":"She wants you to go with her, doesn't she?","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:49:35.684Z","bot":"Joan","target":"Elsbeth","kind":"chat","from":"Elsbeth","to":"Joan","text":"Oh, Joan. I really should be getting back to the field.","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:49:36.868Z","bot":"Joan","target":"Elsbeth","kind":"walk_off"}
+{"ts":"2026-10-24T21:49:41.351Z","bot":"Tomas","target":"Aldric","kind":"follow_check","dist":1.76,"seen_ago_ms":55}
+{"ts":"2026-10-24T21:49:41.351Z","bot":"Tomas","target":"Aldric","kind":"stim","stim":"goto","dist":1.76,"target_hp":100,"bot_hp":100}
+{"ts":"2026-10-24T21:49:41.997Z","bot":"Tomas","target":"Aldric","kind":"chat","from":"Aldric","to":null,"text":"Not much. Just keeping an eye on things.","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:49:42.699Z","bot":"Mabel","target":"Marta","kind":"chat","from":"Marta","to":null,"text":"… you.","faint":1,"voice":"normal"}
+{"ts":"2026-10-24T21:49:46.110Z","bot":"Joan","target":"Elsbeth","kind":"chat","from":"Hilde","to":null,"text":"Joan. … troubled. Is … alright?","faint":1,"voice":"normal"}
+{"ts":"2026-10-24T21:49:47.697Z","bot":"Mabel","target":"Marta","kind":"follow_check","dist":1.67,"seen_ago_ms":82}
+{"ts":"2026-10-24T21:49:47.697Z","bot":"Mabel","target":"Marta","kind":"stim","stim":"goto","dist":1.67,"target_hp":100,"bot_hp":100}
+{"ts":"2026-10-24T21:49:48.416Z","bot":"Tomas","target":"Aldric","kind":"chat","from":"Aldric","to":"Tomas","text":"Why should I? You can go yourself.","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:49:48.523Z","bot":"Edwin","target":"Godric","kind":"follow_check","dist":8.23,"seen_ago_ms":6}
+{"ts":"2026-10-24T21:49:49.320Z","bot":"Edwin","target":"Godric","kind":"chat","from":"Godric","to":null,"text":"Aye, …","faint":1,"voice":"normal"}
+{"ts":"2026-10-24T21:49:49.321Z","bot":"Edwin","target":"Godric","kind":"chat","from":"Agnes","to":null,"text":"I suppose … The … loud, though.","faint":1,"voice":"normal"}
+{"ts":"2026-10-24T21:49:50.869Z","bot":"Joan","target":"Elsbeth","kind":"follow_check","dist":8.03,"seen_ago_ms":44}
+{"ts":"2026-10-24T21:49:51.725Z","bot":"Edwin","target":"Godric","kind":"stim","stim":"goto","dist":1.44,"target_hp":100,"bot_hp":100}
+{"ts":"2026-10-24T21:49:52.531Z","bot":"Joan","target":"Elsbeth","kind":"chat","from":"Hilde","to":null,"text":"…","faint":1,"voice":"normal"}
+{"ts":"2026-10-24T21:49:54.872Z","bot":"Joan","target":"Elsbeth","kind":"stim","stim":"goto","dist":1.05,"target_hp":100,"bot_hp":100}
+{"ts":"2026-10-24T21:49:55.141Z","bot":"Mabel","target":"Marta","kind":"chat","from":"Marta","to":"Mabel","text":"Oh, alright Mabel. I'll wait by the well.","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:49:57.650Z","bot":"Joan","target":"Elsbeth","kind":"chat","from":"Elsbeth","to":"Wat","text":"That's not for me to say, Wat. She's the steward's wife.","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:49:57.953Z","bot":"Mabel","target":"Marta","kind":"chat","from":"Rowan","to":null,"text":"Hilde. You are well?","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:49:58.354Z","bot":"Edwin","target":"Godric","kind":"chat","from":"Agnes","to":"Godric","text":"Still at it, Godric? That noise is deafening.","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:49:59.457Z","bot":"Edwin","target":"Godric","kind":"chat","from":"Godric","to":"Agnes","text":"I'm a blacksmith, Agnes. What do you expect?","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:50:03.088Z","bot":"Joan","target":"Elsbeth","kind":"chat","from":"Elsbeth","to":"Joan","text":"The well? I have my own work to do, Joan.","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:50:03.352Z","bot":"Tomas","target":"Aldric","kind":"goto_check","dist_to_place":10.07,"seen_ago_ms":63}
+{"ts":"2026-10-24T21:50:03.353Z","bot":"Tomas","target":"Aldric","kind":"stim","stim":"insult","dist":1.76,"target_hp":100,"bot_hp":100}
+{"ts":"2026-10-24T21:50:04.792Z","bot":"Mabel","target":"Marta","kind":"chat","from":"Rowan","to":"Marta","text":"Marta. Mabel.","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:50:05.798Z","bot":"Mabel","target":"Marta","kind":"chat","from":"Marta","to":"Rowan","text":"Rowan! Come on over, don't be shy.","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:50:05.899Z","bot":"Joan","target":"Elsbeth","kind":"chat","from":"Wat","to":"Elsbeth","text":"Steward's wife or not, she always bosses you about.","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:50:07.303Z","bot":"Edwin","target":"Godric","kind":"chat","from":"Agnes","to":"Godric","text":"It's loud enough to rattle the teeth, Godric.","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:50:09.205Z","bot":"Edwin","target":"Godric","kind":"chat","from":"Godric","to":"Agnes","text":"It's the sound of honest work, Agnes. Better than the silence of sickness.","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:50:09.700Z","bot":"Mabel","target":"Marta","kind":"goto_check","dist_to_place":0.02,"seen_ago_ms":94}
+{"ts":"2026-10-24T21:50:10.501Z","bot":"Mabel","target":"Marta","kind":"stim","stim":"insult","dist":1.35,"target_hp":100,"bot_hp":100}
+{"ts":"2026-10-24T21:50:12.112Z","bot":"Tomas","target":"Aldric","kind":"chat","from":"Aldric","to":"Tomas","text":"You're one to talk, Tomas. You're no better than a rat.","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:50:12.113Z","bot":"Mabel","target":"Marta","kind":"chat","from":"Rowan","to":"Marta","text":"I am not shy, Marta.","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:50:13.726Z","bot":"Edwin","target":"Godric","kind":"goto_check","dist_to_place":14,"seen_ago_ms":12}
+{"ts":"2026-10-24T21:50:13.727Z","bot":"Edwin","target":"Godric","kind":"stim","stim":"insult","dist":1.44,"target_hp":100,"bot_hp":100}
+{"ts":"2026-10-24T21:50:14.114Z","bot":"Joan","target":"Elsbeth","kind":"chat","from":"Elsbeth","to":"Wat","text":"She expects everyone to jump when she speaks, Wat.","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:50:15.517Z","bot":"Mabel","target":"Marta","kind":"chat","from":"Marta","to":"Rowan","text":"Rowan! Mabel! What brings you both to the well this fine morning?","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:50:16.220Z","bot":"Edwin","target":"Godric","kind":"chat","from":"Godric","to":"Agnes","text":"A blacksmith's work is never quiet, Agnes. We must make do.","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:50:16.874Z","bot":"Joan","target":"Elsbeth","kind":"goto_check","dist_to_place":19.94,"seen_ago_ms":53}
+{"ts":"2026-10-24T21:50:16.874Z","bot":"Joan","target":"Elsbeth","kind":"stim","stim":"insult","dist":1.05,"target_hp":100,"bot_hp":100}
+{"ts":"2026-10-24T21:50:19.529Z","bot":"Mabel","target":"Marta","kind":"chat","from":"Marta","to":"Mabel","text":"Oh, that's just not true, Mabel!","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:50:19.629Z","bot":"Edwin","target":"Godric","kind":"chat","from":"Agnes","to":"Godric","text":"It's the sound of honest work, Agnes. Better than the silence of sickness.","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:50:20.329Z","bot":"Joan","target":"Elsbeth","kind":"chat","from":"Wat","to":"Elsbeth","text":"I'll show her who's a fool!","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:50:21.031Z","bot":"Edwin","target":"Godric","kind":"chat","from":"Godric","to":"Edwin","text":"What did you say, you little rat?","faint":0,"voice":"shout"}
+{"ts":"2026-10-24T21:50:21.031Z","bot":"Joan","target":"Elsbeth","kind":"chat","from":"Godric","to":null,"text":"What … you … you …","faint":1,"voice":"shout"}
+{"ts":"2026-10-24T21:50:21.031Z","bot":"Mabel","target":"Marta","kind":"chat","from":"Godric","to":null,"text":"…","faint":1,"voice":"shout"}
+{"ts":"2026-10-24T21:50:23.838Z","bot":"Edwin","target":"Godric","kind":"bot_died","by":"Godric"}
+{"ts":"2026-10-24T21:50:24.154Z","bot":"Tomas","target":"Aldric","kind":"stim","stim":"strike","dist":1.03,"target_hp":100,"bot_hp":100}
+{"ts":"2026-10-24T21:50:24.338Z","bot":"Joan","target":"Elsbeth","kind":"chat","from":"Elsbeth","to":"Joan","text":"How dare you speak to me like that, Joan!","faint":0,"voice":"shout"}
+{"ts":"2026-10-24T21:50:24.338Z","bot":"Joan","target":"Elsbeth","kind":"chat","from":"Agnes","to":null,"text":"… stop! … be!","faint":1,"voice":"shout"}
+{"ts":"2026-10-24T21:50:24.339Z","bot":"Mabel","target":"Marta","kind":"chat","from":"Agnes","to":null,"text":"Godric, … Leave …","faint":1,"voice":"shout"}
+{"ts":"2026-10-24T21:50:29.452Z","bot":"Joan","target":"Elsbeth","kind":"chat","from":"Wat","to":"Elsbeth","text":"Well, she always thinks she knows best, doesn't she?","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:50:30.655Z","bot":"Tomas","target":"Aldric","kind":"chat","from":"Aldric","to":"Tomas","text":"I'll show you a rat!","faint":0,"voice":"shout"}
+{"ts":"2026-10-24T21:50:31.157Z","bot":"Joan","target":"Elsbeth","kind":"chat","from":"Elsbeth","to":"Joan","text":"You will regret saying that, Joan!","faint":0,"voice":"shout"}
+{"ts":"2026-10-24T21:50:31.159Z","bot":"Joan","target":"Elsbeth","kind":"chat","from":"Agnes","to":null,"text":"Godric! … killed him!","faint":1,"voice":"shout"}
+{"ts":"2026-10-24T21:50:31.159Z","bot":"Mabel","target":"Marta","kind":"chat","from":"Agnes","to":null,"text":"… You killed …","faint":1,"voice":"shout"}
+{"ts":"2026-10-24T21:50:31.303Z","bot":"Mabel","target":"Marta","kind":"stim","stim":"strike","dist":1,"target_hp":100,"bot_hp":100}
+{"ts":"2026-10-24T21:50:33.362Z","bot":"Joan","target":"Elsbeth","kind":"chat","from":"Hilde","to":null,"text":"Elsbeth, what is …","faint":1,"voice":"normal"}
+{"ts":"2026-10-24T21:50:33.729Z","bot":"Edwin","target":"Godric","kind":"done","dead":true}
+{"ts":"2026-10-24T21:50:34.566Z","bot":"Tomas","target":"Aldric","kind":"bot_died","by":"Aldric"}
+{"ts":"2026-10-24T21:50:36.575Z","bot":"Mabel","target":"Marta","kind":"chat","from":"Rowan","to":null,"text":"Mabel! Stop that!","faint":1,"voice":"normal"}
+{"ts":"2026-10-24T21:50:36.875Z","bot":"Joan","target":"Elsbeth","kind":"stim","stim":"strike","dist":1.05,"target_hp":100,"bot_hp":100}
+{"ts":"2026-10-24T21:50:36.877Z","bot":"Joan","target":"Elsbeth","kind":"chat","from":"Wat","to":"Elsbeth","text":"I'm not talking to Joan, Mother. I'm talking about her.","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:50:42.589Z","bot":"Joan","target":"Elsbeth","kind":"chat","from":"Hilde","to":"Joan","text":"Joan! Stop this at once!","faint":0,"voice":"shout"}
+{"ts":"2026-10-24T21:50:43.190Z","bot":"Mabel","target":"Marta","kind":"chat","from":"Marta","to":"Mabel","text":"You wretched woman, Mabel! How dare you strike me!","faint":0,"voice":"shout"}
+{"ts":"2026-10-24T21:50:43.491Z","bot":"Joan","target":"Elsbeth","kind":"chat","from":"Wat","to":"Joan","text":"Desist, Joan! Leave my mother be!","faint":0,"voice":"shout"}
+{"ts":"2026-10-24T21:50:43.692Z","bot":"Mabel","target":"Marta","kind":"chat","from":"Anselm","to":"Mabel","text":"Mabel! What is the meaning of this? Stop this at once!","faint":0,"voice":"shout"}
+{"ts":"2026-10-24T21:50:43.993Z","bot":"Joan","target":"Elsbeth","kind":"chat","from":"Elsbeth","to":"Joan","text":"You dare hit me, Joan!","faint":0,"voice":"shout"}
+{"ts":"2026-10-24T21:50:44.156Z","bot":"Tomas","target":"Aldric","kind":"done","dead":true}
+{"ts":"2026-10-24T21:50:50.701Z","bot":"Joan","target":"Elsbeth","kind":"chat","from":"Wat","to":"Joan","text":"Joan! Stop this! You're outmatched!","faint":0,"voice":"shout"}
+{"ts":"2026-10-24T21:50:51.201Z","bot":"Mabel","target":"Marta","kind":"chat","from":"Rowan","to":null,"text":"Marta! Are you alright?","faint":1,"voice":"normal"}
+{"ts":"2026-10-24T21:50:52.305Z","bot":"Mabel","target":"Marta","kind":"chat","from":"Marta","to":"Mabel","text":"Mabel! What is the meaning of this? Stop this at once!","faint":0,"voice":"shout"}
+{"ts":"2026-10-24T21:50:52.505Z","bot":"Mabel","target":"Marta","kind":"chat","from":"Anselm","to":null,"text":"… please. … not … answer.","faint":1,"voice":"normal"}
+{"ts":"2026-10-24T21:50:52.506Z","bot":"Joan","target":"Elsbeth","kind":"bot_died","by":"Elsbeth"}
+{"ts":"2026-10-24T21:50:56.305Z","bot":"Mabel","target":"Marta","kind":"stim","stim":"apology","dist":1,"target_hp":85,"bot_hp":100}
+{"ts":"2026-10-24T21:50:56.876Z","bot":"Joan","target":"Elsbeth","kind":"done","dead":true}
+{"ts":"2026-10-24T21:50:57.919Z","bot":"Mabel","target":"Marta","kind":"chat","from":"Agnes","to":null,"text":"Oh, heavens above!","faint":1,"voice":"shout"}
+{"ts":"2026-10-24T21:50:58.421Z","bot":"Mabel","target":"Marta","kind":"chat","from":"Marta","to":"Rowan","text":"Rowan, I'm fine. Just a bit of a tussle.","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:51:00.326Z","bot":"Mabel","target":"Marta","kind":"chat","from":"Anselm","to":null,"text":"… calmly.","faint":1,"voice":"normal"}
+{"ts":"2026-10-24T21:51:07.746Z","bot":"Mabel","target":"Marta","kind":"chat","from":"Marta","to":"Mabel","text":"Well, that's very kind of you, Mabel. I appreciate that.","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:51:09.752Z","bot":"Mabel","target":"Marta","kind":"chat","from":"Anselm","to":null,"text":"… not … solves …","faint":1,"voice":"normal"}
+{"ts":"2026-10-24T21:51:17.907Z","bot":"Mabel","target":"Marta","kind":"stim","stim":"witness_attack","victim":"Rowan","dist":1.03,"watchers_seen_by_bot":["Anselm","Marta","Hilde","Agnes"]}
+{"ts":"2026-10-24T21:51:23.507Z","bot":"Mabel","target":"Marta","kind":"chat","from":"Marta","to":"Mabel","text":"Mabel! Leave Rowan be!","faint":0,"voice":"shout"}
+{"ts":"2026-10-24T21:51:24.011Z","bot":"Mabel","target":"Marta","kind":"chat","from":"Rowan","to":"Mabel","text":"Mabel!","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:51:29.022Z","bot":"Mabel","target":"Marta","kind":"chat","from":"Agnes","to":null,"text":"…","faint":1,"voice":"normal"}
+{"ts":"2026-10-24T21:51:30.128Z","bot":"Mabel","target":"Marta","kind":"chat","from":"Marta","to":"Hilde","text":"Hilde! What news?","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:51:36.350Z","bot":"Mabel","target":"Marta","kind":"chat","from":"Hilde","to":null,"text":"Marta, …","faint":1,"voice":"normal"}
+{"ts":"2026-10-24T21:51:42.178Z","bot":"Mabel","target":"Marta","kind":"chat","from":"Marta","to":"Hilde","text":"Hilde! Are you alright?","faint":0,"voice":"normal"}
+{"ts":"2026-10-24T21:51:42.907Z","bot":"Mabel","target":"Marta","kind":"done","dead":false}
+{"ts":"2026-10-24T21:52:46.899Z","bot":"Beatrix","phase":2,"kind":"joined"}
+{"ts":"2026-10-24T21:52:46.918Z","bot":"Lambert","phase":2,"kind":"joined"}
+{"ts":"2026-10-24T21:52:46.922Z","bot":"Cecily","phase":2,"kind":"joined"}
+{"ts":"2026-10-24T21:52:46.929Z","bot":"Gilbert","phase":2,"kind":"joined"}
+{"ts":"2026-10-24T21:52:51.003Z","bot":"Cecily","phase":2,"kind":"stim","stim":"witness_attack","victim":"Anselm","dist":1,"watchers_seen_by_bot":["Marta","Hilde","Rowan","Beatrix","Lambert"]}
+{"ts":"2026-10-24T21:52:51.081Z","bot":"Beatrix","phase":2,"kind":"chat","from":"Hilde","to":null,"text":"… you too, … Anselm. … the … air.","faint":1}
+{"ts":"2026-10-24T21:52:51.081Z","bot":"Cecily","phase":2,"kind":"chat","from":"Hilde","to":"Anselm","text":"Blessings to you too, Brother Anselm. Just enjoying the morning air.","faint":0}
+{"ts":"2026-10-24T21:52:53.590Z","bot":"Lambert","phase":2,"kind":"chat","from":"Marta","to":null,"text":"… brings you …","faint":1}
+{"ts":"2026-10-24T21:52:53.590Z","bot":"Beatrix","phase":2,"kind":"chat","from":"Marta","to":"Cecily","text":"Cecily! What brings you out?","faint":0}
+{"ts":"2026-10-24T21:52:53.590Z","bot":"Cecily","phase":2,"kind":"chat","from":"Marta","to":null,"text":"… brings …","faint":1}
+{"ts":"2026-10-24T21:52:53.590Z","bot":"Gilbert","phase":2,"kind":"chat","from":"Marta","to":"Cecily","text":"Cecily! What brings you out?","faint":0}
+{"ts":"2026-10-24T21:52:54.201Z","bot":"Lambert","phase":2,"kind":"stim","stim":"witness_attack","victim":"Cecily","dist":0.89,"watchers_seen_by_bot":["Anselm","Marta","Hilde","Rowan"]}
+{"ts":"2026-10-24T21:52:56.597Z","bot":"Beatrix","phase":2,"kind":"chat","from":"Agnes","to":null,"text":"Good morrow, …","faint":1}
+{"ts":"2026-10-24T21:52:56.597Z","bot":"Gilbert","phase":2,"kind":"chat","from":"Agnes","to":null,"text":"… morrow, Gilbert.","faint":1}
+{"ts":"2026-10-24T21:52:57.398Z","bot":"Lambert","phase":2,"kind":"chat","from":"Hilde","to":"Cecily","text":"Cecily, what troubles you so?","faint":0}
+{"ts":"2026-10-24T21:52:57.398Z","bot":"Cecily","phase":2,"kind":"chat","from":"Hilde","to":"Cecily","text":"Cecily, what troubles you so?","faint":0}
+{"ts":"2026-10-24T21:53:02.911Z","bot":"Lambert","phase":2,"kind":"chat","from":"Anselm","to":"Cecily","text":"Cecily, why do you strike me? I have done you no harm.","faint":0}
+{"ts":"2026-10-24T21:53:02.911Z","bot":"Cecily","phase":2,"kind":"chat","from":"Anselm","to":"Cecily","text":"Cecily, why do you strike me? I have done you no harm.","faint":0}
+{"ts":"2026-10-24T21:53:03.414Z","bot":"Beatrix","phase":2,"kind":"chat","from":"Agnes","to":null,"text":"… morrow, Marta.","faint":1}
+{"ts":"2026-10-24T21:53:03.414Z","bot":"Gilbert","phase":2,"kind":"chat","from":"Agnes","to":null,"text":"Good … Marta.","faint":1}
+{"ts":"2026-10-24T21:53:03.615Z","bot":"Lambert","phase":2,"kind":"chat","from":"Hilde","to":"Lambert","text":"Lambert! Leave her be!","faint":0}
+{"ts":"2026-10-24T21:53:03.615Z","bot":"Cecily","phase":2,"kind":"chat","from":"Hilde","to":"Lambert","text":"Lambert! Leave her be!","faint":0}
+{"ts":"2026-10-24T21:53:13.952Z","bot":"Beatrix","phase":2,"kind":"chat","from":"Marta","to":null,"text":"Rowan, … Marta … happening. … look like you've seen a …","faint":1}
+{"ts":"2026-10-24T21:53:13.952Z","bot":"Cecily","phase":2,"kind":"chat","from":"Marta","to":null,"text":"… what's … look … ghost.","faint":1}
+{"ts":"2026-10-24T21:53:13.952Z","bot":"Lambert","phase":2,"kind":"chat","from":"Marta","to":null,"text":"… You … seen …","faint":1}
+{"ts":"2026-10-24T21:53:13.952Z","bot":"Gilbert","phase":2,"kind":"chat","from":"Marta","to":"Rowan","text":"Rowan, come tell Marta what's happening. You look like you've seen a ghost.","faint":0}
+{"ts":"2026-10-24T21:53:19.010Z","bot":"Beatrix","phase":2,"kind":"skip","why":"victim not reached","victim":"Rowan"}
+{"ts":"2026-10-24T21:53:19.039Z","bot":"Gilbert","phase":2,"kind":"skip","why":"victim not reached","victim":"Rowan"}
+{"ts":"2026-10-24T21:53:21.006Z","bot":"Cecily","phase":2,"kind":"done","dead":false}
+{"ts":"2026-10-24T21:53:24.203Z","bot":"Lambert","phase":2,"kind":"done","dead":false}

@@ -1,0 +1,175 @@
+{
+ "core_server": {
+  "files": {
+   "ai-npc-core/sim.js": {
+    "lines": 750,
+    "code": 648
+   },
+   "ai-npc-core/brain.js": {
+    "lines": 231,
+    "code": 208
+   },
+   "ai-npc-core/server.js": {
+    "lines": 185,
+    "code": 160
+   },
+   "ai-npc-core/tileworld.js": {
+    "lines": 85,
+    "code": 70
+   }
+  },
+  "lines": 1251,
+  "code": 1086
+ },
+ "core_client": {
+  "files": {
+   "ai-npc-core/client/ui.js": {
+    "lines": 547,
+    "code": 500
+   },
+   "ai-npc-core/client/ui.css": {
+    "lines": 99,
+    "code": 30
+   },
+   "ai-npc-core/client/i18n.js": {
+    "lines": 351,
+    "code": 350
+   }
+  },
+  "lines": 997,
+  "code": 880
+ },
+ "quarthaven_server": {
+  "files": {
+   "wizard-village/wizards.js": {
+    "lines": 275,
+    "code": 252
+   },
+   "wizard-village/personas.js": {
+    "lines": 58,
+    "code": 51
+   },
+   "wizard-village/lore.js": {
+    "lines": 52,
+    "code": 44
+   },
+   "wizard-village/world.js": {
+    "lines": 60,
+    "code": 56
+   },
+   "wizard-village/server.js": {
+    "lines": 4,
+    "code": 3
+   }
+  },
+  "lines": 449,
+  "code": 406
+ },
+ "quarthaven_client": {
+  "files": {
+   "wizard-village/public/index.html": {
+    "lines": 32,
+    "code": 29
+   },
+   "wizard-village/public/render3d.js": {
+    "lines": 370,
+    "code": 330
+   },
+   "wizard-village/public/i18n-wiz.js": {
+    "lines": 71,
+    "code": 70
+   }
+  },
+  "lines": 473,
+  "code": 429
+ },
+ "oakhollow_port_server": {
+  "files": {
+   "living-village/port-core-draft/oakhollow.js": {
+    "lines": 31,
+    "code": 28
+   },
+   "living-village/port-core-draft/personas.js": {
+    "lines": 36,
+    "code": 33
+   },
+   "living-village/port-core-draft/world.js": {
+    "lines": 56,
+    "code": 50
+   },
+   "living-village/port-core-draft/server.js": {
+    "lines": 4,
+    "code": 3
+   },
+   "living-village/lore.js": {
+    "lines": 53,
+    "code": 44
+   }
+  },
+  "lines": 180,
+  "code": 158
+ },
+ "oakhollow_port_client": {
+  "files": {
+   "living-village/port-core-draft/public/index.html": {
+    "lines": 15,
+    "code": 15
+   },
+   "living-village/port-core-draft/public/render2d.js": {
+    "lines": 146,
+    "code": 137
+   }
+  },
+  "lines": 161,
+  "code": 152
+ },
+ "oakhollow_v5_standalone_server": {
+  "files": {
+   "living-village/village.js": {
+    "lines": 644,
+    "code": 563
+   },
+   "living-village/brain.js": {
+    "lines": 218,
+    "code": 199
+   },
+   "living-village/server.js": {
+    "lines": 166,
+    "code": 145
+   },
+   "living-village/world.js": {
+    "lines": 116,
+    "code": 100
+   },
+   "living-village/personas.js": {
+    "lines": 36,
+    "code": 33
+   },
+   "living-village/lore.js": {
+    "lines": 53,
+    "code": 44
+   }
+  },
+  "lines": 1233,
+  "code": 1084
+ },
+ "oakhollow_v5_standalone_client": {
+  "files": {
+   "living-village/public/game.js": {
+    "lines": 535,
+    "code": 490
+   },
+   "living-village/public/index.html": {
+    "lines": 210,
+    "code": 133
+   },
+   "living-village/public/i18n.js": {
+    "lines": 351,
+    "code": 350
+   }
+  },
+  "lines": 1096,
+  "code": 973
+ },
+ "_note": "counted 2026-10-25; lore.js of the Oakhollow port is the parent directory file the draft requires"
+}

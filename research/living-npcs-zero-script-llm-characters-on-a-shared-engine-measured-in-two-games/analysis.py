@@ -279,6 +279,16 @@ res['loc'] = {'core_code_lines': core, 'core_server': LOC['core_server']['code']
 sp = json.load(open(os.path.join(DATA, 'raw', 'spend_probe.json')))
 res['spend'] = {**sp, 'sum_logged_cost_usd': r(sum(R['cost_usd'] for R in res['runs'].values()), 6)}
 
+RR = res['runs']
+res['totals'] = {'llm_calls': sum(v['llm_calls'] for v in RR.values()), 'ok': sum(v['ok'] for v in RR.values()),
+                 'npcs': sum(v['npcs_deciding'] for v in RR.values()),
+                 'live_pre_v5_fallback_share': r(res['live_oakhollow']['pre_v5']['served_by'].get('mistralai/mistral-small-3.2-24b-instruct', 0) / res['live_oakhollow']['pre_v5']['ok'], 4)}
+# our estimate: one world of 12 mages for one hour at the probe-session decision rate and the measured cost per decision
+g = RR['wiz-gemini']
+res['estimate_hour_12_npcs'] = {'decisions_per_hour': round(12 * g['decisions_per_npc_minute'] * 60, 1),
+                                'usd_per_hour_gemini': r(12 * g['decisions_per_npc_minute'] * 60 * g['cost_per_1000_usd'] / 1000, 4),
+                                'usd_per_hour_mistral': r(12 * RR['wiz-mistral']['decisions_per_npc_minute'] * 60 * RR['wiz-mistral']['cost_per_1000_usd'] / 1000, 4),
+                                'method': '12 NPCs x decisions per NPC-minute in the probe session x 60 x cost per decision; probe sessions are busier than ordinary play'}
 json.dump(res, open(os.path.join(HERE, 'results.json'), 'w'), indent=1, ensure_ascii=False)
 
 # ================= charts =================

@@ -2684,5 +2684,17 @@
   ],
   "note": "OpenRouter key usage counter read before and after; may include other use of the same key in that window",
   "sum_logged_cost_usd": 0.094301
+ },
+ "totals": {
+  "llm_calls": 437,
+  "ok": 432,
+  "npcs": 34,
+  "live_pre_v5_fallback_share": 0.1965
+ },
+ "estimate_hour_12_npcs": {
+  "decisions_per_hour": 1746.7,
+  "usd_per_hour_gemini": 0.3567,
+  "usd_per_hour_mistral": 0.5045,
+  "method": "12 NPCs x decisions per NPC-minute in the probe session x 60 x cost per decision; probe sessions are busier than ordinary play"
  }
 }

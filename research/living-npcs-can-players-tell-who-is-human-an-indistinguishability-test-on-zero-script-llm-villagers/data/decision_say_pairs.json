@@ -1,0 +1,3434 @@
+[
+{
+"run": "a2-wiz-gemini",
+"npc": "Oren",
+"chars": 35,
+"decision_ts": "2026-10-24T21:48:57.490Z",
+"say_ts": "2026-10-24T21:49:00.680Z",
+"react_ms": 624
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Sorcha",
+"chars": 63,
+"decision_ts": "2026-10-24T21:48:55.412Z",
+"say_ts": "2026-10-24T21:49:01.079Z",
+"react_ms": 755
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Torvald",
+"chars": 30,
+"decision_ts": "2026-10-24T21:49:00.294Z",
+"say_ts": "2026-10-24T21:49:02.985Z",
+"react_ms": 917
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Dunstan",
+"chars": 51,
+"decision_ts": "2026-10-24T21:49:00.962Z",
+"say_ts": "2026-10-24T21:49:05.495Z",
+"react_ms": 683
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Brann",
+"chars": 30,
+"decision_ts": "2026-10-24T21:49:03.268Z",
+"say_ts": "2026-10-24T21:49:05.897Z",
+"react_ms": 684
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Maelis",
+"chars": 70,
+"decision_ts": "2026-10-24T21:49:00.165Z",
+"say_ts": "2026-10-24T21:49:06.399Z",
+"react_ms": 790
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Oren",
+"chars": 45,
+"decision_ts": "2026-10-24T21:49:04.488Z",
+"say_ts": "2026-10-24T21:49:08.506Z",
+"react_ms": 596
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Nerys",
+"chars": 23,
+"decision_ts": "2026-10-24T21:49:07.733Z",
+"say_ts": "2026-10-24T21:49:09.811Z",
+"react_ms": 731
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Lio",
+"chars": 28,
+"decision_ts": "2026-10-24T21:49:07.205Z",
+"say_ts": "2026-10-24T21:49:09.812Z",
+"react_ms": 705
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Ignatia",
+"chars": 59,
+"decision_ts": "2026-10-24T21:49:05.951Z",
+"say_ts": "2026-10-24T21:49:11.214Z",
+"react_ms": 758
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Maelis",
+"chars": 47,
+"decision_ts": "2026-10-24T21:49:10.153Z",
+"say_ts": "2026-10-24T21:49:14.426Z",
+"react_ms": 741
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Kestrel",
+"chars": 40,
+"decision_ts": "2026-10-24T21:49:13.168Z",
+"say_ts": "2026-10-24T21:49:16.735Z",
+"react_ms": 649
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Grisa",
+"chars": 38,
+"decision_ts": "2026-10-24T21:49:13.652Z",
+"say_ts": "2026-10-24T21:49:17.136Z",
+"react_ms": 830
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Aerin",
+"chars": 51,
+"decision_ts": "2026-10-24T21:49:14.677Z",
+"say_ts": "2026-10-24T21:49:19.241Z",
+"react_ms": 752
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Torvald",
+"chars": 19,
+"decision_ts": "2026-10-24T21:49:20.082Z",
+"say_ts": "2026-10-24T21:49:21.849Z",
+"react_ms": 740
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Maelis",
+"chars": 26,
+"decision_ts": "2026-10-24T21:49:20.224Z",
+"say_ts": "2026-10-24T21:49:22.550Z",
+"react_ms": 782
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Lio",
+"chars": 26,
+"decision_ts": "2026-10-24T21:49:20.798Z",
+"say_ts": "2026-10-24T21:49:23.152Z",
+"react_ms": 654
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Grisa",
+"chars": 38,
+"decision_ts": "2026-10-24T21:49:26.932Z",
+"say_ts": "2026-10-24T21:49:30.368Z",
+"react_ms": 772
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Ignatia",
+"chars": 52,
+"decision_ts": "2026-10-24T21:49:26.016Z",
+"say_ts": "2026-10-24T21:49:30.668Z",
+"react_ms": 860
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Brann",
+"chars": 16,
+"decision_ts": "2026-10-24T21:49:29.436Z",
+"say_ts": "2026-10-24T21:49:30.868Z",
+"react_ms": 670
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Nerys",
+"chars": 36,
+"decision_ts": "2026-10-24T21:49:28.459Z",
+"say_ts": "2026-10-24T21:49:31.670Z",
+"react_ms": 596
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Maelis",
+"chars": 15,
+"decision_ts": "2026-10-24T21:49:32.873Z",
+"say_ts": "2026-10-24T21:49:34.279Z",
+"react_ms": 701
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Torvald",
+"chars": 35,
+"decision_ts": "2026-10-24T21:49:32.930Z",
+"say_ts": "2026-10-24T21:49:36.085Z",
+"react_ms": 757
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Ignatia",
+"chars": 18,
+"decision_ts": "2026-10-24T21:49:34.650Z",
+"say_ts": "2026-10-24T21:49:36.285Z",
+"react_ms": 773
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Aerin",
+"chars": 25,
+"decision_ts": "2026-10-24T21:49:34.574Z",
+"say_ts": "2026-10-24T21:49:36.786Z",
+"react_ms": 696
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Lio",
+"chars": 41,
+"decision_ts": "2026-10-24T21:49:34.191Z",
+"say_ts": "2026-10-24T21:49:37.889Z",
+"react_ms": 814
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Grisa",
+"chars": 56,
+"decision_ts": "2026-10-24T21:49:33.947Z",
+"say_ts": "2026-10-24T21:49:38.989Z",
+"react_ms": 770
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Oren",
+"chars": 38,
+"decision_ts": "2026-10-24T21:49:38.571Z",
+"say_ts": "2026-10-24T21:49:41.995Z",
+"react_ms": 582
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Dunstan",
+"chars": 59,
+"decision_ts": "2026-10-24T21:49:36.994Z",
+"say_ts": "2026-10-24T21:49:42.395Z",
+"react_ms": 809
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Sorcha",
+"chars": 60,
+"decision_ts": "2026-10-24T21:49:37.193Z",
+"say_ts": "2026-10-24T21:49:42.596Z",
+"react_ms": 808
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Maelis",
+"chars": 40,
+"decision_ts": "2026-10-24T21:49:39.794Z",
+"say_ts": "2026-10-24T21:49:43.401Z",
+"react_ms": 605
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Torvald",
+"chars": 7,
+"decision_ts": "2026-10-24T21:49:44.067Z",
+"say_ts": "2026-10-24T21:49:45.506Z",
+"react_ms": 665
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Grisa",
+"chars": 49,
+"decision_ts": "2026-10-24T21:49:41.622Z",
+"say_ts": "2026-10-24T21:49:46.008Z",
+"react_ms": 727
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Aerin",
+"chars": 24,
+"decision_ts": "2026-10-24T21:49:48.356Z",
+"say_ts": "2026-10-24T21:49:50.524Z",
+"react_ms": 742
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Lio",
+"chars": 42,
+"decision_ts": "2026-10-24T21:49:49.752Z",
+"say_ts": "2026-10-24T21:49:53.536Z",
+"react_ms": 734
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Maelis",
+"chars": 84,
+"decision_ts": "2026-10-24T21:49:46.866Z",
+"say_ts": "2026-10-24T21:49:54.438Z",
+"react_ms": 656
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Oren",
+"chars": 89,
+"decision_ts": "2026-10-24T21:49:47.130Z",
+"say_ts": "2026-10-24T21:49:55.140Z",
+"react_ms": 720
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Ignatia",
+"chars": 39,
+"decision_ts": "2026-10-24T21:49:54.054Z",
+"say_ts": "2026-10-24T21:49:57.552Z",
+"react_ms": 820
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Grisa",
+"chars": 37,
+"decision_ts": "2026-10-24T21:49:57.204Z",
+"say_ts": "2026-10-24T21:50:00.559Z",
+"react_ms": 658
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Oren",
+"chars": 33,
+"decision_ts": "2026-10-24T21:49:58.156Z",
+"say_ts": "2026-10-24T21:50:01.162Z",
+"react_ms": 705
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Maelis",
+"chars": 38,
+"decision_ts": "2026-10-24T21:49:58.802Z",
+"say_ts": "2026-10-24T21:50:02.178Z",
+"react_ms": 648
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Aerin",
+"chars": 37,
+"decision_ts": "2026-10-24T21:50:02.500Z",
+"say_ts": "2026-10-24T21:50:05.900Z",
+"react_ms": 633
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Lio",
+"chars": 20,
+"decision_ts": "2026-10-24T21:50:04.337Z",
+"say_ts": "2026-10-24T21:50:06.099Z",
+"react_ms": 752
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Torvald",
+"chars": 18,
+"decision_ts": "2026-10-24T21:50:06.086Z",
+"say_ts": "2026-10-24T21:50:07.709Z",
+"react_ms": 690
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Maelis",
+"chars": 66,
+"decision_ts": "2026-10-24T21:50:05.879Z",
+"say_ts": "2026-10-24T21:50:11.826Z",
+"react_ms": 684
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Dunstan",
+"chars": 54,
+"decision_ts": "2026-10-24T21:50:10.245Z",
+"say_ts": "2026-10-24T21:50:15.133Z",
+"react_ms": 729
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Ignatia",
+"chars": 53,
+"decision_ts": "2026-10-24T21:50:16.026Z",
+"say_ts": "2026-10-24T21:50:20.750Z",
+"react_ms": 793
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Dunstan",
+"chars": 24,
+"decision_ts": "2026-10-24T21:50:24.642Z",
+"say_ts": "2026-10-24T21:50:26.756Z",
+"react_ms": 890
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Torvald",
+"chars": 9,
+"decision_ts": "2026-10-24T21:50:26.338Z",
+"say_ts": "2026-10-24T21:50:27.759Z",
+"react_ms": 882
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Grisa",
+"chars": 23,
+"decision_ts": "2026-10-24T21:50:26.240Z",
+"say_ts": "2026-10-24T21:50:28.260Z",
+"react_ms": 783
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Lio",
+"chars": 26,
+"decision_ts": "2026-10-24T21:50:26.221Z",
+"say_ts": "2026-10-24T21:50:28.560Z",
+"react_ms": 764
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Sorcha",
+"chars": 40,
+"decision_ts": "2026-10-24T21:50:26.242Z",
+"say_ts": "2026-10-24T21:50:29.764Z",
+"react_ms": 788
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Brann",
+"chars": 66,
+"decision_ts": "2026-10-24T21:50:24.714Z",
+"say_ts": "2026-10-24T21:50:30.667Z",
+"react_ms": 963
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Aerin",
+"chars": 81,
+"decision_ts": "2026-10-24T21:50:24.627Z",
+"say_ts": "2026-10-24T21:50:31.868Z",
+"react_ms": 776
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Brann",
+"chars": 17,
+"decision_ts": "2026-10-24T21:50:36.025Z",
+"say_ts": "2026-10-24T21:50:37.578Z",
+"react_ms": 754
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Ignatia",
+"chars": 32,
+"decision_ts": "2026-10-24T21:50:36.130Z",
+"say_ts": "2026-10-24T21:50:38.981Z",
+"react_ms": 859
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Lio",
+"chars": 14,
+"decision_ts": "2026-10-24T21:50:42.651Z",
+"say_ts": "2026-10-24T21:50:44.090Z",
+"react_ms": 763
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Dunstan",
+"chars": 20,
+"decision_ts": "2026-10-24T21:50:42.649Z",
+"say_ts": "2026-10-24T21:50:44.390Z",
+"react_ms": 659
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Grisa",
+"chars": 23,
+"decision_ts": "2026-10-24T21:50:42.674Z",
+"say_ts": "2026-10-24T21:50:44.691Z",
+"react_ms": 787
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Sorcha",
+"chars": 24,
+"decision_ts": "2026-10-24T21:50:42.662Z",
+"say_ts": "2026-10-24T21:50:44.791Z",
+"react_ms": 675
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Maelis",
+"chars": 27,
+"decision_ts": "2026-10-24T21:50:42.790Z",
+"say_ts": "2026-10-24T21:50:45.292Z",
+"react_ms": 802
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Kestrel",
+"chars": 30,
+"decision_ts": "2026-10-24T21:50:44.738Z",
+"say_ts": "2026-10-24T21:50:47.396Z",
+"react_ms": 747
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Aerin",
+"chars": 50,
+"decision_ts": "2026-10-24T21:50:44.882Z",
+"say_ts": "2026-10-24T21:50:49.298Z",
+"react_ms": 892
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Torvald",
+"chars": 15,
+"decision_ts": "2026-10-24T21:50:49.686Z",
+"say_ts": "2026-10-24T21:50:51.100Z",
+"react_ms": 686
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Maelis",
+"chars": 35,
+"decision_ts": "2026-10-24T21:50:49.723Z",
+"say_ts": "2026-10-24T21:50:52.906Z",
+"react_ms": 723
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Grisa",
+"chars": 38,
+"decision_ts": "2026-10-24T21:50:49.623Z",
+"say_ts": "2026-10-24T21:50:53.107Z",
+"react_ms": 725
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Sorcha",
+"chars": 52,
+"decision_ts": "2026-10-24T21:50:49.854Z",
+"say_ts": "2026-10-24T21:50:54.511Z",
+"react_ms": 855
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Lio",
+"chars": 54,
+"decision_ts": "2026-10-24T21:50:49.637Z",
+"say_ts": "2026-10-24T21:50:54.512Z",
+"react_ms": 738
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Dunstan",
+"chars": 55,
+"decision_ts": "2026-10-24T21:50:49.707Z",
+"say_ts": "2026-10-24T21:50:54.712Z",
+"react_ms": 707
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Ignatia",
+"chars": 19,
+"decision_ts": "2026-10-24T21:50:55.121Z",
+"say_ts": "2026-10-24T21:50:56.914Z",
+"react_ms": 710
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Brann",
+"chars": 45,
+"decision_ts": "2026-10-24T21:50:55.196Z",
+"say_ts": "2026-10-24T21:50:59.224Z",
+"react_ms": 886
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Maelis",
+"chars": 23,
+"decision_ts": "2026-10-24T21:50:58.313Z",
+"say_ts": "2026-10-24T21:51:00.325Z",
+"react_ms": 795
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Sorcha",
+"chars": 41,
+"decision_ts": "2026-10-24T21:50:56.875Z",
+"say_ts": "2026-10-24T21:51:00.525Z",
+"react_ms": 760
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Grisa",
+"chars": 54,
+"decision_ts": "2026-10-24T21:50:56.600Z",
+"say_ts": "2026-10-24T21:51:01.425Z",
+"react_ms": 686
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Lio",
+"chars": 42,
+"decision_ts": "2026-10-24T21:50:58.204Z",
+"say_ts": "2026-10-24T21:51:01.929Z",
+"react_ms": 685
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Torvald",
+"chars": 49,
+"decision_ts": "2026-10-24T21:50:59.466Z",
+"say_ts": "2026-10-24T21:51:03.932Z",
+"react_ms": 3350
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Brann",
+"chars": 48,
+"decision_ts": "2026-10-24T21:51:03.044Z",
+"say_ts": "2026-10-24T21:51:07.444Z",
+"react_ms": 812
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Maelis",
+"chars": 22,
+"decision_ts": "2026-10-24T21:51:05.639Z",
+"say_ts": "2026-10-24T21:51:07.545Z",
+"react_ms": 802
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Dunstan",
+"chars": 54,
+"decision_ts": "2026-10-24T21:51:04.128Z",
+"say_ts": "2026-10-24T21:51:08.947Z",
+"react_ms": 697
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Grisa",
+"chars": 70,
+"decision_ts": "2026-10-24T21:51:07.704Z",
+"say_ts": "2026-10-24T21:51:13.964Z",
+"react_ms": 761
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Maelis",
+"chars": 50,
+"decision_ts": "2026-10-24T21:51:12.756Z",
+"say_ts": "2026-10-24T21:51:17.175Z",
+"react_ms": 898
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Aerin",
+"chars": 98,
+"decision_ts": "2026-10-24T21:51:09.777Z",
+"say_ts": "2026-10-24T21:51:18.581Z",
+"react_ms": 930
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Sorcha",
+"chars": 77,
+"decision_ts": "2026-10-24T21:51:12.177Z",
+"say_ts": "2026-10-24T21:51:19.185Z",
+"react_ms": 721
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Nerys",
+"chars": 41,
+"decision_ts": "2026-10-24T21:51:15.988Z",
+"say_ts": "2026-10-24T21:51:19.687Z",
+"react_ms": 620
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Kestrel",
+"chars": 51,
+"decision_ts": "2026-10-24T21:51:16.260Z",
+"say_ts": "2026-10-24T21:51:20.789Z",
+"react_ms": 791
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Sorcha",
+"chars": 27,
+"decision_ts": "2026-10-24T21:51:20.938Z",
+"say_ts": "2026-10-24T21:51:23.399Z",
+"react_ms": 751
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Maelis",
+"chars": 27,
+"decision_ts": "2026-10-24T21:51:25.428Z",
+"say_ts": "2026-10-24T21:51:27.918Z",
+"react_ms": 622
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Sorcha",
+"chars": 28,
+"decision_ts": "2026-10-24T21:51:28.079Z",
+"say_ts": "2026-10-24T21:51:30.628Z",
+"react_ms": 861
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Kestrel",
+"chars": 11,
+"decision_ts": "2026-10-24T21:51:31.594Z",
+"say_ts": "2026-10-24T21:51:33.038Z",
+"react_ms": 664
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Aerin",
+"chars": 57,
+"decision_ts": "2026-10-24T21:51:31.317Z",
+"say_ts": "2026-10-24T21:51:36.448Z",
+"react_ms": 688
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Sorcha",
+"chars": 36,
+"decision_ts": "2026-10-24T21:51:35.061Z",
+"say_ts": "2026-10-24T21:51:38.354Z",
+"react_ms": 820
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Brann",
+"chars": 40,
+"decision_ts": "2026-10-24T21:51:36.199Z",
+"say_ts": "2026-10-24T21:51:39.758Z",
+"react_ms": 653
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Lio",
+"chars": 34,
+"decision_ts": "2026-10-24T21:51:36.954Z",
+"say_ts": "2026-10-24T21:51:40.059Z",
+"react_ms": 907
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Aerin",
+"chars": 31,
+"decision_ts": "2026-10-24T21:51:38.288Z",
+"say_ts": "2026-10-24T21:51:41.063Z",
+"react_ms": 637
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Nerys",
+"chars": 52,
+"decision_ts": "2026-10-24T21:51:36.734Z",
+"say_ts": "2026-10-24T21:51:41.365Z",
+"react_ms": 687
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Grisa",
+"chars": 89,
+"decision_ts": "2026-10-24T21:51:43.940Z",
+"say_ts": "2026-10-24T21:51:51.899Z",
+"react_ms": 871
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Brann",
+"chars": 30,
+"decision_ts": "2026-10-24T21:52:51.070Z",
+"say_ts": "2026-10-24T21:52:53.690Z",
+"react_ms": 595
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Oren",
+"chars": 14,
+"decision_ts": "2026-10-24T21:52:52.489Z",
+"say_ts": "2026-10-24T21:52:53.991Z",
+"react_ms": 709
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Grisa",
+"chars": 37,
+"decision_ts": "2026-10-24T21:52:55.717Z",
+"say_ts": "2026-10-24T21:52:59.105Z",
+"react_ms": 624
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Dunstan",
+"chars": 53,
+"decision_ts": "2026-10-24T21:52:55.998Z",
+"say_ts": "2026-10-24T21:53:00.808Z",
+"react_ms": 804
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Sorcha",
+"chars": 15,
+"decision_ts": "2026-10-24T21:53:01.596Z",
+"say_ts": "2026-10-24T21:53:03.014Z",
+"react_ms": 789
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Brann",
+"chars": 30,
+"decision_ts": "2026-10-24T21:53:03.398Z",
+"say_ts": "2026-10-24T21:53:06.017Z",
+"react_ms": 686
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Dunstan",
+"chars": 40,
+"decision_ts": "2026-10-24T21:53:03.554Z",
+"say_ts": "2026-10-24T21:53:07.128Z",
+"react_ms": 841
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Ignatia",
+"chars": 33,
+"decision_ts": "2026-10-24T21:53:07.091Z",
+"say_ts": "2026-10-24T21:53:10.033Z",
+"react_ms": 670
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Sorcha",
+"chars": 37,
+"decision_ts": "2026-10-24T21:53:09.841Z",
+"say_ts": "2026-10-24T21:53:13.245Z",
+"react_ms": 809
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Brann",
+"chars": 30,
+"decision_ts": "2026-10-24T21:53:13.784Z",
+"say_ts": "2026-10-24T21:53:16.449Z",
+"react_ms": 738
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Torvald",
+"chars": 7,
+"decision_ts": "2026-10-24T21:53:16.986Z",
+"say_ts": "2026-10-24T21:53:18.459Z",
+"react_ms": 738
+},
+{
+"run": "a2-wiz-gemini",
+"npc": "Dunstan",
+"chars": 91,
+"decision_ts": "2026-10-24T21:53:10.456Z",
+"say_ts": "2026-10-24T21:53:18.661Z",
+"react_ms": 723
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Sorcha",
+"chars": 45,
+"decision_ts": "2026-10-24T21:48:56.680Z",
+"say_ts": "2026-10-24T21:49:00.787Z",
+"react_ms": 2011
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Maelis",
+"chars": 28,
+"decision_ts": "2026-10-24T21:49:00.165Z",
+"say_ts": "2026-10-24T21:49:02.695Z",
+"react_ms": 2187
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Nerys",
+"chars": 49,
+"decision_ts": "2026-10-24T21:48:58.530Z",
+"say_ts": "2026-10-24T21:49:02.896Z",
+"react_ms": 2557
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Nerys",
+"chars": 5,
+"decision_ts": "2026-10-24T21:49:04.555Z",
+"say_ts": "2026-10-24T21:49:06.007Z",
+"react_ms": 1559
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Kestrel",
+"chars": 64,
+"decision_ts": "2026-10-24T21:49:01.711Z",
+"say_ts": "2026-10-24T21:49:07.512Z",
+"react_ms": 1826
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Kestrel",
+"chars": 13,
+"decision_ts": "2026-10-24T21:49:08.966Z",
+"say_ts": "2026-10-24T21:49:10.417Z",
+"react_ms": 2054
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Ignatia",
+"chars": 97,
+"decision_ts": "2026-10-24T21:49:04.124Z",
+"say_ts": "2026-10-24T21:49:12.921Z",
+"react_ms": 2334
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Sorcha",
+"chars": 31,
+"decision_ts": "2026-10-24T21:49:10.170Z",
+"say_ts": "2026-10-24T21:49:12.922Z",
+"react_ms": 1957
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Aerin",
+"chars": 52,
+"decision_ts": "2026-10-24T21:49:08.669Z",
+"say_ts": "2026-10-24T21:49:13.321Z",
+"react_ms": 1858
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Lio",
+"chars": 30,
+"decision_ts": "2026-10-24T21:49:11.216Z",
+"say_ts": "2026-10-24T21:49:13.823Z",
+"react_ms": 1600
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Torvald",
+"chars": 53,
+"decision_ts": "2026-10-24T21:49:11.160Z",
+"say_ts": "2026-10-24T21:49:15.930Z",
+"react_ms": 2146
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Nerys",
+"chars": 10,
+"decision_ts": "2026-10-24T21:49:16.229Z",
+"say_ts": "2026-10-24T21:49:17.638Z",
+"react_ms": 2807
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Kestrel",
+"chars": 20,
+"decision_ts": "2026-10-24T21:49:16.099Z",
+"say_ts": "2026-10-24T21:49:17.839Z",
+"react_ms": 2175
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Oren",
+"chars": 21,
+"decision_ts": "2026-10-24T21:49:17.941Z",
+"say_ts": "2026-10-24T21:49:19.844Z",
+"react_ms": 2111
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Grisa",
+"chars": 26,
+"decision_ts": "2026-10-24T21:49:20.957Z",
+"say_ts": "2026-10-24T21:49:23.355Z",
+"react_ms": 4122
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Torvald",
+"chars": 31,
+"decision_ts": "2026-10-24T21:49:20.930Z",
+"say_ts": "2026-10-24T21:49:23.658Z",
+"react_ms": 1988
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Maelis",
+"chars": 19,
+"decision_ts": "2026-10-24T21:49:22.077Z",
+"say_ts": "2026-10-24T21:49:23.857Z",
+"react_ms": 4039
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Aerin",
+"chars": 45,
+"decision_ts": "2026-10-24T21:49:20.740Z",
+"say_ts": "2026-10-24T21:49:24.760Z",
+"react_ms": 2000
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Nerys",
+"chars": 27,
+"decision_ts": "2026-10-24T21:49:23.047Z",
+"say_ts": "2026-10-24T21:49:25.462Z",
+"react_ms": 2199
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Kestrel",
+"chars": 60,
+"decision_ts": "2026-10-24T21:49:23.398Z",
+"say_ts": "2026-10-24T21:49:28.772Z",
+"react_ms": 2449
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Maelis",
+"chars": 15,
+"decision_ts": "2026-10-24T21:49:28.974Z",
+"say_ts": "2026-10-24T21:49:30.479Z",
+"react_ms": 3912
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Ignatia",
+"chars": 69,
+"decision_ts": "2026-10-24T21:49:24.512Z",
+"say_ts": "2026-10-24T21:49:30.679Z",
+"react_ms": 2761
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Nerys",
+"chars": 28,
+"decision_ts": "2026-10-24T21:49:29.915Z",
+"say_ts": "2026-10-24T21:49:32.488Z",
+"react_ms": 2045
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Oren",
+"chars": 20,
+"decision_ts": "2026-10-24T21:49:31.403Z",
+"say_ts": "2026-10-24T21:49:33.190Z",
+"react_ms": 1426
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Aerin",
+"chars": 46,
+"decision_ts": "2026-10-24T21:49:30.015Z",
+"say_ts": "2026-10-24T21:49:34.197Z",
+"react_ms": 3150
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Kestrel",
+"chars": 54,
+"decision_ts": "2026-10-24T21:49:30.435Z",
+"say_ts": "2026-10-24T21:49:35.303Z",
+"react_ms": 1963
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Lio",
+"chars": 62,
+"decision_ts": "2026-10-24T21:49:29.810Z",
+"say_ts": "2026-10-24T21:49:35.404Z",
+"react_ms": 3445
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Torvald",
+"chars": 67,
+"decision_ts": "2026-10-24T21:49:30.519Z",
+"say_ts": "2026-10-24T21:49:36.511Z",
+"react_ms": 1446
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Nerys",
+"chars": 18,
+"decision_ts": "2026-10-24T21:49:36.889Z",
+"say_ts": "2026-10-24T21:49:38.519Z",
+"react_ms": 1988
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Maelis",
+"chars": 25,
+"decision_ts": "2026-10-24T21:49:38.401Z",
+"say_ts": "2026-10-24T21:49:40.621Z",
+"react_ms": 2494
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Kestrel",
+"chars": 39,
+"decision_ts": "2026-10-24T21:49:37.346Z",
+"say_ts": "2026-10-24T21:49:40.922Z",
+"react_ms": 1841
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Ignatia",
+"chars": 46,
+"decision_ts": "2026-10-24T21:49:36.814Z",
+"say_ts": "2026-10-24T21:49:41.023Z",
+"react_ms": 3122
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Oren",
+"chars": 31,
+"decision_ts": "2026-10-24T21:49:38.602Z",
+"say_ts": "2026-10-24T21:49:41.323Z",
+"react_ms": 1588
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Brann",
+"chars": 46,
+"decision_ts": "2026-10-24T21:49:39.395Z",
+"say_ts": "2026-10-24T21:49:43.536Z",
+"react_ms": 2482
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Grisa",
+"chars": 23,
+"decision_ts": "2026-10-24T21:49:42.034Z",
+"say_ts": "2026-10-24T21:49:44.138Z",
+"react_ms": 1713
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Dunstan",
+"chars": 96,
+"decision_ts": "2026-10-24T21:49:36.048Z",
+"say_ts": "2026-10-24T21:49:44.742Z",
+"react_ms": 2153
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Kestrel",
+"chars": 16,
+"decision_ts": "2026-10-24T21:49:43.770Z",
+"say_ts": "2026-10-24T21:49:45.246Z",
+"react_ms": 1243
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Aerin",
+"chars": 37,
+"decision_ts": "2026-10-24T21:49:42.306Z",
+"say_ts": "2026-10-24T21:49:45.649Z",
+"react_ms": 2185
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Torvald",
+"chars": 35,
+"decision_ts": "2026-10-24T21:49:44.081Z",
+"say_ts": "2026-10-24T21:49:47.254Z",
+"react_ms": 1353
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Nerys",
+"chars": 38,
+"decision_ts": "2026-10-24T21:49:44.041Z",
+"say_ts": "2026-10-24T21:49:47.555Z",
+"react_ms": 1414
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Maelis",
+"chars": 9,
+"decision_ts": "2026-10-24T21:49:46.805Z",
+"say_ts": "2026-10-24T21:49:48.255Z",
+"react_ms": 2465
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Oren",
+"chars": 52,
+"decision_ts": "2026-10-24T21:49:45.372Z",
+"say_ts": "2026-10-24T21:49:50.063Z",
+"react_ms": 1334
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Lio",
+"chars": 37,
+"decision_ts": "2026-10-24T21:49:49.709Z",
+"say_ts": "2026-10-24T21:49:53.086Z",
+"react_ms": 2555
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Nerys",
+"chars": 37,
+"decision_ts": "2026-10-24T21:49:52.424Z",
+"say_ts": "2026-10-24T21:49:55.802Z",
+"react_ms": 1857
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Ignatia",
+"chars": 52,
+"decision_ts": "2026-10-24T21:49:52.212Z",
+"say_ts": "2026-10-24T21:49:56.910Z",
+"react_ms": 3252
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Brann",
+"chars": 65,
+"decision_ts": "2026-10-24T21:49:51.879Z",
+"say_ts": "2026-10-24T21:49:57.814Z",
+"react_ms": 3122
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Maelis",
+"chars": 28,
+"decision_ts": "2026-10-24T21:49:55.634Z",
+"say_ts": "2026-10-24T21:49:58.216Z",
+"react_ms": 2549
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Aerin",
+"chars": 25,
+"decision_ts": "2026-10-24T21:49:56.564Z",
+"say_ts": "2026-10-24T21:49:58.821Z",
+"react_ms": 1765
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Grisa",
+"chars": 31,
+"decision_ts": "2026-10-24T21:49:57.807Z",
+"say_ts": "2026-10-24T21:50:00.533Z",
+"react_ms": 1704
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Lio",
+"chars": 54,
+"decision_ts": "2026-10-24T21:49:57.354Z",
+"say_ts": "2026-10-24T21:50:02.179Z",
+"react_ms": 1551
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Torvald",
+"chars": 49,
+"decision_ts": "2026-10-24T21:49:59.399Z",
+"say_ts": "2026-10-24T21:50:03.787Z",
+"react_ms": 2389
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Oren",
+"chars": 39,
+"decision_ts": "2026-10-24T21:50:03.147Z",
+"say_ts": "2026-10-24T21:50:06.601Z",
+"react_ms": 1910
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Lio",
+"chars": 26,
+"decision_ts": "2026-10-24T21:50:04.839Z",
+"say_ts": "2026-10-24T21:50:07.202Z",
+"react_ms": 1254
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Grisa",
+"chars": 41,
+"decision_ts": "2026-10-24T21:50:07.075Z",
+"say_ts": "2026-10-24T21:50:10.710Z",
+"react_ms": 1881
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Ignatia",
+"chars": 13,
+"decision_ts": "2026-10-24T21:50:12.325Z",
+"say_ts": "2026-10-24T21:50:13.818Z",
+"react_ms": 1312
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Kestrel",
+"chars": 46,
+"decision_ts": "2026-10-24T21:50:11.735Z",
+"say_ts": "2026-10-24T21:50:15.922Z",
+"react_ms": 2128
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Oren",
+"chars": 22,
+"decision_ts": "2026-10-24T21:50:15.099Z",
+"say_ts": "2026-10-24T21:50:17.023Z",
+"react_ms": 1682
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Maelis",
+"chars": 57,
+"decision_ts": "2026-10-24T21:50:14.301Z",
+"say_ts": "2026-10-24T21:50:19.426Z",
+"react_ms": 1686
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Dunstan",
+"chars": 12,
+"decision_ts": "2026-10-24T21:50:19.309Z",
+"say_ts": "2026-10-24T21:50:20.731Z",
+"react_ms": 2486
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Kestrel",
+"chars": 37,
+"decision_ts": "2026-10-24T21:50:17.924Z",
+"say_ts": "2026-10-24T21:50:21.230Z",
+"react_ms": 1099
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Sorcha",
+"chars": 31,
+"decision_ts": "2026-10-24T21:50:20.631Z",
+"say_ts": "2026-10-24T21:50:23.437Z",
+"react_ms": 1706
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Aerin",
+"chars": 54,
+"decision_ts": "2026-10-24T21:50:19.303Z",
+"say_ts": "2026-10-24T21:50:24.138Z",
+"react_ms": 2479
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Torvald",
+"chars": 42,
+"decision_ts": "2026-10-24T21:50:20.407Z",
+"say_ts": "2026-10-24T21:50:24.138Z",
+"react_ms": 1382
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Lio",
+"chars": 53,
+"decision_ts": "2026-10-24T21:50:19.797Z",
+"say_ts": "2026-10-24T21:50:24.538Z",
+"react_ms": 1873
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Sorcha",
+"chars": 26,
+"decision_ts": "2026-10-24T21:50:27.446Z",
+"say_ts": "2026-10-24T21:50:29.752Z",
+"react_ms": 1502
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Grisa",
+"chars": 30,
+"decision_ts": "2026-10-24T21:50:27.677Z",
+"say_ts": "2026-10-24T21:50:30.354Z",
+"react_ms": 1230
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Ignatia",
+"chars": 32,
+"decision_ts": "2026-10-24T21:50:27.731Z",
+"say_ts": "2026-10-24T21:50:30.554Z",
+"react_ms": 1285
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Torvald",
+"chars": 32,
+"decision_ts": "2026-10-24T21:50:27.992Z",
+"say_ts": "2026-10-24T21:50:30.856Z",
+"react_ms": 1545
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Dunstan",
+"chars": 50,
+"decision_ts": "2026-10-24T21:50:28.620Z",
+"say_ts": "2026-10-24T21:50:33.066Z",
+"react_ms": 2172
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Aerin",
+"chars": 57,
+"decision_ts": "2026-10-24T21:50:29.205Z",
+"say_ts": "2026-10-24T21:50:34.369Z",
+"react_ms": 2057
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Grisa",
+"chars": 26,
+"decision_ts": "2026-10-24T21:50:36.438Z",
+"say_ts": "2026-10-24T21:50:38.783Z",
+"react_ms": 2568
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Torvald",
+"chars": 45,
+"decision_ts": "2026-10-24T21:50:35.219Z",
+"say_ts": "2026-10-24T21:50:39.283Z",
+"react_ms": 1753
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Lio",
+"chars": 20,
+"decision_ts": "2026-10-24T21:50:39.179Z",
+"say_ts": "2026-10-24T21:50:40.885Z",
+"react_ms": 2198
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Sorcha",
+"chars": 52,
+"decision_ts": "2026-10-24T21:50:38.899Z",
+"say_ts": "2026-10-24T21:50:43.590Z",
+"react_ms": 2821
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Nerys",
+"chars": 4,
+"decision_ts": "2026-10-24T21:50:42.575Z",
+"say_ts": "2026-10-24T21:50:43.991Z",
+"react_ms": 4593
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Grisa",
+"chars": 16,
+"decision_ts": "2026-10-24T21:50:43.832Z",
+"say_ts": "2026-10-24T21:50:45.291Z",
+"react_ms": 1544
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Torvald",
+"chars": 44,
+"decision_ts": "2026-10-24T21:50:43.487Z",
+"say_ts": "2026-10-24T21:50:47.397Z",
+"react_ms": 1700
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Nerys",
+"chars": 22,
+"decision_ts": "2026-10-24T21:50:46.590Z",
+"say_ts": "2026-10-24T21:50:48.499Z",
+"react_ms": 1599
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Aerin",
+"chars": 32,
+"decision_ts": "2026-10-24T21:50:47.151Z",
+"say_ts": "2026-10-24T21:50:50.004Z",
+"react_ms": 3160
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Oren",
+"chars": 52,
+"decision_ts": "2026-10-24T21:50:46.951Z",
+"say_ts": "2026-10-24T21:50:51.610Z",
+"react_ms": 1860
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Kestrel",
+"chars": 80,
+"decision_ts": "2026-10-24T21:50:48.387Z",
+"say_ts": "2026-10-24T21:50:55.524Z",
+"react_ms": 1791
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Nerys",
+"chars": 20,
+"decision_ts": "2026-10-24T21:50:54.494Z",
+"say_ts": "2026-10-24T21:50:56.227Z",
+"react_ms": 1476
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Brann",
+"chars": 39,
+"decision_ts": "2026-10-24T21:50:55.379Z",
+"say_ts": "2026-10-24T21:50:58.929Z",
+"react_ms": 2061
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Grisa",
+"chars": 26,
+"decision_ts": "2026-10-24T21:50:58.402Z",
+"say_ts": "2026-10-24T21:51:00.735Z",
+"react_ms": 1673
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Torvald",
+"chars": 35,
+"decision_ts": "2026-10-24T21:50:58.329Z",
+"say_ts": "2026-10-24T21:51:01.539Z",
+"react_ms": 1601
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Lio",
+"chars": 23,
+"decision_ts": "2026-10-24T21:51:02.279Z",
+"say_ts": "2026-10-24T21:51:04.351Z",
+"react_ms": 2949
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Aerin",
+"chars": 46,
+"decision_ts": "2026-10-24T21:51:02.145Z",
+"say_ts": "2026-10-24T21:51:06.359Z",
+"react_ms": 2714
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Dunstan",
+"chars": 34,
+"decision_ts": "2026-10-24T21:51:04.258Z",
+"say_ts": "2026-10-24T21:51:07.363Z",
+"react_ms": 2318
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Grisa",
+"chars": 29,
+"decision_ts": "2026-10-24T21:51:06.189Z",
+"say_ts": "2026-10-24T21:51:08.864Z",
+"react_ms": 1638
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Torvald",
+"chars": 48,
+"decision_ts": "2026-10-24T21:51:05.721Z",
+"say_ts": "2026-10-24T21:51:10.072Z",
+"react_ms": 1974
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Oren",
+"chars": 62,
+"decision_ts": "2026-10-24T21:51:05.375Z",
+"say_ts": "2026-10-24T21:51:10.974Z",
+"react_ms": 1930
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Lio",
+"chars": 52,
+"decision_ts": "2026-10-24T21:51:08.740Z",
+"say_ts": "2026-10-24T21:51:13.382Z",
+"react_ms": 1376
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Nerys",
+"chars": 61,
+"decision_ts": "2026-10-24T21:51:08.734Z",
+"say_ts": "2026-10-24T21:51:14.187Z",
+"react_ms": 1372
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Torvald",
+"chars": 28,
+"decision_ts": "2026-10-24T21:51:13.378Z",
+"say_ts": "2026-10-24T21:51:15.890Z",
+"react_ms": 1501
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Grisa",
+"chars": 47,
+"decision_ts": "2026-10-24T21:51:13.096Z",
+"say_ts": "2026-10-24T21:51:17.395Z",
+"react_ms": 1218
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Sorcha",
+"chars": 30,
+"decision_ts": "2026-10-24T21:51:15.940Z",
+"say_ts": "2026-10-24T21:51:18.598Z",
+"react_ms": 1754
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Maelis",
+"chars": 51,
+"decision_ts": "2026-10-24T21:51:14.449Z",
+"say_ts": "2026-10-24T21:51:19.000Z",
+"react_ms": 1468
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Kestrel",
+"chars": 55,
+"decision_ts": "2026-10-24T21:51:15.995Z",
+"say_ts": "2026-10-24T21:51:21.006Z",
+"react_ms": 1808
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Lio",
+"chars": 19,
+"decision_ts": "2026-10-24T21:51:21.310Z",
+"say_ts": "2026-10-24T21:51:23.113Z",
+"react_ms": 4115
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Nerys",
+"chars": 54,
+"decision_ts": "2026-10-24T21:51:20.542Z",
+"say_ts": "2026-10-24T21:51:25.422Z",
+"react_ms": 4150
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Kestrel",
+"chars": 37,
+"decision_ts": "2026-10-24T21:51:24.361Z",
+"say_ts": "2026-10-24T21:51:27.731Z",
+"react_ms": 2751
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Dunstan",
+"chars": 45,
+"decision_ts": "2026-10-24T21:51:24.902Z",
+"say_ts": "2026-10-24T21:51:28.933Z",
+"react_ms": 2090
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Oren",
+"chars": 46,
+"decision_ts": "2026-10-24T21:51:25.164Z",
+"say_ts": "2026-10-24T21:51:29.334Z",
+"react_ms": 3153
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Torvald",
+"chars": 38,
+"decision_ts": "2026-10-24T21:51:26.064Z",
+"say_ts": "2026-10-24T21:51:29.535Z",
+"react_ms": 7164
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Aerin",
+"chars": 49,
+"decision_ts": "2026-10-24T21:51:25.293Z",
+"say_ts": "2026-10-24T21:51:29.636Z",
+"react_ms": 3383
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Sorcha",
+"chars": 37,
+"decision_ts": "2026-10-24T21:51:26.335Z",
+"say_ts": "2026-10-24T21:51:29.736Z",
+"react_ms": 4124
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Nerys",
+"chars": 26,
+"decision_ts": "2026-10-24T21:51:27.581Z",
+"say_ts": "2026-10-24T21:51:29.937Z",
+"react_ms": 1457
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Brann",
+"chars": 75,
+"decision_ts": "2026-10-24T21:51:25.371Z",
+"say_ts": "2026-10-24T21:51:32.144Z",
+"react_ms": 11085
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Maelis",
+"chars": 56,
+"decision_ts": "2026-10-24T21:51:30.473Z",
+"say_ts": "2026-10-24T21:51:35.551Z",
+"react_ms": 1840
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Oren",
+"chars": 26,
+"decision_ts": "2026-10-24T21:51:33.671Z",
+"say_ts": "2026-10-24T21:51:36.053Z",
+"react_ms": 1226
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Dunstan",
+"chars": 73,
+"decision_ts": "2026-10-24T21:51:35.615Z",
+"say_ts": "2026-10-24T21:51:42.178Z",
+"react_ms": 2769
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Lio",
+"chars": 16,
+"decision_ts": "2026-10-24T21:51:49.314Z",
+"say_ts": "2026-10-24T21:51:50.813Z",
+"react_ms": 4427
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Dunstan",
+"chars": 50,
+"decision_ts": "2026-10-24T21:51:47.270Z",
+"say_ts": "2026-10-24T21:51:51.717Z",
+"react_ms": 2083
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Nerys",
+"chars": 30,
+"decision_ts": "2026-10-24T21:51:49.428Z",
+"say_ts": "2026-10-24T21:51:52.117Z",
+"react_ms": 4542
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Brann",
+"chars": 31,
+"decision_ts": "2026-10-24T21:51:49.559Z",
+"say_ts": "2026-10-24T21:51:52.318Z",
+"react_ms": 4171
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Ignatia",
+"chars": 48,
+"decision_ts": "2026-10-24T21:51:50.046Z",
+"say_ts": "2026-10-24T21:51:54.328Z",
+"react_ms": 5661
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Dunstan",
+"chars": 22,
+"decision_ts": "2026-10-24T21:51:56.115Z",
+"say_ts": "2026-10-24T21:51:58.050Z",
+"react_ms": 2289
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Maelis",
+"chars": 44,
+"decision_ts": "2026-10-24T21:51:55.374Z",
+"say_ts": "2026-10-24T21:51:59.359Z",
+"react_ms": 1549
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Aerin",
+"chars": 49,
+"decision_ts": "2026-10-24T21:51:56.711Z",
+"say_ts": "2026-10-24T21:52:01.073Z",
+"react_ms": 1982
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Sorcha",
+"chars": 93,
+"decision_ts": "2026-10-24T21:51:55.994Z",
+"say_ts": "2026-10-24T21:52:04.384Z",
+"react_ms": 2170
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Aerin",
+"chars": 6,
+"decision_ts": "2026-10-24T21:52:03.860Z",
+"say_ts": "2026-10-24T21:52:05.289Z",
+"react_ms": 1480
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Maelis",
+"chars": 48,
+"decision_ts": "2026-10-24T21:52:03.091Z",
+"say_ts": "2026-10-24T21:52:47.500Z",
+"react_ms": 2219
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Lio",
+"chars": 26,
+"decision_ts": "2026-10-24T21:52:05.919Z",
+"say_ts": "2026-10-24T21:52:48.304Z",
+"react_ms": 2335
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Nerys",
+"chars": 60,
+"decision_ts": "2026-10-24T21:52:06.576Z",
+"say_ts": "2026-10-24T21:52:51.919Z",
+"react_ms": 2693
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Maelis",
+"chars": 41,
+"decision_ts": "2026-10-24T21:52:50.869Z",
+"say_ts": "2026-10-24T21:52:54.522Z",
+"react_ms": 2566
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Kestrel",
+"chars": 29,
+"decision_ts": "2026-10-24T21:52:52.922Z",
+"say_ts": "2026-10-24T21:52:55.628Z",
+"react_ms": 3312
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Oren",
+"chars": 42,
+"decision_ts": "2026-10-24T21:52:52.859Z",
+"say_ts": "2026-10-24T21:52:56.629Z",
+"react_ms": 3651
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Brann",
+"chars": 52,
+"decision_ts": "2026-10-24T21:52:56.814Z",
+"say_ts": "2026-10-24T21:53:01.443Z",
+"react_ms": 2492
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Sorcha",
+"chars": 42,
+"decision_ts": "2026-10-24T21:52:58.505Z",
+"say_ts": "2026-10-24T21:53:02.246Z",
+"react_ms": 11104
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Dunstan",
+"chars": 26,
+"decision_ts": "2026-10-24T21:53:02.443Z",
+"say_ts": "2026-10-24T21:53:04.750Z",
+"react_ms": 2804
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Sorcha",
+"chars": 27,
+"decision_ts": "2026-10-24T21:53:04.637Z",
+"say_ts": "2026-10-24T21:53:07.053Z",
+"react_ms": 1689
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Lio",
+"chars": 27,
+"decision_ts": "2026-10-24T21:53:04.975Z",
+"say_ts": "2026-10-24T21:53:07.456Z",
+"react_ms": 1626
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Brann",
+"chars": 55,
+"decision_ts": "2026-10-24T21:53:03.399Z",
+"say_ts": "2026-10-24T21:53:08.358Z",
+"react_ms": 2056
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Nerys",
+"chars": 50,
+"decision_ts": "2026-10-24T21:53:04.376Z",
+"say_ts": "2026-10-24T21:53:08.858Z",
+"react_ms": 1427
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Aerin",
+"chars": 21,
+"decision_ts": "2026-10-24T21:53:07.923Z",
+"say_ts": "2026-10-24T21:53:09.761Z",
+"react_ms": 2672
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Torvald",
+"chars": 27,
+"decision_ts": "2026-10-24T21:53:07.827Z",
+"say_ts": "2026-10-24T21:53:10.263Z",
+"react_ms": 1776
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Maelis",
+"chars": 31,
+"decision_ts": "2026-10-24T21:53:08.335Z",
+"say_ts": "2026-10-24T21:53:11.064Z",
+"react_ms": 3084
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Oren",
+"chars": 58,
+"decision_ts": "2026-10-24T21:53:09.802Z",
+"say_ts": "2026-10-24T21:53:14.982Z",
+"react_ms": 2046
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Maelis",
+"chars": 35,
+"decision_ts": "2026-10-24T21:53:16.998Z",
+"say_ts": "2026-10-24T21:53:20.204Z",
+"react_ms": 4732
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Aerin",
+"chars": 44,
+"decision_ts": "2026-10-24T21:53:17.389Z",
+"say_ts": "2026-10-24T21:53:21.309Z",
+"react_ms": 5122
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Sorcha",
+"chars": 56,
+"decision_ts": "2026-10-24T21:53:16.317Z",
+"say_ts": "2026-10-24T21:53:21.410Z",
+"react_ms": 4952
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Dunstan",
+"chars": 30,
+"decision_ts": "2026-10-24T21:53:22.216Z",
+"say_ts": "2026-10-24T21:53:24.930Z",
+"react_ms": 4220
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Brann",
+"chars": 49,
+"decision_ts": "2026-10-24T21:53:21.965Z",
+"say_ts": "2026-10-24T21:53:26.335Z",
+"react_ms": 10600
+},
+{
+"run": "a2-wiz-mistral",
+"npc": "Maelis",
+"chars": 14,
+"decision_ts": "2026-10-24T21:53:25.213Z",
+"say_ts": "2026-10-24T21:53:26.636Z",
+"react_ms": 1995
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Wat",
+"chars": 42,
+"decision_ts": "2026-10-24T21:48:55.581Z",
+"say_ts": "2026-10-24T21:48:59.348Z",
+"react_ms": 643
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Elsbeth",
+"chars": 36,
+"decision_ts": "2026-10-24T21:48:56.204Z",
+"say_ts": "2026-10-24T21:48:59.449Z",
+"react_ms": 1365
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Hilde",
+"chars": 45,
+"decision_ts": "2026-10-24T21:49:00.177Z",
+"say_ts": "2026-10-24T21:49:04.269Z",
+"react_ms": 627
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Marta",
+"chars": 86,
+"decision_ts": "2026-10-24T21:48:57.408Z",
+"say_ts": "2026-10-24T21:49:05.175Z",
+"react_ms": 764
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Aldric",
+"chars": 48,
+"decision_ts": "2026-10-24T21:49:01.107Z",
+"say_ts": "2026-10-24T21:49:05.375Z",
+"react_ms": 655
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Wat",
+"chars": 37,
+"decision_ts": "2026-10-24T21:49:03.090Z",
+"say_ts": "2026-10-24T21:49:06.476Z",
+"react_ms": 626
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Godric",
+"chars": 8,
+"decision_ts": "2026-10-24T21:49:08.217Z",
+"say_ts": "2026-10-24T21:49:09.693Z",
+"react_ms": 734
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Elsbeth",
+"chars": 73,
+"decision_ts": "2026-10-24T21:49:03.099Z",
+"say_ts": "2026-10-24T21:49:09.694Z",
+"react_ms": 736
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Osric",
+"chars": 76,
+"decision_ts": "2026-10-24T21:49:04.553Z",
+"say_ts": "2026-10-24T21:49:11.397Z",
+"react_ms": 887
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Wat",
+"chars": 14,
+"decision_ts": "2026-10-24T21:49:10.052Z",
+"say_ts": "2026-10-24T21:49:11.497Z",
+"react_ms": 560
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Marta",
+"chars": 65,
+"decision_ts": "2026-10-24T21:49:07.526Z",
+"say_ts": "2026-10-24T21:49:13.402Z",
+"react_ms": 848
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Elsbeth",
+"chars": 98,
+"decision_ts": "2026-10-24T21:49:10.673Z",
+"say_ts": "2026-10-24T21:49:19.432Z",
+"react_ms": 880
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Wat",
+"chars": 31,
+"decision_ts": "2026-10-24T21:49:17.203Z",
+"say_ts": "2026-10-24T21:49:19.934Z",
+"react_ms": 690
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Marta",
+"chars": 59,
+"decision_ts": "2026-10-24T21:49:17.255Z",
+"say_ts": "2026-10-24T21:49:22.548Z",
+"react_ms": 842
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Aldric",
+"chars": 19,
+"decision_ts": "2026-10-24T21:49:21.133Z",
+"say_ts": "2026-10-24T21:49:22.848Z",
+"react_ms": 797
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Marta",
+"chars": 26,
+"decision_ts": "2026-10-24T21:49:27.374Z",
+"say_ts": "2026-10-24T21:49:29.767Z",
+"react_ms": 714
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Godric",
+"chars": 27,
+"decision_ts": "2026-10-24T21:49:28.131Z",
+"say_ts": "2026-10-24T21:49:30.569Z",
+"react_ms": 670
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Agnes",
+"chars": 21,
+"decision_ts": "2026-10-24T21:49:30.618Z",
+"say_ts": "2026-10-24T21:49:32.473Z",
+"react_ms": 650
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Wat",
+"chars": 42,
+"decision_ts": "2026-10-24T21:49:31.786Z",
+"say_ts": "2026-10-24T21:49:35.584Z",
+"react_ms": 717
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Elsbeth",
+"chars": 55,
+"decision_ts": "2026-10-24T21:49:30.677Z",
+"say_ts": "2026-10-24T21:49:35.684Z",
+"react_ms": 810
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Godric",
+"chars": 36,
+"decision_ts": "2026-10-24T21:49:35.128Z",
+"say_ts": "2026-10-24T21:49:38.389Z",
+"react_ms": 647
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Agnes",
+"chars": 32,
+"decision_ts": "2026-10-24T21:49:38.147Z",
+"say_ts": "2026-10-24T21:49:40.995Z",
+"react_ms": 658
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Aldric",
+"chars": 40,
+"decision_ts": "2026-10-24T21:49:38.395Z",
+"say_ts": "2026-10-24T21:49:41.996Z",
+"react_ms": 806
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Marta",
+"chars": 47,
+"decision_ts": "2026-10-24T21:49:38.424Z",
+"say_ts": "2026-10-24T21:49:42.698Z",
+"react_ms": 635
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Hilde",
+"chars": 47,
+"decision_ts": "2026-10-24T21:49:41.851Z",
+"say_ts": "2026-10-24T21:49:46.109Z",
+"react_ms": 655
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Aldric",
+"chars": 34,
+"decision_ts": "2026-10-24T21:49:45.391Z",
+"say_ts": "2026-10-24T21:49:48.416Z",
+"react_ms": 787
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Wat",
+"chars": 52,
+"decision_ts": "2026-10-24T21:49:44.061Z",
+"say_ts": "2026-10-24T21:49:48.718Z",
+"react_ms": 760
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Godric",
+"chars": 51,
+"decision_ts": "2026-10-24T21:49:44.733Z",
+"say_ts": "2026-10-24T21:49:49.319Z",
+"react_ms": 730
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Agnes",
+"chars": 45,
+"decision_ts": "2026-10-24T21:49:45.207Z",
+"say_ts": "2026-10-24T21:49:49.320Z",
+"react_ms": 703
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Hilde",
+"chars": 41,
+"decision_ts": "2026-10-24T21:49:48.854Z",
+"say_ts": "2026-10-24T21:49:52.531Z",
+"react_ms": 637
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Marta",
+"chars": 41,
+"decision_ts": "2026-10-24T21:49:51.447Z",
+"say_ts": "2026-10-24T21:49:55.140Z",
+"react_ms": 823
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Elsbeth",
+"chars": 56,
+"decision_ts": "2026-10-24T21:49:52.576Z",
+"say_ts": "2026-10-24T21:49:57.650Z",
+"react_ms": 849
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Rowan",
+"chars": 20,
+"decision_ts": "2026-10-24T21:49:56.184Z",
+"say_ts": "2026-10-24T21:49:57.953Z",
+"react_ms": 641
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Agnes",
+"chars": 45,
+"decision_ts": "2026-10-24T21:49:54.321Z",
+"say_ts": "2026-10-24T21:49:58.354Z",
+"react_ms": 785
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Godric",
+"chars": 44,
+"decision_ts": "2026-10-24T21:49:55.444Z",
+"say_ts": "2026-10-24T21:49:59.456Z",
+"react_ms": 805
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Elsbeth",
+"chars": 41,
+"decision_ts": "2026-10-24T21:49:59.398Z",
+"say_ts": "2026-10-24T21:50:03.087Z",
+"react_ms": 643
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Rowan",
+"chars": 13,
+"decision_ts": "2026-10-24T21:50:03.355Z",
+"say_ts": "2026-10-24T21:50:04.791Z",
+"react_ms": 770
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Marta",
+"chars": 34,
+"decision_ts": "2026-10-24T21:50:02.694Z",
+"say_ts": "2026-10-24T21:50:05.798Z",
+"react_ms": 827
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Wat",
+"chars": 51,
+"decision_ts": "2026-10-24T21:50:01.304Z",
+"say_ts": "2026-10-24T21:50:05.898Z",
+"react_ms": 643
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Agnes",
+"chars": 45,
+"decision_ts": "2026-10-24T21:50:03.248Z",
+"say_ts": "2026-10-24T21:50:07.303Z",
+"react_ms": 763
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Godric",
+"chars": 74,
+"decision_ts": "2026-10-24T21:50:02.494Z",
+"say_ts": "2026-10-24T21:50:09.204Z",
+"react_ms": 830
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Aldric",
+"chars": 55,
+"decision_ts": "2026-10-24T21:50:07.195Z",
+"say_ts": "2026-10-24T21:50:12.111Z",
+"react_ms": 893
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Rowan",
+"chars": 20,
+"decision_ts": "2026-10-24T21:50:10.356Z",
+"say_ts": "2026-10-24T21:50:12.112Z",
+"react_ms": 751
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Elsbeth",
+"chars": 50,
+"decision_ts": "2026-10-24T21:50:09.656Z",
+"say_ts": "2026-10-24T21:50:14.113Z",
+"react_ms": 751
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Marta",
+"chars": 65,
+"decision_ts": "2026-10-24T21:50:09.632Z",
+"say_ts": "2026-10-24T21:50:15.517Z",
+"react_ms": 727
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Godric",
+"chars": 59,
+"decision_ts": "2026-10-24T21:50:10.992Z",
+"say_ts": "2026-10-24T21:50:16.220Z",
+"react_ms": 684
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Marta",
+"chars": 32,
+"decision_ts": "2026-10-24T21:50:16.706Z",
+"say_ts": "2026-10-24T21:50:19.528Z",
+"react_ms": 789
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Agnes",
+"chars": 74,
+"decision_ts": "2026-10-24T21:50:12.970Z",
+"say_ts": "2026-10-24T21:50:19.629Z",
+"react_ms": 758
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Wat",
+"chars": 27,
+"decision_ts": "2026-10-24T21:50:17.906Z",
+"say_ts": "2026-10-24T21:50:20.328Z",
+"react_ms": 785
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Godric",
+"chars": 33,
+"decision_ts": "2026-10-24T21:50:18.051Z",
+"say_ts": "2026-10-24T21:50:21.030Z",
+"react_ms": 729
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Elsbeth",
+"chars": 41,
+"decision_ts": "2026-10-24T21:50:20.674Z",
+"say_ts": "2026-10-24T21:50:24.337Z",
+"react_ms": 845
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Agnes",
+"chars": 27,
+"decision_ts": "2026-10-24T21:50:21.896Z",
+"say_ts": "2026-10-24T21:50:24.338Z",
+"react_ms": 664
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Wat",
+"chars": 52,
+"decision_ts": "2026-10-24T21:50:24.818Z",
+"say_ts": "2026-10-24T21:50:29.452Z",
+"react_ms": 681
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Anselm",
+"chars": 55,
+"decision_ts": "2026-10-24T21:50:24.787Z",
+"say_ts": "2026-10-24T21:50:29.753Z",
+"react_ms": 750
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Aldric",
+"chars": 20,
+"decision_ts": "2026-10-24T21:50:28.870Z",
+"say_ts": "2026-10-24T21:50:30.655Z",
+"react_ms": 722
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Elsbeth",
+"chars": 34,
+"decision_ts": "2026-10-24T21:50:28.060Z",
+"say_ts": "2026-10-24T21:50:31.156Z",
+"react_ms": 715
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Agnes",
+"chars": 23,
+"decision_ts": "2026-10-24T21:50:29.052Z",
+"say_ts": "2026-10-24T21:50:31.158Z",
+"react_ms": 803
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Godric",
+"chars": 35,
+"decision_ts": "2026-10-24T21:50:28.061Z",
+"say_ts": "2026-10-24T21:50:31.257Z",
+"react_ms": 718
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Hilde",
+"chars": 20,
+"decision_ts": "2026-10-24T21:50:31.630Z",
+"say_ts": "2026-10-24T21:50:33.361Z",
+"react_ms": 572
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Rowan",
+"chars": 17,
+"decision_ts": "2026-10-24T21:50:35.004Z",
+"say_ts": "2026-10-24T21:50:36.575Z",
+"react_ms": 637
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Wat",
+"chars": 55,
+"decision_ts": "2026-10-24T21:50:31.922Z",
+"say_ts": "2026-10-24T21:50:36.877Z",
+"react_ms": 765
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Godric",
+"chars": 24,
+"decision_ts": "2026-10-24T21:50:35.034Z",
+"say_ts": "2026-10-24T21:50:37.178Z",
+"react_ms": 668
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Agnes",
+"chars": 45,
+"decision_ts": "2026-10-24T21:50:35.975Z",
+"say_ts": "2026-10-24T21:50:40.085Z",
+"react_ms": 708
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Hilde",
+"chars": 24,
+"decision_ts": "2026-10-24T21:50:40.409Z",
+"say_ts": "2026-10-24T21:50:42.588Z",
+"react_ms": 624
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Marta",
+"chars": 50,
+"decision_ts": "2026-10-24T21:50:38.721Z",
+"say_ts": "2026-10-24T21:50:43.190Z",
+"react_ms": 640
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Wat",
+"chars": 33,
+"decision_ts": "2026-10-24T21:50:40.519Z",
+"say_ts": "2026-10-24T21:50:43.490Z",
+"react_ms": 735
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Anselm",
+"chars": 54,
+"decision_ts": "2026-10-24T21:50:38.846Z",
+"say_ts": "2026-10-24T21:50:43.691Z",
+"react_ms": 766
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Elsbeth",
+"chars": 22,
+"decision_ts": "2026-10-24T21:50:42.030Z",
+"say_ts": "2026-10-24T21:50:43.992Z",
+"react_ms": 642
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Aldric",
+"chars": 35,
+"decision_ts": "2026-10-24T21:50:45.367Z",
+"say_ts": "2026-10-24T21:50:48.497Z",
+"react_ms": 674
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Wat",
+"chars": 35,
+"decision_ts": "2026-10-24T21:50:47.576Z",
+"say_ts": "2026-10-24T21:50:50.700Z",
+"react_ms": 781
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Rowan",
+"chars": 23,
+"decision_ts": "2026-10-24T21:50:49.139Z",
+"say_ts": "2026-10-24T21:50:51.201Z",
+"react_ms": 741
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Marta",
+"chars": 54,
+"decision_ts": "2026-10-24T21:50:47.474Z",
+"say_ts": "2026-10-24T21:50:52.304Z",
+"react_ms": 780
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Anselm",
+"chars": 62,
+"decision_ts": "2026-10-24T21:50:46.951Z",
+"say_ts": "2026-10-24T21:50:52.505Z",
+"react_ms": 758
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Osric",
+"chars": 78,
+"decision_ts": "2026-10-24T21:50:48.309Z",
+"say_ts": "2026-10-24T21:50:55.414Z",
+"react_ms": 913
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Godric",
+"chars": 198,
+"decision_ts": "2026-10-24T21:50:47.814Z",
+"say_ts": "2026-10-24T21:50:56.814Z",
+"react_ms": 818
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Agnes",
+"chars": 18,
+"decision_ts": "2026-10-24T21:50:56.225Z",
+"say_ts": "2026-10-24T21:50:57.918Z",
+"react_ms": 710
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Marta",
+"chars": 40,
+"decision_ts": "2026-10-24T21:50:54.876Z",
+"say_ts": "2026-10-24T21:50:58.420Z",
+"react_ms": 668
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Elsbeth",
+"chars": 23,
+"decision_ts": "2026-10-24T21:50:56.411Z",
+"say_ts": "2026-10-24T21:50:58.421Z",
+"react_ms": 797
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Wat",
+"chars": 27,
+"decision_ts": "2026-10-24T21:50:56.228Z",
+"say_ts": "2026-10-24T21:50:58.721Z",
+"react_ms": 714
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Hilde",
+"chars": 29,
+"decision_ts": "2026-10-24T21:50:56.231Z",
+"say_ts": "2026-10-24T21:50:58.923Z",
+"react_ms": 716
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Anselm",
+"chars": 49,
+"decision_ts": "2026-10-24T21:50:55.959Z",
+"say_ts": "2026-10-24T21:51:00.326Z",
+"react_ms": 645
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Godric",
+"chars": 18,
+"decision_ts": "2026-10-24T21:51:02.997Z",
+"say_ts": "2026-10-24T21:51:04.635Z",
+"react_ms": 667
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Elsbeth",
+"chars": 23,
+"decision_ts": "2026-10-24T21:51:03.379Z",
+"say_ts": "2026-10-24T21:51:05.441Z",
+"react_ms": 750
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Wat",
+"chars": 28,
+"decision_ts": "2026-10-24T21:51:03.185Z",
+"say_ts": "2026-10-24T21:51:05.741Z",
+"react_ms": 656
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Marta",
+"chars": 56,
+"decision_ts": "2026-10-24T21:51:02.647Z",
+"say_ts": "2026-10-24T21:51:07.746Z",
+"react_ms": 719
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Anselm",
+"chars": 74,
+"decision_ts": "2026-10-24T21:51:03.061Z",
+"say_ts": "2026-10-24T21:51:09.751Z",
+"react_ms": 732
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Wat",
+"chars": 23,
+"decision_ts": "2026-10-24T21:51:10.237Z",
+"say_ts": "2026-10-24T21:51:12.258Z",
+"react_ms": 686
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Elsbeth",
+"chars": 40,
+"decision_ts": "2026-10-24T21:51:10.583Z",
+"say_ts": "2026-10-24T21:51:14.164Z",
+"react_ms": 932
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Wat",
+"chars": 39,
+"decision_ts": "2026-10-24T21:51:17.863Z",
+"say_ts": "2026-10-24T21:51:21.296Z",
+"react_ms": 687
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Anselm",
+"chars": 67,
+"decision_ts": "2026-10-24T21:51:16.139Z",
+"say_ts": "2026-10-24T21:51:22.200Z",
+"react_ms": 871
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Marta",
+"chars": 22,
+"decision_ts": "2026-10-24T21:51:21.571Z",
+"say_ts": "2026-10-24T21:51:23.506Z",
+"react_ms": 677
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Rowan",
+"chars": 6,
+"decision_ts": "2026-10-24T21:51:22.547Z",
+"say_ts": "2026-10-24T21:51:24.010Z",
+"react_ms": 648
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Anselm",
+"chars": 53,
+"decision_ts": "2026-10-24T21:51:23.058Z",
+"say_ts": "2026-10-24T21:51:27.818Z",
+"react_ms": 757
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Agnes",
+"chars": 20,
+"decision_ts": "2026-10-24T21:51:27.235Z",
+"say_ts": "2026-10-24T21:51:29.022Z",
+"react_ms": 718
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Marta",
+"chars": 17,
+"decision_ts": "2026-10-24T21:51:28.562Z",
+"say_ts": "2026-10-24T21:51:30.127Z",
+"react_ms": 644
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Hilde",
+"chars": 29,
+"decision_ts": "2026-10-24T21:51:33.734Z",
+"say_ts": "2026-10-24T21:51:36.349Z",
+"react_ms": 595
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Anselm",
+"chars": 76,
+"decision_ts": "2026-10-24T21:51:30.122Z",
+"say_ts": "2026-10-24T21:51:36.951Z",
+"react_ms": 798
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Marta",
+"chars": 23,
+"decision_ts": "2026-10-24T21:51:40.167Z",
+"say_ts": "2026-10-24T21:51:42.177Z",
+"react_ms": 801
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Hilde",
+"chars": 68,
+"decision_ts": "2026-10-24T21:51:40.908Z",
+"say_ts": "2026-10-24T21:52:51.081Z",
+"react_ms": 739
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Aldric",
+"chars": 28,
+"decision_ts": "2026-10-24T21:52:51.076Z",
+"say_ts": "2026-10-24T21:52:53.589Z",
+"react_ms": 598
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Marta",
+"chars": 28,
+"decision_ts": "2026-10-24T21:52:51.045Z",
+"say_ts": "2026-10-24T21:52:53.589Z",
+"react_ms": 667
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Agnes",
+"chars": 21,
+"decision_ts": "2026-10-24T21:52:54.791Z",
+"say_ts": "2026-10-24T21:52:56.596Z",
+"react_ms": 901
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Hilde",
+"chars": 29,
+"decision_ts": "2026-10-24T21:52:54.738Z",
+"say_ts": "2026-10-24T21:52:57.398Z",
+"react_ms": 748
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Wat",
+"chars": 46,
+"decision_ts": "2026-10-24T21:52:54.030Z",
+"say_ts": "2026-10-24T21:52:58.197Z",
+"react_ms": 643
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Anselm",
+"chars": 54,
+"decision_ts": "2026-10-24T21:52:58.044Z",
+"say_ts": "2026-10-24T21:53:02.911Z",
+"react_ms": 848
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Agnes",
+"chars": 19,
+"decision_ts": "2026-10-24T21:53:01.681Z",
+"say_ts": "2026-10-24T21:53:03.413Z",
+"react_ms": 778
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Hilde",
+"chars": 22,
+"decision_ts": "2026-10-24T21:53:01.680Z",
+"say_ts": "2026-10-24T21:53:03.614Z",
+"react_ms": 676
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Marta",
+"chars": 75,
+"decision_ts": "2026-10-24T21:53:07.210Z",
+"say_ts": "2026-10-24T21:53:13.951Z",
+"react_ms": 783
+},
+{
+"run": "a2-oak-gemini",
+"npc": "Rowan",
+"chars": 21,
+"decision_ts": "2026-10-24T21:53:17.632Z",
+"say_ts": "2026-10-24T21:53:19.477Z",
+"react_ms": 669
+},
+{
+"run": "engine-run",
+"npc": "Oren",
+"chars": 45,
+"decision_ts": "2026-11-02T23:15:24.551Z",
+"say_ts": "2026-11-02T23:15:28.578Z",
+"react_ms": 703
+},
+{
+"run": "engine-run",
+"npc": "Lio",
+"chars": 45,
+"decision_ts": "2026-11-02T23:15:25.754Z",
+"say_ts": "2026-11-02T23:15:29.782Z",
+"react_ms": 901
+},
+{
+"run": "engine-run",
+"npc": "Grisa",
+"chars": 22,
+"decision_ts": "2026-11-02T23:15:31.902Z",
+"say_ts": "2026-11-02T23:15:33.895Z",
+"react_ms": 717
+},
+{
+"run": "engine-run",
+"npc": "Maelis",
+"chars": 31,
+"decision_ts": "2026-11-02T23:15:35.291Z",
+"say_ts": "2026-11-02T23:15:38.020Z",
+"react_ms": 693
+},
+{
+"run": "engine-run",
+"npc": "Oren",
+"chars": 38,
+"decision_ts": "2026-11-02T23:15:36.171Z",
+"say_ts": "2026-11-02T23:15:39.532Z",
+"react_ms": 869
+},
+{
+"run": "engine-run",
+"npc": "Lio",
+"chars": 28,
+"decision_ts": "2026-11-02T23:15:37.650Z",
+"say_ts": "2026-11-02T23:15:40.237Z",
+"react_ms": 735
+},
+{
+"run": "engine-run",
+"npc": "Maelis",
+"chars": 16,
+"decision_ts": "2026-11-02T23:15:43.274Z",
+"say_ts": "2026-11-02T23:15:44.754Z",
+"react_ms": 728
+},
+{
+"run": "engine-run",
+"npc": "Oren",
+"chars": 19,
+"decision_ts": "2026-11-02T23:15:42.975Z",
+"say_ts": "2026-11-02T23:15:44.754Z",
+"react_ms": 630
+},
+{
+"run": "engine-run",
+"npc": "Ignatia",
+"chars": 51,
+"decision_ts": "2026-11-02T23:15:41.428Z",
+"say_ts": "2026-11-02T23:15:45.958Z",
+"react_ms": 689
+},
+{
+"run": "engine-run",
+"npc": "Grisa",
+"chars": 30,
+"decision_ts": "2026-11-02T23:15:45.282Z",
+"say_ts": "2026-11-02T23:15:47.971Z",
+"react_ms": 2034
+},
+{
+"run": "engine-run",
+"npc": "Aerin",
+"chars": 40,
+"decision_ts": "2026-11-02T23:15:46.048Z",
+"say_ts": "2026-11-02T23:15:49.587Z",
+"react_ms": 593
+},
+{
+"run": "engine-run",
+"npc": "Dunstan",
+"chars": 77,
+"decision_ts": "2026-11-02T23:15:45.471Z",
+"say_ts": "2026-11-02T23:15:52.405Z",
+"react_ms": 919
+},
+{
+"run": "engine-run",
+"npc": "Maelis",
+"chars": 45,
+"decision_ts": "2026-11-02T23:15:50.236Z",
+"say_ts": "2026-11-02T23:15:54.309Z",
+"react_ms": 650
+},
+{
+"run": "engine-run",
+"npc": "Brann",
+"chars": 72,
+"decision_ts": "2026-11-02T23:15:49.825Z",
+"say_ts": "2026-11-02T23:15:56.316Z",
+"react_ms": 844
+},
+{
+"run": "engine-run",
+"npc": "Torvald",
+"chars": 33,
+"decision_ts": "2026-11-02T23:15:53.780Z",
+"say_ts": "2026-11-02T23:15:56.716Z",
+"react_ms": 772
+},
+{
+"run": "engine-run",
+"npc": "Grisa",
+"chars": 23,
+"decision_ts": "2026-11-02T23:15:58.491Z",
+"say_ts": "2026-11-02T23:16:00.527Z",
+"react_ms": 675
+},
+{
+"run": "engine-run",
+"npc": "Ignatia",
+"chars": 30,
+"decision_ts": "2026-11-02T23:16:00.034Z",
+"say_ts": "2026-11-02T23:16:02.740Z",
+"react_ms": 713
+},
+{
+"run": "engine-run",
+"npc": "Oren",
+"chars": 61,
+"decision_ts": "2026-11-02T23:15:58.078Z",
+"say_ts": "2026-11-02T23:16:03.543Z",
+"react_ms": 762
+},
+{
+"run": "engine-run",
+"npc": "Sorcha",
+"chars": 39,
+"decision_ts": "2026-11-02T23:16:01.110Z",
+"say_ts": "2026-11-02T23:16:04.545Z",
+"react_ms": 785
+},
+{
+"run": "engine-run",
+"npc": "Maelis",
+"chars": 39,
+"decision_ts": "2026-11-02T23:16:01.672Z",
+"say_ts": "2026-11-02T23:16:05.245Z",
+"react_ms": 743
+},
+{
+"run": "engine-run",
+"npc": "Kestrel",
+"chars": 38,
+"decision_ts": "2026-11-02T23:16:04.744Z",
+"say_ts": "2026-11-02T23:16:08.158Z",
+"react_ms": 701
+},
+{
+"run": "engine-run",
+"npc": "Brann",
+"chars": 30,
+"decision_ts": "2026-11-02T23:16:06.397Z",
+"say_ts": "2026-11-02T23:16:09.058Z",
+"react_ms": 650
+},
+{
+"run": "engine-run",
+"npc": "Torvald",
+"chars": 77,
+"decision_ts": "2026-11-02T23:16:04.778Z",
+"say_ts": "2026-11-02T23:16:11.774Z",
+"react_ms": 934
+},
+{
+"run": "engine-run",
+"npc": "Maelis",
+"chars": 42,
+"decision_ts": "2026-11-02T23:16:08.750Z",
+"say_ts": "2026-11-02T23:16:12.476Z",
+"react_ms": 794
+},
+{
+"run": "engine-run",
+"npc": "Lio",
+"chars": 68,
+"decision_ts": "2026-11-02T23:16:06.494Z",
+"say_ts": "2026-11-02T23:16:12.576Z",
+"react_ms": 646
+},
+{
+"run": "engine-run",
+"npc": "Ignatia",
+"chars": 37,
+"decision_ts": "2026-11-02T23:16:12.717Z",
+"say_ts": "2026-11-02T23:16:16.086Z",
+"react_ms": 641
+},
+{
+"run": "engine-run",
+"npc": "Oren",
+"chars": 46,
+"decision_ts": "2026-11-02T23:16:18.655Z",
+"say_ts": "2026-11-02T23:16:22.807Z",
+"react_ms": 3173
+},
+{
+"run": "engine-run",
+"npc": "Brann",
+"chars": 44,
+"decision_ts": "2026-11-02T23:16:23.147Z",
+"say_ts": "2026-11-02T23:16:27.121Z",
+"react_ms": 4051
+},
+{
+"run": "engine-run",
+"npc": "Maelis",
+"chars": 62,
+"decision_ts": "2026-11-02T23:16:21.642Z",
+"say_ts": "2026-11-02T23:16:27.222Z",
+"react_ms": 739
+},
+{
+"run": "engine-run",
+"npc": "Grisa",
+"chars": 54,
+"decision_ts": "2026-11-02T23:16:24.061Z",
+"say_ts": "2026-11-02T23:16:28.927Z",
+"react_ms": 652
+},
+{
+"run": "engine-run",
+"npc": "Maelis",
+"chars": 19,
+"decision_ts": "2026-11-02T23:16:28.464Z",
+"say_ts": "2026-11-02T23:16:30.234Z",
+"react_ms": 539
+},
+{
+"run": "engine-run",
+"npc": "Brann",
+"chars": 32,
+"decision_ts": "2026-11-02T23:16:29.238Z",
+"say_ts": "2026-11-02T23:16:32.142Z",
+"react_ms": 611
+},
+{
+"run": "engine-run",
+"npc": "Ignatia",
+"chars": 25,
+"decision_ts": "2026-11-02T23:16:30.798Z",
+"say_ts": "2026-11-02T23:16:33.044Z",
+"react_ms": 664
+},
+{
+"run": "engine-run",
+"npc": "Lio",
+"chars": 37,
+"decision_ts": "2026-11-02T23:16:32.609Z",
+"say_ts": "2026-11-02T23:16:35.959Z",
+"react_ms": 668
+},
+{
+"run": "engine-run",
+"npc": "Grisa",
+"chars": 30,
+"decision_ts": "2026-11-02T23:16:39.759Z",
+"say_ts": "2026-11-02T23:16:42.380Z",
+"react_ms": 790
+},
+{
+"run": "engine-run",
+"npc": "Maelis",
+"chars": 59,
+"decision_ts": "2026-11-02T23:16:41.589Z",
+"say_ts": "2026-11-02T23:16:46.893Z",
+"react_ms": 716
+},
+{
+"run": "engine-run",
+"npc": "Torvald",
+"chars": 67,
+"decision_ts": "2026-11-02T23:16:43.621Z",
+"say_ts": "2026-11-02T23:16:49.708Z",
+"react_ms": 741
+},
+{
+"run": "engine-run",
+"npc": "Lio",
+"chars": 41,
+"decision_ts": "2026-11-02T23:16:46.124Z",
+"say_ts": "2026-11-02T23:16:49.808Z",
+"react_ms": 733
+},
+{
+"run": "engine-run",
+"npc": "Ignatia",
+"chars": 32,
+"decision_ts": "2026-11-02T23:16:48.416Z",
+"say_ts": "2026-11-02T23:16:51.314Z",
+"react_ms": 619
+},
+{
+"run": "engine-run",
+"npc": "Sorcha",
+"chars": 69,
+"decision_ts": "2026-11-02T23:16:49.140Z",
+"say_ts": "2026-11-02T23:16:55.325Z",
+"react_ms": 840
+},
+{
+"run": "engine-run",
+"npc": "Grisa",
+"chars": 44,
+"decision_ts": "2026-11-02T23:16:53.459Z",
+"say_ts": "2026-11-02T23:16:57.435Z",
+"react_ms": 642
+},
+{
+"run": "engine-run",
+"npc": "Maelis",
+"chars": 46,
+"decision_ts": "2026-11-02T23:16:58.862Z",
+"say_ts": "2026-11-02T23:17:02.984Z",
+"react_ms": 822
+},
+{
+"run": "engine-run",
+"npc": "Grisa",
+"chars": 22,
+"decision_ts": "2026-11-02T23:17:01.120Z",
+"say_ts": "2026-11-02T23:17:03.085Z",
+"react_ms": 665
+},
+{
+"run": "engine-run",
+"npc": "Torvald",
+"chars": 55,
+"decision_ts": "2026-11-02T23:17:05.936Z",
+"say_ts": "2026-11-02T23:17:10.940Z",
+"react_ms": 1029
+},
+{
+"run": "engine-run",
+"npc": "Brann",
+"chars": 17,
+"decision_ts": "2026-11-02T23:17:09.701Z",
+"say_ts": "2026-11-02T23:17:11.241Z",
+"react_ms": 2380
+},
+{
+"run": "engine-run",
+"npc": "Aerin",
+"chars": 16,
+"decision_ts": "2026-11-02T23:17:11.207Z",
+"say_ts": "2026-11-02T23:17:12.649Z",
+"react_ms": 2279
+},
+{
+"run": "engine-run",
+"npc": "Torvald",
+"chars": 48,
+"decision_ts": "2026-11-02T23:17:16.560Z",
+"say_ts": "2026-11-02T23:17:20.889Z",
+"react_ms": 2601
+},
+{
+"run": "engine-run",
+"npc": "Kestrel",
+"chars": 10,
+"decision_ts": "2026-11-02T23:17:21.646Z",
+"say_ts": "2026-11-02T23:17:23.101Z",
+"react_ms": 5979
+},
+{
+"run": "engine-run",
+"npc": "Maelis",
+"chars": 27,
+"decision_ts": "2026-11-02T23:17:21.974Z",
+"say_ts": "2026-11-02T23:17:24.410Z",
+"react_ms": 5603
+},
+{
+"run": "engine-run",
+"npc": "Aerin",
+"chars": 31,
+"decision_ts": "2026-11-02T23:17:22.465Z",
+"say_ts": "2026-11-02T23:17:25.216Z",
+"react_ms": 6498
+},
+{
+"run": "engine-run",
+"npc": "Lio",
+"chars": 32,
+"decision_ts": "2026-11-02T23:17:26.956Z",
+"say_ts": "2026-11-02T23:17:29.844Z",
+"react_ms": 835
+},
+{
+"run": "engine-run",
+"npc": "Kestrel",
+"chars": 15,
+"decision_ts": "2026-11-02T23:17:29.014Z",
+"say_ts": "2026-11-02T23:17:30.447Z",
+"react_ms": 779
+},
+{
+"run": "engine-run",
+"npc": "Aerin",
+"chars": 20,
+"decision_ts": "2026-11-02T23:17:29.025Z",
+"say_ts": "2026-11-02T23:17:30.750Z",
+"react_ms": 790
+},
+{
+"run": "engine-run",
+"npc": "Nerys",
+"chars": 21,
+"decision_ts": "2026-11-02T23:17:29.012Z",
+"say_ts": "2026-11-02T23:17:30.850Z",
+"react_ms": 778
+},
+{
+"run": "engine-run",
+"npc": "Torvald",
+"chars": 57,
+"decision_ts": "2026-11-02T23:17:27.686Z",
+"say_ts": "2026-11-02T23:17:32.761Z",
+"react_ms": 761
+},
+{
+"run": "engine-run",
+"npc": "Sorcha",
+"chars": 58,
+"decision_ts": "2026-11-02T23:17:31.581Z",
+"say_ts": "2026-11-02T23:17:36.779Z",
+"react_ms": 832
+},
+{
+"run": "engine-run",
+"npc": "Grisa",
+"chars": 53,
+"decision_ts": "2026-11-02T23:17:31.994Z",
+"say_ts": "2026-11-02T23:17:36.780Z",
+"react_ms": 843
+},
+{
+"run": "engine-run",
+"npc": "Kestrel",
+"chars": 9,
+"decision_ts": "2026-11-02T23:17:36.201Z",
+"say_ts": "2026-11-02T23:17:37.682Z",
+"react_ms": 925
+},
+{
+"run": "engine-run",
+"npc": "Aerin",
+"chars": 26,
+"decision_ts": "2026-11-02T23:17:36.009Z",
+"say_ts": "2026-11-02T23:17:38.384Z",
+"react_ms": 734
+},
+{
+"run": "engine-run",
+"npc": "Nerys",
+"chars": 33,
+"decision_ts": "2026-11-02T23:17:36.280Z",
+"say_ts": "2026-11-02T23:17:39.288Z",
+"react_ms": 1006
+},
+{
+"run": "engine-run",
+"npc": "Lio",
+"chars": 33,
+"decision_ts": "2026-11-02T23:17:36.842Z",
+"say_ts": "2026-11-02T23:17:39.790Z",
+"react_ms": 765
+},
+{
+"run": "engine-run",
+"npc": "Maelis",
+"chars": 32,
+"decision_ts": "2026-11-02T23:17:37.156Z",
+"say_ts": "2026-11-02T23:17:39.990Z",
+"react_ms": 777
+},
+{
+"run": "engine-run",
+"npc": "Torvald",
+"chars": 23,
+"decision_ts": "2026-11-02T23:17:38.143Z",
+"say_ts": "2026-11-02T23:17:40.191Z",
+"react_ms": 661
+},
+{
+"run": "engine-run",
+"npc": "Oren",
+"chars": 24,
+"decision_ts": "2026-11-02T23:17:40.445Z",
+"say_ts": "2026-11-02T23:17:42.597Z",
+"react_ms": 755
+},
+{
+"run": "engine-run",
+"npc": "Kestrel",
+"chars": 16,
+"decision_ts": "2026-11-02T23:17:42.997Z",
+"say_ts": "2026-11-02T23:17:44.405Z",
+"react_ms": 700
+},
+{
+"run": "engine-run",
+"npc": "Aerin",
+"chars": 22,
+"decision_ts": "2026-11-02T23:17:42.999Z",
+"say_ts": "2026-11-02T23:17:45.005Z",
+"react_ms": 703
+},
+{
+"run": "engine-run",
+"npc": "Sorcha",
+"chars": 34,
+"decision_ts": "2026-11-02T23:17:42.795Z",
+"say_ts": "2026-11-02T23:17:45.807Z",
+"react_ms": 701
+},
+{
+"run": "engine-run",
+"npc": "Grisa",
+"chars": 40,
+"decision_ts": "2026-11-02T23:17:43.275Z",
+"say_ts": "2026-11-02T23:17:46.811Z",
+"react_ms": 677
+}
+]

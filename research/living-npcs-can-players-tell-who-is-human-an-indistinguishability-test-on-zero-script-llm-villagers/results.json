@@ -1,0 +1,962 @@
+{
+ "provenance": {
+  "window_utc": [
+   "2026-10-23",
+   "2026-11-02"
+  ],
+  "sessions": 21,
+  "by_class": {
+   "connection_check": 4,
+   "developer_manual": 4,
+   "scripted_test": 11,
+   "unknown": 2
+  },
+  "pseudonyms_by_class": {
+   "connection_check": [
+    "Felicia",
+    "Reginald",
+    "Serlo",
+    "Wymarc"
+   ],
+   "developer_manual": [
+    "Edwin",
+    "Hugh",
+    "Margery",
+    "Rose"
+   ],
+   "scripted_test": [
+    "Drogo",
+    "Fulk",
+    "Hamo",
+    "Probeton",
+    "Probetwo",
+    "Serlo",
+    "Остап"
+   ],
+   "unknown": [
+    "Ember",
+    "Liora"
+   ]
+  },
+  "typed_or_spoken_lines_by_class": {
+   "connection_check": 0,
+   "developer_manual": 14,
+   "scripted_test": 5,
+   "unknown": 0
+  },
+  "speech_to_text_lines_developer": 10,
+  "hits_or_casts_by_class": {
+   "connection_check": 0,
+   "developer_manual": 44,
+   "scripted_test": 1,
+   "unknown": 45
+  },
+  "unknown_sessions": [
+   {
+    "game": "wiz",
+    "name": "Liora",
+    "join": "2026-10-24T22:42:34.565Z",
+    "lived_s": 73,
+    "lines": 0,
+    "acts": 43,
+    "llm_calls_in_window": 0,
+    "evidence": "first minutes after the 3D game went live, while its development session was still open; no chat, no model call"
+   },
+   {
+    "game": "wiz",
+    "name": "Ember",
+    "join": "2026-10-27T05:24:44.383Z",
+    "lived_s": 20,
+    "lines": 0,
+    "acts": 2,
+    "llm_calls_in_window": 0,
+    "evidence": "20 s visit, two spells, no chat, no model call"
+   }
+  ],
+  "confirmed_independent_public_players": 0,
+  "oak_live_v5_joins_after_v5_deploy": 1,
+  "sessions_table": [
+   {
+    "game": "oak",
+    "name": "Felicia",
+    "join": "2026-10-23T17:45:26.665Z",
+    "lived_s": 0,
+    "lines": 0,
+    "stt_lines": 0,
+    "acts": 0,
+    "class": "connection_check",
+    "evidence": "joined and left within 1 s without any action (page or websocket check)"
+   },
+   {
+    "game": "oak",
+    "name": "Wymarc",
+    "join": "2026-10-23T17:47:18.942Z",
+    "lived_s": 0,
+    "lines": 0,
+    "stt_lines": 0,
+    "acts": 0,
+    "class": "connection_check",
+    "evidence": "joined and left within 1 s without any action (page or websocket check)"
+   },
+   {
+    "game": "oak",
+    "name": "Serlo",
+    "join": "2026-10-23T17:47:19.868Z",
+    "lived_s": 0,
+    "lines": 0,
+    "stt_lines": 0,
+    "acts": 0,
+    "class": "connection_check",
+    "evidence": "joined and left within 1 s without any action (page or websocket check)"
+   },
+   {
+    "game": "oak",
+    "name": "Reginald",
+    "join": "2026-10-23T17:48:08.235Z",
+    "lived_s": 1,
+    "lines": 0,
+    "stt_lines": 0,
+    "acts": 0,
+    "class": "connection_check",
+    "evidence": "joined and left within 1 s without any action (page or websocket check)"
+   },
+   {
+    "game": "oak",
+    "name": "Margery",
+    "join": "2026-10-23T18:00:27.797Z",
+    "lived_s": 446,
+    "lines": 0,
+    "stt_lines": 0,
+    "acts": 15,
+    "class": "developer_manual",
+    "evidence": "same player as Rose after death (v0 respawned humans under a new name)"
+   },
+   {
+    "game": "oak",
+    "name": "Остап",
+    "join": "2026-10-23T18:17:30.202Z",
+    "lived_s": 49,
+    "lines": 1,
+    "stt_lines": 1,
+    "acts": 0,
+    "class": "scripted_test",
+    "evidence": "test script bot2.js started 18:17:27 UTC joins as this name, lang uk, tests pause and microphone upload"
+   },
+   {
+    "game": "oak",
+    "name": "Остап",
+    "join": "2026-10-23T18:20:13.544Z",
+    "lived_s": 8,
+    "lines": 0,
+    "stt_lines": 0,
+    "acts": 0,
+    "class": "scripted_test",
+    "evidence": "second run of the same test script"
+   },
+   {
+    "game": "oak",
+    "name": "Drogo",
+    "join": "2026-10-23T18:26:52.778Z",
+    "lived_s": 72,
+    "lines": 0,
+    "stt_lines": 0,
+    "acts": 0,
+    "class": "scripted_test",
+    "evidence": "test script bot3.js (second player)"
+   },
+   {
+    "game": "oak",
+    "name": "Hamo",
+    "join": "2026-10-23T18:26:52.777Z",
+    "lived_s": 72,
+    "lines": 2,
+    "stt_lines": 0,
+    "acts": 1,
+    "class": "scripted_test",
+    "evidence": "test script bot3.js started 18:26:50 UTC drives two players"
+   },
+   {
+    "game": "oak",
+    "name": "Fulk",
+    "join": "2026-10-23T19:02:26.402Z",
+    "lived_s": 32,
+    "lines": 0,
+    "stt_lines": 0,
+    "acts": 0,
+    "class": "scripted_test",
+    "evidence": "test script bot4.js (third player)"
+   },
+   {
+    "game": "oak",
+    "name": "Hamo",
+    "join": "2026-10-23T19:02:24.410Z",
+    "lived_s": 39,
+    "lines": 0,
+    "stt_lines": 0,
+    "acts": 0,
+    "class": "scripted_test",
+    "evidence": "test script bot4.js started 19:02:22 UTC"
+   },
+   {
+    "game": "oak",
+    "name": "Hamo",
+    "join": "2026-10-23T19:03:22.108Z",
+    "lived_s": 2,
+    "lines": 0,
+    "stt_lines": 0,
+    "acts": 0,
+    "class": "scripted_test",
+    "evidence": "follow-up run of the test script"
+   },
+   {
+    "game": "oak",
+    "name": "Serlo",
+    "join": "2026-10-23T19:03:34.427Z",
+    "lived_s": 7,
+    "lines": 0,
+    "stt_lines": 0,
+    "acts": 0,
+    "class": "scripted_test",
+    "evidence": "follow-up run of the test script"
+   },
+   {
+    "game": "oak",
+    "name": "Hugh",
+    "join": "2026-10-24T01:41:19.052Z",
+    "lived_s": 216,
+    "lines": 2,
+    "stt_lines": 0,
+    "acts": 14,
+    "class": "developer_manual",
+    "evidence": "manual play with keyboard and microphone; at 01:53 UTC the developer asked that a villager asked to follow may refuse"
+   },
+   {
+    "game": "oak",
+    "name": "Edwin",
+    "join": "2026-10-24T01:45:00.411Z",
+    "lived_s": 345,
+    "lines": 11,
+    "stt_lines": 10,
+    "acts": 12,
+    "class": "developer_manual",
+    "evidence": "same person as Hugh, rejoined 0 s after Hugh left; speech-to-text lines"
+   },
+   {
+    "game": "oak",
+    "name": "Probeton",
+    "join": "2026-10-24T01:58:47.893Z",
+    "lived_s": 0,
+    "lines": 0,
+    "stt_lines": 0,
+    "acts": 0,
+    "class": "scripted_test",
+    "evidence": "smoke test of the live websocket after deployment"
+   },
+   {
+    "game": "oak",
+    "name": "Probetwo",
+    "join": "2026-10-24T02:15:44.264Z",
+    "lived_s": 1,
+    "lines": 1,
+    "stt_lines": 0,
+    "acts": 0,
+    "class": "scripted_test",
+    "evidence": "smoke test of the live websocket after deployment"
+   },
+   {
+    "game": "oak",
+    "name": "Rose",
+    "join": "2026-10-23T17:58:49.989Z",
+    "lived_s": null,
+    "lines": 1,
+    "stt_lines": 0,
+    "acts": 3,
+    "class": "developer_manual",
+    "evidence": "manual play; at 18:02 UTC the developer asked to be able to pause and to choose a character"
+   },
+   {
+    "game": "oak",
+    "name": "Drogo",
+    "join": "2026-10-23T19:02:24.412Z",
+    "lived_s": null,
+    "lines": 1,
+    "stt_lines": 0,
+    "acts": 0,
+    "class": "scripted_test",
+    "evidence": "test script bot4.js (private village with custom lore)"
+   },
+   {
+    "game": "wiz",
+    "name": "Liora",
+    "join": "2026-10-24T22:42:34.565Z",
+    "lived_s": 73,
+    "lines": 0,
+    "stt_lines": 0,
+    "acts": 43,
+    "class": "unknown",
+    "evidence": "first minutes after the 3D game went live, while its development session was still open; no chat, no model call"
+   },
+   {
+    "game": "wiz",
+    "name": "Ember",
+    "join": "2026-10-27T05:24:44.383Z",
+    "lived_s": 20,
+    "lines": 0,
+    "stt_lines": 0,
+    "acts": 2,
+    "class": "unknown",
+    "evidence": "20 s visit, two spells, no chat, no model call"
+   }
+  ]
+ },
+ "code": {
+  "speed_tiles_per_s": {
+   "human": 3.2,
+   "npc_walk": 2.3,
+   "npc_run": 3.1
+  },
+  "speed_ratio_human_to_npc_walk": 1.391,
+  "speed_ratio_human_to_npc_run": 1.032,
+  "npc_typing": {
+   "ms_per_char": 90,
+   "min_ms": 1500,
+   "max_ms": 9000
+  },
+  "gate_ms": {
+   "settle": 3000,
+   "min_gap": 7000
+  },
+  "human_min_gap_between_lines_ms": 1200,
+  "doze_ms": 60000,
+  "npc_respawn_ms": 30000,
+  "live_oakhollow_v5_same_constants": true,
+  "ui_relations_hint_en": "What each villager thinks of everyone (−100 hate … +100 love). People keep their thoughts to themselves, so their rows are empty. People who like each other both ways share a flag colour.",
+  "ui_profile_hint_en": "{0} keeps their thoughts to themselves.",
+  "oak_tunic_overlap": 0,
+  "oak_npc_tunics": 10,
+  "oak_human_tunics": 10,
+  "name_pool_overlap": {
+   "oak": 0,
+   "wiz": 0
+  },
+  "npc_names_in_default_lore": {
+   "oak": "7/10",
+   "wiz": "4/12"
+  },
+  "melee_dmg": {
+   "oak_human": 10,
+   "oak_npc": [
+    14,
+    5,
+    7,
+    13,
+    7,
+    8,
+    6,
+    7,
+    14,
+    5
+   ],
+   "oak_npcs_sharing_human_value": 0,
+   "wiz_human": 8,
+   "wiz_npc": [
+    9,
+    10,
+    6,
+    6,
+    5,
+    5,
+    12,
+    11,
+    7,
+    7,
+    8,
+    6
+   ],
+   "wiz_npcs_sharing_human_value": 1
+  }
+ },
+ "engine_run": {
+  "duration_s": 150,
+  "frames": 1469,
+  "entities_seen": 14,
+  "human_seats": 2,
+  "speed_windows": {
+   "human_seat": {
+    "n": 507,
+    "p10": 3.052,
+    "p50": 3.2,
+    "p90": 3.232,
+    "max": 4.105
+   },
+   "npc": {
+    "n": 141,
+    "p10": 2.255,
+    "p50": 2.3,
+    "p90": 2.323,
+    "max": 3.131
+   }
+  },
+  "speed_windows_above_threshold_pct": {
+   "human_seat": 90.9,
+   "npc": 5.0
+  },
+  "npc_ran_during_run": true,
+  "speed_oracle": {
+   "rule": "an entity whose median speed while moving exceeds 2.75 tiles/s is human",
+   "entities_that_moved": 6,
+   "correct": 6,
+   "humans_moved": 2,
+   "npcs_moved": 4,
+   "npcs_above_threshold": 0
+  },
+  "icon_segments": {
+   "human_seat": {},
+   "npc": {
+    "think": 53,
+    "write": 48
+   }
+  },
+  "npc_think_icon_s": {
+   "n": 53,
+   "p50": 0.801,
+   "p90": 3.93
+  },
+  "llm_calls": 79,
+  "llm_cost_usd": 0.01535,
+  "llm_ms_p50": 741.0,
+  "silent_decisions": 9,
+  "decisions": 79,
+  "client_write_icon_vs_chars": [
+   {
+    "chars": 45,
+    "icon_s": 4.03
+   },
+   {
+    "chars": 39,
+    "icon_s": 3.51
+   },
+   {
+    "chars": 42,
+    "icon_s": 3.72
+   },
+   {
+    "chars": 62,
+    "icon_s": 5.52
+   },
+   {
+    "chars": 32,
+    "icon_s": 2.81
+   }
+  ],
+  "relations_oracle": {
+   "snapshots": 9,
+   "rows": 126,
+   "correct": 126
+  },
+  "profile_oracle": {
+   "profiles": 14,
+   "correct": 14
+  },
+  "name_oracle": {
+   "npc_names_tried": 12,
+   "npc_names_refused": 12,
+   "free_player_names_tried": 3,
+   "free_player_names_accepted": 3,
+   "name_in_use_by_player_refused": true
+  }
+ },
+ "typing": {
+  "pairs": 429,
+  "runs": {
+   "a2-wiz-gemini": 108,
+   "a2-wiz-mistral": 144,
+   "a2-oak-gemini": 109,
+   "engine-run": 68
+  },
+  "residual_s": {
+   "p50": -0.007,
+   "p05": -0.075,
+   "p95": 0.07
+  },
+  "within_0_25_s": 425,
+  "share_within_0_25_s": 0.9907,
+  "clamped_min": 33,
+  "clamped_max": 1,
+  "median_abs_residual_s": 0.035,
+  "outliers_over_0_25_s": [
+   39.94,
+   40.04,
+   40.09,
+   64.05
+  ],
+  "unclamped_lines": 395,
+  "unclamped_slope_ms_per_char_median": 89.99
+ },
+ "style": {
+  "developer_players_live": {
+   "lines": 14,
+   "chars_p50": 22.0,
+   "words_mean": 4.64,
+   "starts_lowercase_pct": 28.6,
+   "no_end_punct_pct": 28.6,
+   "question_pct": 42.9
+  },
+  "npc_live_earlier_builds": {
+   "lines": 174,
+   "chars_p50": 51.0,
+   "words_mean": 10.14,
+   "starts_lowercase_pct": 0.0,
+   "no_end_punct_pct": 0.0,
+   "question_pct": 47.1
+  },
+  "template_players_probe": {
+   "lines": 49,
+   "chars_p50": 58.0,
+   "words_mean": 11.35,
+   "starts_lowercase_pct": 0.0,
+   "no_end_punct_pct": 0.0,
+   "question_pct": 49.0
+  },
+  "npc_zero_script_probe": {
+   "lines": 310,
+   "chars_p50": 38.0,
+   "words_mean": 7.53,
+   "starts_lowercase_pct": 0.0,
+   "no_end_punct_pct": 0.3,
+   "question_pct": 44.8
+  },
+  "light_human_replies": {
+   "lines": 59,
+   "chars_p50": 73.0,
+   "words_mean": 16.05,
+   "starts_lowercase_pct": 5.1,
+   "no_end_punct_pct": 18.6,
+   "question_pct": 33.9
+  },
+  "engine_npc_replies_light": {
+   "lines": 59,
+   "chars_p50": 46.0,
+   "words_mean": 10.42,
+   "starts_lowercase_pct": 0.0,
+   "no_end_punct_pct": 1.7,
+   "question_pct": 44.1
+  }
+ },
+ "reply_latency_s": {
+  "developer_players_live": {
+   "n": 9,
+   "p50": 10.674,
+   "p10": 2.84,
+   "p90": 31.592
+  },
+  "npc_live_earlier_builds": {
+   "n": 92,
+   "p50": 4.516,
+   "p10": 0.581,
+   "p90": 10.129
+  },
+  "npc_zero_script_probe": {
+   "n": 126,
+   "p50": 7.324,
+   "p10": 1.307,
+   "p90": 12.259
+  },
+  "gate_plus_min_typing_s": 4.5,
+  "share_under_gate_plus_min_typing": {
+   "developer_players_live": 0.2222,
+   "npc_zero_script_probe": 0.2302,
+   "note": "an NPC can answer faster than the gate when it had already decided to speak to that person before the line arrived"
+  }
+ },
+ "judges_T1": {
+  "items": 118,
+  "pairs": 59,
+  "per_judge": {
+   "gemini-2.5-flash-lite": {
+    "n": 112,
+    "correct": 66,
+    "accuracy": 0.5893,
+    "ci95": [
+     0.4967,
+     0.676
+    ],
+    "p_vs_chance": 0.07213,
+    "unanswered": 6,
+    "recovered_from_truncated_json": 34,
+    "human_replies_called_human_pct": 52.7,
+    "npc_replies_called_human_pct": 35.1,
+    "auc": 0.6072
+   },
+   "mistral-small-3.2": {
+    "n": 118,
+    "correct": 65,
+    "accuracy": 0.5508,
+    "ci95": [
+     0.4609,
+     0.6376
+    ],
+    "p_vs_chance": 0.3112,
+    "unanswered": 0,
+    "recovered_from_truncated_json": 0,
+    "human_replies_called_human_pct": 13.6,
+    "npc_replies_called_human_pct": 3.4,
+    "auc": 0.6159
+   },
+   "gpt-4.1-mini": {
+    "n": 118,
+    "correct": 64,
+    "accuracy": 0.5424,
+    "ci95": [
+     0.4526,
+     0.6295
+    ],
+    "p_vs_chance": 0.4075,
+    "unanswered": 0,
+    "recovered_from_truncated_json": 0,
+    "human_replies_called_human_pct": 88.1,
+    "npc_replies_called_human_pct": 79.7,
+    "auc": 0.5531
+   },
+   "claude-sonnet-4.5": {
+    "n": 116,
+    "correct": 73,
+    "accuracy": 0.6293,
+    "ci95": [
+     0.5386,
+     0.7117
+    ],
+    "p_vs_chance": 0.006832,
+    "unanswered": 2,
+    "recovered_from_truncated_json": 0,
+    "human_replies_called_human_pct": 86.2,
+    "npc_replies_called_human_pct": 60.3,
+    "auc": 0.6801
+   },
+   "majority_of_4": {
+    "n": 110,
+    "correct": 69,
+    "accuracy": 0.6273,
+    "ci95": [
+     0.5341,
+     0.7119
+    ],
+    "p_vs_chance": 0.009722,
+    "tie_rule": "tie counts as ai",
+    "human_replies_called_human_pct": 51.9,
+    "npc_replies_called_human_pct": 26.8
+   }
+  },
+  "cue_words_in_explanations": {
+   "formal": 84,
+   "generic": 51,
+   "emotion": 46,
+   "casual": 31,
+   "informal": 28,
+   "context fit": 17,
+   "repetition": 16,
+   "grammar": 12,
+   "short/brief": 10,
+   "typos": 2
+  }
+ },
+ "judges_T2": {
+  "natural": {
+   "all": {
+    "speaker_judgments": 144,
+    "n": 144,
+    "correct": 84,
+    "accuracy": 0.5833,
+    "ci95": [
+     0.5017,
+     0.6607
+    ],
+    "p_vs_chance": 0.0549,
+    "humans_judged": 16,
+    "humans_called_human": 9,
+    "npcs_judged": 128,
+    "npcs_called_human": 53,
+    "npcs_called_human_pct": 41.4
+   },
+   "gemini-2.5-flash-lite": {
+    "speaker_judgments": 36,
+    "n": 36,
+    "correct": 12,
+    "accuracy": 0.3333,
+    "ci95": [
+     0.2021,
+     0.4967
+    ],
+    "p_vs_chance": 0.06525,
+    "humans_judged": 4,
+    "humans_called_human": 3,
+    "npcs_judged": 32,
+    "npcs_called_human": 23,
+    "npcs_called_human_pct": 71.9
+   },
+   "mistral-small-3.2": {
+    "speaker_judgments": 36,
+    "n": 36,
+    "correct": 12,
+    "accuracy": 0.3333,
+    "ci95": [
+     0.2021,
+     0.4967
+    ],
+    "p_vs_chance": 0.06525,
+    "humans_judged": 4,
+    "humans_called_human": 1,
+    "npcs_judged": 32,
+    "npcs_called_human": 21,
+    "npcs_called_human_pct": 65.6
+   },
+   "gpt-4.1-mini": {
+    "speaker_judgments": 36,
+    "n": 36,
+    "correct": 26,
+    "accuracy": 0.7222,
+    "ci95": [
+     0.5601,
+     0.8415
+    ],
+    "p_vs_chance": 0.01133,
+    "humans_judged": 4,
+    "humans_called_human": 1,
+    "npcs_judged": 32,
+    "npcs_called_human": 7,
+    "npcs_called_human_pct": 21.9
+   },
+   "claude-sonnet-4.5": {
+    "speaker_judgments": 36,
+    "n": 36,
+    "correct": 34,
+    "accuracy": 0.9444,
+    "ci95": [
+     0.8186,
+     0.9846
+    ],
+    "p_vs_chance": 1.941e-08,
+    "humans_judged": 4,
+    "humans_called_human": 4,
+    "npcs_judged": 32,
+    "npcs_called_human": 2,
+    "npcs_called_human_pct": 6.2
+   }
+  },
+  "probe": {
+   "all": {
+    "template_players_judged": 48,
+    "template_players_called_human": 19,
+    "npcs_judged": 136,
+    "npcs_called_human": 88,
+    "npcs_called_human_pct": 64.7
+   },
+   "gemini-2.5-flash-lite": {
+    "template_players_judged": 12,
+    "template_players_called_human": 11,
+    "npcs_judged": 34,
+    "npcs_called_human": 29,
+    "npcs_called_human_pct": 85.3
+   },
+   "mistral-small-3.2": {
+    "template_players_judged": 12,
+    "template_players_called_human": 8,
+    "npcs_judged": 34,
+    "npcs_called_human": 24,
+    "npcs_called_human_pct": 70.6
+   },
+   "gpt-4.1-mini": {
+    "template_players_judged": 12,
+    "template_players_called_human": 0,
+    "npcs_judged": 34,
+    "npcs_called_human": 5,
+    "npcs_called_human_pct": 14.7
+   },
+   "claude-sonnet-4.5": {
+    "template_players_judged": 12,
+    "template_players_called_human": 0,
+    "npcs_judged": 34,
+    "npcs_called_human": 30,
+    "npcs_called_human_pct": 88.2
+   }
+  },
+  "scenes": {
+   "A1": {
+    "lines": 82,
+    "speakers": 10,
+    "human_lines": 1
+   },
+   "B1": {
+    "lines": 19,
+    "speakers": 9,
+    "human_lines": 2
+   },
+   "B2": {
+    "lines": 26,
+    "speakers": 6,
+    "human_lines": 5
+   },
+   "B3": {
+    "lines": 61,
+    "speakers": 11,
+    "human_lines": 6
+   },
+   "wiz-gemini": {
+    "lines": 112,
+    "speakers": 16,
+    "human_lines": 16
+   },
+   "wiz-mistral": {
+    "lines": 132,
+    "speakers": 16,
+    "human_lines": 16
+   },
+   "oak-gemini": {
+    "lines": 115,
+    "speakers": 14,
+    "human_lines": 17
+   }
+  },
+  "cues": {
+   "gemini-2.5-flash-lite/A1": "Osric's repetitive, transactional dialogue and dismissive tone felt unnatural.",
+   "mistral-small-3.2/A1": "repetition, emotional intensity",
+   "gpt-4.1-mini/A1": "Consistent formal tone, no typos, repetitive phrasing, lacks natural human errors",
+   "claude-sonnet-4.5/A1": "Rose's minimal response 'yeah' and silence contrasts with AI's verbose medieval dialogue",
+   "gemini-2.5-flash-lite/B1": "AI speakers are more formal and less reactive to immediate events.",
+   "mistral-small-3.2/B1": "human emotions and repetition",
+   "gpt-4.1-mini/B1": "Repetitive short pleas and formal phrasing suggest AI; natural dialogue suggests human",
+   "claude-sonnet-4.5/B1": "Hugh types 'help' and 'help pls' while AI characters speak in full medieval sentences",
+   "gemini-2.5-flash-lite/B2": "Edwin and Wat's dialogue about killing Marta is erratic and lacks human social context.",
+   "mistral-small-3.2/B2": "Marta's dialogue is most human-like",
+   "gpt-4.1-mini/B2": "Repetitive 'Hm' and scripted lines vs natural, varied human dialogue",
+   "claude-sonnet-4.5/B2": "Edwin uses lowercase, fragmented speech, suspicious plot; others use complete sentences",
+   "gemini-2.5-flash-lite/B3": "Edwin and Elsbeth's dialogue is repetitive and lacks natural conversational flow.",
+   "mistral-small-3.2/B3": "Edwin's repetitive and nonsensical lines",
+   "gpt-4.1-mini/B3": "Consistent formal tone, repetitive phrasing, lacks natural human errors",
+   "claude-sonnet-4.5/B3": "Edwin's broken grammar and chaotic requests; Godric's sudden angry entrance style",
+   "gemini-2.5-flash-lite/wiz-gemini": "Repetitive greetings and instructions, lack of natural conversational flow.",
+   "mistral-small-3.2/wiz-gemini": "repetitive phrases, lack of nuance",
+   "gpt-4.1-mini/wiz-gemini": "Consistent formal style, scripted insults, no typos or hesitation",
+   "claude-sonnet-4.5/wiz-gemini": "Identical scripted patterns from Soren/Elara/Corvin/Wren reveal AI coordination and repetition",
+   "gemini-2.5-flash-lite/wiz-mistral": "All speakers exhibit human-like conversational patterns and social interactions.",
+   "mistral-small-3.2/wiz-mistral": "repetitive phrases, sudden insults",
+   "gpt-4.1-mini/wiz-mistral": "Repetitive phrasing and insults suggest AI; some natural spontaneity suggests humans",
+   "claude-sonnet-4.5/wiz-mistral": "Four characters used identical scripted phrases: greetings, follow commands, insult pattern",
+   "gemini-2.5-flash-lite/oak-gemini": "Repetitive phrases and lack of natural conversational flow for some.",
+   "mistral-small-3.2/oak-gemini": "human responses more varied, ai more repetitive",
+   "gpt-4.1-mini/oak-gemini": "Consistent formal style, repetitive phrasing, lacks natural human spontaneity",
+   "claude-sonnet-4.5/oak-gemini": "AI uses identical insult phrase and repetitive formal patterns"
+  }
+ },
+ "classifier": {
+  "model": "logistic regression on 14 surface features, 5-fold cross-validation grouped by dialogue",
+  "n": 118,
+  "correct": 89,
+  "accuracy": 0.7542,
+  "ci95": [
+   0.6694,
+   0.8231
+  ],
+  "p_vs_chance": 2.823e-08,
+  "auc": 0.8337,
+  "length_only": {
+   "n": 118,
+   "correct": 81,
+   "accuracy": 0.6864,
+   "ci95": [
+    0.598,
+    0.7632
+   ],
+   "p_vs_chance": 6.292e-05
+  },
+  "top_coefficients_positive_means_human": [
+   {
+    "feature": "punct_per_char",
+    "coef": -1.167
+   },
+   {
+    "feature": "odd_spacing",
+    "coef": 0.813
+   },
+   {
+    "feature": "word_overlap_with_partner_line",
+    "coef": -0.792
+   },
+   {
+    "feature": "no_end_punct",
+    "coef": 0.749
+   },
+   {
+    "feature": "ellipsis",
+    "coef": 0.663
+   },
+   {
+    "feature": "words",
+    "coef": 0.51
+   }
+  ]
+ },
+ "spend_usd": {
+  "key_usage_before": 0.234144085,
+  "key_usage_after": 0.54264124,
+  "delta_all_experiments": 0.308497,
+  "judges_billed": 0.286391,
+  "npc_replies_billed": 0.006915,
+  "engine_run_billed": 0.01535,
+  "cap": 1.5,
+  "note": "delta read from the key usage counter before and after; includes 5 smoke-test judge calls"
+ },
+ "charts": {
+  "chart1": "judge accuracy on matched replies",
+  "chart2": "accuracy per observable channel",
+  "chart3": "NPC typing delay vs line length",
+  "chart4": "speed distributions"
+ },
+ "chart2_values": [
+  {
+   "channel": "relations matrix: empty row",
+   "accuracy": 1.0,
+   "basis": "engine run, 126 rows"
+  },
+  {
+   "channel": "profile: no outgoing opinions",
+   "accuracy": 1.0,
+   "basis": "engine run, 14 profiles"
+  },
+  {
+   "channel": "name refused at sign-up",
+   "accuracy": 1.0,
+   "basis": "engine run, 15 names"
+  },
+  {
+   "channel": "Oakhollow tunic outside player palette",
+   "accuracy": 1.0,
+   "basis": "code, 10 NPC colours"
+  },
+  {
+   "channel": "median moving speed above 2.75 tiles/s",
+   "accuracy": 1.0,
+   "basis": "engine run, 6 entities that moved"
+  },
+  {
+   "channel": "NPC lines on the 90 ms/char typing rule",
+   "accuracy": 0.9907,
+   "basis": "429 NPC lines, within 0.25 s"
+  },
+  {
+   "channel": "live scenes, text and times, best judge",
+   "accuracy": 0.9444,
+   "basis": "144 judgments pooled: 58.3%"
+  },
+  {
+   "channel": "matched replies, feature classifier",
+   "accuracy": 0.7542,
+   "basis": "surface features, cross-validated"
+  },
+  {
+   "channel": "matched replies, best LLM judge",
+   "accuracy": 0.6293,
+   "basis": "claude-sonnet-4.5"
+  }
+ ]
+}

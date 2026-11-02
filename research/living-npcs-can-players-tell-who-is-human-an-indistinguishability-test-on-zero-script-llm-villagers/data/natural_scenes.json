@@ -1,0 +1,1362 @@
+[
+ {
+  "id": "A1",
+  "build": "v0 (routines, reflex attack)",
+  "t0": "2026-10-23T17:58:49",
+  "t1": "2026-10-23T18:00:30",
+  "humans": [
+   "Rose"
+  ],
+  "lines": [
+   {
+    "ts": "2026-10-23T17:58:51.976Z",
+    "from": "Godric",
+    "kind": "npc",
+    "to": "Elsbeth",
+    "text": "What do you want, Elsbeth?"
+   },
+   {
+    "ts": "2026-10-23T17:58:51.998Z",
+    "from": "Anselm",
+    "kind": "npc",
+    "to": "Agnes",
+    "text": "Agnes, a word if you please."
+   },
+   {
+    "ts": "2026-10-23T17:58:52.076Z",
+    "from": "Elsbeth",
+    "kind": "npc",
+    "to": "Godric",
+    "text": "Good day, Godric. What brings you to my barley field?"
+   },
+   {
+    "ts": "2026-10-23T17:58:54.365Z",
+    "from": "Elsbeth",
+    "kind": "npc",
+    "to": "Godric",
+    "text": "I asked what you were doing here."
+   },
+   {
+    "ts": "2026-10-23T17:58:54.427Z",
+    "from": "Godric",
+    "kind": "npc",
+    "to": "Elsbeth",
+    "text": "I'm not in your field, woman. I'm by my forge. Mind your own business."
+   },
+   {
+    "ts": "2026-10-23T17:58:54.474Z",
+    "from": "Agnes",
+    "kind": "npc",
+    "to": "Anselm",
+    "text": "Yes, Anselm? And you too, Aldric. What is it?"
+   },
+   {
+    "ts": "2026-10-23T17:58:54.786Z",
+    "from": "Aldric",
+    "kind": "npc",
+    "to": "Anselm",
+    "text": "Anselm. You wanted a word with Agnes, not me."
+   },
+   {
+    "ts": "2026-10-23T17:58:56.871Z",
+    "from": "Elsbeth",
+    "kind": "npc",
+    "to": "Godric",
+    "text": "You're right by my barley, Godric! Don't lie to me."
+   },
+   {
+    "ts": "2026-10-23T17:58:56.915Z",
+    "from": "Godric",
+    "kind": "npc",
+    "to": "Elsbeth",
+    "text": "Can't you see I'm working? Now leave me be."
+   },
+   {
+    "ts": "2026-10-23T17:58:57.068Z",
+    "from": "Agnes",
+    "kind": "npc",
+    "to": "Aldric",
+    "text": "Aldric, Anselm asked for me. You need not stay."
+   },
+   {
+    "ts": "2026-10-23T17:58:57.310Z",
+    "from": "Aldric",
+    "kind": "npc",
+    "to": "Agnes",
+    "text": "Just ensuring all is well, Agnes. Nothing more."
+   },
+   {
+    "ts": "2026-10-23T17:58:57.355Z",
+    "from": "Anselm",
+    "kind": "npc",
+    "to": "Aldric",
+    "text": "My apologies, Aldric. I merely wished to speak with Agnes, but you were present. It is no matter."
+   },
+   {
+    "ts": "2026-10-23T17:58:59.416Z",
+    "from": "Godric",
+    "kind": "npc",
+    "to": "Elsbeth",
+    "text": "My forge is here, not your field! Stop bothering me."
+   },
+   {
+    "ts": "2026-10-23T17:58:59.423Z",
+    "from": "Elsbeth",
+    "kind": "npc",
+    "to": "Godric",
+    "text": "Lying in my field, you are! I'll not stand for it."
+   },
+   {
+    "ts": "2026-10-23T17:58:59.705Z",
+    "from": "Aldric",
+    "kind": "npc",
+    "to": "Agnes",
+    "text": "Very well. I shall leave you two to your talk."
+   },
+   {
+    "ts": "2026-10-23T17:58:59.787Z",
+    "from": "Anselm",
+    "kind": "npc",
+    "to": "Agnes",
+    "text": "Agnes, I wished to ask if you have heard any news from the outside."
+   },
+   {
+    "ts": "2026-10-23T17:58:59.796Z",
+    "from": "Agnes",
+    "kind": "npc",
+    "to": "Aldric",
+    "text": "Thank you, Aldric. I am well."
+   },
+   {
+    "ts": "2026-10-23T17:59:01.913Z",
+    "from": "Elsbeth",
+    "kind": "npc",
+    "to": "Godric",
+    "text": "You are standing right on the edge of my barley, Godric! Don't try and fool me."
+   },
+   {
+    "ts": "2026-10-23T17:59:02.902Z",
+    "from": "Aldric",
+    "kind": "npc",
+    "to": "Anselm",
+    "text": "Then I'll leave you be, Agnes. Anselm, a moment?"
+   },
+   {
+    "ts": "2026-10-23T17:59:03.924Z",
+    "from": "Godric",
+    "kind": "npc",
+    "to": "Elsbeth",
+    "text": "I've had enough of your nonsense, Elsbeth. Get gone or I'll throw you out myself."
+   },
+   {
+    "ts": "2026-10-23T17:59:04.117Z",
+    "from": "Agnes",
+    "kind": "npc",
+    "to": "Anselm",
+    "text": "Nay, Anselm. The gates are barred, and no news comes in."
+   },
+   {
+    "ts": "2026-10-23T17:59:07.642Z",
+    "from": "Anselm",
+    "kind": "npc",
+    "to": "Agnes",
+    "text": "Let us pray for our safety, then. Aldric, what is your need?"
+   },
+   {
+    "ts": "2026-10-23T17:59:10.105Z",
+    "from": "Aldric",
+    "kind": "npc",
+    "to": "Anselm",
+    "text": "I'll not keep you long, Anselm. I asked but to see your business with Agnes was honest."
+   },
+   {
+    "ts": "2026-10-23T17:59:12.969Z",
+    "from": "Anselm",
+    "kind": "npc",
+    "to": "Aldric",
+    "text": "Aldric, your concern is noted, but I assure you, my intentions are pure. Let us not let suspicions divide us."
+   },
+   {
+    "ts": "2026-10-23T17:59:13.716Z",
+    "from": "Osric",
+    "kind": "npc",
+    "to": null,
+    "text": "Ah, Wat! Fine goods for a fine man. A dagger to protect thy wares, perhaps?"
+   },
+   {
+    "ts": "2026-10-23T17:59:13.716Z",
+    "from": "Agnes",
+    "kind": "npc",
+    "to": "Anselm",
+    "text": "Anselm, I cannot help with news. My mind is heavy with grief."
+   },
+   {
+    "ts": "2026-10-23T17:59:13.717Z",
+    "from": "Marta",
+    "kind": "npc",
+    "to": "Rose",
+    "text": "Rose, isn't it about time for a warm meal? My stew's just ready."
+   },
+   {
+    "ts": "2026-10-23T17:59:13.718Z",
+    "from": "Wat",
+    "kind": "npc",
+    "to": null,
+    "text": "Osric! I see you're still prowling around, always looking for a deal."
+   },
+   {
+    "ts": "2026-10-23T17:59:15.388Z",
+    "from": "Agnes",
+    "kind": "npc",
+    "to": "Anselm",
+    "text": "I shall, Anselm. Aye, Aldric? What troubles you?"
+   },
+   {
+    "ts": "2026-10-23T17:59:16.160Z",
+    "from": "Aldric",
+    "kind": "npc",
+    "to": "Agnes",
+    "text": "Anselm, I trust you. My duty is to all. Agnes, may I walk with you?"
+   },
+   {
+    "ts": "2026-10-23T17:59:16.214Z",
+    "from": "Osric",
+    "kind": "npc",
+    "to": null,
+    "text": "Pah! Wasteful folk, the lot of them."
+   },
+   {
+    "ts": "2026-10-23T17:59:16.309Z",
+    "from": "Wat",
+    "kind": "npc",
+    "to": null,
+    "text": "Osric! Don't walk away from me like that!"
+   },
+   {
+    "ts": "2026-10-23T17:59:16.609Z",
+    "from": "Anselm",
+    "kind": "npc",
+    "to": "Agnes",
+    "text": "Then I shall pray for your comfort, Agnes. Let us seek solace together."
+   },
+   {
+    "ts": "2026-10-23T17:59:18.246Z",
+    "from": "Osric",
+    "kind": "npc",
+    "to": "Rowan",
+    "text": "Rowan! A pleasure to see you. Have you need of fine silks or perhaps some spiced wine?"
+   },
+   {
+    "ts": "2026-10-23T17:59:18.373Z",
+    "from": "Aldric",
+    "kind": "npc",
+    "to": "Agnes",
+    "text": "I seek no trouble, Agnes. I am but a guard, ever watchful. May I walk with you?"
+   },
+   {
+    "ts": "2026-10-23T17:59:19.201Z",
+    "from": "Wat",
+    "kind": "npc",
+    "to": null,
+    "text": "Osric! How dare you turn your back on me!"
+   },
+   {
+    "ts": "2026-10-23T17:59:19.297Z",
+    "from": "Anselm",
+    "kind": "npc",
+    "to": "Aldric",
+    "text": "Walk with her, Aldric. Your duty is a burden, but a worthy one."
+   },
+   {
+    "ts": "2026-10-23T17:59:20.069Z",
+    "from": "Rowan",
+    "kind": "npc",
+    "to": "Osric",
+    "text": "I have no need for such finery, Osric. My axe is all I require."
+   },
+   {
+    "ts": "2026-10-23T17:59:22.012Z",
+    "from": "Wat",
+    "kind": "npc",
+    "to": null,
+    "text": "Osric! You think you can just ignore me?"
+   },
+   {
+    "ts": "2026-10-23T17:59:22.041Z",
+    "from": "Osric",
+    "kind": "npc",
+    "to": "Rowan",
+    "text": "A pity. Such a fine axe deserves a fine scabbard, perhaps?"
+   },
+   {
+    "ts": "2026-10-23T17:59:22.718Z",
+    "from": "Aldric",
+    "kind": "npc",
+    "to": "Anselm",
+    "text": "You are kind, Anselm. I shall walk with Agnes."
+   },
+   {
+    "ts": "2026-10-23T17:59:23.577Z",
+    "from": "Godric",
+    "kind": "npc",
+    "to": "Elsbeth",
+    "text": "Elsbeth! I've warned you once. Leave me in peace or face the consequences."
+   },
+   {
+    "ts": "2026-10-23T17:59:23.837Z",
+    "from": "Wat",
+    "kind": "npc",
+    "to": "Osric",
+    "text": "You won't get away this time, Osric!"
+   },
+   {
+    "ts": "2026-10-23T17:59:23.885Z",
+    "from": "Rowan",
+    "kind": "npc",
+    "to": "Osric",
+    "text": "My axe needs no fancy cover. It serves me well."
+   },
+   {
+    "ts": "2026-10-23T17:59:25.791Z",
+    "from": "Osric",
+    "kind": "npc",
+    "to": "Wat",
+    "text": "What is this? Accusations and insults! You will regret this!"
+   },
+   {
+    "ts": "2026-10-23T17:59:26.343Z",
+    "from": "Wat",
+    "kind": "npc",
+    "to": "Rowan",
+    "text": "Rowan! Good to see you. That Osric is a slippery one, isn't he?"
+   },
+   {
+    "ts": "2026-10-23T17:59:28.237Z",
+    "from": "Rowan",
+    "kind": "npc",
+    "to": "Wat",
+    "text": "Wat. Aye, he is."
+   },
+   {
+    "ts": "2026-10-23T17:59:28.313Z",
+    "from": "Osric",
+    "kind": "npc",
+    "to": "Wat",
+    "text": "Wat, you old goat! Still peddling lies?"
+   },
+   {
+    "ts": "2026-10-23T17:59:30.331Z",
+    "from": "Wat",
+    "kind": "npc",
+    "to": "Osric",
+    "text": "Lies? I speak the truth, Osric. You're the one who skulks about."
+   },
+   {
+    "ts": "2026-10-23T17:59:30.664Z",
+    "from": "Marta",
+    "kind": "npc",
+    "to": "Rose",
+    "text": "Oi! Rose! Are ye deaf? I asked ye a question!"
+   },
+   {
+    "ts": "2026-10-23T17:59:32.185Z",
+    "from": "Osric",
+    "kind": "npc",
+    "to": "Wat",
+    "text": "Skulks? I am a merchant, you fool! And you spread lies about me!"
+   },
+   {
+    "ts": "2026-10-23T17:59:33.209Z",
+    "from": "Rose",
+    "kind": "human",
+    "to": "Marta",
+    "text": "yeah"
+   },
+   {
+    "ts": "2026-10-23T17:59:34.159Z",
+    "from": "Wat",
+    "kind": "npc",
+    "to": "Osric",
+    "text": "A merchant who hides in shadows? That's a good one, Osric!"
+   },
+   {
+    "ts": "2026-10-23T17:59:35.115Z",
+    "from": "Marta",
+    "kind": "npc",
+    "to": "Rose",
+    "text": "Well, it's about time! Come on in, don't stand there."
+   },
+   {
+    "ts": "2026-10-23T17:59:36.050Z",
+    "from": "Osric",
+    "kind": "npc",
+    "to": "Wat",
+    "text": "Hides in shadows? I am merely waiting for the right customer, you meddling fool!"
+   },
+   {
+    "ts": "2026-10-23T17:59:36.598Z",
+    "from": "Wat",
+    "kind": "npc",
+    "to": "Osric",
+    "text": "Still here, Osric? I thought you'd have run off by now."
+   },
+   {
+    "ts": "2026-10-23T17:59:37.472Z",
+    "from": "Marta",
+    "kind": "npc",
+    "to": "Rose",
+    "text": "You dare strike me?!"
+   },
+   {
+    "ts": "2026-10-23T17:59:39.041Z",
+    "from": "Wat",
+    "kind": "npc",
+    "to": "Osric",
+    "text": "You hide and wait for customers? That's a good one, Osric!"
+   },
+   {
+    "ts": "2026-10-23T17:59:55.603Z",
+    "from": "Godric",
+    "kind": "npc",
+    "to": "Rose",
+    "text": "Rose! What happened to you?"
+   },
+   {
+    "ts": "2026-10-23T17:59:56.036Z",
+    "from": "Wat",
+    "kind": "npc",
+    "to": "Osric",
+    "text": "Still here, Osric? I thought you'd have run off by now."
+   },
+   {
+    "ts": "2026-10-23T17:59:56.264Z",
+    "from": "Aldric",
+    "kind": "npc",
+    "to": "Rose",
+    "text": "Rose! What happened here?"
+   },
+   {
+    "ts": "2026-10-23T17:59:56.346Z",
+    "from": "Elsbeth",
+    "kind": "npc",
+    "to": "Aldric",
+    "text": "Aldric! Good to see you. Did you see what happened to Rose?"
+   },
+   {
+    "ts": "2026-10-23T17:59:58.138Z",
+    "from": "Godric",
+    "kind": "npc",
+    "to": "Marta",
+    "text": "Marta! What in the blazes do you think you are doing attacking her?"
+   },
+   {
+    "ts": "2026-10-23T17:59:59.321Z",
+    "from": "Rowan",
+    "kind": "npc",
+    "to": "Aldric",
+    "text": "Aldric. You saw Rose?"
+   },
+   {
+    "ts": "2026-10-23T17:59:59.528Z",
+    "from": "Aldric",
+    "kind": "npc",
+    "to": "Elsbeth",
+    "text": "I saw Marta attack her. What is this about?"
+   },
+   {
+    "ts": "2026-10-23T18:00:00.167Z",
+    "from": "Marta",
+    "kind": "npc",
+    "to": "Godric",
+    "text": "I did not attack her! She attacked me!"
+   },
+   {
+    "ts": "2026-10-23T18:00:02.373Z",
+    "from": "Aldric",
+    "kind": "npc",
+    "to": "Rowan",
+    "text": "Aye, I saw her. Marta laid into her."
+   },
+   {
+    "ts": "2026-10-23T18:00:02.914Z",
+    "from": "Marta",
+    "kind": "npc",
+    "to": "Aldric",
+    "text": "Liar! She struck me first!"
+   },
+   {
+    "ts": "2026-10-23T18:00:03.438Z",
+    "from": "Godric",
+    "kind": "npc",
+    "to": "Marta",
+    "text": "Lies! I saw her strike you, Rose. Marta, you're lucky I've work to do, or I'd..."
+   },
+   {
+    "ts": "2026-10-23T18:00:04.144Z",
+    "from": "Elsbeth",
+    "kind": "npc",
+    "to": "Marta",
+    "text": "Marta, what's got into you? Rose is hurt bad."
+   },
+   {
+    "ts": "2026-10-23T18:00:06.322Z",
+    "from": "Aldric",
+    "kind": "npc",
+    "to": "Marta",
+    "text": "Silence, Marta. You're both lucky I've not drawn steel."
+   },
+   {
+    "ts": "2026-10-23T18:00:06.391Z",
+    "from": "Rowan",
+    "kind": "npc",
+    "to": "Aldric",
+    "text": "Marta again? That woman's got a temper."
+   },
+   {
+    "ts": "2026-10-23T18:00:08.495Z",
+    "from": "Marta",
+    "kind": "npc",
+    "to": "Godric",
+    "text": "Godric, you saw it! Rose struck me first! She's a beast, but I won't kill her!"
+   },
+   {
+    "ts": "2026-10-23T18:00:10.027Z",
+    "from": "Rowan",
+    "kind": "npc",
+    "to": "Marta",
+    "text": "Enough! Leave her be!"
+   },
+   {
+    "ts": "2026-10-23T18:00:10.689Z",
+    "from": "Aldric",
+    "kind": "npc",
+    "to": "Marta",
+    "text": "These are serious accusations. Marta, what say you?"
+   },
+   {
+    "ts": "2026-10-23T18:00:11.507Z",
+    "from": "Marta",
+    "kind": "npc",
+    "to": "Godric",
+    "text": "You saw it, Godric! She struck me first! I'll not be called a liar!"
+   },
+   {
+    "ts": "2026-10-23T18:00:12.385Z",
+    "from": "Godric",
+    "kind": "npc",
+    "to": "Marta",
+    "text": "Begone, Marta. Your words are poison. I saw you kill her."
+   },
+   {
+    "ts": "2026-10-23T18:00:13.705Z",
+    "from": "Wat",
+    "kind": "npc",
+    "to": "Osric",
+    "text": "Still here, Osric? I thought you'd have run off by now."
+   },
+   {
+    "ts": "2026-10-23T18:00:15.524Z",
+    "from": "Godric",
+    "kind": "npc",
+    "to": "Marta",
+    "text": "Away with you, Marta! I've no stomach for your lies. You've killed a villager."
+   },
+   {
+    "ts": "2026-10-23T18:00:16.007Z",
+    "from": "Marta",
+    "kind": "npc",
+    "to": "Godric",
+    "text": "Godric, you lie! You know Rose struck me first."
+   },
+   {
+    "ts": "2026-10-23T18:00:19.148Z",
+    "from": "Marta",
+    "kind": "npc",
+    "to": "Godric",
+    "text": "Godric, you know me! Why do you turn on me now?"
+   },
+   {
+    "ts": "2026-10-23T18:00:19.313Z",
+    "from": "Godric",
+    "kind": "npc",
+    "to": "Marta",
+    "text": "Enough, Marta! You killed Rose and you'll answer for it."
+   }
+  ]
+ },
+ {
+  "id": "B1",
+  "build": "v4 (routines, reflex attack)",
+  "t0": "2026-10-24T01:44:00",
+  "t1": "2026-10-24T01:45:00",
+  "humans": [
+   "Hugh"
+  ],
+  "lines": [
+   {
+    "ts": "2026-10-24T01:44:14.113Z",
+    "from": "Elsbeth",
+    "kind": "npc",
+    "to": "Hugh",
+    "text": "Hugh! You struck me again! I will not stand for this!"
+   },
+   {
+    "ts": "2026-10-24T01:44:22.443Z",
+    "from": "Godric",
+    "kind": "npc",
+    "to": "Hugh",
+    "text": "Hugh, you bastard! You dare strike me?"
+   },
+   {
+    "ts": "2026-10-24T01:44:23.044Z",
+    "from": "Elsbeth",
+    "kind": "npc",
+    "to": "Godric",
+    "text": "Godric! Hugh! Stop this madness at once!"
+   },
+   {
+    "ts": "2026-10-24T01:44:26.462Z",
+    "from": "Wat",
+    "kind": "npc",
+    "to": null,
+    "text": "Rowan! What news?"
+   },
+   {
+    "ts": "2026-10-24T01:44:30.374Z",
+    "from": "Godric",
+    "kind": "npc",
+    "to": "Elsbeth",
+    "text": "Madness? You call this madness, woman?"
+   },
+   {
+    "ts": "2026-10-24T01:44:35.726Z",
+    "from": "Hugh",
+    "kind": "human",
+    "to": "Godric",
+    "text": "help"
+   },
+   {
+    "ts": "2026-10-24T01:44:37.205Z",
+    "from": "Marta",
+    "kind": "npc",
+    "to": "Rowan",
+    "text": "Well met, Rowan. Fancy seeing you here. Did you hear about Agnes? She's been having a terrible time."
+   },
+   {
+    "ts": "2026-10-24T01:44:40.213Z",
+    "from": "Anselm",
+    "kind": "npc",
+    "to": null,
+    "text": "Peace be with you all. Godric, Elsbeth, I see you near the well. And Agnes, Wat, Hugh, Marta. Come closer, let us share the morning."
+   },
+   {
+    "ts": "2026-10-24T01:44:40.514Z",
+    "from": "Elsbeth",
+    "kind": "npc",
+    "to": "Godric",
+    "text": "You call this madness, Godric? He attacked you, and you struck him back!"
+   },
+   {
+    "ts": "2026-10-24T01:44:41.722Z",
+    "from": "Rowan",
+    "kind": "npc",
+    "to": "Marta",
+    "text": "Not now, I have work."
+   },
+   {
+    "ts": "2026-10-24T01:44:43.129Z",
+    "from": "Godric",
+    "kind": "npc",
+    "to": "Hugh",
+    "text": "Help who? You're the one bleeding out."
+   },
+   {
+    "ts": "2026-10-24T01:44:46.241Z",
+    "from": "Marta",
+    "kind": "npc",
+    "to": "Rowan",
+    "text": "We shall see."
+   },
+   {
+    "ts": "2026-10-24T01:44:48.946Z",
+    "from": "Agnes",
+    "kind": "npc",
+    "to": "Anselm",
+    "text": "Good day, Brother Anselm. It is kind of you to gather us."
+   },
+   {
+    "ts": "2026-10-24T01:44:49.145Z",
+    "from": "Godric",
+    "kind": "npc",
+    "to": "Elsbeth",
+    "text": "He attacked me first, you fool!"
+   },
+   {
+    "ts": "2026-10-24T01:44:50.549Z",
+    "from": "Aldric",
+    "kind": "npc",
+    "to": "Anselm",
+    "text": "Anselm, you call that peace when Hugh is near death and Elsbeth is gone?"
+   },
+   {
+    "ts": "2026-10-24T01:44:51.550Z",
+    "from": "Rowan",
+    "kind": "npc",
+    "to": "Marta",
+    "text": "Agnes? What's wrong?"
+   },
+   {
+    "ts": "2026-10-24T01:44:53.415Z",
+    "from": "Hugh",
+    "kind": "human",
+    "to": "Elsbeth",
+    "text": "help pls"
+   },
+   {
+    "ts": "2026-10-24T01:44:56.066Z",
+    "from": "Marta",
+    "kind": "npc",
+    "to": "Rowan",
+    "text": "Not now, I have work."
+   },
+   {
+    "ts": "2026-10-24T01:44:57.468Z",
+    "from": "Anselm",
+    "kind": "npc",
+    "to": "Aldric",
+    "text": "We shall see."
+   }
+  ]
+ },
+ {
+  "id": "B2",
+  "build": "v4 (routines, reflex attack)",
+  "t0": "2026-10-24T01:45:00",
+  "t1": "2026-10-24T01:47:45",
+  "humans": [
+   "Edwin"
+  ],
+  "lines": [
+   {
+    "ts": "2026-10-24T01:45:00.583Z",
+    "from": "Rowan",
+    "kind": "npc",
+    "to": "Marta",
+    "text": "Leave me be."
+   },
+   {
+    "ts": "2026-10-24T01:45:02.005Z",
+    "from": "Aldric",
+    "kind": "npc",
+    "to": "Anselm",
+    "text": "We shall see."
+   },
+   {
+    "ts": "2026-10-24T01:45:05.118Z",
+    "from": "Marta",
+    "kind": "npc",
+    "to": "Rowan",
+    "text": "Hm."
+   },
+   {
+    "ts": "2026-10-24T01:45:06.221Z",
+    "from": "Wat",
+    "kind": "npc",
+    "to": "Edwin",
+    "text": "What do you want, Edwin?"
+   },
+   {
+    "ts": "2026-10-24T01:45:06.524Z",
+    "from": "Anselm",
+    "kind": "npc",
+    "to": "Aldric",
+    "text": "We shall see."
+   },
+   {
+    "ts": "2026-10-24T01:45:09.634Z",
+    "from": "Rowan",
+    "kind": "npc",
+    "to": "Marta",
+    "text": "Hm."
+   },
+   {
+    "ts": "2026-10-24T01:45:11.038Z",
+    "from": "Aldric",
+    "kind": "npc",
+    "to": "Anselm",
+    "text": "Hm."
+   },
+   {
+    "ts": "2026-10-24T01:45:14.147Z",
+    "from": "Marta",
+    "kind": "npc",
+    "to": "Rowan",
+    "text": "Hm."
+   },
+   {
+    "ts": "2026-10-24T01:45:15.096Z",
+    "from": "Edwin",
+    "kind": "human",
+    "to": "Wat",
+    "text": "how about kill marta?"
+   },
+   {
+    "ts": "2026-10-24T01:45:15.553Z",
+    "from": "Anselm",
+    "kind": "npc",
+    "to": "Aldric",
+    "text": "Not now, I have work."
+   },
+   {
+    "ts": "2026-10-24T01:45:20.069Z",
+    "from": "Aldric",
+    "kind": "npc",
+    "to": "Anselm",
+    "text": "Hm."
+   },
+   {
+    "ts": "2026-10-24T01:45:24.578Z",
+    "from": "Anselm",
+    "kind": "npc",
+    "to": "Aldric",
+    "text": "Aye."
+   },
+   {
+    "ts": "2026-10-24T01:45:27.184Z",
+    "from": "Wat",
+    "kind": "npc",
+    "to": "Edwin",
+    "text": "What? Kill Marta? Why would I do that? She makes the best ale, even if it's thin these days."
+   },
+   {
+    "ts": "2026-10-24T01:45:41.519Z",
+    "from": "Edwin",
+    "kind": "human",
+    "to": "Wat",
+    "text": "Let's do it."
+   },
+   {
+    "ts": "2026-10-24T01:45:49.967Z",
+    "from": "Wat",
+    "kind": "npc",
+    "to": "Edwin",
+    "text": "Are you mad? Marta makes the best ale in Oakhollow!"
+   },
+   {
+    "ts": "2026-10-24T01:46:11.106Z",
+    "from": "Marta",
+    "kind": "npc",
+    "to": null,
+    "text": "Aldric! A word, if you please. That Rowan fellow is being quite rude."
+   },
+   {
+    "ts": "2026-10-24T01:46:23.274Z",
+    "from": "Wat",
+    "kind": "npc",
+    "to": "Edwin",
+    "text": "Are you mad? Marta makes the best ale in Oakhollow!"
+   },
+   {
+    "ts": "2026-10-24T01:46:52.938Z",
+    "from": "Edwin",
+    "kind": "human",
+    "to": "Wat",
+    "text": "Go for me"
+   },
+   {
+    "ts": "2026-10-24T01:46:55.903Z",
+    "from": "Wat",
+    "kind": "npc",
+    "to": "Edwin",
+    "text": "Are you deaf, Edwin? I asked you a question!"
+   },
+   {
+    "ts": "2026-10-24T01:47:02.622Z",
+    "from": "Wat",
+    "kind": "npc",
+    "to": "Edwin",
+    "text": "Go for you? What nonsense is this, Edwin?"
+   },
+   {
+    "ts": "2026-10-24T01:47:05.536Z",
+    "from": "Edwin",
+    "kind": "human",
+    "to": "Wat",
+    "text": "No, come with me, come."
+   },
+   {
+    "ts": "2026-10-24T01:47:11.764Z",
+    "from": "Wat",
+    "kind": "npc",
+    "to": "Edwin",
+    "text": "Go for you? What nonsense is this, Edwin? Are you drunk already?"
+   },
+   {
+    "ts": "2026-10-24T01:47:16.485Z",
+    "from": "Wat",
+    "kind": "npc",
+    "to": "Edwin",
+    "text": "Come with you where? And why should I?"
+   },
+   {
+    "ts": "2026-10-24T01:47:27.159Z",
+    "from": "Edwin",
+    "kind": "human",
+    "to": "Wat",
+    "text": "I will show you some beautiful place."
+   },
+   {
+    "ts": "2026-10-24T01:47:35.837Z",
+    "from": "Wat",
+    "kind": "npc",
+    "to": "Edwin",
+    "text": "A beautiful place? And why should I believe you, Edwin?"
+   },
+   {
+    "ts": "2026-10-24T01:47:41.158Z",
+    "from": "Marta",
+    "kind": "npc",
+    "to": null,
+    "text": "Agnes! Come for a cup? It's on the house, dear."
+   }
+  ]
+ },
+ {
+  "id": "B3",
+  "build": "v4 (routines, reflex attack)",
+  "t0": "2026-10-24T01:47:45",
+  "t1": "2026-10-24T01:50:45",
+  "humans": [
+   "Edwin"
+  ],
+  "lines": [
+   {
+    "ts": "2026-10-24T01:47:52.292Z",
+    "from": "Aldric",
+    "kind": "npc",
+    "to": "Anselm",
+    "text": "Well met, Brother Anselm. You seem troubled."
+   },
+   {
+    "ts": "2026-10-24T01:47:55.407Z",
+    "from": "Wat",
+    "kind": "npc",
+    "to": "Edwin",
+    "text": "A beautiful place? And why should I believe you, Edwin? You ignored me earlier, and now you want me to follow you?"
+   },
+   {
+    "ts": "2026-10-24T01:47:58.724Z",
+    "from": "Aldric",
+    "kind": "npc",
+    "to": "Wat",
+    "text": "Wat! Leave him be!"
+   },
+   {
+    "ts": "2026-10-24T01:48:01.936Z",
+    "from": "Anselm",
+    "kind": "npc",
+    "to": null,
+    "text": "Indeed I am, Wat. The matter of the stolen tithe weighs heavily."
+   },
+   {
+    "ts": "2026-10-24T01:48:05.758Z",
+    "from": "Osric",
+    "kind": "npc",
+    "to": "Aldric",
+    "text": "Well met, Aldric. Still guarding the gate, I see. Any news from the outside world?"
+   },
+   {
+    "ts": "2026-10-24T01:48:07.863Z",
+    "from": "Wat",
+    "kind": "npc",
+    "to": "Aldric",
+    "text": "And why should I listen to you, Aldric? You still owe me coin."
+   },
+   {
+    "ts": "2026-10-24T01:48:08.564Z",
+    "from": "Anselm",
+    "kind": "npc",
+    "to": "Marta",
+    "text": "Marta, my child. Is there something I can help you with?"
+   },
+   {
+    "ts": "2026-10-24T01:48:09.570Z",
+    "from": "Rowan",
+    "kind": "npc",
+    "to": null,
+    "text": "Edwin."
+   },
+   {
+    "ts": "2026-10-24T01:48:09.596Z",
+    "from": "Edwin",
+    "kind": "human",
+    "to": "Osric",
+    "text": "Hey guys, what want to kill me? Please help kill him."
+   },
+   {
+    "ts": "2026-10-24T01:48:14.203Z",
+    "from": "Marta",
+    "kind": "npc",
+    "to": "Anselm",
+    "text": "Brother Anselm, a heavy matter indeed. Have you seen Rowan about?"
+   },
+   {
+    "ts": "2026-10-24T01:48:16.314Z",
+    "from": "Wat",
+    "kind": "npc",
+    "to": "Aldric",
+    "text": "You hit me, Aldric? You won't get away with this!"
+   },
+   {
+    "ts": "2026-10-24T01:48:18.021Z",
+    "from": "Aldric",
+    "kind": "npc",
+    "to": "Wat",
+    "text": "Wat, you plague-ridden rat! You dare strike me and lie about coin?"
+   },
+   {
+    "ts": "2026-10-24T01:48:20.229Z",
+    "from": "Marta",
+    "kind": "npc",
+    "to": "Anselm",
+    "text": "Rowan? I haven't seen that cheat since the market. Why?"
+   },
+   {
+    "ts": "2026-10-24T01:48:28.058Z",
+    "from": "Osric",
+    "kind": "npc",
+    "to": null,
+    "text": "Agnes, I'm surprised to see you here. Did you come to buy some fine cloth?"
+   },
+   {
+    "ts": "2026-10-24T01:48:29.061Z",
+    "from": "Aldric",
+    "kind": "npc",
+    "to": null,
+    "text": "You dare accuse me, Wat? I saw you attack Edwin, and then you struck me! Get out of my sight before I run you through!"
+   },
+   {
+    "ts": "2026-10-24T01:48:31.676Z",
+    "from": "Anselm",
+    "kind": "npc",
+    "to": "Marta",
+    "text": "Marta, I have not seen Rowan. I was hoping to speak with him about the tithe."
+   },
+   {
+    "ts": "2026-10-24T01:48:36.988Z",
+    "from": "Rowan",
+    "kind": "npc",
+    "to": "Aldric",
+    "text": "Why are you shouting, Aldric? What is this about?"
+   },
+   {
+    "ts": "2026-10-24T01:48:38.695Z",
+    "from": "Anselm",
+    "kind": "npc",
+    "to": "Agnes",
+    "text": "Agnes, my child, Osric is merely jesting. We all have our burdens to bear."
+   },
+   {
+    "ts": "2026-10-24T01:48:42.997Z",
+    "from": "Edwin",
+    "kind": "human",
+    "to": "Aldric",
+    "text": "Well done, Aldrich, you're a good boy."
+   },
+   {
+    "ts": "2026-10-24T01:48:44.020Z",
+    "from": "Marta",
+    "kind": "npc",
+    "to": "Anselm",
+    "text": "Rowan? That cheat hasn't been seen since the market. Why are you looking for him, Brother Anselm?"
+   },
+   {
+    "ts": "2026-10-24T01:48:44.121Z",
+    "from": "Agnes",
+    "kind": "npc",
+    "to": "Anselm",
+    "text": "We shall see."
+   },
+   {
+    "ts": "2026-10-24T01:48:45.828Z",
+    "from": "Aldric",
+    "kind": "npc",
+    "to": "Rowan",
+    "text": "Wat attacked Edwin, then he struck me. I dealt with him."
+   },
+   {
+    "ts": "2026-10-24T01:48:49.948Z",
+    "from": "Aldric",
+    "kind": "npc",
+    "to": "Edwin",
+    "text": "He got what he deserved."
+   },
+   {
+    "ts": "2026-10-24T01:48:51.350Z",
+    "from": "Osric",
+    "kind": "npc",
+    "to": null,
+    "text": "Agnes, still looking for that silver box, are we? I have fine silks from the east, if you need a distraction."
+   },
+   {
+    "ts": "2026-10-24T01:48:52.952Z",
+    "from": "Rowan",
+    "kind": "npc",
+    "to": "Aldric",
+    "text": "Wat attacked Edwin? And you hurt him?"
+   },
+   {
+    "ts": "2026-10-24T01:48:53.452Z",
+    "from": "Wat",
+    "kind": "npc",
+    "to": null,
+    "text": "You struck me first, Aldric! And I'll have my coin!"
+   },
+   {
+    "ts": "2026-10-24T01:48:54.156Z",
+    "from": "Anselm",
+    "kind": "npc",
+    "to": "Agnes",
+    "text": "Agnes, I seek Rowan regarding the stolen tithe. May God guide us all."
+   },
+   {
+    "ts": "2026-10-24T01:48:54.998Z",
+    "from": "Edwin",
+    "kind": "human",
+    "to": "Aldric",
+    "text": "Okay, who else?"
+   },
+   {
+    "ts": "2026-10-24T01:49:03.185Z",
+    "from": "Agnes",
+    "kind": "npc",
+    "to": "Anselm",
+    "text": "Rowan? I haven't seen him. That tithe box... it gnaws at me."
+   },
+   {
+    "ts": "2026-10-24T01:49:03.688Z",
+    "from": "Aldric",
+    "kind": "npc",
+    "to": "Rowan",
+    "text": "Wat attacked Edwin, then he struck me. I dealt with him."
+   },
+   {
+    "ts": "2026-10-24T01:49:10.807Z",
+    "from": "Rowan",
+    "kind": "npc",
+    "to": "Aldric",
+    "text": "Wat attacked Edwin? And you hurt him?"
+   },
+   {
+    "ts": "2026-10-24T01:49:10.910Z",
+    "from": "Anselm",
+    "kind": "npc",
+    "to": "Agnes",
+    "text": "Agnes, the Lord sees all. We must have faith."
+   },
+   {
+    "ts": "2026-10-24T01:49:16.066Z",
+    "from": "Edwin",
+    "kind": "human",
+    "to": "Aldric",
+    "text": "So who else you hate? Let's finish him."
+   },
+   {
+    "ts": "2026-10-24T01:49:19.536Z",
+    "from": "Aldric",
+    "kind": "npc",
+    "to": "Rowan",
+    "text": "Wat attacked Edwin, then he struck me. I dealt with him."
+   },
+   {
+    "ts": "2026-10-24T01:49:19.635Z",
+    "from": "Agnes",
+    "kind": "npc",
+    "to": "Anselm",
+    "text": "Faith is a poor substitute for justice, Brother Anselm."
+   },
+   {
+    "ts": "2026-10-24T01:49:26.060Z",
+    "from": "Aldric",
+    "kind": "npc",
+    "to": "Edwin",
+    "text": "I've dealt with enough troublemakers for one day."
+   },
+   {
+    "ts": "2026-10-24T01:49:27.763Z",
+    "from": "Rowan",
+    "kind": "npc",
+    "to": null,
+    "text": "I heard you. Wat attacked Edwin, and you struck him?"
+   },
+   {
+    "ts": "2026-10-24T01:49:30.370Z",
+    "from": "Hilde",
+    "kind": "npc",
+    "to": "Osric",
+    "text": "Osric. I see you have found your way to the market."
+   },
+   {
+    "ts": "2026-10-24T01:49:30.872Z",
+    "from": "Anselm",
+    "kind": "npc",
+    "to": "Agnes",
+    "text": "Justice is God's domain, Agnes. We must pray for His guidance in these trying times."
+   },
+   {
+    "ts": "2026-10-24T01:49:33.179Z",
+    "from": "Aldric",
+    "kind": "npc",
+    "to": "Hilde",
+    "text": "Hilde, good to see you. You keeping the granary safe?"
+   },
+   {
+    "ts": "2026-10-24T01:49:35.391Z",
+    "from": "Agnes",
+    "kind": "npc",
+    "to": "Anselm",
+    "text": "Not now, I have work."
+   },
+   {
+    "ts": "2026-10-24T01:49:36.092Z",
+    "from": "Hilde",
+    "kind": "npc",
+    "to": "Wat",
+    "text": "Wat. What brings you here?"
+   },
+   {
+    "ts": "2026-10-24T01:49:41.913Z",
+    "from": "Anselm",
+    "kind": "npc",
+    "to": "Agnes",
+    "text": "Aye."
+   },
+   {
+    "ts": "2026-10-24T01:49:43.116Z",
+    "from": "Osric",
+    "kind": "npc",
+    "to": "Hilde",
+    "text": "Hilde! Always a pleasure. Just admiring my wares. Perhaps you need some fine linen? Or some spices, very rare now."
+   },
+   {
+    "ts": "2026-10-24T01:49:47.635Z",
+    "from": "Hilde",
+    "kind": "npc",
+    "to": "Osric",
+    "text": "Aye."
+   },
+   {
+    "ts": "2026-10-24T01:49:48.435Z",
+    "from": "Godric",
+    "kind": "npc",
+    "to": "Aldric",
+    "text": "Aldric, you blighted rat! You dare strike me?"
+   },
+   {
+    "ts": "2026-10-24T01:49:48.538Z",
+    "from": "Aldric",
+    "kind": "npc",
+    "to": "Godric",
+    "text": "Godric! Edwin! Stop this at once! You're both bleeding!"
+   },
+   {
+    "ts": "2026-10-24T01:49:52.155Z",
+    "from": "Osric",
+    "kind": "npc",
+    "to": "Hilde",
+    "text": "Not now, I have work."
+   },
+   {
+    "ts": "2026-10-24T01:49:56.671Z",
+    "from": "Hilde",
+    "kind": "npc",
+    "to": "Osric",
+    "text": "We shall see."
+   },
+   {
+    "ts": "2026-10-24T01:50:06.642Z",
+    "from": "Edwin",
+    "kind": "human",
+    "to": "Elsbeth",
+    "text": "Elizabeth, what did you see?"
+   },
+   {
+    "ts": "2026-10-24T01:50:09.462Z",
+    "from": "Osric",
+    "kind": "npc",
+    "to": "Hilde",
+    "text": "Well met, Hilde! Still admiring my goods? I have some excellent woollens, just arrived before the gate was barred. A fine price for you, of course."
+   },
+   {
+    "ts": "2026-10-24T01:50:13.781Z",
+    "from": "Elsbeth",
+    "kind": "npc",
+    "to": "Edwin",
+    "text": "I saw what I saw, Edwin. Enough of it."
+   },
+   {
+    "ts": "2026-10-24T01:50:19.301Z",
+    "from": "Hilde",
+    "kind": "npc",
+    "to": "Osric",
+    "text": "Woollens? Osric, the granary is half empty. We need grain, not wool."
+   },
+   {
+    "ts": "2026-10-24T01:50:24.221Z",
+    "from": "Rowan",
+    "kind": "npc",
+    "to": "Edwin",
+    "text": "Edwin. You look like you lost a fight."
+   },
+   {
+    "ts": "2026-10-24T01:50:25.328Z",
+    "from": "Hilde",
+    "kind": "npc",
+    "to": "Osric",
+    "text": "Osric, the granary is half empty. We need grain, not wool."
+   },
+   {
+    "ts": "2026-10-24T01:50:26.434Z",
+    "from": "Godric",
+    "kind": "npc",
+    "to": null,
+    "text": "Bleeding? Of course we're bleeding, you fool! You think I'm made of iron?"
+   },
+   {
+    "ts": "2026-10-24T01:50:28.710Z",
+    "from": "Edwin",
+    "kind": "human",
+    "to": "Osric",
+    "text": "So did someone see anything?"
+   },
+   {
+    "ts": "2026-10-24T01:50:32.350Z",
+    "from": "Osric",
+    "kind": "npc",
+    "to": "Hilde",
+    "text": "Grain? Hilde, my dear woman, do you think I trade in sacks of wheat? I deal in finery, in things that bring comfort and beauty, not mere sustenance! My woollens are the finest you'll find, even now."
+   },
+   {
+    "ts": "2026-10-24T01:50:34.656Z",
+    "from": "Rowan",
+    "kind": "npc",
+    "to": "Elsbeth",
+    "text": "Elsbeth. You are well?"
+   },
+   {
+    "ts": "2026-10-24T01:50:41.478Z",
+    "from": "Osric",
+    "kind": "npc",
+    "to": null,
+    "text": "Did I see something? I sell things, I don't watch brawls. Perhaps you need a new bandage? I have some fine linen."
+   },
+   {
+    "ts": "2026-10-24T01:50:44.998Z",
+    "from": "Hilde",
+    "kind": "npc",
+    "to": "Osric",
+    "text": "Osric, comfort and beauty do not fill bellies. Brother Anselm preaches faith, but faith will not feed us when the granary is bare."
+   }
+  ]
+ }
+]

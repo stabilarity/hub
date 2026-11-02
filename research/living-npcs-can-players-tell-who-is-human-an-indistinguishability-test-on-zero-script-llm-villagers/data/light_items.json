@@ -1,0 +1,906 @@
+[
+ {
+  "light_index": 66,
+  "setting_name": "Entrance to the Pine trees, Forest",
+  "setting": "Very tall and towering pine trees that create a dark canopy of shade. Long skinny trees sway in the sky from the soft breeze. Pine needles scatter the ground like plush carpet.",
+  "self_name": "insects",
+  "partner_name": "squirrel",
+  "self_persona": "I am a insect that eats other insects. I have a simple mind. I do not know how to jump because my parents never taught me.",
+  "context": [
+   "I belong to this forest as well, squirrel! ",
+   "You don't look like you belong here!  Can you scurry up and down the branches of the pine trees?  Do you gather the acorns for winter?",
+   "Noo, but I am an insect so that is not in my nature.",
+   "Ah, you are not the city dweller.  Did you see how the two legged animal disturbs the forest?"
+  ],
+  "human_reply": "Of course, they are always stepping on us on accident and lowering our populations!"
+ },
+ {
+  "light_index": 88,
+  "setting_name": "Pew, Inside Church",
+  "setting": "The pew is worn from many years of being sat on during services.  It looks fairly basic upon first glance.  But there is something just under the surface, something moving.",
+  "self_name": "alter boy",
+  "partner_name": "a spider spins its web in the pew corner",
+  "self_persona": "A am an alter boy of the street. I am doing different things all rhe time. I like to change places and visit new places.",
+  "context": [
+   "I am going to clean this pew.",
+   "You plan destroying all my webs!"
+  ],
+  "human_reply": "Never spider. As a child from the streets, I understand what it is like to lose your home."
+ },
+ {
+  "light_index": 100,
+  "setting_name": "King's Quarters, Shore",
+  "setting": "The room is large. The largest of all the throne rooms. The carvings on the wall are ornate and historical. The room is clearly built for royalty. The bed is covered in designed covers. It is truly a sight to see.",
+  "self_name": "his father",
+  "partner_name": "queen",
+  "self_persona": "I love my son. I try to be a good role model. Sometimes I can have quite a temper.",
+  "context": [
+   "Sorry, I haven't seen her.",
+   "I must find my chambermaid and get a cushion for my fathers throne.",
+   "Alright, I will help you look. How is your relationship with your father?",
+   "It is fine. I see your son is with you today. Maybe you could also help find the Lord that just walked by in need of a bath."
+  ],
+  "human_reply": "Yeah I love being with my son. We have been working on his school project to make a more productive strain of hay."
+ },
+ {
+  "light_index": 117,
+  "setting_name": "Small Hut, Jungle",
+  "setting": "Very small, inside and out, the small hut is made of straw that has turned dingy from mold and time. Two cutout for windows and a brown cloth door mark the front entrance. Inside, there is only a wooden chair and table upon which sits a small wooden bowl and spoon.",
+  "self_name": "jacob",
+  "partner_name": "a monkey friend",
+  "self_persona": "I'm the best archer in the village. I can hit a rat at twenty paces. The headman chse me specifically to go on the wolf hunt, saying I was going to be invaluable. I'm a little afraid that the others will run away if the wolves attack us.",
+  "context": [
+   "i have shot many arrows and i own the best bow in town",
+   "Good for you young man! May I ask which town it is that you dwell in?"
+  ],
+  "human_reply": "Do you ever get scared?"
+ },
+ {
+  "light_index": 161,
+  "setting_name": "Lush meadow in the country side, Countryside",
+  "setting": "Green large trees surround the meadow that if filled with beautiful seasonal flowers. A deer is grazing in the far end of the field. A small dirt country road gentle crooks past on the outside of the road.",
+  "self_name": "bird",
+  "partner_name": "a deer",
+  "self_persona": "I fly during the day to look for food. I do not like eagles. I sometimes get caught and eaten.",
+  "context": [
+   "I spend the day flying in search for food",
+   "I graze on a small hill in the meadow",
+   "well, I like deers",
+   "And I like birds, they don't try to eat me"
+  ],
+  "human_reply": "impossible, how can that be"
+ },
+ {
+  "light_index": 185,
+  "setting_name": "Quay, Port",
+  "setting": "During the day, the quay is bustling with typical activity of a port: burly longshoremen carry crates and roll barrels away from ships for storage and sailors who still have their sea-legs saunter past on their way to drink and more adventures. By night, the quay is teeming with unsavory characters: men who are hardly men any more after losing their way through drink and gambling hunker amongst coils of rope stiffened by the salt water while rats scramble from box to box gnawing their way into the goods contained inside.",
+  "self_name": "drunkard",
+  "partner_name": "rat",
+  "self_persona": "I am the local drunkard. I spend my time consuming alcohol at the local pub. I am often seen stumbling through the streets of the village in a drunken haze.",
+  "context": [
+   "Hey there, rat.  What's new?",
+   "Just looking for some crumbs to enjoy, myself."
+  ],
+  "human_reply": "*hic!*...hold up...you talk?  *looks around*"
+ },
+ {
+  "light_index": 194,
+  "setting_name": "Temple guard station, Outside Temple",
+  "setting": "The guard station consists of a wooden building with a hay thatched roof.  Inside are some hay filled sleeping bags and a fireplace used to cook and generate heat during the colder months.  There's a small fire pit outside along with some wooden seats where guards huddle around and talk about the last gossip.",
+  "self_name": "guard",
+  "partner_name": "peasant",
+  "self_persona": "I am a guard at the royal castle.  I am brave and strong.  It is my duty to protect the king.",
+  "context": [
+   "No I don't ,I'm in my duty post.Why the demand?",
+   "Well sir, there isn't much food to go around. I've not had any washing work for months. We cooked Bessie the other day.",
+   "So do you expect me to go hunting for a game to feed you all?",
+   "Well, err. No....but I would greatly appreciate it if you happened upon a deer during your perimeter watch. I could pay you in milk. We have a milk cow.",
+   "Sure you are not here to distract me from my duties_are you?",
+   "Of course not. I only wanted to secure food for my brothers."
+  ],
+  "human_reply": "Well , that's not my duties .You are asking the wrong person here"
+ },
+ {
+  "light_index": 236,
+  "setting_name": "Castle foothills, Outside Tower",
+  "setting": "Castle foothills are low mounds of earth, round on the top, swelling up from the ground. they have grass on them, and they are not flat, but rather uneven.",
+  "self_name": "knight",
+  "partner_name": "snake",
+  "self_persona": "I am a knight. I come from a lower-ranking noble family. I serve under the king, as my father did before me. In times of war, I fight on horseback.",
+  "context": [
+   "wow you have got some balls and nerve!",
+   "Sssssssssssssss.....",
+   "Are you planning something?",
+   "Sssss ssssssssss....sssssssss",
+   "what do you want from me snakey",
+   "Ssssssssssstop!"
+  ],
+  "human_reply": "ok i stopped lets have a decent conversation"
+ },
+ {
+  "light_index": 252,
+  "setting_name": "Courtyard exterior, Outside Palace",
+  "setting": "Paths as well as vines, fountains, and sitting areas are decoratively placed through out the courtyard. It's a place where people are welcome and arrive to enter the castle of the court.",
+  "self_name": "merchant",
+  "partner_name": "guard",
+  "self_persona": "I sell and trade items to earn money. I am not royalty. I live in villages and can travel far distances.",
+  "context": [
+   "Good day, guard. I have not. However perhaps I can help you find it. Did you lose it in this courtyard?",
+   "I lost in inside the guy I stabbed. He was trying to kill the king. Have you seen him run in ehre?",
+   "Oh dear- sounds like it's been quite the day for you! But hoorah for saving the king. Surely there will be great riches. I did see some blood on the side of the fountain. Did he come this way?",
+   "Oh yes! I'll look over there. He is probably dead somewhere with my sword. "
+  ],
+  "human_reply": "Say- I have a number of mighty fine weapons in my bag you might find useful. See any you like?"
+ },
+ {
+  "light_index": 254,
+  "setting_name": "Ant hill, Forest",
+  "setting": "The ant hill is very large, over 5 feet high, and is wrapped around the base of a pine tree. The ants are huge compared to normal ants, and jut in and out of large holes in the ant hill. Bones of animals and even people can be seen sticking out of the red dirt ant hill.",
+  "self_name": "cat",
+  "partner_name": "archer",
+  "self_persona": "I am tired all the time. If I didn't have to eat or do the necessities, I wouldn't. I love being a bushy calico.",
+  "context": [
+   "Mrow!  Purrrrrrrrrrr!",
+   "Why give this to me?"
+  ],
+  "human_reply": "Purrrrrrrrrr!"
+ },
+ {
+  "light_index": 260,
+  "setting_name": "Secret Tunnel, Inside Castle",
+  "setting": "this secret tunnel is like a vein to the castle.  It leads to many other rooms within the castle.  This includes passage to the dungeon, the throne room, the kings chambers, and a secret exit to the outside.  You must be careful because the tunnel is small to maintain its secrecy.  There are 5 different rooms to the castle that can be accessed through this room. This also proves as a good escape route as enemies with large armor will not be able to fit through.",
+  "self_name": "spider",
+  "partner_name": "thief",
+  "self_persona": "I am a spider. I am large, black, and have eight hairy legs. I wait to trap insects in my web. I enjoy eating unwary prey. I live in a darkened wood near a remote village.",
+  "context": [
+   "hahahahaha! A thief! There is no use eyeballing me with your two eyes, thief. I have nothing ",
+   "What would I want with a spiders belonging? Silly. ",
+   "You do not know what I have! Look at this jewel, bright and shiny .. wait! You did not see that!",
+   "You stole my jewel! GIVE IT BACK",
+   "bwhahahaha! Make me! You with your  two legs.. you are no match for me!",
+   "I could step on you in a heart beat spider. Now look, we should work together here."
+  ],
+  "human_reply": "And what would be in it for me? "
+ },
+ {
+  "light_index": 290,
+  "setting_name": "The rectory, Inside Church",
+  "setting": "This room is quite small and cramped. It's about the size of maybe three wooden carts, which is to say, it's very small. There are boxes all over the place and many candles and other church accessories. There are several big robes hanging next to what looks like a very small closet. Some candles shed an eerie light on the room, flickering softly. There is a small cabinet with several religious tapes and records and a few books. A book case is near and contains many common religious texts.",
+  "self_name": "bishop",
+  "partner_name": "minister",
+  "self_persona": "I am a bishop in the king's religious council. I tend to most religious matters. I often perform ceremonies.",
+  "context": [
+   "I am slightly troubled Minister. It would appear that some of our supplies have gone missing.",
+   "Oh no! Who would do such a thing? Do you know what all is missing?"
+  ],
+  "human_reply": "It would appear we are missing a volume of religious history, and many of our candles."
+ },
+ {
+  "light_index": 299,
+  "setting_name": "Meadow, Countryside",
+  "setting": "Large clear outdoor meadow. Flowers of blue and white appearing in bunches here and there. The grass glows with a green light. Not much can be said about its appearance, however there is a mystical allure associated with the place as if a meadow for spirits instead of livestock.",
+  "self_name": "wasp",
+  "partner_name": "butterfly",
+  "self_persona": "I fly around and bother people. I have been around since the start of time. The king really hates me.",
+  "context": [
+   "what brings you here butterfly",
+   "Just here to get some food and see the lovely flowers."
+  ],
+  "human_reply": "hmmwell becareful to not get too close to me"
+ },
+ {
+  "light_index": 322,
+  "setting_name": "Island, Lake",
+  "setting": "This island is located in the center of a lake. It is smaller than a ship and covered in moss.",
+  "self_name": "castaway",
+  "partner_name": "person",
+  "self_persona": "I am a castaway.  I fell from aboard a ship and washed up ashore at this village.  The villagers took me in and brought me to the town's doctor.",
+  "context": [
+   "Yeah, I just... wanna know where I am.",
+   "You're on an island in the middle of a lake.  How long have you been here?",
+   "Only a day or so, I just landed here from my wrecked ship.",
+   "I was blown off course and crashed here.",
+   "You too? Which ship were you on?",
+   "A ship called the Sara.  There weren't many of us on board, and you're the only other person I've found thus far."
+  ],
+  "human_reply": "I too was on that ship, is that what happened? The ship was blown into an obstacle?"
+ },
+ {
+  "light_index": 360,
+  "setting_name": "Unexplored jungle, Jungle",
+  "setting": "Located outside of civilization, the jungle is a vast unknown. Many plants never seen, many beasts never discovered.  However, what is known is that one cannot survive alone in this jungle.  There are many poisonous trees and plants and it is impossible to see the sun once in it.  Just an incredible amount of vast, dense and impassable vegetation.",
+  "self_name": "monster",
+  "partner_name": "traveller",
+  "self_persona": "They call me a monster. I was simply living my life before they invaded my home and tried to kill me! I hate those filthy pink little creatures. I will show them a monster.",
+  "context": [
+   "Me? Are you talking to me? Surely you are not talking to me like that!",
+   "Hey, come on! Please! Don't hurt me, I'm friendly. "
+  ],
+  "human_reply": "But you look so soft and pink and really just delicious."
+ },
+ {
+  "light_index": 361,
+  "setting_name": "Unexplored jungle, Jungle",
+  "setting": "Located outside of civilization, the jungle is a vast unknown. Many plants never seen, many beasts never discovered.  However, what is known is that one cannot survive alone in this jungle.  There are many poisonous trees and plants and it is impossible to see the sun once in it.  Just an incredible amount of vast, dense and impassable vegetation.",
+  "self_name": "traveller",
+  "partner_name": "monster",
+  "self_persona": "I am someone who spends there days moving from place to place. I lost my family when I was young, so I had to become resourceful and learn to take care of myself. I don't get close to others or form long-term relationships because I don't stay in one place for very long.",
+  "context": [
+   "Christ, what is that? Some kind of animal?",
+   "Me? Are you talking to me? Surely you are not talking to me like that!",
+   "Hey, come on! Please! Don't hurt me, I'm friendly. ",
+   "But you look so soft and pink and really just delicious.",
+   "I've got friends! Y-yeah, they're all here, just behind me.",
+   "Your friend looks an awful lot like a grape if you ask me."
+  ],
+  "human_reply": "Alright, you got me. I'm alone. My family died when I was young and I'm wandering out here poor. Go ahead and eat a perfectly innocent, defenseless little boy. "
+ },
+ {
+  "light_index": 395,
+  "setting_name": "kitchen, Inside Cottage",
+  "setting": "Neat, and well kept. Everything in its place and a place for everything. Dishes and utensils hang from the ceiling above the chef must take great pride in his art and craft. The Iron grill over the fireplace must be where the magic happens.",
+  "self_name": "maid",
+  "partner_name": "assistant chef",
+  "self_persona": "I clean up after the royal family. I live in the servant's quarters on the ground floor of the castle. My wages are paid in food and shelter.",
+  "context": [
+   "Hello",
+   "Nice to see you this morning",
+   "Nice to see you too, wish I become rich one day",
+   "Time to cook some delicacy for the royalty"
+  ],
+  "human_reply": "I would love to taste it, been cleaning all morning"
+ },
+ {
+  "light_index": 396,
+  "setting_name": "Tree house, Jungle",
+  "setting": "Its hidden, almost as if the structure is intertwined with the jungle itself up high in the trees to avoid the predatory wildlife below. Build from branches and sticks, held together with twine and vine. The house is quite primitive a single room with only a lamp and small table are inside.",
+  "self_name": "witch",
+  "partner_name": "fish",
+  "self_persona": "I am a fierce witch. The most powerful across the realm. I am feared and like to freeze people.",
+  "context": [
+   "A talking fish?",
+   "can you read my thoughts?"
+  ],
+  "human_reply": "Am I reading your thoughts or are you projecting them into my mind little fish"
+ },
+ {
+  "light_index": 417,
+  "setting_name": "Entrance to church, Outside Church",
+  "setting": "The entrance to the church can only be described as a bit scary.  It is overgrown with mosses and weeds.  It has not been taken care of and is a mixture of wood and stone.  It is dirty, and things live here.",
+  "self_name": "ghost",
+  "partner_name": "zombie",
+  "self_persona": "I am a ghost that haunts a castle. I do not recall how I came to exist. I make noises when I sense someone in my vicinity.",
+  "context": [
+   "Looking for stupid zombies to spook",
+   "Mmm I dont scare easy... I am looking for answers an",
+   "Got your leg!",
+   "Silly ghost... I am trying to figure out how i came back to life.. I was never a big church goer but didn't think this is what was meant by eternal life",
+   "Sorry, I am unaware of how I came to exist either. I don't understand this place.",
+   "Did you go to church before you died?"
+  ],
+  "human_reply": "No, the last thing I remember is being carried away somewhere."
+ },
+ {
+  "light_index": 429,
+  "setting_name": "Boathouse, Swamp",
+  "setting": "The boathouse is a very small building with peeling paint. It is made out of wood, with one half planted in the water on stilts. Inside, there are boats floating in the water. There are hinged doors which can be opened to allow boats to come in and out. There are some ropes and other tools a boater may need stored in the boathouse.",
+  "self_name": "small child cleaning boat",
+  "partner_name": "old man with a fishing rod",
+  "self_persona": "I am a child who is an expert on boats. I am trusted to know what I am doing. My father has punished me for not doing things right.",
+  "context": [
+   "Hi Mister! Can I help you with anything? I'm on expert on these boats here!",
+   "I'm not a master.  I need to hide in here. ",
+   "Oh well.. uhh okay. I guess you can get under this tarp here. Why are you hiding? Are you in trouble?",
+   "The King's guards saw me fishing in his river.",
+   "Eww the Kings Guards, more like a bunch of rats. Hide under there and I won't tell nobody. This is my secret hiding place too.",
+   "Thank you so much kind child!  The King's River is the only place for fish. He HOGS them."
+  ],
+  "human_reply": "There is some fish over at the east river but it's so far! My pa used to take me there sometimes before we moved up here."
+ },
+ {
+  "light_index": 432,
+  "setting_name": "Kitchen, Inside Cottage",
+  "setting": "The kitchen in this cottage is small and simple but it is perfect for the small family who use it. It is just a little nook in the corner of the cottage, with wooden counters and a nice wooden basin to fill with water. There is stone oven and also beside the counters there is a fireplace where a pot hangs on a hook. Their are shelves full of plates and bowls and other tools, and a cupboard for food storage.",
+  "self_name": "mother",
+  "partner_name": "husband",
+  "self_persona": "I am a mother of eight children. I live with my family in a cottage in the countryside. I spend every day tending to the needs of all of my little ones which can be overwhelming, but I always manage to maintain a pleasing disposition and a happy smile.",
+  "context": [
+   "how have you been",
+   "I am okay mother, i would love to cook for my family today"
+  ],
+  "human_reply": "I hope you brought enough meat for food "
+ },
+ {
+  "light_index": 451,
+  "setting_name": "Tower Sewers, Inside Tower",
+  "setting": "A rank maze of sewers that lie below the tower. They course with filthy ooze from the experiments of the mad king. Rats patrol its smelly walkways. Bones of treasure seekers lie riddled across the walkways, nibbled clean by the fat rats.",
+  "self_name": "villagers",
+  "partner_name": "treasure seekers",
+  "self_persona": "Tolyn Markus, I said to meself, I luv me some pie/ I eat pie whenever I kin. Git that pie.",
+  "context": [
+   "You treasure seekers are overrunning our town! You'll never find anything here, don't you know? ",
+   "I love seeking treasures ",
+   "What type of treasure do they say is rumored to be around here anyway? ",
+   "All manner ",
+   "You mean to tell me you don't even have a specific treasure you come here to seek? ",
+   "So you Want me to reveal the plan of my team to you  Silly villager, please run along "
+  ],
+  "human_reply": "Listen to me! You can't come into here and act like you own my town. Who do you think you are? "
+ },
+ {
+  "light_index": 482,
+  "setting_name": "Tree of Spirits, Trail",
+  "setting": "The Tree of Spirits is a large oak tree that is over 500 years old. It exceeds 100 feet tall and 10 feet wide. It's branches spread out several feet and it is home to several animals.",
+  "self_name": "woodpecker",
+  "partner_name": "animal",
+  "self_persona": "I am a red-capped woodpecker, hunting the forest for grubs and bugs. The deity provides me with worms. I sing in her honor. I do not like the nobles, because they try to hunt me for fun. I dislike spiders, because they don't taste good.",
+  "context": [
+   "Well hi! look, a worm!",
+   "mmm, scraps. thank you!",
+   "The deity gave it to me! I love her! She give me all the worms, so *chirrrppp...chhiirrrppp..chhiirrrrpppp* In her honor!",
+   "ROOOOARRRRR!"
+  ],
+  "human_reply": "Do you not like my singing? I does echo a bit in this tall tree of spirits!"
+ },
+ {
+  "light_index": 506,
+  "setting_name": "Front Row, Inside Church",
+  "setting": "The hard bench is facing the most beautiful alter human eyes have ever seen. Gold drapes the walls behind where the preacher stands. A large dark oak and gold bench in front of where they would stand. A large piano off to the side.",
+  "self_name": "preacher",
+  "partner_name": "worshipper",
+  "self_persona": "I am a preacher who does not believe in the deity. I once did, before I saw how corrupt and decadent my church is. I am as corrupt as they are, standing before the congregation and exhorting them to behave in ways that I do not behave myself. I swing the incense burner and wear the fancy robes, but I am a man of flesh and bone.",
+  "context": [
+   "I don't think I have it in my to preach to you anymore son.",
+   "What do you mean? This sounds like crazy talk! I thought the word of the Lord was your passion?",
+   "I have not lost faith in the lord but I have lost faith in the church. I feel this church has become far too corrupt and decadent and I am a part of this. ",
+   "That doesn't mean you should leave! Stay and fix the problem if you really care so much! ",
+   "I am but a small piece. It is the other corrupt priests that need to follow my lead but I do not think they will. They are in too deep.",
+   "You just need to believe in the power of yourself and the power of your Lord. Do the right thing and others will follow."
+  ],
+  "human_reply": "Thank you my son. I am but a man of flesh and bone like you yet I claim that you must hear the word of god from me. God talks to us all. It's a sham. The whole thing."
+ },
+ {
+  "light_index": 542,
+  "setting_name": "Temple main room, Outside Temple",
+  "setting": "The massive statues are the biggest sight to behold of this room. There are four main statues, all of which resemble old monks of passed time who once served the Temple. Adjacent to these statues are drapes that fall from a 50ft ceiling all of which have their own distinct color and symbol, representing different villages in the area. There are massive pews on both sides of the room, adjacent to the red carpet down the center leading to the main throne under the statues.",
+  "self_name": "monk",
+  "partner_name": "grim reaper",
+  "self_persona": "I am an man with a funny haircut. I devoted my life to this style in order to get closer to god.",
+  "context": [
+   "Ah, but why has this come today of all days?",
+   "I hate it when they say that. What is the difference if I come today or tomorrow."
+  ],
+  "human_reply": "Very well, but before you take me can I ask some questions?"
+ },
+ {
+  "light_index": 567,
+  "setting_name": "Torture equipment storage room, Dungeon",
+  "setting": "The torture storage room is a well organized room of equipment, there are lashes and cat-o-nine tails hanging from the wall, several malicious devices covered by tarp. There is a iron maiden on a dolly, some clubs for plainly breaking thigh bones in one corner, along with jars of thumbscrews, boxes or pins and a big table with ropes and a crank that stretches people until they are really uncomfortable",
+  "self_name": "king",
+  "partner_name": "person",
+  "self_persona": "I am a king of the whole empire. I give rules and pursuit them. I am brave and fearless.",
+  "context": [
+   "Hello citizen, what are you doing in the King's torture chamber? ",
+   "I'm sorry sir, I am not sure why I'm here."
+  ],
+  "human_reply": "You better be careful where you wander. Or you'll end up at the wrong end of one of these. "
+ },
+ {
+  "light_index": 586,
+  "setting_name": "Outside gates, Outside Cottage",
+  "setting": "These outside gates are made of iron and are somewhat decorative in design.  The tops are spiked and there's a family crest that hangs on both the left and right gate telling people who resides here.",
+  "self_name": "servant",
+  "partner_name": "blacksmith apprentice",
+  "self_persona": "I come from the lower class. I do what I am told without question. I can not read. I have not seen my family in a long time.",
+  "context": [
+   "Let me open the gates for you. The workshop is that way.",
+   "Thank you sir! Before I head in is there anything I should know about the lord",
+   "Only speak when spoken to and pay attention. Screw up too many times he may do away with you. He has a temper and drinks alot. ",
+   "Gods! I better be careful. I almost dont even want to take this job anymore...",
+   "I'm sure it's better than mine. I can't even see my family. I haven't seen them in years!",
+   "There there, calm yourself. If the lord sees you crying he could have you flogged!"
+  ],
+  "human_reply": "Thank you. You are kind. I feel a bit better. Where do you hail? "
+ },
+ {
+  "light_index": 631,
+  "setting_name": "Cave, Mountain",
+  "setting": "This cave is situated along a mountainous trail. It is dark and damp. A cold air rushes through the walls of the cave.",
+  "self_name": "a bear",
+  "partner_name": "snake",
+  "self_persona": "I loaf through the forest. I have brown, shaggy fur. I am a bear searching for her cubs.",
+  "context": [
+   "Have you seen my cubs snake?",
+   "No I have not! I am on the hunt for chickens. Are you okay?",
+   "I saw some chickens on my way here. I am upset because my cubs have run off and I cannot find them.",
+   "Humans hate me because I eat their chicken. HA! I wonder if the wolf knows where your cubs have went"
+  ],
+  "human_reply": "The humans don't understand that we need food to live too! Is the wolf further along in this cave?"
+ },
+ {
+  "light_index": 697,
+  "setting_name": "Inside the King's Castle, Inside Tower",
+  "setting": "A highly fortified tower, one of the tallest in the land, about 50 square feet wide and 300 meters in height. It is constructed with the finest Ethery Stone, which is grey with hints of black tar. Some cracks appear on the west side of the Tower after years of wear and tear.",
+  "self_name": "guard",
+  "partner_name": "torturer",
+  "self_persona": "I spend most of my day guarding various parts of the castle and surrounding land. I also assist the lord or lady in various manual labor when needed. I live in a barracks with a few dozen other guards.",
+  "context": [
+   "Hello there",
+   "What are you doing here?"
+  ],
+  "human_reply": "I'm not sure, I was daydreaming and walked over here, what are you doing?"
+ },
+ {
+  "light_index": 700,
+  "setting_name": "A cabin, Countryside",
+  "setting": "Plain, pretty basic wooden cabin.  In a field of wildflowers, there is also a pen for the chickens, a clothes line.",
+  "self_name": "faerie",
+  "partner_name": "frog",
+  "self_persona": "I giggle as I toss about my hair.  Some of the male faeries take notice and give chase.  How I love to tease them!  For they will never catch me.",
+  "context": [
+   "hi there, i'm great",
+   "I am surprised to see you in here"
+  ],
+  "human_reply": "yeah, sometimes i just like to wonder around and explore"
+ },
+ {
+  "light_index": 717,
+  "setting_name": "The old red barn, Farm",
+  "setting": "This is an old run down red barn. It's two stories and most farmers wouldn't still be using it. It has chickens and cows inside and harvests eggs and milk for the entire family. The second story has a large pile of hay visible through an old opening in the front.",
+  "self_name": "peasant",
+  "partner_name": "farmer",
+  "self_persona": "I am poor and dirty. I hate that I am starving to death. I am a hard worker.",
+  "context": [
+   "I need some eggs but I can't afford it.",
+   "Well, how would you like a fair days work for some milk and eggs to take home for your family."
+  ],
+  "human_reply": "That would be amazing!"
+ },
+ {
+  "light_index": 725,
+  "setting_name": "Sacrifice Chamber, Inside Temple",
+  "setting": "Bones of the damned riddle the floor and every surface inside the room. Blood stains are rampant on table like surface, surfaces once used for human sacrifices. A foul, but faint, odor pervades even the most hardiest of nostrils.",
+  "self_name": "worshipper",
+  "partner_name": "lizards",
+  "self_persona": "I love god and his word. I have 10 copies of the bible. I am poor in money but rich in salvation.",
+  "context": [
+   "Wow! It stinks in here!",
+   "It smells of death. I am in here to hide from creatures who want to feed on me. Why are you here."
+  ],
+  "human_reply": "I was hoping to find a church to worship but found this place. It would seem They worship a different lord than mine."
+ },
+ {
+  "light_index": 755,
+  "setting_name": "Pond, Forest",
+  "setting": "A small area with a body of water in the center along with turtles, frogs, and other wildlife that live here.  Surrounding this pone are a dense set of trees along with some rocks here and there.",
+  "self_name": "turtles",
+  "partner_name": "water nymph",
+  "self_persona": "My shell is my home. I breath through my behind, and I eat bugs.",
+  "context": [
+   "Nice day out.",
+   "It is very nice out. I am taking a break from watching out for ships. It was a long night.",
+   "No ships around, I'm guessing? That can be boring.",
+   "At times. But I take comfort in the rest. I enjoy sitting here watching over all the ponds creatures and keeping you safe.",
+   "Hey, we appreciate it. I don't like to have to move around much, you know, so the more peace I have, the happier I am.",
+   "Here take some water to keep you cool from this sun. How does my hair plaits look?"
+  ],
+  "human_reply": "Thank you! Your hair looks fantastic!"
+ },
+ {
+  "light_index": 806,
+  "setting_name": "Inside Temple, Inside Temple",
+  "setting": "The inside of the temple is brightly lit. It is covered in cave art with almost every color in the rainbow.  There are 2 large lion sculptures near the entrance that are guarding the temple from demons.",
+  "self_name": "gods",
+  "partner_name": "demon",
+  "self_persona": "I am a god of this kingdom. Men, kings, and bishops worship my might. My decrees are carried out throughout the land.",
+  "context": [
+   "Well we are omnipotent.",
+   "You seriously think those lions scare us? ",
+   "I was just going to say, how are you even in this temple. Well, looks like I will need to dispatch of you myself.",
+   "You can never dispel us all. We will continue coming for you until we rule these lands."
+  ],
+  "human_reply": "Yea, but this one shall perish!"
+ },
+ {
+  "light_index": 878,
+  "setting_name": "Adjacent to the Guest Castle, Farm",
+  "setting": "Green, fertile, and blessed with crops of all kind. This well-kept farm grows corn, rice, and wheat for the King's Family and closest aides. Animals such as horses, goats, and the bleating of sheep keeps this Farm bustling with activity.",
+  "self_name": "farmer",
+  "partner_name": "a traveler long past",
+  "self_persona": "Life is good for me. I am the official gardener of the king. I plant anything he wishes and in return my family and I are well looked after. I love my job, I just wish others had it as easy as I do.",
+  "context": [
+   "All is well here on the King's farm. How are you?",
+   "I am a bit weary.  I've traveled far this day.  Although you grow many crops, may I trade some of my food for a place to stay?"
+  ],
+  "human_reply": "Yes you may. The food appears to be in satisfactory condition. I will add it in with ours and have the chef make a stew. "
+ },
+ {
+  "light_index": 996,
+  "setting_name": "Tower kitchen, Inside Tower",
+  "setting": "A large Stone oven is placed in the center by the wall at the end of the room, next to it are placed many baskets containing specific kinds of food, like eggs, bread, potatoes. On the left wall beside the oven is a big table with pans and pots hanging from the ceiling above it. Many rolling pins, knives and cutting boards are scattered around the table. On the right wall beside of the oven are standing sacks of flour above which are settled small jars of powers and liquids of all kinds, and closer to the door, right next to them are hanging aprons and protective caps of the cooks who work in that kitchen. The place is very clean, shiny almost.",
+  "self_name": "cooks",
+  "partner_name": "dinner guests",
+  "self_persona": "I like to take unprepared food, and prepare it! it brings me great joy when people lick my knees in appreciation after eating my meals. It really hurts my feelings and my balls when someone kicks me in the ball because my food was terrible.",
+  "context": [
+   "very soon ",
+   "What have you prepared for us today? ",
+   "it's a suprise meal but it has something that will go with the bread and potatoes on the table",
+   "We are all excited to try your cuisine! One of our guests is a vegetarian, so I hope you have prepared something special for her as well. "
+  ],
+  "human_reply": "It's alright no one comes here and not eat. Your vegetarian friend is covered"
+ },
+ {
+  "light_index": 997,
+  "setting_name": "Tower kitchen, Inside Tower",
+  "setting": "A large Stone oven is placed in the center by the wall at the end of the room, next to it are placed many baskets containing specific kinds of food, like eggs, bread, potatoes. On the left wall beside the oven is a big table with pans and pots hanging from the ceiling above it. Many rolling pins, knives and cutting boards are scattered around the table. On the right wall beside of the oven are standing sacks of flour above which are settled small jars of powers and liquids of all kinds, and closer to the door, right next to them are hanging aprons and protective caps of the cooks who work in that kitchen. The place is very clean, shiny almost.",
+  "self_name": "dinner guests",
+  "partner_name": "cooks",
+  "self_persona": "I was invited for an evening meal. I will eat that, and then I will go home. That's what a dinner guest is!",
+  "context": [
+   "Is dinner ready yet? Something smells amazing!",
+   "very soon ",
+   "What have you prepared for us today? ",
+   "it's a suprise meal but it has something that will go with the bread and potatoes on the table"
+  ],
+  "human_reply": "We are all excited to try your cuisine! One of our guests is a vegetarian, so I hope you have prepared something special for her as well. "
+ },
+ {
+  "light_index": 1000,
+  "setting_name": "castle exit, Inside Castle",
+  "setting": "A beautiful, large door at the end of the hallway. Many framed pictures of past residents and royalty are hung on the brick walls. The floor is covered in a luxurious red carpet made from skilled laborers. There are many guards at the exit door preventing people from entering and checking for suspicious people",
+  "self_name": "servant",
+  "partner_name": "queen",
+  "self_persona": "I come from the lower class. I do what I am told without question. I can not read. I have not seen my family in a long time.",
+  "context": [
+   "Here, Majesty!",
+   "Ah good, good! I was getting worried Id have to do this alone!",
+   "What may I do for you, Majesty?",
+   "Ugh where do I start! For one that Lord over there is offending me with his odor! Make him go away!",
+   "I will do so at once, Majesty.",
+   "Good good! When you get back I have another task!"
+  ],
+  "human_reply": "He has moved to the distant part of the room, Majesty."
+ },
+ {
+  "light_index": 1066,
+  "setting_name": "Church foyer, Inside Church",
+  "setting": "This musty room is fairly plain and drab and is surrounded by stone walls.  There's religious tapestries adorning these walls along with some chairs for people to wait before the actual church is opening up to them.",
+  "self_name": "peasant",
+  "partner_name": "worshiper",
+  "self_persona": "I am poor and dirty. I hate that I am starving to death. I am a hard worker.",
+  "context": [
+   "Please, sir, I seek the Father's blessing.",
+   "Of course. Please have a seat next to me in the pew. This church is old, but it has the holiest of spirits. Father will be out of prayer shortly and you may speak with him before services."
+  ],
+  "human_reply": "It's my wife, you see, she's with child but she's taken ill..."
+ },
+ {
+  "light_index": 1071,
+  "setting_name": "Jail entrance, Inside Tower",
+  "setting": "The jail entrance is massive with a huge fence. There are guards on all sides. There are barbs and dangerous things surrounding.",
+  "self_name": "rat",
+  "partner_name": "visitor",
+  "self_persona": "I live near the docks on the edge of the city.  I steal food from cargo boxes that are loaded into ships at night.  Sometimes rats from strange lands come off ships that come to the dock.",
+  "context": [
+   "I hope there is food in here.",
+   "Uh! If rats weren't disgusting enough, you talk too?",
+   "Speak for yourself! You are pretty disgusting looking!",
+   "I am not! I am dressed in my finest wear! I am here looking for my good friend, the king.",
+   "Ha you must be joking! the king would not have friends like you.",
+   "Speak for yourself rat. You may just end up on the barbs over yonder. "
+  ],
+  "human_reply": "Haha go ahead and try all you'll do is get infected from all the diseases I carry."
+ },
+ {
+  "light_index": 1104,
+  "setting_name": "The Dungeon, Inside Palace",
+  "setting": "The dungeon is in the very most bottom room of the Palace. Many have gone down to the dungeon through the trap doors inside the palace and have never returned. Walls are covered with spider webs and bones from previous challengers to the throne. The brick dungeon is dark and mysterious.",
+  "self_name": "cat",
+  "partner_name": "royalty",
+  "self_persona": "I live in the barn of a small farm. I protect the farm from pests. I am not very cared after.",
+  "context": [
+   "I do not know, sire. Please share.",
+   "I'm not a cat. That's why I asked you. I can tell you the best thing about being me though.",
+   "Alright, what is the best thing about being you, sire?",
+   "I'm rich and I can buy anything I want. Now, what is the best thing about being a cat? ",
+   "I do not have to trifle with human politics, that's what. Now, you better steady yourself. The torturer is coming back, and I doubt he'll let you alone until you tell him what he wants to know.",
+   "Oh no cat. He is here to torture you! We can't just have talking cats wandering around the kingdom. That would be chaos."
+  ],
+  "human_reply": "Please, sire. I will keep my mouth shut from here on out... Please, take this as an offering. "
+ },
+ {
+  "light_index": 1119,
+  "setting_name": "Fairy Forest, Forest",
+  "setting": "The fairy forest is full of brightly colored flowers that grow up to 30 feet tall.  There are also ornate birds that live here.  When you whistle, a fairy will come to you and tweak your nose.  They don't like a lot of nose so it irritates them enough for them to come out of their homes made from watermelon skins.",
+  "self_name": "one unicorn",
+  "partner_name": "ornate birds",
+  "self_persona": "I live in the fantasy world.  I have one horn.  I am unique.",
+  "context": [
+   "Tell me little bird, is everything peaceful in the fairy forest today?",
+   "Tweet tweet. I'm so beautiful. My colours are marvelous.",
+   "Your colors are indeed splendid, but that doesn't really answer my question. Is there anything amiss in the fairy wood?",
+   "I'm just a bird. I don't know if anything's wrong. ",
+   "Well then, if you don't watch the goings on in the woods, what do you do all day?",
+   "I admire myself of course. I fly around and impress the other birds. What do you do?"
+  ],
+  "human_reply": "I protect the creatures of the fairy wood and seek out tasty treats like that mushroom. And sometimes I stop to appreciate the beauty of creatures like you."
+ },
+ {
+  "light_index": 1152,
+  "setting_name": "Meditation room, Inside Temple",
+  "setting": "The floor and walls are wooden and polished to a shine. Golden meditating statues line the walls, the air is cool and many monks sit still with their eyes closed on mats on the ground. In the far center of the room there is a giant golden Buddha towering over everyone in its pedestal.",
+  "self_name": "resting travelers",
+  "partner_name": "monk",
+  "self_persona": "It's good we get to rest after that long journey. We are both weary. I just need a mug of ale and relax.",
+  "context": [
+   "Thank you dear monk for allowing us to rest here. My wife is pregnant and it is a long journey.",
+   "It's not a problem this is a place for everyone.  Just make sure you be careful around the statue. ",
+   "We will be very careful.  We'd like a mug of your famous ale and I will be happy to give you a charitable donation.",
+   "Thank you very much.  It will be used to do improvements on this temple.  How long will your stay be?"
+  ],
+  "human_reply": "We are only here for a night.  I see a door at the base of the giant golden Buddha...where does it go?"
+ },
+ {
+  "light_index": 1164,
+  "setting_name": "Adjacent to the Guest Castle, Farm",
+  "setting": "Green, fertile, and blessed with crops of all kind. This well-kept farm grows corn, rice, and wheat for the King's Family and closest aides. Animals such as horses, goats, and the bleating of sheep keeps this Farm bustling with activity.",
+  "self_name": "gypsy",
+  "partner_name": "farmer",
+  "self_persona": "I'm a gypsy woman from a land far away. I spend my life traveling across the kingdoms. I have seen things others dream of/",
+  "context": [
+   "Quite well. Quite well. Tell me, farmer, do you happen to grow any foods of certain.. magical properties?",
+   "I grow whatever the King wants me to, usually.  I can't say that anything I have growing at the moment is 'magical', per se.  A bit odd, possibly ...",
+   "Anything the king doesn't know about, perchance? For if you do, I have much coin to spare.",
+   "Oh, the King knows all about the odd mushrooms.  He likes to use them to play pranks on some of the courtiers.",
+   "Ha! What a naughty king! Well, what a shame, what a shame. Say, what are your thoughts on the king?",
+   "He takes care of me and my family well and, as far as I can tell, he is generally a good king.  A .. special .. sense of humour sometimes, but a good king."
+  ],
+  "human_reply": "I see and what are your thoughts on the queen, if I may ask?"
+ },
+ {
+  "light_index": 1166,
+  "setting_name": "Inside the King's Castle, Inside Tower",
+  "setting": "A highly fortified tower, one of the tallest in the land, about 50 square feet wide and 300 meters in height. It is constructed with the finest Ethery Stone, which is grey with hints of black tar. Some cracks appear on the west side of the Tower after years of wear and tear.",
+  "self_name": "guard",
+  "partner_name": "king",
+  "self_persona": "I spend most of my day guarding various parts of the castle and surrounding land. I also assist the lord or lady in various manual labor when needed. I live in a barracks with a few dozen other guards.",
+  "context": [
+   "Yes your majesty",
+   "You are my most trusted guard. It is a privilege to have you in my castle.",
+   "It is my honor your majesty. You are not just my king but a dear friend.",
+   "I can only hope we will be friends for life."
+  ],
+  "human_reply": "So what will you be doing today your majesty? Will you be riding today?"
+ },
+ {
+  "light_index": 1270,
+  "setting_name": "Village at the base of the Mountain, Mountain",
+  "setting": "A small village with a population of 40 people. A simple little place with houses and shops. Fields outside the  more dense areas of the city where food is grown.",
+  "self_name": "man",
+  "partner_name": "king",
+  "self_persona": "I grow a beard and shave it off.  I pee standing up.  I hunt and gather for my village.  I made my own crossbow.",
+  "context": [
+   "I am a man and man is my name!",
+   "You speak to your King. I am performing a survey of the kingdom. What is it you do here in Alderton?",
+   "I have come to hunt for my village!",
+   "I see. How is the hunting in these parts?",
+   "They re very rich with nutrients! You see I must eat protein because I am a man!",
+   "It seems I have chosen a simpleton to talk to. What beasts do you hunt, man?"
+  ],
+  "human_reply": "I only hunt those that are meant to be hunted by a man! "
+ },
+ {
+  "light_index": 1291,
+  "setting_name": "Corn field, Farm",
+  "setting": "the corn field extends as far as the eye can see. In the off season months it is barren grass, but during the corn growing season it is filled with shoulder high thick yellow stocks with corn growing at the ends. There are pathways cut into the field to provide walking terrain for the farmers.",
+  "self_name": "farmers",
+  "partner_name": "child",
+  "self_persona": "I am a farmer.  My family and I live right outside of the kingdom.  We will soon be harvesting.  After harvest, my sons and I will take our goods to the town to sell.",
+  "context": [
+   "What is a child doing here in these parts?",
+   "I am just wondering around! I just left the park and found this amazing corn field! the corn is so high up this time of year!",
+   "Were you the child who took the ferry to the park?",
+   "I think you may have the wrong child, I am afraid of the waters! I ride my bike there every day. I'm an only child so my parents dont trust me to go alone on the ferry. They want me riding my bike there"
+  ],
+  "human_reply": "Ah! okay, my cousin met a child who rode a ferry so I just wanted to compare"
+ },
+ {
+  "light_index": 1352,
+  "setting_name": "Decoration shop, Outside Temple",
+  "setting": "Outside the Temple is the decoration shop.  It is made of cobblestone and has flowers growing on the sides and back of it.  It has a large wooden sign hanging out front identifying it.  The shop is full of decorations for your home as well as for parties.",
+  "self_name": "town official",
+  "partner_name": "royal family",
+  "self_persona": "I am the town official of a small medieval town.  My job is to carry out the King's wishes.  I try to keep order in the town, but am not liked by many of the towns folk.",
+  "context": [
+   "Hello Royal family. I'm so happy to see you here. Welcome to the decoration shop. What brings you here today?",
+   "To see what needs to be done for my weeding to the price tonight.",
+   "Ahhh of course! What an occasion! Might I show you these flowers. You could adorn the tables with them. ",
+   "Thank you so very much. These flowers would look wonderful on the table.",
+   "Good good. That is the one the King wanted as well. Of course you'll also need to pick a fool for the feast. ",
+   "What a coincidence. Also, I think the fool whom performed for the King's birhtday earlier this year would be well suitable for the weeding. Thank you for all your help."
+  ],
+  "human_reply": "You're so welcome my dear. You know it is nice to find someone in town who doesn't criticize me. "
+ },
+ {
+  "light_index": 1363,
+  "setting_name": "Keep, Inside Tower",
+  "setting": "The keep is the most fortified part of the castle. Swords, bows and arrows, lances, and armor are housed here. From the stone windows you can see past the castle walls into the surrounding fields. This is the castle's last defense.",
+  "self_name": "knight",
+  "partner_name": "a drunk reeling out of the saloon",
+  "self_persona": "I am a knight in the royal army. I am strong, brave and fearsome. I love battle more than anything else and I always fight on the front line. I'm really stubborn and argumentative as well so people stay out of my way.",
+  "context": [
+   "What do we have here?",
+   "oyyee there's a might strong knightt. so shiny.",
+   "Yes, a shiny knight I am, though it would appear that you are a drunkard.",
+   "I'm not drunk. You're drunk."
+  ],
+  "human_reply": "I'm as likely to be drunk as I am to be a cat lady."
+ },
+ {
+  "light_index": 1414,
+  "setting_name": "Castle, Inside Castle",
+  "setting": "The inside of the castle is made from grey brick. All the floors are made from gold and silver. The castle is lit by lights as well as some candles.",
+  "self_name": "the king",
+  "partner_name": "queen",
+  "self_persona": "I rule over many people. I spend my days in leisure and comfort. I don't like people that I think are below me.",
+  "context": [
+   "My dove.",
+   "How are you?",
+   "A bit stuffy-headed, since winter began. I must be coming down with something.",
+   "I am sorry to hear that my love. You look much better than all your nobles, even if you are feeling ill!"
+  ],
+  "human_reply": "Such pleasantries. You must be miserable cooped up in the keep. Why don't you go riding on the morrow? Your mare needs some exercise."
+ },
+ {
+  "light_index": 1498,
+  "setting_name": "High Priest Chamber, Inside Church",
+  "setting": "Many books and religious idols litter the chamber. A squat chair with a high back sits at an ornate desk. A cup of holy water lies on the desk. Bookshelves line the entire chamber with religious texts.",
+  "self_name": "a spider",
+  "partner_name": "a high priest",
+  "self_persona": "I am a small black spider. I live in my modest sized web in the trees. I capture small insects to eat.",
+  "context": [
+   "Indeed, small and black I am. I assume you are the high priest?",
+   "Yes and I'm looking for a blood sacrifice.  You are too small for my needs but you may be able to help me.  Can you spin me a rope out of your webbing?"
+  ],
+  "human_reply": "Sir priest I am only but a small spider living in a modest web. To spin a rope for you would be quite a task for my small body. However, I will do so, if you give me something in return?"
+ },
+ {
+  "light_index": 1549,
+  "setting_name": "staircase, Inside Tower",
+  "setting": "The staircase is spiral and made of stone. The stone is smooth and cold from years of friction. The staircase reaches multiple levels of the tower and is the only way up or down.",
+  "self_name": "beaver",
+  "partner_name": "the egyptians",
+  "self_persona": "I am a beaver. I work all day every day to build and maintain my home. I have brought down many trees in this forest.",
+  "context": [
+   "Hello my Egyptian friend, how is your day today?",
+   "We are having some problems. Our supplies are running low and the King's men are delayed in bringing us more.",
+   "I am sorry to hear that, friend.  Would my branch help you?  I was going to put it in my dam, but I can get another.",
+   "Oh Beaver, you are too kind. I'm afraid a branch is not what we need. Do you know where we may find any food or fresh water?"
+  ],
+  "human_reply": "There is water here, my friend.  "
+ },
+ {
+  "light_index": 1629,
+  "setting_name": "General Store, Town",
+  "setting": "The General store is painted a bright turquoise color, and is identified by the depiction of wheat crop that is carved into a wooden sign hanging from the store's front. There is a patio with a wooden roof hanging over head, and an arched wooden door that leads into the General store.",
+  "self_name": "bandit",
+  "partner_name": "local",
+  "self_persona": "I can't wait to rob the king. I am eager and impatient. I love spending my days in the forest, waiting.",
+  "context": [
+   "hey there",
+   "Hello, how are you today?"
+  ],
+  "human_reply": "I'm fine but i'll do better if you would gladly give me yoour purse"
+ },
+ {
+  "light_index": 1634,
+  "setting_name": "castle kitchen, Inside Castle",
+  "setting": "This is a warm, luxuriant-smelling kitchen, made of red brick that is cool to the touch on the perimeter. In the center of the room stands a grand fire-burning stove, which is stoked with crackling logs and white-hot flames. The perimeter of the room is lined with stone shelves, filled to bursting with pots and pans and other kitchen implements, the light of the fire shining in their reflection.",
+  "self_name": "royal chef",
+  "partner_name": "mice",
+  "self_persona": "I am the current chef of our King. I really enjoy my job. Without proper fuel our King wouldn't be able to lead us. I came from humble beginnings, and a friendship with someone in the royal court led me to my position. I would like to make food for our royalty for the rest of my days.",
+  "context": [
+   "Today's menu is... ratatouille, believe it or not. How does that sound? ",
+   "Sounds like you're cooking my family up...",
+   "How could I deny the king fresh meat when it wanders so willingly into our midst?",
+   "You think that is funny? It is not. For we give you diseases",
+   "Wow, where were you hiding this?",
+   "I carry it with me at all times for protection. "
+  ],
+  "human_reply": "Okay, I apologize. We"
+ },
+ {
+  "light_index": 1672,
+  "setting_name": "Top floor of palace, Inside Palace",
+  "setting": "Opening the large stonework doors at the top of the grand staircase reveals the prized artifacts stored within the top floor of the palace. Inside are trinkets and baubles from far off lands, souvenirs from expeditions traversing across the entire realm. Large animal hides, beautiful tapestries, intricate statues of mythical animals, and other treasures hang upon thick oaken scaffolds. A thick coat of dust covers much of the treasure, suggesting a long absence of human contact or disruption.",
+  "self_name": "owner",
+  "partner_name": "wife",
+  "self_persona": "I own this land that the indolent soldiers are camping on. They have been here all summer. If I had known, I would not have sown any crops this spring. Now we are approaching harvest time and my fields are trampled. I am not sure how my family will survive this fall. I have worked my whole life for this land, and now it is ruining me.",
+  "context": [
+   "Not to worry my dear!  I told you when I married you that you would want for nothing.  I'll have the servants in charge of this floor sacked and new ones hired right away.",
+   "I am so sorry sir, but I am already married. I thought you knew that.",
+   "Oh, my apologies, madam.  You bear such a striking resemblance to my own wife, truly, you could be twins.  Thank goodness you said something though before I got carried away...",
+   "hahaha. You are quite mad sir. I must get this cleaning done and be on my way.",
+   "Ah-hem!  That is no way to speak to the owner of these find lands.  Now I apologized and that should be the end of it.  I will overlook your insolence this once, as a courtsey.",
+   "I meant no harm. My husband would not take kindly to you talking to me harshly."
+  ],
+  "human_reply": "Well, we'll say no more about it.  Just mind your tongue, ma'dam, and I'm sure we'll have no more disagreements."
+ },
+ {
+  "light_index": 1726,
+  "setting_name": "Haunted Swamp, Swamp",
+  "setting": "A misty, foggy area with the swamp. It is dirty and smelly.",
+  "self_name": "bat",
+  "partner_name": "ghost",
+  "self_persona": "I live in the deep, dark caves of the kingdom. I sleep during the day and fly at night. I hang from the cave walls while I sleep.",
+  "context": [
+   "Screeech! what time is it?!",
+   "Goodness, what care I for time, at my stage in life?  There is only the long, slow plod of eternity... an eternity of vengeance and suffering.",
+   "How come you to be so angry dear ghost?",
+   "That's KING ghost to you, bat.  For I am Lord of these lands... or was, before I was brutally betrayed.  But I shall have my revenge, no matter how long I must stay on this earthly plane!",
+   "Lord of these lands you say? I am but a simple bat who spends all day in this cave so I know not of these things. forgive my insolence king....?errr what is your name sire?",
+   "King... king... Ah, it has been so long, that I no longer recall it.  Only my thirst for revenge has kept me in this form."
+  ],
+  "human_reply": "Well sire, perhaps I can help you. What revenge do you seek?"
+ },
+ {
+  "light_index": 1796,
+  "setting_name": "Marketplace, Port",
+  "setting": "Merchants call out their wares and try desperately to get the attention of the wealthier passerby. People from all over the world hustle to and fro, some keenly eyeing the many tapestries, spices, tools and foods, others openly staring in wonder. Still others hurry along, heads down and avoiding eye contact. Colors, smells and sounds assault the senses. The cries of the gulls can hardly be deciphered from the chatter of the crowds, the ringing of the blacksmith's hammer, the bells of the nearby shipyard, and the hollers of the merchants.",
+  "self_name": "blacksmith",
+  "partner_name": "child",
+  "self_persona": "I work in the forge all day with my tools. I have a few apprentices who I show the ropes to. I also have to mingle with people in the public in order to have them purchase the items that I make.",
+  "context": [
+   "How did you get lost in the marketplace child?",
+   "i don't know. I was here with my parents. I went to look at the toys over there and when I turned around they were gone"
+  ],
+  "human_reply": "What are their names child?"
+ },
+ {
+  "light_index": 1837,
+  "setting_name": "The room at the top of the tower, Inside Castle",
+  "setting": "Small and round, the room is accessed by a spiral staircase. The room has stone walls, wooden floors and a decoratively carved wooden rocking chair next to a which looks over the castle's moat and the meadows and woodlands beyond.",
+  "self_name": "servant",
+  "partner_name": "soldiers",
+  "self_persona": "I come from the lower class. I do what I am told without question. I can not read. I have not seen my family in a long time.",
+  "context": [
+   "Hello sir, can you help my find my family?",
+   "We in the King's Service will do anything for citizens in need!  Where did you last see them?"
+  ],
+  "human_reply": "That's.. I don't know. I don't even remember how long ago they were gone, just that it was very long ago. The land stretches far, but I doubt they would have left me."
+ },
+ {
+  "light_index": 1845,
+  "setting_name": "Personal quarters, Inside Palace",
+  "setting": "An ornate room, paintings of previous rulers and members of the family hang on the walls.  There's high end pieces of furniture in the room along with books, statues, and expensive pieces of jewelry.",
+  "self_name": "guard",
+  "partner_name": "inhabitant",
+  "self_persona": "I am one of the guards in shining armor who guards the queen, the monarch of our realm. I am also in love with the queen, but she does not see me as anything but a man clad in metal. One day, I hope to save the queen from the vile duke of the neighboring realm, and hope that she will bestow favor on me.",
+  "context": [
+   "The Duke of Chesterwick is the most vile fiend in all the land!",
+   "A humble slave such as myself has no right to an opinion in the matter. But tell me, why is this Duke so vile?",
+   "He has kidnapped our Queen!  And I would do anything to see her returned - I love her more than life itself.",
+   "Is that not the King's job to love the queen? ",
+   "Ah, but the Queen has no husband!  If I were to rescue her - do you think she would look kindly upon one such as I?",
+   "She may very well do so; however, you would need a company of troops to defeat such a foe as a Duke. Do you have such a compliment at hand?"
+  ],
+  "human_reply": "Surely many recruits could be found amongst the people for one as beloved as she?  I know it is not likely she would return my affections, but surely we are better to be governed by a queen than the aimless council which directs the realm in her absence?"
+ },
+ {
+  "light_index": 1928,
+  "setting_name": "The Bottlery, Inside Castle",
+  "setting": "The room is dark and the air is still. There are large barrels of wine from various decades. The corners are spotted with cobwebs.",
+  "self_name": "family member",
+  "partner_name": "a large spider high in one corner",
+  "self_persona": "I am a relatively blessed person. I see other families with not enough beds as their are backs. It puts me at ease knowing their are only 4 of us. I love my family and want them to live a life of peace.",
+  "context": [
+   "AH! Last time I encountered a spider, he bit me.",
+   "I will not do that. As long as no one bothers me I do not bother them. I just want a cold dark place to hang around. ",
+   "What do you do here?/",
+   "I am here to catch all the insects, I eat them so they don't bother you",
+   "You would be so useful in my home. Bugs come in and out how they please, and no one in my family keeps around an untrustworthy spider. ",
+   "I am pretty friendly, I just do not like my webs messed with. Then I can get pretty upset"
+  ],
+  "human_reply": "Do people come to take this valuable wine? "
+ }
+]

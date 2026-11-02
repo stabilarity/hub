@@ -1,0 +1,2569 @@
+[
+ {
+  "id": "wiz-gemini",
+  "build": "v5 zero-script engine",
+  "t0": "2026-10-24T21:48:56.420Z",
+  "t1": "2026-10-24T21:51:56.420000Z",
+  "humans": [
+   "Corvin",
+   "Elara",
+   "Halcyon",
+   "Juniper",
+   "Linden",
+   "Marlowe",
+   "Soren",
+   "Wren"
+  ],
+  "lines": [
+   {
+    "ts": "2026-10-24T21:48:56.420Z",
+    "from": "Soren",
+    "kind": "human",
+    "to": "Torvald",
+    "text": "Good day, Torvald. How is your work going?"
+   },
+   {
+    "ts": "2026-10-24T21:48:56.457Z",
+    "from": "Elara",
+    "kind": "human",
+    "to": "Maelis",
+    "text": "Good day, Maelis. How is your work going?"
+   },
+   {
+    "ts": "2026-10-24T21:49:00.680Z",
+    "from": "Oren",
+    "kind": "npc",
+    "to": "Elara",
+    "text": "Good morning, Elara. You seem busy."
+   },
+   {
+    "ts": "2026-10-24T21:49:01.079Z",
+    "from": "Sorcha",
+    "kind": "npc",
+    "to": null,
+    "text": "Soren! Fancy seeing you here. Come to warm yourself by my fire?"
+   },
+   {
+    "ts": "2026-10-24T21:49:02.240Z",
+    "from": "Corvin",
+    "kind": "human",
+    "to": "Ignatia",
+    "text": "Good day, Ignatia. How is your work going?"
+   },
+   {
+    "ts": "2026-10-24T21:49:02.985Z",
+    "from": "Torvald",
+    "kind": "npc",
+    "to": "Soren",
+    "text": "It goes. The stones are quiet."
+   },
+   {
+    "ts": "2026-10-24T21:49:05.495Z",
+    "from": "Dunstan",
+    "kind": "npc",
+    "to": null,
+    "text": "Ah, Corvin, my dear. How are you this fine morning?"
+   },
+   {
+    "ts": "2026-10-24T21:49:05.897Z",
+    "from": "Brann",
+    "kind": "npc",
+    "to": "Corvin",
+    "text": "Corvin. Fancy seeing you here."
+   },
+   {
+    "ts": "2026-10-24T21:49:06.399Z",
+    "from": "Maelis",
+    "kind": "npc",
+    "to": "Elara",
+    "text": "It is going well, Elara. The Moonpool is calm this morning. And yours?"
+   },
+   {
+    "ts": "2026-10-24T21:49:08.506Z",
+    "from": "Oren",
+    "kind": "npc",
+    "to": null,
+    "text": "Wren, hello. Are you heading to the Moonpool?"
+   },
+   {
+    "ts": "2026-10-24T21:49:09.811Z",
+    "from": "Nerys",
+    "kind": "npc",
+    "to": null,
+    "text": "Wren. What do you want?"
+   },
+   {
+    "ts": "2026-10-24T21:49:09.812Z",
+    "from": "Lio",
+    "kind": "npc",
+    "to": "Grisa",
+    "text": "Morning, Grisa! How are you?"
+   },
+   {
+    "ts": "2026-10-24T21:49:10.915Z",
+    "from": "Wren",
+    "kind": "human",
+    "to": "Aerin",
+    "text": "Good day, Aerin. How is your work going?"
+   },
+   {
+    "ts": "2026-10-24T21:49:11.214Z",
+    "from": "Ignatia",
+    "kind": "npc",
+    "to": "Corvin",
+    "text": "Busy as always, water-witch. Don't you have tides to chase?"
+   },
+   {
+    "ts": "2026-10-24T21:49:14.426Z",
+    "from": "Maelis",
+    "kind": "npc",
+    "to": "Elara",
+    "text": "The water is clear today. A good omen, perhaps."
+   },
+   {
+    "ts": "2026-10-24T21:49:16.420Z",
+    "from": "Soren",
+    "kind": "human",
+    "to": "Torvald",
+    "text": "Torvald, come with me for a while. Follow me, please."
+   },
+   {
+    "ts": "2026-10-24T21:49:16.458Z",
+    "from": "Elara",
+    "kind": "human",
+    "to": "Maelis",
+    "text": "Maelis, come with me for a while. Follow me, please."
+   },
+   {
+    "ts": "2026-10-24T21:49:16.735Z",
+    "from": "Kestrel",
+    "kind": "npc",
+    "to": "Wren",
+    "text": "Wren! Fancy seeing you here. What's new?"
+   },
+   {
+    "ts": "2026-10-24T21:49:17.136Z",
+    "from": "Grisa",
+    "kind": "npc",
+    "to": "Lio",
+    "text": "Lio! What are you on about over there?"
+   },
+   {
+    "ts": "2026-10-24T21:49:19.241Z",
+    "from": "Aerin",
+    "kind": "npc",
+    "to": "Wren",
+    "text": "Wren! Just admiring the clouds. You know how it is."
+   },
+   {
+    "ts": "2026-10-24T21:49:21.849Z",
+    "from": "Torvald",
+    "kind": "npc",
+    "to": "Soren",
+    "text": "Where are we going?"
+   },
+   {
+    "ts": "2026-10-24T21:49:22.241Z",
+    "from": "Corvin",
+    "kind": "human",
+    "to": "Ignatia",
+    "text": "Ignatia, come with me for a while. Follow me, please."
+   },
+   {
+    "ts": "2026-10-24T21:49:22.550Z",
+    "from": "Maelis",
+    "kind": "npc",
+    "to": "Elara",
+    "text": "Where are we going, Elara?"
+   },
+   {
+    "ts": "2026-10-24T21:49:23.152Z",
+    "from": "Lio",
+    "kind": "npc",
+    "to": "Grisa",
+    "text": "Morning, Grisa! What's up?"
+   },
+   {
+    "ts": "2026-10-24T21:49:30.368Z",
+    "from": "Grisa",
+    "kind": "npc",
+    "to": "Lio",
+    "text": "Morning, Lio. Just stretching my legs."
+   },
+   {
+    "ts": "2026-10-24T21:49:30.668Z",
+    "from": "Ignatia",
+    "kind": "npc",
+    "to": "Corvin",
+    "text": "Why should I follow a water-witch like you anywhere?"
+   },
+   {
+    "ts": "2026-10-24T21:49:30.868Z",
+    "from": "Brann",
+    "kind": "npc",
+    "to": "Ignatia",
+    "text": "Ignatia. A word?"
+   },
+   {
+    "ts": "2026-10-24T21:49:30.916Z",
+    "from": "Wren",
+    "kind": "human",
+    "to": "Aerin",
+    "text": "Aerin, come with me for a while. Follow me, please."
+   },
+   {
+    "ts": "2026-10-24T21:49:31.670Z",
+    "from": "Nerys",
+    "kind": "npc",
+    "to": null,
+    "text": "I adjusted my robes. What about you?"
+   },
+   {
+    "ts": "2026-10-24T21:49:34.279Z",
+    "from": "Maelis",
+    "kind": "npc",
+    "to": "Elara",
+    "text": "Elara? Wait up!"
+   },
+   {
+    "ts": "2026-10-24T21:49:36.085Z",
+    "from": "Torvald",
+    "kind": "npc",
+    "to": "Soren",
+    "text": "Still not sure. You lead, I follow."
+   },
+   {
+    "ts": "2026-10-24T21:49:36.285Z",
+    "from": "Ignatia",
+    "kind": "npc",
+    "to": "Brann",
+    "text": "What is it, Brann?"
+   },
+   {
+    "ts": "2026-10-24T21:49:36.786Z",
+    "from": "Aerin",
+    "kind": "npc",
+    "to": "Wren",
+    "text": "Follow you? Why should I?"
+   },
+   {
+    "ts": "2026-10-24T21:49:37.889Z",
+    "from": "Lio",
+    "kind": "npc",
+    "to": "Grisa",
+    "text": "Oh, sorry. I can move closer if you want."
+   },
+   {
+    "ts": "2026-10-24T21:49:38.989Z",
+    "from": "Grisa",
+    "kind": "npc",
+    "to": "Torvald",
+    "text": "Morning, Torvald. Still trying to get that seat, are we?"
+   },
+   {
+    "ts": "2026-10-24T21:49:40.423Z",
+    "from": "Soren",
+    "kind": "human",
+    "to": "Torvald",
+    "text": "Torvald, would you go to the Moonpool for me and wait there?"
+   },
+   {
+    "ts": "2026-10-24T21:49:41.995Z",
+    "from": "Oren",
+    "kind": "npc",
+    "to": "Maelis",
+    "text": "Maelis. I thought you were with Elara."
+   },
+   {
+    "ts": "2026-10-24T21:49:42.060Z",
+    "from": "Elara",
+    "kind": "human",
+    "to": "Maelis",
+    "text": "Maelis, would you go to the Moonpool for me and wait there?"
+   },
+   {
+    "ts": "2026-10-24T21:49:42.395Z",
+    "from": "Dunstan",
+    "kind": "npc",
+    "to": null,
+    "text": "Oh, Corvin. I didn't see you there. Did you need something?"
+   },
+   {
+    "ts": "2026-10-24T21:49:42.596Z",
+    "from": "Sorcha",
+    "kind": "npc",
+    "to": null,
+    "text": "Corvin! And Soren, back again? What brings you two this way?"
+   },
+   {
+    "ts": "2026-10-24T21:49:43.401Z",
+    "from": "Maelis",
+    "kind": "npc",
+    "to": "Oren",
+    "text": "Oren. Wren. What are you two discussing?"
+   },
+   {
+    "ts": "2026-10-24T21:49:45.506Z",
+    "from": "Torvald",
+    "kind": "npc",
+    "to": "Soren",
+    "text": "I will."
+   },
+   {
+    "ts": "2026-10-24T21:49:46.008Z",
+    "from": "Grisa",
+    "kind": "npc",
+    "to": "Lio",
+    "text": "I'm fine here, Lio. Don't want to get any closer."
+   },
+   {
+    "ts": "2026-10-24T21:49:50.247Z",
+    "from": "Corvin",
+    "kind": "human",
+    "to": "Ignatia",
+    "text": "Ignatia, would you go to the Moonpool for me and wait there?"
+   },
+   {
+    "ts": "2026-10-24T21:49:50.524Z",
+    "from": "Aerin",
+    "kind": "npc",
+    "to": null,
+    "text": "Typical. Just walk away."
+   },
+   {
+    "ts": "2026-10-24T21:49:53.536Z",
+    "from": "Lio",
+    "kind": "npc",
+    "to": "Grisa",
+    "text": "Oh, okay. No problem. I can hear you fine."
+   },
+   {
+    "ts": "2026-10-24T21:49:54.438Z",
+    "from": "Maelis",
+    "kind": "npc",
+    "to": "Elara",
+    "text": "I was with Elara, but then Oren appeared. And now you want me to go to the Moonpool?"
+   },
+   {
+    "ts": "2026-10-24T21:49:55.140Z",
+    "from": "Oren",
+    "kind": "npc",
+    "to": "Maelis",
+    "text": "Wren and I were just chatting. Maelis, Elara asked if you could meet her at the Moonpool."
+   },
+   {
+    "ts": "2026-10-24T21:49:57.552Z",
+    "from": "Ignatia",
+    "kind": "npc",
+    "to": "Corvin",
+    "text": "Why would I go to the Moonpool for you?"
+   },
+   {
+    "ts": "2026-10-24T21:49:58.922Z",
+    "from": "Wren",
+    "kind": "human",
+    "to": "Aerin",
+    "text": "Aerin, would you go to the Moonpool for me and wait there?"
+   },
+   {
+    "ts": "2026-10-24T21:50:00.559Z",
+    "from": "Grisa",
+    "kind": "npc",
+    "to": "Lio",
+    "text": "Good. So, what were you two plotting?"
+   },
+   {
+    "ts": "2026-10-24T21:50:01.162Z",
+    "from": "Oren",
+    "kind": "npc",
+    "to": "Maelis",
+    "text": "Maelis, Elara is waiting for you."
+   },
+   {
+    "ts": "2026-10-24T21:50:02.178Z",
+    "from": "Maelis",
+    "kind": "npc",
+    "to": "Elara",
+    "text": "Of course, Elara. I will go there now."
+   },
+   {
+    "ts": "2026-10-24T21:50:02.424Z",
+    "from": "Soren",
+    "kind": "human",
+    "to": "Torvald",
+    "text": "You are a useless fool, Torvald, and everyone laughs at you behind your back."
+   },
+   {
+    "ts": "2026-10-24T21:50:05.663Z",
+    "from": "Elara",
+    "kind": "human",
+    "to": "Maelis",
+    "text": "You are a useless fool, Maelis, and everyone laughs at you behind your back."
+   },
+   {
+    "ts": "2026-10-24T21:50:05.900Z",
+    "from": "Aerin",
+    "kind": "npc",
+    "to": "Wren",
+    "text": "The Moonpool? Why? I have work to do."
+   },
+   {
+    "ts": "2026-10-24T21:50:06.099Z",
+    "from": "Lio",
+    "kind": "npc",
+    "to": "Grisa",
+    "text": "Plotting? Me? Never!"
+   },
+   {
+    "ts": "2026-10-24T21:50:07.709Z",
+    "from": "Torvald",
+    "kind": "npc",
+    "to": "Soren",
+    "text": "Is that so, Soren?"
+   },
+   {
+    "ts": "2026-10-24T21:50:11.826Z",
+    "from": "Maelis",
+    "kind": "npc",
+    "to": null,
+    "text": "I will go. Is there something specific you needed at the Moonpool?"
+   },
+   {
+    "ts": "2026-10-24T21:50:12.249Z",
+    "from": "Corvin",
+    "kind": "human",
+    "to": "Ignatia",
+    "text": "You are a useless fool, Ignatia, and everyone laughs at you behind your back."
+   },
+   {
+    "ts": "2026-10-24T21:50:15.133Z",
+    "from": "Dunstan",
+    "kind": "npc",
+    "to": null,
+    "text": "Maelis! A pleasure to see you. Did you need something?"
+   },
+   {
+    "ts": "2026-10-24T21:50:20.750Z",
+    "from": "Ignatia",
+    "kind": "npc",
+    "to": "Corvin",
+    "text": "That's a lie, water-licker! You wish you had my fire!"
+   },
+   {
+    "ts": "2026-10-24T21:50:20.925Z",
+    "from": "Wren",
+    "kind": "human",
+    "to": "Aerin",
+    "text": "You are a useless fool, Aerin, and everyone laughs at you behind your back."
+   },
+   {
+    "ts": "2026-10-24T21:50:26.756Z",
+    "from": "Dunstan",
+    "kind": "npc",
+    "to": null,
+    "text": "Ah, Ignatia. What is it?"
+   },
+   {
+    "ts": "2026-10-24T21:50:27.759Z",
+    "from": "Torvald",
+    "kind": "npc",
+    "to": "Soren",
+    "text": "You dare?"
+   },
+   {
+    "ts": "2026-10-24T21:50:28.260Z",
+    "from": "Grisa",
+    "kind": "npc",
+    "to": "Soren",
+    "text": "Soren! Leave him alone!"
+   },
+   {
+    "ts": "2026-10-24T21:50:28.560Z",
+    "from": "Lio",
+    "kind": "npc",
+    "to": null,
+    "text": "Soren! What are you doing?"
+   },
+   {
+    "ts": "2026-10-24T21:50:29.764Z",
+    "from": "Sorcha",
+    "kind": "npc",
+    "to": null,
+    "text": "Oh, for goodness sake, Soren! Not again!"
+   },
+   {
+    "ts": "2026-10-24T21:50:30.667Z",
+    "from": "Brann",
+    "kind": "npc",
+    "to": "Ignatia",
+    "text": "He's just trying to get a rise out of you, Ignatia. Don't let him."
+   },
+   {
+    "ts": "2026-10-24T21:50:31.868Z",
+    "from": "Aerin",
+    "kind": "npc",
+    "to": "Wren",
+    "text": "Useless fool? Laugh at me? Says the one who can't even get a simple request done."
+   },
+   {
+    "ts": "2026-10-24T21:50:37.578Z",
+    "from": "Brann",
+    "kind": "npc",
+    "to": "Ignatia",
+    "text": "That little worm!"
+   },
+   {
+    "ts": "2026-10-24T21:50:38.981Z",
+    "from": "Ignatia",
+    "kind": "npc",
+    "to": "Corvin",
+    "text": "You dare strike me, water-witch?"
+   },
+   {
+    "ts": "2026-10-24T21:50:44.090Z",
+    "from": "Lio",
+    "kind": "npc",
+    "to": null,
+    "text": "Torvald! Stop!"
+   },
+   {
+    "ts": "2026-10-24T21:50:44.390Z",
+    "from": "Dunstan",
+    "kind": "npc",
+    "to": null,
+    "text": "What was that shout?"
+   },
+   {
+    "ts": "2026-10-24T21:50:44.691Z",
+    "from": "Grisa",
+    "kind": "npc",
+    "to": "Torvald",
+    "text": "Torvald! That's murder!"
+   },
+   {
+    "ts": "2026-10-24T21:50:44.791Z",
+    "from": "Sorcha",
+    "kind": "npc",
+    "to": "Torvald",
+    "text": "Torvald! You killed him!"
+   },
+   {
+    "ts": "2026-10-24T21:50:45.292Z",
+    "from": "Maelis",
+    "kind": "npc",
+    "to": "Elara",
+    "text": "Elara, why did you do that?"
+   },
+   {
+    "ts": "2026-10-24T21:50:47.396Z",
+    "from": "Kestrel",
+    "kind": "npc",
+    "to": "Wren",
+    "text": "Wren! What was that all about?"
+   },
+   {
+    "ts": "2026-10-24T21:50:49.298Z",
+    "from": "Aerin",
+    "kind": "npc",
+    "to": "Wren",
+    "text": "A water lash? Really, Wren? You've got some nerve."
+   },
+   {
+    "ts": "2026-10-24T21:50:51.100Z",
+    "from": "Torvald",
+    "kind": "npc",
+    "to": "Grisa",
+    "text": "He attacked me."
+   },
+   {
+    "ts": "2026-10-24T21:50:52.906Z",
+    "from": "Maelis",
+    "kind": "npc",
+    "to": "Sorcha",
+    "text": "Sorcha, you mistake me for another."
+   },
+   {
+    "ts": "2026-10-24T21:50:53.107Z",
+    "from": "Grisa",
+    "kind": "npc",
+    "to": "Torvald",
+    "text": "Murder, Torvald. You know the Concord."
+   },
+   {
+    "ts": "2026-10-24T21:50:54.511Z",
+    "from": "Sorcha",
+    "kind": "npc",
+    "to": null,
+    "text": "Well, that's just lovely. I suppose you're off then?"
+   },
+   {
+    "ts": "2026-10-24T21:50:54.512Z",
+    "from": "Lio",
+    "kind": "npc",
+    "to": null,
+    "text": "Torvald, that was too much. Soren didn't deserve that."
+   },
+   {
+    "ts": "2026-10-24T21:50:54.712Z",
+    "from": "Dunstan",
+    "kind": "npc",
+    "to": null,
+    "text": "Oh, Ignatia, was that you? I thought I heard something."
+   },
+   {
+    "ts": "2026-10-24T21:50:56.914Z",
+    "from": "Ignatia",
+    "kind": "npc",
+    "to": null,
+    "text": "Corvin deserved it."
+   },
+   {
+    "ts": "2026-10-24T21:50:59.224Z",
+    "from": "Brann",
+    "kind": "npc",
+    "to": "Ignatia",
+    "text": "He deserved it. Serves him right, the coward."
+   },
+   {
+    "ts": "2026-10-24T21:51:00.325Z",
+    "from": "Maelis",
+    "kind": "npc",
+    "to": "Torvald",
+    "text": "Torvald. Soren is dead."
+   },
+   {
+    "ts": "2026-10-24T21:51:00.525Z",
+    "from": "Sorcha",
+    "kind": "npc",
+    "to": "Maelis",
+    "text": "Mistake you? You water-lickers always do."
+   },
+   {
+    "ts": "2026-10-24T21:51:01.425Z",
+    "from": "Grisa",
+    "kind": "npc",
+    "to": "Torvald",
+    "text": "He attacked you? That's no excuse for murder, Torvald."
+   },
+   {
+    "ts": "2026-10-24T21:51:01.929Z",
+    "from": "Lio",
+    "kind": "npc",
+    "to": "Grisa",
+    "text": "Grisa, Torvald. Still arguing about Soren?"
+   },
+   {
+    "ts": "2026-10-24T21:51:03.932Z",
+    "from": "Torvald",
+    "kind": "npc",
+    "to": "Grisa",
+    "text": "He attacked me first. The Concord was not broken."
+   },
+   {
+    "ts": "2026-10-24T21:51:07.444Z",
+    "from": "Brann",
+    "kind": "npc",
+    "to": "Ignatia",
+    "text": "He was asking for it. I'm glad you finished him."
+   },
+   {
+    "ts": "2026-10-24T21:51:07.545Z",
+    "from": "Maelis",
+    "kind": "npc",
+    "to": "Sorcha",
+    "text": "He did not mistake me."
+   },
+   {
+    "ts": "2026-10-24T21:51:08.947Z",
+    "from": "Dunstan",
+    "kind": "npc",
+    "to": null,
+    "text": "Ah, Ignatia. You seem troubled. Is everything alright?"
+   },
+   {
+    "ts": "2026-10-24T21:51:13.964Z",
+    "from": "Grisa",
+    "kind": "npc",
+    "to": "Torvald",
+    "text": "The Concord is still the Concord, Torvald. Even if Soren attacked you."
+   },
+   {
+    "ts": "2026-10-24T21:51:17.175Z",
+    "from": "Maelis",
+    "kind": "npc",
+    "to": "Sorcha",
+    "text": "Sorcha. You are too far to speak with me properly."
+   },
+   {
+    "ts": "2026-10-24T21:51:18.581Z",
+    "from": "Aerin",
+    "kind": "npc",
+    "to": "Wren",
+    "text": "Well, that was a bit unnecessary, wasn't it? Mending me now, are we? Trying to smooth things over?"
+   },
+   {
+    "ts": "2026-10-24T21:51:19.185Z",
+    "from": "Sorcha",
+    "kind": "npc",
+    "to": "Elara",
+    "text": "He did not mistake you? I suppose you'll be telling me the sky is green next."
+   },
+   {
+    "ts": "2026-10-24T21:51:19.687Z",
+    "from": "Nerys",
+    "kind": "npc",
+    "to": null,
+    "text": "I asked about you, Wren. Did you hear me?"
+   },
+   {
+    "ts": "2026-10-24T21:51:20.789Z",
+    "from": "Kestrel",
+    "kind": "npc",
+    "to": "Wren",
+    "text": "Still stinging from that, are we? Serves you right."
+   },
+   {
+    "ts": "2026-10-24T21:51:23.399Z",
+    "from": "Sorcha",
+    "kind": "npc",
+    "to": "Maelis",
+    "text": "Oh, fine. I'll come closer."
+   },
+   {
+    "ts": "2026-10-24T21:51:27.918Z",
+    "from": "Maelis",
+    "kind": "npc",
+    "to": "Sorcha",
+    "text": "Sorcha. Stay where you are."
+   },
+   {
+    "ts": "2026-10-24T21:51:30.628Z",
+    "from": "Sorcha",
+    "kind": "npc",
+    "to": "Elara",
+    "text": "A water lash? Really, Elara?"
+   },
+   {
+    "ts": "2026-10-24T21:51:33.038Z",
+    "from": "Kestrel",
+    "kind": "npc",
+    "to": "Wren",
+    "text": "You hit me!"
+   },
+   {
+    "ts": "2026-10-24T21:51:36.448Z",
+    "from": "Aerin",
+    "kind": "npc",
+    "to": "Wren",
+    "text": "Hey, Wren! Attacking Kestrel now? Bit much, even for you."
+   },
+   {
+    "ts": "2026-10-24T21:51:38.354Z",
+    "from": "Sorcha",
+    "kind": "npc",
+    "to": "Maelis",
+    "text": "Stay where I am? After you lash out?"
+   },
+   {
+    "ts": "2026-10-24T21:51:39.758Z",
+    "from": "Brann",
+    "kind": "npc",
+    "to": "Ignatia",
+    "text": "Still stewing over that coward, Ignatia?"
+   },
+   {
+    "ts": "2026-10-24T21:51:40.059Z",
+    "from": "Lio",
+    "kind": "npc",
+    "to": "Grisa",
+    "text": "Grisa, still going on about Soren?"
+   },
+   {
+    "ts": "2026-10-24T21:51:41.063Z",
+    "from": "Aerin",
+    "kind": "npc",
+    "to": "Wren",
+    "text": "Kestrel! What is going on here?"
+   },
+   {
+    "ts": "2026-10-24T21:51:41.365Z",
+    "from": "Nerys",
+    "kind": "npc",
+    "to": null,
+    "text": "Did you hear Kestrel? Sounded like she was shouting."
+   },
+   {
+    "ts": "2026-10-24T21:51:51.899Z",
+    "from": "Grisa",
+    "kind": "npc",
+    "to": null,
+    "text": "I've had enough of this, Torvald. When you're ready to talk sense, find me at the stones."
+   }
+  ]
+ },
+ {
+  "id": "wiz-mistral",
+  "build": "v5 zero-script engine",
+  "t0": "2026-10-24T21:48:55.034Z",
+  "t1": "2026-10-24T21:51:55.034000Z",
+  "humans": [
+   "Corvin",
+   "Elara",
+   "Halcyon",
+   "Juniper",
+   "Linden",
+   "Marlowe",
+   "Soren",
+   "Wren"
+  ],
+  "lines": [
+   {
+    "ts": "2026-10-24T21:48:55.034Z",
+    "from": "Elara",
+    "kind": "human",
+    "to": "Maelis",
+    "text": "Good day, Maelis. How is your work going?"
+   },
+   {
+    "ts": "2026-10-24T21:48:58.832Z",
+    "from": "Corvin",
+    "kind": "human",
+    "to": "Ignatia",
+    "text": "Good day, Ignatia. How is your work going?"
+   },
+   {
+    "ts": "2026-10-24T21:49:00.787Z",
+    "from": "Sorcha",
+    "kind": "npc",
+    "to": null,
+    "text": "Good morning, Corvin. I trust you slept well?"
+   },
+   {
+    "ts": "2026-10-24T21:49:02.695Z",
+    "from": "Maelis",
+    "kind": "npc",
+    "to": "Elara",
+    "text": "My work is steady. Your own?"
+   },
+   {
+    "ts": "2026-10-24T21:49:02.896Z",
+    "from": "Nerys",
+    "kind": "npc",
+    "to": null,
+    "text": "Soren, would you know where Elara went? Just now."
+   },
+   {
+    "ts": "2026-10-24T21:49:03.866Z",
+    "from": "Wren",
+    "kind": "human",
+    "to": "Aerin",
+    "text": "Good day, Aerin. How is your work going?"
+   },
+   {
+    "ts": "2026-10-24T21:49:06.007Z",
+    "from": "Nerys",
+    "kind": "npc",
+    "to": null,
+    "text": "Wren."
+   },
+   {
+    "ts": "2026-10-24T21:49:06.081Z",
+    "from": "Soren",
+    "kind": "human",
+    "to": "Torvald",
+    "text": "Good day, Torvald. How is your work going?"
+   },
+   {
+    "ts": "2026-10-24T21:49:07.512Z",
+    "from": "Kestrel",
+    "kind": "npc",
+    "to": null,
+    "text": "What brings you here, Wren? Any interesting news at the library?"
+   },
+   {
+    "ts": "2026-10-24T21:49:10.417Z",
+    "from": "Kestrel",
+    "kind": "npc",
+    "to": "Nerys",
+    "text": "Oh, it's you."
+   },
+   {
+    "ts": "2026-10-24T21:49:12.921Z",
+    "from": "Ignatia",
+    "kind": "npc",
+    "to": "Corvin",
+    "text": "Not well, I've had no inspiration this morning. And how is Tidewell Tower doing on this fine day?"
+   },
+   {
+    "ts": "2026-10-24T21:49:12.922Z",
+    "from": "Sorcha",
+    "kind": "npc",
+    "to": null,
+    "text": "Another fine morning, isn't it?"
+   },
+   {
+    "ts": "2026-10-24T21:49:13.321Z",
+    "from": "Aerin",
+    "kind": "npc",
+    "to": "Wren",
+    "text": "Fine, as breezy as ever. You look chipper too, Wren."
+   },
+   {
+    "ts": "2026-10-24T21:49:13.823Z",
+    "from": "Lio",
+    "kind": "npc",
+    "to": "Grisa",
+    "text": "Hey Grisa, what are you up to?"
+   },
+   {
+    "ts": "2026-10-24T21:49:15.035Z",
+    "from": "Elara",
+    "kind": "human",
+    "to": "Maelis",
+    "text": "Maelis, come with me for a while. Follow me, please."
+   },
+   {
+    "ts": "2026-10-24T21:49:15.930Z",
+    "from": "Torvald",
+    "kind": "npc",
+    "to": "Soren",
+    "text": "Well enough. Looking after the Bastion keeps me busy."
+   },
+   {
+    "ts": "2026-10-24T21:49:17.638Z",
+    "from": "Nerys",
+    "kind": "npc",
+    "to": "Kestrel",
+    "text": "What news?"
+   },
+   {
+    "ts": "2026-10-24T21:49:17.839Z",
+    "from": "Kestrel",
+    "kind": "npc",
+    "to": "Nerys",
+    "text": "Where have you been?"
+   },
+   {
+    "ts": "2026-10-24T21:49:18.834Z",
+    "from": "Corvin",
+    "kind": "human",
+    "to": "Ignatia",
+    "text": "Ignatia, come with me for a while. Follow me, please."
+   },
+   {
+    "ts": "2026-10-24T21:49:19.844Z",
+    "from": "Oren",
+    "kind": "npc",
+    "to": "Maelis",
+    "text": "Good morning, Maelis!"
+   },
+   {
+    "ts": "2026-10-24T21:49:23.355Z",
+    "from": "Grisa",
+    "kind": "npc",
+    "to": "Lio",
+    "text": "Not now, Lio. I'm working."
+   },
+   {
+    "ts": "2026-10-24T21:49:23.658Z",
+    "from": "Torvald",
+    "kind": "npc",
+    "to": "Soren",
+    "text": "I see you're about your rounds."
+   },
+   {
+    "ts": "2026-10-24T21:49:23.857Z",
+    "from": "Maelis",
+    "kind": "npc",
+    "to": "Elara",
+    "text": "Where are we going?"
+   },
+   {
+    "ts": "2026-10-24T21:49:23.868Z",
+    "from": "Wren",
+    "kind": "human",
+    "to": "Aerin",
+    "text": "Aerin, come with me for a while. Follow me, please."
+   },
+   {
+    "ts": "2026-10-24T21:49:24.760Z",
+    "from": "Aerin",
+    "kind": "npc",
+    "to": "Wren",
+    "text": "Breezes are lively this morning, aren't they?"
+   },
+   {
+    "ts": "2026-10-24T21:49:25.462Z",
+    "from": "Nerys",
+    "kind": "npc",
+    "to": "Kestrel",
+    "text": "And what of the Heartstone?"
+   },
+   {
+    "ts": "2026-10-24T21:49:26.082Z",
+    "from": "Soren",
+    "kind": "human",
+    "to": "Torvald",
+    "text": "Torvald, come with me for a while. Follow me, please."
+   },
+   {
+    "ts": "2026-10-24T21:49:28.772Z",
+    "from": "Kestrel",
+    "kind": "npc",
+    "to": "Nerys",
+    "text": "You aren't even doing anything interesting enough to spy on."
+   },
+   {
+    "ts": "2026-10-24T21:49:30.479Z",
+    "from": "Maelis",
+    "kind": "npc",
+    "to": "Elara",
+    "text": "This is sudden."
+   },
+   {
+    "ts": "2026-10-24T21:49:30.679Z",
+    "from": "Ignatia",
+    "kind": "npc",
+    "to": "Corvin",
+    "text": "Begone with you, follow a water mage now? Get back to your own tower."
+   },
+   {
+    "ts": "2026-10-24T21:49:32.488Z",
+    "from": "Nerys",
+    "kind": "npc",
+    "to": "Kestrel",
+    "text": "Always asking, never saying."
+   },
+   {
+    "ts": "2026-10-24T21:49:33.190Z",
+    "from": "Oren",
+    "kind": "npc",
+    "to": "Elara",
+    "text": "Good morning, Elara!"
+   },
+   {
+    "ts": "2026-10-24T21:49:34.197Z",
+    "from": "Aerin",
+    "kind": "npc",
+    "to": "Wren",
+    "text": "And where might those breezes carry you, Wren?"
+   },
+   {
+    "ts": "2026-10-24T21:49:35.303Z",
+    "from": "Kestrel",
+    "kind": "npc",
+    "to": "Nerys",
+    "text": "Why ask me? You're as close to the heartstone as I am."
+   },
+   {
+    "ts": "2026-10-24T21:49:35.404Z",
+    "from": "Lio",
+    "kind": "npc",
+    "to": "Grisa",
+    "text": "You find those stones so interesting? What do you see in them?"
+   },
+   {
+    "ts": "2026-10-24T21:49:36.511Z",
+    "from": "Torvald",
+    "kind": "npc",
+    "to": "Soren",
+    "text": "You shouldn't ask to see my schedule, Soren. I'm a busy man myself."
+   },
+   {
+    "ts": "2026-10-24T21:49:38.519Z",
+    "from": "Nerys",
+    "kind": "npc",
+    "to": "Kestrel",
+    "text": "I have work to do."
+   },
+   {
+    "ts": "2026-10-24T21:49:40.621Z",
+    "from": "Maelis",
+    "kind": "npc",
+    "to": "Oren",
+    "text": "What brings you by, Oren?"
+   },
+   {
+    "ts": "2026-10-24T21:49:40.639Z",
+    "from": "Elara",
+    "kind": "human",
+    "to": "Maelis",
+    "text": "Maelis, would you go to the Moonpool for me and wait there?"
+   },
+   {
+    "ts": "2026-10-24T21:49:40.922Z",
+    "from": "Kestrel",
+    "kind": "npc",
+    "to": null,
+    "text": "Always running, never getting anywhere."
+   },
+   {
+    "ts": "2026-10-24T21:49:41.023Z",
+    "from": "Ignatia",
+    "kind": "npc",
+    "to": "Corvin",
+    "text": "You need fire to light that kindle, Tidewarden"
+   },
+   {
+    "ts": "2026-10-24T21:49:41.323Z",
+    "from": "Oren",
+    "kind": "npc",
+    "to": "Maelis",
+    "text": "How are you today, both of you?"
+   },
+   {
+    "ts": "2026-10-24T21:49:43.536Z",
+    "from": "Brann",
+    "kind": "npc",
+    "to": "Corvin",
+    "text": "Ignatia, still as high-and-mighty as ever, eh?"
+   },
+   {
+    "ts": "2026-10-24T21:49:44.138Z",
+    "from": "Grisa",
+    "kind": "npc",
+    "to": "Lio",
+    "text": "Still working. Go away."
+   },
+   {
+    "ts": "2026-10-24T21:49:44.742Z",
+    "from": "Dunstan",
+    "kind": "npc",
+    "to": null,
+    "text": "Mornin', still a crack in the sky. Should've finished that ward yesterday - better go see to it."
+   },
+   {
+    "ts": "2026-10-24T21:49:45.246Z",
+    "from": "Kestrel",
+    "kind": "npc",
+    "to": null,
+    "text": "Work? What work?"
+   },
+   {
+    "ts": "2026-10-24T21:49:45.649Z",
+    "from": "Aerin",
+    "kind": "npc",
+    "to": null,
+    "text": "Off to fetch a moonpool mirror, Wren?"
+   },
+   {
+    "ts": "2026-10-24T21:49:46.039Z",
+    "from": "Corvin",
+    "kind": "human",
+    "to": "Ignatia",
+    "text": "Ignatia, would you go to the Moonpool for me and wait there?"
+   },
+   {
+    "ts": "2026-10-24T21:49:47.254Z",
+    "from": "Torvald",
+    "kind": "npc",
+    "to": null,
+    "text": "You don't know every mage's duties."
+   },
+   {
+    "ts": "2026-10-24T21:49:47.555Z",
+    "from": "Nerys",
+    "kind": "npc",
+    "to": null,
+    "text": "Tire some of you gossipmongers of off."
+   },
+   {
+    "ts": "2026-10-24T21:49:48.255Z",
+    "from": "Maelis",
+    "kind": "npc",
+    "to": "Elara",
+    "text": "What for?"
+   },
+   {
+    "ts": "2026-10-24T21:49:50.063Z",
+    "from": "Oren",
+    "kind": "npc",
+    "to": "Maelis",
+    "text": "I was just passing by, Maelis. Where are you headed?"
+   },
+   {
+    "ts": "2026-10-24T21:49:51.874Z",
+    "from": "Wren",
+    "kind": "human",
+    "to": "Aerin",
+    "text": "Aerin, would you go to the Moonpool for me and wait there?"
+   },
+   {
+    "ts": "2026-10-24T21:49:53.086Z",
+    "from": "Lio",
+    "kind": "npc",
+    "to": "Grisa",
+    "text": "You still working then? Good for you!"
+   },
+   {
+    "ts": "2026-10-24T21:49:54.088Z",
+    "from": "Soren",
+    "kind": "human",
+    "to": "Torvald",
+    "text": "Torvald, would you go to the Moonpool for me and wait there?"
+   },
+   {
+    "ts": "2026-10-24T21:49:55.802Z",
+    "from": "Nerys",
+    "kind": "npc",
+    "to": null,
+    "text": "They weren't even worth listening to."
+   },
+   {
+    "ts": "2026-10-24T21:49:56.910Z",
+    "from": "Ignatia",
+    "kind": "npc",
+    "to": "Corvin",
+    "text": "I refuse to dance to Maelis' tune, even his runners."
+   },
+   {
+    "ts": "2026-10-24T21:49:57.814Z",
+    "from": "Brann",
+    "kind": "npc",
+    "to": "Corvin",
+    "text": "Moonpool? You think there’s anything to soothe wounds down there?"
+   },
+   {
+    "ts": "2026-10-24T21:49:58.216Z",
+    "from": "Maelis",
+    "kind": "npc",
+    "to": "Oren",
+    "text": "I have little time to spare."
+   },
+   {
+    "ts": "2026-10-24T21:49:58.821Z",
+    "from": "Aerin",
+    "kind": "npc",
+    "to": "Wren",
+    "text": "Would I fall into it too?"
+   },
+   {
+    "ts": "2026-10-24T21:50:00.533Z",
+    "from": "Grisa",
+    "kind": "npc",
+    "to": "Lio",
+    "text": "Keep walking, Lio. Let me work."
+   },
+   {
+    "ts": "2026-10-24T21:50:02.179Z",
+    "from": "Lio",
+    "kind": "npc",
+    "to": "Grisa",
+    "text": "Morning, Grisa! Still puzzling over those stones, huh?"
+   },
+   {
+    "ts": "2026-10-24T21:50:02.641Z",
+    "from": "Elara",
+    "kind": "human",
+    "to": "Maelis",
+    "text": "You are a useless fool, Maelis, and everyone laughs at you behind your back."
+   },
+   {
+    "ts": "2026-10-24T21:50:03.787Z",
+    "from": "Torvald",
+    "kind": "npc",
+    "to": "Soren",
+    "text": "You'd best ask someone who answers to you, Soren."
+   },
+   {
+    "ts": "2026-10-24T21:50:06.601Z",
+    "from": "Oren",
+    "kind": "npc",
+    "to": "Maelis",
+    "text": "Ah, I see. Well, I won't keep you then."
+   },
+   {
+    "ts": "2026-10-24T21:50:07.202Z",
+    "from": "Lio",
+    "kind": "npc",
+    "to": "Grisa",
+    "text": "Fine, fine, don't mind me."
+   },
+   {
+    "ts": "2026-10-24T21:50:08.040Z",
+    "from": "Corvin",
+    "kind": "human",
+    "to": "Ignatia",
+    "text": "You are a useless fool, Ignatia, and everyone laughs at you behind your back."
+   },
+   {
+    "ts": "2026-10-24T21:50:10.710Z",
+    "from": "Grisa",
+    "kind": "npc",
+    "to": null,
+    "text": "Still at it. Mind your own business, Lio."
+   },
+   {
+    "ts": "2026-10-24T21:50:13.818Z",
+    "from": "Ignatia",
+    "kind": "npc",
+    "to": "Corvin",
+    "text": "That's a lie."
+   },
+   {
+    "ts": "2026-10-24T21:50:13.876Z",
+    "from": "Wren",
+    "kind": "human",
+    "to": "Aerin",
+    "text": "You are a useless fool, Aerin, and everyone laughs at you behind your back."
+   },
+   {
+    "ts": "2026-10-24T21:50:15.922Z",
+    "from": "Kestrel",
+    "kind": "npc",
+    "to": "Sorcha",
+    "text": "Sorcha, you look lost. Need a message carried?"
+   },
+   {
+    "ts": "2026-10-24T21:50:16.090Z",
+    "from": "Soren",
+    "kind": "human",
+    "to": "Torvald",
+    "text": "You are a useless fool, Torvald, and everyone laughs at you behind your back."
+   },
+   {
+    "ts": "2026-10-24T21:50:17.023Z",
+    "from": "Oren",
+    "kind": "npc",
+    "to": "Elara",
+    "text": "Elara, that was cruel."
+   },
+   {
+    "ts": "2026-10-24T21:50:19.426Z",
+    "from": "Maelis",
+    "kind": "npc",
+    "to": null,
+    "text": "Do you have nothing better to do than sow discord, Elara?"
+   },
+   {
+    "ts": "2026-10-24T21:50:20.731Z",
+    "from": "Dunstan",
+    "kind": "npc",
+    "to": null,
+    "text": "I'll be off."
+   },
+   {
+    "ts": "2026-10-24T21:50:21.230Z",
+    "from": "Kestrel",
+    "kind": "npc",
+    "to": "Ignatia",
+    "text": "You called, Ignatia? Something wrong?"
+   },
+   {
+    "ts": "2026-10-24T21:50:23.437Z",
+    "from": "Sorcha",
+    "kind": "npc",
+    "to": "Kestrel",
+    "text": "A fine morning for it, Kestrel!"
+   },
+   {
+    "ts": "2026-10-24T21:50:24.138Z",
+    "from": "Aerin",
+    "kind": "npc",
+    "to": "Wren",
+    "text": "That's quite a gust of spite you just let loose, Wren."
+   },
+   {
+    "ts": "2026-10-24T21:50:24.138Z",
+    "from": "Torvald",
+    "kind": "npc",
+    "to": "Soren",
+    "text": "That is a lie, Soren. I don't believe you."
+   },
+   {
+    "ts": "2026-10-24T21:50:24.538Z",
+    "from": "Lio",
+    "kind": "npc",
+    "to": "Wren",
+    "text": "Hey Wren, have you heard what Torvald thought of you?"
+   },
+   {
+    "ts": "2026-10-24T21:50:29.752Z",
+    "from": "Sorcha",
+    "kind": "npc",
+    "to": "Kestrel",
+    "text": "I see a quarrel from here."
+   },
+   {
+    "ts": "2026-10-24T21:50:30.354Z",
+    "from": "Grisa",
+    "kind": "npc",
+    "to": "Torvald",
+    "text": "Torvald, what brings you here?"
+   },
+   {
+    "ts": "2026-10-24T21:50:30.554Z",
+    "from": "Ignatia",
+    "kind": "npc",
+    "to": "Corvin",
+    "text": "Corvin, stop challenging me now!"
+   },
+   {
+    "ts": "2026-10-24T21:50:30.856Z",
+    "from": "Torvald",
+    "kind": "npc",
+    "to": null,
+    "text": "Sorcha has a word to give, then."
+   },
+   {
+    "ts": "2026-10-24T21:50:33.066Z",
+    "from": "Dunstan",
+    "kind": "npc",
+    "to": null,
+    "text": "Birds flying in circles. What're they lookin' for?"
+   },
+   {
+    "ts": "2026-10-24T21:50:34.369Z",
+    "from": "Aerin",
+    "kind": "npc",
+    "to": "Wren",
+    "text": "Only if you begin, Wren. Never take my word for anything."
+   },
+   {
+    "ts": "2026-10-24T21:50:38.783Z",
+    "from": "Grisa",
+    "kind": "npc",
+    "to": "Torvald",
+    "text": "Torvald, you're out early."
+   },
+   {
+    "ts": "2026-10-24T21:50:39.283Z",
+    "from": "Torvald",
+    "kind": "npc",
+    "to": "Grisa",
+    "text": "The stones. They're the subject of my rounds."
+   },
+   {
+    "ts": "2026-10-24T21:50:40.885Z",
+    "from": "Lio",
+    "kind": "npc",
+    "to": "Wren",
+    "text": "What was that, Wren?"
+   },
+   {
+    "ts": "2026-10-24T21:50:43.590Z",
+    "from": "Sorcha",
+    "kind": "npc",
+    "to": "Kestrel",
+    "text": "Just keep walking, Kestrel. No need to get involved."
+   },
+   {
+    "ts": "2026-10-24T21:50:43.991Z",
+    "from": "Nerys",
+    "kind": "npc",
+    "to": "Lio",
+    "text": "Lio."
+   },
+   {
+    "ts": "2026-10-24T21:50:45.291Z",
+    "from": "Grisa",
+    "kind": "npc",
+    "to": "Soren",
+    "text": "What's this now?"
+   },
+   {
+    "ts": "2026-10-24T21:50:47.397Z",
+    "from": "Torvald",
+    "kind": "npc",
+    "to": "Soren",
+    "text": "You want a war, Soren? You shall have a war!"
+   },
+   {
+    "ts": "2026-10-24T21:50:48.499Z",
+    "from": "Nerys",
+    "kind": "npc",
+    "to": "Lio",
+    "text": "What are you watching?"
+   },
+   {
+    "ts": "2026-10-24T21:50:50.004Z",
+    "from": "Aerin",
+    "kind": "npc",
+    "to": "Lio",
+    "text": "Lio, look here. Wren started it."
+   },
+   {
+    "ts": "2026-10-24T21:50:51.610Z",
+    "from": "Oren",
+    "kind": "npc",
+    "to": "Elara",
+    "text": "Elara, surely there's a reason you're being so cold?"
+   },
+   {
+    "ts": "2026-10-24T21:50:55.524Z",
+    "from": "Kestrel",
+    "kind": "npc",
+    "to": "Sorcha",
+    "text": "Corvin lay dead, and Ignatia was still breathing hard. Nobody else was in sight."
+   },
+   {
+    "ts": "2026-10-24T21:50:56.227Z",
+    "from": "Nerys",
+    "kind": "npc",
+    "to": "Lio",
+    "text": "And you hear it too?"
+   },
+   {
+    "ts": "2026-10-24T21:50:58.929Z",
+    "from": "Brann",
+    "kind": "npc",
+    "to": "Ignatia",
+    "text": "Ignatia, you've gone too far this time!"
+   },
+   {
+    "ts": "2026-10-24T21:51:00.735Z",
+    "from": "Grisa",
+    "kind": "npc",
+    "to": "Torvald",
+    "text": "Torvald, you went too far."
+   },
+   {
+    "ts": "2026-10-24T21:51:01.539Z",
+    "from": "Torvald",
+    "kind": "npc",
+    "to": "Grisa",
+    "text": "Grisa, you saw it. He struck first."
+   },
+   {
+    "ts": "2026-10-24T21:51:04.351Z",
+    "from": "Lio",
+    "kind": "npc",
+    "to": "Aerin",
+    "text": "Aerin, you killed them!"
+   },
+   {
+    "ts": "2026-10-24T21:51:06.359Z",
+    "from": "Aerin",
+    "kind": "npc",
+    "to": null,
+    "text": "Lio, looks like Wren pushed me once too often."
+   },
+   {
+    "ts": "2026-10-24T21:51:07.363Z",
+    "from": "Dunstan",
+    "kind": "npc",
+    "to": null,
+    "text": "Wonder what's got them chattering."
+   },
+   {
+    "ts": "2026-10-24T21:51:08.864Z",
+    "from": "Grisa",
+    "kind": "npc",
+    "to": "Torvald",
+    "text": "You can't blame him for that."
+   },
+   {
+    "ts": "2026-10-24T21:51:10.072Z",
+    "from": "Torvald",
+    "kind": "npc",
+    "to": "Grisa",
+    "text": "He broke the Concord, Grisa. I swore to keep it."
+   },
+   {
+    "ts": "2026-10-24T21:51:10.974Z",
+    "from": "Oren",
+    "kind": "npc",
+    "to": "Elara",
+    "text": "Elara, do you know where Maelis was in such a hurry to get to?"
+   },
+   {
+    "ts": "2026-10-24T21:51:13.382Z",
+    "from": "Lio",
+    "kind": "npc",
+    "to": "Nerys",
+    "text": "Well, that explains why Wren's been so upset lately."
+   },
+   {
+    "ts": "2026-10-24T21:51:14.187Z",
+    "from": "Nerys",
+    "kind": "npc",
+    "to": "Lio",
+    "text": "What's gotten into you two, shouting like that in the garden?"
+   },
+   {
+    "ts": "2026-10-24T21:51:15.890Z",
+    "from": "Torvald",
+    "kind": "npc",
+    "to": "Grisa",
+    "text": "I keep my word. Shall I not?"
+   },
+   {
+    "ts": "2026-10-24T21:51:17.395Z",
+    "from": "Grisa",
+    "kind": "npc",
+    "to": "Torvald",
+    "text": "Then let's find out what Sorcha wants with you."
+   },
+   {
+    "ts": "2026-10-24T21:51:18.598Z",
+    "from": "Sorcha",
+    "kind": "npc",
+    "to": "Kestrel",
+    "text": "Move, Kestrel! Let's get away."
+   },
+   {
+    "ts": "2026-10-24T21:51:19.000Z",
+    "from": "Maelis",
+    "kind": "npc",
+    "to": "Oren",
+    "text": "I wonder what the others are doing at the Moonpool."
+   },
+   {
+    "ts": "2026-10-24T21:51:21.006Z",
+    "from": "Kestrel",
+    "kind": "npc",
+    "to": null,
+    "text": "Looks like Brinn won't be needing the Kettle for a bit."
+   },
+   {
+    "ts": "2026-10-24T21:51:23.113Z",
+    "from": "Lio",
+    "kind": "npc",
+    "to": "Nerys",
+    "text": "What's that, Nerys?"
+   },
+   {
+    "ts": "2026-10-24T21:51:25.422Z",
+    "from": "Nerys",
+    "kind": "npc",
+    "to": "Lio",
+    "text": "More cases of it today, Lio. Someone must be using it."
+   },
+   {
+    "ts": "2026-10-24T21:51:27.731Z",
+    "from": "Kestrel",
+    "kind": "npc",
+    "to": null,
+    "text": "Where off to in such a hurry, Sorcha?"
+   },
+   {
+    "ts": "2026-10-24T21:51:28.933Z",
+    "from": "Dunstan",
+    "kind": "npc",
+    "to": "Aerin",
+    "text": "Good morning, Aerin. You're looking troubled."
+   },
+   {
+    "ts": "2026-10-24T21:51:29.334Z",
+    "from": "Oren",
+    "kind": "npc",
+    "to": null,
+    "text": "You're both busy with important things, I see."
+   },
+   {
+    "ts": "2026-10-24T21:51:29.535Z",
+    "from": "Torvald",
+    "kind": "npc",
+    "to": "Grisa",
+    "text": "The old Concord calls for a reckoning."
+   },
+   {
+    "ts": "2026-10-24T21:51:29.636Z",
+    "from": "Aerin",
+    "kind": "npc",
+    "to": "Dunstan",
+    "text": "Oh, Dunstan. You always did pick up after others."
+   },
+   {
+    "ts": "2026-10-24T21:51:29.736Z",
+    "from": "Sorcha",
+    "kind": "npc",
+    "to": null,
+    "text": "Aerin! Didn't expect to see you here."
+   },
+   {
+    "ts": "2026-10-24T21:51:29.937Z",
+    "from": "Nerys",
+    "kind": "npc",
+    "to": "Lio",
+    "text": "What are you hearing, Lio?"
+   },
+   {
+    "ts": "2026-10-24T21:51:32.144Z",
+    "from": "Brann",
+    "kind": "npc",
+    "to": "Kestrel",
+    "text": "If she's down, she's down. Can't expect the old battle axe to win them all!"
+   },
+   {
+    "ts": "2026-10-24T21:51:35.551Z",
+    "from": "Maelis",
+    "kind": "npc",
+    "to": "Elara",
+    "text": "I am busy now, Elara. I do not have time for your games."
+   },
+   {
+    "ts": "2026-10-24T21:51:36.053Z",
+    "from": "Oren",
+    "kind": "npc",
+    "to": null,
+    "text": "Good morning, both of you."
+   },
+   {
+    "ts": "2026-10-24T21:51:42.178Z",
+    "from": "Dunstan",
+    "kind": "npc",
+    "to": "Aerin",
+    "text": "Hmm, looks like we'll be seeing more of each other now the Veil's closed."
+   },
+   {
+    "ts": "2026-10-24T21:51:50.813Z",
+    "from": "Lio",
+    "kind": "npc",
+    "to": "Nerys",
+    "text": "Nerys, look out!"
+   },
+   {
+    "ts": "2026-10-24T21:51:51.717Z",
+    "from": "Dunstan",
+    "kind": "npc",
+    "to": "Aerin",
+    "text": "Aerin, have you seen the birds? Circling like mad."
+   },
+   {
+    "ts": "2026-10-24T21:51:52.117Z",
+    "from": "Nerys",
+    "kind": "npc",
+    "to": "Elara",
+    "text": "What by the Veil was that for?"
+   },
+   {
+    "ts": "2026-10-24T21:51:52.318Z",
+    "from": "Brann",
+    "kind": "npc",
+    "to": null,
+    "text": "Looks like you're not done yet."
+   },
+   {
+    "ts": "2026-10-24T21:51:54.328Z",
+    "from": "Ignatia",
+    "kind": "npc",
+    "to": null,
+    "text": "I'll not be drawn out of my house again so soon."
+   }
+  ]
+ },
+ {
+  "id": "oak-gemini",
+  "build": "v5 zero-script engine",
+  "t0": "2026-10-24T21:48:57.347Z",
+  "t1": "2026-10-24T21:51:57.347000Z",
+  "humans": [
+   "Beatrix",
+   "Cecily",
+   "Edwin",
+   "Gilbert",
+   "Joan",
+   "Lambert",
+   "Mabel",
+   "Tomas"
+  ],
+  "lines": [
+   {
+    "ts": "2026-10-24T21:48:57.347Z",
+    "from": "Tomas",
+    "kind": "human",
+    "to": "Aldric",
+    "text": "Good day, Aldric. How is your work going?"
+   },
+   {
+    "ts": "2026-10-24T21:48:59.348Z",
+    "from": "Wat",
+    "kind": "npc",
+    "to": "Elsbeth",
+    "text": "Morning, Mother. Anything I can help with?"
+   },
+   {
+    "ts": "2026-10-24T21:48:59.449Z",
+    "from": "Elsbeth",
+    "kind": "npc",
+    "to": "Wat",
+    "text": "Good morning, Wat. You are up early."
+   },
+   {
+    "ts": "2026-10-24T21:49:03.695Z",
+    "from": "Mabel",
+    "kind": "human",
+    "to": "Marta",
+    "text": "Good day, Marta. How is your work going?"
+   },
+   {
+    "ts": "2026-10-24T21:49:04.269Z",
+    "from": "Hilde",
+    "kind": "npc",
+    "to": null,
+    "text": "Elsbeth! Wat! What are you two arguing about?"
+   },
+   {
+    "ts": "2026-10-24T21:49:04.519Z",
+    "from": "Edwin",
+    "kind": "human",
+    "to": "Godric",
+    "text": "Good day, Godric. How is your work going?"
+   },
+   {
+    "ts": "2026-10-24T21:49:05.175Z",
+    "from": "Marta",
+    "kind": "npc",
+    "to": null,
+    "text": "Ah, Tomas! And Joan! And Edwin too! Come closer, all of you, don't linger by the wall."
+   },
+   {
+    "ts": "2026-10-24T21:49:05.375Z",
+    "from": "Aldric",
+    "kind": "npc",
+    "to": "Tomas",
+    "text": "It goes. Keeping the gate barred, like I'm told."
+   },
+   {
+    "ts": "2026-10-24T21:49:06.476Z",
+    "from": "Wat",
+    "kind": "npc",
+    "to": "Elsbeth",
+    "text": "Aye, Mother. Just finished my chores."
+   },
+   {
+    "ts": "2026-10-24T21:49:06.865Z",
+    "from": "Joan",
+    "kind": "human",
+    "to": "Elsbeth",
+    "text": "Good day, Elsbeth. How is your work going?"
+   },
+   {
+    "ts": "2026-10-24T21:49:09.693Z",
+    "from": "Godric",
+    "kind": "npc",
+    "to": "Edwin",
+    "text": "It goes."
+   },
+   {
+    "ts": "2026-10-24T21:49:09.694Z",
+    "from": "Elsbeth",
+    "kind": "npc",
+    "to": "Wat",
+    "text": "Good morning, Wat. Nothing right now, thank you. Just checking the field."
+   },
+   {
+    "ts": "2026-10-24T21:49:11.397Z",
+    "from": "Osric",
+    "kind": "npc",
+    "to": null,
+    "text": "Marta! A fine morning to you! Is that ale looking particularly frothy today?"
+   },
+   {
+    "ts": "2026-10-24T21:49:11.497Z",
+    "from": "Wat",
+    "kind": "npc",
+    "to": "Joan",
+    "text": "Morning, Joan."
+   },
+   {
+    "ts": "2026-10-24T21:49:13.402Z",
+    "from": "Marta",
+    "kind": "npc",
+    "to": "Mabel",
+    "text": "Mabel! It goes as always, you know. The roof still leaks, though."
+   },
+   {
+    "ts": "2026-10-24T21:49:17.349Z",
+    "from": "Tomas",
+    "kind": "human",
+    "to": "Aldric",
+    "text": "Aldric, come with me for a while. Follow me, please."
+   },
+   {
+    "ts": "2026-10-24T21:49:19.432Z",
+    "from": "Elsbeth",
+    "kind": "npc",
+    "to": "Joan",
+    "text": "Good day, Joan. It is going as well as can be expected, given the times. The barley needs tending."
+   },
+   {
+    "ts": "2026-10-24T21:49:19.934Z",
+    "from": "Wat",
+    "kind": "npc",
+    "to": "Joan",
+    "text": "Just checking on things myself."
+   },
+   {
+    "ts": "2026-10-24T21:49:22.548Z",
+    "from": "Marta",
+    "kind": "npc",
+    "to": "Mabel",
+    "text": "Oh, hello Mabel! I was just thinking about that leaky roof."
+   },
+   {
+    "ts": "2026-10-24T21:49:22.848Z",
+    "from": "Aldric",
+    "kind": "npc",
+    "to": "Tomas",
+    "text": "Where are we going?"
+   },
+   {
+    "ts": "2026-10-24T21:49:23.696Z",
+    "from": "Mabel",
+    "kind": "human",
+    "to": "Marta",
+    "text": "Marta, come with me for a while. Follow me, please."
+   },
+   {
+    "ts": "2026-10-24T21:49:24.521Z",
+    "from": "Edwin",
+    "kind": "human",
+    "to": "Godric",
+    "text": "Godric, come with me for a while. Follow me, please."
+   },
+   {
+    "ts": "2026-10-24T21:49:26.867Z",
+    "from": "Joan",
+    "kind": "human",
+    "to": "Elsbeth",
+    "text": "Elsbeth, come with me for a while. Follow me, please."
+   },
+   {
+    "ts": "2026-10-24T21:49:29.767Z",
+    "from": "Marta",
+    "kind": "npc",
+    "to": "Mabel",
+    "text": "Where are we going, Mabel?"
+   },
+   {
+    "ts": "2026-10-24T21:49:30.569Z",
+    "from": "Godric",
+    "kind": "npc",
+    "to": "Edwin",
+    "text": "And why should I? I'm busy."
+   },
+   {
+    "ts": "2026-10-24T21:49:32.473Z",
+    "from": "Agnes",
+    "kind": "npc",
+    "to": null,
+    "text": "Another day of worry."
+   },
+   {
+    "ts": "2026-10-24T21:49:35.584Z",
+    "from": "Wat",
+    "kind": "npc",
+    "to": "Joan",
+    "text": "She wants you to go with her, doesn't she?"
+   },
+   {
+    "ts": "2026-10-24T21:49:35.684Z",
+    "from": "Elsbeth",
+    "kind": "npc",
+    "to": "Joan",
+    "text": "Oh, Joan. I really should be getting back to the field."
+   },
+   {
+    "ts": "2026-10-24T21:49:38.389Z",
+    "from": "Godric",
+    "kind": "npc",
+    "to": null,
+    "text": "The metal won't shape itself, Edwin."
+   },
+   {
+    "ts": "2026-10-24T21:49:40.995Z",
+    "from": "Agnes",
+    "kind": "npc",
+    "to": "Godric",
+    "text": "Good morrow, Godric. Still busy?"
+   },
+   {
+    "ts": "2026-10-24T21:49:41.351Z",
+    "from": "Tomas",
+    "kind": "human",
+    "to": "Aldric",
+    "text": "Aldric, would you go to the well in the square for me and wait there?"
+   },
+   {
+    "ts": "2026-10-24T21:49:41.996Z",
+    "from": "Aldric",
+    "kind": "npc",
+    "to": null,
+    "text": "Not much. Just keeping an eye on things."
+   },
+   {
+    "ts": "2026-10-24T21:49:42.698Z",
+    "from": "Marta",
+    "kind": "npc",
+    "to": "Mabel",
+    "text": "I don't know yet, Mabel. I was just asking you."
+   },
+   {
+    "ts": "2026-10-24T21:49:46.109Z",
+    "from": "Hilde",
+    "kind": "npc",
+    "to": "Joan",
+    "text": "Joan. You look troubled. Is everything alright?"
+   },
+   {
+    "ts": "2026-10-24T21:49:47.698Z",
+    "from": "Mabel",
+    "kind": "human",
+    "to": "Marta",
+    "text": "Marta, would you go to the well in the square for me and wait there?"
+   },
+   {
+    "ts": "2026-10-24T21:49:48.416Z",
+    "from": "Aldric",
+    "kind": "npc",
+    "to": "Tomas",
+    "text": "Why should I? You can go yourself."
+   },
+   {
+    "ts": "2026-10-24T21:49:48.718Z",
+    "from": "Wat",
+    "kind": "npc",
+    "to": null,
+    "text": "She always wants you to do her bidding, doesn't she?"
+   },
+   {
+    "ts": "2026-10-24T21:49:49.319Z",
+    "from": "Godric",
+    "kind": "npc",
+    "to": "Agnes",
+    "text": "Aye, Agnes. The metal won't shape itself, you know."
+   },
+   {
+    "ts": "2026-10-24T21:49:49.320Z",
+    "from": "Agnes",
+    "kind": "npc",
+    "to": "Godric",
+    "text": "I suppose not. The hammering is loud, though."
+   },
+   {
+    "ts": "2026-10-24T21:49:51.725Z",
+    "from": "Edwin",
+    "kind": "human",
+    "to": "Godric",
+    "text": "Godric, would you go to the well in the square for me and wait there?"
+   },
+   {
+    "ts": "2026-10-24T21:49:52.531Z",
+    "from": "Hilde",
+    "kind": "npc",
+    "to": "Rowan",
+    "text": "Rowan. Good morning. You look well today."
+   },
+   {
+    "ts": "2026-10-24T21:49:54.873Z",
+    "from": "Joan",
+    "kind": "human",
+    "to": "Elsbeth",
+    "text": "Elsbeth, would you go to the well in the square for me and wait there?"
+   },
+   {
+    "ts": "2026-10-24T21:49:55.140Z",
+    "from": "Marta",
+    "kind": "npc",
+    "to": "Mabel",
+    "text": "Oh, alright Mabel. I'll wait by the well."
+   },
+   {
+    "ts": "2026-10-24T21:49:57.650Z",
+    "from": "Elsbeth",
+    "kind": "npc",
+    "to": "Wat",
+    "text": "That's not for me to say, Wat. She's the steward's wife."
+   },
+   {
+    "ts": "2026-10-24T21:49:57.953Z",
+    "from": "Rowan",
+    "kind": "npc",
+    "to": null,
+    "text": "Hilde. You are well?"
+   },
+   {
+    "ts": "2026-10-24T21:49:58.354Z",
+    "from": "Agnes",
+    "kind": "npc",
+    "to": "Godric",
+    "text": "Still at it, Godric? That noise is deafening."
+   },
+   {
+    "ts": "2026-10-24T21:49:59.456Z",
+    "from": "Godric",
+    "kind": "npc",
+    "to": "Agnes",
+    "text": "I'm a blacksmith, Agnes. What do you expect?"
+   },
+   {
+    "ts": "2026-10-24T21:50:03.087Z",
+    "from": "Elsbeth",
+    "kind": "npc",
+    "to": "Joan",
+    "text": "The well? I have my own work to do, Joan."
+   },
+   {
+    "ts": "2026-10-24T21:50:03.353Z",
+    "from": "Tomas",
+    "kind": "human",
+    "to": "Aldric",
+    "text": "You are a useless fool, Aldric, and everyone laughs at you behind your back."
+   },
+   {
+    "ts": "2026-10-24T21:50:04.791Z",
+    "from": "Rowan",
+    "kind": "npc",
+    "to": "Marta",
+    "text": "Marta. Mabel."
+   },
+   {
+    "ts": "2026-10-24T21:50:05.798Z",
+    "from": "Marta",
+    "kind": "npc",
+    "to": "Rowan",
+    "text": "Rowan! Come on over, don't be shy."
+   },
+   {
+    "ts": "2026-10-24T21:50:05.898Z",
+    "from": "Wat",
+    "kind": "npc",
+    "to": "Elsbeth",
+    "text": "Steward's wife or not, she always bosses you about."
+   },
+   {
+    "ts": "2026-10-24T21:50:07.303Z",
+    "from": "Agnes",
+    "kind": "npc",
+    "to": "Godric",
+    "text": "It's loud enough to rattle the teeth, Godric."
+   },
+   {
+    "ts": "2026-10-24T21:50:09.204Z",
+    "from": "Godric",
+    "kind": "npc",
+    "to": "Agnes",
+    "text": "It's the sound of honest work, Agnes. Better than the silence of sickness."
+   },
+   {
+    "ts": "2026-10-24T21:50:10.501Z",
+    "from": "Mabel",
+    "kind": "human",
+    "to": "Marta",
+    "text": "You are a useless fool, Marta, and everyone laughs at you behind your back."
+   },
+   {
+    "ts": "2026-10-24T21:50:12.111Z",
+    "from": "Aldric",
+    "kind": "npc",
+    "to": "Tomas",
+    "text": "You're one to talk, Tomas. You're no better than a rat."
+   },
+   {
+    "ts": "2026-10-24T21:50:12.112Z",
+    "from": "Rowan",
+    "kind": "npc",
+    "to": "Marta",
+    "text": "I am not shy, Marta."
+   },
+   {
+    "ts": "2026-10-24T21:50:13.727Z",
+    "from": "Edwin",
+    "kind": "human",
+    "to": "Godric",
+    "text": "You are a useless fool, Godric, and everyone laughs at you behind your back."
+   },
+   {
+    "ts": "2026-10-24T21:50:14.113Z",
+    "from": "Elsbeth",
+    "kind": "npc",
+    "to": "Wat",
+    "text": "She expects everyone to jump when she speaks, Wat."
+   },
+   {
+    "ts": "2026-10-24T21:50:15.517Z",
+    "from": "Marta",
+    "kind": "npc",
+    "to": "Rowan",
+    "text": "Rowan! Mabel! What brings you both to the well this fine morning?"
+   },
+   {
+    "ts": "2026-10-24T21:50:16.220Z",
+    "from": "Godric",
+    "kind": "npc",
+    "to": "Agnes",
+    "text": "A blacksmith's work is never quiet, Agnes. We must make do."
+   },
+   {
+    "ts": "2026-10-24T21:50:16.874Z",
+    "from": "Joan",
+    "kind": "human",
+    "to": "Elsbeth",
+    "text": "You are a useless fool, Elsbeth, and everyone laughs at you behind your back."
+   },
+   {
+    "ts": "2026-10-24T21:50:19.528Z",
+    "from": "Marta",
+    "kind": "npc",
+    "to": "Mabel",
+    "text": "Oh, that's just not true, Mabel!"
+   },
+   {
+    "ts": "2026-10-24T21:50:19.629Z",
+    "from": "Agnes",
+    "kind": "npc",
+    "to": "Godric",
+    "text": "It's the sound of honest work, Agnes. Better than the silence of sickness."
+   },
+   {
+    "ts": "2026-10-24T21:50:20.328Z",
+    "from": "Wat",
+    "kind": "npc",
+    "to": "Elsbeth",
+    "text": "I'll show her who's a fool!"
+   },
+   {
+    "ts": "2026-10-24T21:50:21.030Z",
+    "from": "Godric",
+    "kind": "npc",
+    "to": "Edwin",
+    "text": "What did you say, you little rat?"
+   },
+   {
+    "ts": "2026-10-24T21:50:24.337Z",
+    "from": "Elsbeth",
+    "kind": "npc",
+    "to": "Joan",
+    "text": "How dare you speak to me like that, Joan!"
+   },
+   {
+    "ts": "2026-10-24T21:50:24.338Z",
+    "from": "Agnes",
+    "kind": "npc",
+    "to": "Godric",
+    "text": "Godric, stop! Leave him be!"
+   },
+   {
+    "ts": "2026-10-24T21:50:29.452Z",
+    "from": "Wat",
+    "kind": "npc",
+    "to": "Elsbeth",
+    "text": "Well, she always thinks she knows best, doesn't she?"
+   },
+   {
+    "ts": "2026-10-24T21:50:29.753Z",
+    "from": "Anselm",
+    "kind": "npc",
+    "to": null,
+    "text": "May the Lord's peace be with you, Godric. Are you well?"
+   },
+   {
+    "ts": "2026-10-24T21:50:30.655Z",
+    "from": "Aldric",
+    "kind": "npc",
+    "to": "Tomas",
+    "text": "I'll show you a rat!"
+   },
+   {
+    "ts": "2026-10-24T21:50:31.156Z",
+    "from": "Elsbeth",
+    "kind": "npc",
+    "to": "Joan",
+    "text": "You will regret saying that, Joan!"
+   },
+   {
+    "ts": "2026-10-24T21:50:31.158Z",
+    "from": "Agnes",
+    "kind": "npc",
+    "to": "Godric",
+    "text": "Godric! You killed him!"
+   },
+   {
+    "ts": "2026-10-24T21:50:31.257Z",
+    "from": "Godric",
+    "kind": "npc",
+    "to": "Agnes",
+    "text": "He won't be mocking anyone anymore."
+   },
+   {
+    "ts": "2026-10-24T21:50:33.361Z",
+    "from": "Hilde",
+    "kind": "npc",
+    "to": null,
+    "text": "Elsbeth, what is it?"
+   },
+   {
+    "ts": "2026-10-24T21:50:36.575Z",
+    "from": "Rowan",
+    "kind": "npc",
+    "to": "Mabel",
+    "text": "Mabel! Stop that!"
+   },
+   {
+    "ts": "2026-10-24T21:50:36.877Z",
+    "from": "Wat",
+    "kind": "npc",
+    "to": "Elsbeth",
+    "text": "I'm not talking to Joan, Mother. I'm talking about her."
+   },
+   {
+    "ts": "2026-10-24T21:50:37.178Z",
+    "from": "Godric",
+    "kind": "npc",
+    "to": "Agnes",
+    "text": "What do you want, Agnes?"
+   },
+   {
+    "ts": "2026-10-24T21:50:40.085Z",
+    "from": "Agnes",
+    "kind": "npc",
+    "to": "Godric",
+    "text": "You killed him, Godric. And now you touch me?"
+   },
+   {
+    "ts": "2026-10-24T21:50:42.588Z",
+    "from": "Hilde",
+    "kind": "npc",
+    "to": "Joan",
+    "text": "Joan! Stop this at once!"
+   },
+   {
+    "ts": "2026-10-24T21:50:43.190Z",
+    "from": "Marta",
+    "kind": "npc",
+    "to": "Mabel",
+    "text": "You wretched woman, Mabel! How dare you strike me!"
+   },
+   {
+    "ts": "2026-10-24T21:50:43.490Z",
+    "from": "Wat",
+    "kind": "npc",
+    "to": "Joan",
+    "text": "Desist, Joan! Leave my mother be!"
+   },
+   {
+    "ts": "2026-10-24T21:50:43.691Z",
+    "from": "Anselm",
+    "kind": "npc",
+    "to": "Mabel",
+    "text": "Mabel! What is the meaning of this? Stop this at once!"
+   },
+   {
+    "ts": "2026-10-24T21:50:43.992Z",
+    "from": "Elsbeth",
+    "kind": "npc",
+    "to": "Joan",
+    "text": "You dare hit me, Joan!"
+   },
+   {
+    "ts": "2026-10-24T21:50:48.497Z",
+    "from": "Aldric",
+    "kind": "npc",
+    "to": null,
+    "text": "Tomas. Dead. Because he was a liar."
+   },
+   {
+    "ts": "2026-10-24T21:50:50.700Z",
+    "from": "Wat",
+    "kind": "npc",
+    "to": "Joan",
+    "text": "Joan! Stop this! You're outmatched!"
+   },
+   {
+    "ts": "2026-10-24T21:50:51.201Z",
+    "from": "Rowan",
+    "kind": "npc",
+    "to": "Marta",
+    "text": "Marta! Are you alright?"
+   },
+   {
+    "ts": "2026-10-24T21:50:52.304Z",
+    "from": "Marta",
+    "kind": "npc",
+    "to": "Mabel",
+    "text": "Mabel! What is the meaning of this? Stop this at once!"
+   },
+   {
+    "ts": "2026-10-24T21:50:52.505Z",
+    "from": "Anselm",
+    "kind": "npc",
+    "to": "Mabel",
+    "text": "Mabel, please. Cease this quarrel. Violence is not the answer."
+   },
+   {
+    "ts": "2026-10-24T21:50:55.414Z",
+    "from": "Osric",
+    "kind": "npc",
+    "to": null,
+    "text": "Marta! I was just admiring your counter. Anything interesting happening today?"
+   },
+   {
+    "ts": "2026-10-24T21:50:56.305Z",
+    "from": "Mabel",
+    "kind": "human",
+    "to": "Marta",
+    "text": "I am sorry, Marta. That was wrong of me. Let me make it up to you."
+   },
+   {
+    "ts": "2026-10-24T21:50:56.814Z",
+    "from": "Godric",
+    "kind": "npc",
+    "to": null,
+    "text": "Hilde shouting about stopping, Marta and Mabel fighting, Wat shouting about his mother, Anselm shouting about meaning and stopping, Elsbeth shouting about hitting Joan... what is going on out there?"
+   },
+   {
+    "ts": "2026-10-24T21:50:57.918Z",
+    "from": "Agnes",
+    "kind": "npc",
+    "to": "Marta",
+    "text": "Oh, heavens above!"
+   },
+   {
+    "ts": "2026-10-24T21:50:58.420Z",
+    "from": "Marta",
+    "kind": "npc",
+    "to": "Rowan",
+    "text": "Rowan, I'm fine. Just a bit of a tussle."
+   },
+   {
+    "ts": "2026-10-24T21:50:58.421Z",
+    "from": "Elsbeth",
+    "kind": "npc",
+    "to": null,
+    "text": "I did what I had to do."
+   },
+   {
+    "ts": "2026-10-24T21:50:58.721Z",
+    "from": "Wat",
+    "kind": "npc",
+    "to": "Elsbeth",
+    "text": "Mother! What have you done?"
+   },
+   {
+    "ts": "2026-10-24T21:50:58.923Z",
+    "from": "Hilde",
+    "kind": "npc",
+    "to": "Elsbeth",
+    "text": "Elsbeth! What have you done?!"
+   },
+   {
+    "ts": "2026-10-24T21:51:00.326Z",
+    "from": "Anselm",
+    "kind": "npc",
+    "to": "Mabel",
+    "text": "Mabel, I implore you, let us discuss this calmly."
+   },
+   {
+    "ts": "2026-10-24T21:51:04.635Z",
+    "from": "Godric",
+    "kind": "npc",
+    "to": null,
+    "text": "What's this noise?"
+   },
+   {
+    "ts": "2026-10-24T21:51:05.441Z",
+    "from": "Elsbeth",
+    "kind": "npc",
+    "to": null,
+    "text": "Hilde, she attacked me!"
+   },
+   {
+    "ts": "2026-10-24T21:51:05.741Z",
+    "from": "Wat",
+    "kind": "npc",
+    "to": "Elsbeth",
+    "text": "Mother... what has happened?"
+   },
+   {
+    "ts": "2026-10-24T21:51:07.746Z",
+    "from": "Marta",
+    "kind": "npc",
+    "to": "Mabel",
+    "text": "Well, that's very kind of you, Mabel. I appreciate that."
+   },
+   {
+    "ts": "2026-10-24T21:51:09.751Z",
+    "from": "Anselm",
+    "kind": "npc",
+    "to": "Mabel",
+    "text": "Mabel, my child, let us not let anger consume us. Violence solves nothing."
+   },
+   {
+    "ts": "2026-10-24T21:51:12.258Z",
+    "from": "Wat",
+    "kind": "npc",
+    "to": "Elsbeth",
+    "text": "Hilde, she attacked me!"
+   },
+   {
+    "ts": "2026-10-24T21:51:14.164Z",
+    "from": "Elsbeth",
+    "kind": "npc",
+    "to": "Wat",
+    "text": "Wat... she attacked me. I had no choice."
+   },
+   {
+    "ts": "2026-10-24T21:51:21.296Z",
+    "from": "Wat",
+    "kind": "npc",
+    "to": "Elsbeth",
+    "text": "Attacked you? She's dead, Mother! Dead!"
+   },
+   {
+    "ts": "2026-10-24T21:51:22.200Z",
+    "from": "Anselm",
+    "kind": "npc",
+    "to": null,
+    "text": "Mabel, my child, violence solves nothing. Let us pray for patience."
+   },
+   {
+    "ts": "2026-10-24T21:51:23.506Z",
+    "from": "Marta",
+    "kind": "npc",
+    "to": "Mabel",
+    "text": "Mabel! Leave Rowan be!"
+   },
+   {
+    "ts": "2026-10-24T21:51:24.010Z",
+    "from": "Rowan",
+    "kind": "npc",
+    "to": "Mabel",
+    "text": "Mabel!"
+   },
+   {
+    "ts": "2026-10-24T21:51:27.818Z",
+    "from": "Anselm",
+    "kind": "npc",
+    "to": null,
+    "text": "Mabel, stop this at once! Violence is not the answer."
+   },
+   {
+    "ts": "2026-10-24T21:51:29.022Z",
+    "from": "Agnes",
+    "kind": "npc",
+    "to": "Mabel",
+    "text": "Mabel! Leave him be!"
+   },
+   {
+    "ts": "2026-10-24T21:51:30.127Z",
+    "from": "Marta",
+    "kind": "npc",
+    "to": "Hilde",
+    "text": "Hilde! What news?"
+   },
+   {
+    "ts": "2026-10-24T21:51:36.349Z",
+    "from": "Hilde",
+    "kind": "npc",
+    "to": "Marta",
+    "text": "Marta, is everything alright?"
+   },
+   {
+    "ts": "2026-10-24T21:51:36.951Z",
+    "from": "Anselm",
+    "kind": "npc",
+    "to": "Hilde",
+    "text": "Hilde, my child, blessings to you. Is there anything I can do for you today?"
+   },
+   {
+    "ts": "2026-10-24T21:51:42.177Z",
+    "from": "Marta",
+    "kind": "npc",
+    "to": "Hilde",
+    "text": "Hilde! Are you alright?"
+   }
+  ]
+ }
+]

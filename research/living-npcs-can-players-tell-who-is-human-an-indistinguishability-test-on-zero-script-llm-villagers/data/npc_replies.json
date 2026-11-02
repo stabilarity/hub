@@ -1,0 +1,542 @@
+{
+ "generated_utc": "2026-11-02T23:13:43.695Z",
+ "cost_usd": 0.00691471,
+ "replies": [
+  {
+   "light_index": 66,
+   "npc_reply": "No, I did not. I was busy with my own affairs.",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 3178,
+   "cost": 0.00008708
+  },
+  {
+   "light_index": 88,
+   "npc_reply": "I do not plan destroying your webs.",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 725,
+   "cost": 0.0001709
+  },
+  {
+   "light_index": 100,
+   "npc_reply": "Oh, he is with me. He is a good boy.",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 726,
+   "cost": 0.0001741
+  },
+  {
+   "light_index": 117,
+   "npc_reply": "I live in the village just beyond this jungle.",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 726,
+   "cost": 0.000167
+  },
+  {
+   "light_index": 161,
+   "npc_reply": "I am glad to hear that",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 766,
+   "cost": 0.0001689
+  },
+  {
+   "light_index": 185,
+   "npc_reply": "Crumbs, eh? I know a place.",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 725,
+   "cost": 0.0001663
+  },
+  {
+   "light_index": 194,
+   "npc_reply": "That's a noble cause, but I can't go hunting for you.",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 815,
+   "cost": 0.00010942
+  },
+  {
+   "light_index": 236,
+   "npc_reply": "Stop what? Sssssssssstop!",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 692,
+   "cost": 0.00008908
+  },
+  {
+   "light_index": 252,
+   "npc_reply": "Well, I hope you find him. And your sword, of course.",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 796,
+   "cost": 0.0001008
+  },
+  {
+   "light_index": 254,
+   "npc_reply": "Mrow?",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 679,
+   "cost": 0.00007414
+  },
+  {
+   "light_index": 260,
+   "npc_reply": "Work together? You threaten me one moment and then ask for help the next. Make up your mind.",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 775,
+   "cost": 0.00011404
+  },
+  {
+   "light_index": 290,
+   "npc_reply": "I am not sure yet. I will have to check the inventory.",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 727,
+   "cost": 0.00008386
+  },
+  {
+   "light_index": 299,
+   "npc_reply": "",
+   "attempts": 2
+  },
+  {
+   "light_index": 322,
+   "npc_reply": "The Sara? I was on the Sea Serpent. Small world, I suppose.",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 577,
+   "cost": 0.00008839
+  },
+  {
+   "light_index": 360,
+   "npc_reply": "You think I am a monster? You and your kind invaded my home and tried to kill me! Now you want me to be friendly?",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 693,
+   "cost": 0.00008855
+  },
+  {
+   "light_index": 361,
+   "npc_reply": "Ha! You think so? Well, maybe he is a bit plump.",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 768,
+   "cost": 0.00010712
+  },
+  {
+   "light_index": 395,
+   "npc_reply": "I wish I could taste it.",
+   "action": "continue",
+   "attempts": 2,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 831,
+   "cost": 0.00007696
+  },
+  {
+   "light_index": 396,
+   "npc_reply": "I don't read thoughts. Why would I?",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 638,
+   "cost": 0.00007222
+  },
+  {
+   "light_index": 417,
+   "npc_reply": "No, I don't recall much of anything before this. Did you?",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 639,
+   "cost": 0.0000935
+  },
+  {
+   "light_index": 429,
+   "npc_reply": "He sure does hog them. They are the best fish.",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 637,
+   "cost": 0.00011375
+  },
+  {
+   "light_index": 432,
+   "npc_reply": "That would be lovely, dear.",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 616,
+   "cost": 0.00008195
+  },
+  {
+   "light_index": 451,
+   "npc_reply": "You think you can just waltz in here and dismiss me?",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 647,
+   "cost": 0.00009831
+  },
+  {
+   "light_index": 482,
+   "npc_reply": "What was that?",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 562,
+   "cost": 0.0001724
+  },
+  {
+   "light_index": 506,
+   "npc_reply": "Perhaps you are right. I can try.",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 540,
+   "cost": 0.00011866
+  },
+  {
+   "light_index": 542,
+   "npc_reply": "Well, you are the one who decides when to come, aren't you?",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 728,
+   "cost": 0.0001716
+  },
+  {
+   "light_index": 567,
+   "npc_reply": "You don't know? That's your answer?",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 600,
+   "cost": 0.00007885
+  },
+  {
+   "light_index": 586,
+   "npc_reply": "You are right. I should be more careful.",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 722,
+   "cost": 0.00010153
+  },
+  {
+   "light_index": 631,
+   "npc_reply": "The wolf? Why would the wolf know where my cubs are?",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 566,
+   "cost": 0.00009096
+  },
+  {
+   "light_index": 697,
+   "npc_reply": "Just guarding the tower. You?",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 526,
+   "cost": 0.00007694
+  },
+  {
+   "light_index": 700,
+   "npc_reply": "And I am surprised to see you out here!",
+   "action": "continue",
+   "attempts": 2,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 674,
+   "cost": 0.00007512
+  },
+  {
+   "light_index": 717,
+   "npc_reply": "That sounds like a good deal. When do I start?",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 589,
+   "cost": 0.00007584
+  },
+  {
+   "light_index": 725,
+   "npc_reply": "I am here to worship. The smell is a small price to pay for His presence.",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 705,
+   "cost": 0.00008694
+  },
+  {
+   "light_index": 755,
+   "npc_reply": "Oh, thank you. It looks very nice. Did you do it yourself?",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 608,
+   "cost": 0.00009661
+  },
+  {
+   "light_index": 806,
+   "npc_reply": "And who do you think you are, threatening me?",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 808,
+   "cost": 0.0001723
+  },
+  {
+   "light_index": 878,
+   "npc_reply": "A place to stay? Sorry, I have none to spare. But I can give you some food.",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 671,
+   "cost": 0.00009186
+  },
+  {
+   "light_index": 996,
+   "npc_reply": "I have prepared a delightful vegetarian option as well, of course. No one leaves my table hungry or disappointed.",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 639,
+   "cost": 0.00010251
+  },
+  {
+   "light_index": 997,
+   "npc_reply": "A surprise? How exciting! I do hope it's not too much work for you.",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 659,
+   "cost": 0.00009319
+  },
+  {
+   "light_index": 1000,
+   "npc_reply": "Yes, Majesty. I shall return.",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 855,
+   "cost": 0.00009259
+  },
+  {
+   "light_index": 1066,
+   "npc_reply": "Thank you kindly. I'll wait here.",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 816,
+   "cost": 0.0001645
+  },
+  {
+   "light_index": 1071,
+   "npc_reply": "You wouldn't dare!",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 663,
+   "cost": 0.0000918
+  },
+  {
+   "light_index": 1104,
+   "npc_reply": "I am not a cat, I am The Dungeon.",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 619,
+   "cost": 0.00009973
+  },
+  {
+   "light_index": 1119,
+   "npc_reply": "I often wander through the forest, enjoying the sights and sounds.",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 734,
+   "cost": 0.00011163
+  },
+  {
+   "light_index": 1152,
+   "npc_reply": "Just until we have rested enough to continue our journey.",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 696,
+   "cost": 0.0000894
+  },
+  {
+   "light_index": 1164,
+   "npc_reply": "A good king is a rare thing indeed. Do you ever hear any gossip from the castle, farmer?",
+   "action": "continue",
+   "attempts": 2,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 849,
+   "cost": 0.00011674
+  },
+  {
+   "light_index": 1166,
+   "npc_reply": "And so you shall be, Your Majesty.",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 591,
+   "cost": 0.00008148
+  },
+  {
+   "light_index": 1270,
+   "npc_reply": "I hunt the beasts that are around. The ones that are best for protein.",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 680,
+   "cost": 0.0001013
+  },
+  {
+   "light_index": 1291,
+   "npc_reply": "Oh, I see. Well, it's a grand field, isn't it?",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 665,
+   "cost": 0.00009529
+  },
+  {
+   "light_index": 1352,
+   "npc_reply": "It was my pleasure to assist you. The King will be pleased.",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 703,
+   "cost": 0.00010904
+  },
+  {
+   "light_index": 1363,
+   "npc_reply": "I am not drunk, friend. You are.",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 583,
+   "cost": 0.00009199
+  },
+  {
+   "light_index": 1414,
+   "npc_reply": "You flatter me, my dear.",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 513,
+   "cost": 0.00007546
+  },
+  {
+   "light_index": 1498,
+   "npc_reply": "A rope? I don't think my webbing is strong enough for that.",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 862,
+   "cost": 0.0001786
+  },
+  {
+   "light_index": 1549,
+   "npc_reply": "Food and water, hmm. The river is just outside the west gate. There are usually fish there, and the water is clean.",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 1170,
+   "cost": 0.00009659
+  },
+  {
+   "light_index": 1629,
+   "npc_reply": "I'm well, thank you. How are you?",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 502,
+   "cost": 0.00006943
+  },
+  {
+   "light_index": 1634,
+   "npc_reply": "Protection from what, exactly?",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 597,
+   "cost": 0.00009562
+  },
+  {
+   "light_index": 1672,
+   "npc_reply": "I am the owner of this land. Those soldiers are trespassing. If they destroy my crops, my family will starve.",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 714,
+   "cost": 0.00012418
+  },
+  {
+   "light_index": 1726,
+   "npc_reply": "Revenge, eh? Sounds like a lot of bother. I just want to sleep.",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 659,
+   "cost": 0.00010693
+  },
+  {
+   "light_index": 1796,
+   "npc_reply": "Don't you worry, child. I'll help you find them.",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 695,
+   "cost": 0.0001763
+  },
+  {
+   "light_index": 1837,
+   "npc_reply": "I last saw them near the Whispering Woods, about a week ago.",
+   "action": "continue",
+   "attempts": 2,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 534,
+   "cost": 0.00007614
+  },
+  {
+   "light_index": 1845,
+   "npc_reply": "I have my sword and my will, and that is all I need.",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 689,
+   "cost": 0.00010984
+  },
+  {
+   "light_index": 1928,
+   "npc_reply": "Well, I do not like bugs in my home. But my family is important to me, and I want them to be safe and happy.",
+   "action": "continue",
+   "attempts": 1,
+   "model": "google/gemini-2.5-flash-lite",
+   "ms": 828,
+   "cost": 0.00012643
+  }
+ ]
+}

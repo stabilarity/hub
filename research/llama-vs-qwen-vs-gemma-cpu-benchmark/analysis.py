@@ -104,6 +104,19 @@ res["rank_pooled_acc"] = sorted(ORDER, key=lambda k: -models[k]["accuracy"]["poo
 res["rank_decode_6t"] = sorted(ORDER, key=lambda k: -models[k]["speed"]["t6"]["decode_tok_s"])
 res["rank_kv_32k"] = sorted(ORDER, key=lambda k: -models[k]["kv"]["bytes_at_32k"])
 
+M = models
+res["headline"] = dict(
+    qwen3_decode_6t_vs_llama=round(M["qwen3-0.6b"]["speed"]["t6"]["decode_tok_s"] / M["llama-3.2-1b"]["speed"]["t6"]["decode_tok_s"], 3),
+    qwen3_params_vs_llama=round(M["qwen3-0.6b"]["params"] / M["llama-3.2-1b"]["params"], 3),
+    qwen3_kv_vs_llama=round(M["qwen3-0.6b"]["kv"]["bytes_per_token_full"] / M["llama-3.2-1b"]["kv"]["bytes_per_token_full"], 3),
+    qwen3_kv_vs_qwen25=round(M["qwen3-0.6b"]["kv"]["bytes_per_token_full"] / M["qwen2.5-0.5b"]["kv"]["bytes_per_token_full"], 3),
+    llama_kv32k_vs_gemma=round(M["llama-3.2-1b"]["kv"]["bytes_at_32k"] / M["gemma-3-1b"]["kv"]["bytes_at_32k"], 3),
+    qwen3_kv32k_vs_gemma=round(M["qwen3-0.6b"]["kv"]["bytes_at_32k"] / M["gemma-3-1b"]["kv"]["bytes_at_32k"], 3),
+    three_2t_procs_vs_one_6t_decode={k: round(M[k]["speed"]["est_3x2thread_decode_tok_s"] / M[k]["speed"]["t6"]["decode_tok_s"], 3) for k in ORDER},
+    llama_minus_qwen25_pooled_pts=round(100 * (M["llama-3.2-1b"]["accuracy"]["pooled"]["acc_norm"] - M["qwen2.5-0.5b"]["accuracy"]["pooled"]["acc_norm"]), 2),
+    gemma_kv_measured_vs_formula_512=round(M["gemma-3-1b"]["kv"]["measured_bytes_at_512"] / M["gemma-3-1b"]["kv"]["formula_bytes_at_512"], 4),
+)
+
 os.makedirs(os.path.join(HERE, "charts"), exist_ok=True)
 plt.rcParams.update({"font.family": "DejaVu Sans", "font.size": 11, "axes.edgecolor": "#555555",
                      "axes.labelcolor": "#111111", "xtick.color": "#555555", "ytick.color": "#555555"})

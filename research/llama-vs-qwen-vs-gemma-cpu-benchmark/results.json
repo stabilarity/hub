@@ -551,6 +551,22 @@
   "qwen2.5-0.5b",
   "gemma-3-1b"
  ],
+ "headline": {
+  "qwen3_decode_6t_vs_llama": 0.607,
+  "qwen3_params_vs_llama": 0.482,
+  "qwen3_kv_vs_llama": 3.5,
+  "qwen3_kv_vs_qwen25": 9.333,
+  "llama_kv32k_vs_gemma": 7.367,
+  "qwen3_kv32k_vs_gemma": 25.784,
+  "three_2t_procs_vs_one_6t_decode": {
+   "llama-3.2-1b": 1.72,
+   "gemma-3-1b": 2.311,
+   "qwen3-0.6b": 2.837,
+   "qwen2.5-0.5b": 2.321
+  },
+  "llama_minus_qwen25_pooled_pts": 10.0,
+  "gemma_kv_measured_vs_formula_512": 0.9983
+ },
  "charts": {
   "chart1_acc_norm_pct": {
    "llama-3.2-1b": [

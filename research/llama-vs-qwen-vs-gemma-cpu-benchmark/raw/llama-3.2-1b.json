@@ -1,0 +1,88 @@
+{
+ "key": "llama-3.2-1b",
+ "repo": "unsloth/Llama-3.2-1B-Instruct",
+ "rev": "5a8abab4a5d6f164389b1079fb721cfab8d7126c",
+ "official": "meta-llama/Llama-3.2-1B-Instruct",
+ "family": "Llama",
+ "label": "Llama-3.2-1B-Instruct",
+ "license": "Llama 3.2 Community License",
+ "gated_mirror": false,
+ "file": "model.safetensors",
+ "file_bytes": 2471645608,
+ "sha256": "1ff795ff6a07e6a68085d206fb84417da2f083f68391c2843cd2b8ac6df8538f",
+ "dtype": "bfloat16",
+ "params": 1235814400,
+ "embedding_params": 262668288,
+ "tensors_loaded": 146,
+ "tensors_skipped": [],
+ "load_s": 70.0,
+ "rss_before_load_mb": 879.2,
+ "rss_loaded_mb": 3141.2,
+ "peak_rss_mb": 3227.2,
+ "check_shared_kv_vs_naive": {
+  "max_abs_loglik_diff": 0.3171,
+  "same_argmax": true
+ },
+ "items_per_task": 30,
+ "accuracy": {
+  "arc_easy": {
+   "n": 30,
+   "correct": 22,
+   "correct_norm": 18
+  },
+  "arc_challenge": {
+   "n": 30,
+   "correct": 13,
+   "correct_norm": 11
+  },
+  "hellaswag": {
+   "n": 30,
+   "correct": 15,
+   "correct_norm": 18
+  }
+ },
+ "scoring_s": 205.3,
+ "scored_tokens": {
+  "context": 2857,
+  "continuation": 2819
+ },
+ "speed": [
+  {
+   "threads": 6,
+   "prompt_tokens": 512,
+   "new_tokens": 128,
+   "prefill_s": 11.188,
+   "prefill_tok_s": 45.76,
+   "decode_s": 9.375,
+   "decode_tok_s": 13.653,
+   "kv_bytes_after_prefill": 16777216
+  },
+  {
+   "threads": 2,
+   "prompt_tokens": 512,
+   "new_tokens": 128,
+   "prefill_s": 24.912,
+   "prefill_tok_s": 20.55,
+   "decode_s": 16.356,
+   "decode_tok_s": 7.826,
+   "kv_bytes_after_prefill": 16777216
+  }
+ ],
+ "kv": {
+  "layers": 16,
+  "kv_heads": 8,
+  "q_heads": 32,
+  "head_dim": 64,
+  "hidden": 2048,
+  "vocab": 128256,
+  "sliding_layers": 0,
+  "sliding_window": null,
+  "max_position_embeddings": 131072,
+  "bytes_per_token_full": 32768,
+  "bytes_at_512": 16777216,
+  "bytes_at_4k": 134217728,
+  "bytes_at_32k": 1073741824
+ },
+ "torch": "2.10.0+cu128",
+ "wall_s": 356.9
+}

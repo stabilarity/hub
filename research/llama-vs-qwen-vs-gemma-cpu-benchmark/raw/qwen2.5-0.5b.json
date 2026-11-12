@@ -1,0 +1,88 @@
+{
+ "key": "qwen2.5-0.5b",
+ "repo": "Qwen/Qwen2.5-0.5B-Instruct",
+ "rev": "7ae557604adf67be50417f59c2c2f167def9a775",
+ "official": "Qwen/Qwen2.5-0.5B-Instruct",
+ "family": "Qwen",
+ "label": "Qwen2.5-0.5B-Instruct",
+ "license": "Apache-2.0",
+ "gated_mirror": false,
+ "file": "model.safetensors",
+ "file_bytes": 988097824,
+ "sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+ "dtype": "bfloat16",
+ "params": 494032768,
+ "embedding_params": 136134656,
+ "tensors_loaded": 290,
+ "tensors_skipped": [],
+ "load_s": 28.0,
+ "rss_before_load_mb": 775.8,
+ "rss_loaded_mb": 1723.6,
+ "peak_rss_mb": 1825.8,
+ "check_shared_kv_vs_naive": {
+  "max_abs_loglik_diff": 0.3807,
+  "same_argmax": true
+ },
+ "items_per_task": 30,
+ "accuracy": {
+  "arc_easy": {
+   "n": 30,
+   "correct": 20,
+   "correct_norm": 18
+  },
+  "arc_challenge": {
+   "n": 30,
+   "correct": 8,
+   "correct_norm": 9
+  },
+  "hellaswag": {
+   "n": 30,
+   "correct": 14,
+   "correct_norm": 11
+  }
+ },
+ "scoring_s": 103.4,
+ "scored_tokens": {
+  "context": 2776,
+  "continuation": 2837
+ },
+ "speed": [
+  {
+   "threads": 6,
+   "prompt_tokens": 512,
+   "new_tokens": 128,
+   "prefill_s": 5.326,
+   "prefill_tok_s": 96.14,
+   "decode_s": 8.384,
+   "decode_tok_s": 15.267,
+   "kv_bytes_after_prefill": 6291456
+  },
+  {
+   "threads": 2,
+   "prompt_tokens": 512,
+   "new_tokens": 128,
+   "prefill_s": 10.365,
+   "prefill_tok_s": 49.4,
+   "decode_s": 10.836,
+   "decode_tok_s": 11.813,
+   "kv_bytes_after_prefill": 6291456
+  }
+ ],
+ "kv": {
+  "layers": 24,
+  "kv_heads": 2,
+  "q_heads": 14,
+  "head_dim": 64,
+  "hidden": 896,
+  "vocab": 151936,
+  "sliding_layers": 0,
+  "sliding_window": null,
+  "max_position_embeddings": 32768,
+  "bytes_per_token_full": 12288,
+  "bytes_at_512": 6291456,
+  "bytes_at_4k": 50331648,
+  "bytes_at_32k": 402653184
+ },
+ "torch": "2.10.0+cu128",
+ "wall_s": 175.0
+}

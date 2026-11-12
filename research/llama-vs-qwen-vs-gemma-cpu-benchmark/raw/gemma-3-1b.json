@@ -1,0 +1,88 @@
+{
+ "key": "gemma-3-1b",
+ "repo": "unsloth/gemma-3-1b-it",
+ "rev": "5b11413a10db4e486ef16a20101fd028f8f2499c",
+ "official": "google/gemma-3-1b-it",
+ "family": "Gemma",
+ "label": "Gemma-3-1B-it",
+ "license": "Gemma Terms of Use",
+ "gated_mirror": false,
+ "file": "model.safetensors",
+ "file_bytes": 1999811208,
+ "sha256": "3d4ef8d71c14db7e448a09ebe891cfb6bf32c57a9b44499ae0d1c098e48516b6",
+ "dtype": "bfloat16",
+ "params": 999885952,
+ "embedding_params": 301989888,
+ "tensors_loaded": 340,
+ "tensors_skipped": [],
+ "load_s": 57.2,
+ "rss_before_load_mb": 1074.1,
+ "rss_loaded_mb": 2854.4,
+ "peak_rss_mb": 3000.3,
+ "check_shared_kv_vs_naive": {
+  "max_abs_loglik_diff": 0.4321,
+  "same_argmax": true
+ },
+ "items_per_task": 30,
+ "accuracy": {
+  "arc_easy": {
+   "n": 30,
+   "correct": 18,
+   "correct_norm": 16
+  },
+  "arc_challenge": {
+   "n": 30,
+   "correct": 12,
+   "correct_norm": 12
+  },
+  "hellaswag": {
+   "n": 30,
+   "correct": 13,
+   "correct_norm": 15
+  }
+ },
+ "scoring_s": 172.1,
+ "scored_tokens": {
+  "context": 2869,
+  "continuation": 2784
+ },
+ "speed": [
+  {
+   "threads": 6,
+   "prompt_tokens": 512,
+   "new_tokens": 128,
+   "prefill_s": 9.284,
+   "prefill_tok_s": 55.15,
+   "decode_s": 12.825,
+   "decode_tok_s": 9.981,
+   "kv_bytes_after_prefill": 13608960
+  },
+  {
+   "threads": 2,
+   "prompt_tokens": 512,
+   "new_tokens": 128,
+   "prefill_s": 19.32,
+   "prefill_tok_s": 26.5,
+   "decode_s": 16.648,
+   "decode_tok_s": 7.689,
+   "kv_bytes_after_prefill": 13608960
+  }
+ ],
+ "kv": {
+  "layers": 26,
+  "kv_heads": 1,
+  "q_heads": 4,
+  "head_dim": 256,
+  "hidden": 1152,
+  "vocab": 262144,
+  "sliding_layers": 22,
+  "sliding_window": 512,
+  "max_position_embeddings": 32768,
+  "bytes_per_token_full": 26624,
+  "bytes_at_512": 13631488,
+  "bytes_at_4k": 28311552,
+  "bytes_at_32k": 145752064
+ },
+ "torch": "2.10.0+cu128",
+ "wall_s": 314.0
+}

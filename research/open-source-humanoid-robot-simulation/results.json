@@ -1,0 +1,1377 @@
+{
+ "meta": {
+  "mujoco": "3.17.0",
+  "python": "3.12.3",
+  "cpu": "AMD EPYC Processor (with IBPB)",
+  "logical_cpus": 6,
+  "threads_used": 1,
+  "menagerie_commit": "98a70c569c4c1b6da467a20012f766ee1f8dc521",
+  "settings": {
+   "timestep_s": 0.002,
+   "integrator": "implicitfast",
+   "solver": "Newton",
+   "iterations": 100,
+   "ls_iterations": 50,
+   "cone": "pyramidal",
+   "contacts": "robot-floor only, geom-level friction/solref as shipped",
+   "pd_rule": "kp = tau_max / theta_sat, kv = 0.03 s * kp, torque clipped at tau_max",
+   "theta_sat_rad": 0.05,
+   "stand_s": 10.0,
+   "settle_s": 1.0,
+   "push_s": 0.1,
+   "observe_s": 3.9,
+   "fall_rule": "whole-body CoM height < 0.7 x initial",
+   "dv_max_m_per_s": 3.0,
+   "bisection_iterations": 12,
+   "speed_steps": 5000,
+   "speed_repeats": 5
+  }
+ },
+ "robots": {
+  "Unitree G1": {
+   "spec": {
+    "dof": 29,
+    "actuated_dof": 29,
+    "passive_dof": 0,
+    "actuators_in_mjcf": 29,
+    "mass_kg": 33.34,
+    "sum_torque_limit_Nm": 1566.0,
+    "max_torque_limit_Nm": 139.0,
+    "max_torque_joint": "left_hip_roll_joint",
+    "knee_torque_limit_Nm": 139.0,
+    "torque_per_kg_Nm_per_kg": 46.97,
+    "knee_torque_to_weight_m": 0.425,
+    "ankle_pitch_torque_limit_Nm": 50.0,
+    "ankle_torque_to_weight_m": 0.1529,
+    "licence": "BSD-3-Clause",
+    "copyright": "Copyright (c) 2016-2023 HangZhou YuShu TECHNOLOGY CO.,LTD. (\"Unitree Robotics\")",
+    "upstream_description": "https://github.com/unitreerobotics/unitree_ros/blob/master/robots/g1_description/g1_29dof_rev_1_0.xml",
+    "mjcf_xml_bytes": 116575,
+    "mesh_files": 51,
+    "mesh_MB": 35.95,
+    "all_assets_MB": 35.95,
+    "explicit_inertia": true,
+    "native_timestep_s": 0.002,
+    "native_iterations": 100,
+    "native_integrator": 3
+   },
+   "speed_native": {
+    "steps_per_s": 23111.5,
+    "real_time_factor": 46.22,
+    "timestep_s": 0.002,
+    "mean_contacts": 8.0,
+    "mean_constraint_rows": 61.0,
+    "runs": [
+     23111.5,
+     21106.6,
+     23420.3,
+     24320.1,
+     22395.3
+    ]
+   },
+   "calibration": {
+    "ankle_offset_rad": -0.0494,
+    "com_minus_support_x_before_m": -0.0317,
+    "com_minus_support_x_after_m": 0.0,
+    "com_minus_support_y_after_m": 0.0001,
+    "support_contact_points": 8,
+    "margin_forward_m": 0.085,
+    "margin_backward_m": 0.085,
+    "margin_lateral_m": 0.1484,
+    "support_x_extent_m": 0.17,
+    "support_y_extent_m": 0.297,
+    "ankle_within_range": true,
+    "foot_body": "left_ankle_roll_link"
+   },
+   "height": {
+    "com_height_m": 0.6923,
+    "highest_body_frame_m": 1.0819,
+    "highest_body": "left_shoulder_pitch_link",
+    "root_body": "pelvis",
+    "ankle_stiffness_to_gravity_ratio": 8.833
+   },
+   "speed_uniform": {
+    "steps_per_s": 23420.8,
+    "real_time_factor": 46.84,
+    "timestep_s": 0.002,
+    "mean_contacts": 8.0,
+    "mean_constraint_rows": 61.0,
+    "runs": [
+     23420.8,
+     19963.9,
+     25834.9,
+     22732.4,
+     24635.8
+    ]
+   },
+   "stand": {
+    "stands_10s": true,
+    "fell_at_s": null,
+    "min_com_height_ratio": 0.9998,
+    "max_root_tilt_deg": 0.69,
+    "com_drift_m": 0.0048,
+    "mean_peak_joint_utilisation_last5s": 0.1271,
+    "max_joint_utilisation_last5s": 0.1271
+   },
+   "push": {
+    "forward": {
+     "dv_m_per_s": 0.3116,
+     "impulse_Ns": 10.4,
+     "peak_force_N": 103.9,
+     "force_over_weight": 0.318,
+     "method": "bisection",
+     "capture_point_bound_m_per_s": 0.32,
+     "measured_over_bound": 0.974,
+     "monotonic_check": {
+      "0.8x": false,
+      "0.95x": false,
+      "1.05x": true,
+      "1.5x": true,
+      "2x": true,
+      "4x": true
+     }
+    },
+    "backward": {
+     "dv_m_per_s": 0.3688,
+     "impulse_Ns": 12.3,
+     "peak_force_N": 122.9,
+     "force_over_weight": 0.376,
+     "method": "bisection",
+     "capture_point_bound_m_per_s": 0.32,
+     "measured_over_bound": 1.153
+    },
+    "lateral": {
+     "dv_m_per_s": 0.6588,
+     "impulse_Ns": 22.0,
+     "peak_force_N": 219.6,
+     "force_over_weight": 0.672,
+     "method": "bisection",
+     "capture_point_bound_m_per_s": 0.5586,
+     "measured_over_bound": 1.179
+    }
+   },
+   "push_min_dv_m_per_s": 0.3116,
+   "push_weakest_direction": "forward",
+   "gain_sensitivity_forward": {
+    "0.025": {
+     "stands_10s": true,
+     "forward_dv_m_per_s": 0.3651,
+     "method": "bisection"
+    },
+    "0.05": {
+     "stands_10s": true,
+     "forward_dv_m_per_s": 0.3116
+    },
+    "0.1": {
+     "stands_10s": true,
+     "forward_dv_m_per_s": 0.3241,
+     "method": "bisection"
+    },
+    "0.2": {
+     "stands_10s": true,
+     "forward_dv_m_per_s": 0.1666,
+     "method": "bisection"
+    }
+   },
+   "wall_time_s": 12.7
+  },
+  "Unitree H1": {
+   "spec": {
+    "dof": 19,
+    "actuated_dof": 19,
+    "passive_dof": 0,
+    "actuators_in_mjcf": 19,
+    "mass_kg": 51.44,
+    "sum_torque_limit_Nm": 2312.0,
+    "max_torque_limit_Nm": 300.0,
+    "max_torque_joint": "left_knee",
+    "knee_torque_limit_Nm": 300.0,
+    "torque_per_kg_Nm_per_kg": 44.95,
+    "knee_torque_to_weight_m": 0.5945,
+    "ankle_pitch_torque_limit_Nm": 40.0,
+    "ankle_torque_to_weight_m": 0.0793,
+    "licence": "BSD-3-Clause",
+    "copyright": "Copyright (c) 2016-2023 HangZhou YuShu TECHNOLOGY CO.,LTD. (\"Unitree Robotics\")",
+    "upstream_description": "URDF and assets provided directly by the manufacturer (per Menagerie README)",
+    "mjcf_xml_bytes": 15692,
+    "mesh_files": 21,
+    "mesh_MB": 14.32,
+    "all_assets_MB": 14.32,
+    "explicit_inertia": true,
+    "native_timestep_s": 0.002,
+    "native_iterations": 100,
+    "native_integrator": 0
+   },
+   "speed_native": {
+    "steps_per_s": 28832.3,
+    "real_time_factor": 57.66,
+    "timestep_s": 0.002,
+    "mean_contacts": 3.67,
+    "mean_constraint_rows": 17.19,
+    "runs": [
+     27553.5,
+     30035.9,
+     30368.3,
+     27121.2,
+     28832.3
+    ]
+   },
+   "calibration": {
+    "ankle_offset_rad": -0.0724,
+    "com_minus_support_x_before_m": -0.0638,
+    "com_minus_support_x_after_m": -0.0,
+    "com_minus_support_y_after_m": 0.001,
+    "support_contact_points": 8,
+    "margin_forward_m": 0.0875,
+    "margin_backward_m": 0.0875,
+    "margin_lateral_m": 0.2319,
+    "support_x_extent_m": 0.175,
+    "support_y_extent_m": 0.4657,
+    "ankle_within_range": true,
+    "foot_body": "left_ankle_link"
+   },
+   "height": {
+    "com_height_m": 0.9496,
+    "highest_body_frame_m": 1.4188,
+    "highest_body": "left_shoulder_roll_link",
+    "root_body": "pelvis",
+    "ankle_stiffness_to_gravity_ratio": 3.339
+   },
+   "speed_uniform": {
+    "steps_per_s": 37682.0,
+    "real_time_factor": 75.36,
+    "timestep_s": 0.002,
+    "mean_contacts": 8.0,
+    "mean_constraint_rows": 32.0,
+    "runs": [
+     28966.8,
+     39247.9,
+     37682.0,
+     30595.1,
+     38521.5
+    ]
+   },
+   "stand": {
+    "stands_10s": true,
+    "fell_at_s": null,
+    "min_com_height_ratio": 0.9971,
+    "max_root_tilt_deg": 1.27,
+    "com_drift_m": 0.0122,
+    "mean_peak_joint_utilisation_last5s": 0.4042,
+    "max_joint_utilisation_last5s": 0.421
+   },
+   "push": {
+    "forward": {
+     "dv_m_per_s": 0.2413,
+     "impulse_Ns": 12.4,
+     "peak_force_N": 124.1,
+     "force_over_weight": 0.246,
+     "method": "bisection",
+     "capture_point_bound_m_per_s": 0.2812,
+     "measured_over_bound": 0.858,
+     "monotonic_check": {
+      "0.8x": false,
+      "0.95x": false,
+      "1.05x": true,
+      "1.5x": true,
+      "2x": true,
+      "4x": true
+     }
+    },
+    "backward": {
+     "dv_m_per_s": 0.286,
+     "impulse_Ns": 14.7,
+     "peak_force_N": 147.1,
+     "force_over_weight": 0.292,
+     "method": "bisection",
+     "capture_point_bound_m_per_s": 0.2812,
+     "measured_over_bound": 1.017
+    },
+    "lateral": {
+     "dv_m_per_s": 0.7438,
+     "impulse_Ns": 38.3,
+     "peak_force_N": 382.6,
+     "force_over_weight": 0.758,
+     "method": "bisection",
+     "capture_point_bound_m_per_s": 0.7454,
+     "measured_over_bound": 0.998
+    }
+   },
+   "push_min_dv_m_per_s": 0.2413,
+   "push_weakest_direction": "forward",
+   "gain_sensitivity_forward": {
+    "0.025": {
+     "stands_10s": true,
+     "forward_dv_m_per_s": 0.286,
+     "method": "bisection"
+    },
+    "0.05": {
+     "stands_10s": true,
+     "forward_dv_m_per_s": 0.2413
+    },
+    "0.1": {
+     "stands_10s": false,
+     "forward_dv_m_per_s": 0.0,
+     "method": "falls without push"
+    },
+    "0.2": {
+     "stands_10s": false,
+     "forward_dv_m_per_s": 0.0,
+     "method": "falls without push"
+    }
+   },
+   "wall_time_s": 6.6
+  },
+  "Booster T1": {
+   "spec": {
+    "dof": 23,
+    "actuated_dof": 23,
+    "passive_dof": 0,
+    "actuators_in_mjcf": 23,
+    "mass_kg": 31.61,
+    "sum_torque_limit_Nm": 588.0,
+    "max_torque_limit_Nm": 60.0,
+    "max_torque_joint": "Left_Knee_Pitch",
+    "knee_torque_limit_Nm": 60.0,
+    "torque_per_kg_Nm_per_kg": 18.6,
+    "knee_torque_to_weight_m": 0.1935,
+    "ankle_pitch_torque_limit_Nm": 20.0,
+    "ankle_torque_to_weight_m": 0.0645,
+    "licence": "Apache-2.0",
+    "copyright": "",
+    "upstream_description": "https://github.com/BoosterRobotics/booster_gym/blob/main/resources/T1/T1_serial.urdf",
+    "mjcf_xml_bytes": 15286,
+    "mesh_files": 24,
+    "mesh_MB": 8.43,
+    "all_assets_MB": 8.43,
+    "explicit_inertia": true,
+    "native_timestep_s": 0.002,
+    "native_iterations": 100,
+    "native_integrator": 3
+   },
+   "speed_native": {
+    "steps_per_s": 26498.7,
+    "real_time_factor": 53.0,
+    "timestep_s": 0.002,
+    "mean_contacts": 8.0,
+    "mean_constraint_rows": 55.0,
+    "runs": [
+     30141.5,
+     27757.4,
+     26402.0,
+     22807.1,
+     26498.7
+    ]
+   },
+   "calibration": {
+    "ankle_offset_rad": 0.0267,
+    "com_minus_support_x_before_m": 0.0145,
+    "com_minus_support_x_after_m": -0.0,
+    "com_minus_support_y_after_m": -0.0002,
+    "support_contact_points": 8,
+    "margin_forward_m": 0.1115,
+    "margin_backward_m": 0.1115,
+    "margin_lateral_m": 0.1565,
+    "support_x_extent_m": 0.223,
+    "support_y_extent_m": 0.3125,
+    "ankle_within_range": true,
+    "foot_body": "left_foot_link"
+   },
+   "height": {
+    "com_height_m": 0.5824,
+    "highest_body_frame_m": 0.9705,
+    "highest_body": "H2",
+    "root_body": "Trunk",
+    "ankle_stiffness_to_gravity_ratio": 4.43
+   },
+   "speed_uniform": {
+    "steps_per_s": 33844.9,
+    "real_time_factor": 67.69,
+    "timestep_s": 0.002,
+    "mean_contacts": 8.0,
+    "mean_constraint_rows": 55.0,
+    "runs": [
+     32032.4,
+     31336.4,
+     34157.2,
+     33844.9,
+     35204.0
+    ]
+   },
+   "stand": {
+    "stands_10s": true,
+    "fell_at_s": null,
+    "min_com_height_ratio": 0.9997,
+    "max_root_tilt_deg": 0.13,
+    "com_drift_m": 0.0009,
+    "mean_peak_joint_utilisation_last5s": 0.0856,
+    "max_joint_utilisation_last5s": 0.0856
+   },
+   "push": {
+    "forward": {
+     "dv_m_per_s": 0.3615,
+     "impulse_Ns": 11.4,
+     "peak_force_N": 114.3,
+     "force_over_weight": 0.368,
+     "method": "bisection",
+     "capture_point_bound_m_per_s": 0.4576,
+     "measured_over_bound": 0.79,
+     "monotonic_check": {
+      "0.8x": false,
+      "0.95x": false,
+      "1.05x": true,
+      "1.5x": true,
+      "2x": true,
+      "4x": true
+     }
+    },
+    "backward": {
+     "dv_m_per_s": 0.3651,
+     "impulse_Ns": 11.5,
+     "peak_force_N": 115.4,
+     "force_over_weight": 0.372,
+     "method": "bisection",
+     "capture_point_bound_m_per_s": 0.4576,
+     "measured_over_bound": 0.798
+    },
+    "lateral": {
+     "dv_m_per_s": 0.5834,
+     "impulse_Ns": 18.4,
+     "peak_force_N": 184.4,
+     "force_over_weight": 0.595,
+     "method": "bisection",
+     "capture_point_bound_m_per_s": 0.6423,
+     "measured_over_bound": 0.908
+    }
+   },
+   "push_min_dv_m_per_s": 0.3615,
+   "push_weakest_direction": "forward",
+   "gain_sensitivity_forward": {
+    "0.025": {
+     "stands_10s": true,
+     "forward_dv_m_per_s": 0.3805,
+     "method": "bisection"
+    },
+    "0.05": {
+     "stands_10s": true,
+     "forward_dv_m_per_s": 0.3615
+    },
+    "0.1": {
+     "stands_10s": true,
+     "forward_dv_m_per_s": 0.3116,
+     "method": "bisection"
+    },
+    "0.2": {
+     "stands_10s": true,
+     "forward_dv_m_per_s": 0.0568,
+     "method": "bisection"
+    }
+   },
+   "wall_time_s": 9.3
+  },
+  "Fourier N1": {
+   "spec": {
+    "dof": 23,
+    "actuated_dof": 23,
+    "passive_dof": 0,
+    "actuators_in_mjcf": 23,
+    "mass_kg": 39.73,
+    "sum_torque_limit_Nm": 1118.0,
+    "max_torque_limit_Nm": 95.0,
+    "max_torque_joint": "left_hip_pitch_joint",
+    "knee_torque_limit_Nm": 95.0,
+    "torque_per_kg_Nm_per_kg": 28.14,
+    "knee_torque_to_weight_m": 0.2438,
+    "ankle_pitch_torque_limit_Nm": 30.0,
+    "ankle_torque_to_weight_m": 0.077,
+    "licence": "Apache-2.0",
+    "copyright": "",
+    "upstream_description": "https://github.com/FFTAI/Wiki-GRx-Models",
+    "mjcf_xml_bytes": 22000,
+    "mesh_files": 29,
+    "mesh_MB": 63.46,
+    "all_assets_MB": 63.46,
+    "explicit_inertia": true,
+    "native_timestep_s": 0.002,
+    "native_iterations": 100,
+    "native_integrator": 0
+   },
+   "speed_native": {
+    "steps_per_s": 20046.3,
+    "real_time_factor": 40.09,
+    "timestep_s": 0.002,
+    "mean_contacts": 6.93,
+    "mean_constraint_rows": 29.48,
+    "runs": [
+     20097.8,
+     19510.3,
+     20046.3,
+     21203.4,
+     18193.8
+    ]
+   },
+   "calibration": {
+    "ankle_offset_rad": -0.0445,
+    "com_minus_support_x_before_m": -0.0265,
+    "com_minus_support_x_after_m": 0.0,
+    "com_minus_support_y_after_m": 0.0,
+    "support_contact_points": 8,
+    "margin_forward_m": 0.107,
+    "margin_backward_m": 0.107,
+    "margin_lateral_m": 0.1585,
+    "support_x_extent_m": 0.214,
+    "support_y_extent_m": 0.317,
+    "ankle_within_range": true,
+    "foot_body": "left_foot_pitch_link"
+   },
+   "height": {
+    "com_height_m": 0.6384,
+    "highest_body_frame_m": 1.1597,
+    "highest_body": "camera_link",
+    "root_body": "base_link",
+    "ankle_stiffness_to_gravity_ratio": 4.823
+   },
+   "speed_uniform": {
+    "steps_per_s": 31111.7,
+    "real_time_factor": 62.22,
+    "timestep_s": 0.002,
+    "mean_contacts": 8.0,
+    "mean_constraint_rows": 32.0,
+    "runs": [
+     30188.7,
+     27036.5,
+     33140.7,
+     32086.8,
+     31111.7
+    ]
+   },
+   "stand": {
+    "stands_10s": true,
+    "fell_at_s": null,
+    "min_com_height_ratio": 0.9984,
+    "max_root_tilt_deg": 1.68,
+    "com_drift_m": 0.0094,
+    "mean_peak_joint_utilisation_last5s": 0.2731,
+    "max_joint_utilisation_last5s": 0.2752
+   },
+   "push": {
+    "forward": {
+     "dv_m_per_s": 0.4156,
+     "impulse_Ns": 16.5,
+     "peak_force_N": 165.1,
+     "force_over_weight": 0.424,
+     "method": "bisection",
+     "capture_point_bound_m_per_s": 0.4194,
+     "measured_over_bound": 0.991,
+     "monotonic_check": {
+      "0.8x": false,
+      "0.95x": false,
+      "1.05x": true,
+      "1.5x": true,
+      "2x": true,
+      "4x": true
+     }
+    },
+    "backward": {
+     "dv_m_per_s": 0.5116,
+     "impulse_Ns": 20.3,
+     "peak_force_N": 203.3,
+     "force_over_weight": 0.522,
+     "method": "bisection",
+     "capture_point_bound_m_per_s": 0.4194,
+     "measured_over_bound": 1.22
+    },
+    "lateral": {
+     "dv_m_per_s": 0.6815,
+     "impulse_Ns": 27.1,
+     "peak_force_N": 270.8,
+     "force_over_weight": 0.695,
+     "method": "bisection",
+     "capture_point_bound_m_per_s": 0.6213,
+     "measured_over_bound": 1.097
+    }
+   },
+   "push_min_dv_m_per_s": 0.4156,
+   "push_weakest_direction": "forward",
+   "gain_sensitivity_forward": {
+    "0.025": {
+     "stands_10s": true,
+     "forward_dv_m_per_s": 0.4706,
+     "method": "bisection"
+    },
+    "0.05": {
+     "stands_10s": true,
+     "forward_dv_m_per_s": 0.4156
+    },
+    "0.1": {
+     "stands_10s": true,
+     "forward_dv_m_per_s": 0.3702,
+     "method": "bisection"
+    },
+    "0.2": {
+     "stands_10s": false,
+     "forward_dv_m_per_s": 0.0,
+     "method": "falls without push"
+    }
+   },
+   "wall_time_s": 8.0
+  },
+  "Apptronik Apollo": {
+   "spec": {
+    "dof": 32,
+    "actuated_dof": 32,
+    "passive_dof": 0,
+    "actuators_in_mjcf": 32,
+    "mass_kg": 80.9,
+    "sum_torque_limit_Nm": 4956.0,
+    "max_torque_limit_Nm": 494.0,
+    "max_torque_joint": "l_hip_aa",
+    "knee_torque_limit_Nm": 336.0,
+    "torque_per_kg_Nm_per_kg": 61.26,
+    "knee_torque_to_weight_m": 0.4234,
+    "ankle_pitch_torque_limit_Nm": 150.0,
+    "ankle_torque_to_weight_m": 0.189,
+    "licence": "Apache-2.0",
+    "copyright": "",
+    "upstream_description": "not stated in the Menagerie README",
+    "mjcf_xml_bytes": 36112,
+    "mesh_files": 44,
+    "mesh_MB": 71.21,
+    "all_assets_MB": 71.21,
+    "explicit_inertia": true,
+    "native_timestep_s": 0.005,
+    "native_iterations": 4,
+    "native_integrator": 3
+   },
+   "speed_native": {
+    "steps_per_s": 20303.7,
+    "real_time_factor": 101.52,
+    "timestep_s": 0.005,
+    "mean_contacts": 7.79,
+    "mean_constraint_rows": 100.9,
+    "runs": [
+     20466.8,
+     19149.7,
+     18330.5,
+     20303.7,
+     20654.9
+    ]
+   },
+   "calibration": {
+    "ankle_offset_rad": 0.0464,
+    "com_minus_support_x_before_m": 0.0387,
+    "com_minus_support_x_after_m": 0.0009,
+    "com_minus_support_y_after_m": -0.0228,
+    "support_contact_points": 6,
+    "margin_forward_m": 0.1028,
+    "margin_backward_m": 0.1046,
+    "margin_lateral_m": 0.1795,
+    "support_x_extent_m": 0.2075,
+    "support_y_extent_m": 0.3135,
+    "ankle_within_range": true,
+    "foot_body": "l_foot_link"
+   },
+   "height": {
+    "com_height_m": 0.8874,
+    "highest_body_frame_m": 1.581,
+    "highest_body": "neck_roll_link",
+    "root_body": "base_link",
+    "ankle_stiffness_to_gravity_ratio": 8.52
+   },
+   "speed_uniform": {
+    "steps_per_s": 22499.0,
+    "real_time_factor": 45.0,
+    "timestep_s": 0.002,
+    "mean_contacts": 4.59,
+    "mean_constraint_rows": 68.9,
+    "runs": [
+     23965.8,
+     20386.8,
+     21131.9,
+     22499.0,
+     23872.9
+    ]
+   },
+   "stand": {
+    "stands_10s": true,
+    "fell_at_s": null,
+    "min_com_height_ratio": 0.9964,
+    "max_root_tilt_deg": 1.36,
+    "com_drift_m": 0.0142,
+    "mean_peak_joint_utilisation_last5s": 0.139,
+    "max_joint_utilisation_last5s": 0.139
+   },
+   "push": {
+    "forward": {
+     "dv_m_per_s": 0.3431,
+     "impulse_Ns": 27.8,
+     "peak_force_N": 277.6,
+     "force_over_weight": 0.35,
+     "method": "bisection",
+     "capture_point_bound_m_per_s": 0.3418,
+     "measured_over_bound": 1.004,
+     "monotonic_check": {
+      "0.8x": false,
+      "0.95x": false,
+      "1.05x": true,
+      "1.5x": true,
+      "2x": true,
+      "4x": true
+     }
+    },
+    "backward": {
+     "dv_m_per_s": 0.3768,
+     "impulse_Ns": 30.5,
+     "peak_force_N": 304.9,
+     "force_over_weight": 0.384,
+     "method": "bisection",
+     "capture_point_bound_m_per_s": 0.3478,
+     "measured_over_bound": 1.083
+    },
+    "lateral": {
+     "dv_m_per_s": 0.7006,
+     "impulse_Ns": 56.7,
+     "peak_force_N": 566.8,
+     "force_over_weight": 0.714,
+     "method": "bisection",
+     "capture_point_bound_m_per_s": 0.5968,
+     "measured_over_bound": 1.174
+    }
+   },
+   "push_min_dv_m_per_s": 0.3431,
+   "push_weakest_direction": "forward",
+   "gain_sensitivity_forward": {
+    "0.025": {
+     "stands_10s": true,
+     "forward_dv_m_per_s": 0.3593,
+     "method": "bisection"
+    },
+    "0.05": {
+     "stands_10s": true,
+     "forward_dv_m_per_s": 0.3431
+    },
+    "0.1": {
+     "stands_10s": true,
+     "forward_dv_m_per_s": 0.3278,
+     "method": "bisection"
+    },
+    "0.2": {
+     "stands_10s": true,
+     "forward_dv_m_per_s": 0.2509,
+     "method": "bisection"
+    }
+   },
+   "wall_time_s": 12.3
+  },
+  "PAL TALOS": {
+   "spec": {
+    "dof": 44,
+    "actuated_dof": 32,
+    "passive_dof": 12,
+    "actuators_in_mjcf": 32,
+    "mass_kg": 94.0,
+    "sum_torque_limit_Nm": 3326.0,
+    "max_torque_limit_Nm": 400.0,
+    "max_torque_joint": "leg_left_4_joint",
+    "knee_torque_limit_Nm": 400.0,
+    "torque_per_kg_Nm_per_kg": 35.38,
+    "knee_torque_to_weight_m": 0.4338,
+    "ankle_pitch_torque_limit_Nm": 160.0,
+    "ankle_torque_to_weight_m": 0.1735,
+    "licence": "Apache-2.0",
+    "copyright": "",
+    "upstream_description": "https://github.com/pal-robotics/talos_robot/tree/kinetic-devel/talos_description",
+    "mjcf_xml_bytes": 48144,
+    "mesh_files": 49,
+    "mesh_MB": 7.95,
+    "all_assets_MB": 7.95,
+    "explicit_inertia": true,
+    "native_timestep_s": 0.001,
+    "native_iterations": 100,
+    "native_integrator": 3
+   },
+   "speed_native": {
+    "steps_per_s": 13898.5,
+    "real_time_factor": 13.9,
+    "timestep_s": 0.001,
+    "mean_contacts": 8.0,
+    "mean_constraint_rows": 91.28,
+    "runs": [
+     14333.5,
+     13898.5,
+     13824.8,
+     13481.8,
+     14187.2
+    ]
+   },
+   "calibration": {
+    "ankle_offset_rad": 0.009,
+    "com_minus_support_x_before_m": 0.0076,
+    "com_minus_support_x_after_m": -0.0,
+    "com_minus_support_y_after_m": -0.0003,
+    "support_contact_points": 8,
+    "margin_forward_m": 0.1,
+    "margin_backward_m": 0.1,
+    "margin_lateral_m": 0.1453,
+    "support_x_extent_m": 0.2,
+    "support_y_extent_m": 0.29,
+    "ankle_within_range": true,
+    "foot_body": "leg_left_6_link"
+   },
+   "height": {
+    "com_height_m": 0.9421,
+    "highest_body_frame_m": 1.4699,
+    "highest_body": "head_1_link",
+    "root_body": "base_link",
+    "ankle_stiffness_to_gravity_ratio": 7.367
+   },
+   "speed_uniform": {
+    "steps_per_s": 15925.9,
+    "real_time_factor": 31.85,
+    "timestep_s": 0.002,
+    "mean_contacts": 8.0,
+    "mean_constraint_rows": 90.07,
+    "runs": [
+     14415.6,
+     15925.9,
+     15654.7,
+     15981.4,
+     16177.4
+    ]
+   },
+   "stand": {
+    "stands_10s": true,
+    "fell_at_s": null,
+    "min_com_height_ratio": 1.0,
+    "max_root_tilt_deg": 0.09,
+    "com_drift_m": 0.0007,
+    "mean_peak_joint_utilisation_last5s": 0.1262,
+    "max_joint_utilisation_last5s": 0.1262
+   },
+   "push": {
+    "forward": {
+     "dv_m_per_s": 0.3439,
+     "impulse_Ns": 32.3,
+     "peak_force_N": 323.2,
+     "force_over_weight": 0.351,
+     "method": "bisection",
+     "capture_point_bound_m_per_s": 0.3227,
+     "measured_over_bound": 1.066,
+     "monotonic_check": {
+      "0.8x": false,
+      "0.95x": false,
+      "1.05x": true,
+      "1.5x": true,
+      "2x": true,
+      "4x": true
+     }
+    },
+    "backward": {
+     "dv_m_per_s": 0.3387,
+     "impulse_Ns": 31.8,
+     "peak_force_N": 318.4,
+     "force_over_weight": 0.345,
+     "method": "bisection",
+     "capture_point_bound_m_per_s": 0.3227,
+     "measured_over_bound": 1.05
+    },
+    "lateral": {
+     "dv_m_per_s": 0.5131,
+     "impulse_Ns": 48.2,
+     "peak_force_N": 482.3,
+     "force_over_weight": 0.523,
+     "method": "bisection",
+     "capture_point_bound_m_per_s": 0.4689,
+     "measured_over_bound": 1.094
+    }
+   },
+   "push_min_dv_m_per_s": 0.3387,
+   "push_weakest_direction": "backward",
+   "gain_sensitivity_forward": {
+    "0.025": {
+     "stands_10s": true,
+     "forward_dv_m_per_s": 0.3409,
+     "method": "bisection"
+    },
+    "0.05": {
+     "stands_10s": true,
+     "forward_dv_m_per_s": 0.3439
+    },
+    "0.1": {
+     "stands_10s": true,
+     "forward_dv_m_per_s": 0.3322,
+     "method": "bisection"
+    },
+    "0.2": {
+     "stands_10s": true,
+     "forward_dv_m_per_s": 0.2985,
+     "method": "bisection"
+    }
+   },
+   "wall_time_s": 17.5
+  },
+  "Berkeley Humanoid": {
+   "spec": {
+    "dof": 12,
+    "actuated_dof": 12,
+    "passive_dof": 0,
+    "actuators_in_mjcf": 12,
+    "mass_kg": 16.06,
+    "sum_torque_limit_Nm": 250.0,
+    "max_torque_limit_Nm": 30.0,
+    "max_torque_joint": "LL_HFE",
+    "knee_torque_limit_Nm": 30.0,
+    "torque_per_kg_Nm_per_kg": 15.57,
+    "knee_torque_to_weight_m": 0.1905,
+    "ankle_pitch_torque_limit_Nm": 20.0,
+    "ankle_torque_to_weight_m": 0.127,
+    "licence": "BSD-3-Clause",
+    "copyright": "Copyright (c) 2024 Hybrid Robotics",
+    "upstream_description": "https://github.com/HybridRobotics/berkeley_humanoid_description",
+    "mjcf_xml_bytes": 12302,
+    "mesh_files": 13,
+    "mesh_MB": 27.2,
+    "all_assets_MB": 27.2,
+    "explicit_inertia": true,
+    "native_timestep_s": 0.002,
+    "native_iterations": 100,
+    "native_integrator": 0
+   },
+   "speed_native": {
+    "steps_per_s": 41544.1,
+    "real_time_factor": 83.09,
+    "timestep_s": 0.002,
+    "mean_contacts": 6.99,
+    "mean_constraint_rows": 41.45,
+    "runs": [
+     41544.1,
+     39590.8,
+     39920.4,
+     43341.0,
+     42631.6
+    ]
+   },
+   "calibration": {
+    "ankle_offset_rad": -0.0589,
+    "com_minus_support_x_before_m": -0.0215,
+    "com_minus_support_x_after_m": 0.001,
+    "com_minus_support_y_after_m": 0.0011,
+    "support_contact_points": 8,
+    "margin_forward_m": 0.0802,
+    "margin_backward_m": 0.0821,
+    "margin_lateral_m": 0.1379,
+    "support_x_extent_m": 0.1623,
+    "support_y_extent_m": 0.2779,
+    "ankle_within_range": true,
+    "foot_body": "ll_faa"
+   },
+   "height": {
+    "com_height_m": 0.4327,
+    "highest_body_frame_m": 0.5182,
+    "highest_body": "lr_hr",
+    "root_body": "torso",
+    "ankle_stiffness_to_gravity_ratio": 11.735
+   },
+   "speed_uniform": {
+    "steps_per_s": 43879.2,
+    "real_time_factor": 87.76,
+    "timestep_s": 0.002,
+    "mean_contacts": 7.98,
+    "mean_constraint_rows": 43.91,
+    "runs": [
+     43879.2,
+     42184.9,
+     44269.8,
+     44215.6,
+     43270.5
+    ]
+   },
+   "stand": {
+    "stands_10s": true,
+    "fell_at_s": null,
+    "min_com_height_ratio": 0.9975,
+    "max_root_tilt_deg": 0.37,
+    "com_drift_m": 0.0014,
+    "mean_peak_joint_utilisation_last5s": 0.1819,
+    "max_joint_utilisation_last5s": 0.1819
+   },
+   "push": {
+    "forward": {
+     "dv_m_per_s": 0.3138,
+     "impulse_Ns": 5.0,
+     "peak_force_N": 50.4,
+     "force_over_weight": 0.32,
+     "method": "bisection",
+     "capture_point_bound_m_per_s": 0.3819,
+     "measured_over_bound": 0.822,
+     "monotonic_check": {
+      "0.8x": false,
+      "0.95x": false,
+      "1.05x": true,
+      "1.5x": true,
+      "2x": true,
+      "4x": true
+     }
+    },
+    "backward": {
+     "dv_m_per_s": 0.3153,
+     "impulse_Ns": 5.1,
+     "peak_force_N": 50.6,
+     "force_over_weight": 0.321,
+     "method": "bisection",
+     "capture_point_bound_m_per_s": 0.3909,
+     "measured_over_bound": 0.807
+    },
+    "lateral": {
+     "dv_m_per_s": 0.5878,
+     "impulse_Ns": 9.4,
+     "peak_force_N": 94.4,
+     "force_over_weight": 0.599,
+     "method": "bisection",
+     "capture_point_bound_m_per_s": 0.6566,
+     "measured_over_bound": 0.895
+    }
+   },
+   "push_min_dv_m_per_s": 0.3138,
+   "push_weakest_direction": "forward",
+   "gain_sensitivity_forward": {
+    "0.025": {
+     "stands_10s": true,
+     "forward_dv_m_per_s": 0.319,
+     "method": "bisection"
+    },
+    "0.05": {
+     "stands_10s": true,
+     "forward_dv_m_per_s": 0.3138
+    },
+    "0.1": {
+     "stands_10s": true,
+     "forward_dv_m_per_s": 0.3058,
+     "method": "bisection"
+    },
+    "0.2": {
+     "stands_10s": true,
+     "forward_dv_m_per_s": 0.2919,
+     "method": "bisection"
+    }
+   },
+   "wall_time_s": 6.7
+  }
+ },
+ "rankings": {
+  "speed_uniform": [
+   "Berkeley Humanoid",
+   "Unitree H1",
+   "Booster T1",
+   "Fourier N1",
+   "Unitree G1",
+   "Apptronik Apollo",
+   "PAL TALOS"
+  ],
+  "push_min_dv": [
+   "Fourier N1",
+   "Booster T1",
+   "Apptronik Apollo",
+   "PAL TALOS",
+   "Berkeley Humanoid",
+   "Unitree G1",
+   "Unitree H1"
+  ],
+  "torque_per_kg": [
+   "Apptronik Apollo",
+   "Unitree G1",
+   "Unitree H1",
+   "PAL TALOS",
+   "Fourier N1",
+   "Booster T1",
+   "Berkeley Humanoid"
+  ]
+ },
+ "summary": {
+  "n_stand": 7,
+  "speed_ratio_fastest_to_slowest": 2.76,
+  "licences": {
+   "Unitree G1": "BSD-3-Clause",
+   "Unitree H1": "BSD-3-Clause",
+   "Booster T1": "Apache-2.0",
+   "Fourier N1": "Apache-2.0",
+   "Apptronik Apollo": "Apache-2.0",
+   "PAL TALOS": "Apache-2.0",
+   "Berkeley Humanoid": "BSD-3-Clause"
+  },
+  "corr_push_vs_torque_per_kg": -0.297,
+  "corr_push_vs_knee_ratio": -0.678,
+  "corr_push_vs_ankle_ratio": -0.076,
+  "corr_push_vs_capture_point_bound": 0.917,
+  "measured_over_bound_range": [
+   0.79,
+   1.22
+  ],
+  "corr_push_vs_mass": 0.007,
+  "corr_speed_vs_constraint_rows": -0.814,
+  "corr_speed_vs_dof": -0.972,
+  "total_wall_time_s": 73.0
+ },
+ "chart_values": {
+  "chart1": {
+   "Unitree G1": {
+    "mass_kg": 33.34,
+    "sum_torque_Nm": 1566.0,
+    "dof": 29,
+    "torque_per_kg": 46.97,
+    "knee_lever_cm": 42.5
+   },
+   "Unitree H1": {
+    "mass_kg": 51.44,
+    "sum_torque_Nm": 2312.0,
+    "dof": 19,
+    "torque_per_kg": 44.95,
+    "knee_lever_cm": 59.45
+   },
+   "Booster T1": {
+    "mass_kg": 31.61,
+    "sum_torque_Nm": 588.0,
+    "dof": 23,
+    "torque_per_kg": 18.6,
+    "knee_lever_cm": 19.35
+   },
+   "Fourier N1": {
+    "mass_kg": 39.73,
+    "sum_torque_Nm": 1118.0,
+    "dof": 23,
+    "torque_per_kg": 28.14,
+    "knee_lever_cm": 24.38
+   },
+   "Apptronik Apollo": {
+    "mass_kg": 80.9,
+    "sum_torque_Nm": 4956.0,
+    "dof": 32,
+    "torque_per_kg": 61.26,
+    "knee_lever_cm": 42.34
+   },
+   "PAL TALOS": {
+    "mass_kg": 94.0,
+    "sum_torque_Nm": 3326.0,
+    "dof": 44,
+    "torque_per_kg": 35.38,
+    "knee_lever_cm": 43.38
+   },
+   "Berkeley Humanoid": {
+    "mass_kg": 16.06,
+    "sum_torque_Nm": 250.0,
+    "dof": 12,
+    "torque_per_kg": 15.57,
+    "knee_lever_cm": 19.05
+   }
+  },
+  "chart2": {
+   "Unitree G1": {
+    "rtf_uniform": 46.84,
+    "sps_uniform": 23420.8,
+    "rtf_native": 46.22,
+    "sps_native": 23111.5
+   },
+   "Unitree H1": {
+    "rtf_uniform": 75.36,
+    "sps_uniform": 37682.0,
+    "rtf_native": 57.66,
+    "sps_native": 28832.3
+   },
+   "Booster T1": {
+    "rtf_uniform": 67.69,
+    "sps_uniform": 33844.9,
+    "rtf_native": 53.0,
+    "sps_native": 26498.7
+   },
+   "Fourier N1": {
+    "rtf_uniform": 62.22,
+    "sps_uniform": 31111.7,
+    "rtf_native": 40.09,
+    "sps_native": 20046.3
+   },
+   "Apptronik Apollo": {
+    "rtf_uniform": 45.0,
+    "sps_uniform": 22499.0,
+    "rtf_native": 101.52,
+    "sps_native": 20303.7
+   },
+   "PAL TALOS": {
+    "rtf_uniform": 31.85,
+    "sps_uniform": 15925.9,
+    "rtf_native": 13.9,
+    "sps_native": 13898.5
+   },
+   "Berkeley Humanoid": {
+    "rtf_uniform": 87.76,
+    "sps_uniform": 43879.2,
+    "rtf_native": 83.09,
+    "sps_native": 41544.1
+   }
+  },
+  "chart3": {
+   "Unitree G1": {
+    "forward": 0.3116,
+    "backward": 0.3688,
+    "lateral": 0.6588
+   },
+   "Unitree H1": {
+    "forward": 0.2413,
+    "backward": 0.286,
+    "lateral": 0.7438
+   },
+   "Booster T1": {
+    "forward": 0.3615,
+    "backward": 0.3651,
+    "lateral": 0.5834
+   },
+   "Fourier N1": {
+    "forward": 0.4156,
+    "backward": 0.5116,
+    "lateral": 0.6815
+   },
+   "Apptronik Apollo": {
+    "forward": 0.3431,
+    "backward": 0.3768,
+    "lateral": 0.7006
+   },
+   "PAL TALOS": {
+    "forward": 0.3439,
+    "backward": 0.3387,
+    "lateral": 0.5131
+   },
+   "Berkeley Humanoid": {
+    "forward": 0.3138,
+    "backward": 0.3153,
+    "lateral": 0.5878
+   }
+  },
+  "chart4": {
+   "Unitree G1": {
+    "forward_by_theta": {
+     "0.025": 0.3651,
+     "0.05": 0.3116,
+     "0.1": 0.3241,
+     "0.2": 0.1666
+    },
+    "capture_point_bound": {
+     "forward": 0.32,
+     "backward": 0.32,
+     "lateral": 0.5586
+    },
+    "measured": {
+     "forward": 0.3116,
+     "backward": 0.3688,
+     "lateral": 0.6588
+    }
+   },
+   "Unitree H1": {
+    "forward_by_theta": {
+     "0.025": 0.286,
+     "0.05": 0.2413,
+     "0.1": 0.0,
+     "0.2": 0.0
+    },
+    "capture_point_bound": {
+     "forward": 0.2812,
+     "backward": 0.2812,
+     "lateral": 0.7454
+    },
+    "measured": {
+     "forward": 0.2413,
+     "backward": 0.286,
+     "lateral": 0.7438
+    }
+   },
+   "Booster T1": {
+    "forward_by_theta": {
+     "0.025": 0.3805,
+     "0.05": 0.3615,
+     "0.1": 0.3116,
+     "0.2": 0.0568
+    },
+    "capture_point_bound": {
+     "forward": 0.4576,
+     "backward": 0.4576,
+     "lateral": 0.6423
+    },
+    "measured": {
+     "forward": 0.3615,
+     "backward": 0.3651,
+     "lateral": 0.5834
+    }
+   },
+   "Fourier N1": {
+    "forward_by_theta": {
+     "0.025": 0.4706,
+     "0.05": 0.4156,
+     "0.1": 0.3702,
+     "0.2": 0.0
+    },
+    "capture_point_bound": {
+     "forward": 0.4194,
+     "backward": 0.4194,
+     "lateral": 0.6213
+    },
+    "measured": {
+     "forward": 0.4156,
+     "backward": 0.5116,
+     "lateral": 0.6815
+    }
+   },
+   "Apptronik Apollo": {
+    "forward_by_theta": {
+     "0.025": 0.3593,
+     "0.05": 0.3431,
+     "0.1": 0.3278,
+     "0.2": 0.2509
+    },
+    "capture_point_bound": {
+     "forward": 0.3418,
+     "backward": 0.3478,
+     "lateral": 0.5968
+    },
+    "measured": {
+     "forward": 0.3431,
+     "backward": 0.3768,
+     "lateral": 0.7006
+    }
+   },
+   "PAL TALOS": {
+    "forward_by_theta": {
+     "0.025": 0.3409,
+     "0.05": 0.3439,
+     "0.1": 0.3322,
+     "0.2": 0.2985
+    },
+    "capture_point_bound": {
+     "forward": 0.3227,
+     "backward": 0.3227,
+     "lateral": 0.4689
+    },
+    "measured": {
+     "forward": 0.3439,
+     "backward": 0.3387,
+     "lateral": 0.5131
+    }
+   },
+   "Berkeley Humanoid": {
+    "forward_by_theta": {
+     "0.025": 0.319,
+     "0.05": 0.3138,
+     "0.1": 0.3058,
+     "0.2": 0.2919
+    },
+    "capture_point_bound": {
+     "forward": 0.3819,
+     "backward": 0.3909,
+     "lateral": 0.6566
+    },
+    "measured": {
+     "forward": 0.3138,
+     "backward": 0.3153,
+     "lateral": 0.5878
+    }
+   }
+  }
+ }
+}

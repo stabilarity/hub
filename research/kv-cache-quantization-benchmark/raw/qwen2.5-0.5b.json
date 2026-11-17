@@ -1,0 +1,2634 @@
+{
+ "key": "qwen2.5-0.5b",
+ "repo": "Qwen/Qwen2.5-0.5B-Instruct",
+ "rev": "7ae557604adf67be50417f59c2c2f167def9a775",
+ "label": "Qwen2.5-0.5B-Instruct",
+ "license": "Apache-2.0",
+ "file": "model.safetensors",
+ "file_bytes": 988097824,
+ "sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+ "tensors_loaded": 290,
+ "compute_dtype": "float32",
+ "attn": "sdpa",
+ "layers": 24,
+ "kv_heads": 2,
+ "q_heads": 14,
+ "head_dim": 64,
+ "kv_bytes_per_token_bf16": 12288,
+ "chat_prefix_tokens": 44,
+ "question_tokens": 22,
+ "checks": {
+  "cached_vs_full_forward_max_abs_logit_diff": 7e-05,
+  "gather_all_vs_baseline_max_abs_logit_diff": 0.0
+ },
+ "niah": [
+  {
+   "length": 1024,
+   "ctx_tokens": 1002,
+   "depth": 0.05,
+   "trial": 0,
+   "passkey": 60494,
+   "needle_tokens": [
+    82,
+    107
+   ],
+   "answer_tokens": 6,
+   "methods": {
+    "bf16": {
+     "exact": 1,
+     "logprob": -0.0194,
+     "pred": "60494"
+    },
+    "tok-int8": {
+     "exact": 1,
+     "logprob": -0.017,
+     "pred": "60494"
+    },
+    "tok-int4": {
+     "exact": 1,
+     "logprob": -0.881,
+     "pred": "60494"
+    },
+    "tok-int2": {
+     "exact": 0,
+     "logprob": -4.5781,
+     "pred": "60094"
+    },
+    "kivi-int8": {
+     "exact": 1,
+     "logprob": -0.02,
+     "pred": "60494"
+    },
+    "kivi-int4": {
+     "exact": 1,
+     "logprob": -0.0312,
+     "pred": "60494"
+    },
+    "kivi-int2": {
+     "exact": 1,
+     "logprob": -0.1591,
+     "pred": "60494"
+    },
+    "window-50": {
+     "exact": 0,
+     "logprob": -37.4273,
+     "pred": "the3<|im_end|>0<|im_end|>.",
+     "needle_kept": 0.0
+    },
+    "window-25": {
+     "exact": 0,
+     "logprob": -38.7037,
+     "pred": "with Answer.\n.4 drawing",
+     "needle_kept": 0.0
+    },
+    "sink-50": {
+     "exact": 0,
+     "logprob": -15.0677,
+     "pred": "180..",
+     "needle_kept": 0.0
+    },
+    "sink-25": {
+     "exact": 0,
+     "logprob": -15.1566,
+     "pred": "180..",
+     "needle_kept": 0.0
+    },
+    "h2o-50": {
+     "exact": 1,
+     "logprob": -0.6895,
+     "pred": "60494",
+     "needle_kept": 0.371
+    },
+    "h2o-25": {
+     "exact": 0,
+     "logprob": -13.9636,
+     "pred": "1....",
+     "needle_kept": 0.1939
+    },
+    "snapkv-50": {
+     "exact": 1,
+     "logprob": -0.0187,
+     "pred": "60494",
+     "needle_kept": 0.9038
+    },
+    "snapkv-25": {
+     "exact": 1,
+     "logprob": -0.017,
+     "pred": "60494",
+     "needle_kept": 0.7869
+    }
+   }
+  },
+  {
+   "length": 1024,
+   "ctx_tokens": 1002,
+   "depth": 0.05,
+   "trial": 1,
+   "passkey": 15306,
+   "needle_tokens": [
+    95,
+    120
+   ],
+   "answer_tokens": 6,
+   "methods": {
+    "bf16": {
+     "exact": 1,
+     "logprob": -0.0471,
+     "pred": "15306"
+    },
+    "tok-int8": {
+     "exact": 1,
+     "logprob": -0.051,
+     "pred": "15306"
+    },
+    "tok-int4": {
+     "exact": 0,
+     "logprob": -5.1158,
+     "pred": "153.6"
+    },
+    "tok-int2": {
+     "exact": 0,
+     "logprob": -13.2181,
+     "pred": "hidden15..0"
+    },
+    "kivi-int8": {
+     "exact": 1,
+     "logprob": -0.0484,
+     "pred": "15306"
+    },
+    "kivi-int4": {
+     "exact": 1,
+     "logprob": -0.0797,
+     "pred": "15306"
+    },
+    "kivi-int2": {
+     "exact": 1,
+     "logprob": -0.1299,
+     "pred": "15306"
+    },
+    "window-50": {
+     "exact": 0,
+     "logprob": -32.2878,
+     "pred": "the40.\n30",
+     "needle_kept": 0.0
+    },
+    "window-25": {
+     "exact": 0,
+     "logprob": -29.2175,
+     "pred": "the 0.\n44",
+     "needle_kept": 0.0
+    },
+    "sink-50": {
+     "exact": 0,
+     "logprob": -13.9874,
+     "pred": "02...",
+     "needle_kept": 0.0
+    },
+    "sink-25": {
+     "exact": 0,
+     "logprob": -13.9112,
+     "pred": "12...",
+     "needle_kept": 0.0
+    },
+    "h2o-50": {
+     "exact": 0,
+     "logprob": -7.0108,
+     "pred": "15300",
+     "needle_kept": 0.3365
+    },
+    "h2o-25": {
+     "exact": 0,
+     "logprob": -12.8719,
+     "pred": "1....",
+     "needle_kept": 0.1651
+    },
+    "snapkv-50": {
+     "exact": 1,
+     "logprob": -0.0493,
+     "pred": "15306",
+     "needle_kept": 0.867
+    },
+    "snapkv-25": {
+     "exact": 1,
+     "logprob": -0.0584,
+     "pred": "15306",
+     "needle_kept": 0.7644
+    }
+   }
+  },
+  {
+   "length": 1024,
+   "ctx_tokens": 1002,
+   "depth": 0.25,
+   "trial": 0,
+   "passkey": 77013,
+   "needle_tokens": [
+    280,
+    305
+   ],
+   "answer_tokens": 6,
+   "methods": {
+    "bf16": {
+     "exact": 1,
+     "logprob": -0.0647,
+     "pred": "77013"
+    },
+    "tok-int8": {
+     "exact": 1,
+     "logprob": -0.0638,
+     "pred": "77013"
+    },
+    "tok-int4": {
+     "exact": 0,
+     "logprob": -3.1415,
+     "pred": "77713"
+    },
+    "tok-int2": {
+     "exact": 0,
+     "logprob": -10.1387,
+     "pred": "holding77713"
+    },
+    "kivi-int8": {
+     "exact": 1,
+     "logprob": -0.0667,
+     "pred": "77013"
+    },
+    "kivi-int4": {
+     "exact": 1,
+     "logprob": -0.1054,
+     "pred": "77013"
+    },
+    "kivi-int2": {
+     "exact": 1,
+     "logprob": -0.7112,
+     "pred": "77013"
+    },
+    "window-50": {
+     "exact": 0,
+     "logprob": -33.1016,
+     "pred": "with2.701",
+     "needle_kept": 0.0
+    },
+    "window-25": {
+     "exact": 0,
+     "logprob": -34.894,
+     "pred": "the .707",
+     "needle_kept": 0.0
+    },
+    "sink-50": {
+     "exact": 0,
+     "logprob": -13.7225,
+     "pred": "18702",
+     "needle_kept": 0.0
+    },
+    "sink-25": {
+     "exact": 0,
+     "logprob": -14.118,
+     "pred": "1..0.",
+     "needle_kept": 0.0
+    },
+    "h2o-50": {
+     "exact": 1,
+     "logprob": -0.8404,
+     "pred": "77013",
+     "needle_kept": 0.3021
+    },
+    "h2o-25": {
+     "exact": 0,
+     "logprob": -12.1816,
+     "pred": "7<|im_end|>...",
+     "needle_kept": 0.1362
+    },
+    "snapkv-50": {
+     "exact": 1,
+     "logprob": -0.0513,
+     "pred": "77013",
+     "needle_kept": 0.7893
+    },
+    "snapkv-25": {
+     "exact": 1,
+     "logprob": -0.0328,
+     "pred": "77013",
+     "needle_kept": 0.7115
+    }
+   }
+  },
+  {
+   "length": 1024,
+   "ctx_tokens": 1002,
+   "depth": 0.25,
+   "trial": 1,
+   "passkey": 63075,
+   "needle_tokens": [
+    274,
+    299
+   ],
+   "answer_tokens": 6,
+   "methods": {
+    "bf16": {
+     "exact": 1,
+     "logprob": -0.0902,
+     "pred": "63075"
+    },
+    "tok-int8": {
+     "exact": 1,
+     "logprob": -0.0648,
+     "pred": "63075"
+    },
+    "tok-int4": {
+     "exact": 1,
+     "logprob": -1.6219,
+     "pred": "63075"
+    },
+    "tok-int2": {
+     "exact": 0,
+     "logprob": -3.6944,
+     "pred": "63055"
+    },
+    "kivi-int8": {
+     "exact": 1,
+     "logprob": -0.0883,
+     "pred": "63075"
+    },
+    "kivi-int4": {
+     "exact": 1,
+     "logprob": -0.1119,
+     "pred": "63075"
+    },
+    "kivi-int2": {
+     "exact": 1,
+     "logprob": -0.6579,
+     "pred": "63075"
+    },
+    "window-50": {
+     "exact": 0,
+     "logprob": -35.8372,
+     "pred": "the2.\n.\n0 baby",
+     "needle_kept": 0.0
+    },
+    "window-25": {
+     "exact": 0,
+     "logprob": -39.55,
+     "pred": "the2\n300",
+     "needle_kept": 0.0
+    },
+    "sink-50": {
+     "exact": 0,
+     "logprob": -14.0178,
+     "pred": "1840.",
+     "needle_kept": 0.0
+    },
+    "sink-25": {
+     "exact": 0,
+     "logprob": -14.2365,
+     "pred": "1..0.",
+     "needle_kept": 0.0
+    },
+    "h2o-50": {
+     "exact": 1,
+     "logprob": -2.1524,
+     "pred": "63075",
+     "needle_kept": 0.2861
+    },
+    "h2o-25": {
+     "exact": 0,
+     "logprob": -14.2161,
+     "pred": "1...8",
+     "needle_kept": 0.1234
+    },
+    "snapkv-50": {
+     "exact": 1,
+     "logprob": -0.0841,
+     "pred": "63075",
+     "needle_kept": 0.8045
+    },
+    "snapkv-25": {
+     "exact": 1,
+     "logprob": -0.1678,
+     "pred": "63075",
+     "needle_kept": 0.7252
+    }
+   }
+  },
+  {
+   "length": 1024,
+   "ctx_tokens": 1002,
+   "depth": 0.5,
+   "trial": 0,
+   "passkey": 72468,
+   "needle_tokens": [
+    510,
+    535
+   ],
+   "answer_tokens": 6,
+   "methods": {
+    "bf16": {
+     "exact": 1,
+     "logprob": -0.0171,
+     "pred": "72468"
+    },
+    "tok-int8": {
+     "exact": 1,
+     "logprob": -0.0139,
+     "pred": "72468"
+    },
+    "tok-int4": {
+     "exact": 1,
+     "logprob": -0.189,
+     "pred": "72468"
+    },
+    "tok-int2": {
+     "exact": 0,
+     "logprob": -9.6155,
+     "pred": "72666"
+    },
+    "kivi-int8": {
+     "exact": 1,
+     "logprob": -0.0174,
+     "pred": "72468"
+    },
+    "kivi-int4": {
+     "exact": 1,
+     "logprob": -0.0302,
+     "pred": "72468"
+    },
+    "kivi-int2": {
+     "exact": 0,
+     "logprob": -2.2369,
+     "pred": "7246."
+    },
+    "window-50": {
+     "exact": 1,
+     "logprob": -0.0538,
+     "pred": "72468",
+     "needle_kept": 1.0
+    },
+    "window-25": {
+     "exact": 0,
+     "logprob": -29.1922,
+     "pred": "with3.0.6",
+     "needle_kept": 0.0
+    },
+    "sink-50": {
+     "exact": 1,
+     "logprob": -0.0013,
+     "pred": "72468",
+     "needle_kept": 1.0
+    },
+    "sink-25": {
+     "exact": 0,
+     "logprob": -14.2385,
+     "pred": "1815.",
+     "needle_kept": 0.0
+    },
+    "h2o-50": {
+     "exact": 0,
+     "logprob": -2.6079,
+     "pred": "7246.",
+     "needle_kept": 0.262
+    },
+    "h2o-25": {
+     "exact": 0,
+     "logprob": -13.792,
+     "pred": "1..8.",
+     "needle_kept": 0.1082
+    },
+    "snapkv-50": {
+     "exact": 1,
+     "logprob": -0.0162,
+     "pred": "72468",
+     "needle_kept": 0.8862
+    },
+    "snapkv-25": {
+     "exact": 1,
+     "logprob": -0.0236,
+     "pred": "72468",
+     "needle_kept": 0.7636
+    }
+   }
+  },
+  {
+   "length": 1024,
+   "ctx_tokens": 1002,
+   "depth": 0.5,
+   "trial": 1,
+   "passkey": 86465,
+   "needle_tokens": [
+    509,
+    534
+   ],
+   "answer_tokens": 6,
+   "methods": {
+    "bf16": {
+     "exact": 1,
+     "logprob": -0.121,
+     "pred": "86465"
+    },
+    "tok-int8": {
+     "exact": 1,
+     "logprob": -0.1309,
+     "pred": "86465"
+    },
+    "tok-int4": {
+     "exact": 0,
+     "logprob": -5.6318,
+     "pred": "86255"
+    },
+    "tok-int2": {
+     "exact": 0,
+     "logprob": -5.835,
+     "pred": "86455"
+    },
+    "kivi-int8": {
+     "exact": 1,
+     "logprob": -0.1287,
+     "pred": "86465"
+    },
+    "kivi-int4": {
+     "exact": 1,
+     "logprob": -0.188,
+     "pred": "86465"
+    },
+    "kivi-int2": {
+     "exact": 0,
+     "logprob": -11.2141,
+     "pred": "86444"
+    },
+    "window-50": {
+     "exact": 0,
+     "logprob": -8.6462,
+     "pred": "86455",
+     "needle_kept": 1.0
+    },
+    "window-25": {
+     "exact": 0,
+     "logprob": -36.5536,
+     "pred": "shown1\n\n46",
+     "needle_kept": 0.0
+    },
+    "sink-50": {
+     "exact": 1,
+     "logprob": -0.0485,
+     "pred": "86465",
+     "needle_kept": 1.0
+    },
+    "sink-25": {
+     "exact": 0,
+     "logprob": -14.3372,
+     "pred": "187..",
+     "needle_kept": 0.0
+    },
+    "h2o-50": {
+     "exact": 0,
+     "logprob": -2.453,
+     "pred": "8646.",
+     "needle_kept": 0.246
+    },
+    "h2o-25": {
+     "exact": 0,
+     "logprob": -14.7418,
+     "pred": "1....",
+     "needle_kept": 0.1034
+    },
+    "snapkv-50": {
+     "exact": 1,
+     "logprob": -0.1351,
+     "pred": "86465",
+     "needle_kept": 0.8686
+    },
+    "snapkv-25": {
+     "exact": 1,
+     "logprob": -0.2459,
+     "pred": "86465",
+     "needle_kept": 0.7764
+    }
+   }
+  },
+  {
+   "length": 1024,
+   "ctx_tokens": 1002,
+   "depth": 0.75,
+   "trial": 0,
+   "passkey": 76150,
+   "needle_tokens": [
+    745,
+    770
+   ],
+   "answer_tokens": 6,
+   "methods": {
+    "bf16": {
+     "exact": 1,
+     "logprob": -0.0281,
+     "pred": "76150"
+    },
+    "tok-int8": {
+     "exact": 1,
+     "logprob": -0.0267,
+     "pred": "76150"
+    },
+    "tok-int4": {
+     "exact": 0,
+     "logprob": -4.497,
+     "pred": "76152"
+    },
+    "tok-int2": {
+     "exact": 0,
+     "logprob": -5.1705,
+     "pred": "7615."
+    },
+    "kivi-int8": {
+     "exact": 1,
+     "logprob": -0.0287,
+     "pred": "76150"
+    },
+    "kivi-int4": {
+     "exact": 1,
+     "logprob": -0.0486,
+     "pred": "76150"
+    },
+    "kivi-int2": {
+     "exact": 1,
+     "logprob": -0.2635,
+     "pred": "76150"
+    },
+    "window-50": {
+     "exact": 1,
+     "logprob": -0.0256,
+     "pred": "76150",
+     "needle_kept": 1.0
+    },
+    "window-25": {
+     "exact": 0,
+     "logprob": -3.9511,
+     "pred": "the76150",
+     "needle_kept": 0.7308
+    },
+    "sink-50": {
+     "exact": 1,
+     "logprob": -0.0055,
+     "pred": "76150",
+     "needle_kept": 1.0
+    },
+    "sink-25": {
+     "exact": 1,
+     "logprob": -0.2623,
+     "pred": "76150",
+     "needle_kept": 0.5769
+    },
+    "h2o-50": {
+     "exact": 1,
+     "logprob": -0.0525,
+     "pred": "76150",
+     "needle_kept": 0.8157
+    },
+    "h2o-25": {
+     "exact": 0,
+     "logprob": -14.6569,
+     "pred": "1....",
+     "needle_kept": 0.0905
+    },
+    "snapkv-50": {
+     "exact": 1,
+     "logprob": -0.0299,
+     "pred": "76150",
+     "needle_kept": 0.9519
+    },
+    "snapkv-25": {
+     "exact": 1,
+     "logprob": -0.0283,
+     "pred": "76150",
+     "needle_kept": 0.8413
+    }
+   }
+  },
+  {
+   "length": 1024,
+   "ctx_tokens": 1002,
+   "depth": 0.75,
+   "trial": 1,
+   "passkey": 46941,
+   "needle_tokens": [
+    745,
+    770
+   ],
+   "answer_tokens": 6,
+   "methods": {
+    "bf16": {
+     "exact": 1,
+     "logprob": -0.0241,
+     "pred": "46941"
+    },
+    "tok-int8": {
+     "exact": 1,
+     "logprob": -0.0212,
+     "pred": "46941"
+    },
+    "tok-int4": {
+     "exact": 0,
+     "logprob": -4.3879,
+     "pred": "46946"
+    },
+    "tok-int2": {
+     "exact": 0,
+     "logprob": -9.4792,
+     "pred": "46946"
+    },
+    "kivi-int8": {
+     "exact": 1,
+     "logprob": -0.0245,
+     "pred": "46941"
+    },
+    "kivi-int4": {
+     "exact": 1,
+     "logprob": -0.0297,
+     "pred": "46941"
+    },
+    "kivi-int2": {
+     "exact": 1,
+     "logprob": -0.1754,
+     "pred": "46941"
+    },
+    "window-50": {
+     "exact": 1,
+     "logprob": -0.0376,
+     "pred": "46941",
+     "needle_kept": 1.0
+    },
+    "window-25": {
+     "exact": 0,
+     "logprob": -19.3241,
+     "pred": "the The\n911",
+     "needle_kept": 0.7308
+    },
+    "sink-50": {
+     "exact": 1,
+     "logprob": -0.0032,
+     "pred": "46941",
+     "needle_kept": 1.0
+    },
+    "sink-25": {
+     "exact": 1,
+     "logprob": -0.2971,
+     "pred": "46941",
+     "needle_kept": 0.5769
+    },
+    "h2o-50": {
+     "exact": 1,
+     "logprob": -0.1023,
+     "pred": "46941",
+     "needle_kept": 0.8173
+    },
+    "h2o-25": {
+     "exact": 0,
+     "logprob": -15.2315,
+     "pred": "1....",
+     "needle_kept": 0.0889
+    },
+    "snapkv-50": {
+     "exact": 1,
+     "logprob": -0.0251,
+     "pred": "46941",
+     "needle_kept": 0.9535
+    },
+    "snapkv-25": {
+     "exact": 1,
+     "logprob": -0.0222,
+     "pred": "46941",
+     "needle_kept": 0.8429
+    }
+   }
+  },
+  {
+   "length": 1024,
+   "ctx_tokens": 1002,
+   "depth": 0.95,
+   "trial": 0,
+   "passkey": 22429,
+   "needle_tokens": [
+    904,
+    929
+   ],
+   "answer_tokens": 6,
+   "methods": {
+    "bf16": {
+     "exact": 1,
+     "logprob": -0.0156,
+     "pred": "22429"
+    },
+    "tok-int8": {
+     "exact": 1,
+     "logprob": -0.0216,
+     "pred": "22429"
+    },
+    "tok-int4": {
+     "exact": 0,
+     "logprob": -8.6646,
+     "pred": "2221."
+    },
+    "tok-int2": {
+     "exact": 0,
+     "logprob": -11.5951,
+     "pred": "22222"
+    },
+    "kivi-int8": {
+     "exact": 1,
+     "logprob": -0.0158,
+     "pred": "22429"
+    },
+    "kivi-int4": {
+     "exact": 1,
+     "logprob": -0.0288,
+     "pred": "22429"
+    },
+    "kivi-int2": {
+     "exact": 1,
+     "logprob": -0.2019,
+     "pred": "22429"
+    },
+    "window-50": {
+     "exact": 1,
+     "logprob": -0.0435,
+     "pred": "22429",
+     "needle_kept": 1.0
+    },
+    "window-25": {
+     "exact": 1,
+     "logprob": -0.0295,
+     "pred": "22429",
+     "needle_kept": 1.0
+    },
+    "sink-50": {
+     "exact": 1,
+     "logprob": -0.0093,
+     "pred": "22429",
+     "needle_kept": 1.0
+    },
+    "sink-25": {
+     "exact": 1,
+     "logprob": -0.0296,
+     "pred": "22429",
+     "needle_kept": 1.0
+    },
+    "h2o-50": {
+     "exact": 1,
+     "logprob": -0.0136,
+     "pred": "22429",
+     "needle_kept": 1.0
+    },
+    "h2o-25": {
+     "exact": 1,
+     "logprob": -0.0288,
+     "pred": "22429",
+     "needle_kept": 1.0
+    },
+    "snapkv-50": {
+     "exact": 1,
+     "logprob": -0.0186,
+     "pred": "22429",
+     "needle_kept": 0.984
+    },
+    "snapkv-25": {
+     "exact": 1,
+     "logprob": -0.0281,
+     "pred": "22429",
+     "needle_kept": 0.9343
+    }
+   }
+  },
+  {
+   "length": 1024,
+   "ctx_tokens": 1002,
+   "depth": 0.95,
+   "trial": 1,
+   "passkey": 42834,
+   "needle_tokens": [
+    935,
+    960
+   ],
+   "answer_tokens": 6,
+   "methods": {
+    "bf16": {
+     "exact": 1,
+     "logprob": -0.0054,
+     "pred": "42834"
+    },
+    "tok-int8": {
+     "exact": 1,
+     "logprob": -0.0078,
+     "pred": "42834"
+    },
+    "tok-int4": {
+     "exact": 1,
+     "logprob": -1.6432,
+     "pred": "42834"
+    },
+    "tok-int2": {
+     "exact": 0,
+     "logprob": -9.4911,
+     "pred": "the42232"
+    },
+    "kivi-int8": {
+     "exact": 1,
+     "logprob": -0.0057,
+     "pred": "42834"
+    },
+    "kivi-int4": {
+     "exact": 1,
+     "logprob": -0.0076,
+     "pred": "42834"
+    },
+    "kivi-int2": {
+     "exact": 1,
+     "logprob": -0.0256,
+     "pred": "42834"
+    },
+    "window-50": {
+     "exact": 1,
+     "logprob": -0.0163,
+     "pred": "42834",
+     "needle_kept": 1.0
+    },
+    "window-25": {
+     "exact": 1,
+     "logprob": -0.0178,
+     "pred": "42834",
+     "needle_kept": 1.0
+    },
+    "sink-50": {
+     "exact": 1,
+     "logprob": -0.0009,
+     "pred": "42834",
+     "needle_kept": 1.0
+    },
+    "sink-25": {
+     "exact": 1,
+     "logprob": -0.0012,
+     "pred": "42834",
+     "needle_kept": 1.0
+    },
+    "h2o-50": {
+     "exact": 1,
+     "logprob": -0.0039,
+     "pred": "42834",
+     "needle_kept": 1.0
+    },
+    "h2o-25": {
+     "exact": 1,
+     "logprob": -0.0051,
+     "pred": "42834",
+     "needle_kept": 1.0
+    },
+    "snapkv-50": {
+     "exact": 1,
+     "logprob": -0.0055,
+     "pred": "42834",
+     "needle_kept": 0.9968
+    },
+    "snapkv-25": {
+     "exact": 1,
+     "logprob": -0.0056,
+     "pred": "42834",
+     "needle_kept": 0.9776
+    }
+   }
+  },
+  {
+   "length": 2048,
+   "ctx_tokens": 2026,
+   "depth": 0.05,
+   "trial": 0,
+   "passkey": 88892,
+   "needle_tokens": [
+    132,
+    157
+   ],
+   "answer_tokens": 6,
+   "methods": {
+    "bf16": {
+     "exact": 1,
+     "logprob": -0.1177,
+     "pred": "88892"
+    },
+    "tok-int8": {
+     "exact": 1,
+     "logprob": -0.0918,
+     "pred": "88892"
+    },
+    "tok-int4": {
+     "exact": 0,
+     "logprob": -2.7931,
+     "pred": "88882"
+    },
+    "tok-int2": {
+     "exact": 0,
+     "logprob": -17.4586,
+     "pred": "shown88889"
+    },
+    "kivi-int8": {
+     "exact": 1,
+     "logprob": -0.1206,
+     "pred": "88892"
+    },
+    "kivi-int4": {
+     "exact": 1,
+     "logprob": -0.2035,
+     "pred": "88892"
+    },
+    "kivi-int2": {
+     "exact": 1,
+     "logprob": -0.5266,
+     "pred": "88892"
+    },
+    "window-50": {
+     "exact": 0,
+     "logprob": -23.4029,
+     "pred": "the2.889",
+     "needle_kept": 0.0
+    },
+    "window-25": {
+     "exact": 0,
+     "logprob": -24.5275,
+     "pred": "the28889",
+     "needle_kept": 0.0
+    },
+    "sink-50": {
+     "exact": 0,
+     "logprob": -14.3839,
+     "pred": "18889",
+     "needle_kept": 0.0
+    },
+    "sink-25": {
+     "exact": 0,
+     "logprob": -14.4203,
+     "pred": "18889",
+     "needle_kept": 0.0
+    },
+    "h2o-50": {
+     "exact": 0,
+     "logprob": -5.7391,
+     "pred": "8889.",
+     "needle_kept": 0.355
+    },
+    "h2o-25": {
+     "exact": 0,
+     "logprob": -13.5217,
+     "pred": "18889",
+     "needle_kept": 0.1739
+    },
+    "snapkv-50": {
+     "exact": 1,
+     "logprob": -0.1235,
+     "pred": "88892",
+     "needle_kept": 0.8341
+    },
+    "snapkv-25": {
+     "exact": 1,
+     "logprob": -0.1517,
+     "pred": "88892",
+     "needle_kept": 0.742
+    }
+   }
+  },
+  {
+   "length": 2048,
+   "ctx_tokens": 2026,
+   "depth": 0.05,
+   "trial": 1,
+   "passkey": 50651,
+   "needle_tokens": [
+    134,
+    159
+   ],
+   "answer_tokens": 6,
+   "methods": {
+    "bf16": {
+     "exact": 1,
+     "logprob": -0.0624,
+     "pred": "50651"
+    },
+    "tok-int8": {
+     "exact": 1,
+     "logprob": -0.0455,
+     "pred": "50651"
+    },
+    "tok-int4": {
+     "exact": 0,
+     "logprob": -3.7047,
+     "pred": "50650"
+    },
+    "tok-int2": {
+     "exact": 0,
+     "logprob": -6.318,
+     "pred": "50650"
+    },
+    "kivi-int8": {
+     "exact": 1,
+     "logprob": -0.0648,
+     "pred": "50651"
+    },
+    "kivi-int4": {
+     "exact": 1,
+     "logprob": -0.108,
+     "pred": "50651"
+    },
+    "kivi-int2": {
+     "exact": 1,
+     "logprob": -0.0867,
+     "pred": "50651"
+    },
+    "window-50": {
+     "exact": 0,
+     "logprob": -38.9822,
+     "pred": "the2.\n\n0<|im_end|>5",
+     "needle_kept": 0.0
+    },
+    "window-25": {
+     "exact": 0,
+     "logprob": -33.6596,
+     "pred": "the250<|im_end|>5",
+     "needle_kept": 0.0
+    },
+    "sink-50": {
+     "exact": 0,
+     "logprob": -14.3667,
+     "pred": "18...",
+     "needle_kept": 0.0
+    },
+    "sink-25": {
+     "exact": 0,
+     "logprob": -14.1767,
+     "pred": "18...",
+     "needle_kept": 0.0
+    },
+    "h2o-50": {
+     "exact": 0,
+     "logprob": -4.4181,
+     "pred": "50656",
+     "needle_kept": 0.3702
+    },
+    "h2o-25": {
+     "exact": 0,
+     "logprob": -14.2048,
+     "pred": "188..",
+     "needle_kept": 0.1955
+    },
+    "snapkv-50": {
+     "exact": 1,
+     "logprob": -0.0676,
+     "pred": "50651",
+     "needle_kept": 0.8293
+    },
+    "snapkv-25": {
+     "exact": 1,
+     "logprob": -0.085,
+     "pred": "50651",
+     "needle_kept": 0.7508
+    }
+   }
+  },
+  {
+   "length": 2048,
+   "ctx_tokens": 2026,
+   "depth": 0.25,
+   "trial": 0,
+   "passkey": 19665,
+   "needle_tokens": [
+    534,
+    559
+   ],
+   "answer_tokens": 6,
+   "methods": {
+    "bf16": {
+     "exact": 1,
+     "logprob": -0.1496,
+     "pred": "19665"
+    },
+    "tok-int8": {
+     "exact": 1,
+     "logprob": -0.1124,
+     "pred": "19665"
+    },
+    "tok-int4": {
+     "exact": 0,
+     "logprob": -9.9895,
+     "pred": "the9 the66"
+    },
+    "tok-int2": {
+     "exact": 0,
+     "logprob": -8.7195,
+     "pred": "shown19655"
+    },
+    "kivi-int8": {
+     "exact": 1,
+     "logprob": -0.1566,
+     "pred": "19665"
+    },
+    "kivi-int4": {
+     "exact": 1,
+     "logprob": -0.1227,
+     "pred": "19665"
+    },
+    "kivi-int2": {
+     "exact": 1,
+     "logprob": -0.0464,
+     "pred": "19665"
+    },
+    "window-50": {
+     "exact": 0,
+     "logprob": -36.687,
+     "pred": "the2..<|im_end|>7",
+     "needle_kept": 0.0
+    },
+    "window-25": {
+     "exact": 0,
+     "logprob": -26.6999,
+     "pred": "then2. and66",
+     "needle_kept": 0.0
+    },
+    "sink-50": {
+     "exact": 0,
+     "logprob": -15.1507,
+     "pred": "1288.",
+     "needle_kept": 0.0
+    },
+    "sink-25": {
+     "exact": 0,
+     "logprob": -15.1662,
+     "pred": "1288.",
+     "needle_kept": 0.0
+    },
+    "h2o-50": {
+     "exact": 1,
+     "logprob": -2.624,
+     "pred": "19665",
+     "needle_kept": 0.3454
+    },
+    "h2o-25": {
+     "exact": 0,
+     "logprob": -13.7087,
+     "pred": "12...",
+     "needle_kept": 0.1787
+    },
+    "snapkv-50": {
+     "exact": 1,
+     "logprob": -0.1643,
+     "pred": "19665",
+     "needle_kept": 0.8365
+    },
+    "snapkv-25": {
+     "exact": 1,
+     "logprob": -0.1878,
+     "pred": "19665",
+     "needle_kept": 0.7588
+    }
+   }
+  },
+  {
+   "length": 2048,
+   "ctx_tokens": 2026,
+   "depth": 0.25,
+   "trial": 1,
+   "passkey": 71884,
+   "needle_tokens": [
+    530,
+    555
+   ],
+   "answer_tokens": 6,
+   "methods": {
+    "bf16": {
+     "exact": 1,
+     "logprob": -0.1476,
+     "pred": "71884"
+    },
+    "tok-int8": {
+     "exact": 1,
+     "logprob": -0.0768,
+     "pred": "71884"
+    },
+    "tok-int4": {
+     "exact": 0,
+     "logprob": -1.8554,
+     "pred": "71888"
+    },
+    "tok-int2": {
+     "exact": 0,
+     "logprob": -10.4028,
+     "pred": "71888"
+    },
+    "kivi-int8": {
+     "exact": 1,
+     "logprob": -0.1461,
+     "pred": "71884"
+    },
+    "kivi-int4": {
+     "exact": 1,
+     "logprob": -0.3316,
+     "pred": "71884"
+    },
+    "kivi-int2": {
+     "exact": 1,
+     "logprob": -0.3484,
+     "pred": "71884"
+    },
+    "window-50": {
+     "exact": 0,
+     "logprob": -35.9762,
+     "pred": "then4.\n188",
+     "needle_kept": 0.0
+    },
+    "window-25": {
+     "exact": 0,
+     "logprob": -28.4014,
+     "pred": "the ..88",
+     "needle_kept": 0.0
+    },
+    "sink-50": {
+     "exact": 0,
+     "logprob": -13.7829,
+     "pred": "1<|im_end|>...",
+     "needle_kept": 0.0
+    },
+    "sink-25": {
+     "exact": 0,
+     "logprob": -13.8955,
+     "pred": "1<|im_end|>...",
+     "needle_kept": 0.0
+    },
+    "h2o-50": {
+     "exact": 0,
+     "logprob": -8.6737,
+     "pred": "7188.",
+     "needle_kept": 0.3149
+    },
+    "h2o-25": {
+     "exact": 0,
+     "logprob": -12.9869,
+     "pred": "1....",
+     "needle_kept": 0.1635
+    },
+    "snapkv-50": {
+     "exact": 1,
+     "logprob": -0.1752,
+     "pred": "71884",
+     "needle_kept": 0.8229
+    },
+    "snapkv-25": {
+     "exact": 1,
+     "logprob": -0.1797,
+     "pred": "71884",
+     "needle_kept": 0.742
+    }
+   }
+  },
+  {
+   "length": 2048,
+   "ctx_tokens": 2026,
+   "depth": 0.5,
+   "trial": 0,
+   "passkey": 23199,
+   "needle_tokens": [
+    1015,
+    1040
+   ],
+   "answer_tokens": 6,
+   "methods": {
+    "bf16": {
+     "exact": 1,
+     "logprob": -0.0233,
+     "pred": "23199"
+    },
+    "tok-int8": {
+     "exact": 1,
+     "logprob": -0.0137,
+     "pred": "23199"
+    },
+    "tok-int4": {
+     "exact": 1,
+     "logprob": -5.3116,
+     "pred": "23199"
+    },
+    "tok-int2": {
+     "exact": 0,
+     "logprob": -7.473,
+     "pred": "2319."
+    },
+    "kivi-int8": {
+     "exact": 1,
+     "logprob": -0.0242,
+     "pred": "23199"
+    },
+    "kivi-int4": {
+     "exact": 1,
+     "logprob": -0.0305,
+     "pred": "23199"
+    },
+    "kivi-int2": {
+     "exact": 1,
+     "logprob": -0.1069,
+     "pred": "23199"
+    },
+    "window-50": {
+     "exact": 1,
+     "logprob": -0.0239,
+     "pred": "23199",
+     "needle_kept": 1.0
+    },
+    "window-25": {
+     "exact": 0,
+     "logprob": -27.794,
+     "pred": "then2..19",
+     "needle_kept": 0.0
+    },
+    "sink-50": {
+     "exact": 1,
+     "logprob": -0.002,
+     "pred": "23199",
+     "needle_kept": 0.9231
+    },
+    "sink-25": {
+     "exact": 0,
+     "logprob": -13.9376,
+     "pred": "18.4.",
+     "needle_kept": 0.0
+    },
+    "h2o-50": {
+     "exact": 0,
+     "logprob": -8.0254,
+     "pred": "1319.",
+     "needle_kept": 0.2845
+    },
+    "h2o-25": {
+     "exact": 0,
+     "logprob": -13.5723,
+     "pred": "1<|im_end|>...",
+     "needle_kept": 0.1354
+    },
+    "snapkv-50": {
+     "exact": 1,
+     "logprob": -0.0247,
+     "pred": "23199",
+     "needle_kept": 0.8974
+    },
+    "snapkv-25": {
+     "exact": 1,
+     "logprob": -0.0286,
+     "pred": "23199",
+     "needle_kept": 0.7901
+    }
+   }
+  },
+  {
+   "length": 2048,
+   "ctx_tokens": 2026,
+   "depth": 0.5,
+   "trial": 1,
+   "passkey": 66907,
+   "needle_tokens": [
+    1017,
+    1042
+   ],
+   "answer_tokens": 6,
+   "methods": {
+    "bf16": {
+     "exact": 1,
+     "logprob": -0.0226,
+     "pred": "66907"
+    },
+    "tok-int8": {
+     "exact": 1,
+     "logprob": -0.0195,
+     "pred": "66907"
+    },
+    "tok-int4": {
+     "exact": 1,
+     "logprob": -0.6184,
+     "pred": "66907"
+    },
+    "tok-int2": {
+     "exact": 0,
+     "logprob": -9.1311,
+     "pred": "66611"
+    },
+    "kivi-int8": {
+     "exact": 1,
+     "logprob": -0.0226,
+     "pred": "66907"
+    },
+    "kivi-int4": {
+     "exact": 1,
+     "logprob": -0.0317,
+     "pred": "66907"
+    },
+    "kivi-int2": {
+     "exact": 1,
+     "logprob": -0.1397,
+     "pred": "66907"
+    },
+    "window-50": {
+     "exact": 1,
+     "logprob": -0.1237,
+     "pred": "66907",
+     "needle_kept": 1.0
+    },
+    "window-25": {
+     "exact": 0,
+     "logprob": -45.2812,
+     "pred": "then2<|im_end|>6.0",
+     "needle_kept": 0.0
+    },
+    "sink-50": {
+     "exact": 1,
+     "logprob": -0.0013,
+     "pred": "66907",
+     "needle_kept": 1.0
+    },
+    "sink-25": {
+     "exact": 0,
+     "logprob": -14.8481,
+     "pred": "186.0",
+     "needle_kept": 0.0
+    },
+    "h2o-50": {
+     "exact": 0,
+     "logprob": -7.7577,
+     "pred": "66998",
+     "needle_kept": 0.2772
+    },
+    "h2o-25": {
+     "exact": 0,
+     "logprob": -15.0109,
+     "pred": "1....",
+     "needle_kept": 0.129
+    },
+    "snapkv-50": {
+     "exact": 1,
+     "logprob": -0.0199,
+     "pred": "66907",
+     "needle_kept": 0.8782
+    },
+    "snapkv-25": {
+     "exact": 1,
+     "logprob": -0.021,
+     "pred": "66907",
+     "needle_kept": 0.7732
+    }
+   }
+  },
+  {
+   "length": 2048,
+   "ctx_tokens": 2026,
+   "depth": 0.75,
+   "trial": 0,
+   "passkey": 90070,
+   "needle_tokens": [
+    1508,
+    1533
+   ],
+   "answer_tokens": 6,
+   "methods": {
+    "bf16": {
+     "exact": 1,
+     "logprob": -0.0141,
+     "pred": "90070"
+    },
+    "tok-int8": {
+     "exact": 1,
+     "logprob": -0.0144,
+     "pred": "90070"
+    },
+    "tok-int4": {
+     "exact": 1,
+     "logprob": -0.4757,
+     "pred": "90070"
+    },
+    "tok-int2": {
+     "exact": 0,
+     "logprob": -13.6353,
+     "pred": "then10 is is0"
+    },
+    "kivi-int8": {
+     "exact": 1,
+     "logprob": -0.0146,
+     "pred": "90070"
+    },
+    "kivi-int4": {
+     "exact": 1,
+     "logprob": -0.0143,
+     "pred": "90070"
+    },
+    "kivi-int2": {
+     "exact": 1,
+     "logprob": -0.2203,
+     "pred": "90070"
+    },
+    "window-50": {
+     "exact": 1,
+     "logprob": -0.0027,
+     "pred": "90070",
+     "needle_kept": 1.0
+    },
+    "window-25": {
+     "exact": 0,
+     "logprob": -5.147,
+     "pred": "the90000",
+     "needle_kept": 0.5385
+    },
+    "sink-50": {
+     "exact": 1,
+     "logprob": -0.0014,
+     "pred": "90070",
+     "needle_kept": 1.0
+    },
+    "sink-25": {
+     "exact": 0,
+     "logprob": -3.0214,
+     "pred": "10070",
+     "needle_kept": 0.3846
+    },
+    "h2o-50": {
+     "exact": 1,
+     "logprob": -0.2284,
+     "pred": "90070",
+     "needle_kept": 0.7155
+    },
+    "h2o-25": {
+     "exact": 0,
+     "logprob": -14.9773,
+     "pred": "1881.",
+     "needle_kept": 0.1218
+    },
+    "snapkv-50": {
+     "exact": 1,
+     "logprob": -0.0136,
+     "pred": "90070",
+     "needle_kept": 0.9407
+    },
+    "snapkv-25": {
+     "exact": 1,
+     "logprob": -0.0132,
+     "pred": "90070",
+     "needle_kept": 0.8662
+    }
+   }
+  },
+  {
+   "length": 2048,
+   "ctx_tokens": 2026,
+   "depth": 0.75,
+   "trial": 1,
+   "passkey": 36801,
+   "needle_tokens": [
+    1514,
+    1539
+   ],
+   "answer_tokens": 6,
+   "methods": {
+    "bf16": {
+     "exact": 1,
+     "logprob": -0.0129,
+     "pred": "36801"
+    },
+    "tok-int8": {
+     "exact": 1,
+     "logprob": -0.008,
+     "pred": "36801"
+    },
+    "tok-int4": {
+     "exact": 1,
+     "logprob": -1.463,
+     "pred": "36801"
+    },
+    "tok-int2": {
+     "exact": 0,
+     "logprob": -7.4424,
+     "pred": "shown36801"
+    },
+    "kivi-int8": {
+     "exact": 1,
+     "logprob": -0.0128,
+     "pred": "36801"
+    },
+    "kivi-int4": {
+     "exact": 1,
+     "logprob": -0.0172,
+     "pred": "36801"
+    },
+    "kivi-int2": {
+     "exact": 1,
+     "logprob": -0.1159,
+     "pred": "36801"
+    },
+    "window-50": {
+     "exact": 1,
+     "logprob": -0.0591,
+     "pred": "36801",
+     "needle_kept": 1.0
+    },
+    "window-25": {
+     "exact": 0,
+     "logprob": -3.461,
+     "pred": "the36801",
+     "needle_kept": 0.7692
+    },
+    "sink-50": {
+     "exact": 1,
+     "logprob": -0.0012,
+     "pred": "36801",
+     "needle_kept": 1.0
+    },
+    "sink-25": {
+     "exact": 1,
+     "logprob": -0.0193,
+     "pred": "36801",
+     "needle_kept": 0.6154
+    },
+    "h2o-50": {
+     "exact": 1,
+     "logprob": -0.0818,
+     "pred": "36801",
+     "needle_kept": 0.859
+    },
+    "h2o-25": {
+     "exact": 0,
+     "logprob": -14.5636,
+     "pred": "1....",
+     "needle_kept": 0.121
+    },
+    "snapkv-50": {
+     "exact": 1,
+     "logprob": -0.0129,
+     "pred": "36801",
+     "needle_kept": 0.9535
+    },
+    "snapkv-25": {
+     "exact": 1,
+     "logprob": -0.0115,
+     "pred": "36801",
+     "needle_kept": 0.8686
+    }
+   }
+  },
+  {
+   "length": 2048,
+   "ctx_tokens": 2026,
+   "depth": 0.95,
+   "trial": 0,
+   "passkey": 72522,
+   "needle_tokens": [
+    1908,
+    1933
+   ],
+   "answer_tokens": 6,
+   "methods": {
+    "bf16": {
+     "exact": 1,
+     "logprob": -0.008,
+     "pred": "72522"
+    },
+    "tok-int8": {
+     "exact": 1,
+     "logprob": -0.0083,
+     "pred": "72522"
+    },
+    "tok-int4": {
+     "exact": 1,
+     "logprob": -0.3781,
+     "pred": "72522"
+    },
+    "tok-int2": {
+     "exact": 0,
+     "logprob": -10.3238,
+     "pred": "hidden72<|im_end|>2 is"
+    },
+    "kivi-int8": {
+     "exact": 1,
+     "logprob": -0.0082,
+     "pred": "72522"
+    },
+    "kivi-int4": {
+     "exact": 1,
+     "logprob": -0.0091,
+     "pred": "72522"
+    },
+    "kivi-int2": {
+     "exact": 1,
+     "logprob": -0.0548,
+     "pred": "72522"
+    },
+    "window-50": {
+     "exact": 1,
+     "logprob": -0.0175,
+     "pred": "72522",
+     "needle_kept": 1.0
+    },
+    "window-25": {
+     "exact": 1,
+     "logprob": -0.3523,
+     "pred": "72522",
+     "needle_kept": 1.0
+    },
+    "sink-50": {
+     "exact": 1,
+     "logprob": -0.0032,
+     "pred": "72522",
+     "needle_kept": 1.0
+    },
+    "sink-25": {
+     "exact": 1,
+     "logprob": -0.0044,
+     "pred": "72522",
+     "needle_kept": 1.0
+    },
+    "h2o-50": {
+     "exact": 1,
+     "logprob": -0.0059,
+     "pred": "72522",
+     "needle_kept": 1.0
+    },
+    "h2o-25": {
+     "exact": 1,
+     "logprob": -0.0059,
+     "pred": "72522",
+     "needle_kept": 1.0
+    },
+    "snapkv-50": {
+     "exact": 1,
+     "logprob": -0.009,
+     "pred": "72522",
+     "needle_kept": 0.9928
+    },
+    "snapkv-25": {
+     "exact": 1,
+     "logprob": -0.0117,
+     "pred": "72522",
+     "needle_kept": 0.9816
+    }
+   }
+  },
+  {
+   "length": 2048,
+   "ctx_tokens": 2026,
+   "depth": 0.95,
+   "trial": 1,
+   "passkey": 78334,
+   "needle_tokens": [
+    1905,
+    1930
+   ],
+   "answer_tokens": 6,
+   "methods": {
+    "bf16": {
+     "exact": 1,
+     "logprob": -0.0204,
+     "pred": "78334"
+    },
+    "tok-int8": {
+     "exact": 1,
+     "logprob": -0.0163,
+     "pred": "78334"
+    },
+    "tok-int4": {
+     "exact": 1,
+     "logprob": -2.5619,
+     "pred": "78334"
+    },
+    "tok-int2": {
+     "exact": 0,
+     "logprob": -12.6096,
+     "pred": "78812"
+    },
+    "kivi-int8": {
+     "exact": 1,
+     "logprob": -0.0216,
+     "pred": "78334"
+    },
+    "kivi-int4": {
+     "exact": 1,
+     "logprob": -0.0319,
+     "pred": "78334"
+    },
+    "kivi-int2": {
+     "exact": 1,
+     "logprob": -0.0385,
+     "pred": "78334"
+    },
+    "window-50": {
+     "exact": 1,
+     "logprob": -0.0281,
+     "pred": "78334",
+     "needle_kept": 1.0
+    },
+    "window-25": {
+     "exact": 1,
+     "logprob": -0.0072,
+     "pred": "78334",
+     "needle_kept": 1.0
+    },
+    "sink-50": {
+     "exact": 1,
+     "logprob": -0.0041,
+     "pred": "78334",
+     "needle_kept": 1.0
+    },
+    "sink-25": {
+     "exact": 1,
+     "logprob": -0.009,
+     "pred": "78334",
+     "needle_kept": 1.0
+    },
+    "h2o-50": {
+     "exact": 1,
+     "logprob": -0.0159,
+     "pred": "78334",
+     "needle_kept": 1.0
+    },
+    "h2o-25": {
+     "exact": 1,
+     "logprob": -0.0263,
+     "pred": "78334",
+     "needle_kept": 1.0
+    },
+    "snapkv-50": {
+     "exact": 1,
+     "logprob": -0.0247,
+     "pred": "78334",
+     "needle_kept": 0.996
+    },
+    "snapkv-25": {
+     "exact": 1,
+     "logprob": -0.0385,
+     "pred": "78334",
+     "needle_kept": 0.9792
+    }
+   }
+  }
+ ],
+ "kv_stats": {
+  "per_layer": [
+   {
+    "layer": 0,
+    "key_channel_max_over_median": 14.398,
+    "key_relerr_tok_int8": 0.00655,
+    "key_relerr_chan_int8": 0.00053,
+    "key_relerr_tok_int4": 0.10863,
+    "key_relerr_chan_int4": 0.00896,
+    "key_relerr_tok_int2": 0.67302,
+    "key_relerr_chan_int2": 0.04237,
+    "value_channel_max_over_median": 3.933,
+    "value_relerr_tok_int8": 0.00551,
+    "value_relerr_chan_int8": 0.00385,
+    "value_relerr_tok_int4": 0.09516,
+    "value_relerr_chan_int4": 0.065,
+    "value_relerr_tok_int2": 0.47758,
+    "value_relerr_chan_int2": 0.32949
+   },
+   {
+    "layer": 1,
+    "key_channel_max_over_median": 18.512,
+    "key_relerr_tok_int8": 0.00764,
+    "key_relerr_chan_int8": 0.00029,
+    "key_relerr_tok_int4": 0.14556,
+    "key_relerr_chan_int4": 0.00491,
+    "key_relerr_tok_int2": 0.83659,
+    "key_relerr_chan_int2": 0.0246,
+    "value_channel_max_over_median": 2.788,
+    "value_relerr_tok_int8": 0.00587,
+    "value_relerr_chan_int8": 0.00346,
+    "value_relerr_tok_int4": 0.09977,
+    "value_relerr_chan_int4": 0.05863,
+    "value_relerr_tok_int2": 0.54226,
+    "value_relerr_chan_int2": 0.29346
+   },
+   {
+    "layer": 2,
+    "key_channel_max_over_median": 9.769,
+    "key_relerr_tok_int8": 0.00633,
+    "key_relerr_chan_int8": 0.00052,
+    "key_relerr_tok_int4": 0.10676,
+    "key_relerr_chan_int4": 0.00875,
+    "key_relerr_tok_int2": 0.61006,
+    "key_relerr_chan_int2": 0.04437,
+    "value_channel_max_over_median": 2.403,
+    "value_relerr_tok_int8": 0.00516,
+    "value_relerr_chan_int8": 0.00441,
+    "value_relerr_tok_int4": 0.08747,
+    "value_relerr_chan_int4": 0.07467,
+    "value_relerr_tok_int2": 0.44228,
+    "value_relerr_chan_int2": 0.37353
+   },
+   {
+    "layer": 3,
+    "key_channel_max_over_median": 4.124,
+    "key_relerr_tok_int8": 0.00602,
+    "key_relerr_chan_int8": 0.00168,
+    "key_relerr_tok_int4": 0.10205,
+    "key_relerr_chan_int4": 0.02842,
+    "key_relerr_tok_int2": 0.55197,
+    "key_relerr_chan_int2": 0.14354,
+    "value_channel_max_over_median": 2.528,
+    "value_relerr_tok_int8": 0.00557,
+    "value_relerr_chan_int8": 0.00386,
+    "value_relerr_tok_int4": 0.09477,
+    "value_relerr_chan_int4": 0.06554,
+    "value_relerr_tok_int2": 0.47396,
+    "value_relerr_chan_int2": 0.32743
+   },
+   {
+    "layer": 4,
+    "key_channel_max_over_median": 4.588,
+    "key_relerr_tok_int8": 0.00675,
+    "key_relerr_chan_int8": 0.00149,
+    "key_relerr_tok_int4": 0.11404,
+    "key_relerr_chan_int4": 0.0253,
+    "key_relerr_tok_int2": 0.58287,
+    "key_relerr_chan_int2": 0.12779,
+    "value_channel_max_over_median": 1.817,
+    "value_relerr_tok_int8": 0.00475,
+    "value_relerr_chan_int8": 0.0043,
+    "value_relerr_tok_int4": 0.08103,
+    "value_relerr_chan_int4": 0.07316,
+    "value_relerr_tok_int2": 0.40689,
+    "value_relerr_chan_int2": 0.36708
+   },
+   {
+    "layer": 5,
+    "key_channel_max_over_median": 2.945,
+    "key_relerr_tok_int8": 0.0053,
+    "key_relerr_chan_int8": 0.00223,
+    "key_relerr_tok_int4": 0.08993,
+    "key_relerr_chan_int4": 0.03791,
+    "key_relerr_tok_int2": 0.45224,
+    "key_relerr_chan_int2": 0.19128,
+    "value_channel_max_over_median": 1.808,
+    "value_relerr_tok_int8": 0.00478,
+    "value_relerr_chan_int8": 0.00424,
+    "value_relerr_tok_int4": 0.08125,
+    "value_relerr_chan_int4": 0.07197,
+    "value_relerr_tok_int2": 0.40889,
+    "value_relerr_chan_int2": 0.36158
+   },
+   {
+    "layer": 6,
+    "key_channel_max_over_median": 1.899,
+    "key_relerr_tok_int8": 0.00494,
+    "key_relerr_chan_int8": 0.00249,
+    "key_relerr_tok_int4": 0.08416,
+    "key_relerr_chan_int4": 0.04226,
+    "key_relerr_tok_int2": 0.42091,
+    "key_relerr_chan_int2": 0.2137,
+    "value_channel_max_over_median": 2.078,
+    "value_relerr_tok_int8": 0.00509,
+    "value_relerr_chan_int8": 0.00374,
+    "value_relerr_tok_int4": 0.08627,
+    "value_relerr_chan_int4": 0.06367,
+    "value_relerr_tok_int2": 0.43484,
+    "value_relerr_chan_int2": 0.31915
+   },
+   {
+    "layer": 7,
+    "key_channel_max_over_median": 2.414,
+    "key_relerr_tok_int8": 0.00528,
+    "key_relerr_chan_int8": 0.00248,
+    "key_relerr_tok_int4": 0.08973,
+    "key_relerr_chan_int4": 0.04205,
+    "key_relerr_tok_int2": 0.44258,
+    "key_relerr_chan_int2": 0.21323,
+    "value_channel_max_over_median": 2.358,
+    "value_relerr_tok_int8": 0.00526,
+    "value_relerr_chan_int8": 0.00388,
+    "value_relerr_tok_int4": 0.08924,
+    "value_relerr_chan_int4": 0.066,
+    "value_relerr_tok_int2": 0.45003,
+    "value_relerr_chan_int2": 0.33203
+   },
+   {
+    "layer": 8,
+    "key_channel_max_over_median": 24.15,
+    "key_relerr_tok_int8": 0.00565,
+    "key_relerr_chan_int8": 0.00022,
+    "key_relerr_tok_int4": 0.11148,
+    "key_relerr_chan_int4": 0.0037,
+    "key_relerr_tok_int2": 0.29618,
+    "key_relerr_chan_int2": 0.01878,
+    "value_channel_max_over_median": 2.05,
+    "value_relerr_tok_int8": 0.00519,
+    "value_relerr_chan_int8": 0.00407,
+    "value_relerr_tok_int4": 0.08806,
+    "value_relerr_chan_int4": 0.06925,
+    "value_relerr_tok_int2": 0.43952,
+    "value_relerr_chan_int2": 0.34688
+   },
+   {
+    "layer": 9,
+    "key_channel_max_over_median": 3.605,
+    "key_relerr_tok_int8": 0.00561,
+    "key_relerr_chan_int8": 0.00283,
+    "key_relerr_tok_int4": 0.0954,
+    "key_relerr_chan_int4": 0.04799,
+    "key_relerr_tok_int2": 0.47392,
+    "key_relerr_chan_int2": 0.24177,
+    "value_channel_max_over_median": 2.661,
+    "value_relerr_tok_int8": 0.00559,
+    "value_relerr_chan_int8": 0.00337,
+    "value_relerr_tok_int4": 0.09509,
+    "value_relerr_chan_int4": 0.05739,
+    "value_relerr_tok_int2": 0.4744,
+    "value_relerr_chan_int2": 0.28862
+   },
+   {
+    "layer": 10,
+    "key_channel_max_over_median": 3.149,
+    "key_relerr_tok_int8": 0.0054,
+    "key_relerr_chan_int8": 0.00191,
+    "key_relerr_tok_int4": 0.092,
+    "key_relerr_chan_int4": 0.03249,
+    "key_relerr_tok_int2": 0.45481,
+    "key_relerr_chan_int2": 0.16477,
+    "value_channel_max_over_median": 1.786,
+    "value_relerr_tok_int8": 0.00502,
+    "value_relerr_chan_int8": 0.00376,
+    "value_relerr_tok_int4": 0.08521,
+    "value_relerr_chan_int4": 0.06397,
+    "value_relerr_tok_int2": 0.42735,
+    "value_relerr_chan_int2": 0.3222
+   },
+   {
+    "layer": 11,
+    "key_channel_max_over_median": 3.312,
+    "key_relerr_tok_int8": 0.00543,
+    "key_relerr_chan_int8": 0.00297,
+    "key_relerr_tok_int4": 0.0921,
+    "key_relerr_chan_int4": 0.0504,
+    "key_relerr_tok_int2": 0.46428,
+    "key_relerr_chan_int2": 0.25424,
+    "value_channel_max_over_median": 2.752,
+    "value_relerr_tok_int8": 0.00566,
+    "value_relerr_chan_int8": 0.00285,
+    "value_relerr_tok_int4": 0.09625,
+    "value_relerr_chan_int4": 0.04849,
+    "value_relerr_tok_int2": 0.47817,
+    "value_relerr_chan_int2": 0.24346
+   },
+   {
+    "layer": 12,
+    "key_channel_max_over_median": 2.76,
+    "key_relerr_tok_int8": 0.0052,
+    "key_relerr_chan_int8": 0.00199,
+    "key_relerr_tok_int4": 0.08851,
+    "key_relerr_chan_int4": 0.03378,
+    "key_relerr_tok_int2": 0.44264,
+    "key_relerr_chan_int2": 0.17116,
+    "value_channel_max_over_median": 2.113,
+    "value_relerr_tok_int8": 0.00495,
+    "value_relerr_chan_int8": 0.00395,
+    "value_relerr_tok_int4": 0.08391,
+    "value_relerr_chan_int4": 0.06719,
+    "value_relerr_tok_int2": 0.4218,
+    "value_relerr_chan_int2": 0.33911
+   },
+   {
+    "layer": 13,
+    "key_channel_max_over_median": 2.455,
+    "key_relerr_tok_int8": 0.00496,
+    "key_relerr_chan_int8": 0.00198,
+    "key_relerr_tok_int4": 0.08433,
+    "key_relerr_chan_int4": 0.0336,
+    "key_relerr_tok_int2": 0.42271,
+    "key_relerr_chan_int2": 0.16979,
+    "value_channel_max_over_median": 1.689,
+    "value_relerr_tok_int8": 0.00482,
+    "value_relerr_chan_int8": 0.00353,
+    "value_relerr_tok_int4": 0.08208,
+    "value_relerr_chan_int4": 0.05999,
+    "value_relerr_tok_int2": 0.41251,
+    "value_relerr_chan_int2": 0.30192
+   },
+   {
+    "layer": 14,
+    "key_channel_max_over_median": 2.771,
+    "key_relerr_tok_int8": 0.00537,
+    "key_relerr_chan_int8": 0.00175,
+    "key_relerr_tok_int4": 0.09108,
+    "key_relerr_chan_int4": 0.02974,
+    "key_relerr_tok_int2": 0.45645,
+    "key_relerr_chan_int2": 0.15044,
+    "value_channel_max_over_median": 1.473,
+    "value_relerr_tok_int8": 0.00472,
+    "value_relerr_chan_int8": 0.00378,
+    "value_relerr_tok_int4": 0.08003,
+    "value_relerr_chan_int4": 0.06404,
+    "value_relerr_tok_int2": 0.40312,
+    "value_relerr_chan_int2": 0.32198
+   },
+   {
+    "layer": 15,
+    "key_channel_max_over_median": 2.505,
+    "key_relerr_tok_int8": 0.00525,
+    "key_relerr_chan_int8": 0.00211,
+    "key_relerr_tok_int4": 0.08939,
+    "key_relerr_chan_int4": 0.03583,
+    "key_relerr_tok_int2": 0.45165,
+    "key_relerr_chan_int2": 0.18099,
+    "value_channel_max_over_median": 1.842,
+    "value_relerr_tok_int8": 0.00494,
+    "value_relerr_chan_int8": 0.00338,
+    "value_relerr_tok_int4": 0.08398,
+    "value_relerr_chan_int4": 0.05744,
+    "value_relerr_tok_int2": 0.42124,
+    "value_relerr_chan_int2": 0.28946
+   },
+   {
+    "layer": 16,
+    "key_channel_max_over_median": 2.399,
+    "key_relerr_tok_int8": 0.00497,
+    "key_relerr_chan_int8": 0.00226,
+    "key_relerr_tok_int4": 0.08439,
+    "key_relerr_chan_int4": 0.0384,
+    "key_relerr_tok_int2": 0.42286,
+    "key_relerr_chan_int2": 0.19402,
+    "value_channel_max_over_median": 1.754,
+    "value_relerr_tok_int8": 0.00476,
+    "value_relerr_chan_int8": 0.00436,
+    "value_relerr_tok_int4": 0.08082,
+    "value_relerr_chan_int4": 0.07423,
+    "value_relerr_tok_int2": 0.40383,
+    "value_relerr_chan_int2": 0.37258
+   },
+   {
+    "layer": 17,
+    "key_channel_max_over_median": 2.958,
+    "key_relerr_tok_int8": 0.0052,
+    "key_relerr_chan_int8": 0.00197,
+    "key_relerr_tok_int4": 0.08836,
+    "key_relerr_chan_int4": 0.03341,
+    "key_relerr_tok_int2": 0.44014,
+    "key_relerr_chan_int2": 0.16897,
+    "value_channel_max_over_median": 2.205,
+    "value_relerr_tok_int8": 0.00555,
+    "value_relerr_chan_int8": 0.00395,
+    "value_relerr_tok_int4": 0.09439,
+    "value_relerr_chan_int4": 0.0672,
+    "value_relerr_tok_int2": 0.47466,
+    "value_relerr_chan_int2": 0.3365
+   },
+   {
+    "layer": 18,
+    "key_channel_max_over_median": 2.23,
+    "key_relerr_tok_int8": 0.00492,
+    "key_relerr_chan_int8": 0.00229,
+    "key_relerr_tok_int4": 0.08328,
+    "key_relerr_chan_int4": 0.03892,
+    "key_relerr_tok_int2": 0.41691,
+    "key_relerr_chan_int2": 0.19746,
+    "value_channel_max_over_median": 1.859,
+    "value_relerr_tok_int8": 0.00536,
+    "value_relerr_chan_int8": 0.00395,
+    "value_relerr_tok_int4": 0.0912,
+    "value_relerr_chan_int4": 0.06726,
+    "value_relerr_tok_int2": 0.4486,
+    "value_relerr_chan_int2": 0.33691
+   },
+   {
+    "layer": 19,
+    "key_channel_max_over_median": 3.122,
+    "key_relerr_tok_int8": 0.00543,
+    "key_relerr_chan_int8": 0.00205,
+    "key_relerr_tok_int4": 0.09241,
+    "key_relerr_chan_int4": 0.03489,
+    "key_relerr_tok_int2": 0.46095,
+    "key_relerr_chan_int2": 0.17577,
+    "value_channel_max_over_median": 2.126,
+    "value_relerr_tok_int8": 0.00492,
+    "value_relerr_chan_int8": 0.0034,
+    "value_relerr_tok_int4": 0.08368,
+    "value_relerr_chan_int4": 0.05766,
+    "value_relerr_tok_int2": 0.42042,
+    "value_relerr_chan_int2": 0.29143
+   },
+   {
+    "layer": 20,
+    "key_channel_max_over_median": 3.351,
+    "key_relerr_tok_int8": 0.00565,
+    "key_relerr_chan_int8": 0.00198,
+    "key_relerr_tok_int4": 0.09617,
+    "key_relerr_chan_int4": 0.03361,
+    "key_relerr_tok_int2": 0.4698,
+    "key_relerr_chan_int2": 0.16937,
+    "value_channel_max_over_median": 1.494,
+    "value_relerr_tok_int8": 0.00517,
+    "value_relerr_chan_int8": 0.00417,
+    "value_relerr_tok_int4": 0.08766,
+    "value_relerr_chan_int4": 0.07098,
+    "value_relerr_tok_int2": 0.45303,
+    "value_relerr_chan_int2": 0.3565
+   },
+   {
+    "layer": 21,
+    "key_channel_max_over_median": 3.275,
+    "key_relerr_tok_int8": 0.00544,
+    "key_relerr_chan_int8": 0.00207,
+    "key_relerr_tok_int4": 0.09228,
+    "key_relerr_chan_int4": 0.03505,
+    "key_relerr_tok_int2": 0.45825,
+    "key_relerr_chan_int2": 0.17702,
+    "value_channel_max_over_median": 1.765,
+    "value_relerr_tok_int8": 0.0052,
+    "value_relerr_chan_int8": 0.00426,
+    "value_relerr_tok_int4": 0.08843,
+    "value_relerr_chan_int4": 0.07239,
+    "value_relerr_tok_int2": 0.45912,
+    "value_relerr_chan_int2": 0.36314
+   },
+   {
+    "layer": 22,
+    "key_channel_max_over_median": 2.245,
+    "key_relerr_tok_int8": 0.00518,
+    "key_relerr_chan_int8": 0.00233,
+    "key_relerr_tok_int4": 0.08781,
+    "key_relerr_chan_int4": 0.03962,
+    "key_relerr_tok_int2": 0.44953,
+    "key_relerr_chan_int2": 0.19968,
+    "value_channel_max_over_median": 1.667,
+    "value_relerr_tok_int8": 0.00469,
+    "value_relerr_chan_int8": 0.00509,
+    "value_relerr_tok_int4": 0.07977,
+    "value_relerr_chan_int4": 0.08645,
+    "value_relerr_tok_int2": 0.40097,
+    "value_relerr_chan_int2": 0.43384
+   },
+   {
+    "layer": 23,
+    "key_channel_max_over_median": 2.927,
+    "key_relerr_tok_int8": 0.00557,
+    "key_relerr_chan_int8": 0.00203,
+    "key_relerr_tok_int4": 0.09462,
+    "key_relerr_chan_int4": 0.03454,
+    "key_relerr_tok_int2": 0.48508,
+    "key_relerr_chan_int2": 0.1738,
+    "value_channel_max_over_median": 1.487,
+    "value_relerr_tok_int8": 0.00479,
+    "value_relerr_chan_int8": 0.00464,
+    "value_relerr_tok_int4": 0.08142,
+    "value_relerr_chan_int4": 0.0786,
+    "value_relerr_tok_int2": 0.40836,
+    "value_relerr_chan_int2": 0.3948
+   }
+  ],
+  "mean": {
+   "key_channel_max_over_median": 5.24429,
+   "key_relerr_tok_int8": 0.00558,
+   "key_relerr_chan_int8": 0.00185,
+   "key_relerr_tok_int4": 0.09602,
+   "key_relerr_chan_int4": 0.03144,
+   "key_relerr_tok_int2": 0.48485,
+   "key_relerr_chan_int2": 0.1587,
+   "value_channel_max_over_median": 2.1015,
+   "value_relerr_tok_int8": 0.00514,
+   "value_relerr_chan_int8": 0.00393,
+   "value_relerr_tok_int4": 0.08737,
+   "value_relerr_chan_int4": 0.06672,
+   "value_relerr_tok_int2": 0.44099,
+   "value_relerr_chan_int2": 0.33513
+  },
+  "profile_layer": 12,
+  "key_channel_absmax_mid": [
+   3.519,
+   2.812,
+   3.499,
+   2.377,
+   3.159,
+   3.409,
+   3.756,
+   3.086,
+   3.381,
+   3.977,
+   4.123,
+   3.514,
+   4.713,
+   3.391,
+   5.366,
+   4.274,
+   4.934,
+   3.479,
+   5.434,
+   3.322,
+   3.185,
+   2.941,
+   4.391,
+   3.074,
+   3.006,
+   1.917,
+   5.754,
+   3.925,
+   3.126,
+   3.114,
+   5.174,
+   8.979,
+   3.709,
+   2.84,
+   3.223,
+   2.41,
+   3.141,
+   3.022,
+   3.513,
+   3.445,
+   3.154,
+   3.958,
+   4.139,
+   3.124,
+   4.654,
+   3.781,
+   5.075,
+   5.344,
+   5.785,
+   3.766,
+   5.52,
+   5.57,
+   3.272,
+   7.184,
+   3.013,
+   3.464,
+   10.94,
+   5.634,
+   2.857,
+   4.853,
+   5.134,
+   5.109,
+   6.723,
+   5.895
+  ],
+  "value_channel_absmax_mid": [
+   2.901,
+   2.411,
+   5.442,
+   2.401,
+   3.524,
+   2.985,
+   3.455,
+   2.269,
+   2.928,
+   2.406,
+   3.38,
+   3.033,
+   6.047,
+   2.8,
+   2.556,
+   2.938,
+   3.942,
+   3.173,
+   2.298,
+   3.755,
+   2.134,
+   5.64,
+   2.5,
+   2.745,
+   2.306,
+   2.558,
+   4.132,
+   3.929,
+   2.617,
+   3.376,
+   2.507,
+   3.344,
+   3.422,
+   2.774,
+   2.937,
+   3.459,
+   3.89,
+   2.771,
+   2.65,
+   2.329,
+   2.303,
+   3.362,
+   3.64,
+   3.378,
+   2.964,
+   2.731,
+   2.962,
+   2.59,
+   2.586,
+   2.682,
+   2.678,
+   3.099,
+   2.401,
+   2.362,
+   3.051,
+   2.81,
+   3.512,
+   3.052,
+   3.348,
+   2.208,
+   3.709,
+   2.742,
+   3.666,
+   2.812
+  ]
+ },
+ "ppl": {
+  "prefix_tokens": 1024,
+  "eval_tokens": 256,
+  "no_context_nll": 3.62494,
+  "no_context_ppl": 37.5226,
+  "methods": {
+   "bf16": {
+    "nll": 1.80696,
+    "ppl": 6.0919
+   },
+   "tok-int8": {
+    "nll": 1.80946,
+    "ppl": 6.1072
+   },
+   "tok-int4": {
+    "nll": 2.11798,
+    "ppl": 8.3143
+   },
+   "tok-int2": {
+    "nll": 4.60925,
+    "ppl": 100.4088
+   },
+   "kivi-int8": {
+    "nll": 1.80696,
+    "ppl": 6.0919
+   },
+   "kivi-int4": {
+    "nll": 1.81987,
+    "ppl": 6.1711
+   },
+   "kivi-int2": {
+    "nll": 2.02885,
+    "ppl": 7.6053
+   },
+   "window-50": {
+    "nll": 6.09942,
+    "ppl": 445.5978
+   },
+   "window-25": {
+    "nll": 6.19039,
+    "ppl": 488.0379
+   },
+   "sink-50": {
+    "nll": 2.97526,
+    "ppl": 19.5947
+   },
+   "sink-25": {
+    "nll": 3.05761,
+    "ppl": 21.2766
+   },
+   "h2o-50": {
+    "nll": 2.4849,
+    "ppl": 11.9999
+   },
+   "h2o-25": {
+    "nll": 2.84917,
+    "ppl": 17.2735
+   },
+   "snapkv-50": {
+    "nll": 2.13557,
+    "ppl": 8.4619
+   },
+   "snapkv-25": {
+    "nll": 2.71126,
+    "ppl": 15.0483
+   }
+  }
+ },
+ "decode_latency": {
+  "bf16": {
+   "cache_tokens": 2026,
+   "median_step_ms": 185.3,
+   "reps_ms": [
+    176.47,
+    185.3,
+    189.81
+   ]
+  },
+  "window-50": {
+   "cache_tokens": 1013,
+   "median_step_ms": 174.16,
+   "reps_ms": [
+    174.16,
+    172.01,
+    177.66
+   ]
+  },
+  "window-25": {
+   "cache_tokens": 506,
+   "median_step_ms": 170.47,
+   "reps_ms": [
+    188.17,
+    170.47,
+    164.55
+   ]
+  }
+ },
+ "timing_s": {
+  "load": 29.1,
+  "niah": 280.0,
+  "ppl": 24.7,
+  "latency": 34.2,
+  "wall": 376.1
+ },
+ "peak_rss_mb": 3969.1,
+ "torch": "2.10.0+cu128",
+ "transformers": "5.2.0"
+}
